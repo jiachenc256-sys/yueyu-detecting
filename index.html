@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/tokens.css" />
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="styles/speak.css" />
+  <link rel="stylesheet" href="styles/tanci.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -30,6 +31,7 @@
           <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label" data-i18n="nav.main">
             <button class="site-nav__btn" data-panel-target="home" aria-current="page" data-i18n="nav.home">首页</button>
             <button class="site-nav__btn" data-panel-target="speak" data-i18n="nav.speak">听说翻译</button>
+            <button class="site-nav__btn" data-panel-target="tanci" data-i18n="nav.tanci">弹词</button>
             <button class="site-nav__btn" data-panel-target="archive" data-i18n="nav.archive">档案</button>
             <button class="site-nav__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
             <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">计划</button>
@@ -51,7 +53,7 @@
             </p>
             <h2 class="home-hero__headline" data-i18n="home.headline">听懂越语对话，用中文与英文读懂它。</h2>
             <p class="home-hero__support" data-i18n="home.support">
-              先看三步用法，再进入听说翻译或对话档案。
+              先看三步用法，再进入听说翻译、弹词图片识别或对话档案。
             </p>
 
             <ol class="home-howto" aria-label="How to use">
@@ -59,7 +61,7 @@
                 <span class="home-howto__num">01</span>
                 <div>
                   <h3 data-i18n="home.how1Title">选一条路</h3>
-                  <p data-i18n="home.how1Body">听说翻译：说话或上传；档案：听精选戏曲并读剧情。</p>
+                  <p data-i18n="home.how1Body">听说翻译：说话或上传音频；弹词：上传刻本图片识别文字；档案：听精选戏曲并读剧情。</p>
                 </div>
               </li>
               <li class="home-howto__item">
@@ -81,6 +83,9 @@
             <div class="home-cta">
               <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">
                 开始听说翻译
+              </button>
+              <button type="button" class="home-cta__btn" data-panel-target="tanci" data-i18n="home.ctaTanci">
+                打开弹词识别
               </button>
               <button type="button" class="home-cta__btn" data-panel-target="archive" data-i18n="home.ctaArchive">
                 打开档案
@@ -161,6 +166,72 @@
         </div>
       </section>
 
+      <!-- ── Tanci / Talcne image OCR ── -->
+      <section class="panel" data-panel="tanci" aria-hidden="true">
+        <header class="section-header">
+          <h2 data-i18n="tanci.title">弹词 · 图片文字识别</h2>
+          <p data-i18n="tanci.lead">上传弹词刻本图片，调用姊妹项目 Talcne 的 OCR 后端，校对后可导出 JSON。</p>
+        </header>
+
+        <div class="tanci-layout">
+          <p class="tanci-note" data-i18n="tanci.note">
+            本页只做图片识别（无麦克风）。需本机或已部署的 Talcne 后端（默认 http://127.0.0.1:8000）。语音请用「听说翻译」。
+          </p>
+
+          <label class="tanci-api">
+            <span data-i18n="tanci.apiLabel">Talcne 后端地址</span>
+            <input
+              id="tanci-api-base"
+              type="url"
+              class="tanci-api__input"
+              value="http://127.0.0.1:8000"
+              autocomplete="off"
+              spellcheck="false"
+              data-i18n-placeholder="tanci.apiPlaceholder"
+              placeholder="http://127.0.0.1:8000"
+            />
+          </label>
+
+          <div class="tanci-controls">
+            <label class="speak-btn speak-file">
+              <span data-i18n="tanci.chooseImage">选择图片</span>
+              <input id="tanci-file" type="file" accept="image/*,.jpg,.jpeg,.png,.webp,.gif" multiple hidden />
+            </label>
+            <button type="button" id="tanci-recognize" class="speak-btn speak-btn--primary" data-i18n="tanci.recognize" disabled>
+              开始识别文字
+            </button>
+            <button type="button" id="tanci-export" class="speak-btn" data-i18n="tanci.exportJson" disabled>
+              导出 JSON（档案桥）
+            </button>
+            <button type="button" id="tanci-clear" class="speak-btn" data-i18n="tanci.clear">清除</button>
+          </div>
+
+          <p id="tanci-status" class="tanci-status" aria-live="polite" data-i18n="tanci.ready">
+            已就绪。选择清晰刻本图片后点击识别。
+          </p>
+
+          <div class="tanci-workspace">
+            <aside class="tanci-preview" aria-label="Image preview">
+              <p class="tanci-preview__label" data-i18n="tanci.preview">图片预览</p>
+              <div id="tanci-preview-list" class="tanci-preview__list">
+                <p class="tanci-preview__empty" data-i18n="tanci.previewEmpty">尚未选择图片</p>
+              </div>
+            </aside>
+            <div class="tanci-result">
+              <h3 data-i18n="tanci.result">识别结果（可编辑）</h3>
+              <p class="tanci-result__hint" data-i18n="tanci.editHint">校对后可导出 JSON，再用本仓库 import 脚本写入档案。</p>
+              <textarea
+                id="tanci-text"
+                class="tanci-text"
+                rows="14"
+                data-i18n-placeholder="tanci.placeholder"
+                placeholder="OCR 文字会出现在这里…"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ── Archive panel ── -->
       <section class="panel" data-panel="archive" aria-hidden="true">
         <header class="section-header">
@@ -174,7 +245,7 @@
           <button type="button" class="archive-filter" data-archive-filter="tanci" aria-pressed="false" data-i18n="archive.filterTanci">弹词</button>
           <button type="button" class="archive-filter" data-archive-filter="broadcast" aria-pressed="false" data-i18n="archive.filterBroadcast">广播</button>
         </div>
-        <p class="archive-filter-note" data-i18n="archive.filterNote">越剧为当前精选；弹词与广播为扩展层——弹词先链到姊妹项目 Talcne（刻本 OCR），再逐步并入本站时间轴档案。</p>
+        <p class="archive-filter-note" data-i18n="archive.filterNote">越剧为当前精选；弹词可在导航「弹词」页上传图片做 OCR，也可链到姊妹项目 Talcne；广播为下一步扩展。</p>
 
         <div class="archive-grid">
           <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong.html" data-archive-category="yueju">
@@ -403,30 +474,30 @@
           </a>
 
 
-          <a class="piece-card piece-card--link piece-card--external" href="https://github.com/jiachenc256-sys/Talcne" target="_blank" rel="noopener noreferrer" data-archive-category="tanci">
+          <button type="button" class="piece-card piece-card--link" data-panel-target="tanci" data-archive-category="tanci">
             <span class="badge badge--ready" data-i18n="archive.badgeTanci">弹词</span>
-            <h3 class="piece-card__title" data-i18n="archive.tanciTitle">弹词 · 文字层（Talcne）</h3>
-            <p class="piece-card__meta" data-i18n="archive.tanciMeta">Sister project · woodblock OCR → editable text</p>
+            <h3 class="piece-card__title" data-i18n="archive.tanciTitle">弹词 · 图片识别</h3>
+            <p class="piece-card__meta" data-i18n="archive.tanciMeta">站内 OCR · 调用 Talcne 后端</p>
             <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">姊妹项目 Talcne：上传弹词刻本图片，OCR 后左图右文校对，作为可加入档案的文字层。暂以外链保留独立仓库。</span>
-              <span data-visible-lang="zh-Hant">姊妹專案 Talcne：上傳彈詞刻本圖片，OCR 後左圖右文校對，作為可加入檔案的文字層。暫以外鏈保留獨立倉庫。</span>
-              <span data-visible-lang="en">Sister project Talcne: upload tanci woodblock pages, OCR, then proofread image↔text as a lexical layer. Kept as an external repo for now.</span>
+              <span data-visible-lang="zh-Hans">在本站「弹词」页上传刻本图片做文字识别（Talcne OCR 后端）。完整对照校对仍可打开姊妹仓库。</span>
+              <span data-visible-lang="zh-Hant">在本站「彈詞」頁上傳刻本圖片做文字識別（Talcne OCR 後端）。完整對照校對仍可打開姊妹倉庫。</span>
+              <span data-visible-lang="en">Open the in-site Tanci panel to OCR woodblock images via the Talcne backend. Full image↔text proofreading remains in the sister repo.</span>
             </p>
             <div class="piece-card__stats">
               <div class="stat">
-                <span class="stat__label">Status</span>
-                <span class="stat__value">Link-out</span>
+                <span class="stat__label">Mode</span>
+                <span class="stat__value">Image OCR</span>
               </div>
               <div class="stat">
-                <span class="stat__label">Repo</span>
+                <span class="stat__label">Backend</span>
                 <span class="stat__value">Talcne</span>
               </div>
               <div class="stat">
-                <span class="stat__label">Next</span>
-                <span class="stat__value">Merge plan</span>
+                <span class="stat__label">Panel</span>
+                <span class="stat__value">#tanci</span>
               </div>
             </div>
-          </a>
+          </button>
 
           <div class="piece-card piece-card--placeholder" data-archive-category="broadcast" aria-hidden="false">
             <span class="badge" data-i18n="archive.badgeSoon">筹备中</span>
@@ -747,5 +818,6 @@
 
   <script type="module" src="scripts/dist/src/app.js"></script>
   <script type="module" src="scripts/dist/src/speak.js"></script>
+  <script type="module" src="scripts/dist/src/tanci.js"></script>
 </body>
 </html>
