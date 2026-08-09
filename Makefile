@@ -1,4 +1,4 @@
-.PHONY: help serve open status push setup-remote branch transcript sync-audio data check
+.PHONY: help serve open status push setup-remote publish-new branch transcript sync-audio data check
 
 PORT ?= 8080
 SOURCE_DIR := $(HOME)/Desktop/linguilistic project
@@ -15,6 +15,7 @@ help:
 	@echo "  make sync-audio     Copy m4a from Desktop into assets/audio/"
 	@echo "  make status         Show git branch and working tree"
 	@echo "  make setup-remote URL=<new-repo-url>   Add origin (NEW repo only)"
+	@echo "  make publish-new    Create+push NEW GitHub repo yueju-linguistic-archive"
 	@echo "  make push           Push current branch to origin"
 	@echo "  make branch NAME=cursor/my-feature   Create and switch branch"
 
@@ -51,8 +52,11 @@ setup-remote:
 	@echo "Reminder: do not point origin at any pre-existing personal archive you want left untouched."
 
 push:
-	@git remote get-url origin >/dev/null 2>&1 || (echo "No remote. Run: make setup-remote URL=<NEW-repo-url>" && exit 1)
+	@git remote get-url origin >/dev/null 2>&1 || (echo "No remote. Run: make publish-new   OR   make setup-remote URL=<NEW-repo-url>" && exit 1)
 	@git push -u origin HEAD
+
+publish-new:
+	@./scripts/publish-new-repo.sh
 
 branch:
 	@test -n "$(NAME)" || (echo "Usage: make branch NAME=cursor/my-feature" && exit 1)

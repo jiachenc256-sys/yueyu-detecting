@@ -73,9 +73,14 @@ make sync-audio
 make status
 
 # NEW GitHub repo only — never point this at an old archive
-make setup-remote URL=https://github.com/YOU/yueju-linguistic-archive.git
-make push
+# Requires: gh auth login   (one time)
+make publish-new
+# or manually:
+# make setup-remote URL=https://github.com/YOU/yueju-linguistic-archive.git
+# make push
 ```
+
+`make publish-new` / `scripts/publish-new-repo.sh` will **only** create/push `yueju-linguistic-archive` and will refuse if `origin` already points at a different repo.
 
 ## Source materials (local, untouched)
 
