@@ -1,0 +1,338 @@
+{
+  "id": "liangzhu-shibaxiangsong",
+  "title": "梁祝 · 十八相送",
+  "titleEn": "Butterfly Lovers · Eighteen Farewells",
+  "audio": "assets/audio/liangzhu-shibaxiangsong.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 16,
+  "correctedCount": 16,
+  "coverage": {
+    "zh": 16,
+    "enCurated": 16,
+    "enMt": 0,
+    "enAny": 16,
+    "zhHant": 16
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 8,
+      "end": 16,
+      "layers": {
+        "zh": {
+          "text": "梁兄啊",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Brother Liang—",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "梁兄啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 16,
+      "end": 26,
+      "layers": {
+        "zh": {
+          "text": "书房门前一枝梅",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "A plum branch stands before the study door",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "書房門前一枝梅",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 26,
+      "end": 36,
+      "layers": {
+        "zh": {
+          "text": "树上鸟儿成双对",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Birds in the tree pair two by two",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "樹上鳥兒成雙對",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 36,
+      "end": 46,
+      "layers": {
+        "zh": {
+          "text": "喜鹊满树喳喳叫",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Magpies fill the branches, chattering",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "喜鵲滿樹喳喳叫",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 46,
+      "end": 56,
+      "layers": {
+        "zh": {
+          "text": "向你梁兄报喜来",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Coming to bring Brother Liang good news",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "向你梁兄報喜來",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 56,
+      "end": 66,
+      "layers": {
+        "zh": {
+          "text": "弟兄二人多恩爱",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "We two sworn brothers share deep affection",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "弟兄二人多恩愛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 66,
+      "end": 76,
+      "layers": {
+        "zh": {
+          "text": "同窗共读整三载",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Three full years of study side by side",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "同窗共讀整三載",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 76,
+      "end": 86,
+      "layers": {
+        "zh": {
+          "text": "今日分别心难过",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Today we part, and the heart aches",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "今日分別心難過",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 86,
+      "end": 96,
+      "layers": {
+        "zh": {
+          "text": "你我怎能舍得开",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "How can either of us bear to leave?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "你我怎能捨得開",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 96,
+      "end": 106,
+      "layers": {
+        "zh": {
+          "text": "梁兄送到长亭道",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Brother Liang walks me to the long pavilion road",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "梁兄送到長亭道",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 106,
+      "end": 116,
+      "layers": {
+        "zh": {
+          "text": "兄弟分别心烦恼",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Parting fills both hearts with sorrow",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "兄弟分別心煩惱",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 116,
+      "end": 126,
+      "layers": {
+        "zh": {
+          "text": "你再送我十里亭",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "See me on again to the ten-li pavilion",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "你再送我十里亭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 126,
+      "end": 136,
+      "layers": {
+        "zh": {
+          "text": "十里长亭有凉亭",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Along the ten-li road there is a cool pavilion",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "十里長亭有涼亭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 136,
+      "end": 145,
+      "layers": {
+        "zh": {
+          "text": "梁兄啊，从此分别难相见",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Brother Liang—after this farewell, hard to meet again",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "梁兄啊，從此分別難相見",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 145,
+      "end": 150.4,
+      "layers": {
+        "zh": {
+          "text": "[收尾 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

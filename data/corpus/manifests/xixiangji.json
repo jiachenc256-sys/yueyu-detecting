@@ -1,0 +1,28 @@
+{
+  "id": "xixiangji",
+  "title": "西厢记",
+  "titleEn": "Romance of the Western Chamber",
+  "sourceLocalPath": "越剧-1451首/越剧经典剧目完整音频/越剧西厢记.mp3",
+  "mediaType": "audio",
+  "durationHint": null,
+  "speechTypes": [
+    "changci",
+    "yunbai",
+    "sanbai"
+  ],
+  "school": null,
+  "roleTypes": [],
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/xixiangji-kaohong.json",
+  "rights": "private-research",
+  "notes": "Full-play audio stays local. Published starter clip: 经典选段 · 拷红 → pieces/xixiangji-kaohong.html with curated zh/en cues (provisional timings).",
+  "priority": "starter",
+  "status": "in-progress",
+  "bytes": 146712430,
+  "publishedClip": {
+    "id": "xixiangji-kaohong",
+    "sourceLocalPath": "越剧-1451首/1132-越剧 - 拷红.mp3",
+    "audioAsset": "assets/audio/xixiangji-kaohong.mp3",
+    "durationSec": 200.1
+  }
+}

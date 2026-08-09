@@ -1,39 +1,108 @@
-# 越剧档案 · Yueju Archive
+# 越剧档案 · Yueju Linguistic Archive
 
-A web archive for Yue opera (越剧) linguistic materials — performances, aligned transcripts, and the Yueju–Shaoxing ASR research plan.
+Academic project for Yue opera (越剧) dialogue:
 
-## Current phase
+1. **Speak → Recognize → Translate** — speak into the mic; after a short delay see 简体中文 / 繁體中文 / English  
+2. **Dialogue archive** — collected performances with layered Chinese/English text (corpus for later ASR improvement)
 
-**Planning UI** — structure and project docs. No media playback yet.
+This repository is a **new project**. It does **not** modify any pre-existing GitHub archive. Desktop source media remain untouched.
 
-## Contents
+## What you can do
 
-| Tab | Purpose |
-|-----|---------|
-| **Archive** | Performance index (starting with 新龙门客寨) |
-| **Plan** | Full project plan from the linguistic research doc |
-| **Dataset** | Yueju-SX open-source package structure |
+- **Speak tab:** microphone → speech recognition → 简体 / 繁體 / English (Phase A baseline)
+- Browse the dialogue archive (starting with **新龙门客寨**)
+- Play audio with an active-line transcript
+- Switch display language: **中文 / EN / 中·EN**
+- Search across Chinese and English layers
+- Translation badges in the archive:
+  - **Curated** — academic source of truth
+  - **MT — not authoritative** — offline machine/heuristic gloss for gaps
 
-## Run locally
+## Academic stack
 
-Open `index.html` in a browser, or serve statically:
+| Piece | Role |
+|-------|------|
+| [`schemas/piece.schema.json`](schemas/piece.schema.json) | Formal JSON Schema |
+| [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) | Field semantics & merge policy |
+| [`docs/ACADEMIC_NOTES.md`](docs/ACADEMIC_NOTES.md) | Scope, ethics, citation notes |
+| [`src/`](src/) | Typed TypeScript modules |
+| [`tests/`](tests/) | Merge precedence & parsing tests |
+| [`CITATION.cff`](CITATION.cff) | How to cite this archive |
+
+Languages in v1: `zh` (source 汉字戏词) + `en` (curated and/or MT).
+
+## Setup
+
+Requires Node.js 20+.
 
 ```bash
-python3 -m http.server 8080
-# → http://localhost:8080
+export PATH="$HOME/.local/node/bin:$PATH"   # if using the local Node install
+npm install
+npm run rebuild:data    # seed MT + merge layers + validate
+npm run build           # compile TypeScript viewer/app
+npm test
+make sync-audio         # copy m4a from Desktop (gitignored)
+make serve              # http://localhost:8080
 ```
 
-## Source materials
+Full rebuild from Desktop SRT:
 
-Original files live at `~/Desktop/linguilistic project/`:
+```bash
+npm run prepare:data
+```
 
-- `新龙门客寨.MOV` / `.m4a` — video & audio
-- `新龙门客寨.srt` / `.txt` — timed transcript
-- `local linguistic project 计划docx.docx` — research plan
+## Data pipeline
 
-## Next steps
+```text
+Desktop SRT → build:transcript → *.base.json
+curated en.json + en.mt.json → merge → transcripts/*.json (schema v1.0.0)
+viewer reads only the merged piece JSON
+```
 
-1. Copy/link media into `assets/` with a manifest
-2. Clean ASR errors in opening transcript lines
-3. Add synced transcript viewer with audio scrubbing
-4. Expand archive grid as new pieces are added
+Translation policy (school-safe):
+
+1. Curated English in `data/translations/<id>.en.json` wins
+2. Offline MT in `data/translations/<id>.en.mt.json` fills gaps only
+3. UI always labels MT as non-authoritative
+4. No live API keys required for reproducibility
+
+## Routine
+
+```bash
+make help
+make serve
+make open
+make transcript          # python legacy helper still available
+make sync-audio
+make status
+
+# NEW GitHub repo only — never point this at an old archive
+# Requires: gh auth login   (one time)
+make publish-new
+# or manually:
+# make setup-remote URL=https://github.com/YOU/yueju-linguistic-archive.git
+# make push
+```
+
+`make publish-new` / `scripts/publish-new-repo.sh` will **only** create/push `yueju-linguistic-archive` and will refuse if `origin` already points at a different repo.
+
+## Source materials (local, untouched)
+
+`~/Desktop/linguilistic project/`:
+
+- `新龙门客寨.MOV` / `.m4a`
+- `新龙门客寨.srt` / `.txt`
+- research plan documents
+
+## Larger Yueju corpus (Baidu packs)
+
+For privately acquired packs (e.g. 越剧视频 / 越剧-1451首):
+
+```bash
+make corpus-setup       # creates Desktop drop folders
+# download packs into ~/Desktop/linguilistic project/baidu-yueju/
+make corpus-inventory   # lists media safely (no binaries in git)
+make corpus-status
+```
+
+See [`docs/CORPUS_INTAKE.md`](docs/CORPUS_INTAKE.md). Keep full packs local; do not push them to GitHub.

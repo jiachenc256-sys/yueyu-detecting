@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>碧玉簪 · 新房之中冷清清 · 越语侦听</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/tokens.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
+</head>
+<body data-piece-id="biyu-zan-xinfang">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
+        </div>
+                <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <nav class="site-nav" aria-label="Piece">
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <header class="viewer-header">
+        <div class="viewer-header__text">
+          <span class="badge badge--ready">Starter piece</span>
+          <h1 class="viewer-title">碧玉簪 · 新房之中冷清清</h1>
+          <p class="viewer-meta">The Jade Hairpin · Cold Bridal Chamber · <span id="cue-count">—</span></p>
+          <p class="viewer-coverage" id="coverage-stats"></p>
+        </div>
+        <div class="viewer-controls">
+          <div class="lang-toggle" role="group" aria-label="Display language">
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hans" aria-pressed="false">简体</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="trilingual" aria-pressed="true">简 / 繁 / EN</button>
+          </div>
+          <div class="viewer-search">
+            <input type="search" id="search-input" class="viewer-search__input" data-i18n-placeholder="viewer.search" placeholder="搜索 简 / 繁 / EN…" aria-label="Search transcript" />
+          </div>
+        </div>
+      </header>
+
+      <aside class="viewer-intro" aria-label="Story introduction">
+        <h2 class="viewer-intro__label" data-i18n="viewer.story">剧情简介</h2>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hans">李秀英出嫁后，因一枚碧玉簪引起误会，丈夫王玉林怀疑她不忠，冷落她。秀英含冤忍辱，在新房中孤灯独坐。后真相大白，夫妻和好。戏写误解、委屈与团圆。</p>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hant">李秀英出嫁後，因一枚碧玉簪引起誤會，丈夫王玉林懷疑她不忠，冷落她。秀英含冤忍辱，在新房中孤燈獨坐。後真相大白，夫妻和好。戲寫誤解、委屈與團圓。</p>
+        <p class="viewer-intro__en" data-visible-lang="en">After marriage, a jade hairpin causes a misunderstanding: husband Wang Yulin suspects Li Xiuying of unfaithfulness and coldly neglects her. She suffers alone in the bridal chamber until the truth clears and they reconcile. The opera is about suspicion, endurance, and reunion.</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hans"><strong data-i18n="viewer.thisClip">本段</strong> — 写洞房冷清：红烛高烧，秀英孤独难眠，倾诉满腹委屈。</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hant"><strong data-i18n="viewer.thisClip">本段</strong> — 寫洞房冷清：紅燭高燒，秀英孤獨難眠，傾訴滿腹委屈。</p>
+        <p class="viewer-intro__en" data-visible-lang="en"><strong data-i18n="viewer.thisClip">This clip</strong> — This clip is the cold bridal chamber: candles burn, Xiuying cannot sleep, and she pours out her grievance alone.</p>
+      </aside>
+
+      <div class="viewer-body">
+        <aside class="viewer-player" aria-label="Audio player">
+          <audio id="audio" controls preload="auto" src="../assets/audio/biyu-zan-xinfang.mp3">
+            Your browser does not support audio playback.
+          </audio>
+          <p class="viewer-player__hint">
+            樊婷婷 · 新房之中冷清清. Click any timestamp or line to jump and play from there.
+            Timings are provisional starter alignment — refine as you curate.
+          </p>
+          <dl class="viewer-now-playing">
+            <div>
+              <dt>Now</dt>
+              <dd id="now-time">0:00</dd>
+            </div>
+            <div>
+              <dt>Line</dt>
+              <dd id="now-line">—</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="viewer-transcript" aria-label="Transcript">
+          <ol id="transcript-list" class="transcript-list"></ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+</body>
+</html>
