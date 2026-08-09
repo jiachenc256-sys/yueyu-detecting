@@ -11,6 +11,10 @@
 
 This site (`yueyu-detecting`) is a timed audio dialogue archive. Talcne is a **text-layer intake** tool for 弹词刻本. Keep both repos; do not force-push or delete Talcne.
 
+## Purpose of the bridge
+
+Talcne produces **corrected text**. Yueyu presents **readable archive pieces** (and timed audio when available). The JSON export is the thin pipe between them so 弹词 is not only an external GitHub card.
+
 ## What this site already scaffolds
 
 - Archive filters: **全部 / 越剧 / 弹词 / 广播**
@@ -19,15 +23,47 @@ This site (`yueyu-detecting`) is a timed audio dialogue archive. Talcne is a **t
 - Piece `category` in the schema (`yueju` \| `tanci` \| `broadcast` \| `other`)
 - Story copy that names 吴语, elders, tanci text layers, and radio
 
-## Recommended next merge steps (do not rush)
+## Talcne → Yueyu export format
 
-1. **Keep Talcne as the OCR workbench** until export is stable (save/export JSON of corrected lines).
-2. **Define a thin bridge format** from Talcne export → Yueyu piece JSON:
-   - either a text-only piece (`audio` optional later), or
-   - a `layers.zh` seed with provisional timings once audio exists.
-3. **Import one short tanci sample** as `category: "tanci"` under `data/transcripts/`, with speakers if dialogic.
-4. **Optional**: iframe or deep-link a deployed Talcne URL from the Archive card instead of only GitHub.
-5. **Later**: shared lexicon / “addable words” from OCR corrections feeding Speak recognition.
+In Talcne, after proofreading, click **导出 JSON（越语侦听）**. Shape (`schemaVersion: "1.0.0"`):
+
+```json
+{
+  "schemaVersion": "1.0.0",
+  "source": "talcne",
+  "target": "yueyu-detecting",
+  "exportedAt": "2026-08-10T00:00:00.000Z",
+  "script": "zh-Hans",
+  "fileNames": ["page1.jpg"],
+  "fullText": "…",
+  "lines": ["第一句", "第二句"],
+  "pages": [{ "page": 1, "text": "…", "lines": ["…"], "blocks": [] }],
+  "note": "…"
+}
+```
+
+Canonical field for import: **`lines`** (non-empty trimmed rows from the editable box).
+
+## Import (this repo)
+
+```bash
+node scripts/import-talcne-export.mjs path/to/talcne-yueyu-export.json \
+  --id pearl-tower-sample \
+  --title "珍珠塔 · 文字层样例" \
+  --title-en "Pearl Tower · text-layer sample"
+```
+
+Writes `data/transcripts/<id>.json` with `category: "tanci"`, provisional 4s cue timings, and a placeholder `audio` path (add real audio later). Then add an Archive card in `index.html` under `data-archive-category="tanci"`.
+
+Sample fixture: [`data/fixtures/talcne-yueyu-export.sample.json`](../data/fixtures/talcne-yueyu-export.sample.json).
+
+## Recommended next merge steps
+
+1. ~~Stable JSON export from Talcne~~ (button: 导出 JSON（越语侦听）)
+2. Run one real OCR → export → `import-talcne-export.mjs` → Archive card
+3. Optional: deep-link a deployed Talcne URL from the Archive card
+4. Later: shared lexicon from OCR corrections → Speak recognition
+5. Later: attach matching audio + real timings
 
 ## Non-goals for the first merge
 
