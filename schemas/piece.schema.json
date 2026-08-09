@@ -40,6 +40,11 @@
       "type": "string",
       "description": "Original timed-transcript filename (provenance)."
     },
+    "category": {
+      "type": "string",
+      "enum": ["yueju", "tanci", "broadcast", "other"],
+      "description": "Archive taxonomy: Yue opera, tanci (弹词), radio/broadcast, or other."
+    },
     "schemaVersion": {
       "type": "string",
       "const": "1.0.0"
@@ -89,6 +94,16 @@
           "type": "number",
           "minimum": 0,
           "description": "Cue end time in seconds."
+        },
+        "speaker": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who is speaking (e.g. 梁山伯 / 祝英台 / 旁白). Optional; omitted for legacy cues."
+        },
+        "speakerEn": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional English speaker label for EN UI mode."
         },
         "rawAsr": {
           "type": "string",

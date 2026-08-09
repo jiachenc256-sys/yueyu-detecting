@@ -3,6 +3,7 @@ import {
   enBadgeLabel,
   primaryDisplayText,
   secondaryDisplayLines,
+  speakerDisplayLabel,
 } from "./display.js";
 import { getLocale, initI18n, onLocaleChange, type SiteLocale } from "./i18n.js";
 import { formatTime } from "./time.js";
@@ -146,6 +147,14 @@ function renderTranscript(): void {
 
     const body = document.createElement("div");
     body.className = "transcript-line__body";
+
+    const speaker = speakerDisplayLabel(cue, displayMode, getLocale());
+    if (speaker) {
+      const who = document.createElement("span");
+      who.className = "transcript-line__speaker";
+      who.textContent = speaker;
+      body.appendChild(who);
+    }
 
     const text = document.createElement("span");
     text.className = "transcript-line__text";

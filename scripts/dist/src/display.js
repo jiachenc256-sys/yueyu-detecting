@@ -6,7 +6,23 @@ export function cueMatchesQuery(cue, query) {
     const zhHant = cue.layers.zhHant?.text.toLowerCase() ?? "";
     const en = cue.layers.en?.text.toLowerCase() ?? "";
     const raw = cue.rawAsr?.toLowerCase() ?? "";
-    return zh.includes(q) || zhHant.includes(q) || en.includes(q) || raw.includes(q);
+    const speaker = cue.speaker?.toLowerCase() ?? "";
+    const speakerEn = cue.speakerEn?.toLowerCase() ?? "";
+    return (zh.includes(q) ||
+        zhHant.includes(q) ||
+        en.includes(q) ||
+        raw.includes(q) ||
+        speaker.includes(q) ||
+        speakerEn.includes(q));
+}
+/** Speaker label for the active UI locale / display mode. */
+export function speakerDisplayLabel(cue, mode, uiLocale) {
+    if (!cue.speaker && !cue.speakerEn)
+        return null;
+    const preferEn = mode === "en" || uiLocale === "en";
+    if (preferEn)
+        return cue.speakerEn ?? cue.speaker ?? null;
+    return cue.speaker ?? cue.speakerEn ?? null;
 }
 export function primaryDisplayText(cue, mode) {
     if (mode === "en") {

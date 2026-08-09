@@ -5,6 +5,7 @@ import {
   enBadgeLabel,
   primaryDisplayText,
   secondaryDisplayLines,
+  speakerDisplayLabel,
 } from "../src/display.js";
 import type { Cue } from "../src/types.js";
 
@@ -12,6 +13,8 @@ const cue: Cue = {
   id: 10,
   start: 1,
   end: 2,
+  speaker: "祝英台",
+  speakerEn: "Zhu Yingtai",
   rawAsr: "这破门 又该修了",
   layers: {
     zh: { text: "这破门 又该修了", status: "raw" },
@@ -21,11 +24,19 @@ const cue: Cue = {
 };
 
 describe("display helpers", () => {
-  it("searches across zh, zhHant, en, and raw", () => {
+  it("searches across zh, zhHant, en, raw, and speaker", () => {
     assert.equal(cueMatchesQuery(cue, "broken"), true);
     assert.equal(cueMatchesQuery(cue, "破门"), true);
     assert.equal(cueMatchesQuery(cue, "破門"), true);
+    assert.equal(cueMatchesQuery(cue, "祝英台"), true);
+    assert.equal(cueMatchesQuery(cue, "yingtai"), true);
     assert.equal(cueMatchesQuery(cue, "xyz"), false);
+  });
+
+  it("picks speaker labels by display mode / UI locale", () => {
+    assert.equal(speakerDisplayLabel(cue, "zh-Hans"), "祝英台");
+    assert.equal(speakerDisplayLabel(cue, "en"), "Zhu Yingtai");
+    assert.equal(speakerDisplayLabel(cue, "zh-Hans", "en"), "Zhu Yingtai");
   });
 
   it("respects display mode for 简 / 繁 / EN / trilingual", () => {
