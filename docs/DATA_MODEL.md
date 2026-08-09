@@ -12,6 +12,7 @@ Path: `data/transcripts/<piece-id>.json`
 | `title` / `titleEn` | Chinese and English titles |
 | `audio` | Relative path to local audio |
 | `sourceSrt` | Provenance filename from the Desktop source bundle |
+| `category` | Optional archive taxonomy: `yueju` / `tanci` / `broadcast` / `other` |
 | `schemaVersion` | Currently `1.0.0` |
 | `cueCount` | Number of cues |
 | `correctedCount` | Cues whose `zh.status` is `corrected` or `reviewed` |
@@ -26,9 +27,13 @@ Validated by [`schemas/piece.schema.json`](../schemas/piece.schema.json).
 |-------|---------|
 | `id` | 1-based index from the source SRT |
 | `start` / `end` | Seconds |
+| `speaker` | Optional who-is-speaking label (e.g. 梁山伯 / 祝英台 / 旁白) |
+| `speakerEn` | Optional English speaker label for EN display |
 | `rawAsr` | Original ASR string (research transparency) |
 | `layers.zh` | Source 汉字戏词 |
 | `layers.en` | Optional English gloss/translation |
+
+`speaker` / `speakerEn` are optional so legacy cues without speakers remain valid.
 
 ## Status codes
 

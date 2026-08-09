@@ -24,6 +24,7 @@ This repository is a **new project**. It does **not** modify any pre-existing Gi
 |-------|------|
 | [`schemas/piece.schema.json`](schemas/piece.schema.json) | Formal JSON Schema |
 | [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) | Field semantics & merge policy |
+| [`docs/TANCI_MERGE.md`](docs/TANCI_MERGE.md) | Plan to fold Talcne (弹词 OCR) into this archive |
 | [`docs/ACADEMIC_NOTES.md`](docs/ACADEMIC_NOTES.md) | Scope, ethics, citation notes |
 | [`src/`](src/) | Typed TypeScript modules |
 | [`tests/`](tests/) | Merge precedence & parsing tests |

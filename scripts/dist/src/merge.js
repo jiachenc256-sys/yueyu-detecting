@@ -122,6 +122,9 @@ export function mergeLayers(base, curated, mt) {
     if (typeof sourceSrt === "string" && sourceSrt.length > 0) {
         piece.sourceSrt = sourceSrt;
     }
+    if ("category" in base && typeof base.category === "string") {
+        piece.category = base.category;
+    }
     return piece;
 }
 //# sourceMappingURL=merge.js.map

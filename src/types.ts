@@ -23,10 +23,16 @@ export interface CueLayers {
   en?: EnLayer;
 }
 
+export type PieceCategory = "yueju" | "tanci" | "broadcast" | "other";
+
 export interface Cue {
   id: number;
   start: number;
   end: number;
+  /** Speaker name in Chinese (optional; backward compatible). */
+  speaker?: string;
+  /** English speaker label for EN display mode. */
+  speakerEn?: string;
   rawAsr?: string;
   layers: CueLayers;
 }
@@ -45,6 +51,8 @@ export interface Piece {
   titleEn: string;
   audio: string;
   sourceSrt?: string;
+  /** Archive taxonomy bucket (optional; defaults to yueju in UI). */
+  category?: PieceCategory;
   schemaVersion: "1.0.0";
   cueCount: number;
   correctedCount: number;

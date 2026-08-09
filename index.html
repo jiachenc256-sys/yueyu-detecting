@@ -168,24 +168,32 @@
           <p data-i18n="archive.lead">本地语料精选档案——每条作品含简体 / 繁體 / English。点击时间戳即可跳转播放。</p>
         </header>
 
+        <div class="archive-filters" role="group" aria-label="Archive categories" data-i18n-attr="aria-label" data-i18n="archive.filterLabel">
+          <button type="button" class="archive-filter" data-archive-filter="all" aria-pressed="true" data-i18n="archive.filterAll">全部</button>
+          <button type="button" class="archive-filter" data-archive-filter="yueju" aria-pressed="false" data-i18n="archive.filterYueju">越剧</button>
+          <button type="button" class="archive-filter" data-archive-filter="tanci" aria-pressed="false" data-i18n="archive.filterTanci">弹词</button>
+          <button type="button" class="archive-filter" data-archive-filter="broadcast" aria-pressed="false" data-i18n="archive.filterBroadcast">广播</button>
+        </div>
+        <p class="archive-filter-note" data-i18n="archive.filterNote">越剧为当前精选；弹词与广播为扩展层——弹词先链到姊妹项目 Talcne（刻本 OCR），再逐步并入本站时间轴档案。</p>
+
         <div class="archive-grid">
-          <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong.html">
+          <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">梁祝 · 十八相送</h3>
             <p class="piece-card__meta">Butterfly Lovers · Eighteen Farewells · ~2.5 min</p>
             <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">中国经典爱情悲剧：同窗分别，一方暗生情愫。选段：十八相送。</span>
-              <span data-visible-lang="zh-Hant">中國經典愛情悲劇：同窗分別，一方暗生情愫。選段：十八相送。</span>
-              <span data-visible-lang="en">China’s classic tragic love story—two students part on the road while one secretly loves the other. Clip: the farewell walk.</span>
+              <span data-visible-lang="zh-Hans">中国经典爱情悲剧：同窗分别，一方暗生情愫。选段：十八相送。台词含说话人标注。</span>
+              <span data-visible-lang="zh-Hant">中國經典愛情悲劇：同窗分別，一方暗生情愫。選段：十八相送。台詞含說話人標註。</span>
+              <span data-visible-lang="en">China’s classic tragic love story—two students part on the road while one secretly loves the other. Clip: the farewell walk. Lines include speaker labels.</span>
             </p>
             <div class="piece-card__stats">
               <div class="stat">
                 <span class="stat__label">Transcript</span>
-                <span class="stat__value">16 lines</span>
+                <span class="stat__value">29 lines</span>
               </div>
               <div class="stat">
                 <span class="stat__label">EN curated</span>
-                <span class="stat__value">16 cues</span>
+                <span class="stat__value">29 cues</span>
               </div>
               <div class="stat">
                 <span class="stat__label">Source</span>
@@ -194,7 +202,7 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/hongloumeng-tianxia.html">
+          <a class="piece-card piece-card--link" href="pieces/hongloumeng-tianxia.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">红楼梦 · 天上掉下个林妹妹</h3>
             <p class="piece-card__meta">Dream of the Red Chamber · Lin Daiyu Arrives · ~2 min</p>
@@ -206,11 +214,11 @@
             <div class="piece-card__stats">
               <div class="stat">
                 <span class="stat__label">Transcript</span>
-                <span class="stat__value">13 lines</span>
+                <span class="stat__value">18 lines</span>
               </div>
               <div class="stat">
                 <span class="stat__label">EN curated</span>
-                <span class="stat__value">13 cues</span>
+                <span class="stat__value">18 cues</span>
               </div>
               <div class="stat">
                 <span class="stat__label">Source</span>
@@ -219,7 +227,7 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/xixiangji-kaohong.html">
+          <a class="piece-card piece-card--link" href="pieces/xixiangji-kaohong.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">西厢记 · 拷红</h3>
             <p class="piece-card__meta">Western Chamber · Interrogating Hongniang · ~3 min</p>
@@ -244,23 +252,23 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/xianglin-sao-xinsuanhua.html">
+          <a class="piece-card piece-card--link" href="pieces/xianglin-sao-xinsuanhua.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">祥林嫂 · 听他一番心酸话</h3>
             <p class="piece-card__meta">Xianglin Sao · Hearing His Bitter Words · ~3 min</p>
             <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">底层妇女在礼教压迫下的悲剧。选段：听他一番心酸话。</span>
-              <span data-visible-lang="zh-Hant">底層婦女在禮教壓迫下的悲劇。選段：聽他一番心酸話。</span>
-              <span data-visible-lang="en">A tragic village woman crushed by old social rules after widowhood and loss. Clip: a heartbreaking aria of grief.</span>
+              <span data-visible-lang="zh-Hans">底层妇女在礼教压迫下的悲剧。选段：听他一番心酸话。台词含说话人标注。</span>
+              <span data-visible-lang="zh-Hant">底層婦女在禮教壓迫下的悲劇。選段：聽他一番心酸話。台詞含說話人標註。</span>
+              <span data-visible-lang="en">A tragic village woman crushed by old social rules after widowhood and loss. Clip: a heartbreaking aria of grief. Lines include speaker labels.</span>
             </p>
             <div class="piece-card__stats">
               <div class="stat">
                 <span class="stat__label">Transcript</span>
-                <span class="stat__value">12 lines</span>
+                <span class="stat__value">20 lines</span>
               </div>
               <div class="stat">
                 <span class="stat__label">EN curated</span>
-                <span class="stat__value">12 cues</span>
+                <span class="stat__value">20 cues</span>
               </div>
               <div class="stat">
                 <span class="stat__label">Source</span>
@@ -269,7 +277,7 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/wunv-baishou-huashu.html">
+          <a class="piece-card piece-card--link" href="pieces/wunv-baishou-huashu.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">五女拜寿 · 花树同园不同根</h3>
             <p class="piece-card__meta">Five Daughters · Same Garden, Different Roots · ~2 min</p>
@@ -294,7 +302,7 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/zhuiyu-guandeng.html">
+          <a class="piece-card piece-card--link" href="pieces/zhuiyu-guandeng.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">追鱼 · 观灯</h3>
             <p class="piece-card__meta">The Chase of the Fish · Watching Lanterns · ~2 min</p>
@@ -319,7 +327,7 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/biyu-zan-xinfang.html">
+          <a class="piece-card piece-card--link" href="pieces/biyu-zan-xinfang.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">碧玉簪 · 新房之中冷清清</h3>
             <p class="piece-card__meta">The Jade Hairpin · Cold Bridal Chamber · ~3 min</p>
@@ -344,7 +352,7 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/he-wenxiu-suanming.html">
+          <a class="piece-card piece-card--link" href="pieces/he-wenxiu-suanming.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">何文秀 · 算命</h3>
             <p class="piece-card__meta">He Wenxiu · Fortune-Telling · ~3 min</p>
@@ -369,7 +377,7 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/longmen-kezhai.html">
+          <a class="piece-card piece-card--link" href="pieces/longmen-kezhai.html" data-archive-category="yueju">
             <span class="badge badge--ready" data-i18n="archive.badgeMulti">多语</span>
             <h3 class="piece-card__title">新龙门客寨</h3>
             <p class="piece-card__meta">New Dragon Inn · Yue opera adaptation</p>
@@ -394,6 +402,43 @@
             </div>
           </a>
 
+
+          <a class="piece-card piece-card--link piece-card--external" href="https://github.com/jiachenc256-sys/Talcne" target="_blank" rel="noopener noreferrer" data-archive-category="tanci">
+            <span class="badge badge--ready" data-i18n="archive.badgeTanci">弹词</span>
+            <h3 class="piece-card__title" data-i18n="archive.tanciTitle">弹词 · 文字层（Talcne）</h3>
+            <p class="piece-card__meta" data-i18n="archive.tanciMeta">Sister project · woodblock OCR → editable text</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">姊妹项目 Talcne：上传弹词刻本图片，OCR 后左图右文校对，作为可加入档案的文字层。暂以外链保留独立仓库。</span>
+              <span data-visible-lang="zh-Hant">姊妹專案 Talcne：上傳彈詞刻本圖片，OCR 後左圖右文校對，作為可加入檔案的文字層。暫以外鏈保留獨立倉庫。</span>
+              <span data-visible-lang="en">Sister project Talcne: upload tanci woodblock pages, OCR, then proofread image↔text as a lexical layer. Kept as an external repo for now.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Status</span>
+                <span class="stat__value">Link-out</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Repo</span>
+                <span class="stat__value">Talcne</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Next</span>
+                <span class="stat__value">Merge plan</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="piece-card piece-card--placeholder" data-archive-category="broadcast" aria-hidden="false">
+            <span class="badge" data-i18n="archive.badgeSoon">筹备中</span>
+            <h3 class="piece-card__title" data-i18n="archive.broadcastTitle">广播 · 日常吴语</h3>
+            <p class="piece-card__meta" data-i18n="archive.broadcastMeta">Radio / everyday Wu speech · coming next</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">为长辈与日常说话人预留席位：广播选段与生活口语，和舞台越剧并列，让档案更完整。</span>
+              <span data-visible-lang="zh-Hant">為長輩與日常說話人預留席位：廣播選段與生活口語，和舞臺越劇並列，讓檔案更完整。</span>
+              <span data-visible-lang="en">A seat for elders and everyday speakers: radio clips and living speech beside stage Yue opera, so the archive is more complete.</span>
+            </p>
+          </div>
+
           <div class="add-piece-card" aria-hidden="true">
             <span class="add-piece-card__icon">＋</span>
             <span class="add-piece-card__label" data-i18n="archive.add">添加剧目</span>
@@ -404,20 +449,31 @@
       <!-- ── Story / process ── -->
       <section class="panel" data-panel="story" aria-hidden="true">
         <header class="section-header">
-          <h2 data-i18n="story.title">故事 · 我们如何做成</h2>
-          <p data-i18n="story.lead">从收集录音到真人试听——把越语对话变成可听、可读、可检验的档案。</p>
+          <h2 data-i18n="story.title">故事 · 我们为何做、如何做成</h2>
+          <p data-i18n="story.lead">把吴语里听得见的话——尤其是长辈与日常的声音——变成年轻人和外人也能跟读的档案。</p>
         </header>
+
+        <div class="story-blocks">
+          <article class="story-block">
+            <h3 data-i18n="story.whyTitle">为什么重要</h3>
+            <p data-i18n="story.whyBody">吴语社区正在变薄：许多老人仍用家乡话过日子，舞台上的越剧、书场里的弹词、广播里的口音，却越来越少被下一代听懂。越语侦听想留下可对读的声音样本——不夸大抢救，只认真记录，尤其珍视长辈与女性日常说话人的声音。</p>
+          </article>
+          <article class="story-block">
+            <h3 data-i18n="story.originTitle">问题从哪里来</h3>
+            <p data-i18n="story.originBody">方言流失之外，还有一道缝：台上的韵白、散白与街上的口语并不相同。年轻人或外人往往能“听热闹”，却读不出字句。我们从越剧切入，也把弹词文字层与广播口语放进同一张地图，让对话既听得见，也读得懂。</p>
+          </article>
+        </div>
 
         <div class="story-rail">
           <article class="story-step">
             <span class="story-step__num">01</span>
             <h3 data-i18n="story.s1Title">收集与整理</h3>
-            <p data-i18n="story.s1Body">从本地戏曲录音与广播选段出发，建立清单与精选片段，而不是把整包音频丢上公网。</p>
+            <p data-i18n="story.s1Body">从本地戏曲、弹词相关文本与广播选段出发，建立清单与精选片段，而不是把整包音频丢上公网。</p>
           </article>
           <article class="story-step">
             <span class="story-step__num">02</span>
             <h3 data-i18n="story.s2Title">转写与翻译</h3>
-            <p data-i18n="story.s2Body">为选段加上时间轴、简体 / 繁體 / English，并写清剧情简介，让不懂戏的人也能跟得上。</p>
+            <p data-i18n="story.s2Body">为选段加上时间轴、说话人、简体 / 繁體 / English，并写清剧情简介，让不懂戏的人也能跟得上。</p>
           </article>
           <article class="story-step">
             <span class="story-step__num">03</span>
@@ -427,13 +483,13 @@
           <article class="story-step">
             <span class="story-step__num">04</span>
             <h3 data-i18n="story.s4Title">用档案反哺识别</h3>
-            <p data-i18n="story.s4Body">把校对过的语料当作训练与评测依据，让听说翻译从“普通话基线”慢慢靠近越语舞台方言。</p>
+            <p data-i18n="story.s4Body">把校对过的语料当作训练与评测依据，让听说翻译从“普通话基线”慢慢靠近越语与吴语现场。</p>
           </article>
         </div>
 
         <div class="story-note">
           <p data-i18n="story.note">
-            当前识别仍是基线演示。故事的重点是方法：收集 → 标注 → 真人检验 → 再改进，而不是假装已经完美。
+            当前识别仍是基线演示。故事的重点是方法与动机：听见吴语、读懂对话、请真人检验，再慢慢改进——而不是假装已经完美。
           </p>
           <div class="home-cta">
             <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">开始听说翻译</button>
