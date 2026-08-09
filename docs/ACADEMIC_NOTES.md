@@ -38,6 +38,7 @@ Useful references for later expansion:
 - Original media and SRT remain on the researcher’s Desktop source folder.  
 - This repository is a **new academic web archive**. It does not modify any pre-existing GitHub archive.  
 - Large audio/video binaries are kept local (`make sync-audio`); the git repository stores structured text data and code.  
+- Larger privately acquired packs (e.g. Baidu Yueju collections) use the intake workflow in [`CORPUS_INTAKE.md`](CORPUS_INTAKE.md); raw packs stay local.  
 - When releasing datasets publicly, separate licensing for media rights vs. aligned JSON annotations.
 
 ## School submission package

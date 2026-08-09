@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-08-09T13:36:00.000Z",
+  "dropFolder": "/Users/alicechan/Desktop/linguilistic project/baidu-yueju",
+  "totalFiles": 0,
+  "totalBytes": 0,
+  "videoCount": 0,
+  "audioCount": 0,
+  "items": [],
+  "note": "Empty until Baidu packs are downloaded into the drop folder. Run make corpus-inventory."
+}

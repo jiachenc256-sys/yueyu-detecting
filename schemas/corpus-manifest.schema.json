@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yueju-archive.local/schemas/corpus-manifest.schema.json",
+  "title": "YuejuCorpusManifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "titleEn",
+    "sourceLocalPath",
+    "mediaType",
+    "speechTypes",
+    "rights",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "titleEn": { "type": "string", "minLength": 1 },
+    "sourceLocalPath": {
+      "type": "string",
+      "description": "Relative path under ~/Desktop/linguilistic project/baidu-yueju/"
+    },
+    "mediaType": {
+      "type": "string",
+      "enum": ["video", "audio", "mixed", "unknown"]
+    },
+    "durationHint": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "speechTypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["sanbai", "yunbai", "changci", "unknown"]
+      },
+      "minItems": 1
+    },
+    "school": {
+      "type": ["string", "null"],
+      "description": "流派 if known"
+    },
+    "roleTypes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "hasTranscript": { "type": "boolean" },
+    "transcriptPath": { "type": ["string", "null"] },
+    "rights": {
+      "type": "string",
+      "enum": ["private-research", "cleared-for-web", "unknown"]
+    },
+    "notes": { "type": "string" },
+    "priority": {
+      "type": "string",
+      "enum": ["starter", "later", "reference"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["queued", "extracting", "transcribing", "in-archive", "skipped"]
+    }
+  }
+}

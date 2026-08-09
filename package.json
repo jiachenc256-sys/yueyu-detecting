@@ -8,6 +8,7 @@
     "build": "tsc -p tsconfig.json",
     "build:transcript": "tsx scripts/build-transcript.ts",
     "seed:mt": "tsx scripts/seed-mt.ts",
+    "corpus:inventory": "tsx scripts/inventory-corpus.ts",
     "merge": "tsx scripts/merge-layers.ts",
     "validate": "tsx scripts/validate-piece.ts",
     "test": "tsx --test tests/**/*.test.ts",

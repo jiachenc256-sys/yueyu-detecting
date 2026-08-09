@@ -90,10 +90,15 @@ make publish-new
 - `新龙门客寨.srt` / `.txt`
 - research plan documents
 
-## School check
+## Larger Yueju corpus (Baidu packs)
+
+For privately acquired packs (e.g. 越剧视频 / 越剧-1451首):
 
 ```bash
-npm run check
+make corpus-setup       # creates Desktop drop folders
+# download packs into ~/Desktop/linguilistic project/baidu-yueju/
+make corpus-inventory   # lists media safely (no binaries in git)
+make corpus-status
 ```
 
-Expected: TypeScript build succeeds, tests pass, piece JSON validates against the schema.
+See [`docs/CORPUS_INTAKE.md`](docs/CORPUS_INTAKE.md). Keep full packs local; do not push them to GitHub.
