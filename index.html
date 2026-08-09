@@ -170,27 +170,13 @@
       <section class="panel" data-panel="tanci" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="tanci.title">弹词 · 图片文字识别</h2>
-          <p data-i18n="tanci.lead">上传弹词刻本图片，调用姊妹项目 Talcne 的 OCR 后端，校对后可导出 JSON。</p>
+          <p data-i18n="tanci.lead">上传弹词刻本图片，识别文字后显示简体 / 繁體 / English。</p>
         </header>
 
         <div class="tanci-layout">
           <p class="tanci-note" data-i18n="tanci.note">
-            本页只做图片识别（无麦克风）。需本机或已部署的 Talcne 后端（默认 http://127.0.0.1:8000）。语音请用「听说翻译」。
+            本页只做图片识别（无麦克风）。上传刻本图片后识别文字，并显示简体 / 繁體 / English。语音请用「听说翻译」。
           </p>
-
-          <label class="tanci-api">
-            <span data-i18n="tanci.apiLabel">Talcne 后端地址</span>
-            <input
-              id="tanci-api-base"
-              type="url"
-              class="tanci-api__input"
-              value="http://127.0.0.1:8000"
-              autocomplete="off"
-              spellcheck="false"
-              data-i18n-placeholder="tanci.apiPlaceholder"
-              placeholder="http://127.0.0.1:8000"
-            />
-          </label>
 
           <div class="tanci-controls">
             <label class="speak-btn speak-file">
@@ -219,15 +205,30 @@
             </aside>
             <div class="tanci-result">
               <h3 data-i18n="tanci.result">识别结果（可编辑）</h3>
-              <p class="tanci-result__hint" data-i18n="tanci.editHint">校对后可导出 JSON，再用本仓库 import 脚本写入档案。</p>
+              <p class="tanci-result__hint" data-i18n="tanci.editHint">改正后翻译会自动刷新；也可导出 JSON 写入档案。</p>
               <textarea
                 id="tanci-text"
                 class="tanci-text"
-                rows="14"
+                rows="12"
                 data-i18n-placeholder="tanci.placeholder"
                 placeholder="OCR 文字会出现在这里…"
               ></textarea>
             </div>
+          </div>
+
+          <div class="speak-outputs tanci-outputs" aria-label="Translations">
+            <article class="speak-output">
+              <h3 data-i18n="speak.outHans">简体中文</h3>
+              <p id="tanci-zh-hans">—</p>
+            </article>
+            <article class="speak-output">
+              <h3 data-i18n="speak.outHant">繁體中文</h3>
+              <p id="tanci-zh-hant">—</p>
+            </article>
+            <article class="speak-output">
+              <h3 data-i18n="speak.outEn">English</h3>
+              <p id="tanci-en">—</p>
+            </article>
           </div>
         </div>
       </section>
