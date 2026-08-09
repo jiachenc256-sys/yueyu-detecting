@@ -1,0 +1,218 @@
+{
+  "id": "wunv-baishou-huashu",
+  "title": "五女拜寿 · 花树同园不同根",
+  "titleEn": "Five Daughters · Same Garden, Different Roots",
+  "audio": "assets/audio/wunv-baishou-huashu.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 10,
+  "correctedCount": 10,
+  "coverage": {
+    "zh": 10,
+    "enCurated": 10,
+    "enMt": 0,
+    "enAny": 10,
+    "zhHant": 10
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 12.02,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 12.02,
+      "end": 24.04,
+      "layers": {
+        "zh": {
+          "text": "花树同园不同根",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Flowers share a garden, not the same root",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "花樹同園不同根",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 24.04,
+      "end": 36.06,
+      "layers": {
+        "zh": {
+          "text": "姐妹同门不同心",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Sisters share a house, not the same heart",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "姐妹同門不同心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 36.06,
+      "end": 48.08,
+      "layers": {
+        "zh": {
+          "text": "有人心高气又傲",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Some are proud and high of spirit",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "有人心高氣又傲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 48.08,
+      "end": 60.1,
+      "layers": {
+        "zh": {
+          "text": "有人温顺又孝顺",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Some are gentle and filial",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "有人溫順又孝順",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 60.1,
+      "end": 72.12,
+      "layers": {
+        "zh": {
+          "text": "堂上双亲盼团圆",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Parents in the hall long for reunion",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "堂上雙親盼團圓",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 72.12,
+      "end": 84.14,
+      "layers": {
+        "zh": {
+          "text": "拜寿筵前看真情",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "At the birthday feast, true feeling shows",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "拜壽筵前看真情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 84.14,
+      "end": 96.16,
+      "layers": {
+        "zh": {
+          "text": "莫道人情薄如纸",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Do not say human feeling is thin as paper",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "莫道人情薄如紙",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 96.16,
+      "end": 108.18,
+      "layers": {
+        "zh": {
+          "text": "患难之中见人心",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "In hardship, hearts are revealed",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "患難之中見人心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 108.18,
+      "end": 120.6,
+      "layers": {
+        "zh": {
+          "text": "[收尾]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

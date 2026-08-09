@@ -1,26 +1,25 @@
 :root {
-  /* Color — ink & paper palette */
-  --color-paper: #f7f3eb;
-  --color-paper-raised: #fffdf8;
-  --color-ink: #1a1612;
-  --color-ink-muted: #5c5348;
-  --color-ink-faint: #8a8175;
-  --color-border: #e4ddd0;
-  --color-border-strong: #cfc4b4;
+  /* Editorial stage — SpaceX sparsity + archive clarity (not purple / not cream kit) */
+  --color-paper: #07080c;
+  --color-paper-raised: #101218;
+  --color-ink: #f4efe6;
+  --color-ink-muted: #a7a094;
+  --color-ink-faint: #6f6a62;
+  --color-border: #22262f;
+  --color-border-strong: #3a404d;
 
-  --color-accent: #8b2e2e;
-  --color-accent-soft: #f3e8e8;
-  --color-accent-hover: #6f2424;
+  --color-accent: #e24a32;
+  --color-accent-soft: rgba(226, 74, 50, 0.14);
+  --color-accent-hover: #f05a40;
 
-  --color-status-planned: #6b5b4f;
-  --color-status-progress: #8b6914;
-  --color-status-progress-bg: #f5eed8;
-  --color-status-ready: #2d5a3d;
-  --color-status-ready-bg: #e8f2ec;
+  --color-status-planned: #8b919c;
+  --color-status-progress: #d4b06a;
+  --color-status-progress-bg: rgba(212, 176, 106, 0.12);
+  --color-status-ready: #6fbf8e;
+  --color-status-ready-bg: rgba(111, 191, 142, 0.12);
 
-  /* Typography */
   --font-serif: "Noto Serif SC", "Songti SC", "STSong", serif;
-  --font-sans: "IBM Plex Sans", "PingFang SC", "Helvetica Neue", sans-serif;
+  --font-sans: "Sora", "PingFang SC", "Helvetica Neue", sans-serif;
   --font-mono: "IBM Plex Mono", "SF Mono", monospace;
 
   --text-xs: 0.75rem;
@@ -29,13 +28,12 @@
   --text-lg: 1.125rem;
   --text-xl: 1.375rem;
   --text-2xl: 1.75rem;
-  --text-3xl: 2.25rem;
+  --text-3xl: 2.75rem;
 
-  --leading-tight: 1.25;
-  --leading-normal: 1.6;
-  --leading-relaxed: 1.8;
+  --leading-tight: 1.15;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.75;
 
-  /* Spacing scale (4px base) */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -47,14 +45,12 @@
   --space-12: 3rem;
   --space-16: 4rem;
 
-  /* Layout */
   --max-width: 72rem;
   --sidebar-width: 15rem;
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(26, 22, 18, 0.06);
-  --shadow-md: 0 4px 12px rgba(26, 22, 18, 0.08);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 24px 60px rgba(0, 0, 0, 0.45);
 }

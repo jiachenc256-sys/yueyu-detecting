@@ -1,0 +1,27 @@
+{
+  "id": "he-wenxiu",
+  "title": "何文秀",
+  "titleEn": "He Wenxiu",
+  "sourceLocalPath": "越剧-1451首/越剧经典剧目完整音频/越剧何文秀.mp3",
+  "mediaType": "audio",
+  "durationHint": null,
+  "speechTypes": [
+    "changci",
+    "sanbai"
+  ],
+  "school": null,
+  "roleTypes": [],
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/he-wenxiu-suanming.json",
+  "rights": "private-research",
+  "notes": "Full-play audio stays local. Published starter clip: 经典选段 · 算命 → pieces/he-wenxiu-suanming.html with curated zh/en cues (provisional timings).",
+  "priority": "starter",
+  "status": "in-progress",
+  "bytes": 128333544,
+  "publishedClip": {
+    "id": "he-wenxiu-suanming",
+    "sourceLocalPath": "越剧-1451首/越剧名段-575首/5.何文秀·算命[无字幕].mp3",
+    "audioAsset": "assets/audio/he-wenxiu-suanming.mp3",
+    "durationSec": 180.2
+  }
+}
