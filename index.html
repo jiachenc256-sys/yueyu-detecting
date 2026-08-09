@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>越剧档案 · Yueju Archive</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <h1 class="site-title">
+            越剧档案
+            <span class="site-title__sub">Yueju–Shaoxing Linguistic Archive</span>
+          </h1>
+        </div>
+        <nav class="site-nav" aria-label="Main">
+          <button class="site-nav__btn" data-panel-target="archive" aria-current="page">Archive</button>
+          <button class="site-nav__btn" data-panel-target="plan" aria-current="false">Plan</button>
+          <button class="site-nav__btn" data-panel-target="dataset" aria-current="false">Dataset</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+
+      <!-- ── Archive panel ── -->
+      <section class="panel" data-panel="archive" aria-hidden="false">
+        <header class="section-header">
+          <h2>Performance Archive</h2>
+          <p>Browse aligned audio, video, and transcripts. Playback and search coming in the next phase.</p>
+        </header>
+
+        <div class="archive-grid">
+          <article class="piece-card">
+            <span class="badge badge--progress">In progress</span>
+            <h3 class="piece-card__title">新龙门客寨</h3>
+            <p class="piece-card__meta">New Dragon Inn · Yue opera adaptation</p>
+            <p class="piece-card__note">
+              Raw ASR transcript and SRT available. Opening lines need manual correction before sync playback.
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">~2,548 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Format</span>
+                <span class="stat__value">SRT + TXT</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Media</span>
+                <span class="stat__value">MOV + M4A</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="add-piece-card" aria-hidden="true">
+            <span class="add-piece-card__icon">＋</span>
+            <span class="add-piece-card__label">Add performance</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Plan panel ── -->
+      <section class="panel" data-panel="plan" aria-hidden="true">
+        <header class="section-header">
+          <h2>Project Plan</h2>
+          <p>越剧–绍兴 ASR: not everyday Shaoxing speech, but stage dialect with 韵白, 散白, and 中州韵 hybrid.</p>
+        </header>
+
+        <div class="plan-layout">
+          <nav class="plan-nav" aria-label="Plan sections">
+            <button class="plan-nav__link" data-plan-target="scope" aria-current="true">Scope</button>
+            <button class="plan-nav__link" data-plan-target="resources" aria-current="false">Resources</button>
+            <button class="plan-nav__link" data-plan-target="model" aria-current="false">Model</button>
+            <button class="plan-nav__link" data-plan-target="phonology" aria-current="false">Phonology</button>
+            <button class="plan-nav__link" data-plan-target="roadmap" aria-current="false">Roadmap</button>
+          </nav>
+
+          <div class="plan-content">
+            <div class="plan-section" data-plan-section="scope" aria-hidden="false">
+              <h3>Task calibration</h3>
+              <div class="callout">
+                <p>This is <strong>越剧–绍兴 ASR</strong>, not everyday 绍兴话 ASR. Stage dialect differs significantly from daily speech.</p>
+              </div>
+              <p>Two output layers planned:</p>
+              <ul>
+                <li><strong>汉字戏词</strong> — most practical; Yue opera scripts are already in Chinese characters (including 吴语特字 like 嬿, 侬, 咑)</li>
+                <li><strong>wugniu 嵊州拉丁化 + 声调</strong> — high research value for Wu linguistics; smaller audience</li>
+              </ul>
+              <p>Phase 1 targets 汉字戏词. Phase 2 adds 嵊州拼音 layer.</p>
+
+              <h3 style="margin-top: var(--space-8)">Speech types</h3>
+              <ul>
+                <li><strong>散白</strong> — closer to everyday Shengzhou speech; relatively easier to recognize</li>
+                <li><strong>韵白</strong> — hybrid of 中州韵 + Wu tones; where generic ASR fails hardest</li>
+              </ul>
+            </div>
+
+            <div class="plan-section" data-plan-section="resources" aria-hidden="true">
+              <h3>Resource types &amp; pipeline</h3>
+              <table class="dataset-table">
+                <thead>
+                  <tr>
+                    <th>Source</th>
+                    <th>Examples</th>
+                    <th>Approach</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Official recordings</td>
+                    <td>CCTV, Zhejiang TV, Shaoxing Xiaobaihua DVDs</td>
+                    <td>Extract audio + OCR subtitles → Whisper alignment → human correction</td>
+                  </tr>
+                  <tr>
+                    <td>Scripts / subtitles</td>
+                    <td>戏考网, troupe publications</td>
+                    <td>OCR + aeneas / whisper-timestamped coarse align → manual fix</td>
+                  </tr>
+                  <tr>
+                    <td>Old records</td>
+                    <td>Yuan Xuefen 1940s, Fan Ruijuan 1950s</td>
+                    <td>Denoise + VAD; small test set only (test-old)</td>
+                  </tr>
+                  <tr>
+                    <td>Live / fan covers</td>
+                    <td>Bilibili uploads</td>
+                    <td>test-live split; contemporary pronunciation distribution</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="plan-section" data-plan-section="model" aria-hidden="true">
+              <h3>Model approach</h3>
+              <p>Don't train from scratch — <strong>Whisper-small (244M) + LoRA r=32</strong> is the fastest open-source path.</p>
+              <ul>
+                <li>Encoder: frozen or LoRA on q,v (r=8)</li>
+                <li>Decoder: tokenizer + ~200 吴语特字; LoRA r=32 on q,k,v,o</li>
+                <li>Output: 汉字戏词 with timestamps</li>
+                <li>Optional second pass: wugniu-嵊州拼音 via small LM</li>
+              </ul>
+              <p>200–500 hours of aligned data → usable small model. 1000 hours → medium or Data2vec2 + Qwen2 0.5B.</p>
+              <div class="callout">
+                <p>For broader coverage beyond Yue opera, mix 20% everyday Shengzhou/Shaoxing speech with 80% opera data.</p>
+              </div>
+            </div>
+
+            <div class="plan-section" data-plan-section="phonology" aria-hidden="true">
+              <h3>Phonology &amp; 韵白</h3>
+              <p>Yue opera is based on 嵊州话 (Taihu Wu, Lin-Shao sub-group), but 韵白 is a hybrid — not pure Shengzhou.</p>
+              <ul>
+                <li>吴语学堂 wugniu has Shengzhou data for 特字 ↔ pinyin mapping</li>
+                <li>《嵊县志·方言编》 + 钱乃荣《吴语声调实验录》 for tonal acoustics</li>
+                <li>Stage "Shengzhou" ≠ everyday Shengzhou — document scope clearly in README</li>
+              </ul>
+            </div>
+
+            <div class="plan-section" data-plan-section="roadmap" aria-hidden="true">
+              <h3>Roadmap</h3>
+              <div class="roadmap">
+                <div class="roadmap-item">
+                  <span class="roadmap-item__phase">Week 1–3</span>
+                  <div class="roadmap-item__content">
+                    <h4>Resource inventory</h4>
+                    <p>Extract audio + OCR subtitles from old recordings. Whisper-large coarse alignment. Target 50 hours cleaned.</p>
+                  </div>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-item__phase">Week 4–6</span>
+                  <div class="roadmap-item__content">
+                    <h4>Annotation</h4>
+                    <p>Wu-native annotators fix 特字 + segmentation. Build to 200–300 hours.</p>
+                  </div>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-item__phase">Week 7–10</span>
+                  <div class="roadmap-item__content">
+                    <h4>Training</h4>
+                    <p>Whisper-small + LoRA. Evaluate CER/WER by 流派 and 剧目.</p>
+                  </div>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-item__phase">Week 11+</span>
+                  <div class="roadmap-item__content">
+                    <h4>Open source</h4>
+                    <p>Release Yueju-SX dataset + checkpoint. CC-BY-NC-4.0 for model; CC-BY-4.0 for aligned JSON.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Dataset panel ── -->
+      <section class="panel" data-panel="dataset" aria-hidden="true">
+        <header class="section-header">
+          <h2>Dataset Structure</h2>
+          <p>Planned Yueju-SX open-source package. The dataset is the primary value — model weights follow.</p>
+        </header>
+
+        <pre class="dataset-tree"><span class="dir">Yueju-SX/</span>
+├── <span class="dir">data/</span>
+│   ├── <span class="dir">train/</span>          <span class="comment"># 80% aligned opera (split by 剧目+流派)</span>
+│   ├── <span class="dir">valid/</span>          <span class="comment"># 10%</span>
+│   ├── <span class="dir">test-clean/</span>     <span class="comment"># official recordings, known repertoire</span>
+│   ├── <span class="dir">test-live/</span>      <span class="comment"># Bilibili covers, distribution shift</span>
+│   └── <span class="dir">test-old/</span>       <span class="comment"># 1940–60s records, low SNR (metrics only)</span>
+├── <span class="dir">checkpoints/</span>
+│   └── whisper-small-sxwu-lora
+├── <span class="dir">eval/</span>
+│   └── CER/WER per 流派+剧目
+└── README  <span class="comment"># phonology notes + 特字表 + wugniu mapping</span></pre>
+
+        <table class="dataset-table">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>License</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Model weights</td>
+              <td>CC-BY-NC-4.0</td>
+              <td>Research &amp; troupe use; prevents commercial free-riding</td>
+            </tr>
+            <tr>
+              <td>Aligned JSON</td>
+              <td>CC-BY-4.0</td>
+              <td>Audio stays local; users source their own recordings</td>
+            </tr>
+            <tr>
+              <td>test-old metrics</td>
+              <td>Research only</td>
+              <td>Pre-1949 recordings — copyright with troupes/families</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
