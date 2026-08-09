@@ -1,8 +1,8 @@
-import { onLocaleChange, t } from "./i18n.js";
+import { onLocaleChange, t, tf } from "./i18n.js";
 
 /**
- * In-site Tanci panel: image-only OCR via sister project Talcne backend.
- * Protocol matches Talcne `POST /api/ocr` (FormData field `file`).
+ * In-site Tanci panel: image-only OCR via sister project Talcne backend,
+ * then 简 / 繁 / EN translation (same MyMemory path as Speak).
  */
 
 const STORAGE_KEY = "yueyu.talcneApiBase";
@@ -27,7 +27,12 @@ interface OcrResponse {
   detail?: string;
 }
 
-const apiInput = document.getElementById("tanci-api-base") as HTMLInputElement | null;
+declare global {
+  interface Window {
+    __YUEYU_TALCNE_API__?: string;
+  }
+}
+
 const fileInput = document.getElementById("tanci-file") as HTMLInputElement | null;
 const recognizeBtn = document.getElementById("tanci-recognize") as HTMLButtonElement | null;
 const exportBtn = document.getElementById("tanci-export") as HTMLButtonElement | null;
@@ -35,11 +40,15 @@ const clearBtn = document.getElementById("tanci-clear") as HTMLButtonElement | n
 const statusEl = document.getElementById("tanci-status");
 const textEl = document.getElementById("tanci-text") as HTMLTextAreaElement | null;
 const previewList = document.getElementById("tanci-preview-list");
+const zhHansEl = document.getElementById("tanci-zh-hans");
+const zhHantEl = document.getElementById("tanci-zh-hant");
+const enEl = document.getElementById("tanci-en");
 
 let selectedFiles: File[] = [];
 let previewUrls: string[] = [];
 let lastPages: OcrPage[] = [];
 let busy = false;
+let translateTimer: number | null = null;
 
 function setStatus(text: string): void {
   if (statusEl) statusEl.textContent = text;
@@ -49,27 +58,19 @@ function normalizeApiBase(raw: string): string {
   return raw.trim().replace(/\/+$/, "");
 }
 
+/** Hidden config: window.__YUEYU_TALCNE_API__ or localStorage, else localhost. */
 function getApiBase(): string {
-  const fromInput = apiInput?.value?.trim();
-  if (fromInput) return normalizeApiBase(fromInput);
   try {
+    const fromWindow = window.__YUEYU_TALCNE_API__;
+    if (typeof fromWindow === "string" && fromWindow.trim()) {
+      return normalizeApiBase(fromWindow);
+    }
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) return normalizeApiBase(saved);
   } catch {
     /* ignore */
   }
   return DEFAULT_API;
-}
-
-function persistApiBase(): void {
-  if (!apiInput) return;
-  const value = normalizeApiBase(apiInput.value || DEFAULT_API);
-  apiInput.value = value;
-  try {
-    localStorage.setItem(STORAGE_KEY, value);
-  } catch {
-    /* ignore */
-  }
 }
 
 function refreshActionState(): void {
@@ -117,6 +118,69 @@ function splitCorrectedLines(text: string): string[] {
     .filter((line) => line.length > 0 && !/^——\s*第\d+[张页]\s*——$/.test(line));
 }
 
+function clearTranslations(): void {
+  if (zhHansEl) zhHansEl.textContent = "—";
+  if (zhHantEl) zhHantEl.textContent = "—";
+  if (enEl) enEl.textContent = "—";
+}
+
+async function translateWithMyMemory(text: string, from: string, to: string): Promise<string> {
+  const url = new URL("https://api.mymemory.translated.net/get");
+  url.searchParams.set("q", text.slice(0, 450));
+  url.searchParams.set("langpair", `${from}|${to}`);
+  const res = await fetch(url.toString());
+  if (!res.ok) throw new Error(`Translation HTTP ${res.status}`);
+  const data = (await res.json()) as {
+    responseData?: { translatedText?: string };
+  };
+  const out = data.responseData?.translatedText?.trim();
+  if (!out) throw new Error("Empty translation");
+  if (/MYMEMORY WARNING/i.test(out)) throw new Error("Translation quota exceeded — try again later");
+  return out;
+}
+
+async function fillTranslations(source: string): Promise<void> {
+  const text = source.trim();
+  if (!text) {
+    clearTranslations();
+    return;
+  }
+
+  setStatus(t("speak.status.translating"));
+  if (zhHansEl) zhHansEl.textContent = "…";
+  if (zhHantEl) zhHantEl.textContent = "…";
+  if (enEl) enEl.textContent = "…";
+
+  try {
+    const zhHans = text;
+    let zhHant: string;
+    try {
+      zhHant = await translateWithMyMemory(text, "zh-CN", "zh-TW");
+    } catch {
+      zhHant = text;
+    }
+    const en = await translateWithMyMemory(text, "zh-CN", "en");
+
+    if (zhHansEl) zhHansEl.textContent = zhHans;
+    if (zhHantEl) zhHantEl.textContent = zhHant;
+    if (enEl) enEl.textContent = en;
+    setStatus(t("tanci.status.doneTranslate"));
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    setStatus(tf("speak.status.translateFail", { msg: message }));
+    if (zhHansEl) zhHansEl.textContent = text;
+    if (zhHantEl) zhHantEl.textContent = text;
+    if (enEl) enEl.textContent = "(English translation unavailable)";
+  }
+}
+
+function scheduleTranslate(text: string): void {
+  if (translateTimer !== null) window.clearTimeout(translateTimer);
+  translateTimer = window.setTimeout(() => {
+    void fillTranslations(text);
+  }, 1200);
+}
+
 async function callOcrApi(file: File): Promise<OcrResponse> {
   const formData = new FormData();
   formData.append("file", file);
@@ -139,7 +203,6 @@ async function callOcrApi(file: File): Promise<OcrResponse> {
 
 async function recognizeImages(): Promise<void> {
   if (!selectedFiles.length || busy) return;
-  persistApiBase();
   busy = true;
   refreshActionState();
   lastPages = [];
@@ -151,7 +214,11 @@ async function recognizeImages(): Promise<void> {
       const file = selectedFiles[i];
       if (!file) continue;
       setStatus(
-        multi ? t("tanci.status.progressMulti").replace("{n}", String(i + 1)).replace("{total}", String(selectedFiles.length)) : t("tanci.status.progress"),
+        multi
+          ? t("tanci.status.progressMulti")
+              .replace("{n}", String(i + 1))
+              .replace("{total}", String(selectedFiles.length))
+          : t("tanci.status.progress"),
       );
       const data = await callOcrApi(file);
       if (data.success === false) {
@@ -166,8 +233,10 @@ async function recognizeImages(): Promise<void> {
       });
       textParts.push(multi ? `—— 第${i + 1}张 ——\n${pageText}` : pageText);
     }
-    if (textEl) textEl.value = textParts.join("\n\n");
+    const joined = textParts.join("\n\n");
+    if (textEl) textEl.value = joined;
     setStatus(t("tanci.status.done"));
+    await fillTranslations(joined);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     setStatus(`${t("tanci.status.fail")}: ${message}`);
@@ -210,6 +279,11 @@ function buildYueyuExportPayload(): Record<string, unknown> {
     fullText,
     lines,
     pages: pagePayloads,
+    translations: {
+      zhHans: zhHansEl?.textContent?.trim() || fullText,
+      zhHant: zhHantEl?.textContent?.trim() || "",
+      en: enEl?.textContent?.trim() || "",
+    },
     note: "Corrected OCR text from Yueyu Detecting in-site Tanci panel (Talcne backend).",
   };
 }
@@ -236,45 +310,26 @@ function exportYueyuJson(): void {
 function clearAll(): void {
   selectedFiles = [];
   lastPages = [];
+  if (translateTimer !== null) {
+    window.clearTimeout(translateTimer);
+    translateTimer = null;
+  }
   if (fileInput) fileInput.value = "";
   if (textEl) textEl.value = "";
+  clearTranslations();
   revokePreviews();
   renderPreviews();
   setStatus(t("tanci.ready"));
   refreshActionState();
 }
 
-function applyLocaleStrings(): void {
-  if (statusEl && !busy) {
-    const current = statusEl.textContent ?? "";
-    const known = [
-      t("tanci.ready"),
-      t("tanci.status.done"),
-      t("tanci.status.exported"),
-    ];
-    if (!current || known.some((k) => current === k) || current.startsWith("已") || current.startsWith("Ready") || current.startsWith("已就緒")) {
-      /* keep operational messages; refresh idle ready only when empty-ish */
-    }
-  }
-  renderPreviews();
-  refreshActionState();
-}
-
 function initTanciPanel(): void {
-  if (!apiInput || !fileInput || !recognizeBtn || !textEl) return;
-
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    apiInput.value = saved ? normalizeApiBase(saved) : DEFAULT_API;
-  } catch {
-    apiInput.value = DEFAULT_API;
-  }
-
-  apiInput.addEventListener("change", persistApiBase);
-  apiInput.addEventListener("blur", persistApiBase);
+  if (!fileInput || !recognizeBtn || !textEl) return;
 
   fileInput.addEventListener("change", () => {
-    selectedFiles = Array.from(fileInput.files ?? []).filter((f) => f.type.startsWith("image/") || /\.(jpe?g|png|webp|gif)$/i.test(f.name));
+    selectedFiles = Array.from(fileInput.files ?? []).filter(
+      (f) => f.type.startsWith("image/") || /\.(jpe?g|png|webp|gif)$/i.test(f.name),
+    );
     renderPreviews();
     refreshActionState();
     setStatus(
@@ -290,10 +345,14 @@ function initTanciPanel(): void {
 
   exportBtn?.addEventListener("click", exportYueyuJson);
   clearBtn?.addEventListener("click", clearAll);
-  textEl.addEventListener("input", refreshActionState);
+  textEl.addEventListener("input", () => {
+    refreshActionState();
+    scheduleTranslate(textEl.value);
+  });
 
   onLocaleChange(() => {
-    applyLocaleStrings();
+    renderPreviews();
+    refreshActionState();
   });
 
   renderPreviews();
