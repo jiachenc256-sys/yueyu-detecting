@@ -57,11 +57,36 @@ function initSideNavigation(linkAttr: string, sectionAttr: string): void {
   });
 }
 
+function initArchiveFilters(): void {
+  const filters = document.querySelectorAll<HTMLButtonElement>("[data-archive-filter]");
+  const cards = document.querySelectorAll<HTMLElement>("[data-archive-category]");
+  if (!filters.length || !cards.length) return;
+
+  function apply(category: string): void {
+    filters.forEach((btn) => {
+      btn.setAttribute("aria-pressed", btn.dataset.archiveFilter === category ? "true" : "false");
+    });
+    cards.forEach((card) => {
+      const cat = card.dataset.archiveCategory ?? "yueju";
+      const show = category === "all" || cat === category;
+      card.hidden = !show;
+      card.setAttribute("aria-hidden", show ? "false" : "true");
+    });
+  }
+
+  filters.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      apply(btn.dataset.archiveFilter ?? "all");
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initI18n();
   initNavigation();
   initSideNavigation("data-plan-target", "data-plan-section");
   initSideNavigation("data-about-target", "data-about-section");
+  initArchiveFilters();
 
   const hash = window.location.hash.replace(/^#/, "");
   if (hash) {

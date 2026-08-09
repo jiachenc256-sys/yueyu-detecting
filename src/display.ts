@@ -1,4 +1,5 @@
 import type { Cue, DisplayMode } from "./types.js";
+import type { SiteLocale } from "./i18n.js";
 
 export function cueMatchesQuery(cue: Cue, query: string): boolean {
   const q = query.trim().toLowerCase();
@@ -7,7 +8,28 @@ export function cueMatchesQuery(cue: Cue, query: string): boolean {
   const zhHant = cue.layers.zhHant?.text.toLowerCase() ?? "";
   const en = cue.layers.en?.text.toLowerCase() ?? "";
   const raw = cue.rawAsr?.toLowerCase() ?? "";
-  return zh.includes(q) || zhHant.includes(q) || en.includes(q) || raw.includes(q);
+  const speaker = cue.speaker?.toLowerCase() ?? "";
+  const speakerEn = cue.speakerEn?.toLowerCase() ?? "";
+  return (
+    zh.includes(q) ||
+    zhHant.includes(q) ||
+    en.includes(q) ||
+    raw.includes(q) ||
+    speaker.includes(q) ||
+    speakerEn.includes(q)
+  );
+}
+
+/** Speaker label for the active UI locale / display mode. */
+export function speakerDisplayLabel(
+  cue: Cue,
+  mode: DisplayMode,
+  uiLocale?: SiteLocale,
+): string | null {
+  if (!cue.speaker && !cue.speakerEn) return null;
+  const preferEn = mode === "en" || uiLocale === "en";
+  if (preferEn) return cue.speakerEn ?? cue.speaker ?? null;
+  return cue.speaker ?? cue.speakerEn ?? null;
 }
 
 export function primaryDisplayText(cue: Cue, mode: DisplayMode): string {

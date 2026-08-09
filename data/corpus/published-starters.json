@@ -4,16 +4,16 @@
     "title": "梁祝 · 十八相送",
     "titleEn": "Butterfly Lovers · Eighteen Farewells",
     "meta": "Butterfly Lovers · Eighteen Farewells · ~2.5 min",
-    "note": "First piece from your Baidu corpus (钱惠丽 / 单仰萍). Curated zh/en lines with provisional timings.",
-    "lines": 16
+    "note": "First piece from your Baidu corpus (钱惠丽 / 单仰萍). Denser provisional zh/en cues with speaker labels.",
+    "lines": 29
   },
   {
     "id": "hongloumeng-tianxia",
     "title": "红楼梦 · 天上掉下个林妹妹",
     "titleEn": "Dream of the Red Chamber · Lin Daiyu Arrives",
     "meta": "Dream of the Red Chamber · Lin Daiyu Arrives · ~2 min",
-    "note": "经典选段 · 天上掉下个林妹妹. Curated zh/en with provisional timings from local Baidu corpus.",
-    "lines": 13
+    "note": "经典选段 · 天上掉下个林妹妹. Denser provisional timings with speaker labels (贾宝玉 / 林黛玉).",
+    "lines": 18
   },
   {
     "id": "xixiangji-kaohong",
@@ -28,8 +28,8 @@
     "title": "祥林嫂 · 听他一番心酸话",
     "titleEn": "Xianglin Sao · Hearing His Bitter Words",
     "meta": "Xianglin Sao · Hearing His Bitter Words · ~3 min",
-    "note": "袁雪芬 · 听他一番心酸话. Curated zh/en with provisional timings from local Baidu corpus.",
-    "lines": 12
+    "note": "袁雪芬 · 听他一番心酸话. Denser provisional timings with speaker labels (祥林嫂).",
+    "lines": 20
   },
   {
     "id": "wunv-baishou-huashu",
