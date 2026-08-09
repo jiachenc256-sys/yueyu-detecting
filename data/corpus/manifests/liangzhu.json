@@ -12,11 +12,17 @@
   ],
   "school": null,
   "roleTypes": [],
-  "hasTranscript": false,
-  "transcriptPath": null,
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/liangzhu-shibaxiangsong.json",
   "rights": "private-research",
-  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "notes": "Full-play audio stays local (~180MB). Published starter clip: 十八相送 (钱惠丽/单仰萍) → pieces/liangzhu-shibaxiangsong.html with curated zh/en cues (provisional timings).",
   "priority": "starter",
-  "status": "queued",
-  "bytes": 179584103
+  "status": "in-progress",
+  "bytes": 179584103,
+  "publishedClip": {
+    "id": "liangzhu-shibaxiangsong",
+    "sourceLocalPath": "越剧-1451首/越剧、梁祝 - 十八相送钱惠丽单仰萍.mp3",
+    "audioAsset": "assets/audio/liangzhu-shibaxiangsong.mp3",
+    "durationSec": 150.4
+  }
 }

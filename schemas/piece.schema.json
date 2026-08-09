@@ -58,6 +58,7 @@
       "required": ["zh", "enCurated", "enMt", "enAny"],
       "properties": {
         "zh": { "type": "integer", "minimum": 0 },
+        "zhHant": { "type": "integer", "minimum": 0 },
         "enCurated": { "type": "integer", "minimum": 0 },
         "enMt": { "type": "integer", "minimum": 0 },
         "enAny": { "type": "integer", "minimum": 0 }
@@ -99,6 +100,7 @@
           "required": ["zh"],
           "properties": {
             "zh": { "$ref": "#/$defs/zhLayer" },
+            "zhHant": { "$ref": "#/$defs/zhLayer" },
             "en": { "$ref": "#/$defs/enLayer" }
           }
         }

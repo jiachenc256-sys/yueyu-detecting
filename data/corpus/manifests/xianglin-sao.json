@@ -12,11 +12,17 @@
   ],
   "school": null,
   "roleTypes": [],
-  "hasTranscript": false,
-  "transcriptPath": null,
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/xianglin-sao-xinsuanhua.json",
   "rights": "private-research",
-  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "notes": "Full-play audio stays local. Published starter clip: 袁雪芬 · 听他一番心酸话 → pieces/xianglin-sao-xinsuanhua.html with curated zh/en cues (provisional timings).",
   "priority": "starter",
-  "status": "queued",
-  "bytes": 102417435
+  "status": "in-progress",
+  "bytes": 102417435,
+  "publishedClip": {
+    "id": "xianglin-sao-xinsuanhua",
+    "sourceLocalPath": "越剧-1451首/越剧 - 祥林嫂 - 袁雪芬 听他一番心酸话.mp3",
+    "audioAsset": "assets/audio/xianglin-sao-xinsuanhua.mp3",
+    "durationSec": 156.5
+  }
 }

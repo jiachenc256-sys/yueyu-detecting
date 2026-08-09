@@ -12,11 +12,17 @@
   ],
   "school": null,
   "roleTypes": [],
-  "hasTranscript": false,
-  "transcriptPath": null,
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/hongloumeng-tianxia.json",
   "rights": "private-research",
-  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "notes": "Full-play audio stays local. Published starter clip: 经典选段 · 天上掉下个林妹妹 → pieces/hongloumeng-tianxia.html with curated zh/en cues (provisional timings).",
   "priority": "starter",
-  "status": "queued",
-  "bytes": 153637104
+  "status": "in-progress",
+  "bytes": 153637104,
+  "publishedClip": {
+    "id": "hongloumeng-tianxia",
+    "sourceLocalPath": "越剧-1451首/1061-越剧 - 天上掉下个林妹妹.mp3",
+    "audioAsset": "assets/audio/hongloumeng-tianxia.mp3",
+    "durationSec": 111.2
+  }
 }

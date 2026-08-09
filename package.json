@@ -1,13 +1,14 @@
 {
-  "name": "yueju-linguistic-archive",
+  "name": "yueyu-detecting",
   "version": "0.1.0",
   "private": true,
-  "description": "Academic Yueju–Shaoxing linguistic archive: timed dialogue with curated multilingual layers.",
+  "description": "Yueyu Detecting (越语侦听): speak/upload recognition + linguistic dialogue archive.",
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build:transcript": "tsx scripts/build-transcript.ts",
     "seed:mt": "tsx scripts/seed-mt.ts",
+    "seed:zh-hant": "tsx scripts/seed-zh-hant.ts",
     "corpus:inventory": "tsx scripts/inventory-corpus.ts",
     "merge": "tsx scripts/merge-layers.ts",
     "validate": "tsx scripts/validate-piece.ts",
@@ -23,6 +24,7 @@
     "@types/node": "^22.15.30",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
+    "opencc-js": "^1.4.1",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }

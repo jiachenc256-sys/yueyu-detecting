@@ -11,11 +11,17 @@
   ],
   "school": null,
   "roleTypes": [],
-  "hasTranscript": false,
-  "transcriptPath": null,
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/he-wenxiu-suanming.json",
   "rights": "private-research",
-  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "notes": "Full-play audio stays local. Published starter clip: 经典选段 · 算命 → pieces/he-wenxiu-suanming.html with curated zh/en cues (provisional timings).",
   "priority": "starter",
-  "status": "queued",
-  "bytes": 128333544
+  "status": "in-progress",
+  "bytes": 128333544,
+  "publishedClip": {
+    "id": "he-wenxiu-suanming",
+    "sourceLocalPath": "越剧-1451首/越剧名段-575首/5.何文秀·算命[无字幕].mp3",
+    "audioAsset": "assets/audio/he-wenxiu-suanming.mp3",
+    "durationSec": 180.2
+  }
 }

@@ -11,11 +11,17 @@
   ],
   "school": null,
   "roleTypes": [],
-  "hasTranscript": false,
-  "transcriptPath": null,
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/zhuiyu-guandeng.json",
   "rights": "private-research",
-  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "notes": "Full-play audio stays local. Published starter clip: 赵志刚 / 何赛飞 · 观灯 → pieces/zhuiyu-guandeng.html with curated zh/en cues (provisional timings).",
   "priority": "starter",
-  "status": "queued",
-  "bytes": 84932204
+  "status": "in-progress",
+  "bytes": 84932204,
+  "publishedClip": {
+    "id": "zhuiyu-guandeng",
+    "sourceLocalPath": "越剧-1451首/越剧名段-575首/02.追鱼.观灯.赵志刚.何赛飞.07年春晚.mp3",
+    "audioAsset": "assets/audio/zhuiyu-guandeng.mp3",
+    "durationSec": 101.4
+  }
 }

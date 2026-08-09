@@ -12,11 +12,17 @@
   ],
   "school": null,
   "roleTypes": [],
-  "hasTranscript": false,
-  "transcriptPath": null,
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/biyu-zan-xinfang.json",
   "rights": "private-research",
-  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "notes": "Full-play audio stays local. Published starter clip: 樊婷婷 · 新房之中冷清清 → pieces/biyu-zan-xinfang.html with curated zh/en cues (provisional timings).",
   "priority": "starter",
-  "status": "queued",
-  "bytes": 117566604
+  "status": "in-progress",
+  "bytes": 117566604,
+  "publishedClip": {
+    "id": "biyu-zan-xinfang",
+    "sourceLocalPath": "越剧-1451首/1165-越剧 - 碧玉簪 - 新房之中冷清清 樊婷婷.mp3",
+    "audioAsset": "assets/audio/biyu-zan-xinfang.mp3",
+    "durationSec": 202.2
+  }
 }

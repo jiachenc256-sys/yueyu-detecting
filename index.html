@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>越剧档案 · Speak & Translate</title>
+  <title>越语侦听 · Yueyu Detecting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/tokens.css" />
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="styles/speak.css" />
 </head>
@@ -12,77 +16,145 @@
     <header class="site-header">
       <div class="site-header__inner">
         <div>
-          <h1 class="site-title">
-            越剧档案
-            <span class="site-title__sub">Speak · Archive · Translate</span>
-          </h1>
+          <a class="site-title site-title--link" href="#home" data-panel-target="home">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
         </div>
-        <nav class="site-nav" aria-label="Main">
-          <button class="site-nav__btn" data-panel-target="speak" aria-current="page">Speak</button>
-          <button class="site-nav__btn" data-panel-target="archive">Archive</button>
-          <button class="site-nav__btn" data-panel-target="plan">Plan</button>
-          <button class="site-nav__btn" data-panel-target="dataset">Dataset</button>
-        </nav>
+        <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label" data-i18n="nav.main">
+            <button class="site-nav__btn" data-panel-target="home" aria-current="page" data-i18n="nav.home">首页</button>
+            <button class="site-nav__btn" data-panel-target="speak" data-i18n="nav.speak">听说翻译</button>
+            <button class="site-nav__btn" data-panel-target="archive" data-i18n="nav.archive">档案</button>
+            <button class="site-nav__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
+            <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">计划</button>
+            <button class="site-nav__btn" data-panel-target="about" data-i18n="nav.about">关于</button>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main class="main-content">
 
-      <!-- ── Speak / Translate panel (Phase A) ── -->
-      <section class="panel" data-panel="speak" aria-hidden="false">
+      <!-- ── Home: intro + equal Speak / Archive entry ── -->
+      <section class="panel" data-panel="home" aria-hidden="false">
+        <div class="home-stage">
+          <div class="home-hero">
+            <p class="home-hero__brand">
+              <span data-i18n="meta.title">越语侦听</span>
+              <span data-i18n="brand.sub">越语语音识别与档案</span>
+            </p>
+            <h2 class="home-hero__headline" data-i18n="home.headline">听懂越语对话，用中文与英文读懂它。</h2>
+            <p class="home-hero__support" data-i18n="home.support">
+              先看三步用法，再进入听说翻译或对话档案。
+            </p>
+
+            <ol class="home-howto" aria-label="How to use">
+              <li class="home-howto__item">
+                <span class="home-howto__num">01</span>
+                <div>
+                  <h3 data-i18n="home.how1Title">选一条路</h3>
+                  <p data-i18n="home.how1Body">听说翻译：说话或上传；档案：听精选戏曲并读剧情。</p>
+                </div>
+              </li>
+              <li class="home-howto__item">
+                <span class="home-howto__num">02</span>
+                <div>
+                  <h3 data-i18n="home.how2Title">看三种文字</h3>
+                  <p data-i18n="home.how2Body">识别后自动出现简体、繁體与 English；档案页也可切换。</p>
+                </div>
+              </li>
+              <li class="home-howto__item">
+                <span class="home-howto__num">03</span>
+                <div>
+                  <h3 data-i18n="home.how3Title">点时间即跳转</h3>
+                  <p data-i18n="home.how3Body">在档案里点击时间戳，音频会跳到那一行并播放。</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="home-cta">
+              <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">
+                开始听说翻译
+              </button>
+              <button type="button" class="home-cta__btn" data-panel-target="archive" data-i18n="home.ctaArchive">
+                打开档案
+              </button>
+              <button type="button" class="home-cta__btn home-cta__btn--ghost" data-panel-target="story" data-i18n="home.ctaStory">
+                我们如何做成
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Speak / Translate ── -->
+      <section class="panel" data-panel="speak" aria-hidden="true">
         <header class="section-header">
-          <h2>Speak → Recognize → Translate</h2>
-          <p>
-            Say a line into the microphone. The site recognizes the speech, then shows
-            <strong>简体中文</strong>, <strong>繁體中文</strong>, and <strong>English</strong> after a short delay.
-          </p>
+          <h2 data-i18n="speak.title">听说 → 识别 → 翻译</h2>
+          <p data-i18n="speak.lead">使用麦克风或上传音频。稍候即可看到简体中文、繁體中文与 English。</p>
         </header>
 
         <div class="speak-layout">
-          <p class="speak-note">
-            Phase A baseline uses the browser’s speech engine (best in Chrome/Edge).
-            It is a working school demo; recognition of 越剧 stage dialect will improve as your archive corpus is used for later training.
+          <p class="speak-note" data-i18n="speak.note">
+            实时麦克风使用浏览器语音引擎（推荐 Chrome / Edge）。上传文件使用设备端 Whisper（首次会下载小模型）。越语 / 舞台方言准确度会随档案语料积累而提升。
           </p>
 
-          <div class="speak-controls">
-            <button type="button" id="speak-record" class="speak-btn speak-btn--primary" aria-pressed="false">
-              Start listening
-            </button>
-            <button type="button" id="speak-clear" class="speak-btn">Clear</button>
-            <label class="speak-lang">
-              Mic language
-              <select id="speak-input-lang" aria-label="Recognition language">
-                <option value="zh-CN" selected>中文 (普通话引擎)</option>
-                <option value="zh-TW">中文 (台灣引擎)</option>
-                <option value="en-US">English</option>
-              </select>
-            </label>
+          <div class="speak-modes" role="group" aria-label="Input mode">
+            <div class="speak-mode">
+              <h3 class="speak-mode__title" data-i18n="speak.mic">麦克风</h3>
+              <div class="speak-controls">
+                <button type="button" id="speak-record" class="speak-btn speak-btn--primary" aria-pressed="false" data-i18n="speak.start">
+                  开始听写
+                </button>
+                <label class="speak-lang">
+                  <span data-i18n="speak.micLang">麦克风语言</span>
+                  <select id="speak-input-lang" aria-label="Recognition language">
+                    <option value="zh-CN" selected>中文 (普通话引擎)</option>
+                    <option value="zh-TW">中文 (台灣引擎)</option>
+                    <option value="en-US">English</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="speak-mode">
+              <h3 class="speak-mode__title" data-i18n="speak.upload">上传音频</h3>
+              <div class="speak-controls">
+                <label class="speak-btn speak-file">
+                  <span data-i18n="speak.chooseFile">选择音频文件</span>
+                  <input id="speak-file" type="file" accept="audio/*,.mp3,.wav,.m4a,.ogg" hidden />
+                </label>
+                <button type="button" id="speak-clear" class="speak-btn" data-i18n="speak.clear">清除</button>
+              </div>
+              <p class="speak-panel__hint" data-i18n="speak.fileHint">支持 MP3 / WAV / M4A · 短片段演示效果更好</p>
+            </div>
           </div>
-          <p id="speak-status" class="speak-status" aria-live="polite">Ready.</p>
+
+          <p id="speak-status" class="speak-status" aria-live="polite" data-i18n="speak.ready">已就绪。可用麦克风或上传音频——识别后会很快出现翻译。</p>
+          <audio id="speak-audio-preview" class="speak-audio" controls hidden></audio>
 
           <div class="speak-panel">
-            <h3>Recognized speech</h3>
-            <p class="speak-panel__hint">Editable — fix ASR errors, then translation refreshes automatically.</p>
-            <textarea id="speak-recognized" placeholder="Your recognized dialogue will appear here…"></textarea>
+            <h3 data-i18n="speak.recognized">识别结果</h3>
+            <p class="speak-panel__hint" data-i18n="speak.editHint">可编辑——改正后翻译会自动刷新。</p>
+            <textarea id="speak-recognized" data-i18n-placeholder="speak.placeholder" placeholder="识别到的对话会出现在这里…"></textarea>
           </div>
 
           <div class="speak-outputs" aria-label="Translations">
             <article class="speak-output">
-              <h3>
-                <button type="button" class="speak-btn" data-translate-target="zh-Hans">简体中文</button>
-              </h3>
+              <h3 data-i18n="speak.outHans">简体中文</h3>
               <p id="speak-zh-hans">—</p>
             </article>
             <article class="speak-output">
-              <h3>
-                <button type="button" class="speak-btn" data-translate-target="zh-Hant">繁體中文</button>
-              </h3>
+              <h3 data-i18n="speak.outHant">繁體中文</h3>
               <p id="speak-zh-hant">—</p>
             </article>
             <article class="speak-output">
-              <h3>
-                <button type="button" class="speak-btn" data-translate-target="en">English</button>
-              </h3>
+              <h3 data-i18n="speak.outEn">English</h3>
               <p id="speak-en">—</p>
             </article>
           </div>
@@ -92,17 +164,219 @@
       <!-- ── Archive panel ── -->
       <section class="panel" data-panel="archive" aria-hidden="true">
         <header class="section-header">
-          <h2>Dialogue Archive</h2>
-          <p>Collected Yueju dialogues with Chinese + English layers — the corpus that supports better recognition later.</p>
+          <h2 data-i18n="archive.title">对话档案</h2>
+          <p data-i18n="archive.lead">本地语料精选档案——每条作品含简体 / 繁體 / English。点击时间戳即可跳转播放。</p>
         </header>
 
         <div class="archive-grid">
+          <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">梁祝 · 十八相送</h3>
+            <p class="piece-card__meta">Butterfly Lovers · Eighteen Farewells · ~2.5 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">中国经典爱情悲剧：同窗分别，一方暗生情愫。选段：十八相送。</span>
+              <span data-visible-lang="zh-Hant">中國經典愛情悲劇：同窗分別，一方暗生情愫。選段：十八相送。</span>
+              <span data-visible-lang="en">China’s classic tragic love story—two students part on the road while one secretly loves the other. Clip: the farewell walk.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">16 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">16 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/hongloumeng-tianxia.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">红楼梦 · 天上掉下个林妹妹</h3>
+            <p class="piece-card__meta">Dream of the Red Chamber · Lin Daiyu Arrives · ~2 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">林黛玉进贾府，与贾宝玉初见倾心。选段：天上掉下个林妹妹。</span>
+              <span data-visible-lang="zh-Hant">林黛玉進賈府，與賈寶玉初見傾心。選段：天上掉下個林妹妹。</span>
+              <span data-visible-lang="en">Orphan Lin Daiyu enters the Jia mansion and meets Jia Baoyu. Clip: their first encounter.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">13 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">13 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/xixiangji-kaohong.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">西厢记 · 拷红</h3>
+            <p class="piece-card__meta">Western Chamber · Interrogating Hongniang · ~3 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">张生与莺莺相爱，红娘被夫人拷问。选段：拷红。</span>
+              <span data-visible-lang="zh-Hant">張生與鶯鶯相愛，紅娘被夫人拷問。選段：拷紅。</span>
+              <span data-visible-lang="en">A scholar and a young lady fall in love; her witty maid is questioned by the mother. Clip: the interrogation scene.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">13 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">13 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/xianglin-sao-xinsuanhua.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">祥林嫂 · 听他一番心酸话</h3>
+            <p class="piece-card__meta">Xianglin Sao · Hearing His Bitter Words · ~3 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">底层妇女在礼教压迫下的悲剧。选段：听他一番心酸话。</span>
+              <span data-visible-lang="zh-Hant">底層婦女在禮教壓迫下的悲劇。選段：聽他一番心酸話。</span>
+              <span data-visible-lang="en">A tragic village woman crushed by old social rules after widowhood and loss. Clip: a heartbreaking aria of grief.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">12 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">12 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/wunv-baishou-huashu.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">五女拜寿 · 花树同园不同根</h3>
+            <p class="piece-card__meta">Five Daughters · Same Garden, Different Roots · ~2 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">五女在家境变化中显出真假孝心。选段：花树同园不同根。</span>
+              <span data-visible-lang="zh-Hant">五女在家境變化中顯出真假孝心。選段：花樹同園不同根。</span>
+              <span data-visible-lang="en">Five daughters react differently when parents are rich—then poor. Clip: a song about true vs false filial love.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">10 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">10 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/zhuiyu-guandeng.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">追鱼 · 观灯</h3>
+            <p class="piece-card__meta">The Chase of the Fish · Watching Lanterns · ~2 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">鲤鱼精化作人间妻子的喜剧。选段：观灯。</span>
+              <span data-visible-lang="zh-Hant">鯉魚精化作人間妻子的喜劇。選段：觀燈。</span>
+              <span data-visible-lang="en">A fish spirit becomes a scholar’s “wife,” sparking comic chaos. Clip: a lively Lantern Festival outing.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">10 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">10 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/biyu-zan-xinfang.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">碧玉簪 · 新房之中冷清清</h3>
+            <p class="piece-card__meta">The Jade Hairpin · Cold Bridal Chamber · ~3 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">碧玉簪引发误会，新娘独守冷清新房。选段：新房之中冷清清。</span>
+              <span data-visible-lang="zh-Hant">碧玉簪引發誤會，新娘獨守冷清新房。選段：新房之中冷清清。</span>
+              <span data-visible-lang="en">A bride is wrongly suspected because of a jade hairpin and left alone. Clip: lonely night in the bridal room.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">12 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">12 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/he-wenxiu-suanming.html">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">何文秀 · 算命</h3>
+            <p class="piece-card__meta">He Wenxiu · Fortune-Telling · ~3 min</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">蒙冤丈夫化身算命先生寻妻。选段：算命。</span>
+              <span data-visible-lang="zh-Hant">蒙冤丈夫化身算命先生尋妻。選段：算命。</span>
+              <span data-visible-lang="en">A wronged husband searches for his lost wife while disguised as a fortune-teller. Clip: the fortune-telling scene.</span>
+            </p>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Transcript</span>
+                <span class="stat__value">12 lines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">12 cues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Source</span>
+                <span class="stat__value">Local pack</span>
+              </div>
+            </div>
+          </a>
+
           <a class="piece-card piece-card--link" href="pieces/longmen-kezhai.html">
-            <span class="badge badge--ready">Multilingual</span>
+            <span class="badge badge--ready" data-i18n="archive.badgeMulti">多语</span>
             <h3 class="piece-card__title">新龙门客寨</h3>
             <p class="piece-card__meta">New Dragon Inn · Yue opera adaptation</p>
             <p class="piece-card__note">
-              Synced viewer with zh / en / bilingual display. Opening scene has curated English; other lines use labeled offline MT until reviewed.
+              <span data-visible-lang="zh-Hans">边关客栈里的忠奸与江湖恩怨。完整多语对照文本。</span>
+              <span data-visible-lang="zh-Hant">邊關客棧裡的忠奸與江湖恩怨。完整多語對照文本。</span>
+              <span data-visible-lang="en">Wuxia at a frontier inn: loyal survivors, martial heroes, and imperial hunters collide. Full timed multilingual transcript.</span>
             </p>
             <div class="piece-card__stats">
               <div class="stat">
@@ -122,7 +396,48 @@
 
           <div class="add-piece-card" aria-hidden="true">
             <span class="add-piece-card__icon">＋</span>
-            <span class="add-piece-card__label">Add performance</span>
+            <span class="add-piece-card__label" data-i18n="archive.add">添加剧目</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Story / process ── -->
+      <section class="panel" data-panel="story" aria-hidden="true">
+        <header class="section-header">
+          <h2 data-i18n="story.title">故事 · 我们如何做成</h2>
+          <p data-i18n="story.lead">从收集录音到真人试听——把越语对话变成可听、可读、可检验的档案。</p>
+        </header>
+
+        <div class="story-rail">
+          <article class="story-step">
+            <span class="story-step__num">01</span>
+            <h3 data-i18n="story.s1Title">收集与整理</h3>
+            <p data-i18n="story.s1Body">从本地戏曲录音与广播选段出发，建立清单与精选片段，而不是把整包音频丢上公网。</p>
+          </article>
+          <article class="story-step">
+            <span class="story-step__num">02</span>
+            <h3 data-i18n="story.s2Title">转写与翻译</h3>
+            <p data-i18n="story.s2Body">为选段加上时间轴、简体 / 繁體 / English，并写清剧情简介，让不懂戏的人也能跟得上。</p>
+          </article>
+          <article class="story-step">
+            <span class="story-step__num">03</span>
+            <h3 data-i18n="story.s3Title">真人试听检验</h3>
+            <p data-i18n="story.s3Body">请熟悉方言或戏曲的长辈与本地说话人试听、试说，对照识别结果是否“说得通、听得懂”。</p>
+          </article>
+          <article class="story-step">
+            <span class="story-step__num">04</span>
+            <h3 data-i18n="story.s4Title">用档案反哺识别</h3>
+            <p data-i18n="story.s4Body">把校对过的语料当作训练与评测依据，让听说翻译从“普通话基线”慢慢靠近越语舞台方言。</p>
+          </article>
+        </div>
+
+        <div class="story-note">
+          <p data-i18n="story.note">
+            当前识别仍是基线演示。故事的重点是方法：收集 → 标注 → 真人检验 → 再改进，而不是假装已经完美。
+          </p>
+          <div class="home-cta">
+            <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">开始听说翻译</button>
+            <button type="button" class="home-cta__btn" data-panel-target="archive" data-i18n="home.ctaArchive">打开档案</button>
           </div>
         </div>
       </section>
@@ -130,31 +445,34 @@
       <!-- ── Plan panel ── -->
       <section class="panel" data-panel="plan" aria-hidden="true">
         <header class="section-header">
-          <h2>Project Plan</h2>
-          <p>越剧–绍兴 ASR: not everyday Shaoxing speech, but stage dialect with 韵白, 散白, and 中州韵 hybrid.</p>
+          <h2 data-i18n="plan.title">项目计划</h2>
+          <p data-i18n="plan.lead">越语侦听：面向越语变体的语言识别——以越剧舞台方言（韵白 / 散白）为切入，不限于单一剧目。</p>
         </header>
 
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="Plan sections">
-            <button class="plan-nav__link" data-plan-target="scope" aria-current="true">Scope</button>
-            <button class="plan-nav__link" data-plan-target="resources" aria-current="false">Resources</button>
-            <button class="plan-nav__link" data-plan-target="model" aria-current="false">Model</button>
-            <button class="plan-nav__link" data-plan-target="phonology" aria-current="false">Phonology</button>
-            <button class="plan-nav__link" data-plan-target="roadmap" aria-current="false">Roadmap</button>
+            <button class="plan-nav__link" data-plan-target="scope" aria-current="true" data-i18n="plan.nav.scope">范围</button>
+            <button class="plan-nav__link" data-plan-target="resources" aria-current="false" data-i18n="plan.nav.resources">资源</button>
+            <button class="plan-nav__link" data-plan-target="model" aria-current="false" data-i18n="plan.nav.model">模型</button>
+            <button class="plan-nav__link" data-plan-target="phonology" aria-current="false" data-i18n="plan.nav.phonology">音韵</button>
           </nav>
 
           <div class="plan-content">
             <div class="plan-section" data-plan-section="scope" aria-hidden="false">
               <h3>Task calibration</h3>
               <div class="callout">
-                <p>This is <strong>越剧–绍兴 ASR</strong>, not everyday 绍兴话 ASR. Stage dialect differs significantly from daily speech.</p>
+                <p>
+                  Scope is <strong>越语 (Yueyu) linguistic ASR</strong> — broader than 越剧 alone.
+                  Yue opera stage dialect (韵白 / 散白 / 中州韵 hybrid) is the first high-value domain;
+                  everyday Shengzhou / Shaoxing speech can be mixed in later.
+                </p>
               </div>
               <p>Two output layers planned:</p>
               <ul>
-                <li><strong>汉字戏词</strong> — most practical; Yue opera scripts are already in Chinese characters (including 吴语特字 like 嬿, 侬, 咑)</li>
+                <li><strong>汉字戏词 / 汉字转写</strong> — most practical for school demos and archive reading</li>
                 <li><strong>wugniu 嵊州拉丁化 + 声调</strong> — high research value for Wu linguistics; smaller audience</li>
               </ul>
-              <p>Phase 1 targets 汉字戏词. Phase 2 adds 嵊州拼音 layer.</p>
+              <p>Phase 1 targets 汉字. Phase 2 adds 嵊州拼音 layer.</p>
 
               <h3 style="margin-top: var(--space-8)">Speech types</h3>
               <ul>
@@ -185,9 +503,9 @@
                     <td>OCR + aeneas / whisper-timestamped coarse align → manual fix</td>
                   </tr>
                   <tr>
-                    <td>Old records</td>
-                    <td>Yuan Xuefen 1940s, Fan Ruijuan 1950s</td>
-                    <td>Denoise + VAD; small test set only (test-old)</td>
+                    <td>Private corpus packs</td>
+                    <td>Local Baidu 越剧-1451首 (~1,200+ tracks)</td>
+                    <td>Inventory locally; publish curated clips + text only</td>
                   </tr>
                   <tr>
                     <td>Live / fan covers</td>
@@ -204,12 +522,12 @@
               <ul>
                 <li>Encoder: frozen or LoRA on q,v (r=8)</li>
                 <li>Decoder: tokenizer + ~200 吴语特字; LoRA r=32 on q,k,v,o</li>
-                <li>Output: 汉字戏词 with timestamps</li>
+                <li>Output: 汉字 with timestamps</li>
                 <li>Optional second pass: wugniu-嵊州拼音 via small LM</li>
               </ul>
               <p>200–500 hours of aligned data → usable small model. 1000 hours → medium or Data2vec2 + Qwen2 0.5B.</p>
               <div class="callout">
-                <p>For broader coverage beyond Yue opera, mix 20% everyday Shengzhou/Shaoxing speech with 80% opera data.</p>
+                <p>For broader 越语 coverage beyond Yue opera, mix everyday Shengzhou/Shaoxing speech with stage data.</p>
               </div>
             </div>
 
@@ -222,90 +540,150 @@
                 <li>Stage "Shengzhou" ≠ everyday Shengzhou — document scope clearly in README</li>
               </ul>
             </div>
-
-            <div class="plan-section" data-plan-section="roadmap" aria-hidden="true">
-              <h3>Roadmap</h3>
-              <div class="roadmap">
-                <div class="roadmap-item">
-                  <span class="roadmap-item__phase">Week 1–3</span>
-                  <div class="roadmap-item__content">
-                    <h4>Resource inventory</h4>
-                    <p>Extract audio + OCR subtitles from old recordings. Whisper-large coarse alignment. Target 50 hours cleaned.</p>
-                  </div>
-                </div>
-                <div class="roadmap-item">
-                  <span class="roadmap-item__phase">Week 4–6</span>
-                  <div class="roadmap-item__content">
-                    <h4>Annotation</h4>
-                    <p>Wu-native annotators fix 特字 + segmentation. Build to 200–300 hours.</p>
-                  </div>
-                </div>
-                <div class="roadmap-item">
-                  <span class="roadmap-item__phase">Week 7–10</span>
-                  <div class="roadmap-item__content">
-                    <h4>Training</h4>
-                    <p>Whisper-small + LoRA. Evaluate CER/WER by 流派 and 剧目.</p>
-                  </div>
-                </div>
-                <div class="roadmap-item">
-                  <span class="roadmap-item__phase">Week 11+</span>
-                  <div class="roadmap-item__content">
-                    <h4>Open source</h4>
-                    <p>Release Yueju-SX dataset + checkpoint. CC-BY-NC-4.0 for model; CC-BY-4.0 for aligned JSON.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- ── Dataset panel ── -->
-      <section class="panel" data-panel="dataset" aria-hidden="true">
+      <!-- ── About panel ── -->
+      <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
-          <h2>Dataset Structure</h2>
-          <p>Planned Yueju-SX open-source package. The dataset is the primary value — model weights follow.</p>
+          <h2 data-i18n="about.title">关于</h2>
+          <p data-i18n="about.lead">开发者、网站介绍、隐私与版权。</p>
         </header>
 
-        <pre class="dataset-tree"><span class="dir">Yueju-SX/</span>
-├── <span class="dir">data/</span>
-│   ├── <span class="dir">train/</span>          <span class="comment"># 80% aligned opera (split by 剧目+流派)</span>
-│   ├── <span class="dir">valid/</span>          <span class="comment"># 10%</span>
-│   ├── <span class="dir">test-clean/</span>     <span class="comment"># official recordings, known repertoire</span>
-│   ├── <span class="dir">test-live/</span>      <span class="comment"># Bilibili covers, distribution shift</span>
-│   └── <span class="dir">test-old/</span>       <span class="comment"># 1940–60s records, low SNR (metrics only)</span>
-├── <span class="dir">checkpoints/</span>
-│   └── whisper-small-sxwu-lora
-├── <span class="dir">eval/</span>
-│   └── CER/WER per 流派+剧目
-└── README  <span class="comment"># phonology notes + 特字表 + wugniu mapping</span></pre>
+        <div class="plan-layout">
+          <nav class="plan-nav" aria-label="About sections">
+            <button class="plan-nav__link" data-about-target="developer" aria-current="true" data-i18n="about.nav.developer">开发者</button>
+            <button class="plan-nav__link" data-about-target="intro" aria-current="false" data-i18n="about.nav.intro">网站介绍</button>
+            <button class="plan-nav__link" data-about-target="privacy" aria-current="false" data-i18n="about.nav.privacy">隐私</button>
+            <button class="plan-nav__link" data-about-target="copyright" aria-current="false" data-i18n="about.nav.copyright">版权</button>
+          </nav>
 
-        <table class="dataset-table">
-          <thead>
-            <tr>
-              <th>Component</th>
-              <th>License</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Model weights</td>
-              <td>CC-BY-NC-4.0</td>
-              <td>Research &amp; troupe use; prevents commercial free-riding</td>
-            </tr>
-            <tr>
-              <td>Aligned JSON</td>
-              <td>CC-BY-4.0</td>
-              <td>Audio stays local; users source their own recordings</td>
-            </tr>
-            <tr>
-              <td>test-old metrics</td>
-              <td>Research only</td>
-              <td>Pre-1949 recordings — copyright with troupes/families</td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="plan-content">
+            <div class="plan-section" data-about-section="developer" aria-hidden="false">
+              <h3 data-i18n="about.dev.title">1. 开发者</h3>
+              <div class="callout">
+                <p><strong>Alice Chen (Jiachen Chen)</strong></p>
+              </div>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。</p>
+                <ul>
+                  <li>重点：听说翻译 + 精选对话档案</li>
+                  <li>技术：TypeScript 静态站、浏览器麦克风识别、上传音频的设备端 Whisper</li>
+                  <li>目标：让越语舞台对话更容易被学习者与研究者读懂</li>
+                </ul>
+              </div>
+              <div data-visible-lang="en">
+                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design.</p>
+                <ul>
+                  <li>Focus: speak → recognize → translate, plus a curated dialogue archive</li>
+                  <li>Stack: TypeScript static site, browser mic ASR, on-device Whisper for uploads</li>
+                  <li>Goal: make Yueyu stage dialogue readable for learners and researchers</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="plan-section" data-about-section="intro" aria-hidden="true">
+              <h3 data-i18n="about.intro.title">2. 网站介绍</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p><strong>越语侦听</strong> 是产品化的演示与档案网站，两大支柱同等重要：</p>
+                <ul>
+                  <li><strong>听说翻译</strong> — 麦克风或上传音频，识别后阅读简体、繁體与英文</li>
+                  <li><strong>档案</strong> — 浏览带剧情简介与时间轴的越语 / 越剧对话选段</li>
+                </ul>
+                <h3 style="margin-top: var(--space-8)">使用方式</h3>
+                <ol>
+                  <li>打开「听说翻译」：允许麦克风（推荐 Chrome / Edge），或选择音频文件</li>
+                  <li>说完稍等几秒，翻译会自动出现；也可编辑识别文本</li>
+                  <li>打开「档案」：选择作品，阅读剧情简介，点击时间戳跳转播放</li>
+                  <li>用右上角 <strong>简体 / 繁體 / EN</strong> 切换整个网站界面语言</li>
+                </ol>
+                <h3 style="margin-top: var(--space-8)">使用条件</h3>
+                <ul>
+                  <li>用于<strong>教育、研究与个人学习</strong></li>
+                  <li>建议桌面版 Chrome / Edge 与稳定网络（首次 Whisper 上传可能下载小模型）</li>
+                  <li>识别为<strong>基线演示</strong>；越语 / 舞台方言准确度会随语料积累提升</li>
+                  <li>大型私有音源包留在开发者本地；网站仅展示精选片段与文本</li>
+                  <li>请勿用本站转售或整包传播你无权分发的录音</li>
+                </ul>
+              </div>
+              <div data-visible-lang="en">
+                <p><strong>Yueyu Detecting</strong> is a product-style archive and demo tool with two equal pillars:</p>
+                <ul>
+                  <li><strong>Speak</strong> — mic or upload audio; then read Simplified Chinese, Traditional Chinese, and English</li>
+                  <li><strong>Archive</strong> — timed Yueyu / Yue opera clips with plot intros and multilingual transcripts</li>
+                </ul>
+                <h3 style="margin-top: var(--space-8)">How to use</h3>
+                <ol>
+                  <li>Open <strong>Speak</strong>: allow the microphone (Chrome/Edge), or choose an audio file</li>
+                  <li>Wait a few seconds after speech — translations appear; you can edit the recognized text</li>
+                  <li>Open <strong>Archive</strong>: pick a piece, read the story intro, click any timestamp to jump and play</li>
+                  <li>Use the top-right <strong>简体 / 繁體 / EN</strong> switcher to change the whole site language</li>
+                </ol>
+                <h3 style="margin-top: var(--space-8)">Conditions of use</h3>
+                <ul>
+                  <li>For <strong>education, research, and personal learning</strong></li>
+                  <li>Best on desktop Chrome or Edge with a stable network</li>
+                  <li>Recognition is a <strong>baseline demo</strong>; dialect accuracy improves as the corpus grows</li>
+                  <li>Large private source packs stay local; the site shows curated clips and text only</li>
+                  <li>Do not redistribute purchased recordings or claim rights you do not hold</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="plan-section" data-about-section="privacy" aria-hidden="true">
+              <h3 data-i18n="about.privacy.title">3. 隐私</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p>我们希望演示轻量，并尊重用户隐私。</p>
+                <ul>
+                  <li><strong>麦克风：</strong>仅在你点击开始听写时于浏览器内使用；本站不自建服务器保存你的实时录音。</li>
+                  <li><strong>上传文件：</strong>尽可能在浏览器内做设备端识别。请勿上传无权处理或含敏感信息的录音。</li>
+                  <li><strong>翻译：</strong>识别文本可能发送至第三方翻译接口以生成繁體 / English。请勿在识别框粘贴私密个人信息。</li>
+                  <li><strong>无账号系统：</strong>无需登录，也不会有意建立用户画像。</li>
+                  <li><strong>本地访问：</strong>在自己电脑打开（<code>127.0.0.1</code>）时，除字体、模型/CDN 与你触发的翻译请求外，流量主要留在本机。</li>
+                </ul>
+              </div>
+              <div data-visible-lang="en">
+                <p>We aim to keep the demo lightweight and respectful of privacy.</p>
+                <ul>
+                  <li><strong>Microphone:</strong> used in your browser only when you start listening. We do not run a custom server that stores live mic audio.</li>
+                  <li><strong>Uploads:</strong> processed in-browser for on-device recognition when possible. Do not upload recordings you are not allowed to process.</li>
+                  <li><strong>Translation:</strong> recognized text may be sent to a third-party API for Traditional Chinese / English. Avoid pasting private personal data.</li>
+                  <li><strong>No accounts:</strong> no login and no intentional user profiling.</li>
+                  <li><strong>Local hosting:</strong> on your machine (<code>127.0.0.1</code>), traffic stays local except fonts, model/CDN assets, and translation requests you trigger.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="plan-section" data-about-section="copyright" aria-hidden="true">
+              <h3 data-i18n="about.copyright.title">4. 版权与权利</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <div class="callout">
+                  <p><strong>越语侦听</strong> 的网站代码、界面设计、精选转写、剧情介绍与编辑整理，除另有说明外，属于 <strong>Alice Chen (Jiachen Chen)</strong> 的项目成果。</p>
+                </div>
+                <ul>
+                  <li><strong>网站与软件：</strong>界面、逻辑、数据结构与多语整理层受保护。可用于学习研究并注明出处；未经许可请勿整站复制、去署名或冒充自有产品。</li>
+                  <li><strong>戏曲录音与唱词：</strong>权利归表演者、剧团、出版方或相关权利人。本站短选段用于学习研究演示，<strong>不构成</strong>整包传播授权。</li>
+                  <li><strong>第三方工具：</strong>浏览器语音引擎、Whisper、字体与翻译接口遵循各自许可与条款。</li>
+                  <li><strong>名称：</strong>「越语侦听」「Yueyu Detecting」标识本项目，请勿暗示未经同意的官方背书。</li>
+                </ul>
+                <p>授权、引用或下架请求，请通过项目仓库维护渠道联系开发者 <strong>Alice Chen (Jiachen Chen)</strong>。</p>
+              </div>
+              <div data-visible-lang="en">
+                <div class="callout">
+                  <p>Website code, interface design, curated transcripts, plot introductions, and editorial arrangement of <strong>Yueyu Detecting</strong> are the work of <strong>Alice Chen (Jiachen Chen)</strong>, unless otherwise noted.</p>
+                </div>
+                <ul>
+                  <li><strong>Site &amp; software:</strong> protected project work — cite for school/research; do not copy wholesale or remove credit without permission.</li>
+                  <li><strong>Opera recordings &amp; scripts:</strong> rights remain with performers, troupes, publishers, or rights holders. Short clips are for educational demo only — <strong>not</strong> a license to redistribute full packs.</li>
+                  <li><strong>Third-party tools:</strong> speech engines, Whisper, fonts, and translation APIs keep their own terms.</li>
+                  <li><strong>Name:</strong> “Yueyu Detecting” identifies this project; do not imply official endorsement without consent.</li>
+                </ul>
+                <p>For permissions or takedown notices, contact <strong>Alice Chen (Jiachen Chen)</strong> via the project repository maintainer channel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
     </main>

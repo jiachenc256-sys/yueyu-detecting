@@ -1,4 +1,4 @@
-/** Shared academic data types for Yueju archive pieces. */
+/** Shared linguistic data types for Yueyu Detecting archive pieces. */
 
 export type ZhStatus = "raw" | "corrected" | "reviewed";
 export type EnStatus = "curated" | "mt" | "draft";
@@ -15,7 +15,11 @@ export interface EnLayer {
 }
 
 export interface CueLayers {
+  /** Simplified Chinese (简体中文) */
   zh: ZhLayer;
+  /** Traditional Chinese (繁體中文) */
+  zhHant?: ZhLayer;
+  /** English */
   en?: EnLayer;
 }
 
@@ -29,6 +33,7 @@ export interface Cue {
 
 export interface Coverage {
   zh: number;
+  zhHant?: number;
   enCurated: number;
   enMt: number;
   enAny: number;
@@ -83,4 +88,5 @@ export interface LegacyPiece {
   cues: LegacyCue[];
 }
 
-export type DisplayMode = "zh" | "en" | "bilingual";
+/** Viewer language modes: 简体 / 繁體 / English / all three. */
+export type DisplayMode = "zh-Hans" | "zh-Hant" | "en" | "trilingual";

@@ -1,40 +1,56 @@
+import { initI18n } from "./i18n.js";
+
 function initNavigation(): void {
-  const navButtons = document.querySelectorAll<HTMLButtonElement>("[data-panel-target]");
+  const triggers = document.querySelectorAll<HTMLElement>("[data-panel-target]");
+  const navButtons = document.querySelectorAll<HTMLElement>(".site-nav [data-panel-target]");
   const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
 
-  navButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const target = btn.dataset.panelTarget;
+  function showPanel(target: string | undefined, trigger?: HTMLElement): void {
+    if (!target) return;
 
-      navButtons.forEach((b) => {
-        if (b === btn) b.setAttribute("aria-current", "page");
-        else b.removeAttribute("aria-current");
-      });
+    navButtons.forEach((b) => {
+      if (b.dataset.panelTarget === target) b.setAttribute("aria-current", "page");
+      else b.removeAttribute("aria-current");
+    });
 
-      panels.forEach((panel) => {
-        panel.setAttribute("aria-hidden", panel.dataset.panel === target ? "false" : "true");
-      });
+    panels.forEach((panel) => {
+      panel.setAttribute("aria-hidden", panel.dataset.panel === target ? "false" : "true");
+    });
+
+    if (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`) {
+      history.replaceState(null, "", `#${target}`);
+    }
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  triggers.forEach((el) => {
+    el.addEventListener("click", (event) => {
+      const target = el.dataset.panelTarget;
+      if (!target) return;
+      if (el instanceof HTMLAnchorElement) event.preventDefault();
+      showPanel(target, el);
     });
   });
 }
 
-function initPlanNavigation(): void {
-  const planLinks = document.querySelectorAll<HTMLButtonElement>("[data-plan-target]");
-  const planSections = document.querySelectorAll<HTMLElement>("[data-plan-section]");
+function initSideNavigation(linkAttr: string, sectionAttr: string): void {
+  const links = document.querySelectorAll<HTMLButtonElement>(`[${linkAttr}]`);
+  const sections = document.querySelectorAll<HTMLElement>(`[${sectionAttr}]`);
 
-  planLinks.forEach((link) => {
+  links.forEach((link) => {
     link.addEventListener("click", () => {
-      const target = link.dataset.planTarget;
+      const target = link.getAttribute(linkAttr);
 
-      planLinks.forEach((l) => {
+      links.forEach((l) => {
         if (l === link) l.setAttribute("aria-current", "true");
         else l.removeAttribute("aria-current");
       });
 
-      planSections.forEach((section) => {
+      sections.forEach((section) => {
         section.setAttribute(
           "aria-hidden",
-          section.dataset.planSection === target ? "false" : "true",
+          section.getAttribute(sectionAttr) === target ? "false" : "true",
         );
       });
     });
@@ -42,13 +58,13 @@ function initPlanNavigation(): void {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initI18n();
   initNavigation();
-  initPlanNavigation();
+  initSideNavigation("data-plan-target", "data-plan-section");
+  initSideNavigation("data-about-target", "data-about-section");
 
-  // Deep-link: index.html#speak | #archive | #plan | #dataset
   const hash = window.location.hash.replace(/^#/, "");
   if (hash) {
-    const btn = document.querySelector<HTMLButtonElement>(`[data-panel-target="${hash}"]`);
-    btn?.click();
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="${hash}"]`)?.click();
   }
 });

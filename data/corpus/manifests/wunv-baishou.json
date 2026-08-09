@@ -11,11 +11,17 @@
   ],
   "school": null,
   "roleTypes": [],
-  "hasTranscript": false,
-  "transcriptPath": null,
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/wunv-baishou-huashu.json",
   "rights": "private-research",
-  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "notes": "Full-play audio stays local. Published starter clip: 选段 · 花树同园不同根 → pieces/wunv-baishou-huashu.html with curated zh/en cues (provisional timings).",
   "priority": "starter",
-  "status": "queued",
-  "bytes": 128592104
+  "status": "in-progress",
+  "bytes": 128592104,
+  "publishedClip": {
+    "id": "wunv-baishou-huashu",
+    "sourceLocalPath": "越剧-1451首/1090-越剧 - 五女拜寿 - 花树同园不同根.mp3",
+    "audioAsset": "assets/audio/wunv-baishou-huashu.mp3",
+    "durationSec": 120.6
+  }
 }

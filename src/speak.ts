@@ -1,7 +1,10 @@
+import { onLocaleChange, t, tf } from "./i18n.js";
+
 /**
  * Phase A: Speak → recognize → translate (简体 / 繁體 / English).
- * Browser Web Speech API + MyMemory translation (no API key).
- * Baseline ASR — Yueju stage dialect improves later with archive fine-tuning.
+ * Mic: browser Web Speech API.
+ * Upload: on-device Whisper via @xenova/transformers (CDN, first-run model download).
+ * Translation: MyMemory (no API key).
  */
 
 type TargetLang = "zh-Hans" | "zh-Hant" | "en";
@@ -30,8 +33,18 @@ interface BrowserSpeechRecognitionEvent {
 
 type RecognitionCtor = new () => BrowserSpeechRecognition;
 
+type AsrPipeline = (
+  input: string | Blob | Float32Array,
+  options?: Record<string, unknown>,
+) => Promise<{ text?: string } | Array<{ text?: string }>>;
+
+const TRANSFORMERS_CDN =
+  "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
+
 const recordBtn = document.getElementById("speak-record") as HTMLButtonElement | null;
 const clearBtn = document.getElementById("speak-clear") as HTMLButtonElement | null;
+const fileInput = document.getElementById("speak-file") as HTMLInputElement | null;
+const audioPreview = document.getElementById("speak-audio-preview") as HTMLAudioElement | null;
 const statusEl = document.getElementById("speak-status");
 const recognizedEl = document.getElementById("speak-recognized") as HTMLTextAreaElement | null;
 const zhHansEl = document.getElementById("speak-zh-hans");
@@ -43,6 +56,9 @@ let recognition: BrowserSpeechRecognition | null = null;
 let listening = false;
 let finalTranscript = "";
 let translateTimer: number | null = null;
+let whisperPipeline: AsrPipeline | null = null;
+let whisperLoading: Promise<AsrPipeline> | null = null;
+let previewObjectUrl: string | null = null;
 
 function setStatus(text: string): void {
   if (statusEl) statusEl.textContent = text;
@@ -87,7 +103,7 @@ async function fillTranslations(source: string): Promise<void> {
     return;
   }
 
-  setStatus("Translating… (a few seconds)");
+  setStatus(t("speak.status.translating"));
   if (zhHansEl) zhHansEl.textContent = "…";
   if (zhHantEl) zhHantEl.textContent = "…";
   if (enEl) enEl.textContent = "…";
@@ -119,12 +135,10 @@ async function fillTranslations(source: string): Promise<void> {
     if (zhHansEl) zhHansEl.textContent = zhHans;
     if (zhHantEl) zhHantEl.textContent = zhHant;
     if (enEl) enEl.textContent = en;
-    setStatus(
-      "Done. Baseline recognition (browser ASR). Yueju dialect accuracy will improve using your archive corpus.",
-    );
+    setStatus(t("speak.status.done"));
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    setStatus(`Translation failed: ${message}`);
+    setStatus(tf("speak.status.translateFail", { msg: message }));
     if (zhHansEl) zhHansEl.textContent = text;
     if (zhHantEl) zhHantEl.textContent = text;
     if (enEl) enEl.textContent = "(English translation unavailable)";
@@ -142,6 +156,104 @@ function syncRecognizedBox(): void {
   if (recognizedEl) recognizedEl.value = finalTranscript.trim();
 }
 
+function applyRecognizedText(text: string, translateSoon = true): void {
+  finalTranscript = text.trim();
+  syncRecognizedBox();
+  if (translateSoon && finalTranscript) scheduleTranslate(finalTranscript);
+}
+
+async function ensureWhisper(): Promise<AsrPipeline> {
+  if (whisperPipeline) return whisperPipeline;
+  if (whisperLoading) return whisperLoading;
+
+  whisperLoading = (async () => {
+    setStatus(t("speak.status.whisperLoad"));
+    const mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN)) as {
+      pipeline: (
+        task: string,
+        model: string,
+        options?: { progress_callback?: (data: { status?: string; progress?: number }) => void },
+      ) => Promise<AsrPipeline>;
+      env: { allowLocalModels: boolean; useBrowserCache: boolean };
+    };
+
+    mod.env.allowLocalModels = false;
+    mod.env.useBrowserCache = true;
+
+    const asr = await mod.pipeline("automatic-speech-recognition", "Xenova/whisper-tiny", {
+      progress_callback: (data) => {
+        if (data.status === "progress" && typeof data.progress === "number") {
+          setStatus(tf("speak.status.whisperProgress", { pct: Math.round(data.progress) }));
+        }
+      },
+    });
+
+    whisperPipeline = asr;
+    setStatus(t("speak.status.whisperReady"));
+    return asr;
+  })();
+
+  try {
+    return await whisperLoading;
+  } catch (error) {
+    whisperLoading = null;
+    throw error;
+  }
+}
+
+function whisperLanguageHint(): string | undefined {
+  const lang = langSelect?.value || "zh-CN";
+  if (lang.startsWith("en")) return "english";
+  if (lang.startsWith("zh")) return "chinese";
+  return undefined;
+}
+
+async function recognizeUploadedFile(file: File): Promise<void> {
+  if (listening) recognition?.abort();
+
+  if (previewObjectUrl) {
+    URL.revokeObjectURL(previewObjectUrl);
+    previewObjectUrl = null;
+  }
+  previewObjectUrl = URL.createObjectURL(file);
+  if (audioPreview) {
+    audioPreview.src = previewObjectUrl;
+    audioPreview.hidden = false;
+  }
+
+  setStatus(tf("speak.status.recognizing", { name: file.name }));
+  if (recognizedEl) recognizedEl.value = "";
+  if (zhHansEl) zhHansEl.textContent = "…";
+  if (zhHantEl) zhHantEl.textContent = "…";
+  if (enEl) enEl.textContent = "…";
+
+  try {
+    const asr = await ensureWhisper();
+    const language = whisperLanguageHint();
+    const result = await asr(previewObjectUrl, {
+      chunk_length_s: 30,
+      stride_length_s: 5,
+      ...(language ? { language, task: "transcribe" } : {}),
+    });
+
+    const text = Array.isArray(result)
+      ? result.map((r) => r.text ?? "").join(" ").trim()
+      : (result.text ?? "").trim();
+
+    if (!text) {
+      applyRecognizedText("", false);
+      setStatus(t("speak.status.noSpeech"));
+      return;
+    }
+
+    applyRecognizedText(text, true);
+    setStatus(t("speak.status.recogDone"));
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    setStatus(tf("speak.status.uploadFail", { msg: message }));
+  }
+}
+
 function ensureRecognition(): BrowserSpeechRecognition {
   if (recognition) return recognition;
   const Ctor = getRecognitionCtor();
@@ -157,8 +269,8 @@ function ensureRecognition(): BrowserSpeechRecognition {
   rec.onstart = () => {
     listening = true;
     recordBtn?.setAttribute("aria-pressed", "true");
-    if (recordBtn) recordBtn.textContent = "Stop listening";
-    setStatus("Listening… speak now. Stop when finished; translation follows in a few seconds.");
+    if (recordBtn) recordBtn.textContent = t("speak.stop");
+    setStatus(t("speak.status.listening"));
   };
 
   rec.onresult = (event) => {
@@ -180,19 +292,19 @@ function ensureRecognition(): BrowserSpeechRecognition {
 
   rec.onerror = (event) => {
     if (event.error === "not-allowed") {
-      setStatus("Microphone permission denied. Allow mic access and try again.");
+      setStatus(t("speak.status.micDenied"));
     } else if (event.error !== "aborted") {
-      setStatus(`Recognition error: ${event.error}`);
+      setStatus(tf("speak.status.recogError", { msg: event.error }));
     }
   };
 
   rec.onend = () => {
     listening = false;
     recordBtn?.setAttribute("aria-pressed", "false");
-    if (recordBtn) recordBtn.textContent = "Start listening";
+    if (recordBtn) recordBtn.textContent = t("speak.start");
     syncRecognizedBox();
     if (finalTranscript.trim()) scheduleTranslate(finalTranscript);
-    else setStatus("Stopped. No speech captured — try again closer to the mic.");
+    else setStatus(t("speak.status.noCapture"));
   };
 
   recognition = rec;
@@ -206,7 +318,7 @@ function startListening(): void {
   try {
     rec.start();
   } catch {
-    setStatus("Could not start recognition. Wait a moment and try again.");
+    setStatus(t("speak.status.startFail"));
   }
 }
 
@@ -221,25 +333,40 @@ function clearAll(): void {
   if (zhHansEl) zhHansEl.textContent = "—";
   if (zhHantEl) zhHantEl.textContent = "—";
   if (enEl) enEl.textContent = "—";
-  setStatus("Cleared. Ready when you are.");
+  if (fileInput) fileInput.value = "";
+  if (previewObjectUrl) {
+    URL.revokeObjectURL(previewObjectUrl);
+    previewObjectUrl = null;
+  }
+  if (audioPreview) {
+    audioPreview.removeAttribute("src");
+    audioPreview.hidden = true;
+  }
+  setStatus(t("speak.status.cleared"));
 }
 
 function initSpeak(): void {
-  if (!recordBtn || !recognizedEl) return;
+  if (!recognizedEl) return;
 
   if (!getRecognitionCtor()) {
-    setStatus("Speech recognition needs Chrome or Edge on desktop. Safari/Firefox support is limited.");
-    recordBtn.disabled = true;
+    setStatus(t("speak.status.noMic"));
+    if (recordBtn) recordBtn.disabled = true;
   } else {
-    setStatus("Ready. Click Start listening, speak, then Stop — translation appears shortly after.");
+    setStatus(t("speak.status.ready"));
   }
 
-  recordBtn.addEventListener("click", () => {
+  recordBtn?.addEventListener("click", () => {
     if (listening) stopListening();
     else startListening();
   });
 
   clearBtn?.addEventListener("click", clearAll);
+
+  fileInput?.addEventListener("change", () => {
+    const file = fileInput.files?.[0];
+    if (!file) return;
+    void recognizeUploadedFile(file);
+  });
 
   recognizedEl.addEventListener("input", () => {
     finalTranscript = recognizedEl.value;
@@ -264,4 +391,17 @@ function initSpeak(): void {
   });
 }
 
-document.addEventListener("DOMContentLoaded", initSpeak);
+function syncSpeakChrome(): void {
+  if (!recordBtn) return;
+  recordBtn.textContent = listening ? t("speak.stop") : t("speak.start");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initSpeak();
+  onLocaleChange(() => {
+    syncSpeakChrome();
+    if (statusEl && !listening && !(recognizedEl?.value || "").trim()) {
+      setStatus(t("speak.status.ready"));
+    }
+  });
+});

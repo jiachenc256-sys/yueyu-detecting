@@ -4,21 +4,42 @@ export function cueMatchesQuery(cue: Cue, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
   const zh = cue.layers.zh.text.toLowerCase();
+  const zhHant = cue.layers.zhHant?.text.toLowerCase() ?? "";
   const en = cue.layers.en?.text.toLowerCase() ?? "";
   const raw = cue.rawAsr?.toLowerCase() ?? "";
-  return zh.includes(q) || en.includes(q) || raw.includes(q);
+  return zh.includes(q) || zhHant.includes(q) || en.includes(q) || raw.includes(q);
 }
 
 export function primaryDisplayText(cue: Cue, mode: DisplayMode): string {
   if (mode === "en") {
     return cue.layers.en?.text ?? cue.layers.zh.text;
   }
+  if (mode === "zh-Hant") {
+    return cue.layers.zhHant?.text ?? cue.layers.zh.text;
+  }
+  // zh-Hans + trilingual primary line
   return cue.layers.zh.text;
 }
 
+/** Extra lines under the primary (繁 and/or EN depending on mode). */
+export function secondaryDisplayLines(cue: Cue, mode: DisplayMode): string[] {
+  if (mode === "trilingual") {
+    const lines: string[] = [];
+    const hant = cue.layers.zhHant?.text?.trim();
+    const en = cue.layers.en?.text?.trim();
+    if (hant) lines.push(hant);
+    if (en) lines.push(en);
+    return lines;
+  }
+  return [];
+}
+
+/** @deprecated Prefer secondaryDisplayLines; kept for older tests calling bilingual-style EN under 简. */
 export function secondaryDisplayText(cue: Cue, mode: DisplayMode): string | null {
-  if (mode !== "bilingual") return null;
-  return cue.layers.en?.text ?? null;
+  if (mode === "trilingual") {
+    return cue.layers.en?.text ?? null;
+  }
+  return null;
 }
 
 export function enBadgeLabel(cue: Cue): string | null {

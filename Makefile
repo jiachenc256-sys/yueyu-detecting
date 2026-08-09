@@ -6,7 +6,7 @@ CORPUS_DIR := $(SOURCE_DIR)/baidu-yueju
 export PATH := $(HOME)/.local/node/bin:$(PATH)
 
 help:
-	@echo "Yueju Linguistic Archive — project routine"
+	@echo "Yueyu Detecting (越语侦听) — project routine"
 	@echo ""
 	@echo "  make serve          Start local dev server on port $(PORT)"
 	@echo "  make open           Open archive in default browser"
@@ -42,7 +42,15 @@ transcript:
 sync-audio:
 	@mkdir -p assets/audio
 	@cp "$(SOURCE_DIR)/新龙门客寨.m4a" assets/audio/longmen-kezhai.m4a
-	@echo "Copied audio -> assets/audio/longmen-kezhai.m4a"
+	@cp "$(CORPUS_DIR)/越剧-1451首/越剧、梁祝 - 十八相送钱惠丽单仰萍.mp3" assets/audio/liangzhu-shibaxiangsong.mp3
+	@cp "$(CORPUS_DIR)/越剧-1451首/1061-越剧 - 天上掉下个林妹妹.mp3" assets/audio/hongloumeng-tianxia.mp3
+	@cp "$(CORPUS_DIR)/越剧-1451首/1132-越剧 - 拷红.mp3" assets/audio/xixiangji-kaohong.mp3
+	@cp "$(CORPUS_DIR)/越剧-1451首/越剧 - 祥林嫂 - 袁雪芬 听他一番心酸话.mp3" assets/audio/xianglin-sao-xinsuanhua.mp3
+	@cp "$(CORPUS_DIR)/越剧-1451首/1090-越剧 - 五女拜寿 - 花树同园不同根.mp3" assets/audio/wunv-baishou-huashu.mp3
+	@cp "$(CORPUS_DIR)/越剧-1451首/越剧名段-575首/02.追鱼.观灯.赵志刚.何赛飞.07年春晚.mp3" assets/audio/zhuiyu-guandeng.mp3
+	@cp "$(CORPUS_DIR)/越剧-1451首/1165-越剧 - 碧玉簪 - 新房之中冷清清 樊婷婷.mp3" assets/audio/biyu-zan-xinfang.mp3
+	@cp "$(CORPUS_DIR)/越剧-1451首/越剧名段-575首/5.何文秀·算命[无字幕].mp3" assets/audio/he-wenxiu-suanming.mp3
+	@echo "Synced starter clip audio into assets/audio/"
 
 corpus-setup:
 	@chmod +x scripts/corpus-setup.sh
