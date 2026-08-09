@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>新龙门客寨 · 越剧档案</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            越剧档案
+            <span class="site-title__sub">Yueju–Shaoxing Linguistic Archive</span>
+          </a>
+        </div>
+        <nav class="site-nav" aria-label="Piece">
+          <a class="site-nav__btn site-nav__btn--link" href="../index.html">← Archive</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <header class="viewer-header">
+        <div class="viewer-header__text">
+          <span class="badge badge--ready">Academic viewer</span>
+          <h1 class="viewer-title">新龙门客寨</h1>
+          <p class="viewer-meta">New Dragon Inn · Yue opera adaptation · <span id="cue-count">—</span></p>
+          <p class="viewer-coverage" id="coverage-stats"></p>
+        </div>
+        <div class="viewer-controls">
+          <div class="lang-toggle" role="group" aria-label="Display language">
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh" aria-pressed="false">中文</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="bilingual" aria-pressed="true">中 / EN</button>
+          </div>
+          <div class="viewer-search">
+            <input
+              type="search"
+              id="search-input"
+              class="viewer-search__input"
+              placeholder="Search zh / en…"
+              aria-label="Search transcript"
+            />
+          </div>
+        </div>
+      </header>
+
+      <div class="viewer-body">
+        <aside class="viewer-player" aria-label="Audio player">
+          <audio id="audio" controls preload="metadata" src="../assets/audio/longmen-kezhai.m4a">
+            Your browser does not support audio playback.
+          </audio>
+          <p class="viewer-player__hint">
+            Click any line to jump. Playback follows the active line.
+            <strong>Curated</strong> English is authoritative;
+            <strong>MT</strong> is provisional and labeled.
+          </p>
+          <dl class="viewer-now-playing">
+            <div>
+              <dt>Now</dt>
+              <dd id="now-time">0:00</dd>
+            </div>
+            <div>
+              <dt>Line</dt>
+              <dd id="now-line">—</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="viewer-transcript" aria-label="Transcript">
+          <ol id="transcript-list" class="transcript-list"></ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+</body>
+</html>

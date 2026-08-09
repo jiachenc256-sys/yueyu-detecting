@@ -18,8 +18,8 @@
         </div>
         <nav class="site-nav" aria-label="Main">
           <button class="site-nav__btn" data-panel-target="archive" aria-current="page">Archive</button>
-          <button class="site-nav__btn" data-panel-target="plan" aria-current="false">Plan</button>
-          <button class="site-nav__btn" data-panel-target="dataset" aria-current="false">Dataset</button>
+          <button class="site-nav__btn" data-panel-target="plan">Plan</button>
+          <button class="site-nav__btn" data-panel-target="dataset">Dataset</button>
         </nav>
       </div>
     </header>
@@ -30,32 +30,32 @@
       <section class="panel" data-panel="archive" aria-hidden="false">
         <header class="section-header">
           <h2>Performance Archive</h2>
-          <p>Browse aligned audio, video, and transcripts. Playback and search coming in the next phase.</p>
+          <p>Academic archive of timed dialogue with Chinese source text and English layers (curated + labeled MT).</p>
         </header>
 
         <div class="archive-grid">
-          <article class="piece-card">
-            <span class="badge badge--progress">In progress</span>
+          <a class="piece-card piece-card--link" href="pieces/longmen-kezhai.html">
+            <span class="badge badge--ready">Multilingual</span>
             <h3 class="piece-card__title">新龙门客寨</h3>
             <p class="piece-card__meta">New Dragon Inn · Yue opera adaptation</p>
             <p class="piece-card__note">
-              Raw ASR transcript and SRT available. Opening lines need manual correction before sync playback.
+              Synced viewer with zh / en / bilingual display. Opening scene has curated English; other lines use labeled offline MT until reviewed.
             </p>
             <div class="piece-card__stats">
               <div class="stat">
                 <span class="stat__label">Transcript</span>
-                <span class="stat__value">~2,548 lines</span>
+                <span class="stat__value">1,274 lines</span>
               </div>
               <div class="stat">
-                <span class="stat__label">Format</span>
-                <span class="stat__value">SRT + TXT</span>
+                <span class="stat__label">EN curated</span>
+                <span class="stat__value">80 cues</span>
               </div>
               <div class="stat">
-                <span class="stat__label">Media</span>
-                <span class="stat__value">MOV + M4A</span>
+                <span class="stat__label">Schema</span>
+                <span class="stat__value">v1.0.0</span>
               </div>
             </div>
-          </article>
+          </a>
 
           <div class="add-piece-card" aria-hidden="true">
             <span class="add-piece-card__icon">＋</span>
@@ -248,6 +248,6 @@
     </main>
   </div>
 
-  <script src="scripts/app.js"></script>
+  <script type="module" src="scripts/dist/src/app.js"></script>
 </body>
 </html>

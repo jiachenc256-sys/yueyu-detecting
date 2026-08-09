@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: If you use this archive, please cite it as below.
+title: "Yueju Linguistic Archive (越剧档案)"
+authors:
+  - family-names: Chan
+    given-names: Alice
+type: software
+abstract: >-
+  An academic web archive for Yue opera (越剧) linguistic materials with
+  timed transcripts and layered Chinese/English dialogue. Curated English
+  is the authoritative translation layer; machine translation is labeled
+  and non-authoritative.
+keywords:
+  - Yue opera
+  - 越剧
+  - Shaoxing
+  - Wu Chinese
+  - linguistic archive
+  - ASR
+  - multilingual transcript
+license: CC-BY-4.0
+version: 0.1.0
+date-released: "2026-08-09"
