@@ -2,9 +2,12 @@
 
 ## Project scope
 
-This website is an **academic linguistic archive** for Yue opera (越剧) stage language materials, beginning with *新龙门客寨* (New Dragon Inn adaptation).
+This website combines:
 
-It is **not** a general Shaoxing-dialect chat translator. The speech target is:
+1. **Speak → Recognize → Translate (Phase A)** — microphone input, baseline speech recognition, then 简体中文 / 繁體中文 / English after a short delay  
+2. **Dialogue archive** — collected Yueju materials (beginning with *新龙门客寨*) used for study and later ASR improvement  
+
+The speech target for research/training is:
 
 - **散白** — closer to everyday Shengzhou/Shaoxing speech  
 - **韵白** — hybrid stage diction (中州韵 + Wu tonal habits)  

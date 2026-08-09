@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>越剧档案 · Yueju Archive</title>
+  <title>越剧档案 · Speak & Translate</title>
   <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/speak.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -13,11 +14,12 @@
         <div>
           <h1 class="site-title">
             越剧档案
-            <span class="site-title__sub">Yueju–Shaoxing Linguistic Archive</span>
+            <span class="site-title__sub">Speak · Archive · Translate</span>
           </h1>
         </div>
         <nav class="site-nav" aria-label="Main">
-          <button class="site-nav__btn" data-panel-target="archive" aria-current="page">Archive</button>
+          <button class="site-nav__btn" data-panel-target="speak" aria-current="page">Speak</button>
+          <button class="site-nav__btn" data-panel-target="archive">Archive</button>
           <button class="site-nav__btn" data-panel-target="plan">Plan</button>
           <button class="site-nav__btn" data-panel-target="dataset">Dataset</button>
         </nav>
@@ -26,11 +28,72 @@
 
     <main class="main-content">
 
-      <!-- ── Archive panel ── -->
-      <section class="panel" data-panel="archive" aria-hidden="false">
+      <!-- ── Speak / Translate panel (Phase A) ── -->
+      <section class="panel" data-panel="speak" aria-hidden="false">
         <header class="section-header">
-          <h2>Performance Archive</h2>
-          <p>Academic archive of timed dialogue with Chinese source text and English layers (curated + labeled MT).</p>
+          <h2>Speak → Recognize → Translate</h2>
+          <p>
+            Say a line into the microphone. The site recognizes the speech, then shows
+            <strong>简体中文</strong>, <strong>繁體中文</strong>, and <strong>English</strong> after a short delay.
+          </p>
+        </header>
+
+        <div class="speak-layout">
+          <p class="speak-note">
+            Phase A baseline uses the browser’s speech engine (best in Chrome/Edge).
+            It is a working school demo; recognition of 越剧 stage dialect will improve as your archive corpus is used for later training.
+          </p>
+
+          <div class="speak-controls">
+            <button type="button" id="speak-record" class="speak-btn speak-btn--primary" aria-pressed="false">
+              Start listening
+            </button>
+            <button type="button" id="speak-clear" class="speak-btn">Clear</button>
+            <label class="speak-lang">
+              Mic language
+              <select id="speak-input-lang" aria-label="Recognition language">
+                <option value="zh-CN" selected>中文 (普通话引擎)</option>
+                <option value="zh-TW">中文 (台灣引擎)</option>
+                <option value="en-US">English</option>
+              </select>
+            </label>
+          </div>
+          <p id="speak-status" class="speak-status" aria-live="polite">Ready.</p>
+
+          <div class="speak-panel">
+            <h3>Recognized speech</h3>
+            <p class="speak-panel__hint">Editable — fix ASR errors, then translation refreshes automatically.</p>
+            <textarea id="speak-recognized" placeholder="Your recognized dialogue will appear here…"></textarea>
+          </div>
+
+          <div class="speak-outputs" aria-label="Translations">
+            <article class="speak-output">
+              <h3>
+                <button type="button" class="speak-btn" data-translate-target="zh-Hans">简体中文</button>
+              </h3>
+              <p id="speak-zh-hans">—</p>
+            </article>
+            <article class="speak-output">
+              <h3>
+                <button type="button" class="speak-btn" data-translate-target="zh-Hant">繁體中文</button>
+              </h3>
+              <p id="speak-zh-hant">—</p>
+            </article>
+            <article class="speak-output">
+              <h3>
+                <button type="button" class="speak-btn" data-translate-target="en">English</button>
+              </h3>
+              <p id="speak-en">—</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Archive panel ── -->
+      <section class="panel" data-panel="archive" aria-hidden="true">
+        <header class="section-header">
+          <h2>Dialogue Archive</h2>
+          <p>Collected Yueju dialogues with Chinese + English layers — the corpus that supports better recognition later.</p>
         </header>
 
         <div class="archive-grid">
@@ -249,5 +312,6 @@
   </div>
 
   <script type="module" src="scripts/dist/src/app.js"></script>
+  <script type="module" src="scripts/dist/src/speak.js"></script>
 </body>
 </html>

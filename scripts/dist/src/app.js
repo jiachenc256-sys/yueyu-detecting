@@ -38,5 +38,11 @@ function initPlanNavigation() {
 document.addEventListener("DOMContentLoaded", () => {
     initNavigation();
     initPlanNavigation();
+    // Deep-link: index.html#speak | #archive | #plan | #dataset
+    const hash = window.location.hash.replace(/^#/, "");
+    if (hash) {
+        const btn = document.querySelector(`[data-panel-target="${hash}"]`);
+        btn?.click();
+    }
 });
 //# sourceMappingURL=app.js.map

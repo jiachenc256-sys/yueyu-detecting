@@ -1,16 +1,20 @@
 # 越剧档案 · Yueju Linguistic Archive
 
-An **academic web archive** for Yue opera (越剧) linguistic materials — timed transcripts, layered Chinese/English dialogue, and the Yueju–Shaoxing ASR research plan.
+Academic project for Yue opera (越剧) dialogue:
 
-This repository is a **new archive project**. It does **not** modify any pre-existing GitHub archive. Desktop source media remain untouched.
+1. **Speak → Recognize → Translate** — speak into the mic; after a short delay see 简体中文 / 繁體中文 / English  
+2. **Dialogue archive** — collected performances with layered Chinese/English text (corpus for later ASR improvement)
+
+This repository is a **new project**. It does **not** modify any pre-existing GitHub archive. Desktop source media remain untouched.
 
 ## What you can do
 
-- Browse the performance archive (starting with **新龙门客寨**)
+- **Speak tab:** microphone → speech recognition → 简体 / 繁體 / English (Phase A baseline)
+- Browse the dialogue archive (starting with **新龙门客寨**)
 - Play audio with an active-line transcript
 - Switch display language: **中文 / EN / 中·EN**
 - Search across Chinese and English layers
-- See translation authority badges:
+- Translation badges in the archive:
   - **Curated** — academic source of truth
   - **MT — not authoritative** — offline machine/heuristic gloss for gaps
 

@@ -44,4 +44,11 @@ function initPlanNavigation(): void {
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initPlanNavigation();
+
+  // Deep-link: index.html#speak | #archive | #plan | #dataset
+  const hash = window.location.hash.replace(/^#/, "");
+  if (hash) {
+    const btn = document.querySelector<HTMLButtonElement>(`[data-panel-target="${hash}"]`);
+    btn?.click();
+  }
 });
