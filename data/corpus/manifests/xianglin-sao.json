@@ -1,0 +1,22 @@
+{
+  "id": "xianglin-sao",
+  "title": "祥林嫂",
+  "titleEn": "Xianglin Sao",
+  "sourceLocalPath": "越剧-1451首/越剧经典剧目完整音频/越剧祥林嫂.mp3",
+  "mediaType": "audio",
+  "durationHint": null,
+  "speechTypes": [
+    "sanbai",
+    "yunbai",
+    "changci"
+  ],
+  "school": null,
+  "roleTypes": [],
+  "hasTranscript": false,
+  "transcriptPath": null,
+  "rights": "private-research",
+  "notes": "Starter full-play audio from privately acquired 越剧-1451首 pack. Local only; not for public redistribution.",
+  "priority": "starter",
+  "status": "queued",
+  "bytes": 102417435
+}
