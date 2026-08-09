@@ -1,0 +1,7171 @@
+{
+  "pieceId": "longmen-kezhai",
+  "language": "en",
+  "schemaVersion": "1.0.0",
+  "entries": [
+    {
+      "id": 81,
+      "text": "[MT] 彻夜商谈国家大事去了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 82,
+      "text": "[MT] 镶玉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 83,
+      "text": "[MT] 心急什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 84,
+      "text": "[MT] 敢占老娘的便宜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 85,
+      "text": "[MT] 让你有命来得无命出去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 86,
+      "text": "Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 87,
+      "text": "[MT] 奴家刚睡下",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 88,
+      "text": "[MT] 可是想奴家了呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 89,
+      "text": "[MT] desert无情易变天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 90,
+      "text": "[MT] 又何必长流连",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 91,
+      "text": "[MT] 江山难说谁当权",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 92,
+      "text": "[MT] 歌生死做消遣",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 93,
+      "text": "[MT] 且斟瓷杯酒满莫等闲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 94,
+      "text": "[MT] 别朝暮惜流年",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 95,
+      "text": "[MT] 饮过好坏真假千人面",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 96,
+      "text": "[MT] 黄沙过笑人间",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 97,
+      "text": "[MT] 镶玉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 98,
+      "text": "[MT] 奴家见过Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 99,
+      "text": "[MT] 塔塔儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 100,
+      "text": "[MT] 给将军上酒 上点心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 101,
+      "text": "[MT] 好嘞 白饭就来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 102,
+      "text": "[MT] 镶玉 你可想死我了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 103,
+      "text": "[MT] 点心就不用了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 104,
+      "text": "[MT] 不要客气啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 105,
+      "text": "[MT] 塔塔儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 106,
+      "text": "[MT] 把新鲜的羔羊给将军端上来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 107,
+      "text": "[MT] 好嘞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 108,
+      "text": "[MT] 镶玉 将军",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 109,
+      "text": "[MT] 奴家这肉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 110,
+      "text": "[MT] 可新鲜着呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 111,
+      "text": "[MT] 我剜你的眼呐",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 112,
+      "text": "[MT] 我荆你的眼叫你看不见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 113,
+      "text": "[MT] 我剥你的皮叫你没衣穿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 114,
+      "text": "[MT] 我削你的肉叫你站不住",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 115,
+      "text": "[MT] I want your 命你活不过明天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 116,
+      "text": "[MT] 我剜你的眼你有眼看不见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 117,
+      "text": "[MT] 我剥你的皮你有皮不要脸",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 118,
+      "text": "[MT] 我削你的肉你有腿站不直",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 119,
+      "text": "[MT] I want your 命你unfit for this world",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 120,
+      "text": "[MT] 镶玉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 121,
+      "text": "[MT] 什么东西",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 122,
+      "text": "[MT] 来事了来事了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 123,
+      "text": "[MT] 这可真不巧",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 124,
+      "text": "[MT] 既然镶玉身上来了事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 125,
+      "text": "[MT] 那我也有要事在身上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 126,
+      "text": "[MT] 这是什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 127,
+      "text": "[MT] 男人也会来事啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 128,
+      "text": "[MT] 你还小懂什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 129,
+      "text": "[MT] 男人每个月总有那么几天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 130,
+      "text": "[MT] 周淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 131,
+      "text": "[MT] 谁呀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 132,
+      "text": "[MT] the court要犯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 133,
+      "text": "[MT] 犯了什么罪",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 134,
+      "text": "[MT] 此人乃兵部尚书杨宇轩残党",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 135,
+      "text": "[MT] 本为十万禁军教头",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 136,
+      "text": "[MT] 也是个有头有脸的大人物",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 137,
+      "text": "[MT] 不料朝中传出消息",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 138,
+      "text": "[MT] 说那杨宇轩意图谋反",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 139,
+      "text": "[MT] 案子交由Eastern Depot查办",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 140,
+      "text": "[MT] 想也知是个满门抄斩",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 141,
+      "text": "[MT] 这周淮安本是杨宇轩旧部",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 142,
+      "text": "[MT] 竟硬闯法场",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 143,
+      "text": "[MT] 从Eastern Depot手中劫走了杨家遗孤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 144,
+      "text": "[MT] 下落不明",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 145,
+      "text": "[MT] 哟 可真是个有情有义的好汉呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 146,
+      "text": "[MT] 嗐 有情有义",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 147,
+      "text": "[MT] 大概活不明白",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 148,
+      "text": "[MT] 有嘴吃饭闲事必须少管",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 149,
+      "text": "[MT] 你糊在这叫人怎么做生意啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 150,
+      "text": "[MT] 奴家这小店总共就这么几颗人头",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 151,
+      "text": "[MT] 你拿着这么荡一圈不就明白了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 152,
+      "text": "[MT] 对 对人头",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 153,
+      "text": "[MT] 人头都拿出来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 154,
+      "text": "[MT] 你 起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 155,
+      "text": "[MT] 不像不像 坐下",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 156,
+      "text": "[MT] 你 起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 157,
+      "text": "[MT] 噶好看的 有男朋友吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 158,
+      "text": "[MT] 有啊 坐下",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 159,
+      "text": "[MT] 可我也不能天天都来荡一圈嘛",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 160,
+      "text": "[MT] 怎么 将军天天都能见到奴家",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 161,
+      "text": "[MT] 不好吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 162,
+      "text": "[MT] 深刻同意 好",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 163,
+      "text": "this broken door needs fixing again",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 164,
+      "text": "[MT] 八方风雨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 165,
+      "text": "[MT] 比不上我们龙门山的风雨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 166,
+      "text": "[MT] 比不上我们龙门山的风雨 s",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 167,
+      "text": "[MT] 比不上我们龙门山的风雨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 168,
+      "text": "[MT] 风凄凄木萧萧",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 169,
+      "text": "[MT] 暗夜幽寂雾遮灯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 170,
+      "text": "[MT] 雾蒙蒙云滚滚",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 171,
+      "text": "[MT] 古道荒凉风起尘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 172,
+      "text": "[MT] 杨家遗孤竹篓里边睡得沉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 173,
+      "text": "[MT] 浑不知血债冤仇海样深",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 174,
+      "text": "[MT] 东缉事厂运筹帷幄布迷阵",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 175,
+      "text": "[MT] 开天罗引蛇出洞除孽根",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 176,
+      "text": "[MT] 为忠义乔装掩去女儿身",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 177,
+      "text": "[MT] 别千岁私出京都赴龙门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 178,
+      "text": "[MT] 夜投旅店待故人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 179,
+      "text": "[MT] 这江湖真假善恶难辨分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 180,
+      "text": "[MT] 这世间是非黑白难辨分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 181,
+      "text": "[MT] 小公子你可千万莫出声",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 182,
+      "text": "[MT] 众佛神你又何必多过问",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 183,
+      "text": "[MT] 嘿嘿又来了两只羔羊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 184,
+      "text": "[MT] 龙门山有雨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 185,
+      "text": "[MT] 雪原虎下山",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 186,
+      "text": "[MT] 漠上藏虎穴",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 187,
+      "text": "[MT] 意在走龙门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 188,
+      "text": "[MT] 唷 难得难得",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 189,
+      "text": "[MT] 都是道上的啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 190,
+      "text": "[MT] 小女子名唤Jin Xiangyu",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 191,
+      "text": "[MT] 两位公子尊姓大名",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 192,
+      "text": "[MT] 在下姓邱行商做生意的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 193,
+      "text": "[MT] 邱公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 194,
+      "text": "[MT] 听公子口音可是杭州府人氏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 195,
+      "text": "[MT] 正是",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 196,
+      "text": "[MT] 看公子气质不凡想是京城来的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 197,
+      "text": "[MT] 小生姓甄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 198,
+      "text": "[MT] 出关访亲路过此地",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 199,
+      "text": "[MT] 奴家这里正好有两间上房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 200,
+      "text": "[MT] 里边儿请 请啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 201,
+      "text": "[MT] 哈哈哈 来来来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 202,
+      "text": "[MT] 慢着",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 203,
+      "text": "[MT] 慢着慢着 都不许动",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 204,
+      "text": "[MT] 就你在动",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 205,
+      "text": "[MT] 一个是出关访亲一个是做生意的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 206,
+      "text": "[MT] 站好面朝着我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 207,
+      "text": "[MT] aiya 将军啊看看这两位公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 208,
+      "text": "[MT] 长得可比你这画像里的美多了呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 209,
+      "text": "[MT] 美",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 210,
+      "text": "[MT] 依奴家之见啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 211,
+      "text": "[MT] 这二位都不是男人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 212,
+      "text": "[MT] 不是男人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 213,
+      "text": "[MT] 这世上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 214,
+      "text": "[MT] 但凡不正眼看奴家的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 215,
+      "text": "[MT] 就一定都",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 216,
+      "text": "[MT] 不是男人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 217,
+      "text": "well reasoned well reasoned",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 218,
+      "text": "[MT] 掌柜的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 219,
+      "text": "[MT] 看这邱公子的竹篓甚是特别",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 220,
+      "text": "[MT] 不知里面是何宝贝",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 221,
+      "text": "[MT] 邱公子远道而来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 222,
+      "text": "[MT] 不知道带了什么宝贝",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 223,
+      "text": "[MT] 让我们也开开眼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 224,
+      "text": "[MT] 打开看看",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 225,
+      "text": "[MT] 都是些行商做生意的货物罢了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 226,
+      "text": "[MT] 不值钱的东西怎敢污了将军的双眼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 227,
+      "text": "[MT] 叫你打开就打开",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 228,
+      "text": "[MT] 包子来了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 229,
+      "text": "[MT] 来来来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 230,
+      "text": "[MT] 客官们",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 231,
+      "text": "[MT] 趁热 趁热",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 232,
+      "text": "[MT] 请啊 请啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 233,
+      "text": "[MT] 你 来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 234,
+      "text": "[MT] 邱公子 请",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 235,
+      "text": "[MT] 什么味道",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 236,
+      "text": "[MT] 什么馅儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 237,
+      "text": "[MT] 塔塔儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 238,
+      "text": "[MT] 当然是十香肉的馅儿咯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 239,
+      "text": "[MT] 梁山泊上孙二娘卖的也是十香肉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 240,
+      "text": "[MT] 孙二娘卖得",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 241,
+      "text": "[MT] 我Jin Xiangyu便也卖得",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 242,
+      "text": "[MT] 搞定",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 243,
+      "text": "[MT] 你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 244,
+      "text": "[MT] 夜已深在下先歇息去了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 245,
+      "text": "[MT] 等一等 奉命查案公子包涵",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 246,
+      "text": "[MT] 什么东西圆乎乎的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 247,
+      "text": "[MT] 西瓜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 248,
+      "text": "[MT] 西瓜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 249,
+      "text": "[MT] 西瓜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 250,
+      "text": "[MT] 洋葱头",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 251,
+      "text": "[MT] 将军若是喜欢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 252,
+      "text": "[MT] 明朝挑选几颗送去孝敬",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 253,
+      "text": "[MT] 我爱吃瓜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 254,
+      "text": "[MT] 镶玉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 255,
+      "text": "[MT] 风雨交加回家吃瓜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 256,
+      "text": "[MT] 再会",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 257,
+      "text": "[MT] Company Commander路上 留神",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 258,
+      "text": "[MT] Company Commander明朝记得来呀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 259,
+      "text": "[MT] 别让奴家等久了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 260,
+      "text": "[MT] 公子行商做生意却背了一篓瓜果",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 261,
+      "text": "[MT] 好大的排场",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 262,
+      "text": "[MT] 公子出关访亲还请照顾好自己的公文",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 263,
+      "text": "[MT] 两位客官房已备好",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 264,
+      "text": "[MT] 那一间就是奴家闺房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 265,
+      "text": "[MT] 夜里要是睡不着可来房中坐坐",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 266,
+      "text": "[MT] 起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 267,
+      "text": "[MT] 把这个交给门口候着的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 268,
+      "text": "[MT] 叫什么来着",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 269,
+      "text": "Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 270,
+      "text": "[MT] 我必有赏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 271,
+      "text": "[MT] 我出京师已两日有余",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 272,
+      "text": "[MT] 义父到此不过三日路程",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 273,
+      "text": "[MT] 想来最晚明夜必临龙门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 274,
+      "text": "[MT] 周淮安啊周淮安你的时辰已不多了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 275,
+      "text": "[MT] 观弈局黑白棋子定方卦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 276,
+      "text": "[MT] 失一先",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 277,
+      "text": "[MT] 四面楚歌危在旦夕",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 278,
+      "text": "[MT] 我这里连环局中破谜题",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 279,
+      "text": "[MT] 错一步满盘皆输前功尽弃",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 280,
+      "text": "[MT] 算时日义父两夜必驾临",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 281,
+      "text": "[MT] 更一招余棋残子收眼底",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 282,
+      "text": "[MT] 可真是山雨欲来风满楼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 283,
+      "text": "[MT] 博一手错乱棋林戏中戏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 284,
+      "text": "[MT] 嘿嘿 是你啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 285,
+      "text": "[MT] 小兄弟方才多谢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 286,
+      "text": "[MT] 要谢就谢俺elder sister",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 287,
+      "text": "[MT] elder sister说这货是个烫手的山芋",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 288,
+      "text": "[MT] 但俺摸了摸",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 289,
+      "text": "[MT] 不烫",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 290,
+      "text": "[MT] 热乎乎的软和和的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 291,
+      "text": "[MT] 一笑起来咯咯咯咯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 292,
+      "text": "[MT] 莫不是个山芋精",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 293,
+      "text": "[MT] 呀 睡着了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 294,
+      "text": "[MT] 俺希望这个小山芋活下来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 295,
+      "text": "[MT] 小公子委屈你了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 296,
+      "text": "[MT] 也不知淮安到哪里了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 297,
+      "text": "【i",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 298,
+      "text": "[MT] 周淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 299,
+      "text": "[MT] 何人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 300,
+      "text": "[MT] 是我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 301,
+      "text": "[MT] 淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 302,
+      "text": "[MT] 保护好小公子待我回来再叙",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 303,
+      "text": "[MT] 大胆 你竟敢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 304,
+      "text": "[MT] 走窗户 等等",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 305,
+      "text": "[MT] 衣服脱了我来会会他",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 306,
+      "text": "[MT] 呀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 307,
+      "text": "[MT] 何人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 308,
+      "text": "[MT] 大胆",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 309,
+      "text": "[MT] 哪里来的小淫贼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 310,
+      "text": "[MT] 夜半偷香胆真大",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 311,
+      "text": "[MT] 长得人模又人样",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 312,
+      "text": "[MT] 门儿不走窗儿爬",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 313,
+      "text": "[MT] 姑娘莫慌谬误也",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 314,
+      "text": "[MT] 方才追击贼人不想误闯姑娘闺房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 315,
+      "text": "[MT] 兵法云",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 316,
+      "text": "[MT] 备前则后寡备后则前寡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 317,
+      "text": "[MT] 备左则右寡备右则左寡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 318,
+      "text": "[MT] 无所不备则无所不寡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 319,
+      "text": "[MT] 寡者",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 320,
+      "text": "[MT] 寡 你才寡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 321,
+      "text": "[MT] 老娘房中哪有什么贼人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 322,
+      "text": "[MT] 姑娘教训的是圣人云",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 323,
+      "text": "[MT] 在下告辞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 324,
+      "text": "[MT] 慢着 回来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 325,
+      "text": "[MT] 奴家这里问你话",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 326,
+      "text": "[MT] 跑去哪里不接茬",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 327,
+      "text": "[MT] 看遍全身又上下",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 328,
+      "text": "[MT] 烧开火苗不点蜡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 329,
+      "text": "[MT] 得了便宜还卖乖",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 330,
+      "text": "[MT] 今夜偏要讨说法",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 331,
+      "text": "[MT] 你说 你讲你是谁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 332,
+      "text": "[MT] 从哪里来 到哪里去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 333,
+      "text": "[MT] 存的什么居心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 334,
+      "text": "[MT] 有着什么动机",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 335,
+      "text": "[MT] 打的什么算盘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 336,
+      "text": "[MT] 唱得什么大戏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 337,
+      "text": "[MT] 你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 338,
+      "text": "[MT] 真是岂有此理",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 339,
+      "text": "[MT] 我说",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 340,
+      "text": "[MT] 啊呀 姑娘啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 341,
+      "text": "[MT] 行商江湖天涯客",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 342,
+      "text": "[MT] 雨夜投宿卸囊行",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 343,
+      "text": "[MT] 未先问候恕失敬",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 344,
+      "text": "[MT] 莽撞错把佳人惊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 345,
+      "text": "[MT] 圣人言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 346,
+      "text": "[MT] 灭私欲则天理明",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 347,
+      "text": "[MT] 慎独习礼方过庭",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 348,
+      "text": "[MT] 圣人言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 349,
+      "text": "[MT] 非礼不成三纲正",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 350,
+      "text": "[MT] 闺中淑女惜声名",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 351,
+      "text": "[MT] 实是无意惹风情",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 352,
+      "text": "[MT] 还请宽谅恕无心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 353,
+      "text": "[MT] 啐 原来是个无心人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 354,
+      "text": "[MT] 老娘管你有心无心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 355,
+      "text": "[MT] 说吧预备如何还偿呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 356,
+      "text": "[MT] 全凭姑娘发落",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 357,
+      "text": "[MT] 力所能及",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 358,
+      "text": "[MT] 万死不辞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 359,
+      "text": "[MT] 那奴家剜你一双眼睛",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 360,
+      "text": "[MT] 斩你一副双手",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 361,
+      "text": "[MT] 抑或者",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 362,
+      "text": "[MT] 还有什么别的宝贝能哄得人儿高兴",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 363,
+      "text": "[MT] 男女授受不亲礼也",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 364,
+      "text": "[MT] 无心人我问你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 365,
+      "text": "[MT] 方才看见奴家了吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 366,
+      "text": "[MT] 在下对天盟誓什么都没有看见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 367,
+      "text": "[MT] 现在呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 368,
+      "text": "[MT] 看见了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 369,
+      "text": "[MT] 淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 370,
+      "text": "[MT] 天亮了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 371,
+      "text": "[MT] 我去结账你带上小公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 372,
+      "text": "[MT] 我们即刻上路",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 373,
+      "text": "[MT] 好",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 374,
+      "text": "[MT] 莫言这一路",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 375,
+      "text": "[MT] 你受苦了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 376,
+      "text": "[MT] 镶玉镶玉 镶玉镶玉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 377,
+      "text": "[MT] 哪个呆头大清早的 呸",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 378,
+      "text": "[MT] 哟 Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 379,
+      "text": "[MT] 今天怎么来得这么早",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 380,
+      "text": "[MT] 上头催得紧要紧还是想你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 381,
+      "text": "[MT] 马怎么进来了去你的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 382,
+      "text": "[MT] 不要轻举妄动静观其变",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 383,
+      "text": "[MT] 听是the court要犯跑到我们这来了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 384,
+      "text": "[MT] 今天我是特地前来再对对人头",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 385,
+      "text": "[MT] 人头都拿出来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 386,
+      "text": "[MT] 你 起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 387,
+      "text": "[MT] 这位儿配合一下吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 388,
+      "text": "[MT] 我说一天不见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 389,
+      "text": "[MT] 你说怎么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 390,
+      "text": "[MT] 一天不见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 391,
+      "text": "[MT] 又好看了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 392,
+      "text": "[MT] 唷 邱公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 393,
+      "text": "Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 394,
+      "text": "[MT] 昨儿的西瓜真甜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 395,
+      "text": "[MT] 今天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 396,
+      "text": "[MT] 还有瓜吃吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 397,
+      "text": "[MT] 掌柜的 上茶",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 398,
+      "text": "[MT] 镶玉 上茶",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 399,
+      "text": "[MT] 塔塔儿 上茶",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 400,
+      "text": "[MT] 呀 怎么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 401,
+      "text": "[MT] 腰酸背痛人倦魂飞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 402,
+      "text": "[MT] 镶玉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 403,
+      "text": "[MT] 昨夜没有睡好",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 404,
+      "text": "[MT] 昨夜可有见着什么可疑之人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 405,
+      "text": "[MT] 昨夜投店时有一位出关访亲的甄公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 406,
+      "text": "[MT] 甄公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 407,
+      "text": "[MT] 昨夜啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 408,
+      "text": "[MT] 昨夜奴家房里边跑进来一只大老鼠",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 409,
+      "text": "[MT] 这么大",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 410,
+      "text": "[MT] 是否会是昨夜潜入房中的贼人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 411,
+      "text": "[MT] 正是 不过",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 412,
+      "text": "[MT] 不过什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 413,
+      "text": "[MT] 抓住了吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 414,
+      "text": "[MT] 放跑了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 415,
+      "text": "[MT] 怪有趣的等着下次再来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 416,
+      "text": "[MT] 下次我带一千官兵",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 417,
+      "text": "[MT] 把那大老鼠抓起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 418,
+      "text": "[MT] 多大的老鼠",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 419,
+      "text": "[MT] 值得将军这么大阵仗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 420,
+      "text": "[MT] 那曹贼有个义子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 421,
+      "text": "[MT] 是为Eastern Depot四大档头之其一",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 422,
+      "text": "[MT] 心性诡诈阴冷生得却是花容月貌",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 423,
+      "text": "[MT] 年岁不大心思缜密",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 424,
+      "text": "[MT] 因而备受曹贼宠信呼风唤雨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 425,
+      "text": "[MT] 莫非昨夜之人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 426,
+      "text": "[MT] 正是那江湖人称玉面修罗的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 427,
+      "text": "[MT] 贾廷",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 428,
+      "text": "[MT] desert天气多变",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 429,
+      "text": "[MT] 昨天夜里还风雨交加",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 430,
+      "text": "[MT] 今日一早就开了太阳了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 431,
+      "text": "[MT] 小生见过Company Commander proprietress",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 432,
+      "text": "[MT] 甄公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 433,
+      "text": "[MT] 大清早的一个人到沙漠里快活去啦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 434,
+      "text": "[MT] 此人是昨夜之人脸上有伤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 435,
+      "text": "[MT] 小生到关隘走了一圈",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 436,
+      "text": "[MT] 不想那出关的路都封上了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 437,
+      "text": "[MT] 说是得了the court的命令",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 438,
+      "text": "[MT] 为捕fugitive封关严查",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 439,
+      "text": "[MT] 连只苍蝇都飞不出去了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 440,
+      "text": "[MT] 是的 不要说苍蝇了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 441,
+      "text": "[MT] 连只苍蝇都飞不出去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 442,
+      "text": "[MT] 邱公子你我又见面了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 443,
+      "text": "[MT] 这位仁兄从未见过",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 444,
+      "text": "[MT] 小生姓甄敢问尊姓大名",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 445,
+      "text": "[MT] 浮萍漂泊本无根",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 446,
+      "text": "[MT] 落拓江湖君莫问",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 447,
+      "text": "[MT] 本非漂泊江湖命",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 448,
+      "text": "[MT] 奈何无名昧平生",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 449,
+      "text": "[MT] 小生见过无名兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 450,
+      "text": "[MT] 甄兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 451,
+      "text": "[MT] 小生从小身体偏寒喜爱阳光",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 452,
+      "text": "[MT] 不知可否与二位拼桌小坐",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 453,
+      "text": "[MT] 请",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 454,
+      "text": "[MT] 掌柜的 上酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 455,
+      "text": "[MT] 今天我请",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 456,
+      "text": "[MT] 塔塔儿 上酒 好嘞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 457,
+      "text": "[MT] 我们还要赶路不宜多饮",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 458,
+      "text": "[MT] 武二郎三碗酒过得了景阳冈",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 459,
+      "text": "[MT] 邱公子是怕无名兄两杯酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 460,
+      "text": "[MT] 出不了这Dragon Gate Pass吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 461,
+      "text": "[MT] 倒酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 462,
+      "text": "[MT] desert无情相逢是缘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 463,
+      "text": "[MT] 你我是一见如故小生敬无名兄一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 464,
+      "text": "[MT] 风云无常缘多是劫",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 465,
+      "text": "[MT] 不如相忘于江湖在下敬甄兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 466,
+      "text": "[MT] 甄兄我敬你一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 467,
+      "text": "[MT] 告辞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 468,
+      "text": "[MT] 小生看无名兄气宇轩昂",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 469,
+      "text": "[MT] 面相不凡可是有福之人啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 470,
+      "text": "[MT] 哟 客官还会看相啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 471,
+      "text": "[MT] 略知一二 无名兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 472,
+      "text": "[MT] 请",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 473,
+      "text": "[MT] 哟 了不得呀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 474,
+      "text": "[MT] 天庭饱满行官运地阁方圆权贵身",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 475,
+      "text": "[MT] 还有什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 476,
+      "text": "[MT] 还有一条桃花纹红尘红颜多缘分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 477,
+      "text": "[MT] 真的吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 478,
+      "text": "[MT] 那帮奴家看看有没有缘分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 479,
+      "text": "[MT] 也帮我看看",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 480,
+      "text": "[MT] 起开 好嘞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 481,
+      "text": "[MT] 你有一道井字纹需该怜取眼前人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 482,
+      "text": "[MT] 眼前人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 483,
+      "text": "[MT] 哪一个眼前人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 484,
+      "text": "[MT] 奴家眼前可有这么多人呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 485,
+      "text": "[MT] 骚娘们",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 486,
+      "text": "[MT] 兄台仕途太较真流年坎坷多不顺",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 487,
+      "text": "[MT] 血光之灾重重困得罪神煞祸临门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 488,
+      "text": "[MT] 若能束心消执念柳暗花明又一村",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 489,
+      "text": "[MT] 怪力乱神者非理也",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 490,
+      "text": "[MT] 邪不压正公道自在人心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 491,
+      "text": "[MT] 什么声音 动静不对",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 492,
+      "text": "[MT] 去看看 塔塔儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 493,
+      "text": "[MT] 我看谁敢上楼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 494,
+      "text": "[MT] 我看谁拦得住",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 495,
+      "text": "[MT] Company Commander我在边关听闻",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 496,
+      "text": "[MT] the court要犯藏匿至此画像何在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 497,
+      "text": "[MT] 画像何在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 498,
+      "text": "[MT] 将军",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 499,
+      "text": "[MT] 且看 且看体段气质不凡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 500,
+      "text": "[MT] 此人非同一般疑似画中要犯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 501,
+      "text": "Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 502,
+      "text": "[MT] 你看这画像",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 503,
+      "text": "[MT] 像不像眼前这位无名兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 504,
+      "text": "[MT] 画像像不像",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 505,
+      "text": "[MT] 不像画不画",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 506,
+      "text": "[MT] 且慢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 507,
+      "text": "[MT] 且慢莫扰将军办案",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 508,
+      "text": "[MT] 如应好好查看官靴更不一般",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 509,
+      "text": "Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 510,
+      "text": "[MT] 甄兄昨夜说要出关访亲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 511,
+      "text": "[MT] 今日却露出官靴",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 512,
+      "text": "[MT] 大人不可不查",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 513,
+      "text": "[MT] 我听说",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 514,
+      "text": "[MT] 京城出逃的可就是个当官的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 515,
+      "text": "[MT] 将军 你可要查仔细了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 516,
+      "text": "[MT] 你看这画像上有道疤儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 517,
+      "text": "[MT] 他可没有",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 518,
+      "text": "[MT] 荒诞 荒诞查案 查案",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 519,
+      "text": "[MT] 须要当心细看",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 520,
+      "text": "[MT] 定要留神判断",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 521,
+      "text": "[MT] 你这伤疤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 522,
+      "text": "[MT] 你这官靴",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 523,
+      "text": "[MT] 好 既然敢问",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 524,
+      "text": "[MT] 便与我看来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 525,
+      "text": "[MT] 啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 526,
+      "text": "[MT] 怎么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 527,
+      "text": "[MT] 不识字",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 528,
+      "text": "[MT] 啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 529,
+      "text": "[MT] 怎么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 530,
+      "text": "[MT] 大理寺",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 531,
+      "text": "[MT] 小人有眼无珠",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 532,
+      "text": "[MT] 那边",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 533,
+      "text": "[MT] 小人有眼无珠",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 534,
+      "text": "[MT] 还不快把真正可疑之人绑了起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 535,
+      "text": "[MT] 是 拿绳子来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 536,
+      "text": "[MT] 怕是将军没有这个本事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 537,
+      "text": "[MT] 绑他",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 538,
+      "text": "[MT] 说清楚嘛",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 539,
+      "text": "[MT] 令牌 Eastern Depot 公公",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 540,
+      "text": "[MT] 你们胆敢偷我令牌",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 541,
+      "text": "[MT] Company Commander 伪造",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 542,
+      "text": "[MT] 公文该当何罪",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 543,
+      "text": "[MT] 启禀公公",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 544,
+      "text": "[MT] 伪造公文是要杀头的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 545,
+      "text": "[MT] 尔等冒充Eastern Depot是对曹公千岁不敬",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 546,
+      "text": "[MT] 若误办案",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 547,
+      "text": "[MT] 满门抄斩",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 548,
+      "text": "[MT] 什么曹公千岁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 549,
+      "text": "[MT] 分明是个伤天害理草营人命",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 550,
+      "text": "[MT] 长头没长尾巴的混账",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 551,
+      "text": "[MT] 噤声 哎",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 552,
+      "text": "[MT] 这年头做官真是难",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 553,
+      "text": "[MT] 苍生黎民我只想混口饭",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 554,
+      "text": "[MT] 都只见威风凛凛好衣冠",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 555,
+      "text": "[MT] 却不见一纸文书团团转",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 556,
+      "text": "[MT] 土木修缮家长里短",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 557,
+      "text": "[MT] 全部我来管",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 558,
+      "text": "[MT] 这年头做官可真是难",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 559,
+      "text": "[MT] 也曾想翘班摸鱼偷个懒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 560,
+      "text": "[MT] 勿用去起早摸黑",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 561,
+      "text": "[MT] 镇守边关追缉fugitive",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 562,
+      "text": "[MT] 他们可是在朝中做官的呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 563,
+      "text": "[MT] aiya做官难",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 564,
+      "text": "[MT] 公事公办 公事私办 都难办",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 565,
+      "text": "[MT] 今天拿人明日翻案没得办",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 566,
+      "text": "[MT] 倒不如装聋作哑",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 567,
+      "text": "[MT] 闲事莫管随便办办",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 568,
+      "text": "well reasonedwell reasoned",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 569,
+      "text": "[MT] 通了通了本官通了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 570,
+      "text": "[MT] 你长得像这画像",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 571,
+      "text": "[MT] 而你却有同款伤疤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 572,
+      "text": "[MT] 你有大理寺之公文",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 573,
+      "text": "[MT] 而你则有Eastern Depot之腰牌",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 574,
+      "text": "[MT] 他是公文我是腰牌",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 575,
+      "text": "[MT] 腰牌也",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 576,
+      "text": "[MT] ，公文也是我的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 577,
+      "text": "[MT] 本官现在决定封锁Dragon Gate Inn",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 578,
+      "text": "[MT] 只进不出",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 579,
+      "text": "[MT] 不影响你做生意",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 580,
+      "text": "[MT] 待本官上报the court",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 581,
+      "text": "[MT] 提交证物等有司前来查办",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 582,
+      "text": "[MT] 我再给你一天时间明天再搞不定",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 583,
+      "text": "[MT] 我就将你们通通抓起来 再会",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 584,
+      "text": "[MT] 这就走了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 585,
+      "text": "[MT] aiyaaiya 我们的Company Commander",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 586,
+      "text": "[MT] 那是desert的Company Commander 一向来去如风",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 587,
+      "text": "[MT] 好一个Dragon Gate Inn果真是天高皇帝远",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 588,
+      "text": "[MT] 我看你们根本不把the court放在眼里",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 589,
+      "text": "[MT] 客官说笑了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 590,
+      "text": "[MT] the court奴家管不了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 591,
+      "text": "[MT] 但这Dragon Gate Inn却还是奴家说了算",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 592,
+      "text": "[MT] 小生与无名兄残局敲子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 593,
+      "text": "[MT] 输赢未定这戏还要好好唱完",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 594,
+      "text": "[MT] 阉狗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 595,
+      "text": "[MT] 速回房间看看小公子是否无恙",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 596,
+      "text": "[MT] 你欠奴家的人情",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 597,
+      "text": "[MT] 今晚到房里来还唷",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 598,
+      "text": "[MT] 淮安 小公子不见了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 599,
+      "text": "[MT] 好个调虎离山",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 600,
+      "text": "[MT] desert孤烟日黄昏 残阳如血泼天门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 601,
+      "text": "[MT] 尘沙陇头遮白骨 西出阳关无故人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 602,
+      "text": "[MT] 杨大人遗孤何在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 603,
+      "text": "[MT] 官道已封Eastern Depot四下布了埋伏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 604,
+      "text": "[MT] 你们走不了了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 605,
+      "text": "[MT] 淮安吾兄 及早回头将功折罪",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 606,
+      "text": "[MT] 义父 曹千岁跟前",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 607,
+      "text": "[MT] 我可保兄不死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 608,
+      "text": "[MT] 死 杨公死时周淮安便已死了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 609,
+      "text": "[MT] 这遗孤是杨大人唯一骨血",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 610,
+      "text": "[MT] 我就是死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 611,
+      "text": "[MT] 必保全",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 612,
+      "text": "[MT] 我再问你一遍遗孤何在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 613,
+      "text": "[MT] 你看啊这是间黑店",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 614,
+      "text": "[MT] 有命来得无命出去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 615,
+      "text": "[MT] 那遗孤么等今晚夜深",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 616,
+      "text": "[MT] 小生亲自",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 617,
+      "text": "[MT] 送你房中给你下酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 618,
+      "text": "[MT] 把孩子交出来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 619,
+      "text": "[MT] Eastern Depot手段不过尔尔",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 620,
+      "text": "[MT] 仅凭一只昨夜的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 621,
+      "text": "[MT] 死羊就想骗我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 622,
+      "text": "[MT] Eastern Depot手段到底如何你心中有数",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 623,
+      "text": "[MT] 我封客栈是给你最后的机会",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 624,
+      "text": "[MT] 不然放你们出去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 625,
+      "text": "[MT] 就是死路一条",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 626,
+      "text": "[MT] 你放莫言与遗孤出关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 627,
+      "text": "[MT] 我跟你回去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 628,
+      "text": "[MT] 沙场上你骁勇无敌以一敌百",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 629,
+      "text": "[MT] 当初你替我挡过两剑",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 630,
+      "text": "[MT] 今天算我还了一剑",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 631,
+      "text": "[MT] 可我就不明白了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 632,
+      "text": "[MT] 你为何总是妇人之仁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 633,
+      "text": "[MT] 你救得了遗孤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 634,
+      "text": "[MT] 你还救得了这天下不成",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 635,
+      "text": "[MT] 天下何在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 636,
+      "text": "[MT] 你是你义父曹公公带大的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 637,
+      "text": "[MT] 你义父待你恩重如山",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 638,
+      "text": "[MT] 但当年守卫京师若无杨大人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 639,
+      "text": "[MT] 上至圣上下至万民",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 640,
+      "text": "[MT] 都活不到今天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 641,
+      "text": "[MT] 你也是个侠义之人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 642,
+      "text": "[MT] 为何帮助他们陷害忠良",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 643,
+      "text": "[MT] 你去哪里",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 644,
+      "text": "[MT] 这间黑店有两间厨房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 645,
+      "text": "[MT] 这一间是杀羊的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 646,
+      "text": "[MT] 等等",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 647,
+      "text": "[MT] 扇子还我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 648,
+      "text": "[MT] 忆江南思绪遥",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 649,
+      "text": "[MT] 明月可也有家乡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 650,
+      "text": "[MT] 星迢迢云茫茫",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 651,
+      "text": "[MT] 故乡今夜什么样",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 652,
+      "text": "[MT] 夜风冷闻旧调",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 653,
+      "text": "[MT] 是她弄笛明月旁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 654,
+      "text": "[MT] 青丝乱衣袂飘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 655,
+      "text": "[MT] 玉容何故萦忧怅",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 656,
+      "text": "[MT] 对明月思心事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 657,
+      "text": "[MT] 桩桩件件总彷徨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 658,
+      "text": "[MT] 白首约可有忘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 659,
+      "text": "[MT] 何时与君归故乡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 660,
+      "text": "[MT] 对明月说心事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 661,
+      "text": "[MT] 桩桩件件总念想",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 662,
+      "text": "[MT] 白首约不敢忘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 663,
+      "text": "[MT] 盼有一天归故乡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 664,
+      "text": "[MT] 我心中有个江南梦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 665,
+      "text": "[MT] 细雨湿流光相依偎斜阳",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 666,
+      "text": "[MT] 笛声裊裊叹无归宿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 667,
+      "text": "[MT] 明月依旧寥慰知音",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 668,
+      "text": "[MT] 许久没有听你吹笛子了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 669,
+      "text": "[MT] 许久也没有见你笑过了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 670,
+      "text": "[MT] 小公子无恙吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 671,
+      "text": "[MT] 受了些惊吓已无恙",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 672,
+      "text": "[MT] 小路你都",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 673,
+      "text": "[MT] 勘察过了吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 674,
+      "text": "[MT] 方圆几里我都看过了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 675,
+      "text": "[MT] Eastern Depot已布满埋伏没有小路可以出关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 676,
+      "text": "[MT] 看来明路不行",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 677,
+      "text": "[MT] 只能行暗道了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 678,
+      "text": "[MT] Jin Xiangyu日间既能相助",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 679,
+      "text": "[MT] 想来也非薄情寡义之人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 680,
+      "text": "[MT] 你想去找那狐媚子帮忙",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 681,
+      "text": "[MT] 那你去吧",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 682,
+      "text": "[MT] 莫言 你不必跟着我的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 683,
+      "text": "[MT] 你我就算逃得出去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 684,
+      "text": "[MT] 这辈子恐怕也是回不来了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 685,
+      "text": "[MT] 从小我就喜欢跟着你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 686,
+      "text": "[MT] 跟着你读书跟着你习武",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 687,
+      "text": "[MT] 你做的都是你认为对的事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 688,
+      "text": "[MT] 我 也一样",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 689,
+      "text": "[MT] 我乃杨门弟子 受杨大人亲躬提携",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 690,
+      "text": "[MT] 拔举于行伍之中",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 691,
+      "text": "[MT] 就是死路也要",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 692,
+      "text": "[MT] 可你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 693,
+      "text": "[MT] 你为何要",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 694,
+      "text": "[MT] 跟我说这些",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 695,
+      "text": "[MT] 我实是无权来替你选择你要走的路",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 696,
+      "text": "[MT] 不 你有",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 697,
+      "text": "[MT] 淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 698,
+      "text": "[MT] 笛子 送你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 699,
+      "text": "[MT] 怎么是你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 700,
+      "text": "[MT] 应该是谁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 701,
+      "text": "[MT] 深夜到访",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 702,
+      "text": "[MT] 是问天气 还是看相",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 703,
+      "text": "[MT] 这种伎俩 在我这里",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 704,
+      "text": "[MT] 还是省省了吧",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 705,
+      "text": "[MT] 有桩大生意 做不做",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 706,
+      "text": "[MT] 那要看多大的生意",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 707,
+      "text": "[MT] 谁啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 708,
+      "text": "[MT] 姑娘 是我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 709,
+      "text": "[MT] 自然是天大的生意",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 710,
+      "text": "[MT] 奴家刚睡下 等等",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 711,
+      "text": "[MT] 你不会要奴家",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 712,
+      "text": "[MT] 我不要你杀人我要你留人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 713,
+      "text": "[MT] 只要留周淮安不出客栈",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 714,
+      "text": "[MT] 往后的事情我自有安排",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 715,
+      "text": "[MT] 你想放虎归山",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 716,
+      "text": "[MT] 够不够",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 717,
+      "text": "[MT] 够 一夜够了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 718,
+      "text": "[MT] 天亮之后",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 719,
+      "text": "[MT] 我三倍给你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 720,
+      "text": "[MT] 当真",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 721,
+      "text": "[MT] 君子一言 驷马难追",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 722,
+      "text": "[MT] 你敢骗我 我烧你客栈",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 723,
+      "text": "[MT] 啐 阉人翻脸比老娘脱衣裳还快",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 724,
+      "text": "[MT] 夜半三更",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 725,
+      "text": "[MT] 怎么你开窍啦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 726,
+      "text": "[MT] 深夜叨扰我有要事相求",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 727,
+      "text": "[MT] 奴家也有话要问你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 728,
+      "text": "[MT] 姑娘请讲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 729,
+      "text": "[MT] 夜阑人寐月影疏你扰梦深闺因何故",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 730,
+      "text": "[MT] 莫非是正人君子也风流",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 731,
+      "text": "[MT] 莫非是无心之人又糊涂",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 732,
+      "text": "[MT] 深闺寂寂好孤独可知奴家心头苦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 733,
+      "text": "[MT] desert飞沙朝暮暮焉有良人可托付",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 734,
+      "text": "[MT] 此番前来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 735,
+      "text": "[MT] 所求之事 与我无关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 736,
+      "text": "[MT] 只求姑娘菩萨心肠送邱公子出关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 737,
+      "text": "[MT] 什么邱公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 738,
+      "text": "[MT] 分明是随你们",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 739,
+      "text": "[MT] 劫了法场而来的莫言姑娘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 740,
+      "text": "[MT] 你们带着杨宇轩的余孽",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 741,
+      "text": "[MT] 想从我这儿逃走罢了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 742,
+      "text": "[MT] 姑娘既知我等身份",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 743,
+      "text": "[MT] 实不相瞒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 744,
+      "text": "[MT] 那遗孤是杨大人唯一骨血",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 745,
+      "text": "[MT] 我等唯一可做的就是护送小公子出关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 746,
+      "text": "[MT] 将来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 747,
+      "text": "[MT] 啐 将来再让遗孤复仇",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 748,
+      "text": "[MT] 你想做程婴救孤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 749,
+      "text": "[MT] 也不问问这小儿要不要做赵氏孤儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 750,
+      "text": "[MT] 你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 751,
+      "text": "[MT] 送你们出关倒也不难",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 752,
+      "text": "[MT] 只要你答应我一个条件",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 753,
+      "text": "[MT] 讲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 754,
+      "text": "[MT] 奴家要你一夜风流",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 755,
+      "text": "[MT] 此事不可",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 756,
+      "text": "[MT] 《礼记》有言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 757,
+      "text": "[MT] 打住少给奴家念经",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 758,
+      "text": "[MT] 不怕告诉你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 759,
+      "text": "[MT] 这暗道就在奴家我这闺房之中",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 760,
+      "text": "[MT] 店中果有暗道",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 761,
+      "text": "[MT] 有啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 762,
+      "text": "[MT] 通往哪里",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 763,
+      "text": "[MT] 直通关外",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 764,
+      "text": "[MT] 入口安在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 765,
+      "text": "[MT] 奴家的身上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 766,
+      "text": "[MT] 奴家只要你一夜良宵",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 767,
+      "text": "[MT] 天亮之后我便送莫言出关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 768,
+      "text": "[MT] 周淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 769,
+      "text": "[MT] 你看着我 我问你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 770,
+      "text": "[MT] 你看奴家",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 771,
+      "text": "[MT] 美吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 772,
+      "text": "[MT] 美 美不胜收",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 773,
+      "text": "[MT] 江湖儿女不过逢场作戏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 774,
+      "text": "[MT] 你扮得什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 775,
+      "text": "[MT] 正人君子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 776,
+      "text": "[MT] 逢场作戏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 777,
+      "text": "[MT] 好 你我即刻拜堂成亲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 778,
+      "text": "[MT] 拜堂",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 779,
+      "text": "[MT] 是啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 780,
+      "text": "[MT] 《礼记》有言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 781,
+      "text": "[MT] 男女非有行媒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 782,
+      "text": "[MT] 不相知名",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 783,
+      "text": "[MT] 非受币 不交不亲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 784,
+      "text": "[MT] 你我今日拜堂成亲洞房花烛",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 785,
+      "text": "[MT] 良宵一夜 一别江湖",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 786,
+      "text": "[MT] 好 奴家怕你不成",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 787,
+      "text": "[MT] 这就当作聘礼了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 788,
+      "text": "[MT] 不可",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 789,
+      "text": "[MT] 怎么 又不拜了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 790,
+      "text": "[MT] 拜 现在就拜",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 791,
+      "text": "[MT] 都起床了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 792,
+      "text": "[MT] 今天 大半夜的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 793,
+      "text": "[MT] 俺elder sister嫁人啦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 794,
+      "text": "[MT] 你问俺为何而哭",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 795,
+      "text": "[MT] 俺是高兴 又感动",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 796,
+      "text": "[MT] 什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 797,
+      "text": "[MT] 什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 798,
+      "text": "[MT] 你们说俺发神经",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 799,
+      "text": "[MT] elder sister才发神经呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 800,
+      "text": "[MT] in the dead of night拜堂成亲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 801,
+      "text": "[MT] aiyaaiya真是感天动地",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 802,
+      "text": "[MT] 正所谓爱情来的太快",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 803,
+      "text": "[MT] 就像龙卷风",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 804,
+      "text": "[MT] 今天都给我热闹起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 805,
+      "text": "[MT] 一会我说新娘子美不美",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 806,
+      "text": "[MT] 你们说",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 807,
+      "text": "[MT] 对了对了 大点声",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 808,
+      "text": "[MT] 我们再来一遍",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 809,
+      "text": "[MT] 新娘子美不美",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 810,
+      "text": "[MT] 你们说",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 811,
+      "text": "[MT] 我说新郎",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 812,
+      "text": "[MT] 新郎来咯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 813,
+      "text": "[MT] 秋公子 甄兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 814,
+      "text": "[MT] 贺喜无名兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 815,
+      "text": "[MT] 小生早就说过",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 816,
+      "text": "[MT] 无名兄是有桃花运的呀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 817,
+      "text": "[MT] 多谢甄兄吉言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 818,
+      "text": "[MT] 春宵一刻值千金",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 819,
+      "text": "[MT] 有位贵客已在路上我劝你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 820,
+      "text": "[MT] 贵客到来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 821,
+      "text": "[MT] 正好讨杯喜酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 822,
+      "text": "[MT] 我亲自迎接",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 823,
+      "text": "[MT] 曹贼来了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 824,
+      "text": "[MT] 他号称武功天下第一",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 825,
+      "text": "[MT] 深不可测",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 826,
+      "text": "[MT] 是祸躲不过",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 827,
+      "text": "[MT] 我已问得暗道就在Jin Xiangyu的闺房之中",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 828,
+      "text": "[MT] 我们只是逢场作戏掩人耳目",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 829,
+      "text": "[MT] 你不用解释我相信你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 830,
+      "text": "[MT] 来来来 我们敬新郎官一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 831,
+      "text": "[MT] 大家都喝起来 喝起来 喝起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 832,
+      "text": "[MT] 想不到这荒山野岭",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 833,
+      "text": "[MT] 我竟喝上了你周淮安的喜酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 834,
+      "text": "[MT] 新娘子美不美",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 835,
+      "text": "[MT] 新娘子美不美",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 836,
+      "text": "[MT] 新娘子美不美",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 837,
+      "text": "[MT] 新娘子 美",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 838,
+      "text": "[MT] 这是蒙汗药酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 839,
+      "text": "[MT] 灌他喝了下去以防夜长梦多",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 840,
+      "text": "[MT] 灌了蒙汗药奴家还怎么同他圆房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 841,
+      "text": "[MT] 拿开拿开",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 842,
+      "text": "[MT] 莫言 盯紧房门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 843,
+      "text": "[MT] 若有不测 摔杯为号",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 844,
+      "text": "[MT] 带上小公子 我们硬闯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 845,
+      "text": "[MT] 若有不测 你带小公子离开",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 846,
+      "text": "[MT] 莫言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 847,
+      "text": "[MT] 等奴家进了洞房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 848,
+      "text": "[MT] 你速速去找那千户带兵前来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 849,
+      "text": "[MT] 把他们一网打尽",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 850,
+      "text": "[MT] 何必找他",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 851,
+      "text": "[MT] 我把他们都剁了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 852,
+      "text": "[MT] 未曾想萍水相逢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 853,
+      "text": "[MT] 竟促成一对",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 854,
+      "text": "[MT] 才子佳人 天作之合",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 855,
+      "text": "[MT] 小生敬新郎官一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 856,
+      "text": "[MT] 哎 我与你才是狭路相逢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 857,
+      "text": "[MT] 我敬你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 858,
+      "text": "[MT] 今日我成亲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 859,
+      "text": "[MT] 这杯我来喝",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 860,
+      "text": "[MT] 那可不成",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 861,
+      "text": "[MT] 今日你在我Jin Xiangyu的客栈同我成亲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 862,
+      "text": "[MT] 便是我Jin Xiangyu的男人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 863,
+      "text": "[MT] 这一杯 老娘来喝",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 864,
+      "text": "[MT] 不必客气",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 865,
+      "text": "[MT] 我们来干了这一坛",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 866,
+      "text": "[MT] 吉时已到",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 867,
+      "text": "[MT] 入洞房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 868,
+      "text": "[MT] 先拜堂",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 869,
+      "text": "[MT] 拜堂",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 870,
+      "text": "[MT] 满堂宾客喜盈盈",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 871,
+      "text": "[MT] 似笑我痴情",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 872,
+      "text": "[MT] 花月良宵好事近",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 873,
+      "text": "[MT] 举酒杯莫停",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 874,
+      "text": "[MT] 往昔历历萦梦难醒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 875,
+      "text": "[MT] 欢醉过了旧梦频惊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 876,
+      "text": "[MT] 暗道何处",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 877,
+      "text": "[MT] 劳请姑娘速速打开暗道机关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 878,
+      "text": "[MT] 心急什么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 879,
+      "text": "[MT] 曹贼将至",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 880,
+      "text": "[MT] 他若来了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 881,
+      "text": "[MT] 只怕杀戒大开",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 882,
+      "text": "[MT] 曹贼既来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 883,
+      "text": "[MT] 你们都跑了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 884,
+      "text": "[MT] 岂不是要",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 885,
+      "text": "[MT] 害死奴家",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 886,
+      "text": "[MT] 原来是想过河拆桥",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 887,
+      "text": "[MT] 进了这洞房可就由不得你了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 888,
+      "text": "[MT] 邱公子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 889,
+      "text": "[MT] 今日大喜我也敬你一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 890,
+      "text": "[MT] 义父已在路上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 891,
+      "text": "[MT] 你绝不是他对手",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 892,
+      "text": "[MT] 若想救周淮安我有一言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 893,
+      "text": "[MT] 不知可愿一听",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 894,
+      "text": "[MT] 道不同不相为谋",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 895,
+      "text": "[MT] 莫言姑娘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 896,
+      "text": "[MT] 当年保卫京师",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 897,
+      "text": "[MT] 宫里宫外同仇敌忾",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 898,
+      "text": "[MT] 周淮安曾救过我的性命",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 899,
+      "text": "[MT] 我是真心想要帮他",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 900,
+      "text": "[MT] 你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 901,
+      "text": "[MT] 我已备好两只羔羊替代你们",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 902,
+      "text": "[MT] 你去带上遗孤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 903,
+      "text": "[MT] 等我放火烧了这客栈",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 904,
+      "text": "[MT] 放你们金蝉脱売关外汇合",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 905,
+      "text": "[MT] 金蝉脱売",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 906,
+      "text": "[MT] 你若不信我到时摔杯为号",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 907,
+      "text": "[MT] 看他进了洞房",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 908,
+      "text": "[MT] 还出不出得来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 909,
+      "text": "[MT] 人命关天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 910,
+      "text": "[MT] 十万火急",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 911,
+      "text": "[MT] 莫言莫怪我狠毒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 912,
+      "text": "[MT] 那就快让奴家看看你这蜡烛亮不亮",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 913,
+      "text": "[MT] 只有以你为羔羊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 914,
+      "text": "[MT] 我烧了这客栈才能救周淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 915,
+      "text": "[MT] 你我成亲不是逢场作戏的么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 916,
+      "text": "[MT] elder sister我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 917,
+      "text": "[MT] 假戏真做了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 918,
+      "text": "[MT] 站住",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 919,
+      "text": "[MT] 贾廷",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 920,
+      "text": "[MT] 你要杀我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 921,
+      "text": "[MT] 还不快把遗孤交出来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 922,
+      "text": "[MT] 你这个无信无义之人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 923,
+      "text": "[MT] 你 不要逼我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 924,
+      "text": "[MT] 为救遗孤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 925,
+      "text": "[MT] 难道你还要杀了你新婚娘子不成",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 926,
+      "text": "[MT] 对你这种羔羊还讲什么信义",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 927,
+      "text": "[MT] 淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 928,
+      "text": "[MT] 莫言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 929,
+      "text": "[MT] 大丈夫当为尽忠义",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 930,
+      "text": "[MT] 想杨家只留最后一脉根",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 931,
+      "text": "[MT] 今日救得遗孤命",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 932,
+      "text": "[MT] 于公于私报恩情",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 933,
+      "text": "[MT] 于忠于义当舍身",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 934,
+      "text": "[MT] 于国于己势在必行",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 935,
+      "text": "[MT] 肩担忠义不由己",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 936,
+      "text": "[MT] 唯只求不负此心不负君",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 937,
+      "text": "[MT] 这江湖谁不是身不由己",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 938,
+      "text": "[MT] 姑娘大恩淮安来世再还",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 939,
+      "text": "[MT] 老娘只要你今夜就还",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 940,
+      "text": "[MT] 饮过这杯叫一声娘子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 941,
+      "text": "[MT] 我便送",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 942,
+      "text": "[MT] 莫言出关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 943,
+      "text": "[MT] 当真",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 944,
+      "text": "[MT] 你 就不怕",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 945,
+      "text": "[MT] 这酒中有毒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 946,
+      "text": "[MT] 你果然收了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 947,
+      "text": "[MT] 贾廷的好处",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 948,
+      "text": "[MT] 这有什么稀奇",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 949,
+      "text": "[MT] 奴家本来就是个生意人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 950,
+      "text": "[MT] 酒中有毒那又如何",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 951,
+      "text": "[MT] 一死 而已",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 952,
+      "text": "[MT] 你既知要死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 953,
+      "text": "[MT] 还娶我作甚",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 954,
+      "text": "[MT] 你杀身成仁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 955,
+      "text": "[MT] 却当真要我做个寡妇",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 956,
+      "text": "[MT] 我忠孝侠义一生",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 957,
+      "text": "[MT] 你风流成性跋扈一世",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 958,
+      "text": "[MT] 我与你成亲送你个名分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 959,
+      "text": "[MT] 也算是还你人情了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 960,
+      "text": "[MT] 娘子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 961,
+      "text": "[MT] 周淮安你可真是慷慨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 962,
+      "text": "[MT] 你以为奴家和谁都成亲吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 963,
+      "text": "[MT] 你那些忠义名分奴家可曾稀罕",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 964,
+      "text": "[MT] 无心人 我问你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 965,
+      "text": "[MT] 可笑你满口都是忠义心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 966,
+      "text": "[MT] 不管言语伤人心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 967,
+      "text": "[MT] 可恼你满腔都是报国心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 968,
+      "text": "[MT] 不顾红颜碎了心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 969,
+      "text": "[MT] 知恩图报义士心 舍命相救侠者心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 970,
+      "text": "[MT] 孤胆除奸壮士心 为国为民仁者心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 971,
+      "text": "[MT] 感天动地虔诚心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 972,
+      "text": "[MT] 却为何花言巧语",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 973,
+      "text": "[MT] 骗我心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 974,
+      "text": "[MT] 周淮安 我问你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 975,
+      "text": "[MT] 敢不敢问上一问你的心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 976,
+      "text": "[MT] 对我是否有动心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 977,
+      "text": "[MT] 敢不敢问上一问你的心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 978,
+      "text": "[MT] 几句话儿出真心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 979,
+      "text": "[MT] 我是无心之人生了心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 980,
+      "text": "[MT] 换来你个有心之人本无心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 981,
+      "text": "[MT] 周淮安 他可是天下第一",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 982,
+      "text": "[MT] 淮安 Eastern Depot本就是要引蛇出洞",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 983,
+      "text": "[MT] 你若死了正中下怀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 984,
+      "text": "[MT] 淮安 就算奴家 求你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 985,
+      "text": "[MT] 姑娘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 986,
+      "text": "[MT] 淮安我打开暗道你跟我走吧",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 987,
+      "text": "[MT] 就当逢场作戏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 988,
+      "text": "[MT] 我走不了了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 989,
+      "text": "[MT] 礼记有言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 990,
+      "text": "[MT] 国君死社稷",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 991,
+      "text": "[MT] 大夫死众",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 992,
+      "text": "[MT] 士死制",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 993,
+      "text": "[MT] 淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 994,
+      "text": "[MT] 可奈何可奈何",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 995,
+      "text": "elder sister elder sister",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 996,
+      "text": "[MT] Company Commander 不肯前来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 997,
+      "text": "[MT] 他说有情有义",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 998,
+      "text": "[MT] 大概活不明白",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 999,
+      "text": "[MT] 有嘴吃饭",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1000,
+      "text": "[MT] 闲事必须少管",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1001,
+      "text": "[MT] 好个缩头乌龟",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1002,
+      "text": "[MT] 淮安",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1003,
+      "text": "[MT] 莫言姑娘跟我来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1004,
+      "text": "[MT] 我送你们出关",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1005,
+      "text": "[MT] 莫言 你带着小公子先行离开",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1006,
+      "text": "[MT] 那你呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1007,
+      "text": "[MT] 杨大人含冤屈死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1008,
+      "text": "[MT] 此仇不报非君子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1009,
+      "text": "[MT] 我倒要去会会这天下第一",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1010,
+      "text": "[MT] 我留下来助你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1011,
+      "text": "[MT] 小兄弟小公子拜托你了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1012,
+      "text": "[MT] 莫言 你不要胡闹",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1013,
+      "text": "[MT] 淮安 莫言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1014,
+      "text": "[MT] 来不及了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1015,
+      "text": "[MT] 跟上我 走",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1016,
+      "text": "[MT] 你先走",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1017,
+      "text": "[MT] 莫言姑娘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1018,
+      "text": "[MT] 你先走 不",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1019,
+      "text": "[MT] 淮安 你们先走",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1020,
+      "text": "[MT] 义父 孩儿恭迎曹公千岁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1021,
+      "text": "[MT] 天地纵横 妖月西升",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1022,
+      "text": "[MT] 宇宙星辰 只手转轮",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1023,
+      "text": "[MT] 、宇宙星辰 只手转轮",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1024,
+      "text": "[MT] 宇宙星辰 只手转轮",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1025,
+      "text": "[MT] 苍鬓画年痕",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1026,
+      "text": "[MT] 权倾朝野颠君臣",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1027,
+      "text": "[MT] 猩血祭鹏程",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1028,
+      "text": "[MT] 众生芸芸拜独尊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1029,
+      "text": "[MT] 成王败寇",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1030,
+      "text": "[MT] 怎言残忍",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1031,
+      "text": "[MT] 大仁不仁 斩草除根",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1032,
+      "text": "[MT] 刀剑惊四门龙战于野荡乾坤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1033,
+      "text": "[MT] 北风啸鬼神魑魅魍魉赐平身",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1034,
+      "text": "[MT] 义夫 孩儿鲁莽",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1035,
+      "text": "[MT] 惊动义父亲自前来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1036,
+      "text": "[MT] 罪该万死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1037,
+      "text": "[MT] 听闻周教头已抵龙门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1038,
+      "text": "[MT] 老夫日夜兼程特地来送送周教头",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1039,
+      "text": "[MT] 义父 这周淮安已喝下蒙汗药酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1040,
+      "text": "[MT] 不劳义父亲自动手",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1041,
+      "text": "[MT] 廷儿 你受伤了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1042,
+      "text": "[MT] 不妨事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1043,
+      "text": "[MT] 我儿玉面修罗如今却也是",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1044,
+      "text": "[MT] 好义任侠一飞冲天了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1045,
+      "text": "[MT] 孩儿死罪但凭义父发落",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1046,
+      "text": "[MT] 罪不在你起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1047,
+      "text": "[MT] 周教头 别来无恙",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1048,
+      "text": "[MT] 曹都督 有失远迎",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1049,
+      "text": "[MT] 周教头京师一别",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1050,
+      "text": "[MT] 你憔悴了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1051,
+      "text": "[MT] 曹贼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1052,
+      "text": "[MT] 周淮安 曹公千岁亲自前来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1053,
+      "text": "[MT] 还不快束手就擒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1054,
+      "text": "[MT] 义父",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1055,
+      "text": "[MT] 廷儿 这房内必有暗道",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1056,
+      "text": "[MT] 还不快把那杨宇轩的余孽追了回来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1057,
+      "text": "[MT] 将功折罪",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1058,
+      "text": "[MT] 是",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1059,
+      "text": "[MT] 呀 周教头这柄宝刀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1060,
+      "text": "[MT] 可是当年御赐杨公之物",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1061,
+      "text": "[MT] 杨公赠我",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1062,
+      "text": "[MT] 代他护社稷",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1063,
+      "text": "[MT] 正朝纲",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1064,
+      "text": "[MT] 可惜了一身功勋好英勇",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1065,
+      "text": "[MT] 何必要执迷不悟毁前程",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1066,
+      "text": "[MT] 光明磊落杨大人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1067,
+      "text": "[MT] 一生戎马尽忠魂",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1068,
+      "text": "[MT] 御赐宝刀两面刃",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1069,
+      "text": "[MT] 保疆护国斩馋臣",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1070,
+      "text": "[MT] 一柄宝刀两面刃谋臣诛己",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1071,
+      "text": "[MT] 承天意",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1072,
+      "text": "[MT] 保社稷以正乾坤",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1073,
+      "text": "[MT] 周教头 请",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1074,
+      "text": "[MT] 请",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1075,
+      "text": "[MT] 好刀 果然是好刀",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1076,
+      "text": "[MT] 宝刀配英雄只可惜用错了地方",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1077,
+      "text": "[MT] 尔等小人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1078,
+      "text": "[MT] 颠倒黑白",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1079,
+      "text": "[MT] 口称天下",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1080,
+      "text": "[MT] 分明是欺君罔上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1081,
+      "text": "[MT] 杨宇轩叛国",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1082,
+      "text": "[MT] 乃是圣上钦定",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1083,
+      "text": "[MT] 尔等忠义",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1084,
+      "text": "[MT] 到底是忠于圣上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1085,
+      "text": "[MT] 还是忠于杨公",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1086,
+      "text": "[MT] 荒唐 杨大人戎马一生",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1087,
+      "text": "[MT] 保疆护土 建功立业",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1088,
+      "text": "[MT] 何罪之有",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1089,
+      "text": "[MT] 罪 就罪在这建功立业",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1090,
+      "text": "[MT] 功高震主",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1091,
+      "text": "[MT] 好一个功高震主",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1092,
+      "text": "[MT] 守义原来虚妄尽忠到底凄凉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1093,
+      "text": "[MT] 忠义本是虚妄 功过更是妄想",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1094,
+      "text": "[MT] 自古狡兔死 走狗烹",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1095,
+      "text": "[MT] 飞鸟尽 良弓藏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1096,
+      "text": "[MT] 圣上有旨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1097,
+      "text": "[MT] 杨宇轩意图谋反 罪不可赦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1098,
+      "text": "[MT] 其余孽残党",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1099,
+      "text": "[MT] 就地正法",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1100,
+      "text": "[MT] 周教头 还不快接旨谢恩",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1101,
+      "text": "[MT] 国君死社稷",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1102,
+      "text": "[MT] 大夫死众",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1103,
+      "text": "[MT] 士死制",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1104,
+      "text": "[MT] 见圣旨不由人脊背发寒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1105,
+      "text": "[MT] 口喃喃大夫死众士死制",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1106,
+      "text": "[MT] 普天之下皆王士",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1107,
+      "text": "[MT] 免死狗烹寻常事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1108,
+      "text": "[MT] 君要臣死臣应死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1109,
+      "text": "[MT] 无非来早或来迟",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1110,
+      "text": "[MT] 敬你一杯黄泉酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1111,
+      "text": "[MT] 功过千古无人知",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1112,
+      "text": "[MT] 愿你我来世莫攀凌烟阁",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1113,
+      "text": "[MT] 再相见青梅煮酒话闲诗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1114,
+      "text": "[MT] 周教头 黄泉路上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1115,
+      "text": "[MT] 代本督问杨公安好",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1116,
+      "text": "[MT] 动手吧",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1117,
+      "text": "[MT] 谁敢动我的男人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1118,
+      "text": "[MT] 混账王八蛋把老娘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1119,
+      "text": "[MT] 这店砸成这样",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1120,
+      "text": "[MT] 今日这桌子 椅子",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1121,
+      "text": "[MT] 可都得",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1122,
+      "text": "[MT] 给老娘赔上",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1123,
+      "text": "[MT] 周教头 艳福不浅啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1124,
+      "text": "[MT] 骚娘们 你可要给我当心点",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1125,
+      "text": "[MT] 假小子 多管闲事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1126,
+      "text": "[MT] 老阉狗 拿命来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1127,
+      "text": "[MT] 你就是proprietress",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1128,
+      "text": "[MT] 我是你老娘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1129,
+      "text": "[MT] 贱人 找死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1130,
+      "text": "[MT] 义父",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1131,
+      "text": "[MT] 谁让你回来的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1132,
+      "text": "[MT] 遗孤何在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1133,
+      "text": "[MT] 遗孤 不见了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1134,
+      "text": "[MT] 老阉狗 小阉狗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1135,
+      "text": "[MT] 老娘取你们狗命",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1136,
+      "text": "[MT] 廷儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1137,
+      "text": "[MT] 当心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1138,
+      "text": "[MT] 莫言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1139,
+      "text": "[MT] 喂喂 你不要死啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1140,
+      "text": "[MT] 你不要死啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1141,
+      "text": "[MT] 你们 你们怎么",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1142,
+      "text": "[MT] 都喜欢为了不相干的人送命啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1143,
+      "text": "[MT] 兀自深情 终是无言",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1144,
+      "text": "[MT] 老阉狗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1145,
+      "text": "[MT] 打不过你 老娘烧死你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1146,
+      "text": "[MT] 周教头 本督送你上路",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1147,
+      "text": "[MT] 义父 周淮安曾救过我等性命",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1148,
+      "text": "[MT] 你要杀他",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1149,
+      "text": "[MT] 就先杀了我吧",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1150,
+      "text": "[MT] 大忠灭心",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1151,
+      "text": "[MT] 周淮安我欠你两剑今日便还了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1152,
+      "text": "elder sister",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1153,
+      "text": "[MT] 谁让你回来的",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1154,
+      "text": "[MT] 给我滚出去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1155,
+      "text": "[MT] 孩子呢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1156,
+      "text": "[MT] 孩子被他骗走了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1157,
+      "text": "[MT] 遗孤何在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1158,
+      "text": "[MT] 老阉狗我剁了你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1159,
+      "text": "[MT] 我刜你的眼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1160,
+      "text": "[MT] 叫你看不见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1161,
+      "text": "[MT] 我剥你的皮叫你没衣穿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1162,
+      "text": "[MT] 我削你的肉叫你站不住",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1163,
+      "text": "[MT] I want your 命你活不过明天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1164,
+      "text": "[MT] I want your 眼你有眼看不见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1165,
+      "text": "[MT] I want your 皮你有皮不要脸",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1166,
+      "text": "[MT] I want your 肉你有腿站不直",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1167,
+      "text": "[MT] I want your 命你unfit for this world",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1168,
+      "text": "[MT] 义夫",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1169,
+      "text": "[MT] 宝刀 送你",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1170,
+      "text": "[MT] 这是什么地方",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1171,
+      "text": "[MT] 这里是Dragon Gate Inn啊真是个呆头",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1172,
+      "text": "[MT] 好一个Dragon Gate Inn",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1173,
+      "text": "[MT] 义父 我们速速回京",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1174,
+      "text": "[MT] 回不去了",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1175,
+      "text": "[MT] the court就是江湖",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1176,
+      "text": "[MT] 江湖就是the court",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1177,
+      "text": "[MT] 一朝入宫",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1178,
+      "text": "[MT] 便踏入了修罗之路",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1179,
+      "text": "[MT] 步步为营",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1180,
+      "text": "[MT] 以至于功高盖主之时",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1181,
+      "text": "[MT] 无非是君要臣死",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1182,
+      "text": "[MT] 抑或是黄袍加身",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1183,
+      "text": "[MT] 来 扶我起来",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1184,
+      "text": "[MT] 京都所在",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1185,
+      "text": "[MT] 天大地大我最大",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1186,
+      "text": "[MT] 成则为王",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1187,
+      "text": "[MT] 死 要留忠名",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1188,
+      "text": "[MT] 吾皇万岁 万",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1189,
+      "text": "[MT] 塔塔儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1190,
+      "text": "[MT] 当初elder sister我收养你的时候",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1191,
+      "text": "[MT] 也是这般大小",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1192,
+      "text": "[MT] 塔塔儿 离开江湖走你的路去罢",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1193,
+      "text": "[MT] 周兄 命丧于此值得吗",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1194,
+      "text": "[MT] 漂泊一生曲终局散",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1195,
+      "text": "[MT] 要留清白在人间",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1196,
+      "text": "[MT] 两位客官",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1197,
+      "text": "[MT] 来来来 请啊 请啊",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1198,
+      "text": "[MT] desert无情 相逢是缘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1199,
+      "text": "[MT] 你我是一见如故",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1200,
+      "text": "[MT] 为兄敬你一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1201,
+      "text": "[MT] 风云无常 缘多是劫",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1202,
+      "text": "[MT] 小生敬周兄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1203,
+      "text": "[MT] 八方风雨比不上我们龙门山的风雨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1204,
+      "text": "[MT] 这是老娘的客栈这一杯老娘敬你们",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1205,
+      "text": "[MT] 斟一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1206,
+      "text": "[MT] 尽饮山水尽饮星辰",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1207,
+      "text": "[MT] 我本无家无亲人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1208,
+      "text": "[MT] 似那山水似那星辰",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1209,
+      "text": "[MT] 再一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1210,
+      "text": "[MT] 尽饮江山尽饮红尘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1211,
+      "text": "[MT] 我本无名无心人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1212,
+      "text": "[MT] 负了江山负了红尘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1213,
+      "text": "[MT] 还一杯",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1214,
+      "text": "[MT] 满饮叹息满饮缘分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1215,
+      "text": "[MT] 我本无情无义人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1216,
+      "text": "[MT] desert荒烟等盼良人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1217,
+      "text": "[MT] 等盼良人有缘无分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1218,
+      "text": "[MT] 江南烟雨柳丝萦魂",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1219,
+      "text": "[MT] 追不回孤魂飘飘何处往",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1220,
+      "text": "[MT] 舍不下道义人情总天真",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1221,
+      "text": "[MT] 看不透宦海浮与沉",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1222,
+      "text": "[MT] 是非功过任评论",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1223,
+      "text": "[MT] 生死到头是虚妄",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1224,
+      "text": "[MT] 黑白到底难辨分",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1225,
+      "text": "[MT] 爱恨无端随心起",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1226,
+      "text": "[MT] 喜怒无常本一瞬",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1227,
+      "text": "[MT] 天涯路途远 江湖莫相认",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1228,
+      "text": "[MT] 黄沙一杯酒",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1229,
+      "text": "[MT] 念去",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1230,
+      "text": "[MT] 去不问",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1231,
+      "text": "[MT] 去不问",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1232,
+      "text": "[MT] 去不问",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1233,
+      "text": "elder sister",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1234,
+      "text": "this broken door needs fixing again",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1235,
+      "text": "[MT] 关外龙门wind locks the rain啊呀wind locks the rain",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1236,
+      "text": "[MT] 尘沙掩去traces of people啊呀traces of people",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1237,
+      "text": "[MT] 四面山崖多陡峭千嶂里",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1238,
+      "text": "[MT] 玄空月挂孤雁啼",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1239,
+      "text": "[MT] 北风南风龙卷风吹的人儿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1240,
+      "text": "[MT] 心呀么anxious hearts",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1241,
+      "text": "[MT] 吹得人儿anxious hearts",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1242,
+      "text": "[MT] 京内the court风乱雨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1243,
+      "text": "[MT] 忠奸难辨人心迹",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1244,
+      "text": "[MT] 八面强权多势力",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1245,
+      "text": "[MT] 万人局",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1246,
+      "text": "[MT] 青云染血冤遍地",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1247,
+      "text": "[MT] 文党武党又阉党",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1248,
+      "text": "[MT] 搅得天下unrest",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1249,
+      "text": "[MT] 对明月思心事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1250,
+      "text": "[MT] 桩桩件件总彷徨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1251,
+      "text": "[MT] 白首约不敢忘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1252,
+      "text": "[MT] 何时与君归故乡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1253,
+      "text": "[MT] 对明月说心事",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1254,
+      "text": "[MT] 桩桩件件总念想",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1255,
+      "text": "[MT] 白首约不敢忘",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1256,
+      "text": "[MT] 盼有一天归故乡",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1257,
+      "text": "[MT] desert孤烟日黄昏",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1258,
+      "text": "[MT] 残阳如血泼天门",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1259,
+      "text": "[MT] 尘沙陇头遮白骨",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1260,
+      "text": "[MT] 西出阳关无故人",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1261,
+      "text": "[MT] desert无情易变天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1262,
+      "text": "[MT] 又何必长流连",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1263,
+      "text": "[MT] 江山难说谁当权",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1264,
+      "text": "[MT] 歌生死做消遣",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1265,
+      "text": "[MT] 我剜你的眼呐",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1266,
+      "text": "[MT] 我剜你的眼呤哦呤哦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1267,
+      "text": "[MT] 叫你看不见呤哦呤哦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1268,
+      "text": "[MT] 我剥你的皮 呤哦叫你没衣穿 呤哦",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1269,
+      "text": "[MT] 我削你的肉 嘿嘿叫你站不住 嘿嘿",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1270,
+      "text": "[MT] I want your 命你活不过明天",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1271,
+      "text": "[MT] 我荆你的眼你有眼看不见",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1272,
+      "text": "[MT] 我剥你的皮你有皮不要脸",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1273,
+      "text": "[MT] 我削你的肉你有腿站不直",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    },
+    {
+      "id": 1274,
+      "text": "[MT] I want your 命你unfit for this world",
+      "status": "mt",
+      "source": "offline-lexicon-heuristic-2026-08"
+    }
+  ]
+}

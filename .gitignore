@@ -1,0 +1,27 @@
+.DS_Store
+*.log
+node_modules/
+
+# Compiled viewer JS is committed so the static site works after clone.
+# Run `npm run build` after editing TypeScript under src/.
+
+# Large media stays local (run `make sync-audio`). Video never enters git.
+assets/audio/
+assets/video/
+*.MOV
+*.mov
+*.m4a
+*.mp4
+*.mkv
+*.avi
+*.flac
+*.wav
+
+# Private Baidu / purchase notes and huge local dumps never enter git
+data/corpus/SOURCES.local.md
+data/corpus/raw/
+**/baidu-yueju/
+
+# Intermediate tsc outputs (browser runtime under scripts/dist/src is tracked)
+scripts/dist/scripts/
+scripts/dist/tests/
