@@ -3,43 +3,52 @@
   "title": "梁祝 · 十八相送",
   "titleEn": "Butterfly Lovers · Eighteen Farewells",
   "audio": "assets/audio/liangzhu-shibaxiangsong.mp3",
+  "category": "yueju",
   "schemaVersion": "1.0.0",
-  "cueCount": 16,
-  "correctedCount": 16,
+  "cueCount": 29,
+  "correctedCount": 29,
   "coverage": {
-    "zh": 16,
-    "enCurated": 16,
+    "zh": 29,
+    "enCurated": 29,
     "enMt": 0,
-    "enAny": 16,
-    "zhHant": 16
+    "enAny": 29,
+    "zhHant": 29
   },
   "cues": [
     {
       "id": 1,
-      "start": 0,
-      "end": 8,
+      "start": 0.0,
+      "end": 5.0,
+      "speaker": "器乐",
+      "speakerEn": "Instrumental",
       "layers": {
         "zh": {
           "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
           "status": "corrected"
         },
         "en": {
           "text": "[Opening · instrumental]",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "[開場 · 器樂]",
-          "status": "corrected"
         }
       }
     },
     {
       "id": 2,
-      "start": 8,
-      "end": 16,
+      "start": 5.0,
+      "end": 9.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
+          "text": "梁兄啊",
+          "status": "corrected"
+        },
+        "zhHant": {
           "text": "梁兄啊",
           "status": "corrected"
         },
@@ -47,290 +56,600 @@
           "text": "Brother Liang—",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "梁兄啊",
-          "status": "corrected"
         }
       }
     },
     {
       "id": 3,
-      "start": 16,
-      "end": 26,
+      "start": 9.0,
+      "end": 14.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "书房门前一枝梅",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "書房門前一枝梅",
           "status": "corrected"
         },
         "en": {
           "text": "A plum branch stands before the study door",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "書房門前一枝梅",
-          "status": "corrected"
         }
       }
     },
     {
       "id": 4,
-      "start": 26,
-      "end": 36,
+      "start": 14.5,
+      "end": 20.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "树上鸟儿成双对",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "樹上鳥兒成雙對",
           "status": "corrected"
         },
         "en": {
           "text": "Birds in the tree pair two by two",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "樹上鳥兒成雙對",
-          "status": "corrected"
         }
       }
     },
     {
       "id": 5,
-      "start": 36,
-      "end": 46,
+      "start": 20.0,
+      "end": 25.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "喜鹊满树喳喳叫",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "喜鵲滿樹喳喳叫",
           "status": "corrected"
         },
         "en": {
           "text": "Magpies fill the branches, chattering",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "喜鵲滿樹喳喳叫",
-          "status": "corrected"
         }
       }
     },
     {
       "id": 6,
-      "start": 46,
-      "end": 56,
+      "start": 25.5,
+      "end": 31.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "向你梁兄报喜来",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "向你梁兄報喜來",
           "status": "corrected"
         },
         "en": {
           "text": "Coming to bring Brother Liang good news",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "向你梁兄報喜來",
-          "status": "corrected"
         }
       }
     },
     {
       "id": 7,
-      "start": 56,
-      "end": 66,
+      "start": 31.0,
+      "end": 35.0,
+      "speaker": "梁山伯",
+      "speakerEn": "Liang Shanbo",
+      "layers": {
+        "zh": {
+          "text": "贤弟说话太性急",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "賢弟說話太性急",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "My brother speaks too hastily",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 35.0,
+      "end": 40.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "弟兄二人多恩爱",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "弟兄二人多恩愛",
           "status": "corrected"
         },
         "en": {
           "text": "We two sworn brothers share deep affection",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "弟兄二人多恩愛",
-          "status": "corrected"
         }
       }
     },
     {
-      "id": 8,
-      "start": 66,
-      "end": 76,
+      "id": 9,
+      "start": 40.5,
+      "end": 46.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "同窗共读整三载",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "同窗共讀整三載",
           "status": "corrected"
         },
         "en": {
           "text": "Three full years of study side by side",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "同窗共讀整三載",
-          "status": "corrected"
         }
       }
     },
     {
-      "id": 9,
-      "start": 76,
-      "end": 86,
+      "id": 10,
+      "start": 46.0,
+      "end": 51.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "今日分别心难过",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "今日分別心難過",
           "status": "corrected"
         },
         "en": {
           "text": "Today we part, and the heart aches",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "今日分別心難過",
-          "status": "corrected"
         }
       }
     },
     {
-      "id": 10,
-      "start": 86,
-      "end": 96,
+      "id": 11,
+      "start": 51.5,
+      "end": 57.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "你我怎能舍得开",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "你我怎能捨得開",
           "status": "corrected"
         },
         "en": {
           "text": "How can either of us bear to leave?",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "你我怎能捨得開",
-          "status": "corrected"
         }
       }
     },
     {
-      "id": 11,
-      "start": 96,
-      "end": 106,
+      "id": 12,
+      "start": 57.0,
+      "end": 62.0,
+      "speaker": "旁白",
+      "speakerEn": "Narrator",
       "layers": {
         "zh": {
           "text": "梁兄送到长亭道",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "梁兄送到長亭道",
           "status": "corrected"
         },
         "en": {
           "text": "Brother Liang walks me to the long pavilion road",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "梁兄送到長亭道",
-          "status": "corrected"
         }
       }
     },
     {
-      "id": 12,
-      "start": 106,
-      "end": 116,
+      "id": 13,
+      "start": 62.0,
+      "end": 67.5,
+      "speaker": "旁白",
+      "speakerEn": "Narrator",
       "layers": {
         "zh": {
           "text": "兄弟分别心烦恼",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "兄弟分別心煩惱",
           "status": "corrected"
         },
         "en": {
           "text": "Parting fills both hearts with sorrow",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "兄弟分別心煩惱",
-          "status": "corrected"
-        }
-      }
-    },
-    {
-      "id": 13,
-      "start": 116,
-      "end": 126,
-      "layers": {
-        "zh": {
-          "text": "你再送我十里亭",
-          "status": "corrected"
-        },
-        "en": {
-          "text": "See me on again to the ten-li pavilion",
-          "status": "curated",
-          "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "你再送我十里亭",
-          "status": "corrected"
         }
       }
     },
     {
       "id": 14,
-      "start": 126,
-      "end": 136,
+      "start": 67.5,
+      "end": 72.0,
+      "speaker": "梁山伯",
+      "speakerEn": "Liang Shanbo",
+      "layers": {
+        "zh": {
+          "text": "英台啊",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "英台啊",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Yingtai—",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 72.0,
+      "end": 77.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "你再送我到一里亭",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "你再送我到一里亭",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "See me on again to the one-li pavilion",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 77.5,
+      "end": 83.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "一里亭来二里亭",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "一里亭來二里亭",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "From the one-li pavilion to the two-li pavilion",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 83.0,
+      "end": 88.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
           "text": "十里长亭有凉亭",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "十里長亭有涼亭",
           "status": "corrected"
         },
         "en": {
           "text": "Along the ten-li road there is a cool pavilion",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "十里長亭有涼亭",
-          "status": "corrected"
         }
       }
     },
     {
-      "id": 15,
-      "start": 136,
-      "end": 145,
+      "id": 18,
+      "start": 88.5,
+      "end": 93.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
       "layers": {
         "zh": {
-          "text": "梁兄啊，从此分别难相见",
+          "text": "清水塘边一对鹅",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "清水塘邊一對鵝",
           "status": "corrected"
         },
         "en": {
-          "text": "Brother Liang—after this farewell, hard to meet again",
+          "text": "By the clear pond, a pair of geese",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "梁兄啊，從此分別難相見",
-          "status": "corrected"
         }
       }
     },
     {
-      "id": 16,
-      "start": 145,
+      "id": 19,
+      "start": 93.0,
+      "end": 98.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "雄的就在前面走",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "雄的就在前面走",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "The gander walks ahead",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 98.5,
+      "end": 104.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "雌的后面叫哥哥",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "雌的後面叫哥哥",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "The goose behind calls “brother”",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 104.0,
+      "end": 109.0,
+      "speaker": "梁山伯",
+      "speakerEn": "Liang Shanbo",
+      "layers": {
+        "zh": {
+          "text": "未曾看见鹅说话",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "未曾看見鵝說話",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "I have never seen a goose speak",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 109.0,
+      "end": 114.5,
+      "speaker": "梁山伯",
+      "speakerEn": "Liang Shanbo",
+      "layers": {
+        "zh": {
+          "text": "哪有雌鹅叫雄鹅",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "哪有雌鵝叫雄鵝",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "How could a goose call to a gander?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 114.5,
+      "end": 120.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "眼前还有一口井",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "眼前還有一口井",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Ahead there is still a well",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 120.0,
+      "end": 125.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "井中照见两个人",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "井中照見兩個人",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "In the well water, two faces appear",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 125.5,
+      "end": 130.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "你看这是谁和谁",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "你看這是誰和誰",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Look—who stands with whom?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 130.5,
+      "end": 135.5,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "梁兄啊",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "梁兄啊",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Brother Liang—",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 135.5,
+      "end": 141.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "从此分别难相见",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "從此分別難相見",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "After this farewell, hard to meet again",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 141.0,
+      "end": 146.0,
+      "speaker": "祝英台",
+      "speakerEn": "Zhu Yingtai",
+      "layers": {
+        "zh": {
+          "text": "你我何日再重逢",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "你我何日再重逢",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "When shall we meet once more?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 146.0,
       "end": 150.4,
+      "speaker": "器乐",
+      "speakerEn": "Instrumental",
       "layers": {
         "zh": {
           "text": "[收尾 · 器乐]",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "[收尾 · 器樂]",
           "status": "corrected"
         },
         "en": {
           "text": "[Close · instrumental]",
           "status": "curated",
           "source": "starter-2026-08"
-        },
-        "zhHant": {
-          "text": "[收尾 · 器樂]",
-          "status": "corrected"
         }
       }
     }
