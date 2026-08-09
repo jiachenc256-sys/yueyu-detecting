@@ -1,0 +1,258 @@
+{
+  "id": "he-wenxiu-suanming",
+  "title": "何文秀 · 算命",
+  "titleEn": "He Wenxiu · Fortune-Telling",
+  "audio": "assets/audio/he-wenxiu-suanming.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 12,
+  "correctedCount": 12,
+  "coverage": {
+    "zh": 12,
+    "enCurated": 12,
+    "enMt": 0,
+    "enAny": 12,
+    "zhHant": 12
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 14.983,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 14.983,
+      "end": 29.967,
+      "layers": {
+        "zh": {
+          "text": "尊一声大娘听端详",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Honored aunt, please hear me clearly",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "尊一聲大娘聽端詳",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 29.967,
+      "end": 44.95,
+      "layers": {
+        "zh": {
+          "text": "小人算命走四方",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "I tell fortunes, traveling the four directions",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "小人算命走四方",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 44.95,
+      "end": 59.933,
+      "layers": {
+        "zh": {
+          "text": "不知大娘有何疑难事",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "What trouble weighs on you, aunt?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "不知大娘有何疑難事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 59.933,
+      "end": 74.917,
+      "layers": {
+        "zh": {
+          "text": "说来与我细商量",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Tell me, and we will reason it through",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "說來與我細商量",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 74.917,
+      "end": 89.9,
+      "layers": {
+        "zh": {
+          "text": "尊一声先生听我言",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Honored master, hear my words",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "尊一聲先生聽我言",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 89.9,
+      "end": 104.883,
+      "layers": {
+        "zh": {
+          "text": "家中有事费疑难",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "There is trouble at home that puzzles me",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "家中有事費疑難",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 104.883,
+      "end": 119.867,
+      "layers": {
+        "zh": {
+          "text": "我把生辰八字报",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "I will tell you the birth hour and signs",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "我把生辰八字報",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 119.867,
+      "end": 134.85,
+      "layers": {
+        "zh": {
+          "text": "望求先生仔细看",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Please examine them with care",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "望求先生仔細看",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 134.85,
+      "end": 149.833,
+      "layers": {
+        "zh": {
+          "text": "待我掐指细推算",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Let me count on my fingers and calculate",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "待我掐指細推算",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 149.833,
+      "end": 164.817,
+      "layers": {
+        "zh": {
+          "text": "其中奥妙不一般",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "There is subtle meaning here, uncommon",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "其中奧妙不一般",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 164.817,
+      "end": 180.2,
+      "layers": {
+        "zh": {
+          "text": "[收尾]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

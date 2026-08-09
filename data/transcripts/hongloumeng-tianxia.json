@@ -1,0 +1,278 @@
+{
+  "id": "hongloumeng-tianxia",
+  "title": "红楼梦 · 天上掉下个林妹妹",
+  "titleEn": "Dream of the Red Chamber · Lin Daiyu Arrives",
+  "audio": "assets/audio/hongloumeng-tianxia.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 13,
+  "correctedCount": 13,
+  "coverage": {
+    "zh": 13,
+    "enCurated": 13,
+    "enMt": 0,
+    "enAny": 13,
+    "zhHant": 13
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8.523,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 8.523,
+      "end": 17.046,
+      "layers": {
+        "zh": {
+          "text": "天上掉下个林妹妹",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "A Lin sister falls from the heavens",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "天上掉下個林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 17.046,
+      "end": 25.569,
+      "layers": {
+        "zh": {
+          "text": "似一朵轻云刚出岫",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Like a light cloud just leaving the mountain",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "似一朵輕雲剛出岫",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 25.569,
+      "end": 34.092,
+      "layers": {
+        "zh": {
+          "text": "只见他眉弯春山秀",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Her brows curve like spring hills",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "只見他眉彎春山秀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 34.092,
+      "end": 42.615,
+      "layers": {
+        "zh": {
+          "text": "眼如秋水明",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Eyes clear as autumn water",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "眼如秋水明",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 42.615,
+      "end": 51.138,
+      "layers": {
+        "zh": {
+          "text": "细听听，这声音",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Listen closely—that voice",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "細聽聽，這聲音",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 51.138,
+      "end": 59.662,
+      "layers": {
+        "zh": {
+          "text": "柔和又尖新",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Soft, yet newly keen",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "柔和又尖新",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 59.662,
+      "end": 68.185,
+      "layers": {
+        "zh": {
+          "text": "待我上前看分明",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Let me step forward and see clearly",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "待我上前看分明",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 68.185,
+      "end": 76.708,
+      "layers": {
+        "zh": {
+          "text": "妹妹请了",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Sister, greetings",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "妹妹請了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 76.708,
+      "end": 85.231,
+      "layers": {
+        "zh": {
+          "text": "姐姐请了",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Sister, greetings",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "姐姐請了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 85.231,
+      "end": 93.754,
+      "layers": {
+        "zh": {
+          "text": "妹妹才到府上",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Sister has just arrived at the household",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "妹妹才到府上",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 93.754,
+      "end": 102.277,
+      "layers": {
+        "zh": {
+          "text": "以后还望姐姐多多指教",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "I hope Sister will kindly guide me hereafter",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "以後還望姐姐多多指教",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 102.277,
+      "end": 111.2,
+      "layers": {
+        "zh": {
+          "text": "[收尾]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

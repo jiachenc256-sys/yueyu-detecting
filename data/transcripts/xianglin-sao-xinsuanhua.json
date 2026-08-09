@@ -1,0 +1,258 @@
+{
+  "id": "xianglin-sao-xinsuanhua",
+  "title": "祥林嫂 · 听他一番心酸话",
+  "titleEn": "Xianglin Sao · Hearing His Bitter Words",
+  "audio": "assets/audio/xianglin-sao-xinsuanhua.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 12,
+  "correctedCount": 12,
+  "coverage": {
+    "zh": 12,
+    "enCurated": 12,
+    "enMt": 0,
+    "enAny": 12,
+    "zhHant": 12
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 13.008,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 13.008,
+      "end": 26.017,
+      "layers": {
+        "zh": {
+          "text": "听他一番心酸话",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Hearing his bitter, aching words",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "聽他一番心酸話",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 26.017,
+      "end": 39.025,
+      "layers": {
+        "zh": {
+          "text": "不由我珠泪往下洒",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Tears fall from my eyes unbidden",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "不由我珠淚往下灑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 39.025,
+      "end": 52.033,
+      "layers": {
+        "zh": {
+          "text": "想我祥林嫂命苦",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "I, Xianglin Sao, was born to hardship",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "想我祥林嫂命苦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 52.033,
+      "end": 65.042,
+      "layers": {
+        "zh": {
+          "text": "丧夫失子受尽欺压",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Widowed, childless, crushed by scorn",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "喪夫失子受盡欺壓",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 65.042,
+      "end": 78.05,
+      "layers": {
+        "zh": {
+          "text": "苍天啊",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "O Heaven—",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "蒼天啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 78.05,
+      "end": 91.058,
+      "layers": {
+        "zh": {
+          "text": "为何这般不公平",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Why so unjust?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "為何這般不公平",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 91.058,
+      "end": 104.067,
+      "layers": {
+        "zh": {
+          "text": "世道冷漠人心假",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "The world is cold; hearts wear false faces",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "世道冷漠人心假",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 104.067,
+      "end": 117.075,
+      "layers": {
+        "zh": {
+          "text": "何处才是安身家",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Where can I find a place to rest?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "何處才是安身家",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 117.075,
+      "end": 130.083,
+      "layers": {
+        "zh": {
+          "text": "满腹苦水向谁诉",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "To whom can I pour out this bitterness?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "滿腹苦水向誰訴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 130.083,
+      "end": 143.092,
+      "layers": {
+        "zh": {
+          "text": "泪湿衣襟心如麻",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Tears soak my sleeve; my heart is tangled hemp",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "淚溼衣襟心如麻",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 143.092,
+      "end": 156.5,
+      "layers": {
+        "zh": {
+          "text": "[收尾]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

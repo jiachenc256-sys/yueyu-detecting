@@ -1,0 +1,28 @@
+{
+  "id": "hongloumeng",
+  "title": "红楼梦",
+  "titleEn": "Dream of the Red Chamber",
+  "sourceLocalPath": "越剧-1451首/越剧经典剧目完整音频/越剧红楼梦.mp3",
+  "mediaType": "audio",
+  "durationHint": null,
+  "speechTypes": [
+    "changci",
+    "yunbai",
+    "sanbai"
+  ],
+  "school": null,
+  "roleTypes": [],
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/hongloumeng-tianxia.json",
+  "rights": "private-research",
+  "notes": "Full-play audio stays local. Published starter clip: 经典选段 · 天上掉下个林妹妹 → pieces/hongloumeng-tianxia.html with curated zh/en cues (provisional timings).",
+  "priority": "starter",
+  "status": "in-progress",
+  "bytes": 153637104,
+  "publishedClip": {
+    "id": "hongloumeng-tianxia",
+    "sourceLocalPath": "越剧-1451首/1061-越剧 - 天上掉下个林妹妹.mp3",
+    "audioAsset": "assets/audio/hongloumeng-tianxia.mp3",
+    "durationSec": 111.2
+  }
+}

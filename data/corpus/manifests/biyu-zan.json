@@ -1,0 +1,28 @@
+{
+  "id": "biyu-zan",
+  "title": "碧玉簪",
+  "titleEn": "The Jade Hairpin",
+  "sourceLocalPath": "越剧-1451首/越剧经典剧目完整音频/越剧碧玉簪.mp3",
+  "mediaType": "audio",
+  "durationHint": null,
+  "speechTypes": [
+    "yunbai",
+    "changci",
+    "sanbai"
+  ],
+  "school": null,
+  "roleTypes": [],
+  "hasTranscript": true,
+  "transcriptPath": "data/transcripts/biyu-zan-xinfang.json",
+  "rights": "private-research",
+  "notes": "Full-play audio stays local. Published starter clip: 樊婷婷 · 新房之中冷清清 → pieces/biyu-zan-xinfang.html with curated zh/en cues (provisional timings).",
+  "priority": "starter",
+  "status": "in-progress",
+  "bytes": 117566604,
+  "publishedClip": {
+    "id": "biyu-zan-xinfang",
+    "sourceLocalPath": "越剧-1451首/1165-越剧 - 碧玉簪 - 新房之中冷清清 樊婷婷.mp3",
+    "audioAsset": "assets/audio/biyu-zan-xinfang.mp3",
+    "durationSec": 202.2
+  }
+}

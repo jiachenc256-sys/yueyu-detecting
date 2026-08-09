@@ -1,0 +1,84 @@
+[
+  {
+    "id": "liangzhu-shibaxiangsong",
+    "title": "梁祝 · 十八相送",
+    "titleEn": "Butterfly Lovers · Eighteen Farewells",
+    "meta": "Butterfly Lovers · Eighteen Farewells · ~2.5 min",
+    "note": "First piece from your Baidu corpus (钱惠丽 / 单仰萍). Curated zh/en lines with provisional timings.",
+    "lines": 16
+  },
+  {
+    "id": "hongloumeng-tianxia",
+    "title": "红楼梦 · 天上掉下个林妹妹",
+    "titleEn": "Dream of the Red Chamber · Lin Daiyu Arrives",
+    "meta": "Dream of the Red Chamber · Lin Daiyu Arrives · ~2 min",
+    "note": "经典选段 · 天上掉下个林妹妹. Curated zh/en with provisional timings from local Baidu corpus.",
+    "lines": 13
+  },
+  {
+    "id": "xixiangji-kaohong",
+    "title": "西厢记 · 拷红",
+    "titleEn": "Western Chamber · Interrogating Hongniang",
+    "meta": "Western Chamber · Interrogating Hongniang · ~3 min",
+    "note": "经典选段 · 拷红. Curated zh/en with provisional timings from local Baidu corpus.",
+    "lines": 13
+  },
+  {
+    "id": "xianglin-sao-xinsuanhua",
+    "title": "祥林嫂 · 听他一番心酸话",
+    "titleEn": "Xianglin Sao · Hearing His Bitter Words",
+    "meta": "Xianglin Sao · Hearing His Bitter Words · ~3 min",
+    "note": "袁雪芬 · 听他一番心酸话. Curated zh/en with provisional timings from local Baidu corpus.",
+    "lines": 12
+  },
+  {
+    "id": "wunv-baishou-huashu",
+    "title": "五女拜寿 · 花树同园不同根",
+    "titleEn": "Five Daughters · Same Garden, Different Roots",
+    "meta": "Five Daughters · Same Garden, Different Roots · ~2 min",
+    "note": "选段 · 花树同园不同根. Curated zh/en with provisional timings from local Baidu corpus.",
+    "lines": 10
+  },
+  {
+    "id": "zhuiyu-guandeng",
+    "title": "追鱼 · 观灯",
+    "titleEn": "The Chase of the Fish · Watching Lanterns",
+    "meta": "The Chase of the Fish · Watching Lanterns · ~2 min",
+    "note": "赵志刚 / 何赛飞 · 观灯. Curated zh/en with provisional timings from local Baidu corpus.",
+    "lines": 10
+  },
+  {
+    "id": "biyu-zan-xinfang",
+    "title": "碧玉簪 · 新房之中冷清清",
+    "titleEn": "The Jade Hairpin · Cold Bridal Chamber",
+    "meta": "The Jade Hairpin · Cold Bridal Chamber · ~3 min",
+    "note": "樊婷婷 · 新房之中冷清清. Curated zh/en with provisional timings from local Baidu corpus.",
+    "lines": 12
+  },
+  {
+    "id": "he-wenxiu-suanming",
+    "title": "何文秀 · 算命",
+    "titleEn": "He Wenxiu · Fortune-Telling",
+    "meta": "He Wenxiu · Fortune-Telling · ~3 min",
+    "note": "经典选段 · 算命. Curated zh/en with provisional timings from local Baidu corpus.",
+    "lines": 12
+  },
+  {
+    "id": "longmen-kezhai",
+    "title": "新龙门客寨",
+    "titleEn": "New Dragon Inn · Yue opera adaptation",
+    "meta": "New Dragon Inn · Yue opera adaptation",
+    "note": "Synced viewer with zh / en / bilingual display. Opening scene has curated English; other lines use labeled offline MT until reviewed.",
+    "lines": 1274,
+    "extra_stats": [
+      [
+        "EN curated",
+        "80 cues"
+      ],
+      [
+        "Schema",
+        "v1.0.0"
+      ]
+    ]
+  }
+]

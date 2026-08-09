@@ -1,0 +1,17 @@
+{
+  "id": "example-piece-id",
+  "title": "剧目中文名",
+  "titleEn": "English title",
+  "sourceLocalPath": "videos/relative/path/inside/baidu-yueju",
+  "mediaType": "video",
+  "durationHint": null,
+  "speechTypes": ["sanbai", "yunbai", "changci"],
+  "school": null,
+  "roleTypes": [],
+  "hasTranscript": false,
+  "transcriptPath": null,
+  "rights": "private-research",
+  "notes": "Acquired for academic Yueju–Shaoxing archive work. Do not redistribute the raw media pack.",
+  "priority": "starter",
+  "status": "queued"
+}

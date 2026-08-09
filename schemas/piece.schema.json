@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yueju-archive.local/schemas/piece.schema.json",
+  "title": "YuejuArchivePiece",
+  "description": "Academic piece record: timed cues with multilingual dialogue layers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "titleEn",
+    "audio",
+    "schemaVersion",
+    "cueCount",
+    "coverage",
+    "cues"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Stable piece identifier (kebab-case)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Primary title in Chinese characters."
+    },
+    "titleEn": {
+      "type": "string",
+      "minLength": 1,
+      "description": "English title for international reference."
+    },
+    "audio": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Relative path to audio asset used by the viewer."
+    },
+    "sourceSrt": {
+      "type": "string",
+      "description": "Original timed-transcript filename (provenance)."
+    },
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "cueCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "correctedCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zh", "enCurated", "enMt", "enAny"],
+      "properties": {
+        "zh": { "type": "integer", "minimum": 0 },
+        "zhHant": { "type": "integer", "minimum": 0 },
+        "enCurated": { "type": "integer", "minimum": 0 },
+        "enMt": { "type": "integer", "minimum": 0 },
+        "enAny": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "cues": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/cue" }
+    }
+  },
+  "$defs": {
+    "cue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "start", "end", "layers"],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "1-based cue index from the source SRT."
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Cue start time in seconds."
+        },
+        "end": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Cue end time in seconds."
+        },
+        "rawAsr": {
+          "type": "string",
+          "description": "Original ASR text preserved for research transparency."
+        },
+        "layers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["zh"],
+          "properties": {
+            "zh": { "$ref": "#/$defs/zhLayer" },
+            "zhHant": { "$ref": "#/$defs/zhLayer" },
+            "en": { "$ref": "#/$defs/enLayer" }
+          }
+        }
+      }
+    },
+    "zhLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "status"],
+      "properties": {
+        "text": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["raw", "corrected", "reviewed"],
+          "description": "raw = ASR as-is; corrected = deterministic/manual fix; reviewed = human linguistic review."
+        }
+      }
+    },
+    "enLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "status"],
+      "properties": {
+        "text": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["curated", "mt", "draft"],
+          "description": "curated = academic source of truth; mt = machine translation (not authoritative); draft = unfinished human draft."
+        },
+        "source": {
+          "type": "string",
+          "description": "Optional provenance note (translator, MT engine, date)."
+        }
+      }
+    }
+  }
+}

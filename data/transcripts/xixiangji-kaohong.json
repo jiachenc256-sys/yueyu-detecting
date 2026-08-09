@@ -1,0 +1,278 @@
+{
+  "id": "xixiangji-kaohong",
+  "title": "西厢记 · 拷红",
+  "titleEn": "Western Chamber · Interrogating Hongniang",
+  "audio": "assets/audio/xixiangji-kaohong.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 13,
+  "correctedCount": 13,
+  "coverage": {
+    "zh": 13,
+    "enCurated": 13,
+    "enMt": 0,
+    "enAny": 13,
+    "zhHant": 13
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 15.362,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 15.362,
+      "end": 30.723,
+      "layers": {
+        "zh": {
+          "text": "红娘啊",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Hongniang—",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "紅娘啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 30.723,
+      "end": 46.085,
+      "layers": {
+        "zh": {
+          "text": "小姐有何吩咐",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "What does Miss command?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "小姐有何吩咐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 46.085,
+      "end": 61.446,
+      "layers": {
+        "zh": {
+          "text": "这几日张生神情恍惚",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "These days Scholar Zhang looks lost in thought",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "這幾日張生神情恍惚",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 61.446,
+      "end": 76.808,
+      "layers": {
+        "zh": {
+          "text": "莫非为小姐相思成疾",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Could lovesickness for Miss be the cause?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "莫非為小姐相思成疾",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 76.808,
+      "end": 92.169,
+      "layers": {
+        "zh": {
+          "text": "你与小姐同窗",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "You share study with Miss",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "你與小姐同窗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 92.169,
+      "end": 107.531,
+      "layers": {
+        "zh": {
+          "text": "怎不知情",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "How could you not know?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "怎不知情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 107.531,
+      "end": 122.892,
+      "layers": {
+        "zh": {
+          "text": "红娘不敢欺瞒夫人",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Hongniang dare not deceive Madam",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "紅娘不敢欺瞞夫人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 122.892,
+      "end": 138.254,
+      "layers": {
+        "zh": {
+          "text": "小姐与张生",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Miss and Scholar Zhang",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "小姐與張生",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 138.254,
+      "end": 153.615,
+      "layers": {
+        "zh": {
+          "text": "月下传书寄相思",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Passed letters under moonlight, sending love",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "月下傳書寄相思",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 153.615,
+      "end": 168.977,
+      "layers": {
+        "zh": {
+          "text": "夫人息怒",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Madam, please calm your anger",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "夫人息怒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 168.977,
+      "end": 184.338,
+      "layers": {
+        "zh": {
+          "text": "此事还望从长计议",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "This matter needs careful thought",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "此事還望從長計議",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 184.338,
+      "end": 200.1,
+      "layers": {
+        "zh": {
+          "text": "[收尾]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "id": "zhuiyu-guandeng",
+  "title": "追鱼 · 观灯",
+  "titleEn": "The Chase of the Fish · Watching Lanterns",
+  "audio": "assets/audio/zhuiyu-guandeng.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 10,
+  "correctedCount": 10,
+  "coverage": {
+    "zh": 10,
+    "enCurated": 10,
+    "enMt": 0,
+    "enAny": 10,
+    "zhHant": 10
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 10.1,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 10.1,
+      "end": 20.2,
+      "layers": {
+        "zh": {
+          "text": "元宵佳节观花灯",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "On Lantern Festival we watch the lanterns",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "元宵佳節觀花燈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 20.2,
+      "end": 30.3,
+      "layers": {
+        "zh": {
+          "text": "大街小巷闹盈盈",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Streets and lanes bustle with joy",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "大街小巷鬧盈盈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 30.3,
+      "end": 40.4,
+      "layers": {
+        "zh": {
+          "text": "你看那灯笼多好看",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Look how beautiful those lanterns are",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "你看那燈籠多好看",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 40.4,
+      "end": 50.5,
+      "layers": {
+        "zh": {
+          "text": "红红绿绿真喜人",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Red and green—truly delightful",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "紅紅綠綠真喜人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 50.5,
+      "end": 60.6,
+      "layers": {
+        "zh": {
+          "text": "夫妻双双把灯观",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Husband and wife watch lanterns side by side",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "夫妻雙雙把燈觀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 60.6,
+      "end": 70.7,
+      "layers": {
+        "zh": {
+          "text": "不知鱼精在身边",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Unaware a fish spirit walks beside them",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "不知魚精在身邊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 70.7,
+      "end": 80.8,
+      "layers": {
+        "zh": {
+          "text": "观灯观到忘归路",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Watching lanterns, we forget the way home",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "觀燈觀到忘歸路",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 80.8,
+      "end": 90.9,
+      "layers": {
+        "zh": {
+          "text": "笑语欢声满街巷",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Laughter fills every street",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "笑語歡聲滿街巷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 90.9,
+      "end": 101.4,
+      "layers": {
+        "zh": {
+          "text": "[收尾]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

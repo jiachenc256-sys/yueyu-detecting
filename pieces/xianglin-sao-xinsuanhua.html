@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>祥林嫂 · 听他一番心酸话 · 越语侦听</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/tokens.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
+</head>
+<body data-piece-id="xianglin-sao-xinsuanhua">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
+        </div>
+                <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <nav class="site-nav" aria-label="Piece">
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <header class="viewer-header">
+        <div class="viewer-header__text">
+          <span class="badge badge--ready">Starter piece</span>
+          <h1 class="viewer-title">祥林嫂 · 听他一番心酸话</h1>
+          <p class="viewer-meta">Xianglin Sao · Hearing His Bitter Words · <span id="cue-count">—</span></p>
+          <p class="viewer-coverage" id="coverage-stats"></p>
+        </div>
+        <div class="viewer-controls">
+          <div class="lang-toggle" role="group" aria-label="Display language">
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hans" aria-pressed="false">简体</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="trilingual" aria-pressed="true">简 / 繁 / EN</button>
+          </div>
+          <div class="viewer-search">
+            <input type="search" id="search-input" class="viewer-search__input" data-i18n-placeholder="viewer.search" placeholder="搜索 简 / 繁 / EN…" aria-label="Search transcript" />
+          </div>
+        </div>
+      </header>
+
+      <aside class="viewer-intro" aria-label="Story introduction">
+        <h2 class="viewer-intro__label" data-i18n="viewer.story">剧情简介</h2>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hans">改编自鲁迅小说《祝福》。祥林嫂是旧社会底层农村妇女：丧夫、失子、被买卖再嫁，又被礼教视为“不洁”。戏写她在冷漠人情中一步步被逼到精神崩溃，控诉封建礼教对人的摧残。</p>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hant">改編自魯迅小說《祝福》。祥林嫂是舊社會底層農村婦女：喪夫、失子、被買賣再嫁，又被禮教視為“不潔”。戲寫她在冷漠人情中一步步被逼到精神崩潰，控訴封建禮教對人的摧殘。</p>
+        <p class="viewer-intro__en" data-visible-lang="en">Adapted from Lu Xun’s story “New Year’s Sacrifice.” Xianglin Sao is a poor rural woman: widowed, losing her child, forced into remarriage, then branded “unclean” by ritual rules. The opera shows how cold custom and gossip destroy her mind—and protests that cruelty.</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hans"><strong data-i18n="viewer.thisClip">本段</strong> — 《听他一番心酸话》：她听闻悲苦身世，触动自己的伤痛，泪落不止。</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hant"><strong data-i18n="viewer.thisClip">本段</strong> — 《聽他一番心酸話》：她聽聞悲苦身世，觸動自己的傷痛，淚落不止。</p>
+        <p class="viewer-intro__en" data-visible-lang="en"><strong data-i18n="viewer.thisClip">This clip</strong> — In this aria she hears a bitter life story that mirrors her own suffering, and tears overwhelm her.</p>
+      </aside>
+
+      <div class="viewer-body">
+        <aside class="viewer-player" aria-label="Audio player">
+          <audio id="audio" controls preload="auto" src="../assets/audio/xianglin-sao-xinsuanhua.mp3">
+            Your browser does not support audio playback.
+          </audio>
+          <p class="viewer-player__hint">
+            袁雪芬 · 听他一番心酸话. Click any timestamp or line to jump and play from there.
+            Timings are provisional starter alignment — refine as you curate.
+          </p>
+          <dl class="viewer-now-playing">
+            <div>
+              <dt>Now</dt>
+              <dd id="now-time">0:00</dd>
+            </div>
+            <div>
+              <dt>Line</dt>
+              <dd id="now-line">—</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="viewer-transcript" aria-label="Transcript">
+          <ol id="transcript-list" class="transcript-list"></ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+</body>
+</html>

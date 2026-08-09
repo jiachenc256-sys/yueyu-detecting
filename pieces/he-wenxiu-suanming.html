@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>何文秀 · 算命 · 越语侦听</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/tokens.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
+</head>
+<body data-piece-id="he-wenxiu-suanming">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
+        </div>
+                <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <nav class="site-nav" aria-label="Piece">
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <header class="viewer-header">
+        <div class="viewer-header__text">
+          <span class="badge badge--ready">Starter piece</span>
+          <h1 class="viewer-title">何文秀 · 算命</h1>
+          <p class="viewer-meta">He Wenxiu · Fortune-Telling · <span id="cue-count">—</span></p>
+          <p class="viewer-coverage" id="coverage-stats"></p>
+        </div>
+        <div class="viewer-controls">
+          <div class="lang-toggle" role="group" aria-label="Display language">
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hans" aria-pressed="false">简体</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="trilingual" aria-pressed="true">简 / 繁 / EN</button>
+          </div>
+          <div class="viewer-search">
+            <input type="search" id="search-input" class="viewer-search__input" data-i18n-placeholder="viewer.search" placeholder="搜索 简 / 繁 / EN…" aria-label="Search transcript" />
+          </div>
+        </div>
+      </header>
+
+      <aside class="viewer-intro" aria-label="Story introduction">
+        <h2 class="viewer-intro__label" data-i18n="viewer.story">剧情简介</h2>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hans">何文秀遭陷害、妻离子散，后来改名换姓、以算命为掩护寻访离散的妻子。戏写冤案、别离与重逢，其中《算命》《访妻》等选段最为人熟知。</p>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hant">何文秀遭陷害、妻離子散，後來改名換姓、以算命為掩護尋訪離散的妻子。戲寫冤案、別離與重逢，其中《算命》《訪妻》等選段最為人熟知。</p>
+        <p class="viewer-intro__en" data-visible-lang="en">He Wenxiu is framed and torn from his wife. Later he travels under another name, posing as a fortune-teller to search for her. The opera follows injustice, separation, and reunion; “Fortune-Telling” and “Visiting His Wife” are famous scenes.</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hans"><strong data-i18n="viewer.thisClip">本段</strong> — 《算命》：他借算命接近大娘家，话里话外试探家中隐情，为寻妻作铺垫。</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hant"><strong data-i18n="viewer.thisClip">本段</strong> — 《算命》：他借算命接近大娘家，話裡話外試探家中隱情，為尋妻作鋪墊。</p>
+        <p class="viewer-intro__en" data-visible-lang="en"><strong data-i18n="viewer.thisClip">This clip</strong> — In “Fortune-Telling,” he uses divination as cover to approach a household and gently probe for news that may lead him to his wife.</p>
+      </aside>
+
+      <div class="viewer-body">
+        <aside class="viewer-player" aria-label="Audio player">
+          <audio id="audio" controls preload="auto" src="../assets/audio/he-wenxiu-suanming.mp3">
+            Your browser does not support audio playback.
+          </audio>
+          <p class="viewer-player__hint">
+            经典选段 · 算命. Click any timestamp or line to jump and play from there.
+            Timings are provisional starter alignment — refine as you curate.
+          </p>
+          <dl class="viewer-now-playing">
+            <div>
+              <dt>Now</dt>
+              <dd id="now-time">0:00</dd>
+            </div>
+            <div>
+              <dt>Line</dt>
+              <dd id="now-line">—</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="viewer-transcript" aria-label="Transcript">
+          <ol id="transcript-list" class="transcript-list"></ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+</body>
+</html>

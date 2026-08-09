@@ -1,0 +1,258 @@
+{
+  "id": "biyu-zan-xinfang",
+  "title": "碧玉簪 · 新房之中冷清清",
+  "titleEn": "The Jade Hairpin · Cold Bridal Chamber",
+  "audio": "assets/audio/biyu-zan-xinfang.mp3",
+  "schemaVersion": "1.0.0",
+  "cueCount": 12,
+  "correctedCount": 12,
+  "coverage": {
+    "zh": 12,
+    "enCurated": 12,
+    "enMt": 0,
+    "enAny": 12,
+    "zhHant": 12
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 16.817,
+      "layers": {
+        "zh": {
+          "text": "[开场 · 器乐]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Opening · instrumental]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[開場 · 器樂]",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 16.817,
+      "end": 33.633,
+      "layers": {
+        "zh": {
+          "text": "新房之中冷清清",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "The bridal chamber is cold and still",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "新房之中冷清清",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 33.633,
+      "end": 50.45,
+      "layers": {
+        "zh": {
+          "text": "红烛高烧照孤影",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Red candles burn high, lighting a lonely figure",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "紅燭高燒照孤影",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 50.45,
+      "end": 67.267,
+      "layers": {
+        "zh": {
+          "text": "想我李秀英",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "I think of myself, Li Xiuying",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "想我李秀英",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 67.267,
+      "end": 84.083,
+      "layers": {
+        "zh": {
+          "text": "满腹委屈向谁倾",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Where can I pour this bellyful of grievance?",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "滿腹委屈向誰傾",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 84.083,
+      "end": 100.9,
+      "layers": {
+        "zh": {
+          "text": "误拿碧玉簪",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "The jade hairpin was taken by mistake",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "誤拿碧玉簪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 100.9,
+      "end": 117.717,
+      "layers": {
+        "zh": {
+          "text": "招来无端闲是非",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "And brought baseless gossip",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "招來無端閒是非",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 117.717,
+      "end": 134.533,
+      "layers": {
+        "zh": {
+          "text": "夫君他心存疑",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "My husband holds suspicion in his heart",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "夫君他心存疑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 134.533,
+      "end": 151.35,
+      "layers": {
+        "zh": {
+          "text": "冷落我一夜到天明",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Leaving me alone from night until dawn",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "冷落我一夜到天明",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 151.35,
+      "end": 168.167,
+      "layers": {
+        "zh": {
+          "text": "愁绪满怀难入梦",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Sorrow fills me; sleep will not come",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "愁緒滿懷難入夢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 168.167,
+      "end": 184.983,
+      "layers": {
+        "zh": {
+          "text": "泪湿鲛绡到五更",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Tears soak the silk until the fifth watch",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "淚溼鮫綃到五更",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 184.983,
+      "end": 202.2,
+      "layers": {
+        "zh": {
+          "text": "[收尾]",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "[Close]",
+          "status": "curated",
+          "source": "starter-2026-08"
+        },
+        "zhHant": {
+          "text": "[收尾]",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

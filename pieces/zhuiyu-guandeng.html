@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>追鱼 · 观灯 · 越语侦听</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/tokens.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
+</head>
+<body data-piece-id="zhuiyu-guandeng">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
+        </div>
+                <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <nav class="site-nav" aria-label="Piece">
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <header class="viewer-header">
+        <div class="viewer-header__text">
+          <span class="badge badge--ready">Starter piece</span>
+          <h1 class="viewer-title">追鱼 · 观灯</h1>
+          <p class="viewer-meta">The Chase of the Fish · Watching Lanterns · <span id="cue-count">—</span></p>
+          <p class="viewer-coverage" id="coverage-stats"></p>
+        </div>
+        <div class="viewer-controls">
+          <div class="lang-toggle" role="group" aria-label="Display language">
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hans" aria-pressed="false">简体</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="trilingual" aria-pressed="true">简 / 繁 / EN</button>
+          </div>
+          <div class="viewer-search">
+            <input type="search" id="search-input" class="viewer-search__input" data-i18n-placeholder="viewer.search" placeholder="搜索 简 / 繁 / EN…" aria-label="Search transcript" />
+          </div>
+        </div>
+      </header>
+
+      <aside class="viewer-intro" aria-label="Story introduction">
+        <h2 class="viewer-intro__label" data-i18n="viewer.story">剧情简介</h2>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hans">鲤鱼精羡慕人间恩爱，变作书生张珍的妻子模样与他相伴；真假夫妻引发一场喜剧纠缠。整部戏神话色彩浓，又笑又情，是越剧经典喜剧之一。</p>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hant">鯉魚精羨慕人間恩愛，變作書生張珍的妻子模樣與他相伴；真假夫妻引發一場喜劇糾纏。整部戲神話色彩濃，又笑又情，是越劇經典喜劇之一。</p>
+        <p class="viewer-intro__en" data-visible-lang="en">A carp spirit envies human love, takes the form of scholar Zhang Zhen’s wife, and lives with him—until the real and false wives collide. Myth, comedy, and romance mix in this classic Yue opera comedy.</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hans"><strong data-i18n="viewer.thisClip">本段</strong> — 《观灯》：元宵夜上街看花灯，欢闹之中埋下真假妻子的喜剧伏笔。</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hant"><strong data-i18n="viewer.thisClip">本段</strong> — 《觀燈》：元宵夜上街看花燈，歡鬧之中埋下真假妻子的喜劇伏筆。</p>
+        <p class="viewer-intro__en" data-visible-lang="en"><strong data-i18n="viewer.thisClip">This clip</strong> — “Watching Lanterns” is a festive Lantern Festival outing—joyful crowds and pretty lights, with comic confusion about identity already brewing.</p>
+      </aside>
+
+      <div class="viewer-body">
+        <aside class="viewer-player" aria-label="Audio player">
+          <audio id="audio" controls preload="auto" src="../assets/audio/zhuiyu-guandeng.mp3">
+            Your browser does not support audio playback.
+          </audio>
+          <p class="viewer-player__hint">
+            赵志刚 / 何赛飞 · 观灯. Click any timestamp or line to jump and play from there.
+            Timings are provisional starter alignment — refine as you curate.
+          </p>
+          <dl class="viewer-now-playing">
+            <div>
+              <dt>Now</dt>
+              <dd id="now-time">0:00</dd>
+            </div>
+            <div>
+              <dt>Line</dt>
+              <dd id="now-line">—</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="viewer-transcript" aria-label="Transcript">
+          <ol id="transcript-list" class="transcript-list"></ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+</body>
+</html>

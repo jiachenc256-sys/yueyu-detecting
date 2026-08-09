@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>梁祝 · 十八相送 · 越语侦听</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/tokens.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
+</head>
+<body data-piece-id="liangzhu-shibaxiangsong">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
+        </div>
+                <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <nav class="site-nav" aria-label="Piece">
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <header class="viewer-header">
+        <div class="viewer-header__text">
+          <span class="badge badge--ready">Starter piece</span>
+          <h1 class="viewer-title">梁祝 · 十八相送</h1>
+          <p class="viewer-meta">Butterfly Lovers · Eighteen Farewells · <span id="cue-count">—</span></p>
+          <p class="viewer-coverage" id="coverage-stats"></p>
+        </div>
+        <div class="viewer-controls">
+          <div class="lang-toggle" role="group" aria-label="Display language">
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hans" aria-pressed="false">简体</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="trilingual" aria-pressed="true">简 / 繁 / EN</button>
+          </div>
+          <div class="viewer-search">
+            <input
+              type="search"
+              id="search-input"
+              class="viewer-search__input"
+              data-i18n-placeholder="viewer.search" placeholder="搜索 简 / 繁 / EN…"
+              aria-label="Search transcript"
+            />
+          </div>
+        </div>
+      </header>
+
+      <aside class="viewer-intro" aria-label="Story introduction">
+        <h2 class="viewer-intro__label" data-i18n="viewer.story">剧情简介</h2>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hans">祝英台女扮男装去杭州求学，与梁山伯同窗三载、情谊日深。英台心中已许终身，山伯却不知她是女子。这出戏写两人分别时的不舍与暗藏心意，是中国最著名的爱情悲剧之一，结局中二人化蝶双飞。</p>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hant">祝英臺女扮男裝去杭州求學，與梁山伯同窗三載、情誼日深。英臺心中已許終身，山伯卻不知她是女子。這出戲寫兩人分別時的不捨與暗藏心意，是中國最著名的愛情悲劇之一，結局中二人化蝶雙飛。</p>
+        <p class="viewer-intro__en" data-visible-lang="en">Zhu Yingtai disguises herself as a young man to study in Hangzhou and becomes sworn “brothers” with Liang Shanbo. She falls in love; he never learns she is a woman until too late. Their story is China’s most famous tragic romance—often called an Eastern Romeo and Juliet—ending with the lovers transformed into butterflies.</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hans"><strong data-i18n="viewer.thisClip">本段</strong> — 《十八相送》：英台借一路景物暗示心意，山伯浑然不觉，只觉得兄弟情深、依依惜别。</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hant"><strong data-i18n="viewer.thisClip">本段</strong> — 《十八相送》：英臺借一路景物暗示心意，山伯渾然不覺，只覺得兄弟情深、依依惜別。</p>
+        <p class="viewer-intro__en" data-visible-lang="en"><strong data-i18n="viewer.thisClip">This clip</strong> — This clip, “Eighteen Farewells,” follows their parting walk: Yingtai hints at her love through scenery along the road; Shanbo still thinks they are only dear friends saying goodbye.</p>
+      </aside>
+
+      <div class="viewer-body">
+        <aside class="viewer-player" aria-label="Audio player">
+          <audio id="audio" controls preload="auto" src="../assets/audio/liangzhu-shibaxiangsong.mp3">
+            Your browser does not support audio playback.
+          </audio>
+          <p class="viewer-player__hint">
+            Starter alignment from the local Baidu corpus (钱惠丽 / 单仰萍).
+            Click any timestamp or line to jump and play. Timings are provisional — refine as you curate.
+            Full-play 梁山伯与祝英台 stays local for later training.
+          </p>
+          <dl class="viewer-now-playing">
+            <div>
+              <dt>Now</dt>
+              <dd id="now-time">0:00</dd>
+            </div>
+            <div>
+              <dt>Line</dt>
+              <dd id="now-line">—</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="viewer-transcript" aria-label="Transcript">
+          <ol id="transcript-list" class="transcript-list"></ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+</body>
+</html>
