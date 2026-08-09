@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "talcne",
+  "target": "yueyu-detecting",
+  "exportedAt": "2026-08-10T00:00:00.000Z",
+  "script": "zh-Hans",
+  "fileNames": ["sample-woodblock.jpg"],
+  "fullText": "方卿低头无语\n只见姑娘含笑相迎\n这珍珠塔传家宝\n权且赠与兄长作盘缠",
+  "lines": [
+    "方卿低头无语",
+    "只见姑娘含笑相迎",
+    "这珍珠塔传家宝",
+    "权且赠与兄长作盘缠"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text": "方卿低头无语\n只见姑娘含笑相迎\n这珍珠塔传家宝\n权且赠与兄长作盘缠",
+      "lines": [
+        "方卿低头无语",
+        "只见姑娘含笑相迎",
+        "这珍珠塔传家宝",
+        "权且赠与兄长作盘缠"
+      ],
+      "blocks": []
+    }
+  ],
+  "note": "Demo fixture only — replace with a real Talcne OCR export before publishing as a starter piece."
+}
