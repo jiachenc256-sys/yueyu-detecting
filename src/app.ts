@@ -64,6 +64,21 @@ function initSideNavigation(linkAttr: string, sectionAttr: string): void {
   });
 }
 
+function initStoryMore(): void {
+  const links = document.querySelectorAll<HTMLAnchorElement>("[data-story-more]");
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const id = link.getAttribute("href")?.replace(/^#/, "");
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", `#story`);
+    });
+  });
+}
+
 function initArchiveFilters(): (category: string, opts?: { scroll?: boolean }) => void {
   const filters = document.querySelectorAll<HTMLButtonElement>("[data-archive-filter]");
   const cards = document.querySelectorAll<HTMLElement>("[data-archive-category]");
@@ -113,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initA11y();
   initI18n();
   initNavigation();
+  initStoryMore();
   initSideNavigation("data-plan-target", "data-plan-section");
   initSideNavigation("data-about-target", "data-about-section");
   const applyArchiveFilter = initArchiveFilters();
