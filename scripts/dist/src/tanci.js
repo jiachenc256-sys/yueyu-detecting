@@ -5,6 +5,8 @@ import { onLocaleChange, t, tf } from "./i18n.js";
  */
 const STORAGE_KEY = "yueyu.talcneApiBase";
 const DEFAULT_API = "http://127.0.0.1:8000";
+/** Filled from `/config.json` → `talcneApiBase` (Render URL for production). */
+let configApiBase = "";
 const fileInput = document.getElementById("tanci-file");
 const recognizeBtn = document.getElementById("tanci-recognize");
 const exportBtn = document.getElementById("tanci-export");
@@ -27,7 +29,10 @@ function setStatus(text) {
 function normalizeApiBase(raw) {
     return raw.trim().replace(/\/+$/, "");
 }
-/** Hidden config: window.__YUEYU_TALCNE_API__ or localStorage, else localhost. */
+/**
+ * Priority: window override → localStorage → config.json → localhost.
+ * Production: set `talcneApiBase` in `/config.json` to the Render URL.
+ */
 function getApiBase() {
     try {
         const fromWindow = window.__YUEYU_TALCNE_API__;
@@ -41,7 +46,24 @@ function getApiBase() {
     catch {
         /* ignore */
     }
+    if (configApiBase)
+        return configApiBase;
     return DEFAULT_API;
+}
+async function loadPublicConfig() {
+    try {
+        const url = new URL("config.json", window.location.href).toString();
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok)
+            return;
+        const data = (await res.json());
+        if (typeof data.talcneApiBase === "string" && data.talcneApiBase.trim()) {
+            configApiBase = normalizeApiBase(data.talcneApiBase);
+        }
+    }
+    catch {
+        /* optional file */
+    }
 }
 function refreshActionState() {
     if (recognizeBtn)
@@ -302,9 +324,10 @@ function clearAll() {
     setStatus(t("tanci.ready"));
     refreshActionState();
 }
-function initTanciPanel() {
+async function initTanciPanel() {
     if (!fileInput || !recognizeBtn || !textEl)
         return;
+    await loadPublicConfig();
     fileInput.addEventListener("change", () => {
         selectedFiles = Array.from(fileInput.files ?? []).filter((f) => f.type.startsWith("image/") || /\.(jpe?g|png|webp|gif)$/i.test(f.name));
         renderPreviews();
@@ -329,5 +352,7 @@ function initTanciPanel() {
     renderPreviews();
     refreshActionState();
 }
-document.addEventListener("DOMContentLoaded", initTanciPanel);
+document.addEventListener("DOMContentLoaded", () => {
+    void initTanciPanel();
+});
 //# sourceMappingURL=tanci.js.map
