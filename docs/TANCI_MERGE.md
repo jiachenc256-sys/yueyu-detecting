@@ -45,7 +45,11 @@ node scripts/import-talcne-export.mjs path/to/talcne-yueyu-export.json \
 - If `translations.zhHant` / `translations.en` are newline-aligned with `lines[]`, the importer writes those layers.
 - `--text-only` leaves `audio` empty; the piece page should set `data-text-only="true"` so the viewer is a reader (no play).
 
-**Live starter:** [`pieces/pearl-tower-gift.html`](../pieces/pearl-tower-gift.html) + [`data/transcripts/pearl-tower-gift.json`](../data/transcripts/pearl-tower-gift.json), imported from [`data/fixtures/pearl-tower-gift.export.json`](../data/fixtures/pearl-tower-gift.export.json).
+**Live starter (image + text):** [`pieces/pearl-tower-gift.html`](../pieces/pearl-tower-gift.html) reads [`data/tanci/pearl-tower-gift.json`](../data/tanci/pearl-tower-gift.json) with pages under [`assets/tanci/pearl-tower/`](../assets/tanci/pearl-tower/). This is **not** the Yue-opera audio timeline viewer.
+
+Optional timed-text import path (OCR bridge → transcript JSON) still works via the importer above; use it when you later want line-aligned layers. Demo export: [`data/fixtures/pearl-tower-gift.export.json`](../data/fixtures/pearl-tower-gift.export.json).
+
+Archive deep link: `#archive-tanci` opens Archive and filters to tanci cards.
 
 Demo-only short fixture: [`data/fixtures/talcne-yueyu-export.sample.json`](../data/fixtures/talcne-yueyu-export.sample.json).
 

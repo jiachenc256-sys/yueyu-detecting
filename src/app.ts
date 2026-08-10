@@ -18,7 +18,13 @@ function initNavigation(): void {
       panel.setAttribute("aria-hidden", panel.dataset.panel === target ? "false" : "true");
     });
 
-    if (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`) {
+    const currentHash = window.location.hash.replace(/^#/, "");
+    const keepArchiveSubhash =
+      target === "archive" && /^archive-(tanci|yueju|broadcast)$/.test(currentHash);
+    if (
+      !keepArchiveSubhash &&
+      (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`)
+    ) {
       history.replaceState(null, "", `#${target}`);
     }
 
@@ -58,28 +64,41 @@ function initSideNavigation(linkAttr: string, sectionAttr: string): void {
   });
 }
 
-function initArchiveFilters(): void {
+function initArchiveFilters(): (category: string, opts?: { scroll?: boolean }) => void {
   const filters = document.querySelectorAll<HTMLButtonElement>("[data-archive-filter]");
   const cards = document.querySelectorAll<HTMLElement>("[data-archive-category]");
-  if (!filters.length || !cards.length) return;
+  const grid = document.querySelector<HTMLElement>(".archive-grid");
 
-  function apply(category: string): void {
+  function apply(category: string, opts?: { scroll?: boolean }): void {
+    if (!filters.length || !cards.length) return;
     filters.forEach((btn) => {
       btn.setAttribute("aria-pressed", btn.dataset.archiveFilter === category ? "true" : "false");
     });
+    let firstVisible: HTMLElement | null = null;
     cards.forEach((card) => {
       const cat = card.dataset.archiveCategory ?? "yueju";
       const show = category === "all" || cat === category;
       card.hidden = !show;
       card.setAttribute("aria-hidden", show ? "false" : "true");
+      if (show && !firstVisible) firstVisible = card;
     });
+    if (opts?.scroll) {
+      requestAnimationFrame(() => {
+        (firstVisible ?? grid)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
   }
 
   filters.forEach((btn) => {
     btn.addEventListener("click", () => {
-      apply(btn.dataset.archiveFilter ?? "all");
+      const category = btn.dataset.archiveFilter ?? "all";
+      apply(category, { scroll: true });
+      const nextHash = category === "all" ? "archive" : `archive-${category}`;
+      history.replaceState(null, "", `#${nextHash}`);
     });
   });
+
+  return apply;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -88,10 +107,15 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initSideNavigation("data-plan-target", "data-plan-section");
   initSideNavigation("data-about-target", "data-about-section");
-  initArchiveFilters();
+  const applyArchiveFilter = initArchiveFilters();
 
   const hash = window.location.hash.replace(/^#/, "");
-  if (hash) {
+  if (hash.startsWith("archive")) {
+    const catMatch = /^archive-(tanci|yueju|broadcast)$/.exec(hash);
+    if (catMatch) history.replaceState(null, "", `#archive-${catMatch[1]}`);
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="archive"]`)?.click();
+    applyArchiveFilter(catMatch?.[1] ?? "all", { scroll: true });
+  } else if (hash) {
     document.querySelector<HTMLElement>(`.site-nav [data-panel-target="${hash}"]`)?.click();
   }
 });
