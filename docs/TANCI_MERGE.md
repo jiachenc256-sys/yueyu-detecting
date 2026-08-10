@@ -36,12 +36,18 @@ Export JSON shape (`schemaVersion: "1.0.0"`, `source: "talcne"`) is documented i
 
 ```bash
 node scripts/import-talcne-export.mjs path/to/talcne-yueyu-export.json \
-  --id pearl-tower-sample \
-  --title "珍珠塔 · 文字层样例" \
-  --title-en "Pearl Tower · text-layer sample"
+  --id pearl-tower-gift \
+  --title "珍珠塔 · 赠塔" \
+  --title-en "Pearl Tower · The Gift" \
+  --text-only
 ```
 
-Sample fixture: [`data/fixtures/talcne-yueyu-export.sample.json`](../data/fixtures/talcne-yueyu-export.sample.json).
+- If `translations.zhHant` / `translations.en` are newline-aligned with `lines[]`, the importer writes those layers.
+- `--text-only` leaves `audio` empty; the piece page should set `data-text-only="true"` so the viewer is a reader (no play).
+
+**Live starter:** [`pieces/pearl-tower-gift.html`](../pieces/pearl-tower-gift.html) + [`data/transcripts/pearl-tower-gift.json`](../data/transcripts/pearl-tower-gift.json), imported from [`data/fixtures/pearl-tower-gift.export.json`](../data/fixtures/pearl-tower-gift.export.json).
+
+Demo-only short fixture: [`data/fixtures/talcne-yueyu-export.sample.json`](../data/fixtures/talcne-yueyu-export.sample.json).
 
 ## Non-goals
 

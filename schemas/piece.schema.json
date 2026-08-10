@@ -33,8 +33,7 @@
     },
     "audio": {
       "type": "string",
-      "minLength": 1,
-      "description": "Relative path to audio asset used by the viewer."
+      "description": "Relative path to audio asset used by the viewer. Empty string means text-only (e.g. tanci OCR layer with no curated audio yet)."
     },
     "sourceSrt": {
       "type": "string",
