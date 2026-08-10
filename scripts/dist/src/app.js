@@ -53,6 +53,22 @@ function initSideNavigation(linkAttr, sectionAttr) {
         });
     });
 }
+function initStoryMore() {
+    const links = document.querySelectorAll("[data-story-more]");
+    links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            const id = link.getAttribute("href")?.replace(/^#/, "");
+            if (!id)
+                return;
+            const target = document.getElementById(id);
+            if (!target)
+                return;
+            event.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            history.replaceState(null, "", `#story`);
+        });
+    });
+}
 function initArchiveFilters() {
     const filters = document.querySelectorAll("[data-archive-filter]");
     const cards = document.querySelectorAll("[data-archive-category]");
@@ -100,6 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initA11y();
     initI18n();
     initNavigation();
+    initStoryMore();
     initSideNavigation("data-plan-target", "data-plan-section");
     initSideNavigation("data-about-target", "data-about-section");
     const applyArchiveFilter = initArchiveFilters();

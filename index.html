@@ -22,11 +22,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260810g" />
-  <link rel="stylesheet" href="styles/main.css?v=20260810g" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260810g" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260810g" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260810g" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260810i" />
+  <link rel="stylesheet" href="styles/main.css?v=20260810i" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260810i" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260810i" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260810i" />
 </head>
 <body>
   <div class="app-shell">
@@ -1060,51 +1060,265 @@
       <!-- ── Story / process ── -->
       <section class="panel" data-panel="story" aria-hidden="true">
         <header class="section-header">
-          <h2 data-i18n="story.title">故事 · 我们为何做、如何做成</h2>
-          <p data-i18n="story.lead">把吴语里听得见的话——尤其是长辈与日常的声音——变成年轻人和外人也能跟读的档案。</p>
+          <h2 data-i18n="story.title">故事 · 语料采集与研究流程</h2>
+          <p data-i18n="story.lead">从绍兴方言与越剧出发：留下可听见、可理解、可延续的越语档案。</p>
         </header>
 
-        <div class="story-blocks">
-          <article class="story-block">
-            <h3 data-i18n="story.whyTitle">为什么重要</h3>
-            <p data-i18n="story.whyBody">吴语社区正在变薄：许多老人仍用家乡话过日子，舞台上的越剧、书场里的弹词、广播里的口音，却越来越少被下一代听懂。越语侦听想留下可对读的声音样本——不夸大抢救，只认真记录，尤其珍视长辈与女性日常说话人的声音。</p>
-          </article>
-          <article class="story-block">
-            <h3 data-i18n="story.originTitle">问题从哪里来</h3>
-            <p data-i18n="story.originBody">方言流失之外，还有一道缝：台上的韵白、散白与街上的口语并不相同。年轻人或外人往往能“听热闹”，却读不出字句。我们从越剧切入，也把弹词文字层与广播口语放进同一张地图，让对话既听得见，也读得懂。</p>
-          </article>
+        <div class="story-routine" aria-label="Our routine">
+          <p class="story-routine__label" data-i18n="story.routineLabel">语料采集与研究流程</p>
+          <div class="story-rail">
+            <article class="story-step">
+              <span class="story-step__num">01</span>
+              <h3 data-i18n="story.s1Title">采集与整理</h3>
+              <p data-i18n="story.s1Body">从弹词纸质文献、越剧录音录像与电台口语三类源头采集，精选编目，不把原始大包直接公开。</p>
+            </article>
+            <article class="story-step">
+              <span class="story-step__num">02</span>
+              <h3 data-i18n="story.s2Title">转写与翻译</h3>
+              <p data-i18n="story.s2Body">时间轴与说话人标注，简繁英三层对照，并附情节说明，让陌生访客也能跟上。</p>
+            </article>
+            <article class="story-step">
+              <span class="story-step__num">03</span>
+              <h3 data-i18n="story.s3Title">母语者实地验证</h3>
+              <p data-i18n="story.s3Body">请方言母语者与戏曲熟悉者听校、复述、择优，确认数字化语料仍然说得通。</p>
+            </article>
+            <article class="story-step">
+              <span class="story-step__num">04</span>
+              <h3 data-i18n="story.s4Title">语料回流与应用</h3>
+              <p data-i18n="story.s4Body">用已验证语料训练与评测，让系统从普通话基准一步步靠近活态越语与吴语。</p>
+            </article>
+          </div>
+          <a class="story-more" href="#story-full" data-story-more>
+            <span data-i18n="story.more">阅读完整故事</span>
+            <span class="story-more__arrow" aria-hidden="true">→</span>
+          </a>
         </div>
 
-        <div class="story-rail">
-          <article class="story-step">
-            <span class="story-step__num">01</span>
-            <h3 data-i18n="story.s1Title">收集与整理</h3>
-            <p data-i18n="story.s1Body">从本地戏曲、弹词相关文本与广播选段出发，建立清单与精选片段，而不是把整包音频丢上公网。</p>
-          </article>
-          <article class="story-step">
-            <span class="story-step__num">02</span>
-            <h3 data-i18n="story.s2Title">转写与翻译</h3>
-            <p data-i18n="story.s2Body">为选段加上时间轴、说话人、简体 / 繁體 / English，并写清剧情简介，让不懂戏的人也能跟得上。</p>
-          </article>
-          <article class="story-step">
-            <span class="story-step__num">03</span>
-            <h3 data-i18n="story.s3Title">真人试听检验</h3>
-            <p data-i18n="story.s3Body">请熟悉方言或戏曲的长辈与本地说话人试听、试说，对照识别结果是否“说得通、听得懂”。</p>
-          </article>
-          <article class="story-step">
-            <span class="story-step__num">04</span>
-            <h3 data-i18n="story.s4Title">用档案反哺识别</h3>
-            <p data-i18n="story.s4Body">把校对过的语料当作训练与评测依据，让听说翻译从“普通话基线”慢慢靠近越语与吴语现场。</p>
-          </article>
-        </div>
+        <div class="story-full" id="story-full">
+          <div class="story-doc" data-visible-lang="zh-Hans">
+            <header class="story-doc__header">
+              <p class="story-doc__eyebrow">完整故事</p>
+              <h3 class="story-doc__title">我们的语料采集与研究流程</h3>
+            </header>
+            <div class="story-doc__prose">
+              <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
+              <p>这两件事放在一起，让我觉得不能只是喜欢就完了。如果连我们这些既懂方言又爱戏的人都不去做点什么，等老一辈走了，越语和越剧里那些鲜活的、细微的、只可意会的东西，就真的很难再找回来了。</p>
+              <p>所以这个项目从最开始就不是一个冷冰冰的技术课题。它的起点很简单：我想把我听到的、看到的、觉得珍贵的东西，用一种能传下去的方式留下来，并且让它们不只是躺在硬盘里，而是真正能被听见、被理解、被延续。</p>
+              <p>整个工作围绕这个初衷展开，分为四个阶段。</p>
+            </div>
+            <article class="story-stage">
+              <span class="story-stage__num">01</span>
+              <h4 class="story-stage__title">第一阶段：采集与整理</h4>
+              <p class="story-stage__lead">我们从三类源头入手收集越语材料。</p>
+              <div class="story-sources">
+                <div class="story-source">
+                  <h5>弹词 · 纸质文献</h5>
+                  <p>我们前往上海图书馆、苏州图书馆和浙江图书馆的古籍部查阅刻本与油印本，同时走访民间收藏家，扫描手抄脚本，并在旧书市场搜集散落的单页唱段。每一份纸质资料都按来源和年代归档编号。</p>
+                </div>
+                <div class="story-source">
+                  <h5>越剧 · 录音与录像</h5>
+                  <p>在上海越剧院和浙江小百花越剧团的支持下，我们进入其内部资料库，转录了大量1970年至2000年间的演出磁带。我们还拜访了多位退休老艺人，将他们私人保存的演出录音和早年电视台录像翻录为数字格式。此外，我们在嵊州和杭州的剧场完成了多场现场演出的实地录制。</p>
+                </div>
+                <div class="story-source">
+                  <h5>电台广播 · 口语现场</h5>
+                  <p>我们从上海和浙江人民广播电台的档案库中调取了1980年至2005年间的方言节目，涵盖开盘带和DAT带等多种介质。与此同时，我们通过社区和老年大学联系了二十余位72岁至90岁的本地老人，请他们收听方言广播并提供即时解释，我们也跟随他们记录日常生活中的自然对话。</p>
+                </div>
+              </div>
+              <p class="story-stage__close">在整理环节，我们对所有素材进行筛选与编目，精选代表性片段建立内部索引库，按类型、年代、来源分类存放，不将原始大包直接公开上传。</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">02</span>
+              <h4 class="story-stage__title">第二阶段：转写与翻译</h4>
+              <p class="story-stage__lead">每一段音频或视频进入转写流程时，我们首先完成时间轴标注和说话人区分，演员、受访者、播音员各自标记清楚。</p>
+              <p>随后进行三层对照转写：简体中文、繁体中文、英文翻译。方言特有词汇如“煞煞齐”“弗碍”等，我们会额外标注发音注释。手抄本中字迹模糊无法辨认的部分，我们向老年听众展示扫描图片，请他们根据唱腔习惯辅助辨认。</p>
+              <p>每个选段我们还会附上一段简短的情节介绍或背景说明，交代这段唱词讲的是什么故事、这段对话发生在什么场景。这样做的用意是，即便对越语或戏曲完全陌生的访客，也能跟上内容。</p>
+              <p>所有转写文本与原始音频保持时间轴对齐，支持逐句对照。</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">03</span>
+              <h4 class="story-stage__title">第三阶段：母语者实地验证</h4>
+              <p class="story-stage__lead">转写完成后，真正的校验才刚刚开始。我们邀请了两类核心验证者参与。</p>
+              <p>第一类是方言母语者，即长期居住在嵊州、绍兴一带、日常使用越语交流的本地老人。第二类是戏曲熟悉者，包括退休越剧演员和弹词老听众，他们对舞台语言的发音和用词有更为精细的判断。</p>
+              <p>验证方式有三种。</p>
+              <ol class="story-methods">
+                <li>
+                  <strong>听写校对</strong>
+                  <span>请他们听我们的转写片段，判断文本是否准确，尤其是方言词汇和注音有无偏差。</span>
+                </li>
+                <li>
+                  <strong>复述对照</strong>
+                  <span>请他们复述所听内容，我们将其复述与原始录音对比，以检验系统能否正确理解这些表达。</span>
+                </li>
+                <li>
+                  <strong>争议择优</strong>
+                  <span>对存在争议的唱词或俗语，我们提供多个转写版本，请他们选出最符合实际发音的一项并说明理由。</span>
+                </li>
+              </ol>
+              <p class="story-stage__close">这一阶段的本质是，经过数字化处理的语料，在真实母语者听来，是否仍然说得通，是否保留了越语应有的鲜活面貌。</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">04</span>
+              <h4 class="story-stage__title">第四阶段：语料回流与应用</h4>
+              <p class="story-stage__lead">完成前三阶段后，我们建立了一个经过验证的越语语料库，内容涵盖弹词唱词文本、越剧录音及对应转写、电台广播和日常对话的标注语料，全部配有翻译和时间轴。</p>
+              <p>这一语料库承担双重角色。</p>
+              <p>在训练方面，它用于微调语音识别与语音合成模型，使其从标准的普通话基准逐步迁移至能处理活态越语及吴语口语。在评估方面，它作为测试集，检验系统对越语方言词汇、特殊发音和戏曲唱腔的识别准确率。</p>
+              <p>整个流程形成闭环：语料从田野中来，经母语者验证，再回到技术系统中去。我们的目标不是简单地收藏越语，而是让越语重新成为可以被听见、被理解、被生成的语言，从一个以普通话为基准的系统，一步步向活态的越语和吴语靠近。</p>
+            </article>
+          </div>
 
-        <div class="story-note">
-          <p data-i18n="story.note">
-            当前识别仍是基线演示。故事的重点是方法与动机：听见吴语、读懂对话、请真人检验，再慢慢改进——而不是假装已经完美。
-          </p>
-          <div class="home-cta">
-            <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">开始听说翻译</button>
-            <button type="button" class="home-cta__btn" data-panel-target="archive" data-i18n="home.ctaArchive">打开档案</button>
+          <div class="story-doc" data-visible-lang="zh-Hant">
+            <header class="story-doc__header">
+              <p class="story-doc__eyebrow">完整故事</p>
+              <h3 class="story-doc__title">我們的語料採集與研究流程</h3>
+            </header>
+            <div class="story-doc__prose">
+              <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
+              <p>這兩件事放在一起，讓我覺得不能只是喜歡就完了。如果連我們這些既懂方言又愛戲的人都不去做點什麼，等老一輩走了，越語和越劇裏那些鮮活的、細微的、只可意會的東西，就真的很難再找回來了。</p>
+              <p>所以這個項目從最開始就不是一個冷冰冰的技術課題。它的起點很簡單：我想把我聽到的、看到的、覺得珍貴的東西，用一種能傳下去的方式留下來，並且讓它們不只是躺在硬盤裡，而是真正能被聽見、被理解、被延續。</p>
+              <p>整個工作圍繞這個初衷展開，分爲四個階段。</p>
+            </div>
+            <article class="story-stage">
+              <span class="story-stage__num">01</span>
+              <h4 class="story-stage__title">第一階段：採集與整理</h4>
+              <p class="story-stage__lead">我們從三類源頭入手收集越語材料。</p>
+              <div class="story-sources">
+                <div class="story-source">
+                  <h5>彈詞 · 紙質文獻</h5>
+                  <p>我們前往上海圖書館、蘇州圖書館和浙江圖書館的古籍部查閱刻本與油印本，同時走訪民間收藏家，掃描手抄腳本，並在舊書市場搜集散落的單頁唱段。每一份紙質資料都按來源和年代歸檔編號。</p>
+                </div>
+                <div class="story-source">
+                  <h5>越劇 · 錄音與錄像</h5>
+                  <p>在上海越劇院和浙江小百花越劇團的支持下，我們進入其內部資料庫，轉錄了大量1970年至2000年間的演出磁帶。我們還拜訪了多位退休老藝人，將他們私人保存的演出錄音和早年電視臺錄像翻錄爲數字格式。此外，我們在嵊州和杭州的劇場完成了多場現場演出的實地錄製。</p>
+                </div>
+                <div class="story-source">
+                  <h5>電臺廣播 · 口語現場</h5>
+                  <p>我們從上海和浙江人民廣播電臺的檔案庫中調取了1980年至2005年間的方言節目，涵蓋開盤帶和DAT帶等多種介質。與此同時，我們通過社區和老年大學聯繫了二十餘位72歲至90歲的本地老人，請他們收聽方言廣播並提供即時解釋，我們也跟隨他們記錄日常生活中的自然對話。</p>
+                </div>
+              </div>
+              <p class="story-stage__close">在整理環節，我們對所有素材進行篩選與編目，精選代表性片段建立內部索引庫，按類型、年代、來源分類存放，不將原始大包直接公開上傳。</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">02</span>
+              <h4 class="story-stage__title">第二階段：轉寫與翻譯</h4>
+              <p class="story-stage__lead">每一段音頻或視頻進入轉寫流程時，我們首先完成時間軸標註和說話人區分，演員、受訪者、播音員各自標記清楚。</p>
+              <p>隨後進行三層對照轉寫：簡體中文、繁體中文、英文翻譯。方言特有詞彙如「煞煞齊」「弗礙」等，我們會額外標註發音注釋。手抄本中字跡模糊無法辨認的部分，我們向老年聽衆展示掃描圖片，請他們根據唱腔習慣輔助辨認。</p>
+              <p>每個選段我們還會附上一段簡短的情節介紹或背景說明，交代這段唱詞講的是什麼故事、這段對話發生在什麼場景。這樣做的用意是，即便對越語或戲曲完全陌生的訪客，也能跟上內容。</p>
+              <p>所有轉寫文本與原始音頻保持時間軸對齊，支持逐句對照。</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">03</span>
+              <h4 class="story-stage__title">第三階段：母語者實地驗證</h4>
+              <p class="story-stage__lead">轉寫完成後，真正的校驗才剛剛開始。我們邀請了兩類核心驗證者參與。</p>
+              <p>第一類是方言母語者，即長期居住在嵊州、紹興一帶、日常使用越語交流的本地老人。第二類是戲曲熟悉者，包括退休越劇演員和彈詞老聽衆，他們對舞臺語言的發音和用詞有更爲精細的判斷。</p>
+              <p>驗證方式有三種。</p>
+              <ol class="story-methods">
+                <li>
+                  <strong>聽寫校對</strong>
+                  <span>請他們聽我們的轉寫片段，判斷文本是否準確，尤其是方言詞彙和注音有無偏差。</span>
+                </li>
+                <li>
+                  <strong>複述對照</strong>
+                  <span>請他們複述所聽內容，我們將其複述與原始錄音對比，以檢驗系統能否正確理解這些表達。</span>
+                </li>
+                <li>
+                  <strong>爭議擇優</strong>
+                  <span>對存在爭議的唱詞或俗語，我們提供多個轉寫版本，請他們選出最符合實際發音的一項並說明理由。</span>
+                </li>
+              </ol>
+              <p class="story-stage__close">這一階段的本質是，經過數字化處理的語料，在真實母語者聽來，是否仍然說得通，是否保留了越語應有的鮮活面貌。</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">04</span>
+              <h4 class="story-stage__title">第四階段：語料回流與應用</h4>
+              <p class="story-stage__lead">完成前三階段後，我們建立了一個經過驗證的越語語料庫，內容涵蓋彈詞唱詞文本、越劇錄音及對應轉寫、電臺廣播和日常對話的標註語料，全部配有翻譯和時間軸。</p>
+              <p>這一語料庫承擔雙重角色。</p>
+              <p>在訓練方面，它用於微調語音識別與語音合成模型，使其從標準的普通話基準逐步遷移至能處理活態越語及吳語口語。在評估方面，它作爲測試集，檢驗系統對越語方言詞彙、特殊發音和戲曲唱腔的識別準確率。</p>
+              <p>整個流程形成閉環：語料從田野中來，經母語者驗證，再回到技術系統中去。我們的目標不是簡單地收藏越語，而是讓越語重新成爲可以被聽見、被理解、被生成的語言，從一個以普通話爲基準的系統，一步步向活態的越語和吳語靠近。</p>
+            </article>
+          </div>
+
+          <div class="story-doc" data-visible-lang="en">
+            <header class="story-doc__header">
+              <p class="story-doc__eyebrow">Full story</p>
+              <h3 class="story-doc__title">Our Corpus Collection and Research Workflow</h3>
+            </header>
+            <div class="story-doc__prose">
+              <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
+              <p>But over the years, I have noticed two things that worry me. First, fewer and fewer people speak authentic Yueyu. The younger generation communicates almost entirely in Mandarin, and the older vocabulary and distinctive pronunciations are quietly fading. Second, the audience for Yue Opera is aging as well. Many precious singing styles, spoken parts, and unique interpretations passed down by veteran performers are at risk of being lost as they grow older.</p>
+              <p>These two realisations made me feel that simply being a fan was not enough. If those of us who know both the dialect and the opera do not do something, then when the older generation is gone, all the vivid, nuanced, intangible qualities of Yueyu and Yue Opera will be nearly impossible to recover.</p>
+              <p>So this project was never just a cold technical exercise. Its origin is simple. I want to take what I have heard and seen, what I find precious, and preserve it in a way that can endure. Not just sitting on a hard drive, but truly heard, understood, and carried forward.</p>
+              <p>Our work revolves around this core purpose and unfolds in four stages.</p>
+            </div>
+            <article class="story-stage">
+              <span class="story-stage__num">01</span>
+              <h4 class="story-stage__title">Stage 1: Collection and Curation</h4>
+              <p class="story-stage__lead">We gather Yueyu materials from three primary sources.</p>
+              <div class="story-sources">
+                <div class="story-source">
+                  <h5>Tanci · paper sources</h5>
+                  <p>We consulted block-printed and mimeographed editions in the rare-book rooms of Shanghai Library, Suzhou Library, and Zhejiang Library. We also visited private collectors to scan hand-copied scripts and acquired single-page librettos from second-hand book markets. Each paper item is catalogued by source and date.</p>
+                </div>
+                <div class="story-source">
+                  <h5>Yue Opera · audio and video</h5>
+                  <p>With access to the internal archives of Shanghai Yue Opera Theatre and Zhejiang Xiaobaihua Yue Opera Troupe, we transferred a substantial collection of performance tapes dating from the 1970s through the 2000s. We also visited retired performers to digitise their personal recordings and early television broadcasts. In addition, we completed multiple on-site recordings of live performances at theatres in Shengzhou and Hangzhou.</p>
+                </div>
+                <div class="story-source">
+                  <h5>Radio · spoken Yueyu</h5>
+                  <p>We retrieved dialect programmes from 1980 to 2005 from the archives of Shanghai and Zhejiang People’s Broadcasting Stations, covering open-reel tapes and DAT cassettes. Through community networks and senior colleges, we also connected with over twenty local residents aged 72 to 90. We asked them to listen to dialect broadcasts and provide live interpretation, and we accompanied them through daily routines to capture natural, unscripted conversation.</p>
+                </div>
+              </div>
+              <p class="story-stage__close">During curation, all materials are screened and catalogued. Representative clips are selected and organised into an internal index by type, era, and source. We do not upload full raw data packs to the public web.</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">02</span>
+              <h4 class="story-stage__title">Stage 2: Transcription and Translation</h4>
+              <p class="story-stage__lead">Every audio or video clip entering transcription is first time-stamped and speaker-labelled. Performers, respondents, and announcers are clearly distinguished.</p>
+              <p>We then produce a three-layer parallel transcription: Simplified Chinese, Traditional Chinese, and English translation. Dialect-specific terms such as “煞煞齐” (sasa qi) or “弗碍” (fu’ai) are annotated with additional pronunciation notes. For illegible characters in hand-copied scripts, we show scans to elderly listeners and ask them to help identify the characters based on their knowledge of singing conventions.</p>
+              <p>Each segment is accompanied by a brief plot summary or contextual note, explaining the story behind the lyrics or the setting of the dialogue. This ensures that even visitors entirely unfamiliar with Yueyu or opera can follow along.</p>
+              <p>All transcriptions remain time-aligned with the original audio for sentence-by-sentence comparison.</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">03</span>
+              <h4 class="story-stage__title">Stage 3: Field Validation with Native Speakers</h4>
+              <p class="story-stage__lead">Transcription is only half the work. Validation begins when native speakers step in. We engage two groups of validators.</p>
+              <p>The first group is dialect native speakers: elderly locals from Shengzhou and Shaoxing who use Yueyu in daily life. The second group is opera connoisseurs, including retired Yue Opera performers and longtime Tanci listeners who have a refined ear for stage pronunciation and vocabulary.</p>
+              <p>Validation takes three forms.</p>
+              <ol class="story-methods">
+                <li>
+                  <strong>Listen and correct</strong>
+                  <span>They listen to our transcribed clips and assess whether the text is accurate, especially whether dialect terms and phonetic annotations have been correctly rendered.</span>
+                </li>
+                <li>
+                  <strong>Retell and compare</strong>
+                  <span>They retell the content in their own words. We compare their retelling against the original recording to test whether a system could correctly interpret these expressions.</span>
+                </li>
+                <li>
+                  <strong>Choose among variants</strong>
+                  <span>For contested lyrics or colloquial phrases, we present multiple transcription options and ask them to select the one that best matches the actual pronunciation, along with their reasoning.</span>
+                </li>
+              </ol>
+              <p class="story-stage__close">At its core, this stage asks one question: to a real native speaker, does the digitised material still sound right? Does it retain the living quality of Yueyu?</p>
+            </article>
+            <article class="story-stage">
+              <span class="story-stage__num">04</span>
+              <h4 class="story-stage__title">Stage 4: Feeding the Archive Back</h4>
+              <p class="story-stage__lead">Upon completing the first three stages, we have built a validated Yueyu corpus. It includes transcribed Tanci lyrics, Yue Opera recordings with aligned transcripts, and annotated radio and conversational data, all with translation and timestamps.</p>
+              <p>This corpus serves two purposes.</p>
+              <p>For training, it is used to fine-tune speech recognition and synthesis models, gradually transitioning them from a Mandarin baseline toward handling living Yueyu and Wu dialect speech. For evaluation, it serves as a test set to measure system accuracy in recognising Yueyu dialect vocabulary, special pronunciations, and operatic vocal styles.</p>
+              <p>The workflow forms a closed loop. Materials come from the field, are validated by native speakers, and are fed back into the technical systems. Our goal is not simply to archive Yueyu, but to make it a language that can once again be heard, understood, and generated—moving step by step from a Mandarin-centric system toward one that embraces living Yueyu and Wu speech.</p>
+            </article>
+          </div>
+
+          <div class="story-note">
+            <p>
+              <span data-visible-lang="zh-Hans">当前识别仍是基线演示。故事的重点是方法与动机：听见越语、读懂对话、请真人检验，再慢慢改进——而不是假装已经完美。</span>
+              <span data-visible-lang="zh-Hant">當前識別仍是基線演示。故事的重點是方法與動機：聽見越語、讀懂對話、請真人檢驗，再慢慢改進——而不是假裝已經完美。</span>
+              <span data-visible-lang="en">Recognition is still a baseline demo. The story is motive and method: hear Yueyu, read the lines, check with people, then improve — not a claim of perfection.</span>
+            </p>
+            <div class="home-cta">
+              <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">开始听说翻译</button>
+              <button type="button" class="home-cta__btn" data-panel-target="archive" data-i18n="home.ctaArchive">打开档案</button>
+            </div>
           </div>
         </div>
       </section>
@@ -1356,8 +1570,8 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260810g"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260810g"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260810g"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260810i"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260810i"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260810i"></script>
 </body>
 </html>
