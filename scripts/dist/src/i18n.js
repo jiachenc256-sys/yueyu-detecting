@@ -517,7 +517,7 @@ const en = {
     "learn.ziyin.prev": "Previous",
     "learn.ziyin.next": "Next",
     "learn.ziyin.random": "Random",
-    "learn.ziyin.legend": "Yueyu romanization is a Shengzhou spoken reference, not Mandarin pinyin. Read Mandarin pinyin yourself—no audio needed.",
+    "learn.ziyin.legend": "Yueyu romanization is a Shengzhou spoken reference, not Mandarin pinyin. Read the Mandarin pinyin yourself.",
     "about.title": "About",
     "about.lead": "What we provide, developer, how to use this site, privacy, and copyright.",
     "about.nav.provide": "What we provide",

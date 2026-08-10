@@ -1,4 +1,4 @@
-import { onLocaleChange, t, tf } from "./i18n.js";
+import { onLocaleChange, t, tf } from "./i18n.js?v=20260810t";
 
 /**
  * In-site Tanci panel: image-only OCR via sister project Talcne backend,
