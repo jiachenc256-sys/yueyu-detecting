@@ -17,7 +17,7 @@ Nav **弹词** (`#tanci`) on this site:
 - Calls Talcne’s `POST /api/ocr` with `FormData` field `file`
 - Editable result + **简体 / 繁體 / English** (MyMemory, same pattern as Speak)
 - **导出 JSON（档案桥）**
-- API base is hidden: default `http://127.0.0.1:8000`, or set `localStorage.yueyu.talcneApiBase` / `window.__YUEYU_TALCNE_API__`
+- API base (hidden): `config.json` → `talcneApiBase` (Render URL), else `localStorage.yueyu.talcneApiBase` / `window.__YUEYU_TALCNE_API__`, else `http://127.0.0.1:8000`
 
 ```bash
 # Terminal 1 — Talcne backend
@@ -28,7 +28,7 @@ uvicorn main:app --reload
 
 Then open Yueyu → **弹词** → choose image → recognize → read translations.
 
-For GitHub Pages against a deployed Render backend, set `localStorage.setItem('yueyu.talcneApiBase', 'https://your-backend.onrender.com')` once in the browser console, and ensure `CORS_ORIGINS` allows `https://jiachenc256-sys.github.io`.
+Production OCR backend: `https://talcne.onrender.com` (set in [`config.json`](../config.json)). Ensure Render `CORS_ORIGINS` includes `https://yueyudetecting.com`. Free tier may sleep after ~15 minutes idle.
 
 ## Export → archive piece
 
