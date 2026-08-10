@@ -1,4 +1,4 @@
-/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州 (语保工程). */
+/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州. */
 
 interface ZiyinItem {
   han: string;
@@ -14,7 +14,6 @@ interface ZiyinFile {
   schemaVersion: string;
   script: string;
   note?: string;
-  source?: string;
   items: ZiyinItem[];
 }
 
@@ -37,19 +36,17 @@ async function initZiyin(): Promise<void> {
   const tagEl = requireEl(document.getElementById("ziyin-tag"), "ziyin-tag");
   const statusEl = requireEl(document.getElementById("ziyin-status"), "ziyin-status");
   const noteEl = document.getElementById("ziyin-note");
-  const sourceEl = document.getElementById("ziyin-source");
   const prevBtn = requireEl(document.getElementById("ziyin-prev"), "ziyin-prev") as HTMLButtonElement;
   const nextBtn = requireEl(document.getElementById("ziyin-next"), "ziyin-next") as HTMLButtonElement;
   const randomBtn = requireEl(document.getElementById("ziyin-random"), "ziyin-random") as HTMLButtonElement;
 
-  const res = await fetch("data/learn/ziyin.json?v=20260810w");
+  const res = await fetch("data/learn/ziyin.json?v=20260810x");
   if (!res.ok) throw new Error(`ziyin HTTP ${res.status}`);
   const data = (await res.json()) as ZiyinFile;
   const items = data.items.filter((it) => it.han?.trim());
   if (!items.length) throw new Error("ziyin list empty");
 
   if (noteEl && data.note) noteEl.textContent = data.note;
-  if (sourceEl && data.source) sourceEl.textContent = data.source;
 
   let index = 0;
 
