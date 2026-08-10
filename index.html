@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260810v" />
-  <link rel="stylesheet" href="styles/main.css?v=20260810v" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260810v" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260810v" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260810v" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260810v" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260810w" />
+  <link rel="stylesheet" href="styles/main.css?v=20260810w" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260810w" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260810w" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260810w" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260810w" />
 </head>
 <body>
   <div class="app-shell">
@@ -1708,32 +1708,40 @@
           <div class="learn-content">
             <div class="learn-tool" data-learn-section="ziyin" aria-hidden="false">
               <p class="learn-audience" data-visible-lang="zh-Hans" data-i18n="learn.audienceHans">
-                面向已会普通话拼音的简体中文使用者：对照汉字、普通话拼音与越语拼音。
+                面向已会普通话拼音的简体中文使用者：对照汉字、普通话拼音，以及绍兴一带上虞 / 诸暨 / 嵊州三地读音。
               </p>
               <p class="learn-audience" data-visible-lang="zh-Hant" data-i18n="learn.audienceNote">
-                本練習為已會普通話拼音的學習者設計；卡片內容固定為簡體漢字與普通話拼音。
+                本練習為已會普通話拼音的學習者設計；卡片為簡體漢字，並對照上虞 / 諸暨 / 嵊州三地讀音。
               </p>
               <p class="learn-audience" data-visible-lang="en" data-i18n="learn.audienceNote">
-                This drill is for learners who already use Mandarin pinyin; cards stay in Simplified Chinese.
+                For learners who already use Mandarin pinyin: compare Simplified hanzi with Shangyu, Zhuji, and Shengzhou readings.
               </p>
 
               <div id="ziyin-stage" class="ziyin-stage" hidden>
                 <div class="ziyin-card">
-                  <p id="ziyin-han" class="ziyin-han" lang="zh-Hans">听</p>
+                  <p id="ziyin-han" class="ziyin-han" lang="zh-Hans">多</p>
                   <span id="ziyin-tag" class="ziyin-tag"></span>
                   <div class="ziyin-rows">
                     <div class="ziyin-row">
                       <span class="ziyin-row__label" data-i18n="learn.ziyin.mandarin">普通话</span>
-                      <p id="ziyin-pinyin" class="ziyin-row__value" lang="zh-Latn">tīng</p>
+                      <p id="ziyin-pinyin" class="ziyin-row__value" lang="zh-Latn">duō</p>
                     </div>
                     <div class="ziyin-row">
-                      <span class="ziyin-row__label" data-i18n="learn.ziyin.yueyu">越语</span>
-                      <p id="ziyin-yueyu" class="ziyin-row__value ziyin-row__value--yueyu">thin1</p>
+                      <span class="ziyin-row__label" data-i18n="learn.ziyin.shangyu">上虞</span>
+                      <p id="ziyin-shangyu" class="ziyin-row__value ziyin-row__value--ipa">tɷ35</p>
+                    </div>
+                    <div class="ziyin-row">
+                      <span class="ziyin-row__label" data-i18n="learn.ziyin.zhuji">诸暨</span>
+                      <p id="ziyin-zhuji" class="ziyin-row__value ziyin-row__value--ipa">tɤu544</p>
+                    </div>
+                    <div class="ziyin-row ziyin-row--focus">
+                      <span class="ziyin-row__label" data-i18n="learn.ziyin.shengzhou">嵊州</span>
+                      <p id="ziyin-shengzhou" class="ziyin-row__value ziyin-row__value--ipa ziyin-row__value--focus">to534</p>
                     </div>
                   </div>
-                  <p class="ziyin-gloss">
+                  <p id="ziyin-gloss-row" class="ziyin-gloss" hidden>
                     <span data-i18n="learn.ziyin.gloss">释义</span>：
-                    <span id="ziyin-gloss">听见</span>
+                    <span id="ziyin-gloss">—</span>
                   </p>
                 </div>
 
@@ -1744,9 +1752,10 @@
                 </div>
                 <p id="ziyin-status" class="ziyin-status">1 / 1</p>
                 <p id="ziyin-note" class="ziyin-note"></p>
-                <p class="ziyin-legend" data-visible-lang="zh-Hans">越语拼音为嵊州口语参考转写，非普通话拼音。对照普通话拼音自学即可。</p>
-                <p class="ziyin-legend" data-visible-lang="zh-Hant">越語拼音為嵊州口語參考轉寫，非普通話拼音。對照普通話拼音自學即可。</p>
-                <p class="ziyin-legend" data-visible-lang="en">Yueyu romanization is a Shengzhou spoken reference, not Mandarin pinyin. Read the Mandarin pinyin yourself.</p>
+                <p id="ziyin-source" class="ziyin-source"></p>
+                <p class="ziyin-legend" data-visible-lang="zh-Hans">三地音标来自语保工程（带调值），非普通话拼音。嵊州与越剧念白关系最近，已单独标出。</p>
+                <p class="ziyin-legend" data-visible-lang="zh-Hant">三地音標來自語保工程（帶調值），非普通話拼音。嵊州與越劇念白關係最近，已單獨標出。</p>
+                <p class="ziyin-legend" data-visible-lang="en">IPA with tone values from the Language Protection Project—not Mandarin pinyin. Shengzhou is highlighted for Yue Opera speech.</p>
               </div>
             </div>
             <!-- Future learn-tool sections go here -->
@@ -1995,9 +2004,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260810v"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260810v"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260810v"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260810v"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260810w"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260810w"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260810w"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260810w"></script>
 </body>
 </html>

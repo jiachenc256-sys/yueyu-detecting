@@ -1,91 +1,6919 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "script": "zh-Hans",
-  "title": "单字发音",
-  "note": "越语拼音为嵊州口语参考转写（接近吴语学堂 wugniu 风格），供已会普通话拼音的使用者对照入门；后续可继续校对。",
+  "title": "单字发音 · 三地对照",
+  "source": "中国语言资源保护工程采录展示平台 · 调查点横向对比",
+  "sourceUrl": "https://zhongguoyuyan.cn/",
+  "places": [
+    {
+      "id": "shangyu",
+      "label": "上虞"
+    },
+    {
+      "id": "zhuji",
+      "label": "诸暨"
+    },
+    {
+      "id": "shengzhou",
+      "label": "嵊州"
+    }
+  ],
+  "note": "绍兴一带三地单字对照（上虞 / 诸暨 / 嵊州）。音标来自语保工程，带调值；供已会普通话拼音的学习者对照入门，非普通话拼音。",
   "items": [
-    { "han": "人", "pinyin": "rén", "yueyu": "nyin2", "gloss": "人", "tag": "常用" },
-    { "han": "好", "pinyin": "hǎo", "yueyu": "hau3", "gloss": "好", "tag": "常用" },
-    { "han": "说", "pinyin": "shuō", "yueyu": "seq7", "gloss": "说话", "tag": "常用" },
-    { "han": "看", "pinyin": "kàn", "yueyu": "khoe5", "gloss": "看", "tag": "常用" },
-    { "han": "读", "pinyin": "dú", "yueyu": "doq8", "gloss": "读", "tag": "常用" },
-    { "han": "写", "pinyin": "xiě", "yueyu": "sia3", "gloss": "写", "tag": "常用" },
-    { "han": "听", "pinyin": "tīng", "yueyu": "thin1", "gloss": "听见", "tag": "常用" },
-    { "han": "念", "pinyin": "niàn", "yueyu": "nyi6", "gloss": "念 / 念白", "tag": "戏曲" },
-    { "han": "来", "pinyin": "lái", "yueyu": "le2", "gloss": "来", "tag": "常用" },
-    { "han": "去", "pinyin": "qù", "yueyu": "chi5", "gloss": "去", "tag": "常用" },
-    { "han": "走", "pinyin": "zǒu", "yueyu": "tseu3", "gloss": "走", "tag": "常用" },
-    { "han": "坐", "pinyin": "zuò", "yueyu": "zu6", "gloss": "坐", "tag": "常用" },
-    { "han": "站", "pinyin": "zhàn", "yueyu": "dze6", "gloss": "站", "tag": "常用" },
-    { "han": "上", "pinyin": "shàng", "yueyu": "zaon6", "gloss": "上", "tag": "常用" },
-    { "han": "下", "pinyin": "xià", "yueyu": "gho6", "gloss": "下", "tag": "常用" },
-    { "han": "我", "pinyin": "wǒ", "yueyu": "ngo3", "gloss": "我", "tag": "常用" },
-    { "han": "你", "pinyin": "nǐ", "yueyu": "nyi3", "gloss": "你", "tag": "常用" },
-    { "han": "他", "pinyin": "tā", "yueyu": "yi1", "gloss": "他/她（口语常作伊）", "tag": "常用" },
-    { "han": "有", "pinyin": "yǒu", "yueyu": "yeu6", "gloss": "有", "tag": "常用" },
-    { "han": "没", "pinyin": "méi", "yueyu": "veq8", "gloss": "没有（弗/冇一类）", "tag": "常用" },
-    { "han": "是", "pinyin": "shì", "yueyu": "zy6", "gloss": "是", "tag": "常用" },
-    { "han": "不", "pinyin": "bù", "yueyu": "veq7", "gloss": "不/弗", "tag": "常用" },
-    { "han": "要", "pinyin": "yào", "yueyu": "iau5", "gloss": "要", "tag": "常用" },
-    { "han": "会", "pinyin": "huì", "yueyu": "we6", "gloss": "会", "tag": "常用" },
-    { "han": "能", "pinyin": "néng", "yueyu": "nen2", "gloss": "能", "tag": "常用" },
-    { "han": "知", "pinyin": "zhī", "yueyu": "tsy1", "gloss": "知道", "tag": "常用" },
-    { "han": "道", "pinyin": "dào", "yueyu": "dau6", "gloss": "道 / 路", "tag": "常用" },
-    { "han": "想", "pinyin": "xiǎng", "yueyu": "shian3", "gloss": "想", "tag": "常用" },
-    { "han": "爱", "pinyin": "ài", "yueyu": "e5", "gloss": "爱", "tag": "常用" },
-    { "han": "大", "pinyin": "dà", "yueyu": "du6", "gloss": "大", "tag": "常用" },
-    { "han": "小", "pinyin": "xiǎo", "yueyu": "siau3", "gloss": "小", "tag": "常用" },
-    { "han": "多", "pinyin": "duō", "yueyu": "tu1", "gloss": "多", "tag": "常用" },
-    { "han": "少", "pinyin": "shǎo", "yueyu": "sau3", "gloss": "少", "tag": "常用" },
-    { "han": "家", "pinyin": "jiā", "yueyu": "ko1", "gloss": "家", "tag": "常用" },
-    { "han": "门", "pinyin": "mén", "yueyu": "men2", "gloss": "门", "tag": "常用" },
-    { "han": "里", "pinyin": "lǐ", "yueyu": "li3", "gloss": "里面", "tag": "常用" },
-    { "han": "外", "pinyin": "wài", "yueyu": "nga6", "gloss": "外面", "tag": "常用" },
-    { "han": "天", "pinyin": "tiān", "yueyu": "thi1", "gloss": "天", "tag": "常用" },
-    { "han": "地", "pinyin": "dì", "yueyu": "di6", "gloss": "地", "tag": "常用" },
-    { "han": "水", "pinyin": "shuǐ", "yueyu": "sy3", "gloss": "水", "tag": "常用" },
-    { "han": "火", "pinyin": "huǒ", "yueyu": "hu3", "gloss": "火", "tag": "常用" },
-    { "han": "山", "pinyin": "shān", "yueyu": "sae1", "gloss": "山", "tag": "常用" },
-    { "han": "花", "pinyin": "huā", "yueyu": "ho1", "gloss": "花", "tag": "常用" },
-    { "han": "月", "pinyin": "yuè", "yueyu": "yueq8", "gloss": "月亮", "tag": "常用" },
-    { "han": "风", "pinyin": "fēng", "yueyu": "fon1", "gloss": "风", "tag": "常用" },
-    { "han": "雨", "pinyin": "yǔ", "yueyu": "yu3", "gloss": "雨", "tag": "常用" },
-    { "han": "心", "pinyin": "xīn", "yueyu": "shin1", "gloss": "心", "tag": "常用" },
-    { "han": "手", "pinyin": "shǒu", "yueyu": "seu3", "gloss": "手", "tag": "常用" },
-    { "han": "头", "pinyin": "tóu", "yueyu": "deu2", "gloss": "头", "tag": "常用" },
-    { "han": "眼", "pinyin": "yǎn", "yueyu": "nge3", "gloss": "眼睛", "tag": "常用" },
-    { "han": "口", "pinyin": "kǒu", "yueyu": "kheu3", "gloss": "口", "tag": "常用" },
-    { "han": "父", "pinyin": "fù", "yueyu": "vu6", "gloss": "父亲", "tag": "亲属" },
-    { "han": "母", "pinyin": "mǔ", "yueyu": "mu3", "gloss": "母亲", "tag": "亲属" },
-    { "han": "哥", "pinyin": "gē", "yueyu": "ku1", "gloss": "哥哥", "tag": "亲属" },
-    { "han": "姐", "pinyin": "jiě", "yueyu": "tsia3", "gloss": "姐姐", "tag": "亲属" },
-    { "han": "弟", "pinyin": "dì", "yueyu": "di6", "gloss": "弟弟", "tag": "亲属" },
-    { "han": "妹", "pinyin": "mèi", "yueyu": "me6", "gloss": "妹妹", "tag": "亲属" },
-    { "han": "戏", "pinyin": "xì", "yueyu": "shi5", "gloss": "戏", "tag": "戏曲" },
-    { "han": "唱", "pinyin": "chàng", "yueyu": "tshan5", "gloss": "唱", "tag": "戏曲" },
-    { "han": "歌", "pinyin": "gē", "yueyu": "ku1", "gloss": "歌", "tag": "戏曲" },
-    { "han": "曲", "pinyin": "qǔ", "yueyu": "chioq7", "gloss": "曲", "tag": "戏曲" },
-    { "han": "白", "pinyin": "bái", "yueyu": "baq8", "gloss": "念白", "tag": "戏曲" },
-    { "han": "台", "pinyin": "tái", "yueyu": "de2", "gloss": "舞台", "tag": "戏曲" },
-    { "han": "文", "pinyin": "wén", "yueyu": "ven2", "gloss": "文", "tag": "常用" },
-    { "han": "字", "pinyin": "zì", "yueyu": "zy6", "gloss": "字", "tag": "常用" },
-    { "han": "书", "pinyin": "shū", "yueyu": "sy1", "gloss": "书 / 说书", "tag": "弹词" },
-    { "han": "词", "pinyin": "cí", "yueyu": "zy2", "gloss": "词 / 唱词", "tag": "弹词" },
-    { "han": "声", "pinyin": "shēng", "yueyu": "san1", "gloss": "声音", "tag": "常用" },
-    { "han": "音", "pinyin": "yīn", "yueyu": "in1", "gloss": "音", "tag": "常用" },
-    { "han": "越", "pinyin": "yuè", "yueyu": "yueq8", "gloss": "越（越语/越剧）", "tag": "专题" },
-    { "han": "剧", "pinyin": "jù", "yueyu": "jyq8", "gloss": "剧", "tag": "专题" },
-    { "han": "绍", "pinyin": "shào", "yueyu": "zau6", "gloss": "绍（绍兴）", "tag": "地名" },
-    { "han": "兴", "pinyin": "xīng", "yueyu": "shin1", "gloss": "兴（绍兴）", "tag": "地名" },
-    { "han": "嵊", "pinyin": "shèng", "yueyu": "zen6", "gloss": "嵊（嵊州）", "tag": "地名" },
-    { "han": "州", "pinyin": "zhōu", "yueyu": "tseu1", "gloss": "州", "tag": "地名" },
-    { "han": "老", "pinyin": "lǎo", "yueyu": "lau3", "gloss": "老", "tag": "常用" },
-    { "han": "话", "pinyin": "huà", "yueyu": "wo6", "gloss": "话", "tag": "常用" },
-    { "han": "春", "pinyin": "chūn", "yueyu": "tshen1", "gloss": "春", "tag": "常用" },
-    { "han": "秋", "pinyin": "qiū", "yueyu": "chieu1", "gloss": "秋", "tag": "常用" },
-    { "han": "生", "pinyin": "shēng", "yueyu": "san1", "gloss": "生", "tag": "常用" },
-    { "han": "死", "pinyin": "sǐ", "yueyu": "shi3", "gloss": "死", "tag": "常用" },
-    { "han": "男", "pinyin": "nán", "yueyu": "noe2", "gloss": "男", "tag": "常用" },
-    { "han": "女", "pinyin": "nǚ", "yueyu": "nyu3", "gloss": "女", "tag": "常用" }
+    {
+      "han": "多",
+      "shangyu": "tɷ35",
+      "zhuji": "tɤu544",
+      "shengzhou": "to534",
+      "pinyin": "duō"
+    },
+    {
+      "han": "拖",
+      "shangyu": "thɷ35",
+      "zhuji": "thɤu544",
+      "shengzhou": "tha534 tho534",
+      "pinyin": "tuō"
+    },
+    {
+      "han": "大",
+      "shangyu": "dɷ31",
+      "zhuji": "dɤu33",
+      "shengzhou": "do24",
+      "pinyin": "dà"
+    },
+    {
+      "han": "锣",
+      "shangyu": "lɷ213",
+      "zhuji": "lɤu13",
+      "shengzhou": "lo213",
+      "pinyin": "luó"
+    },
+    {
+      "han": "左",
+      "shangyu": "tsɷ35",
+      "zhuji": "tsɤu42",
+      "shengzhou": "tso53",
+      "pinyin": "zuǒ"
+    },
+    {
+      "han": "歌",
+      "shangyu": "kɷ35",
+      "zhuji": "kɤu544",
+      "shengzhou": "ko534",
+      "pinyin": "gē"
+    },
+    {
+      "han": "个",
+      "shangyu": "kəʔ5 kɷ53",
+      "zhuji": "kᴀ544",
+      "shengzhou": "ka334 ko334",
+      "pinyin": "gè"
+    },
+    {
+      "han": "可",
+      "shangyu": "khɷ35",
+      "zhuji": "khɤu42",
+      "shengzhou": "kho53",
+      "pinyin": "kě"
+    },
+    {
+      "han": "鹅",
+      "shangyu": "ŋɷ213",
+      "zhuji": "ŋɤu13",
+      "shengzhou": "ŋo213",
+      "pinyin": "é"
+    },
+    {
+      "han": "饿",
+      "shangyu": "ŋɷ31",
+      "zhuji": "ŋɤu33",
+      "shengzhou": "ŋo24",
+      "pinyin": "è"
+    },
+    {
+      "han": "河",
+      "shangyu": "Ǿɷ213",
+      "zhuji": "Ǿɤu13",
+      "shengzhou": "Ǿo213",
+      "pinyin": "hé"
+    },
+    {
+      "han": "茄",
+      "shangyu": "dʑia213 ɡa13",
+      "zhuji": "dʑiᴀ13",
+      "shengzhou": "dʑia213",
+      "pinyin": "jiā"
+    },
+    {
+      "han": "破",
+      "shangyu": "pha53",
+      "zhuji": "phᴀ544",
+      "shengzhou": "pha334 pho334",
+      "pinyin": "pò"
+    },
+    {
+      "han": "婆",
+      "shangyu": "bɷ213",
+      "zhuji": "bɤu13",
+      "shengzhou": "bo213",
+      "pinyin": "pó"
+    },
+    {
+      "han": "磨",
+      "shangyu": "mɷ213",
+      "zhuji": "mɤu13",
+      "shengzhou": "mo213",
+      "pinyin": "mó"
+    },
+    {
+      "han": "螺",
+      "shangyu": "lɷ213",
+      "zhuji": "lɤu13",
+      "shengzhou": "lo213",
+      "pinyin": "luó"
+    },
+    {
+      "han": "坐",
+      "shangyu": "zɷ213",
+      "zhuji": "zɤu242",
+      "shengzhou": "zo22",
+      "pinyin": "zuò"
+    },
+    {
+      "han": "锁",
+      "shangyu": "so35 su35",
+      "zhuji": "sɤu42",
+      "shengzhou": "so53",
+      "pinyin": "suǒ"
+    },
+    {
+      "han": "果",
+      "shangyu": "ku35",
+      "zhuji": "kɤu42",
+      "shengzhou": "ko53",
+      "pinyin": "guǒ"
+    },
+    {
+      "han": "过",
+      "shangyu": "ku53",
+      "zhuji": "kɤu544",
+      "shengzhou": "ko334",
+      "pinyin": "guò"
+    },
+    {
+      "han": "课",
+      "shangyu": "khɷ53",
+      "zhuji": "khɤu544",
+      "shengzhou": "kho334",
+      "pinyin": "kè"
+    },
+    {
+      "han": "火",
+      "shangyu": "fu35",
+      "zhuji": "hɤu42",
+      "shengzhou": "ho53",
+      "pinyin": "huǒ"
+    },
+    {
+      "han": "货",
+      "shangyu": "fu53",
+      "zhuji": "hɤu544",
+      "shengzhou": "ho334",
+      "pinyin": "huò"
+    },
+    {
+      "han": "祸",
+      "shangyu": "Ǿɷ213",
+      "zhuji": "Ǿɤu242",
+      "shengzhou": "Ǿo24",
+      "pinyin": "huò"
+    },
+    {
+      "han": "靴",
+      "shangyu": "ɕy35",
+      "zhuji": "ɕy544",
+      "shengzhou": "ɕy53",
+      "pinyin": "xuē"
+    },
+    {
+      "han": "把",
+      "shangyu": "po35",
+      "zhuji": "po42",
+      "shengzhou": "po334",
+      "pinyin": "bǎ"
+    },
+    {
+      "han": "爬",
+      "shangyu": "bo213",
+      "zhuji": "bo13",
+      "shengzhou": "bo213",
+      "pinyin": "pá"
+    },
+    {
+      "han": "马",
+      "shangyu": "mo213",
+      "zhuji": "mo242",
+      "shengzhou": "mo22",
+      "pinyin": "mǎ"
+    },
+    {
+      "han": "骂",
+      "shangyu": "mo31",
+      "zhuji": "mo33",
+      "shengzhou": "mo24",
+      "pinyin": "mà"
+    },
+    {
+      "han": "茶",
+      "shangyu": "dzo213",
+      "zhuji": "dzo13",
+      "shengzhou": "dzo213",
+      "pinyin": "chá"
+    },
+    {
+      "han": "沙",
+      "shangyu": "so35",
+      "zhuji": "so544",
+      "shengzhou": "so534",
+      "pinyin": "shā"
+    },
+    {
+      "han": "假",
+      "shangyu": "ko35",
+      "zhuji": "ko42",
+      "shengzhou": "ko53",
+      "pinyin": "jiǎ"
+    },
+    {
+      "han": "嫁",
+      "shangyu": "ko53",
+      "zhuji": "ko544",
+      "shengzhou": "ko334 tɕia334",
+      "pinyin": "jià"
+    },
+    {
+      "han": "牙",
+      "shangyu": "ŋo213",
+      "zhuji": "ŋo13",
+      "shengzhou": "ŋo213",
+      "pinyin": "yá"
+    },
+    {
+      "han": "虾",
+      "shangyu": "ho35",
+      "zhuji": "ho544",
+      "shengzhou": "ho534",
+      "pinyin": "xiā"
+    },
+    {
+      "han": "下",
+      "shangyu": "Ǿo213",
+      "zhuji": "Ǿo242",
+      "shengzhou": "Ǿo24",
+      "pinyin": "xià"
+    },
+    {
+      "han": "夏",
+      "shangyu": "Ǿo31",
+      "zhuji": "Ǿo33",
+      "shengzhou": "Ǿo24",
+      "pinyin": "xià"
+    },
+    {
+      "han": "哑",
+      "shangyu": "Ǿo35",
+      "zhuji": "Ǿo42",
+      "shengzhou": "Ǿo53",
+      "pinyin": "yǎ"
+    },
+    {
+      "han": "借",
+      "shangyu": "tɕia53",
+      "zhuji": "tɕiᴀ544",
+      "shengzhou": "tɕia334",
+      "pinyin": "jiè"
+    },
+    {
+      "han": "写",
+      "shangyu": "ɕia35",
+      "zhuji": "ɕiᴀ42",
+      "shengzhou": "ɕia53",
+      "pinyin": "xiě"
+    },
+    {
+      "han": "斜",
+      "shangyu": "ʑia213",
+      "zhuji": "ʑiᴀ13",
+      "shengzhou": "ʑia213",
+      "pinyin": "xié"
+    },
+    {
+      "han": "谢",
+      "shangyu": "ʑia31",
+      "zhuji": "ʑiᴀ33",
+      "shengzhou": "ʑia24",
+      "pinyin": "xiè"
+    },
+    {
+      "han": "车",
+      "shangyu": "tsho35",
+      "zhuji": "tsho544",
+      "shengzhou": "tsho534",
+      "pinyin": "chē"
+    },
+    {
+      "han": "蛇",
+      "shangyu": "zo213",
+      "zhuji": "zo13",
+      "shengzhou": "zo213",
+      "pinyin": "shé"
+    },
+    {
+      "han": "射",
+      "shangyu": "zo31",
+      "zhuji": "zo33",
+      "shengzhou": "zo24",
+      "pinyin": "shè"
+    },
+    {
+      "han": "爷",
+      "shangyu": "Ǿia213",
+      "zhuji": "Ǿiᴀ13",
+      "shengzhou": "Ǿia213",
+      "pinyin": "yé"
+    },
+    {
+      "han": "野",
+      "shangyu": "Ǿia213",
+      "zhuji": "Ǿiᴀ242",
+      "shengzhou": "Ǿia24",
+      "pinyin": "yě"
+    },
+    {
+      "han": "夜",
+      "shangyu": "Ǿia31",
+      "zhuji": "Ǿiᴀ33",
+      "shengzhou": "Ǿia24",
+      "pinyin": "yè"
+    },
+    {
+      "han": "瓜",
+      "shangyu": "kuo35",
+      "zhuji": "ko544",
+      "shengzhou": "kuo534",
+      "pinyin": "guā"
+    },
+    {
+      "han": "瓦",
+      "shangyu": "ŋo213",
+      "zhuji": "ŋo242",
+      "shengzhou": "ŋo24",
+      "pinyin": "wǎ"
+    },
+    {
+      "han": "花",
+      "shangyu": "fo35",
+      "zhuji": "ho544",
+      "shengzhou": "fo534",
+      "pinyin": "huā"
+    },
+    {
+      "han": "化",
+      "shangyu": "fo53",
+      "zhuji": "ho544",
+      "shengzhou": "fo334",
+      "pinyin": "huà"
+    },
+    {
+      "han": "华",
+      "shangyu": "Ǿuo213",
+      "zhuji": "Ǿo13",
+      "shengzhou": "Ǿuo213",
+      "pinyin": "huá"
+    },
+    {
+      "han": "谱",
+      "shangyu": "phu35",
+      "zhuji": "pu42",
+      "shengzhou": "pu53",
+      "pinyin": "pǔ"
+    },
+    {
+      "han": "布",
+      "shangyu": "pu53",
+      "zhuji": "pu544",
+      "shengzhou": "pu334",
+      "pinyin": "bù"
+    },
+    {
+      "han": "铺",
+      "shangyu": "phu35",
+      "zhuji": "phu544",
+      "shengzhou": "phu534",
+      "pinyin": "pù"
+    },
+    {
+      "han": "簿",
+      "shangyu": "bu213",
+      "zhuji": "bu242",
+      "shengzhou": "bu24",
+      "pinyin": "bù"
+    },
+    {
+      "han": "步",
+      "shangyu": "bu31",
+      "zhuji": "bu33",
+      "shengzhou": "bu24",
+      "pinyin": "bù"
+    },
+    {
+      "han": "赌",
+      "shangyu": "tu35",
+      "zhuji": "tu42",
+      "shengzhou": "tu53",
+      "pinyin": "dǔ"
+    },
+    {
+      "han": "土",
+      "shangyu": "thu35",
+      "zhuji": "thu42",
+      "shengzhou": "thu53",
+      "pinyin": "tǔ"
+    },
+    {
+      "han": "图",
+      "shangyu": "du213",
+      "zhuji": "du13",
+      "shengzhou": "du213",
+      "pinyin": "tú"
+    },
+    {
+      "han": "杜",
+      "shangyu": "du213",
+      "zhuji": "du242",
+      "shengzhou": "du24",
+      "pinyin": "dù"
+    },
+    {
+      "han": "奴",
+      "shangyu": "nu213",
+      "zhuji": "lu13",
+      "shengzhou": "nu213",
+      "pinyin": "nú"
+    },
+    {
+      "han": "路",
+      "shangyu": "lu31",
+      "zhuji": "lu33",
+      "shengzhou": "lu24",
+      "pinyin": "lù"
+    },
+    {
+      "han": "租",
+      "shangyu": "tɕy35",
+      "zhuji": "tsu544",
+      "shengzhou": "tsu534",
+      "pinyin": "zū"
+    },
+    {
+      "han": "做",
+      "shangyu": "tsu53",
+      "zhuji": "tsɤu544",
+      "shengzhou": "tso334",
+      "pinyin": "zuò"
+    },
+    {
+      "han": "错",
+      "shangyu": "tshu53",
+      "zhuji": "tshɤu544",
+      "shengzhou": "tsho334",
+      "pinyin": "cuò"
+    },
+    {
+      "han": "箍",
+      "shangyu": "khu35",
+      "zhuji": "khu544",
+      "shengzhou": "khu534",
+      "pinyin": "gū"
+    },
+    {
+      "han": "古",
+      "shangyu": "ku35",
+      "zhuji": "ku42",
+      "shengzhou": "ku53",
+      "pinyin": "gǔ"
+    },
+    {
+      "han": "苦",
+      "shangyu": "khu35",
+      "zhuji": "khu42",
+      "shengzhou": "khu53",
+      "pinyin": "kǔ"
+    },
+    {
+      "han": "裤",
+      "shangyu": "khu53",
+      "zhuji": "khu544",
+      "shengzhou": "khu334",
+      "pinyin": "kù"
+    },
+    {
+      "han": "吴",
+      "shangyu": "Ǿŋ213 Ǿu213",
+      "zhuji": "vu13",
+      "shengzhou": "Ǿu213",
+      "pinyin": "wú"
+    },
+    {
+      "han": "五",
+      "shangyu": "Ǿŋ213",
+      "zhuji": "Ǿŋ242",
+      "shengzhou": "Ǿŋ22",
+      "pinyin": "wǔ"
+    },
+    {
+      "han": "虎",
+      "shangyu": "fu35",
+      "zhuji": "fu42",
+      "shengzhou": "fu53",
+      "pinyin": "hǔ"
+    },
+    {
+      "han": "壶",
+      "shangyu": "Ǿu213",
+      "zhuji": "vu13",
+      "shengzhou": "Ǿu213",
+      "pinyin": "hú"
+    },
+    {
+      "han": "户",
+      "shangyu": "Ǿu213",
+      "zhuji": "vu242",
+      "shengzhou": "Ǿu24",
+      "pinyin": "hù"
+    },
+    {
+      "han": "乌",
+      "shangyu": "Ǿu35",
+      "zhuji": "vu544",
+      "shengzhou": "Ǿu534",
+      "pinyin": "wū"
+    },
+    {
+      "han": "女",
+      "shangyu": "ȵy213",
+      "zhuji": "ny242",
+      "shengzhou": "ȵy22",
+      "pinyin": "nǚ"
+    },
+    {
+      "han": "吕",
+      "shangyu": "li213",
+      "zhuji": "lʅ242",
+      "shengzhou": "li22",
+      "pinyin": "lǚ"
+    },
+    {
+      "han": "徐",
+      "shangyu": "ʑia213",
+      "zhuji": "dʒʅ13",
+      "shengzhou": "dʑi213",
+      "pinyin": "xú"
+    },
+    {
+      "han": "猪",
+      "shangyu": "tsɿ35",
+      "zhuji": "tsɿ544",
+      "shengzhou": "tsɿ53",
+      "pinyin": "zhū"
+    },
+    {
+      "han": "除",
+      "shangyu": "dʑy213",
+      "zhuji": "dʑy13",
+      "shengzhou": "dzɿ213",
+      "pinyin": "chú"
+    },
+    {
+      "han": "初",
+      "shangyu": "tɕhy35",
+      "zhuji": "tshu544",
+      "shengzhou": "tshu534",
+      "pinyin": "chū"
+    },
+    {
+      "han": "锄",
+      "shangyu": "zɿ213",
+      "zhuji": "zɿ13",
+      "shengzhou": "zɿ213 dzɿ213",
+      "pinyin": "chú"
+    },
+    {
+      "han": "所",
+      "shangyu": "so35",
+      "zhuji": "sɤu42",
+      "shengzhou": "so53",
+      "pinyin": "suǒ"
+    },
+    {
+      "han": "书",
+      "shangyu": "ɕy35",
+      "zhuji": "ɕy544",
+      "shengzhou": "sɿ534",
+      "pinyin": "shū"
+    },
+    {
+      "han": "鼠",
+      "shangyu": "tshɿ35",
+      "zhuji": "tɕhy42",
+      "shengzhou": "tshɿ53",
+      "pinyin": "shǔ"
+    },
+    {
+      "han": "如",
+      "shangyu": "ʑy213",
+      "zhuji": "Ǿy13",
+      "shengzhou": "zɿ213",
+      "pinyin": "rú"
+    },
+    {
+      "han": "举",
+      "shangyu": "tɕy35",
+      "zhuji": "tɕy42",
+      "shengzhou": "tɕy53",
+      "pinyin": "jǔ"
+    },
+    {
+      "han": "锯",
+      "shangyu": "kie53",
+      "zhuji": "kie544",
+      "shengzhou": "kᴇ334",
+      "pinyin": "jù"
+    },
+    {
+      "han": "去",
+      "shangyu": "tɕhi53",
+      "zhuji": "khie544",
+      "shengzhou": "tɕhi334 tɕhy334",
+      "pinyin": "qù"
+    },
+    {
+      "han": "渠",
+      "shangyu": "dʑy213",
+      "zhuji": "dʑy13",
+      "shengzhou": "dʑy213",
+      "pinyin": "qú"
+    },
+    {
+      "han": "鱼",
+      "shangyu": "Ǿŋ213",
+      "zhuji": "Ǿŋ13",
+      "shengzhou": "Ǿŋ213",
+      "pinyin": "yú"
+    },
+    {
+      "han": "许",
+      "shangyu": "ɕy35",
+      "zhuji": "ɕy42",
+      "shengzhou": "ɕy53",
+      "pinyin": "xǔ"
+    },
+    {
+      "han": "余",
+      "shangyu": "Ǿy213",
+      "zhuji": "Ǿy13",
+      "shengzhou": "Ǿy213",
+      "pinyin": "yú"
+    },
+    {
+      "han": "府",
+      "shangyu": "fu35",
+      "zhuji": "fu42",
+      "shengzhou": "fu334",
+      "pinyin": "fǔ"
+    },
+    {
+      "han": "付",
+      "shangyu": "fu53",
+      "zhuji": "fu544",
+      "shengzhou": "fu334",
+      "pinyin": "fù"
+    },
+    {
+      "han": "父",
+      "shangyu": "vu213",
+      "zhuji": "vu242",
+      "shengzhou": "Ǿu24",
+      "pinyin": "fù"
+    },
+    {
+      "han": "武",
+      "shangyu": "vu213",
+      "zhuji": "vu242",
+      "shengzhou": "Ǿu24",
+      "pinyin": "wǔ"
+    },
+    {
+      "han": "雾",
+      "shangyu": "vu31",
+      "zhuji": "vu33",
+      "shengzhou": "Ǿu24",
+      "pinyin": "wù"
+    },
+    {
+      "han": "取",
+      "shangyu": "tɕhy35",
+      "zhuji": "tɕhy42",
+      "shengzhou": "tshɿ53",
+      "pinyin": "qǔ"
+    },
+    {
+      "han": "柱",
+      "shangyu": "dʑy213",
+      "zhuji": "dʑy242",
+      "shengzhou": "dzɿ24",
+      "pinyin": "zhù"
+    },
+    {
+      "han": "住",
+      "shangyu": "dʑy31",
+      "zhuji": "dʑy33",
+      "shengzhou": "dzɿ24",
+      "pinyin": "zhù"
+    },
+    {
+      "han": "数",
+      "shangyu": "ɕy35",
+      "zhuji": "ɕy42",
+      "shengzhou": "sɿ53",
+      "pinyin": "shù"
+    },
+    {
+      "han": "主",
+      "shangyu": "tɕy35",
+      "zhuji": "tɕy544",
+      "shengzhou": "tsɿ53",
+      "pinyin": "zhǔ"
+    },
+    {
+      "han": "输",
+      "shangyu": "ɕy35",
+      "zhuji": "ɕy544",
+      "shengzhou": "sɿ534",
+      "pinyin": "shū"
+    },
+    {
+      "han": "竖",
+      "shangyu": "ʑy213",
+      "zhuji": "ʑy242",
+      "shengzhou": "zɿ22",
+      "pinyin": "shù"
+    },
+    {
+      "han": "树",
+      "shangyu": "ʑy31",
+      "zhuji": "ʑy33",
+      "shengzhou": "zɿ24",
+      "pinyin": "shù"
+    },
+    {
+      "han": "句",
+      "shangyu": "tɕy53",
+      "zhuji": "tɕy544",
+      "shengzhou": "tɕy334",
+      "pinyin": "jù"
+    },
+    {
+      "han": "区",
+      "shangyu": "tɕhy35",
+      "zhuji": "tɕhy544",
+      "shengzhou": "tɕhy534",
+      "pinyin": "qū"
+    },
+    {
+      "han": "遇",
+      "shangyu": "ȵy31",
+      "zhuji": "ny33",
+      "shengzhou": "Ǿy24",
+      "pinyin": "yù"
+    },
+    {
+      "han": "雨",
+      "shangyu": "Ǿy213",
+      "zhuji": "Ǿy242",
+      "shengzhou": "Ǿy24",
+      "pinyin": "yǔ"
+    },
+    {
+      "han": "芋",
+      "shangyu": "Ǿŋ213",
+      "zhuji": "Ǿy33",
+      "shengzhou": "Ǿy24",
+      "pinyin": "yù"
+    },
+    {
+      "han": "裕",
+      "shangyu": "Ǿy213",
+      "zhuji": "Ǿy33",
+      "shengzhou": "Ǿy24",
+      "pinyin": "yù"
+    },
+    {
+      "han": "胎",
+      "shangyu": "the35",
+      "zhuji": "the544",
+      "shengzhou": "thᴇ534",
+      "pinyin": "tāi"
+    },
+    {
+      "han": "台",
+      "shangyu": "de213",
+      "zhuji": "de13",
+      "shengzhou": "dᴇ213",
+      "pinyin": "tái"
+    },
+    {
+      "han": "袋",
+      "shangyu": "de31",
+      "zhuji": "de33",
+      "shengzhou": "dᴇ24",
+      "pinyin": "dài"
+    },
+    {
+      "han": "来",
+      "shangyu": "le213",
+      "zhuji": "le13",
+      "shengzhou": "lᴇ213",
+      "pinyin": "lái"
+    },
+    {
+      "han": "菜",
+      "shangyu": "tshe53",
+      "zhuji": "tshe544",
+      "shengzhou": "tshᴇ334",
+      "pinyin": "cài"
+    },
+    {
+      "han": "财",
+      "shangyu": "ze213 dze213",
+      "zhuji": "dze13",
+      "shengzhou": "dzᴇ213",
+      "pinyin": "cái"
+    },
+    {
+      "han": "该",
+      "shangyu": "ke35",
+      "zhuji": "ke544",
+      "shengzhou": "kᴇ534",
+      "pinyin": "gāi"
+    },
+    {
+      "han": "改",
+      "shangyu": "ke35",
+      "zhuji": "ke42",
+      "shengzhou": "kᴇ53",
+      "pinyin": "gǎi"
+    },
+    {
+      "han": "开",
+      "shangyu": "khe35",
+      "zhuji": "khe42",
+      "shengzhou": "khᴇ534",
+      "pinyin": "kāi"
+    },
+    {
+      "han": "海",
+      "shangyu": "he35",
+      "zhuji": "he42",
+      "shengzhou": "hᴇ53",
+      "pinyin": "hǎi"
+    },
+    {
+      "han": "爱",
+      "shangyu": "Ǿe53",
+      "zhuji": "Ǿe544",
+      "shengzhou": "Ǿᴇ334",
+      "pinyin": "ài"
+    },
+    {
+      "han": "贝",
+      "shangyu": "pe53",
+      "zhuji": "pe544",
+      "shengzhou": "pᴇ534",
+      "pinyin": "bèi"
+    },
+    {
+      "han": "带",
+      "shangyu": "ta53",
+      "zhuji": "tᴀ544",
+      "shengzhou": "ta334",
+      "pinyin": "dài"
+    },
+    {
+      "han": "盖",
+      "shangyu": "ke53",
+      "zhuji": "ke544",
+      "shengzhou": "kᴇ334",
+      "pinyin": "gài"
+    },
+    {
+      "han": "害",
+      "shangyu": "Ǿe31",
+      "zhuji": "Ǿe33",
+      "shengzhou": "Ǿᴇ24",
+      "pinyin": "hài"
+    },
+    {
+      "han": "拜",
+      "shangyu": "pa53",
+      "zhuji": "pᴀ544",
+      "shengzhou": "pa334",
+      "pinyin": "bài"
+    },
+    {
+      "han": "排",
+      "shangyu": "ba213",
+      "zhuji": "bᴀ13",
+      "shengzhou": "ba213",
+      "pinyin": "pái"
+    },
+    {
+      "han": "埋",
+      "shangyu": "ma213",
+      "zhuji": "me13",
+      "shengzhou": "ma213",
+      "pinyin": "mái"
+    },
+    {
+      "han": "戒",
+      "shangyu": "ka53",
+      "zhuji": "kᴀ544",
+      "shengzhou": "ka334",
+      "pinyin": "jiè"
+    },
+    {
+      "han": "摆",
+      "shangyu": "pa35",
+      "zhuji": "pᴀ42",
+      "shengzhou": "pa53",
+      "pinyin": "bǎi"
+    },
+    {
+      "han": "派",
+      "shangyu": "pha35",
+      "zhuji": "phᴀ544",
+      "shengzhou": "pha334",
+      "pinyin": "pài"
+    },
+    {
+      "han": "牌",
+      "shangyu": "ba213",
+      "zhuji": "bᴀ13",
+      "shengzhou": "ba213",
+      "pinyin": "pái"
+    },
+    {
+      "han": "买",
+      "shangyu": "ma213",
+      "zhuji": "mᴀ242",
+      "shengzhou": "ma22",
+      "pinyin": "mǎi"
+    },
+    {
+      "han": "卖",
+      "shangyu": "ma31",
+      "zhuji": "mᴀ33",
+      "shengzhou": "ma24",
+      "pinyin": "mài"
+    },
+    {
+      "han": "柴",
+      "shangyu": "za213",
+      "zhuji": "zᴀ13",
+      "shengzhou": "za213",
+      "pinyin": "chái"
+    },
+    {
+      "han": "晒",
+      "shangyu": "sa53",
+      "zhuji": "so544",
+      "shengzhou": "sa334",
+      "pinyin": "shài"
+    },
+    {
+      "han": "街",
+      "shangyu": "ka35",
+      "zhuji": "kᴀ544",
+      "shengzhou": "ka534",
+      "pinyin": "jiē"
+    },
+    {
+      "han": "解",
+      "shangyu": "ka35",
+      "zhuji": "kᴀ42 tɕiᴀ42",
+      "shengzhou": "ka53",
+      "pinyin": "jiě"
+    },
+    {
+      "han": "鞋",
+      "shangyu": "Ǿa213",
+      "zhuji": "Ǿᴀ13",
+      "shengzhou": "Ǿa213",
+      "pinyin": "xié"
+    },
+    {
+      "han": "蟹",
+      "shangyu": "ha35",
+      "zhuji": "hᴀ42",
+      "shengzhou": "ha53",
+      "pinyin": "xiè"
+    },
+    {
+      "han": "矮",
+      "shangyu": "Ǿa35",
+      "zhuji": "Ǿᴀ42",
+      "shengzhou": "Ǿa53",
+      "pinyin": "ǎi"
+    },
+    {
+      "han": "败",
+      "shangyu": "ba31",
+      "zhuji": "bᴀ33",
+      "shengzhou": "ba24",
+      "pinyin": "bài"
+    },
+    {
+      "han": "币",
+      "shangyu": "bi213",
+      "zhuji": "bʅ33",
+      "shengzhou": "bi213",
+      "pinyin": "bì"
+    },
+    {
+      "han": "制",
+      "shangyu": "tsɿ53",
+      "zhuji": "tsɿ544",
+      "shengzhou": "tsɿ334",
+      "pinyin": "zhì"
+    },
+    {
+      "han": "世",
+      "shangyu": "sɿ53",
+      "zhuji": "sɿ544",
+      "shengzhou": "sɿ334",
+      "pinyin": "shì"
+    },
+    {
+      "han": "艺",
+      "shangyu": "ȵi31",
+      "zhuji": "nʅ33",
+      "shengzhou": "ȵi24",
+      "pinyin": "yì"
+    },
+    {
+      "han": "米",
+      "shangyu": "mi213",
+      "zhuji": "mʅ242",
+      "shengzhou": "mi22",
+      "pinyin": "mǐ"
+    },
+    {
+      "han": "低",
+      "shangyu": "ti35",
+      "zhuji": "tʅ544",
+      "shengzhou": "ti534",
+      "pinyin": "dī"
+    },
+    {
+      "han": "梯",
+      "shangyu": "the35 thi35",
+      "zhuji": "the544",
+      "shengzhou": "thᴇ534 thi534",
+      "pinyin": "tī"
+    },
+    {
+      "han": "剃",
+      "shangyu": "thi53",
+      "zhuji": "thʅ544",
+      "shengzhou": "thi334",
+      "pinyin": "tì"
+    },
+    {
+      "han": "弟",
+      "shangyu": "di213",
+      "zhuji": "dʅ242",
+      "shengzhou": "di24",
+      "pinyin": "dì"
+    },
+    {
+      "han": "递",
+      "shangyu": "di31",
+      "zhuji": "dʅ33",
+      "shengzhou": "di24",
+      "pinyin": "dì"
+    },
+    {
+      "han": "泥",
+      "shangyu": "ȵi213",
+      "zhuji": "nʅ13",
+      "shengzhou": "ȵi213",
+      "pinyin": "ní"
+    },
+    {
+      "han": "犁",
+      "shangyu": "li213",
+      "zhuji": "lʅ13",
+      "shengzhou": "li213",
+      "pinyin": "lí"
+    },
+    {
+      "han": "西",
+      "shangyu": "ɕi35",
+      "zhuji": "ʃʅ544",
+      "shengzhou": "ɕi534",
+      "pinyin": "xī"
+    },
+    {
+      "han": "洗",
+      "shangyu": "ɕi35",
+      "zhuji": "ʃʅ42",
+      "shengzhou": "ɕi53",
+      "pinyin": "xǐ"
+    },
+    {
+      "han": "鸡",
+      "shangyu": "tɕi35",
+      "zhuji": "tʃʅ544",
+      "shengzhou": "tɕi534",
+      "pinyin": "jī"
+    },
+    {
+      "han": "溪",
+      "shangyu": "tɕhi35",
+      "zhuji": "tʃhʅ544",
+      "shengzhou": "tɕhi534",
+      "pinyin": "xī"
+    },
+    {
+      "han": "契",
+      "shangyu": "tɕhi53",
+      "zhuji": "tʃhʅ544",
+      "shengzhou": "tɕhieʔ5 tɕhi334",
+      "pinyin": "qì"
+    },
+    {
+      "han": "系",
+      "shangyu": "ɕi35",
+      "zhuji": "ʃʅ42",
+      "shengzhou": "ɕi334",
+      "pinyin": "xì"
+    },
+    {
+      "han": "杯",
+      "shangyu": "pe35",
+      "zhuji": "pe544",
+      "shengzhou": "pᴇ534",
+      "pinyin": "bēi"
+    },
+    {
+      "han": "配",
+      "shangyu": "phe53",
+      "zhuji": "phe544",
+      "shengzhou": "phᴇ334",
+      "pinyin": "pèi"
+    },
+    {
+      "han": "赔",
+      "shangyu": "be213",
+      "zhuji": "be13",
+      "shengzhou": "bᴇ213",
+      "pinyin": "péi"
+    },
+    {
+      "han": "背",
+      "shangyu": "be31",
+      "zhuji": "be33",
+      "shengzhou": "bᴇ24",
+      "pinyin": "bèi"
+    },
+    {
+      "han": "煤",
+      "shangyu": "me213",
+      "zhuji": "me13",
+      "shengzhou": "mᴇ213",
+      "pinyin": "méi"
+    },
+    {
+      "han": "妹",
+      "shangyu": "me31",
+      "zhuji": "me33",
+      "shengzhou": "mᴇ22",
+      "pinyin": "mèi"
+    },
+    {
+      "han": "对",
+      "shangyu": "te53",
+      "zhuji": "te544",
+      "shengzhou": "tᴇ334",
+      "pinyin": "duì"
+    },
+    {
+      "han": "雷",
+      "shangyu": "le213",
+      "zhuji": "le13",
+      "shengzhou": "lᴇ213",
+      "pinyin": "léi"
+    },
+    {
+      "han": "罪",
+      "shangyu": "ze213",
+      "zhuji": "ze242",
+      "shengzhou": "zᴇ24 dzᴇ24",
+      "pinyin": "zuì"
+    },
+    {
+      "han": "碎",
+      "shangyu": "se53",
+      "zhuji": "se544",
+      "shengzhou": "sᴇ334",
+      "pinyin": "suì"
+    },
+    {
+      "han": "灰",
+      "shangyu": "fe35",
+      "zhuji": "fe544",
+      "shengzhou": "huᴇ534",
+      "pinyin": "huī"
+    },
+    {
+      "han": "回",
+      "shangyu": "Ǿue213",
+      "zhuji": "ve13",
+      "shengzhou": "Ǿuᴇ213",
+      "pinyin": "huí"
+    },
+    {
+      "han": "外",
+      "shangyu": "ŋa31",
+      "zhuji": "ŋᴀ33",
+      "shengzhou": "ŋa24",
+      "pinyin": "wài"
+    },
+    {
+      "han": "会",
+      "shangyu": "Ǿue53",
+      "zhuji": "ve33",
+      "shengzhou": "Ǿuᴇ24",
+      "pinyin": "huì"
+    },
+    {
+      "han": "怪",
+      "shangyu": "kua53",
+      "zhuji": "kuᴀ544",
+      "shengzhou": "kua334",
+      "pinyin": "guài"
+    },
+    {
+      "han": "块",
+      "shangyu": "khue53",
+      "zhuji": "khuᴀ544",
+      "shengzhou": "khuᴇ334",
+      "pinyin": "kuài"
+    },
+    {
+      "han": "怀",
+      "shangyu": "ɡua213 Ǿua213",
+      "zhuji": "Ǿuᴀ13",
+      "shengzhou": "Ǿua213",
+      "pinyin": "huái"
+    },
+    {
+      "han": "坏",
+      "shangyu": "Ǿua53",
+      "zhuji": "Ǿuᴀ33",
+      "shengzhou": "Ǿua24",
+      "pinyin": "huài"
+    },
+    {
+      "han": "拐",
+      "shangyu": "kua35",
+      "zhuji": "kuᴀ42",
+      "shengzhou": "kua53",
+      "pinyin": "guǎi"
+    },
+    {
+      "han": "挂",
+      "shangyu": "kuo53",
+      "zhuji": "ko544",
+      "shengzhou": "kuo334",
+      "pinyin": "guà"
+    },
+    {
+      "han": "歪",
+      "shangyu": "Ǿua35",
+      "zhuji": "Ǿuᴀ544",
+      "shengzhou": "Ǿua534",
+      "pinyin": "wāi"
+    },
+    {
+      "han": "画",
+      "shangyu": "Ǿuo31",
+      "zhuji": "Ǿo33",
+      "shengzhou": "Ǿuo24",
+      "pinyin": "huà"
+    },
+    {
+      "han": "快",
+      "shangyu": "khua53",
+      "zhuji": "khuᴀ544",
+      "shengzhou": "khua334",
+      "pinyin": "kuài"
+    },
+    {
+      "han": "话",
+      "shangyu": "Ǿuo31",
+      "zhuji": "Ǿo33",
+      "shengzhou": "Ǿuo24",
+      "pinyin": "huà"
+    },
+    {
+      "han": "岁",
+      "shangyu": "se53",
+      "zhuji": "se544",
+      "shengzhou": "sᴇ334",
+      "pinyin": "suì"
+    },
+    {
+      "han": "卫",
+      "shangyu": "Ǿue31",
+      "zhuji": "ve33",
+      "shengzhou": "Ǿuᴇ24",
+      "pinyin": "wèi"
+    },
+    {
+      "han": "肺",
+      "shangyu": "fi53",
+      "zhuji": "fʅ544",
+      "shengzhou": "fi334",
+      "pinyin": "fèi"
+    },
+    {
+      "han": "桂",
+      "shangyu": "kue53",
+      "zhuji": "kue544",
+      "shengzhou": "kuᴇ334",
+      "pinyin": "guì"
+    },
+    {
+      "han": "碑",
+      "shangyu": "pe35",
+      "zhuji": "pe544",
+      "shengzhou": "pᴇ534",
+      "pinyin": "bēi"
+    },
+    {
+      "han": "皮",
+      "shangyu": "bi213",
+      "zhuji": "bʅ13",
+      "shengzhou": "bi213",
+      "pinyin": "pí"
+    },
+    {
+      "han": "被",
+      "shangyu": "bi213",
+      "zhuji": "bʅ242",
+      "shengzhou": "bi22",
+      "pinyin": "bèi"
+    },
+    {
+      "han": "紫",
+      "shangyu": "tsɿ35",
+      "zhuji": "tsɿ42",
+      "shengzhou": "tsɿ53",
+      "pinyin": "zǐ"
+    },
+    {
+      "han": "刺",
+      "shangyu": "tshɿ53",
+      "zhuji": "tshɿ544",
+      "shengzhou": "tshɿ334",
+      "pinyin": "cì"
+    },
+    {
+      "han": "知",
+      "shangyu": "tsɿ35",
+      "zhuji": "tsɿ544",
+      "shengzhou": "tso334 tsɿ534",
+      "pinyin": "zhī"
+    },
+    {
+      "han": "池",
+      "shangyu": "dzɿ213",
+      "zhuji": "dzɿ13",
+      "shengzhou": "dzɿ213",
+      "pinyin": "chí"
+    },
+    {
+      "han": "纸",
+      "shangyu": "tsɿ35",
+      "zhuji": "tsɿ42",
+      "shengzhou": "tsɿ53",
+      "pinyin": "zhǐ"
+    },
+    {
+      "han": "儿",
+      "shangyu": "ȵi213 Ǿəɭ213",
+      "zhuji": "Ǿəɭ13",
+      "shengzhou": "ȵi213 Ǿəl213",
+      "pinyin": "ér"
+    },
+    {
+      "han": "寄",
+      "shangyu": "tɕi53",
+      "zhuji": "tʃʅ544",
+      "shengzhou": "tɕi334",
+      "pinyin": "jì"
+    },
+    {
+      "han": "骑",
+      "shangyu": "dʑi213",
+      "zhuji": "dʒʅ13",
+      "shengzhou": "dʑi213",
+      "pinyin": "qí"
+    },
+    {
+      "han": "蚁",
+      "shangyu": "ȵi213",
+      "zhuji": "nʅ33",
+      "shengzhou": "ȵi213",
+      "pinyin": "yǐ"
+    },
+    {
+      "han": "义",
+      "shangyu": "ȵi31",
+      "zhuji": "nʅ33",
+      "shengzhou": "ȵi24",
+      "pinyin": "yì"
+    },
+    {
+      "han": "戏",
+      "shangyu": "ɕi53",
+      "zhuji": "ʃʅ544",
+      "shengzhou": "ɕi334",
+      "pinyin": "xì"
+    },
+    {
+      "han": "移",
+      "shangyu": "Ǿi213",
+      "zhuji": "ʒʅ13",
+      "shengzhou": "Ǿi213",
+      "pinyin": "yí"
+    },
+    {
+      "han": "比",
+      "shangyu": "pi35",
+      "zhuji": "pʅ42",
+      "shengzhou": "pi53",
+      "pinyin": "bǐ"
+    },
+    {
+      "han": "屁",
+      "shangyu": "phi53",
+      "zhuji": "phʅ544",
+      "shengzhou": "phi334",
+      "pinyin": "pì"
+    },
+    {
+      "han": "鼻",
+      "shangyu": "biəʔ2",
+      "zhuji": "bieʔ13",
+      "shengzhou": "bɛʔ2",
+      "pinyin": "bí"
+    },
+    {
+      "han": "眉",
+      "shangyu": "mi213",
+      "zhuji": "mʅ13",
+      "shengzhou": "mi213",
+      "pinyin": "méi"
+    },
+    {
+      "han": "地",
+      "shangyu": "di31",
+      "zhuji": "dʅ33",
+      "shengzhou": "di24",
+      "pinyin": "dì"
+    },
+    {
+      "han": "梨",
+      "shangyu": "li213",
+      "zhuji": "lʅ13",
+      "shengzhou": "li213",
+      "pinyin": "lí"
+    },
+    {
+      "han": "资",
+      "shangyu": "tsɿ35",
+      "zhuji": "tsɿ544",
+      "shengzhou": "tsɿ534",
+      "pinyin": "zī"
+    },
+    {
+      "han": "死",
+      "shangyu": "ɕi35",
+      "zhuji": "sɿ42",
+      "shengzhou": "ɕi53",
+      "pinyin": "sǐ"
+    },
+    {
+      "han": "四",
+      "shangyu": "sɿ53",
+      "zhuji": "sɿ544",
+      "shengzhou": "sɿ334",
+      "pinyin": "sì"
+    },
+    {
+      "han": "迟",
+      "shangyu": "dzɿ213",
+      "zhuji": "dzɿ13",
+      "shengzhou": "dzɿ213",
+      "pinyin": "chí"
+    },
+    {
+      "han": "师",
+      "shangyu": "sɿ35",
+      "zhuji": "sɿ544",
+      "shengzhou": "sɿ534",
+      "pinyin": "shī"
+    },
+    {
+      "han": "指",
+      "shangyu": "tsɿ35",
+      "zhuji": "tsɿ42",
+      "shengzhou": "tsɿ334",
+      "pinyin": "zhǐ"
+    },
+    {
+      "han": "二",
+      "shangyu": "ȵi31",
+      "zhuji": "nʅ33",
+      "shengzhou": "ȵi24",
+      "pinyin": "èr"
+    },
+    {
+      "han": "饥",
+      "shangyu": "tɕi35",
+      "zhuji": "tʃʅ544",
+      "shengzhou": "tɕi534",
+      "pinyin": "jī"
+    },
+    {
+      "han": "器",
+      "shangyu": "tɕhi35",
+      "zhuji": "tʃhʅ544",
+      "shengzhou": "tɕhi334",
+      "pinyin": "qì"
+    },
+    {
+      "han": "姨",
+      "shangyu": "Ǿi213",
+      "zhuji": "ʒʅ13",
+      "shengzhou": "Ǿi213",
+      "pinyin": "yí"
+    },
+    {
+      "han": "李",
+      "shangyu": "li213",
+      "zhuji": "lʅ242",
+      "shengzhou": "li24",
+      "pinyin": "lǐ"
+    },
+    {
+      "han": "子",
+      "shangyu": "tsɿ35",
+      "zhuji": "tsɿ42",
+      "shengzhou": "tsɿ53",
+      "pinyin": "zi"
+    },
+    {
+      "han": "字",
+      "shangyu": "zɿ31",
+      "zhuji": "zɿ33",
+      "shengzhou": "zɿ24",
+      "pinyin": "zì"
+    },
+    {
+      "han": "丝",
+      "shangyu": "sɿ35",
+      "zhuji": "sɿ544",
+      "shengzhou": "sɿ534",
+      "pinyin": "sī"
+    },
+    {
+      "han": "祠",
+      "shangyu": "zɿ213",
+      "zhuji": "zɿ13",
+      "shengzhou": "zɿ213",
+      "pinyin": "cí"
+    },
+    {
+      "han": "寺",
+      "shangyu": "zɿ31",
+      "zhuji": "zɿ33",
+      "shengzhou": "zɿ24",
+      "pinyin": "sì"
+    },
+    {
+      "han": "治",
+      "shangyu": "dzɿ31",
+      "zhuji": "dzɿ242",
+      "shengzhou": "dzɿ24",
+      "pinyin": "zhì"
+    },
+    {
+      "han": "柿",
+      "shangyu": "zɿ213",
+      "zhuji": "zɿ242",
+      "shengzhou": "zɿ24",
+      "pinyin": "shì"
+    },
+    {
+      "han": "事",
+      "shangyu": "zɿ213",
+      "zhuji": "zɿ33",
+      "shengzhou": "zɿ24",
+      "pinyin": "shì"
+    },
+    {
+      "han": "使",
+      "shangyu": "sɿ35",
+      "zhuji": "sɿ42",
+      "shengzhou": "sɿ53",
+      "pinyin": "shǐ"
+    },
+    {
+      "han": "试",
+      "shangyu": "sɿ53",
+      "zhuji": "sɿ544",
+      "shengzhou": "sɿ334",
+      "pinyin": "shì"
+    },
+    {
+      "han": "时",
+      "shangyu": "zɿ213",
+      "zhuji": "zɿ13",
+      "shengzhou": "zɿ213",
+      "pinyin": "shí"
+    },
+    {
+      "han": "市",
+      "shangyu": "zɿ213",
+      "zhuji": "zɿ242",
+      "shengzhou": "zɿ24",
+      "pinyin": "shì"
+    },
+    {
+      "han": "耳",
+      "shangyu": "ȵi213 Ǿəɭ213",
+      "zhuji": "Ǿn242 nʅ242",
+      "shengzhou": "ȵi24 Ǿəl24",
+      "pinyin": "ěr"
+    },
+    {
+      "han": "记",
+      "shangyu": "tɕi53",
+      "zhuji": "tʃʅ544",
+      "shengzhou": "tɕi334",
+      "pinyin": "jì"
+    },
+    {
+      "han": "棋",
+      "shangyu": "dʑi213",
+      "zhuji": "dʒʅ13",
+      "shengzhou": "dʑi213",
+      "pinyin": "qí"
+    },
+    {
+      "han": "喜",
+      "shangyu": "ɕi35",
+      "zhuji": "ʃʅ42",
+      "shengzhou": "ɕi53",
+      "pinyin": "xǐ"
+    },
+    {
+      "han": "意",
+      "shangyu": "Ǿi53",
+      "zhuji": "ʒʅ544",
+      "shengzhou": "Ǿi334",
+      "pinyin": "yì"
+    },
+    {
+      "han": "几",
+      "shangyu": "tɕi35",
+      "zhuji": "tʃʅ42",
+      "shengzhou": "tɕi334",
+      "pinyin": "jǐ"
+    },
+    {
+      "han": "气",
+      "shangyu": "tɕhi53",
+      "zhuji": "tʃhʅ544",
+      "shengzhou": "tɕhi334",
+      "pinyin": "qì"
+    },
+    {
+      "han": "希",
+      "shangyu": "ɕi35",
+      "zhuji": "ʃʅ544",
+      "shengzhou": "ɕi534",
+      "pinyin": "xī"
+    },
+    {
+      "han": "衣",
+      "shangyu": "Ǿi35",
+      "zhuji": "ʒʅ544",
+      "shengzhou": "Ǿi534",
+      "pinyin": "yī"
+    },
+    {
+      "han": "嘴",
+      "shangyu": "tsɿ35 tse35",
+      "zhuji": "tsɿ42",
+      "shengzhou": "tsɿ53",
+      "pinyin": "zuǐ"
+    },
+    {
+      "han": "随",
+      "shangyu": "ze213",
+      "zhuji": "dze13",
+      "shengzhou": "zᴇ213",
+      "pinyin": "suí"
+    },
+    {
+      "han": "吹",
+      "shangyu": "tshɿ35",
+      "zhuji": "tshɿ544",
+      "shengzhou": "tshɿ534",
+      "pinyin": "chuī"
+    },
+    {
+      "han": "垂",
+      "shangyu": "ze213",
+      "zhuji": "dze13",
+      "shengzhou": "zɿ213 dzᴇ213",
+      "pinyin": "chuí"
+    },
+    {
+      "han": "规",
+      "shangyu": "kue35",
+      "zhuji": "kue544",
+      "shengzhou": "kuᴇ534",
+      "pinyin": "guī"
+    },
+    {
+      "han": "亏",
+      "shangyu": "khue35",
+      "zhuji": "khue544",
+      "shengzhou": "khuᴇ534",
+      "pinyin": "kuī"
+    },
+    {
+      "han": "跪",
+      "shangyu": "dʑy213",
+      "zhuji": "dʑy242 ɡue242",
+      "shengzhou": "dʑy24",
+      "pinyin": "guì"
+    },
+    {
+      "han": "危",
+      "shangyu": "Ǿue213",
+      "zhuji": "ve13",
+      "shengzhou": "Ǿuᴇ213",
+      "pinyin": "wēi"
+    },
+    {
+      "han": "类",
+      "shangyu": "le31",
+      "zhuji": "le33",
+      "shengzhou": "lᴇ24",
+      "pinyin": "lèi"
+    },
+    {
+      "han": "醉",
+      "shangyu": "tse53",
+      "zhuji": "tse544",
+      "shengzhou": "tsᴇ334",
+      "pinyin": "zuì"
+    },
+    {
+      "han": "追",
+      "shangyu": "tse35",
+      "zhuji": "tse544",
+      "shengzhou": "tsᴇ534",
+      "pinyin": "zhuī"
+    },
+    {
+      "han": "锤",
+      "shangyu": "ze213",
+      "zhuji": "dze13",
+      "shengzhou": "dzᴇ213",
+      "pinyin": "chuí"
+    },
+    {
+      "han": "水",
+      "shangyu": "sɿ35",
+      "zhuji": "sɿ42",
+      "shengzhou": "sɿ53 sᴇ53",
+      "pinyin": "shuǐ"
+    },
+    {
+      "han": "龟",
+      "shangyu": "tɕy35 kue35",
+      "zhuji": "tɕy544 kue544",
+      "shengzhou": "tɕy53 kuᴇ53",
+      "pinyin": "guī"
+    },
+    {
+      "han": "季",
+      "shangyu": "tɕi53",
+      "zhuji": "tʃʅ544",
+      "shengzhou": "tɕi334",
+      "pinyin": "jì"
+    },
+    {
+      "han": "柜",
+      "shangyu": "ɡue31",
+      "zhuji": "dʑy33",
+      "shengzhou": "dʑy24 ɡuᴇ24",
+      "pinyin": "guì"
+    },
+    {
+      "han": "位",
+      "shangyu": "Ǿue31",
+      "zhuji": "ve33",
+      "shengzhou": "Ǿuᴇ24",
+      "pinyin": "wèi"
+    },
+    {
+      "han": "飞",
+      "shangyu": "fi35",
+      "zhuji": "fʅ544",
+      "shengzhou": "fi534",
+      "pinyin": "fēi"
+    },
+    {
+      "han": "费",
+      "shangyu": "fi53",
+      "zhuji": "fʅ544",
+      "shengzhou": "fi334",
+      "pinyin": "fèi"
+    },
+    {
+      "han": "肥",
+      "shangyu": "bi213 vi213",
+      "zhuji": "bʅ13 vʅ13",
+      "shengzhou": "bi213 vi213",
+      "pinyin": "féi"
+    },
+    {
+      "han": "尾",
+      "shangyu": "mi213",
+      "zhuji": "mʅ242",
+      "shengzhou": "mi24 vi24",
+      "pinyin": "wěi"
+    },
+    {
+      "han": "味",
+      "shangyu": "bi213 vi213",
+      "zhuji": "mʅ33 vʅ33",
+      "shengzhou": "bi24 vi24",
+      "pinyin": "wèi"
+    },
+    {
+      "han": "鬼",
+      "shangyu": "tɕy35 kue35",
+      "zhuji": "tɕy42",
+      "shengzhou": "tɕy53 kuᴇ53",
+      "pinyin": "guǐ"
+    },
+    {
+      "han": "贵",
+      "shangyu": "tɕy53 kue53",
+      "zhuji": "tɕy544 kue544",
+      "shengzhou": "tɕy334 kuᴇ334",
+      "pinyin": "guì"
+    },
+    {
+      "han": "围",
+      "shangyu": "Ǿy213 Ǿue213",
+      "zhuji": "ve13",
+      "shengzhou": "Ǿy213 Ǿuᴇ213",
+      "pinyin": "wéi"
+    },
+    {
+      "han": "胃",
+      "shangyu": "Ǿue53",
+      "zhuji": "ve33",
+      "shengzhou": "Ǿuᴇ24",
+      "pinyin": "wèi"
+    },
+    {
+      "han": "宝",
+      "shangyu": "pɔ35",
+      "zhuji": "pɔ42",
+      "shengzhou": "pɔ53",
+      "pinyin": "bǎo"
+    },
+    {
+      "han": "抱",
+      "shangyu": "bɔ213",
+      "zhuji": "bɔ242",
+      "shengzhou": "bɔ22",
+      "pinyin": "bào"
+    },
+    {
+      "han": "毛",
+      "shangyu": "mɔ213",
+      "zhuji": "mɔ13",
+      "shengzhou": "mɔ213",
+      "pinyin": "máo"
+    },
+    {
+      "han": "帽",
+      "shangyu": "mɔ31",
+      "zhuji": "mɔ33",
+      "shengzhou": "mɔ24",
+      "pinyin": "mào"
+    },
+    {
+      "han": "刀",
+      "shangyu": "tɔ35",
+      "zhuji": "tɔ544",
+      "shengzhou": "tɔ534",
+      "pinyin": "dāo"
+    },
+    {
+      "han": "讨",
+      "shangyu": "thɔ35",
+      "zhuji": "thɔ42",
+      "shengzhou": "thɔ53",
+      "pinyin": "tǎo"
+    },
+    {
+      "han": "桃",
+      "shangyu": "dɔ213",
+      "zhuji": "dɔ13",
+      "shengzhou": "dɔ213",
+      "pinyin": "táo"
+    },
+    {
+      "han": "道",
+      "shangyu": "dɔ213",
+      "zhuji": "dɔ242",
+      "shengzhou": "dɔ24",
+      "pinyin": "dào"
+    },
+    {
+      "han": "脑",
+      "shangyu": "nɔ213",
+      "zhuji": "nɔ242",
+      "shengzhou": "nɔ22",
+      "pinyin": "nǎo"
+    },
+    {
+      "han": "老",
+      "shangyu": "lɔ213",
+      "zhuji": "lɔ242",
+      "shengzhou": "lɔ22",
+      "pinyin": "lǎo"
+    },
+    {
+      "han": "早",
+      "shangyu": "tsɔ35",
+      "zhuji": "tsɔ42",
+      "shengzhou": "tsɔ53",
+      "pinyin": "zǎo"
+    },
+    {
+      "han": "灶",
+      "shangyu": "tsɔ53",
+      "zhuji": "tsɔ544",
+      "shengzhou": "tsɔ334",
+      "pinyin": "zào"
+    },
+    {
+      "han": "草",
+      "shangyu": "tshɔ35",
+      "zhuji": "tshɔ42",
+      "shengzhou": "tshɔ53",
+      "pinyin": "cǎo"
+    },
+    {
+      "han": "糙",
+      "shangyu": "tshɔ53",
+      "zhuji": "tshɔ544",
+      "shengzhou": "tshɔ334",
+      "pinyin": "cāo"
+    },
+    {
+      "han": "造",
+      "shangyu": "zɔ213",
+      "zhuji": "zɔ242",
+      "shengzhou": "zɔ22",
+      "pinyin": "zào"
+    },
+    {
+      "han": "嫂",
+      "shangyu": "sɔ35",
+      "zhuji": "sɔ42",
+      "shengzhou": "sɔ53",
+      "pinyin": "sǎo"
+    },
+    {
+      "han": "高",
+      "shangyu": "kɔ35",
+      "zhuji": "kɔ544",
+      "shengzhou": "kɔ534",
+      "pinyin": "gāo"
+    },
+    {
+      "han": "靠",
+      "shangyu": "khɔ53",
+      "zhuji": "khɔ544",
+      "shengzhou": "khɔ334",
+      "pinyin": "kào"
+    },
+    {
+      "han": "熬",
+      "shangyu": "ŋɔ213",
+      "zhuji": "ŋɔ13",
+      "shengzhou": "ŋɔ213",
+      "pinyin": "áo"
+    },
+    {
+      "han": "好",
+      "shangyu": "hɔ35",
+      "zhuji": "hɔ42",
+      "shengzhou": "hɔ53",
+      "pinyin": "hǎo"
+    },
+    {
+      "han": "号",
+      "shangyu": "Ǿɔ31",
+      "zhuji": "Ǿɔ33",
+      "shengzhou": "Ǿɔ24",
+      "pinyin": "hào"
+    },
+    {
+      "han": "包",
+      "shangyu": "pɔ35",
+      "zhuji": "pɔ544",
+      "shengzhou": "pɔ534",
+      "pinyin": "bāo"
+    },
+    {
+      "han": "饱",
+      "shangyu": "pɔ35",
+      "zhuji": "pɔ42",
+      "shengzhou": "pɔ53",
+      "pinyin": "bǎo"
+    },
+    {
+      "han": "炮",
+      "shangyu": "phɔ53",
+      "zhuji": "phɔ544",
+      "shengzhou": "phɔ334",
+      "pinyin": "pào"
+    },
+    {
+      "han": "猫",
+      "shangyu": "mɔ213",
+      "zhuji": "mɔ13",
+      "shengzhou": "mɔ213",
+      "pinyin": "māo"
+    },
+    {
+      "han": "闹",
+      "shangyu": "nɔ31",
+      "zhuji": "nɔ33",
+      "shengzhou": "nɔ24",
+      "pinyin": "nào"
+    },
+    {
+      "han": "罩",
+      "shangyu": "tsɔ53",
+      "zhuji": "tsɔ544",
+      "shengzhou": "tsɔ334",
+      "pinyin": "zhào"
+    },
+    {
+      "han": "抓",
+      "shangyu": "tsɔ35",
+      "zhuji": "tso544",
+      "shengzhou": "tsa534",
+      "pinyin": "zhuā"
+    },
+    {
+      "han": "找",
+      "shangyu": "tsɔ35",
+      "zhuji": "tsɔ42",
+      "shengzhou": "dzɔ22 tsɔ53",
+      "pinyin": "zhǎo"
+    },
+    {
+      "han": "抄",
+      "shangyu": "tshɔ35",
+      "zhuji": "tshɔ544",
+      "shengzhou": "tshɔ534",
+      "pinyin": "chāo"
+    },
+    {
+      "han": "交",
+      "shangyu": "kɔ35 tɕiɔ35",
+      "zhuji": "tɕiɔ544",
+      "shengzhou": "kɔ534 tɕiɔ534",
+      "pinyin": "jiāo"
+    },
+    {
+      "han": "敲",
+      "shangyu": "khɔ35",
+      "zhuji": "khɔ544",
+      "shengzhou": "khɔ534",
+      "pinyin": "qiāo"
+    },
+    {
+      "han": "孝",
+      "shangyu": "hɔ53 ɕiɔ53",
+      "zhuji": "ɕiɔ544",
+      "shengzhou": "ɕiɔ334",
+      "pinyin": "xiào"
+    },
+    {
+      "han": "校",
+      "shangyu": "Ǿiɔ31",
+      "zhuji": "Ǿiɔ33",
+      "shengzhou": "Ǿiɔ24",
+      "pinyin": "xiào"
+    },
+    {
+      "han": "表",
+      "shangyu": "piɔ35",
+      "zhuji": "piɔ42",
+      "shengzhou": "piɔ53",
+      "pinyin": "biǎo"
+    },
+    {
+      "han": "票",
+      "shangyu": "phiɔ53",
+      "zhuji": "phiɔ544",
+      "shengzhou": "phiɔ334",
+      "pinyin": "piào"
+    },
+    {
+      "han": "庙",
+      "shangyu": "miɔ31",
+      "zhuji": "miɔ33",
+      "shengzhou": "miɔ24",
+      "pinyin": "miào"
+    },
+    {
+      "han": "焦",
+      "shangyu": "tɕiɔ35",
+      "zhuji": "tɕiɔ544",
+      "shengzhou": "tɕiɔ534",
+      "pinyin": "jiāo"
+    },
+    {
+      "han": "小",
+      "shangyu": "ɕiɔ35",
+      "zhuji": "ɕiɔ42",
+      "shengzhou": "ɕiɔ53",
+      "pinyin": "xiǎo"
+    },
+    {
+      "han": "笑",
+      "shangyu": "ɕiɔ53",
+      "zhuji": "ɕiɔ544",
+      "shengzhou": "ɕiɔ334",
+      "pinyin": "xiào"
+    },
+    {
+      "han": "朝",
+      "shangyu": "dzɔ213",
+      "zhuji": "dzɔ13",
+      "shengzhou": "dzɔ213",
+      "pinyin": "cháo"
+    },
+    {
+      "han": "照",
+      "shangyu": "tsɔ53",
+      "zhuji": "tsɔ544",
+      "shengzhou": "tsɔ334",
+      "pinyin": "zhào"
+    },
+    {
+      "han": "烧",
+      "shangyu": "sɔ35",
+      "zhuji": "sɔ544",
+      "shengzhou": "sɔ534",
+      "pinyin": "shāo"
+    },
+    {
+      "han": "绕",
+      "shangyu": "ȵiɔ213",
+      "zhuji": "niɔ242",
+      "shengzhou": "ȵiɔ24",
+      "pinyin": "rào"
+    },
+    {
+      "han": "桥",
+      "shangyu": "dʑiɔ213",
+      "zhuji": "dʑiɔ13",
+      "shengzhou": "dʑiɔ213",
+      "pinyin": "qiáo"
+    },
+    {
+      "han": "轿",
+      "shangyu": "dʑiɔ31",
+      "zhuji": "dʑiɔ242",
+      "shengzhou": "dʑiɔ24",
+      "pinyin": "jiào"
+    },
+    {
+      "han": "腰",
+      "shangyu": "Ǿiɔ35",
+      "zhuji": "Ǿiɔ544",
+      "shengzhou": "Ǿiɔ534",
+      "pinyin": "yāo"
+    },
+    {
+      "han": "要",
+      "shangyu": "Ǿiɔ53",
+      "zhuji": "Ǿiɔ544",
+      "shengzhou": "Ǿiɔ334",
+      "pinyin": "yào"
+    },
+    {
+      "han": "摇",
+      "shangyu": "Ǿiɔ213",
+      "zhuji": "Ǿiɔ13",
+      "shengzhou": "Ǿiɔ213",
+      "pinyin": "yáo"
+    },
+    {
+      "han": "钓",
+      "shangyu": "tiɔ53",
+      "zhuji": "tiɔ544",
+      "shengzhou": "tiɔ334",
+      "pinyin": "diào"
+    },
+    {
+      "han": "条",
+      "shangyu": "diɔ213",
+      "zhuji": "diɔ13",
+      "shengzhou": "diɔ213",
+      "pinyin": "tiáo"
+    },
+    {
+      "han": "料",
+      "shangyu": "Ǿiɔ31",
+      "zhuji": "liɔ33",
+      "shengzhou": "liɔ24",
+      "pinyin": "liào"
+    },
+    {
+      "han": "箫",
+      "shangyu": "ɕiɔ35",
+      "zhuji": "ɕiɔ544",
+      "shengzhou": "ɕiɔ534",
+      "pinyin": "xiāo"
+    },
+    {
+      "han": "叫",
+      "shangyu": "tɕiɔ53",
+      "zhuji": "tɕiɔ544",
+      "shengzhou": "tɕiɔ334",
+      "pinyin": "jiào"
+    },
+    {
+      "han": "母",
+      "shangyu": "Ǿŋ213",
+      "zhuji": "Ǿm242 mɤu242",
+      "shengzhou": "Ǿm213",
+      "pinyin": "mǔ"
+    },
+    {
+      "han": "抖",
+      "shangyu": "tɤ35",
+      "zhuji": "tei42",
+      "shengzhou": "tʏ53",
+      "pinyin": "dǒu"
+    },
+    {
+      "han": "偷",
+      "shangyu": "thɤ35",
+      "zhuji": "thei544",
+      "shengzhou": "thʏ534",
+      "pinyin": "tōu"
+    },
+    {
+      "han": "头",
+      "shangyu": "dɤ213",
+      "zhuji": "dei13",
+      "shengzhou": "dʏ213",
+      "pinyin": "tóu"
+    },
+    {
+      "han": "豆",
+      "shangyu": "dɤ31",
+      "zhuji": "dei33",
+      "shengzhou": "dʏ24",
+      "pinyin": "dòu"
+    },
+    {
+      "han": "楼",
+      "shangyu": "lɤ213",
+      "zhuji": "lei13",
+      "shengzhou": "lʏ213",
+      "pinyin": "lóu"
+    },
+    {
+      "han": "走",
+      "shangyu": "tsɤ35",
+      "zhuji": "tsei42",
+      "shengzhou": "tɕiʏ53",
+      "pinyin": "zǒu"
+    },
+    {
+      "han": "凑",
+      "shangyu": "tshɤ53",
+      "zhuji": "tshei544",
+      "shengzhou": "tɕhiʏ334",
+      "pinyin": "còu"
+    },
+    {
+      "han": "钩",
+      "shangyu": "kɤ35",
+      "zhuji": "kiʉ544",
+      "shengzhou": "kʏ534",
+      "pinyin": "gōu"
+    },
+    {
+      "han": "狗",
+      "shangyu": "kɤ35",
+      "zhuji": "kiʉ42",
+      "shengzhou": "kʏ53",
+      "pinyin": "gǒu"
+    },
+    {
+      "han": "够",
+      "shangyu": "kɤ53",
+      "zhuji": "kiʉ544",
+      "shengzhou": "kʏ334",
+      "pinyin": "gòu"
+    },
+    {
+      "han": "口",
+      "shangyu": "khɤ35",
+      "zhuji": "khiʉ42",
+      "shengzhou": "khʏ53",
+      "pinyin": "kǒu"
+    },
+    {
+      "han": "藕",
+      "shangyu": "ȵiɤ213",
+      "zhuji": "niʉ42",
+      "shengzhou": "ȵiʏ22",
+      "pinyin": "ǒu"
+    },
+    {
+      "han": "后",
+      "shangyu": "Ǿɤ213",
+      "zhuji": "Ǿiʉ242",
+      "shengzhou": "Ǿʏ24",
+      "pinyin": "hòu"
+    },
+    {
+      "han": "厚",
+      "shangyu": "Ǿɤ213",
+      "zhuji": "ɡiʉ242",
+      "shengzhou": "ɡʏ22",
+      "pinyin": "hòu"
+    },
+    {
+      "han": "富",
+      "shangyu": "fu53",
+      "zhuji": "fu544",
+      "shengzhou": "fu334",
+      "pinyin": "fù"
+    },
+    {
+      "han": "副",
+      "shangyu": "fu53",
+      "zhuji": "fu544",
+      "shengzhou": "fu334",
+      "pinyin": "fù"
+    },
+    {
+      "han": "浮",
+      "shangyu": "vɤ213",
+      "zhuji": "vu13",
+      "shengzhou": "Ǿu213",
+      "pinyin": "fú"
+    },
+    {
+      "han": "妇",
+      "shangyu": "vu213",
+      "zhuji": "vu242",
+      "shengzhou": "Ǿu24",
+      "pinyin": "fù"
+    },
+    {
+      "han": "流",
+      "shangyu": "Ǿiɤ213",
+      "zhuji": "liʉ13",
+      "shengzhou": "liʏ213",
+      "pinyin": "liú"
+    },
+    {
+      "han": "酒",
+      "shangyu": "tɕiɤ35",
+      "zhuji": "tɕiʉ42",
+      "shengzhou": "tɕiʏ53",
+      "pinyin": "jiǔ"
+    },
+    {
+      "han": "修",
+      "shangyu": "ɕiɤ35",
+      "zhuji": "ɕiʉ544",
+      "shengzhou": "ɕiʏ534",
+      "pinyin": "xiū"
+    },
+    {
+      "han": "袖",
+      "shangyu": "ʑiɤ31",
+      "zhuji": "ʑiʉ33 dʑiʉ33",
+      "shengzhou": "ʑiʏ24",
+      "pinyin": "xiù"
+    },
+    {
+      "han": "抽",
+      "shangyu": "tshɤ35",
+      "zhuji": "tshei544",
+      "shengzhou": "tɕhiʏ534",
+      "pinyin": "chōu"
+    },
+    {
+      "han": "绸",
+      "shangyu": "dzɤ213",
+      "zhuji": "dzei13",
+      "shengzhou": "dʑiʏ213",
+      "pinyin": "chóu"
+    },
+    {
+      "han": "愁",
+      "shangyu": "zɤ213",
+      "zhuji": "dzei13",
+      "shengzhou": "dʑiʏ213",
+      "pinyin": "chóu"
+    },
+    {
+      "han": "瘦",
+      "shangyu": "sɤ53",
+      "zhuji": "sei544",
+      "shengzhou": "ɕiʏ334",
+      "pinyin": "shòu"
+    },
+    {
+      "han": "州",
+      "shangyu": "tsɤ35",
+      "zhuji": "tsei544",
+      "shengzhou": "tɕiʏ534",
+      "pinyin": "zhōu"
+    },
+    {
+      "han": "臭",
+      "shangyu": "tshɤ53",
+      "zhuji": "tshei544",
+      "shengzhou": "tɕhiʏ334",
+      "pinyin": "chòu"
+    },
+    {
+      "han": "手",
+      "shangyu": "sɤ35",
+      "zhuji": "sei42",
+      "shengzhou": "ɕiʏ53",
+      "pinyin": "shǒu"
+    },
+    {
+      "han": "寿",
+      "shangyu": "zɤ31",
+      "zhuji": "zei33",
+      "shengzhou": "ʑiʏ24",
+      "pinyin": "shòu"
+    },
+    {
+      "han": "九",
+      "shangyu": "tɕiɤ35",
+      "zhuji": "tɕiʉ42",
+      "shengzhou": "tɕiʏ53",
+      "pinyin": "jiǔ"
+    },
+    {
+      "han": "球",
+      "shangyu": "dʑiɤ213",
+      "zhuji": "dʑiʉ13",
+      "shengzhou": "dʑiʏ213",
+      "pinyin": "qiú"
+    },
+    {
+      "han": "舅",
+      "shangyu": "dʑiɤ213",
+      "zhuji": "dʑiʉ242",
+      "shengzhou": "dʑiʏ24",
+      "pinyin": "jiù"
+    },
+    {
+      "han": "旧",
+      "shangyu": "dʑiɤ31",
+      "zhuji": "dʑiʉ33",
+      "shengzhou": "dʑiʏ24",
+      "pinyin": "jiù"
+    },
+    {
+      "han": "牛",
+      "shangyu": "ȵiɤ213",
+      "zhuji": "niʉ13",
+      "shengzhou": "ȵiʏ213",
+      "pinyin": "niú"
+    },
+    {
+      "han": "休",
+      "shangyu": "ɕiɤ35",
+      "zhuji": "ɕiʉ544",
+      "shengzhou": "ɕiʏ534",
+      "pinyin": "xiū"
+    },
+    {
+      "han": "优",
+      "shangyu": "Ǿiɤ35",
+      "zhuji": "Ǿiʉ544",
+      "shengzhou": "Ǿiʏ534",
+      "pinyin": "yōu"
+    },
+    {
+      "han": "有",
+      "shangyu": "Ǿiɤ213",
+      "zhuji": "Ǿiʉ242",
+      "shengzhou": "Ǿiʏ22",
+      "pinyin": "yǒu"
+    },
+    {
+      "han": "右",
+      "shangyu": "Ǿiɤ213",
+      "zhuji": "Ǿiʉ242",
+      "shengzhou": "Ǿiʏ24",
+      "pinyin": "yòu"
+    },
+    {
+      "han": "油",
+      "shangyu": "Ǿiɤ213",
+      "zhuji": "Ǿiʉ13",
+      "shengzhou": "Ǿiʏ213",
+      "pinyin": "yóu"
+    },
+    {
+      "han": "幼",
+      "shangyu": "Ǿiɤ53",
+      "zhuji": "Ǿiʉ544",
+      "shengzhou": "Ǿiʏ334",
+      "pinyin": "yòu"
+    },
+    {
+      "han": "贪",
+      "shangyu": "thø̃35",
+      "zhuji": "thə544",
+      "shengzhou": "thœ̃534",
+      "pinyin": "tān"
+    },
+    {
+      "han": "潭",
+      "shangyu": "dø̃213",
+      "zhuji": "də13",
+      "shengzhou": "dœ̃213 dɛ̃213",
+      "pinyin": "tán"
+    },
+    {
+      "han": "南",
+      "shangyu": "nø̃213",
+      "zhuji": "nə13",
+      "shengzhou": "nœ̃213",
+      "pinyin": "nán"
+    },
+    {
+      "han": "蚕",
+      "shangyu": "zø̃213",
+      "zhuji": "zə13",
+      "shengzhou": "zœ̃213",
+      "pinyin": "cán"
+    },
+    {
+      "han": "感",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kə42",
+      "shengzhou": "kœ̃53",
+      "pinyin": "gǎn"
+    },
+    {
+      "han": "含",
+      "shangyu": "Ǿɛ̃213",
+      "zhuji": "Ǿə13",
+      "shengzhou": "Ǿœ̃213",
+      "pinyin": "hán"
+    },
+    {
+      "han": "暗",
+      "shangyu": "Ǿɛ̃53",
+      "zhuji": "Ǿə544",
+      "shengzhou": "Ǿœ̃334",
+      "pinyin": "àn"
+    },
+    {
+      "han": "搭",
+      "shangyu": "tɐʔ5",
+      "zhuji": "taʔ5",
+      "shengzhou": "tɛʔ5",
+      "pinyin": "dā"
+    },
+    {
+      "han": "踏",
+      "shangyu": "dɐʔ2",
+      "zhuji": "daʔ13",
+      "shengzhou": "dɛʔ2",
+      "pinyin": "tà"
+    },
+    {
+      "han": "拉",
+      "shangyu": "la35",
+      "zhuji": "lᴀ544",
+      "shengzhou": "la534",
+      "pinyin": "lā"
+    },
+    {
+      "han": "杂",
+      "shangyu": "zəʔ2",
+      "zhuji": "dzaʔ13",
+      "shengzhou": "dzəʔ2",
+      "pinyin": "zá"
+    },
+    {
+      "han": "鸽",
+      "shangyu": "kəʔ5",
+      "zhuji": "kieʔ5",
+      "shengzhou": "kəʔ5",
+      "pinyin": "gē"
+    },
+    {
+      "han": "盒",
+      "shangyu": "Ǿɐʔ2",
+      "zhuji": "Ǿəʔ13",
+      "shengzhou": "Ǿɛʔ2",
+      "pinyin": "hé"
+    },
+    {
+      "han": "胆",
+      "shangyu": "tɛ̃35",
+      "zhuji": "tɛ42",
+      "shengzhou": "tɛ̃53",
+      "pinyin": "dǎn"
+    },
+    {
+      "han": "毯",
+      "shangyu": "thɛ̃35",
+      "zhuji": "thɛ42",
+      "shengzhou": "thɛ̃53",
+      "pinyin": "tǎn"
+    },
+    {
+      "han": "淡",
+      "shangyu": "dɛ̃213",
+      "zhuji": "dɛ242",
+      "shengzhou": "dɛ̃24",
+      "pinyin": "dàn"
+    },
+    {
+      "han": "蓝",
+      "shangyu": "lɛ̃213",
+      "zhuji": "lɛ13",
+      "shengzhou": "lɛ̃213",
+      "pinyin": "lán"
+    },
+    {
+      "han": "三",
+      "shangyu": "sɛ̃35",
+      "zhuji": "sɛ544",
+      "shengzhou": "sɛ̃534",
+      "pinyin": "sān"
+    },
+    {
+      "han": "甘",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kə544",
+      "shengzhou": "kœ̃534",
+      "pinyin": "gān"
+    },
+    {
+      "han": "敢",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kə42",
+      "shengzhou": "kœ̃53",
+      "pinyin": "gǎn"
+    },
+    {
+      "han": "喊",
+      "shangyu": "hɛ̃53",
+      "zhuji": "hɛ544",
+      "shengzhou": "hɛ̃334",
+      "pinyin": "hǎn"
+    },
+    {
+      "han": "塔",
+      "shangyu": "thɐʔ5",
+      "zhuji": "thaʔ5",
+      "shengzhou": "thɛʔ5",
+      "pinyin": "tǎ"
+    },
+    {
+      "han": "蜡",
+      "shangyu": "lɐʔ2",
+      "zhuji": "laʔ13",
+      "shengzhou": "lɛʔ2",
+      "pinyin": "là"
+    },
+    {
+      "han": "赚",
+      "shangyu": "zɛ̃213",
+      "zhuji": "tshɛn544",
+      "shengzhou": "dzɛ̃24",
+      "pinyin": "zhuàn"
+    },
+    {
+      "han": "杉",
+      "shangyu": "sɛ̃35",
+      "zhuji": "sɛ544",
+      "shengzhou": "sɛ̃534",
+      "pinyin": "shān"
+    },
+    {
+      "han": "减",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kɛ42",
+      "shengzhou": "kɛ̃53",
+      "pinyin": "jiǎn"
+    },
+    {
+      "han": "咸",
+      "shangyu": "Ǿɛ̃213",
+      "zhuji": "Ǿɛ13",
+      "shengzhou": "Ǿɛ̃213",
+      "pinyin": "xián"
+    },
+    {
+      "han": "插",
+      "shangyu": "tshɐʔ5",
+      "zhuji": "tshaʔ5",
+      "shengzhou": "tshɛʔ5",
+      "pinyin": "chā"
+    },
+    {
+      "han": "闸",
+      "shangyu": "zɐʔ2",
+      "zhuji": "zaʔ13",
+      "shengzhou": "zɛʔ2",
+      "pinyin": "zhá"
+    },
+    {
+      "han": "夹",
+      "shangyu": "ɡɐʔ2",
+      "zhuji": "ɡaʔ13",
+      "shengzhou": "ɡɛʔ2",
+      "pinyin": "jiā"
+    },
+    {
+      "han": "衫",
+      "shangyu": "sɛ̃35",
+      "zhuji": "sɛ544",
+      "shengzhou": "sɛ̃534",
+      "pinyin": "shān"
+    },
+    {
+      "han": "监",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kɛ544",
+      "shengzhou": "kɛ̃334",
+      "pinyin": "jiān"
+    },
+    {
+      "han": "岩",
+      "shangyu": "ȵiẽ213",
+      "zhuji": "nie13",
+      "shengzhou": "ŋɛ̃213",
+      "pinyin": "yán"
+    },
+    {
+      "han": "甲",
+      "shangyu": "kɐʔ5 khɐʔ5 kaʔ5",
+      "zhuji": "kaʔ5",
+      "shengzhou": "kɛʔ5 khɛʔ5",
+      "pinyin": "jiǎ"
+    },
+    {
+      "han": "鸭",
+      "shangyu": "Ǿɐʔ5",
+      "zhuji": "Ǿaʔ5",
+      "shengzhou": "Ǿɛʔ5",
+      "pinyin": "yā"
+    },
+    {
+      "han": "黏",
+      "shangyu": "ȵiŋ31 ȵiẽ213",
+      "zhuji": "nie544",
+      "shengzhou": "ȵiẽ534",
+      "pinyin": "nián"
+    },
+    {
+      "han": "尖",
+      "shangyu": "tɕiẽ35",
+      "zhuji": "tɕie544",
+      "shengzhou": "tɕiẽ534",
+      "pinyin": "jiān"
+    },
+    {
+      "han": "签",
+      "shangyu": "tɕhiẽ35",
+      "zhuji": "tɕhie544",
+      "shengzhou": "tɕhiẽ534",
+      "pinyin": "qiān"
+    },
+    {
+      "han": "占",
+      "shangyu": "tsø̃53",
+      "zhuji": "tsə544",
+      "shengzhou": "tsœ̃534",
+      "pinyin": "zhàn"
+    },
+    {
+      "han": "染",
+      "shangyu": "zø̃213",
+      "zhuji": "nie242",
+      "shengzhou": "zœ̃22",
+      "pinyin": "rǎn"
+    },
+    {
+      "han": "钳",
+      "shangyu": "dʑiẽ213",
+      "zhuji": "dʑie13",
+      "shengzhou": "dʑiẽ213",
+      "pinyin": "qián"
+    },
+    {
+      "han": "验",
+      "shangyu": "ȵiẽ31",
+      "zhuji": "nie33",
+      "shengzhou": "ȵiẽ24",
+      "pinyin": "yàn"
+    },
+    {
+      "han": "险",
+      "shangyu": "ɕiẽ35",
+      "zhuji": "ɕie42",
+      "shengzhou": "ɕiẽ53",
+      "pinyin": "xiǎn"
+    },
+    {
+      "han": "厌",
+      "shangyu": "Ǿiẽ53",
+      "zhuji": "Ǿie544",
+      "shengzhou": "Ǿiẽ334",
+      "pinyin": "yàn"
+    },
+    {
+      "han": "炎",
+      "shangyu": "Ǿiẽ213",
+      "zhuji": "Ǿie13",
+      "shengzhou": "Ǿiẽ213",
+      "pinyin": "yán"
+    },
+    {
+      "han": "盐",
+      "shangyu": "Ǿiẽ213",
+      "zhuji": "Ǿie13",
+      "shengzhou": "Ǿiẽ213",
+      "pinyin": "yán"
+    },
+    {
+      "han": "接",
+      "shangyu": "tɕiəʔ5",
+      "zhuji": "tɕieʔ5",
+      "shengzhou": "tɕieʔ5",
+      "pinyin": "jiē"
+    },
+    {
+      "han": "折",
+      "shangyu": "tsəʔ5",
+      "zhuji": "tsoʔ5",
+      "shengzhou": "tsəʔ5",
+      "pinyin": "zhé"
+    },
+    {
+      "han": "叶",
+      "shangyu": "Ǿiəʔ2",
+      "zhuji": "Ǿieʔ13",
+      "shengzhou": "Ǿieʔ2",
+      "pinyin": "yè"
+    },
+    {
+      "han": "剑",
+      "shangyu": "tɕiẽ53",
+      "zhuji": "tɕie544",
+      "shengzhou": "tɕiẽ334",
+      "pinyin": "jiàn"
+    },
+    {
+      "han": "欠",
+      "shangyu": "tɕhiẽ53",
+      "zhuji": "tɕhie544",
+      "shengzhou": "tɕhiẽ334",
+      "pinyin": "qiàn"
+    },
+    {
+      "han": "严",
+      "shangyu": "ȵiẽ213",
+      "zhuji": "nie13",
+      "shengzhou": "ȵiẽ213",
+      "pinyin": "yán"
+    },
+    {
+      "han": "业",
+      "shangyu": "ȵiəʔ2",
+      "zhuji": "nieʔ13",
+      "shengzhou": "ȵieʔ2",
+      "pinyin": "yè"
+    },
+    {
+      "han": "点",
+      "shangyu": "tiẽ35",
+      "zhuji": "tie42",
+      "shengzhou": "tiẽ334",
+      "pinyin": "diǎn"
+    },
+    {
+      "han": "店",
+      "shangyu": "tiẽ53",
+      "zhuji": "tie544",
+      "shengzhou": "tiẽ334",
+      "pinyin": "diàn"
+    },
+    {
+      "han": "添",
+      "shangyu": "thiẽ35",
+      "zhuji": "thie544",
+      "shengzhou": "thiẽ534",
+      "pinyin": "tiān"
+    },
+    {
+      "han": "甜",
+      "shangyu": "diẽ213",
+      "zhuji": "die13",
+      "shengzhou": "diẽ213",
+      "pinyin": "tián"
+    },
+    {
+      "han": "念",
+      "shangyu": "ȵiẽ31",
+      "zhuji": "nie33",
+      "shengzhou": "ȵiẽ24",
+      "pinyin": "niàn"
+    },
+    {
+      "han": "跌",
+      "shangyu": "tiəʔ5",
+      "zhuji": "tieʔ5",
+      "shengzhou": "tieʔ5",
+      "pinyin": "diē"
+    },
+    {
+      "han": "贴",
+      "shangyu": "thɐʔ5",
+      "zhuji": "thieʔ5",
+      "shengzhou": "thieʔ5",
+      "pinyin": "tiē"
+    },
+    {
+      "han": "碟",
+      "shangyu": "diəʔ2",
+      "zhuji": "dieʔ13",
+      "shengzhou": "dieʔ2",
+      "pinyin": "dié"
+    },
+    {
+      "han": "协",
+      "shangyu": "Ǿiaʔ2",
+      "zhuji": "Ǿiaʔ13",
+      "shengzhou": "Ǿiaʔ2",
+      "pinyin": "xié"
+    },
+    {
+      "han": "犯",
+      "shangyu": "vɛ̃213",
+      "zhuji": "vɛ242",
+      "shengzhou": "Ǿuɛ̃22",
+      "pinyin": "fàn"
+    },
+    {
+      "han": "法",
+      "shangyu": "fɐʔ5",
+      "zhuji": "faʔ5",
+      "shengzhou": "fɛʔ5",
+      "pinyin": "fǎ"
+    },
+    {
+      "han": "品",
+      "shangyu": "phiŋ35",
+      "zhuji": "phin42",
+      "shengzhou": "phiŋ53",
+      "pinyin": "pǐn"
+    },
+    {
+      "han": "林",
+      "shangyu": "liŋ213",
+      "zhuji": "lin13",
+      "shengzhou": "liŋ213",
+      "pinyin": "lín"
+    },
+    {
+      "han": "浸",
+      "shangyu": "tɕiŋ53",
+      "zhuji": "tɕin544",
+      "shengzhou": "tɕiŋ334",
+      "pinyin": "jìn"
+    },
+    {
+      "han": "心",
+      "shangyu": "ɕiŋ35",
+      "zhuji": "ɕin544",
+      "shengzhou": "ɕiŋ534",
+      "pinyin": "xīn"
+    },
+    {
+      "han": "寻",
+      "shangyu": "ʑiŋ213",
+      "zhuji": "ʑin13",
+      "shengzhou": "ʑiŋ213",
+      "pinyin": "xún"
+    },
+    {
+      "han": "沉",
+      "shangyu": "dzəŋ213",
+      "zhuji": "dzɛn13",
+      "shengzhou": "dzeŋ213",
+      "pinyin": "chén"
+    },
+    {
+      "han": "参",
+      "shangyu": "səŋ35",
+      "zhuji": "sɛn544",
+      "shengzhou": "seŋ53",
+      "pinyin": "cān"
+    },
+    {
+      "han": "针",
+      "shangyu": "tsəŋ35",
+      "zhuji": "tsɛn544",
+      "shengzhou": "tseŋ534",
+      "pinyin": "zhēn"
+    },
+    {
+      "han": "深",
+      "shangyu": "səŋ35",
+      "zhuji": "sɛn544",
+      "shengzhou": "seŋ534",
+      "pinyin": "shēn"
+    },
+    {
+      "han": "任",
+      "shangyu": "zəŋ31",
+      "zhuji": "zɛn13",
+      "shengzhou": "zeŋ24",
+      "pinyin": "rèn"
+    },
+    {
+      "han": "金",
+      "shangyu": "tɕiŋ35",
+      "zhuji": "tɕin544",
+      "shengzhou": "tɕiŋ534",
+      "pinyin": "jīn"
+    },
+    {
+      "han": "琴",
+      "shangyu": "dʑiŋ213",
+      "zhuji": "dʑin13",
+      "shengzhou": "dʑiŋ213",
+      "pinyin": "qín"
+    },
+    {
+      "han": "音",
+      "shangyu": "Ǿiŋ35",
+      "zhuji": "Ǿin544",
+      "shengzhou": "Ǿiŋ534",
+      "pinyin": "yīn"
+    },
+    {
+      "han": "立",
+      "shangyu": "liəʔ2",
+      "zhuji": "lieʔ13",
+      "shengzhou": "lieʔ2",
+      "pinyin": "lì"
+    },
+    {
+      "han": "集",
+      "shangyu": "dʑiəʔ2",
+      "zhuji": "dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "jí"
+    },
+    {
+      "han": "习",
+      "shangyu": "ʑiəʔ2",
+      "zhuji": "ʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "xí"
+    },
+    {
+      "han": "汁",
+      "shangyu": "tsəʔ5",
+      "zhuji": "tsəʔ5",
+      "shengzhou": "tsəʔ5",
+      "pinyin": "zhī"
+    },
+    {
+      "han": "十",
+      "shangyu": "zəʔ2",
+      "zhuji": "zəʔ13",
+      "shengzhou": "zəʔ2",
+      "pinyin": "shí"
+    },
+    {
+      "han": "入",
+      "shangyu": "zəʔ2",
+      "zhuji": "zəʔ13",
+      "shengzhou": "zəʔ2",
+      "pinyin": "rù"
+    },
+    {
+      "han": "急",
+      "shangyu": "tɕiəʔ5",
+      "zhuji": "tɕieʔ5",
+      "shengzhou": "tɕieʔ5",
+      "pinyin": "jí"
+    },
+    {
+      "han": "及",
+      "shangyu": "dʑiəʔ2",
+      "zhuji": "dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "jí"
+    },
+    {
+      "han": "吸",
+      "shangyu": "ɕiəʔ5",
+      "zhuji": "ɕieʔ5",
+      "shengzhou": "ɕieʔ5",
+      "pinyin": "xī"
+    },
+    {
+      "han": "单",
+      "shangyu": "tɛ̃35",
+      "zhuji": "dɛ544",
+      "shengzhou": "tɛ̃534",
+      "pinyin": "dān"
+    },
+    {
+      "han": "炭",
+      "shangyu": "thɛ̃53",
+      "zhuji": "thɛ544",
+      "shengzhou": "thɛ̃334",
+      "pinyin": "tàn"
+    },
+    {
+      "han": "弹",
+      "shangyu": "dɛ̃213",
+      "zhuji": "dɛ13",
+      "shengzhou": "dɛ̃213",
+      "pinyin": "dàn"
+    },
+    {
+      "han": "难",
+      "shangyu": "nɛ̃213",
+      "zhuji": "nɛ13",
+      "shengzhou": "nɛ̃213",
+      "pinyin": "nán"
+    },
+    {
+      "han": "兰",
+      "shangyu": "lɛ̃213",
+      "zhuji": "lɛ13",
+      "shengzhou": "lɛ̃213",
+      "pinyin": "lán"
+    },
+    {
+      "han": "懒",
+      "shangyu": "lɛ̃213",
+      "zhuji": "lɛ242",
+      "shengzhou": "lɛ̃22",
+      "pinyin": "lǎn"
+    },
+    {
+      "han": "烂",
+      "shangyu": "lɛ̃31",
+      "zhuji": "lɛ33",
+      "shengzhou": "lɛ̃24",
+      "pinyin": "làn"
+    },
+    {
+      "han": "伞",
+      "shangyu": "sɛ̃53",
+      "zhuji": "sɛ42",
+      "shengzhou": "sɛ̃53",
+      "pinyin": "sǎn"
+    },
+    {
+      "han": "肝",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kə544",
+      "shengzhou": "kœ̃534",
+      "pinyin": "gān"
+    },
+    {
+      "han": "看",
+      "shangyu": "khɛ̃53",
+      "zhuji": "khə544",
+      "shengzhou": "khœ̃334",
+      "pinyin": "kàn"
+    },
+    {
+      "han": "岸",
+      "shangyu": "ȵiẽ31",
+      "zhuji": "ŋə33",
+      "shengzhou": "ŋœ̃24",
+      "pinyin": "àn"
+    },
+    {
+      "han": "汉",
+      "shangyu": "hɛ̃53",
+      "zhuji": "hə544",
+      "shengzhou": "hœ̃334",
+      "pinyin": "hàn"
+    },
+    {
+      "han": "汗",
+      "shangyu": "Ǿɛ̃31",
+      "zhuji": "Ǿə33",
+      "shengzhou": "Ǿœ̃24",
+      "pinyin": "hàn"
+    },
+    {
+      "han": "安",
+      "shangyu": "Ǿɛ̃35",
+      "zhuji": "Ǿə544",
+      "shengzhou": "Ǿœ̃534",
+      "pinyin": "ān"
+    },
+    {
+      "han": "达",
+      "shangyu": "dɐʔ2",
+      "zhuji": "daʔ13",
+      "shengzhou": "dɛʔ2",
+      "pinyin": "dá"
+    },
+    {
+      "han": "辣",
+      "shangyu": "lɐʔ2",
+      "zhuji": "laʔ13",
+      "shengzhou": "lɛʔ2",
+      "pinyin": "là"
+    },
+    {
+      "han": "擦",
+      "shangyu": "tshɐʔ5",
+      "zhuji": "tshaʔ5",
+      "shengzhou": "tshɛʔ5",
+      "pinyin": "cā"
+    },
+    {
+      "han": "割",
+      "shangyu": "kiəʔ5",
+      "zhuji": "kieʔ5 koʔ5",
+      "shengzhou": "kɛʔ5",
+      "pinyin": "gē"
+    },
+    {
+      "han": "渴",
+      "shangyu": "khiəʔ5",
+      "zhuji": "khieʔ5",
+      "shengzhou": "khɛʔ5",
+      "pinyin": "kě"
+    },
+    {
+      "han": "扮",
+      "shangyu": "pɛ̃53",
+      "zhuji": "pɛ544",
+      "shengzhou": "pɛ̃334",
+      "pinyin": "bàn"
+    },
+    {
+      "han": "办",
+      "shangyu": "bɛ̃31",
+      "zhuji": "bɛ33",
+      "shengzhou": "bɛ̃24",
+      "pinyin": "bàn"
+    },
+    {
+      "han": "铲",
+      "shangyu": "tshɛ̃35",
+      "zhuji": "tshɛ42",
+      "shengzhou": "tshɛ̃53",
+      "pinyin": "chǎn"
+    },
+    {
+      "han": "山",
+      "shangyu": "sɛ̃35",
+      "zhuji": "sɛ544",
+      "shengzhou": "sɛ̃534",
+      "pinyin": "shān"
+    },
+    {
+      "han": "产",
+      "shangyu": "tshɛ̃35",
+      "zhuji": "so42",
+      "shengzhou": "tshɛ̃53",
+      "pinyin": "chǎn"
+    },
+    {
+      "han": "间",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kɛ544",
+      "shengzhou": "kɛ̃534",
+      "pinyin": "jiān"
+    },
+    {
+      "han": "眼",
+      "shangyu": "ŋɛ̃213",
+      "zhuji": "ŋɛ242",
+      "shengzhou": "ŋɛ̃22",
+      "pinyin": "yǎn"
+    },
+    {
+      "han": "限",
+      "shangyu": "Ǿɛ̃213",
+      "zhuji": "Ǿɛ242",
+      "shengzhou": "Ǿɛ̃24",
+      "pinyin": "xiàn"
+    },
+    {
+      "han": "八",
+      "shangyu": "pɛʔ5",
+      "zhuji": "paʔ5",
+      "shengzhou": "pɛʔ5",
+      "pinyin": "bā"
+    },
+    {
+      "han": "扎",
+      "shangyu": "tsɐʔ5",
+      "zhuji": "tsaʔ5",
+      "shengzhou": "tsɛʔ5",
+      "pinyin": "zhā"
+    },
+    {
+      "han": "杀",
+      "shangyu": "sɐʔ5",
+      "zhuji": "saʔ5",
+      "shengzhou": "sɛʔ5",
+      "pinyin": "shā"
+    },
+    {
+      "han": "班",
+      "shangyu": "pɛ̃35",
+      "zhuji": "pɛ544",
+      "shengzhou": "pɛ̃534",
+      "pinyin": "bān"
+    },
+    {
+      "han": "板",
+      "shangyu": "pɛ̃35",
+      "zhuji": "pɛ42",
+      "shengzhou": "pɛ̃53",
+      "pinyin": "bǎn"
+    },
+    {
+      "han": "慢",
+      "shangyu": "mɛ̃31",
+      "zhuji": "mɛ33",
+      "shengzhou": "mɛ̃24",
+      "pinyin": "màn"
+    },
+    {
+      "han": "奸",
+      "shangyu": "kɛ̃35",
+      "zhuji": "kɛ544",
+      "shengzhou": "kɛ̃534",
+      "pinyin": "jiān"
+    },
+    {
+      "han": "颜",
+      "shangyu": "ŋɛ̃213",
+      "zhuji": "ŋɛ13",
+      "shengzhou": "ŋɛ̃213",
+      "pinyin": "yán"
+    },
+    {
+      "han": "瞎",
+      "shangyu": "hɐʔ5",
+      "zhuji": "haʔ5",
+      "shengzhou": "hɛʔ5",
+      "pinyin": "xiā"
+    },
+    {
+      "han": "变",
+      "shangyu": "piẽ53",
+      "zhuji": "pie544",
+      "shengzhou": "piẽ334",
+      "pinyin": "biàn"
+    },
+    {
+      "han": "骗",
+      "shangyu": "phiẽ53",
+      "zhuji": "phie544",
+      "shengzhou": "phiẽ334",
+      "pinyin": "piàn"
+    },
+    {
+      "han": "便",
+      "shangyu": "biẽ31",
+      "zhuji": "bie33",
+      "shengzhou": "biẽ24",
+      "pinyin": "biàn"
+    },
+    {
+      "han": "棉",
+      "shangyu": "miẽ213",
+      "zhuji": "mie13",
+      "shengzhou": "miẽ213",
+      "pinyin": "mián"
+    },
+    {
+      "han": "面",
+      "shangyu": "miẽ31",
+      "zhuji": "mie33",
+      "shengzhou": "miẽ24",
+      "pinyin": "miàn"
+    },
+    {
+      "han": "连",
+      "shangyu": "liẽ213",
+      "zhuji": "lie13",
+      "shengzhou": "liẽ213",
+      "pinyin": "lián"
+    },
+    {
+      "han": "剪",
+      "shangyu": "tɕiẽ35",
+      "zhuji": "tɕie42",
+      "shengzhou": "tɕiẽ53",
+      "pinyin": "jiǎn"
+    },
+    {
+      "han": "浅",
+      "shangyu": "tɕhiẽ35",
+      "zhuji": "tɕhie42",
+      "shengzhou": "tɕhiẽ53",
+      "pinyin": "qiǎn"
+    },
+    {
+      "han": "钱",
+      "shangyu": "dʑiẽ213",
+      "zhuji": "dʑie242",
+      "shengzhou": "dʑiẽ213",
+      "pinyin": "qián"
+    },
+    {
+      "han": "鲜",
+      "shangyu": "ɕiẽ35",
+      "zhuji": "ɕie544",
+      "shengzhou": "ɕiẽ534",
+      "pinyin": "xiān"
+    },
+    {
+      "han": "线",
+      "shangyu": "ɕiẽ53",
+      "zhuji": "ɕie544",
+      "shengzhou": "ɕiẽ334",
+      "pinyin": "xiàn"
+    },
+    {
+      "han": "缠",
+      "shangyu": "dzø̃213",
+      "zhuji": "dzə13",
+      "shengzhou": "dzœ̃24",
+      "pinyin": "chán"
+    },
+    {
+      "han": "战",
+      "shangyu": "tsø̃53",
+      "zhuji": "tsə544",
+      "shengzhou": "tsœ̃334",
+      "pinyin": "zhàn"
+    },
+    {
+      "han": "扇",
+      "shangyu": "sø̃53",
+      "zhuji": "sə544",
+      "shengzhou": "sœ̃334",
+      "pinyin": "shàn"
+    },
+    {
+      "han": "善",
+      "shangyu": "zø̃213",
+      "zhuji": "zə242",
+      "shengzhou": "zœ̃22",
+      "pinyin": "shàn"
+    },
+    {
+      "han": "件",
+      "shangyu": "dʑiẽ31",
+      "zhuji": "dʑie33",
+      "shengzhou": "dʑiẽ24",
+      "pinyin": "jiàn"
+    },
+    {
+      "han": "延",
+      "shangyu": "Ǿiẽ213",
+      "zhuji": "Ǿie13",
+      "shengzhou": "Ǿiẽ213",
+      "pinyin": "yán"
+    },
+    {
+      "han": "别",
+      "shangyu": "biəʔ2",
+      "zhuji": "bieʔ13",
+      "shengzhou": "boʔ2",
+      "pinyin": "bié"
+    },
+    {
+      "han": "灭",
+      "shangyu": "miəʔ2",
+      "zhuji": "mieʔ13",
+      "shengzhou": "mieʔ2",
+      "pinyin": "miè"
+    },
+    {
+      "han": "列",
+      "shangyu": "liəʔ2",
+      "zhuji": "lieʔ13",
+      "shengzhou": "lieʔ2",
+      "pinyin": "liè"
+    },
+    {
+      "han": "撤",
+      "shangyu": "tshaʔ5",
+      "zhuji": "tshəʔ5",
+      "shengzhou": "tshəʔ5",
+      "pinyin": "chè"
+    },
+    {
+      "han": "舌",
+      "shangyu": "zəʔ2",
+      "zhuji": "zoʔ13",
+      "shengzhou": "zəʔ2",
+      "pinyin": "shé"
+    },
+    {
+      "han": "设",
+      "shangyu": "səʔ5",
+      "zhuji": "səʔ5",
+      "shengzhou": "səʔ5",
+      "pinyin": "shè"
+    },
+    {
+      "han": "热",
+      "shangyu": "ȵiəʔ2",
+      "zhuji": "nieʔ13",
+      "shengzhou": "ȵieʔ2",
+      "pinyin": "rè"
+    },
+    {
+      "han": "杰",
+      "shangyu": "dʑiəʔ2",
+      "zhuji": "dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "jié"
+    },
+    {
+      "han": "孽",
+      "shangyu": "ȵiəʔ2",
+      "zhuji": "nieʔ13",
+      "shengzhou": "ȵieʔ2",
+      "pinyin": "niè"
+    },
+    {
+      "han": "建",
+      "shangyu": "tɕiẽ53",
+      "zhuji": "tɕie544",
+      "shengzhou": "tɕiẽ334",
+      "pinyin": "jiàn"
+    },
+    {
+      "han": "健",
+      "shangyu": "dʑiẽ31",
+      "zhuji": "dʑie33",
+      "shengzhou": "dʑiẽ24",
+      "pinyin": "jiàn"
+    },
+    {
+      "han": "言",
+      "shangyu": "ȵiẽ213",
+      "zhuji": "Ǿie13",
+      "shengzhou": "Ǿiẽ213",
+      "pinyin": "yán"
+    },
+    {
+      "han": "歇",
+      "shangyu": "ɕiəʔ5",
+      "zhuji": "ɕieʔ5",
+      "shengzhou": "ɕieʔ5",
+      "pinyin": "xiē"
+    },
+    {
+      "han": "扁",
+      "shangyu": "piẽ35",
+      "zhuji": "pie544",
+      "shengzhou": "piẽ53",
+      "pinyin": "biǎn"
+    },
+    {
+      "han": "片",
+      "shangyu": "phiẽ53",
+      "zhuji": "phie544",
+      "shengzhou": "phiẽ334",
+      "pinyin": "piàn"
+    },
+    {
+      "han": "典",
+      "shangyu": "tiẽ35",
+      "zhuji": "tie42",
+      "shengzhou": "tiẽ53",
+      "pinyin": "diǎn"
+    },
+    {
+      "han": "天",
+      "shangyu": "thiẽ35",
+      "zhuji": "thie544",
+      "shengzhou": "thiẽ534",
+      "pinyin": "tiān"
+    },
+    {
+      "han": "田",
+      "shangyu": "diẽ213",
+      "zhuji": "die13",
+      "shengzhou": "diẽ213",
+      "pinyin": "tián"
+    },
+    {
+      "han": "垫",
+      "shangyu": "diẽ31",
+      "zhuji": "die33",
+      "shengzhou": "diẽ24",
+      "pinyin": "diàn"
+    },
+    {
+      "han": "年",
+      "shangyu": "ȵiẽ213",
+      "zhuji": "nie13",
+      "shengzhou": "ȵiẽ213",
+      "pinyin": "nián"
+    },
+    {
+      "han": "莲",
+      "shangyu": "liẽ213",
+      "zhuji": "lie13",
+      "shengzhou": "liẽ213",
+      "pinyin": "lián"
+    },
+    {
+      "han": "前",
+      "shangyu": "ʑiẽ213",
+      "zhuji": "ʑie13",
+      "shengzhou": "ʑiẽ213 dʑiẽ213",
+      "pinyin": "qián"
+    },
+    {
+      "han": "先",
+      "shangyu": "ɕiẽ35",
+      "zhuji": "ɕie544",
+      "shengzhou": "ɕiẽ534",
+      "pinyin": "xiān"
+    },
+    {
+      "han": "肩",
+      "shangyu": "tɕiẽ35",
+      "zhuji": "tɕie544",
+      "shengzhou": "tɕiẽ534",
+      "pinyin": "jiān"
+    },
+    {
+      "han": "见",
+      "shangyu": "tɕiẽ53",
+      "zhuji": "tɕie544",
+      "shengzhou": "tɕiẽ334",
+      "pinyin": "jiàn"
+    },
+    {
+      "han": "牵",
+      "shangyu": "tɕhiẽ35",
+      "zhuji": "tɕhie544",
+      "shengzhou": "tɕhiẽ534",
+      "pinyin": "qiān"
+    },
+    {
+      "han": "显",
+      "shangyu": "ɕiẽ35",
+      "zhuji": "ɕie42",
+      "shengzhou": "ɕiẽ53",
+      "pinyin": "xiǎn"
+    },
+    {
+      "han": "现",
+      "shangyu": "Ǿiẽ31",
+      "zhuji": "Ǿie33",
+      "shengzhou": "Ǿiẽ24",
+      "pinyin": "xiàn"
+    },
+    {
+      "han": "烟",
+      "shangyu": "Ǿiẽ35",
+      "zhuji": "Ǿie544",
+      "shengzhou": "Ǿiẽ534",
+      "pinyin": "yān"
+    },
+    {
+      "han": "憋",
+      "shangyu": "piəʔ5",
+      "zhuji": "pieʔ5",
+      "shengzhou": "pieʔ5",
+      "pinyin": "biē"
+    },
+    {
+      "han": "篾",
+      "shangyu": "miəʔ2",
+      "zhuji": "mieʔ13",
+      "shengzhou": "mieʔ2",
+      "pinyin": "miè"
+    },
+    {
+      "han": "铁",
+      "shangyu": "thiəʔ5",
+      "zhuji": "thieʔ5",
+      "shengzhou": "thieʔ5",
+      "pinyin": "tiě"
+    },
+    {
+      "han": "捏",
+      "shangyu": "ȵiɐʔ2",
+      "zhuji": "niaʔ13",
+      "shengzhou": "ȵiaʔ2",
+      "pinyin": "niē"
+    },
+    {
+      "han": "节",
+      "shangyu": "tɕiəʔ5",
+      "zhuji": "tɕieʔ5",
+      "shengzhou": "tɕieʔ5",
+      "pinyin": "jié"
+    },
+    {
+      "han": "切",
+      "shangyu": "tɕhiəʔ5",
+      "zhuji": "tɕhieʔ5",
+      "shengzhou": "tɕhieʔ5",
+      "pinyin": "qiè"
+    },
+    {
+      "han": "截",
+      "shangyu": "dʑiəʔ2",
+      "zhuji": "dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "jié"
+    },
+    {
+      "han": "结",
+      "shangyu": "tɕiəʔ5",
+      "zhuji": "tɕieʔ5",
+      "shengzhou": "tɕieʔ5",
+      "pinyin": "jié"
+    },
+    {
+      "han": "搬",
+      "shangyu": "pəŋ35",
+      "zhuji": "pə544",
+      "shengzhou": "pœ̃534",
+      "pinyin": "bān"
+    },
+    {
+      "han": "半",
+      "shangyu": "pø̃53",
+      "zhuji": "pə544",
+      "shengzhou": "pœ̃334",
+      "pinyin": "bàn"
+    },
+    {
+      "han": "判",
+      "shangyu": "phø̃53",
+      "zhuji": "phə544",
+      "shengzhou": "phœ̃334",
+      "pinyin": "pàn"
+    },
+    {
+      "han": "盘",
+      "shangyu": "bø̃213",
+      "zhuji": "bə13",
+      "shengzhou": "bœ̃213",
+      "pinyin": "pán"
+    },
+    {
+      "han": "满",
+      "shangyu": "mø̃213",
+      "zhuji": "mə242",
+      "shengzhou": "mœ̃22",
+      "pinyin": "mǎn"
+    },
+    {
+      "han": "端",
+      "shangyu": "toŋ35",
+      "zhuji": "tə544",
+      "shengzhou": "toŋ534",
+      "pinyin": "duān"
+    },
+    {
+      "han": "短",
+      "shangyu": "tø̃35",
+      "zhuji": "tə42",
+      "shengzhou": "tœ̃53",
+      "pinyin": "duǎn"
+    },
+    {
+      "han": "断",
+      "shangyu": "dø̃213",
+      "zhuji": "də242",
+      "shengzhou": "dœ̃22",
+      "pinyin": "duàn"
+    },
+    {
+      "han": "暖",
+      "shangyu": "nø̃213",
+      "zhuji": "nə242",
+      "shengzhou": "neŋ24 nœ̃24",
+      "pinyin": "nuǎn"
+    },
+    {
+      "han": "乱",
+      "shangyu": "lø̃31",
+      "zhuji": "lə33",
+      "shengzhou": "lœ̃24",
+      "pinyin": "luàn"
+    },
+    {
+      "han": "酸",
+      "shangyu": "sø̃35",
+      "zhuji": "sə544",
+      "shengzhou": "sœ̃534",
+      "pinyin": "suān"
+    },
+    {
+      "han": "算",
+      "shangyu": "sø̃53",
+      "zhuji": "sə544",
+      "shengzhou": "sœ̃334",
+      "pinyin": "suàn"
+    },
+    {
+      "han": "官",
+      "shangyu": "kuø̃35",
+      "zhuji": "kuə544",
+      "shengzhou": "kuœ̃534",
+      "pinyin": "guān"
+    },
+    {
+      "han": "宽",
+      "shangyu": "khuø̃35",
+      "zhuji": "khuə544",
+      "shengzhou": "khuœ̃534",
+      "pinyin": "kuān"
+    },
+    {
+      "han": "欢",
+      "shangyu": "fø̃35",
+      "zhuji": "fə544",
+      "shengzhou": "huœ̃534",
+      "pinyin": "huān"
+    },
+    {
+      "han": "完",
+      "shangyu": "Ǿuø̃213",
+      "zhuji": "və13",
+      "shengzhou": "Ǿuœ̃213",
+      "pinyin": "wán"
+    },
+    {
+      "han": "换",
+      "shangyu": "Ǿuø̃31",
+      "zhuji": "və33",
+      "shengzhou": "Ǿuœ̃24",
+      "pinyin": "huàn"
+    },
+    {
+      "han": "碗",
+      "shangyu": "Ǿuø̃35",
+      "zhuji": "və42",
+      "shengzhou": "Ǿuœ̃53",
+      "pinyin": "wǎn"
+    },
+    {
+      "han": "拨",
+      "shangyu": "piəʔ5",
+      "zhuji": "poʔ5",
+      "shengzhou": "pəʔ5",
+      "pinyin": "bō"
+    },
+    {
+      "han": "泼",
+      "shangyu": "phiəʔ5",
+      "zhuji": "phoʔ5",
+      "shengzhou": "phəʔ5",
+      "pinyin": "pō"
+    },
+    {
+      "han": "末",
+      "shangyu": "miəʔ2",
+      "zhuji": "moʔ13",
+      "shengzhou": "məʔ2",
+      "pinyin": "mò"
+    },
+    {
+      "han": "脱",
+      "shangyu": "thəʔ5",
+      "zhuji": "thoʔ5",
+      "shengzhou": "thəʔ5",
+      "pinyin": "tuō"
+    },
+    {
+      "han": "夺",
+      "shangyu": "diəʔ2",
+      "zhuji": "dəʔ13",
+      "shengzhou": "dəʔ2",
+      "pinyin": "duó"
+    },
+    {
+      "han": "阔",
+      "shangyu": "khuəʔ5",
+      "zhuji": "khoʔ5",
+      "shengzhou": "khuəʔ5",
+      "pinyin": "kuò"
+    },
+    {
+      "han": "活",
+      "shangyu": "Ǿuəʔ2",
+      "zhuji": "Ǿoʔ13",
+      "shengzhou": "Ǿuɛʔ2",
+      "pinyin": "huó"
+    },
+    {
+      "han": "顽",
+      "shangyu": "Ǿuɛ̃213",
+      "zhuji": "vɛ13",
+      "shengzhou": "Ǿuɛ̃24",
+      "pinyin": "wán"
+    },
+    {
+      "han": "滑",
+      "shangyu": "Ǿuɛʔ2",
+      "zhuji": "vaʔ13",
+      "shengzhou": "Ǿuɛʔ2",
+      "pinyin": "huá"
+    },
+    {
+      "han": "挖",
+      "shangyu": "Ǿuɛʔ5",
+      "zhuji": "vaʔ5",
+      "shengzhou": "Ǿuɛʔ5",
+      "pinyin": "wā"
+    },
+    {
+      "han": "闩",
+      "shangyu": "sø̃35",
+      "zhuji": "sə544",
+      "shengzhou": "sœ̃534",
+      "pinyin": "shuān"
+    },
+    {
+      "han": "关",
+      "shangyu": "kuɛ̃35",
+      "zhuji": "kuɛ544",
+      "shengzhou": "kuɛ̃534",
+      "pinyin": "guān"
+    },
+    {
+      "han": "惯",
+      "shangyu": "kuɛ̃53",
+      "zhuji": "kuɛ544",
+      "shengzhou": "kuɛ̃334",
+      "pinyin": "guàn"
+    },
+    {
+      "han": "还",
+      "shangyu": "Ǿuɛ̃213",
+      "zhuji": "vɛ13",
+      "shengzhou": "Ǿuɛ̃213",
+      "pinyin": "hái"
+    },
+    {
+      "han": "弯",
+      "shangyu": "Ǿuɛ̃35",
+      "zhuji": "vɛ544",
+      "shengzhou": "Ǿuɛ̃534",
+      "pinyin": "wān"
+    },
+    {
+      "han": "刷",
+      "shangyu": "səʔ5",
+      "zhuji": "soʔ5",
+      "shengzhou": "səʔ5",
+      "pinyin": "shuā"
+    },
+    {
+      "han": "刮",
+      "shangyu": "kuɛʔ5 kuaʔ5",
+      "zhuji": "kuaʔ5",
+      "shengzhou": "kuaʔ5",
+      "pinyin": "guā"
+    },
+    {
+      "han": "全",
+      "shangyu": "dʑiẽ213",
+      "zhuji": "dʑie13",
+      "shengzhou": "dʑiẽ213",
+      "pinyin": "quán"
+    },
+    {
+      "han": "选",
+      "shangyu": "ɕiẽ35",
+      "zhuji": "ɕie42",
+      "shengzhou": "ɕiẽ53",
+      "pinyin": "xuǎn"
+    },
+    {
+      "han": "转",
+      "shangyu": "tsø̃35",
+      "zhuji": "tsə42",
+      "shengzhou": "tsœ̃53",
+      "pinyin": "zhuǎn"
+    },
+    {
+      "han": "传",
+      "shangyu": "dzø̃213",
+      "zhuji": "dzə13",
+      "shengzhou": "dzœ̃213",
+      "pinyin": "chuán"
+    },
+    {
+      "han": "砖",
+      "shangyu": "tsø̃35",
+      "zhuji": "tsə544",
+      "shengzhou": "tsœ̃534",
+      "pinyin": "zhuān"
+    },
+    {
+      "han": "船",
+      "shangyu": "zø̃213",
+      "zhuji": "zə13",
+      "shengzhou": "zœ̃213",
+      "pinyin": "chuán"
+    },
+    {
+      "han": "软",
+      "shangyu": "ȵyø̃213",
+      "zhuji": "niə242",
+      "shengzhou": "nœ̃24 ȵyœ̃22",
+      "pinyin": "ruǎn"
+    },
+    {
+      "han": "卷",
+      "shangyu": "tɕyø̃35",
+      "zhuji": "tɕiə242",
+      "shengzhou": "tɕyœ̃53",
+      "pinyin": "juǎn"
+    },
+    {
+      "han": "圈",
+      "shangyu": "tɕhyø̃35",
+      "zhuji": "tɕhiə544",
+      "shengzhou": "tɕhyœ̃534",
+      "pinyin": "quān"
+    },
+    {
+      "han": "权",
+      "shangyu": "dʑyø̃213",
+      "zhuji": "dʑiə13",
+      "shengzhou": "dʑyœ̃213",
+      "pinyin": "quán"
+    },
+    {
+      "han": "圆",
+      "shangyu": "Ǿyø̃213",
+      "zhuji": "Ǿiə13",
+      "shengzhou": "Ǿyœ̃213",
+      "pinyin": "yuán"
+    },
+    {
+      "han": "院",
+      "shangyu": "Ǿyø̃31",
+      "zhuji": "Ǿiə33",
+      "shengzhou": "Ǿyœ̃24",
+      "pinyin": "yuàn"
+    },
+    {
+      "han": "铅",
+      "shangyu": "khɛ̃35",
+      "zhuji": "khɛ544",
+      "shengzhou": "khɛ̃534",
+      "pinyin": "qiān"
+    },
+    {
+      "han": "绝",
+      "shangyu": "dʑiəʔ2",
+      "zhuji": "dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "jué"
+    },
+    {
+      "han": "雪",
+      "shangyu": "ɕiəʔ5",
+      "zhuji": "ɕieʔ5",
+      "shengzhou": "ɕieʔ5",
+      "pinyin": "xuě"
+    },
+    {
+      "han": "反",
+      "shangyu": "fɛ̃35",
+      "zhuji": "fɛ42",
+      "shengzhou": "fɛ̃53",
+      "pinyin": "fǎn"
+    },
+    {
+      "han": "翻",
+      "shangyu": "fɛ̃35",
+      "zhuji": "fɛ544",
+      "shengzhou": "fɛ̃534",
+      "pinyin": "fān"
+    },
+    {
+      "han": "饭",
+      "shangyu": "vɛ̃31",
+      "zhuji": "vɛ33",
+      "shengzhou": "Ǿuɛ̃24",
+      "pinyin": "fàn"
+    },
+    {
+      "han": "晚",
+      "shangyu": "mɛ̃213",
+      "zhuji": "vɛ242",
+      "shengzhou": "mɛ̃24 Ǿuɛ̃24",
+      "pinyin": "wǎn"
+    },
+    {
+      "han": "万",
+      "shangyu": "vɛ̃31",
+      "zhuji": "vɛ33",
+      "shengzhou": "Ǿuɛ̃24",
+      "pinyin": "wàn"
+    },
+    {
+      "han": "劝",
+      "shangyu": "tɕhyø̃53",
+      "zhuji": "tɕhiə544",
+      "shengzhou": "tɕhyœ̃334",
+      "pinyin": "quàn"
+    },
+    {
+      "han": "原",
+      "shangyu": "ȵyø̃213",
+      "zhuji": "niə13",
+      "shengzhou": "ȵyœ̃213",
+      "pinyin": "yuán"
+    },
+    {
+      "han": "冤",
+      "shangyu": "Ǿyø̃35",
+      "zhuji": "Ǿiə544",
+      "shengzhou": "Ǿyœ̃534",
+      "pinyin": "yuān"
+    },
+    {
+      "han": "园",
+      "shangyu": "Ǿyø̃213",
+      "zhuji": "Ǿiə13",
+      "shengzhou": "Ǿyœ̃213",
+      "pinyin": "yuán"
+    },
+    {
+      "han": "远",
+      "shangyu": "Ǿyø̃213",
+      "zhuji": "Ǿiə242",
+      "shengzhou": "Ǿyœ̃22",
+      "pinyin": "yuǎn"
+    },
+    {
+      "han": "发",
+      "shangyu": "fɐʔ5",
+      "zhuji": "faʔ5",
+      "shengzhou": "fɛʔ5",
+      "pinyin": "fā"
+    },
+    {
+      "han": "罚",
+      "shangyu": "vɐʔ2",
+      "zhuji": "vaʔ13",
+      "shengzhou": "Ǿuɛʔ2",
+      "pinyin": "fá"
+    },
+    {
+      "han": "袜",
+      "shangyu": "mɐʔ2",
+      "zhuji": "maʔ13",
+      "shengzhou": "mɛʔ2",
+      "pinyin": "wà"
+    },
+    {
+      "han": "月",
+      "shangyu": "ȵioʔ2 Ǿioʔ2",
+      "zhuji": "Ǿioʔ13",
+      "shengzhou": "ȵyoʔ2 Ǿyoʔ2",
+      "pinyin": "yuè"
+    },
+    {
+      "han": "越",
+      "shangyu": "Ǿioʔ2",
+      "zhuji": "Ǿioʔ13",
+      "shengzhou": "Ǿyoʔ2",
+      "pinyin": "yuè"
+    },
+    {
+      "han": "县",
+      "shangyu": "Ǿyø̃31",
+      "zhuji": "Ǿiə33",
+      "shengzhou": "Ǿyœ̃24",
+      "pinyin": "xiàn"
+    },
+    {
+      "han": "决",
+      "shangyu": "tɕyoʔ5",
+      "zhuji": "tɕioʔ5",
+      "shengzhou": "tɕyoʔ5",
+      "pinyin": "jué"
+    },
+    {
+      "han": "缺",
+      "shangyu": "tɕhyoʔ5",
+      "zhuji": "tɕhioʔ5",
+      "shengzhou": "tɕhyoʔ5",
+      "pinyin": "quē"
+    },
+    {
+      "han": "血",
+      "shangyu": "ɕyoʔ5",
+      "zhuji": "ɕioʔ5",
+      "shengzhou": "ɕyoʔ5",
+      "pinyin": "xuè"
+    },
+    {
+      "han": "吞",
+      "shangyu": "thiŋ35",
+      "zhuji": "thɛn544",
+      "shengzhou": "theŋ534",
+      "pinyin": "tūn"
+    },
+    {
+      "han": "根",
+      "shangyu": "kiŋ35",
+      "zhuji": "kin544",
+      "shengzhou": "keŋ534",
+      "pinyin": "gēn"
+    },
+    {
+      "han": "恨",
+      "shangyu": "Ǿɛ̃31",
+      "zhuji": "Ǿɛn33",
+      "shengzhou": "Ǿeŋ24",
+      "pinyin": "hèn"
+    },
+    {
+      "han": "恩",
+      "shangyu": "Ǿɛ̃35",
+      "zhuji": "Ǿɛn544",
+      "shengzhou": "Ǿiŋ534 Ǿeŋ534",
+      "pinyin": "ēn"
+    },
+    {
+      "han": "贫",
+      "shangyu": "biŋ213",
+      "zhuji": "bin13",
+      "shengzhou": "biŋ213",
+      "pinyin": "pín"
+    },
+    {
+      "han": "民",
+      "shangyu": "miŋ213",
+      "zhuji": "min13",
+      "shengzhou": "miŋ213",
+      "pinyin": "mín"
+    },
+    {
+      "han": "邻",
+      "shangyu": "liŋ213",
+      "zhuji": "lin13",
+      "shengzhou": "liŋ213",
+      "pinyin": "lín"
+    },
+    {
+      "han": "进",
+      "shangyu": "tɕiŋ53",
+      "zhuji": "tɕin544",
+      "shengzhou": "tɕiŋ334",
+      "pinyin": "jìn"
+    },
+    {
+      "han": "亲",
+      "shangyu": "tɕhiŋ35",
+      "zhuji": "tɕhin544",
+      "shengzhou": "tɕhiŋ534",
+      "pinyin": "qīn"
+    },
+    {
+      "han": "新",
+      "shangyu": "ɕiŋ35",
+      "zhuji": "ɕin544",
+      "shengzhou": "ɕiŋ534",
+      "pinyin": "xīn"
+    },
+    {
+      "han": "镇",
+      "shangyu": "tsəŋ53",
+      "zhuji": "tsɛn544",
+      "shengzhou": "tseŋ334",
+      "pinyin": "zhèn"
+    },
+    {
+      "han": "陈",
+      "shangyu": "dzəŋ213",
+      "zhuji": "dzɛn13",
+      "shengzhou": "dzeŋ213",
+      "pinyin": "chén"
+    },
+    {
+      "han": "震",
+      "shangyu": "tsəŋ53",
+      "zhuji": "tsɛn544",
+      "shengzhou": "tseŋ334",
+      "pinyin": "zhèn"
+    },
+    {
+      "han": "神",
+      "shangyu": "zəŋ213",
+      "zhuji": "zɛn13",
+      "shengzhou": "zeŋ213",
+      "pinyin": "shén"
+    },
+    {
+      "han": "身",
+      "shangyu": "səŋ35",
+      "zhuji": "sɛn544",
+      "shengzhou": "seŋ534",
+      "pinyin": "shēn"
+    },
+    {
+      "han": "辰",
+      "shangyu": "zəŋ213",
+      "zhuji": "zɛn13",
+      "shengzhou": "zeŋ213",
+      "pinyin": "chén"
+    },
+    {
+      "han": "人",
+      "shangyu": "ȵiŋ213 zəŋ213",
+      "zhuji": "nin13",
+      "shengzhou": "ȵiŋ213 zeŋ213",
+      "pinyin": "rén"
+    },
+    {
+      "han": "认",
+      "shangyu": "ȵiŋ31",
+      "zhuji": "zɛn33",
+      "shengzhou": "ȵiŋ24 zeŋ24",
+      "pinyin": "rèn"
+    },
+    {
+      "han": "紧",
+      "shangyu": "tɕiŋ35",
+      "zhuji": "tɕin42",
+      "shengzhou": "tɕiŋ53",
+      "pinyin": "jǐn"
+    },
+    {
+      "han": "银",
+      "shangyu": "ȵiŋ213",
+      "zhuji": "nin13",
+      "shengzhou": "ȵiŋ213",
+      "pinyin": "yín"
+    },
+    {
+      "han": "印",
+      "shangyu": "Ǿiŋ53",
+      "zhuji": "Ǿin544",
+      "shengzhou": "Ǿiŋ334",
+      "pinyin": "yìn"
+    },
+    {
+      "han": "引",
+      "shangyu": "Ǿiŋ213",
+      "zhuji": "Ǿin242",
+      "shengzhou": "Ǿiŋ24",
+      "pinyin": "yǐn"
+    },
+    {
+      "han": "笔",
+      "shangyu": "piəʔ5",
+      "zhuji": "pieʔ5",
+      "shengzhou": "pieʔ5",
+      "pinyin": "bǐ"
+    },
+    {
+      "han": "匹",
+      "shangyu": "phiəʔ5",
+      "zhuji": "phieʔ5",
+      "shengzhou": "phieʔ5",
+      "pinyin": "pǐ"
+    },
+    {
+      "han": "密",
+      "shangyu": "miəʔ2",
+      "zhuji": "mieʔ13",
+      "shengzhou": "mieʔ2",
+      "pinyin": "mì"
+    },
+    {
+      "han": "栗",
+      "shangyu": "liəʔ2",
+      "zhuji": "lieʔ13",
+      "shengzhou": "lieʔ2",
+      "pinyin": "lì"
+    },
+    {
+      "han": "七",
+      "shangyu": "tɕhiəʔ5",
+      "zhuji": "tɕhieʔ5",
+      "shengzhou": "tɕhieʔ5",
+      "pinyin": "qī"
+    },
+    {
+      "han": "侄",
+      "shangyu": "dzəʔ2",
+      "zhuji": "dzəʔ13",
+      "shengzhou": "dzəʔ2",
+      "pinyin": "zhí"
+    },
+    {
+      "han": "虱",
+      "shangyu": "səʔ5",
+      "zhuji": "səʔ5",
+      "shengzhou": "səʔ5",
+      "pinyin": "shī"
+    },
+    {
+      "han": "实",
+      "shangyu": "zəʔ2",
+      "zhuji": "zəʔ13",
+      "shengzhou": "zəʔ2",
+      "pinyin": "shí"
+    },
+    {
+      "han": "失",
+      "shangyu": "səʔ5",
+      "zhuji": "səʔ5",
+      "shengzhou": "səʔ5",
+      "pinyin": "shī"
+    },
+    {
+      "han": "日",
+      "shangyu": "ȵiəʔ2 zəʔ2",
+      "zhuji": "nieʔ13 zəʔ13",
+      "shengzhou": "nəʔ2 zəʔ2",
+      "pinyin": "rì"
+    },
+    {
+      "han": "吉",
+      "shangyu": "tɕiəʔ5",
+      "zhuji": "tɕieʔ5",
+      "shengzhou": "tɕieʔ5",
+      "pinyin": "jí"
+    },
+    {
+      "han": "一",
+      "shangyu": "Ǿiəʔ5",
+      "zhuji": "Ǿieʔ5",
+      "shengzhou": "Ǿieʔ5",
+      "pinyin": "yī"
+    },
+    {
+      "han": "筋",
+      "shangyu": "tɕiŋ35",
+      "zhuji": "tɕin544",
+      "shengzhou": "tɕiŋ534",
+      "pinyin": "jīn"
+    },
+    {
+      "han": "劲",
+      "shangyu": "dʑiŋ31",
+      "zhuji": "dʑin33",
+      "shengzhou": "dʑiŋ24",
+      "pinyin": "jìn"
+    },
+    {
+      "han": "勤",
+      "shangyu": "dʑiŋ213",
+      "zhuji": "dʑin13",
+      "shengzhou": "dʑiŋ213",
+      "pinyin": "qín"
+    },
+    {
+      "han": "近",
+      "shangyu": "dʑiŋ213",
+      "zhuji": "dʑin242",
+      "shengzhou": "dʑiŋ22",
+      "pinyin": "jìn"
+    },
+    {
+      "han": "隐",
+      "shangyu": "Ǿiŋ35",
+      "zhuji": "Ǿin42",
+      "shengzhou": "Ǿiŋ53",
+      "pinyin": "yǐn"
+    },
+    {
+      "han": "本",
+      "shangyu": "pəŋ35",
+      "zhuji": "pɛn42",
+      "shengzhou": "peŋ53",
+      "pinyin": "běn"
+    },
+    {
+      "han": "盆",
+      "shangyu": "bəŋ213",
+      "zhuji": "bɛn13",
+      "shengzhou": "beŋ213",
+      "pinyin": "pén"
+    },
+    {
+      "han": "门",
+      "shangyu": "məŋ213",
+      "zhuji": "mɛn13",
+      "shengzhou": "meŋ213",
+      "pinyin": "mén"
+    },
+    {
+      "han": "墩",
+      "shangyu": "təŋ35",
+      "zhuji": "tɛn544",
+      "shengzhou": "teŋ534",
+      "pinyin": "dūn"
+    },
+    {
+      "han": "嫩",
+      "shangyu": "nø̃31",
+      "zhuji": "lɛn33",
+      "shengzhou": "neŋ24",
+      "pinyin": "nèn"
+    },
+    {
+      "han": "村",
+      "shangyu": "tshəŋ35",
+      "zhuji": "tshɛn544",
+      "shengzhou": "tsheŋ534",
+      "pinyin": "cūn"
+    },
+    {
+      "han": "寸",
+      "shangyu": "tshəŋ53",
+      "zhuji": "tshɛn544",
+      "shengzhou": "tsheŋ334",
+      "pinyin": "cùn"
+    },
+    {
+      "han": "蹲",
+      "shangyu": "təŋ35",
+      "zhuji": "tɛn544",
+      "shengzhou": "teŋ534",
+      "pinyin": "dūn"
+    },
+    {
+      "han": "孙",
+      "shangyu": "səŋ35",
+      "zhuji": "sɛn544",
+      "shengzhou": "seŋ534",
+      "pinyin": "sūn"
+    },
+    {
+      "han": "滚",
+      "shangyu": "kuəŋ35",
+      "zhuji": "kuɛn42",
+      "shengzhou": "kuəŋ53",
+      "pinyin": "gǔn"
+    },
+    {
+      "han": "困",
+      "shangyu": "khuəŋ53",
+      "zhuji": "khuɛn544",
+      "shengzhou": "khuəŋ334",
+      "pinyin": "kùn"
+    },
+    {
+      "han": "婚",
+      "shangyu": "fəŋ35",
+      "zhuji": "fɛn544",
+      "shengzhou": "feŋ534",
+      "pinyin": "hūn"
+    },
+    {
+      "han": "魂",
+      "shangyu": "Ǿuəŋ213",
+      "zhuji": "vɛn13",
+      "shengzhou": "Ǿuəŋ213",
+      "pinyin": "hún"
+    },
+    {
+      "han": "温",
+      "shangyu": "Ǿuəŋ35",
+      "zhuji": "vɛn544",
+      "shengzhou": "Ǿuəŋ534",
+      "pinyin": "wēn"
+    },
+    {
+      "han": "卒",
+      "shangyu": "tsəʔ5",
+      "zhuji": "tsəʔ5",
+      "shengzhou": "tsəʔ5",
+      "pinyin": "zú"
+    },
+    {
+      "han": "骨",
+      "shangyu": "kuəʔ5",
+      "zhuji": "koʔ5",
+      "shengzhou": "kuəʔ5",
+      "pinyin": "gǔ"
+    },
+    {
+      "han": "轮",
+      "shangyu": "liŋ213",
+      "zhuji": "lɛn13",
+      "shengzhou": "leŋ213",
+      "pinyin": "lún"
+    },
+    {
+      "han": "笋",
+      "shangyu": "ɕiŋ35",
+      "zhuji": "ɕin42",
+      "shengzhou": "ɕiŋ53",
+      "pinyin": "sǔn"
+    },
+    {
+      "han": "准",
+      "shangyu": "tsəŋ35",
+      "zhuji": "tsɛn42",
+      "shengzhou": "tseŋ53",
+      "pinyin": "zhǔn"
+    },
+    {
+      "han": "春",
+      "shangyu": "tshəŋ35",
+      "zhuji": "tshɛn544",
+      "shengzhou": "tsheŋ534",
+      "pinyin": "chūn"
+    },
+    {
+      "han": "唇",
+      "shangyu": "zəŋ213",
+      "zhuji": "dzɛn13",
+      "shengzhou": "zeŋ213",
+      "pinyin": "chún"
+    },
+    {
+      "han": "顺",
+      "shangyu": "zəŋ31",
+      "zhuji": "zɛn33",
+      "shengzhou": "zeŋ24",
+      "pinyin": "shùn"
+    },
+    {
+      "han": "纯",
+      "shangyu": "zəŋ213",
+      "zhuji": "zɛn13 dzɛn13",
+      "shengzhou": "dzeŋ213",
+      "pinyin": "chún"
+    },
+    {
+      "han": "闰",
+      "shangyu": "Ǿiŋ213",
+      "zhuji": "Ǿiom33",
+      "shengzhou": "Ǿyoŋ24 zeŋ24",
+      "pinyin": "rùn"
+    },
+    {
+      "han": "均",
+      "shangyu": "tɕyoŋ35",
+      "zhuji": "tɕiom544",
+      "shengzhou": "tɕyoŋ534",
+      "pinyin": "jūn"
+    },
+    {
+      "han": "匀",
+      "shangyu": "Ǿyoŋ213",
+      "zhuji": "Ǿiom13",
+      "shengzhou": "Ǿyoŋ213",
+      "pinyin": "yún"
+    },
+    {
+      "han": "律",
+      "shangyu": "liəʔ2",
+      "zhuji": "lieʔ13",
+      "shengzhou": "lieʔ2",
+      "pinyin": "lǜ"
+    },
+    {
+      "han": "出",
+      "shangyu": "tshəʔ5",
+      "zhuji": "tshoʔ5",
+      "shengzhou": "tshəʔ5",
+      "pinyin": "chū"
+    },
+    {
+      "han": "橘",
+      "shangyu": "tɕyoʔ5",
+      "zhuji": "tɕioʔ5",
+      "shengzhou": "tɕyoʔ5",
+      "pinyin": "jú"
+    },
+    {
+      "han": "分",
+      "shangyu": "fəŋ35",
+      "zhuji": "fɛn544",
+      "shengzhou": "feŋ534",
+      "pinyin": "fēn"
+    },
+    {
+      "han": "粉",
+      "shangyu": "fəŋ35",
+      "zhuji": "fɛn42",
+      "shengzhou": "feŋ53",
+      "pinyin": "fěn"
+    },
+    {
+      "han": "坟",
+      "shangyu": "Ǿuəŋ213",
+      "zhuji": "vɛn13",
+      "shengzhou": "Ǿuəŋ213",
+      "pinyin": "fén"
+    },
+    {
+      "han": "蚊",
+      "shangyu": "məŋ213",
+      "zhuji": "mɛn13 vɛn13",
+      "shengzhou": "meŋ213 Ǿuəŋ213",
+      "pinyin": "wén"
+    },
+    {
+      "han": "问",
+      "shangyu": "məŋ31 vəŋ31",
+      "zhuji": "mɛn33 vɛn33",
+      "shengzhou": "meŋ24 Ǿuəŋ24",
+      "pinyin": "wèn"
+    },
+    {
+      "han": "军",
+      "shangyu": "tɕyoŋ35",
+      "zhuji": "tɕiom544",
+      "shengzhou": "tɕyoŋ534",
+      "pinyin": "jūn"
+    },
+    {
+      "han": "裙",
+      "shangyu": "dʑyoŋ213",
+      "zhuji": "dʑiom13",
+      "shengzhou": "dʑyoŋ213",
+      "pinyin": "qún"
+    },
+    {
+      "han": "熏",
+      "shangyu": "ɕyoŋ35",
+      "zhuji": "ɕiom544",
+      "shengzhou": "ɕyoŋ534",
+      "pinyin": "xūn"
+    },
+    {
+      "han": "云",
+      "shangyu": "Ǿiŋ213",
+      "zhuji": "Ǿiom13",
+      "shengzhou": "Ǿyoŋ213",
+      "pinyin": "yún"
+    },
+    {
+      "han": "运",
+      "shangyu": "Ǿiŋ31",
+      "zhuji": "Ǿiom33",
+      "shengzhou": "Ǿyoŋ24",
+      "pinyin": "yùn"
+    },
+    {
+      "han": "佛",
+      "shangyu": "vəʔ2",
+      "zhuji": "voʔ13",
+      "shengzhou": "Ǿuəʔ2",
+      "pinyin": "fú"
+    },
+    {
+      "han": "物",
+      "shangyu": "vəʔ2",
+      "zhuji": "voʔ13",
+      "shengzhou": "Ǿuəʔ2",
+      "pinyin": "wù"
+    },
+    {
+      "han": "帮",
+      "shangyu": "pɔ̃35",
+      "zhuji": "pɑ̃544",
+      "shengzhou": "pɔŋ534",
+      "pinyin": "bāng"
+    },
+    {
+      "han": "忙",
+      "shangyu": "mɔ̃213",
+      "zhuji": "mɑ̃13",
+      "shengzhou": "mɔŋ213",
+      "pinyin": "máng"
+    },
+    {
+      "han": "党",
+      "shangyu": "tɔ̃35",
+      "zhuji": "tɑ̃42",
+      "shengzhou": "tɔŋ53",
+      "pinyin": "dǎng"
+    },
+    {
+      "han": "汤",
+      "shangyu": "thɔ̃35",
+      "zhuji": "thɑ̃544",
+      "shengzhou": "thɔŋ534",
+      "pinyin": "tāng"
+    },
+    {
+      "han": "糖",
+      "shangyu": "dɔ̃213",
+      "zhuji": "dɑ̃13",
+      "shengzhou": "dɔŋ213",
+      "pinyin": "táng"
+    },
+    {
+      "han": "浪",
+      "shangyu": "lɔ̃31",
+      "zhuji": "lɑ̃33",
+      "shengzhou": "lɔŋ24",
+      "pinyin": "làng"
+    },
+    {
+      "han": "仓",
+      "shangyu": "tshɔ̃35",
+      "zhuji": "tshɑ̃544",
+      "shengzhou": "tshɔŋ534",
+      "pinyin": "cāng"
+    },
+    {
+      "han": "钢",
+      "shangyu": "kɔ̃35",
+      "zhuji": "kɑ̃544",
+      "shengzhou": "kɔŋ534",
+      "pinyin": "gāng"
+    },
+    {
+      "han": "糠",
+      "shangyu": "khɔ̃35",
+      "zhuji": "khɑ̃544",
+      "shengzhou": "khɔŋ534",
+      "pinyin": "kāng"
+    },
+    {
+      "han": "薄",
+      "shangyu": "boʔ2",
+      "zhuji": "boʔ13",
+      "shengzhou": "boʔ2",
+      "pinyin": "báo"
+    },
+    {
+      "han": "摸",
+      "shangyu": "moʔ5",
+      "zhuji": "moʔ5",
+      "shengzhou": "moʔ2",
+      "pinyin": "mō"
+    },
+    {
+      "han": "托",
+      "shangyu": "thoʔ5",
+      "zhuji": "thoʔ5",
+      "shengzhou": "thoʔ5",
+      "pinyin": "tuō"
+    },
+    {
+      "han": "落",
+      "shangyu": "loʔ2",
+      "zhuji": "loʔ13",
+      "shengzhou": "loʔ2",
+      "pinyin": "luò"
+    },
+    {
+      "han": "作",
+      "shangyu": "tsoʔ5",
+      "zhuji": "tsoʔ5",
+      "shengzhou": "tsoʔ5",
+      "pinyin": "zuò"
+    },
+    {
+      "han": "索",
+      "shangyu": "soʔ5",
+      "zhuji": "soʔ5",
+      "shengzhou": "soʔ5",
+      "pinyin": "suǒ"
+    },
+    {
+      "han": "各",
+      "shangyu": "koʔ5",
+      "zhuji": "koʔ5",
+      "shengzhou": "koʔ5",
+      "pinyin": "gè"
+    },
+    {
+      "han": "鹤",
+      "shangyu": "ŋoʔ2",
+      "zhuji": "ŋoʔ13",
+      "shengzhou": "ŋoʔ2",
+      "pinyin": "hè"
+    },
+    {
+      "han": "恶",
+      "shangyu": "Ǿoʔ5",
+      "zhuji": "Ǿoʔ5",
+      "shengzhou": "Ǿoʔ5",
+      "pinyin": "è"
+    },
+    {
+      "han": "娘",
+      "shangyu": "ȵiã213",
+      "zhuji": "niã13",
+      "shengzhou": "ȵiaŋ213",
+      "pinyin": "niáng"
+    },
+    {
+      "han": "两",
+      "shangyu": "liã213",
+      "zhuji": "liã242",
+      "shengzhou": "liaŋ22",
+      "pinyin": "liǎng"
+    },
+    {
+      "han": "亮",
+      "shangyu": "liã31",
+      "zhuji": "liã33",
+      "shengzhou": "liaŋ24",
+      "pinyin": "liàng"
+    },
+    {
+      "han": "浆",
+      "shangyu": "tɕiã35",
+      "zhuji": "tɕiã544",
+      "shengzhou": "tɕiaŋ534",
+      "pinyin": "jiāng"
+    },
+    {
+      "han": "抢",
+      "shangyu": "tɕhiã35",
+      "zhuji": "tɕhiã42",
+      "shengzhou": "tɕhiaŋ53",
+      "pinyin": "qiǎng"
+    },
+    {
+      "han": "匠",
+      "shangyu": "ʑiã213",
+      "zhuji": "ʑiã33",
+      "shengzhou": "ʑiaŋ24",
+      "pinyin": "jiàng"
+    },
+    {
+      "han": "想",
+      "shangyu": "ɕiã35",
+      "zhuji": "ɕiã42",
+      "shengzhou": "ɕiaŋ53",
+      "pinyin": "xiǎng"
+    },
+    {
+      "han": "像",
+      "shangyu": "ʑiã213",
+      "zhuji": "ʑiã242",
+      "shengzhou": "ʑiaŋ22 dʑiaŋ22",
+      "pinyin": "xiàng"
+    },
+    {
+      "han": "张",
+      "shangyu": "tsã35",
+      "zhuji": "tsã544",
+      "shengzhou": "tsaŋ534",
+      "pinyin": "zhāng"
+    },
+    {
+      "han": "长",
+      "shangyu": "dzã213",
+      "zhuji": "dzã13",
+      "shengzhou": "dzaŋ213",
+      "pinyin": "zhǎng"
+    },
+    {
+      "han": "装",
+      "shangyu": "tsɔ̃35",
+      "zhuji": "tsã544",
+      "shengzhou": "tsɔŋ534",
+      "pinyin": "zhuāng"
+    },
+    {
+      "han": "壮",
+      "shangyu": "tsɔ̃53",
+      "zhuji": "tsɑ̃544",
+      "shengzhou": "tsɔŋ334",
+      "pinyin": "zhuàng"
+    },
+    {
+      "han": "疮",
+      "shangyu": "tshɔ̃35",
+      "zhuji": "tshɑ̃544",
+      "shengzhou": "tshɔŋ534",
+      "pinyin": "chuāng"
+    },
+    {
+      "han": "床",
+      "shangyu": "zɔ̃213",
+      "zhuji": "zɑ̃13",
+      "shengzhou": "zɔŋ213",
+      "pinyin": "chuáng"
+    },
+    {
+      "han": "霜",
+      "shangyu": "sɔ̃35",
+      "zhuji": "sɑ̃544",
+      "shengzhou": "sɔŋ534",
+      "pinyin": "shuāng"
+    },
+    {
+      "han": "章",
+      "shangyu": "tsɔ̃35",
+      "zhuji": "tsã544",
+      "shengzhou": "tsaŋ534",
+      "pinyin": "zhāng"
+    },
+    {
+      "han": "厂",
+      "shangyu": "tshã35",
+      "zhuji": "tshã42",
+      "shengzhou": "tshaŋ53",
+      "pinyin": "chǎng"
+    },
+    {
+      "han": "唱",
+      "shangyu": "tshɔ̃53",
+      "zhuji": "tshã544",
+      "shengzhou": "tshaŋ334",
+      "pinyin": "chàng"
+    },
+    {
+      "han": "伤",
+      "shangyu": "sɔ̃35",
+      "zhuji": "sɑ̃544",
+      "shengzhou": "saŋ534",
+      "pinyin": "shāng"
+    },
+    {
+      "han": "尝",
+      "shangyu": "zɔ̃213",
+      "zhuji": "zɑ̃13",
+      "shengzhou": "zɔŋ213",
+      "pinyin": "cháng"
+    },
+    {
+      "han": "上",
+      "shangyu": "zɔ̃213",
+      "zhuji": "zɑ̃33",
+      "shengzhou": "zaŋ24",
+      "pinyin": "shàng"
+    },
+    {
+      "han": "让",
+      "shangyu": "ȵiã31",
+      "zhuji": "niã33",
+      "shengzhou": "ȵiaŋ24 zaŋ24",
+      "pinyin": "ràng"
+    },
+    {
+      "han": "姜",
+      "shangyu": "tɕiã35",
+      "zhuji": "tɕiã544",
+      "shengzhou": "tɕiaŋ534",
+      "pinyin": "jiāng"
+    },
+    {
+      "han": "响",
+      "shangyu": "ɕiã35",
+      "zhuji": "ɕiã42",
+      "shengzhou": "ɕiaŋ53",
+      "pinyin": "xiǎng"
+    },
+    {
+      "han": "向",
+      "shangyu": "ɕiã35",
+      "zhuji": "ɕiã544",
+      "shengzhou": "ɕiaŋ334",
+      "pinyin": "xiàng"
+    },
+    {
+      "han": "秧",
+      "shangyu": "Ǿiã35",
+      "zhuji": "Ǿiã544",
+      "shengzhou": "Ǿiaŋ534",
+      "pinyin": "yāng"
+    },
+    {
+      "han": "痒",
+      "shangyu": "Ǿiã213",
+      "zhuji": "Ǿiã242",
+      "shengzhou": "Ǿiaŋ22",
+      "pinyin": "yǎng"
+    },
+    {
+      "han": "样",
+      "shangyu": "Ǿiã213",
+      "zhuji": "Ǿiã33",
+      "shengzhou": "Ǿiaŋ24",
+      "pinyin": "yàng"
+    },
+    {
+      "han": "雀",
+      "shangyu": "tɕhiaʔ5",
+      "zhuji": "tɕhiaʔ5",
+      "shengzhou": "tɕhiaʔ5",
+      "pinyin": "què"
+    },
+    {
+      "han": "削",
+      "shangyu": "ɕiaʔ5",
+      "zhuji": "ɕiaʔ5",
+      "shengzhou": "ɕiaʔ5",
+      "pinyin": "xuē"
+    },
+    {
+      "han": "着",
+      "shangyu": "dzaʔ2",
+      "zhuji": "dzaʔ13",
+      "shengzhou": "dzaʔ2",
+      "pinyin": "zhe"
+    },
+    {
+      "han": "勺",
+      "shangyu": "zoʔ2",
+      "zhuji": "zoʔ13",
+      "shengzhou": "zoʔ2",
+      "pinyin": "sháo"
+    },
+    {
+      "han": "弱",
+      "shangyu": "zoʔ2",
+      "zhuji": "zoʔ13",
+      "shengzhou": "zaʔ2",
+      "pinyin": "ruò"
+    },
+    {
+      "han": "脚",
+      "shangyu": "tɕiaʔ5",
+      "zhuji": "tɕiaʔ5",
+      "shengzhou": "tɕiaʔ5",
+      "pinyin": "jiǎo"
+    },
+    {
+      "han": "约",
+      "shangyu": "Ǿiaʔ5",
+      "zhuji": "Ǿiaʔ5",
+      "shengzhou": "Ǿiaʔ5",
+      "pinyin": "yuē"
+    },
+    {
+      "han": "药",
+      "shangyu": "Ǿiaʔ2",
+      "zhuji": "Ǿiaʔ13",
+      "shengzhou": "Ǿiaʔ2",
+      "pinyin": "yào"
+    },
+    {
+      "han": "光",
+      "shangyu": "kuɔ̃35",
+      "zhuji": "kuɑ̃544",
+      "shengzhou": "kuɔŋ534",
+      "pinyin": "guāng"
+    },
+    {
+      "han": "慌",
+      "shangyu": "fɔ̃35",
+      "zhuji": "fɑ̃544",
+      "shengzhou": "huɔŋ534",
+      "pinyin": "huāng"
+    },
+    {
+      "han": "黄",
+      "shangyu": "Ǿuɔ̃213",
+      "zhuji": "vɑ̃13",
+      "shengzhou": "Ǿuɔŋ213",
+      "pinyin": "huáng"
+    },
+    {
+      "han": "郭",
+      "shangyu": "koʔ5",
+      "zhuji": "koʔ5",
+      "shengzhou": "kuoʔ5",
+      "pinyin": "guō"
+    },
+    {
+      "han": "霍",
+      "shangyu": "hoʔ5",
+      "zhuji": "hoʔ5",
+      "shengzhou": "hoʔ5",
+      "pinyin": "huò"
+    },
+    {
+      "han": "方",
+      "shangyu": "fɔ̃35",
+      "zhuji": "fɑ̃544",
+      "shengzhou": "fɔŋ534",
+      "pinyin": "fāng"
+    },
+    {
+      "han": "放",
+      "shangyu": "fɔ̃53",
+      "zhuji": "fɑ̃544",
+      "shengzhou": "fɔŋ334",
+      "pinyin": "fàng"
+    },
+    {
+      "han": "纺",
+      "shangyu": "fɔ̃35",
+      "zhuji": "fɑ̃42",
+      "shengzhou": "fɔŋ53",
+      "pinyin": "fǎng"
+    },
+    {
+      "han": "房",
+      "shangyu": "vɔ̃213",
+      "zhuji": "vɑ̃13",
+      "shengzhou": "Ǿuɔŋ213",
+      "pinyin": "fáng"
+    },
+    {
+      "han": "防",
+      "shangyu": "bɔ̃213",
+      "zhuji": "bɑ̃13",
+      "shengzhou": "bɔŋ213",
+      "pinyin": "fáng"
+    },
+    {
+      "han": "网",
+      "shangyu": "mɔ̃213",
+      "zhuji": "mɑ̃242",
+      "shengzhou": "mɔŋ22",
+      "pinyin": "wǎng"
+    },
+    {
+      "han": "筐",
+      "shangyu": "khuɔ̃35",
+      "zhuji": "khuɑ̃544",
+      "shengzhou": "khuɔŋ53",
+      "pinyin": "kuāng"
+    },
+    {
+      "han": "狂",
+      "shangyu": "ɡuɔ̃213",
+      "zhuji": "ɡuɑ̃13",
+      "shengzhou": "ɡuɔŋ213",
+      "pinyin": "kuáng"
+    },
+    {
+      "han": "王",
+      "shangyu": "Ǿuɔ̃213",
+      "zhuji": "vɑ̃13",
+      "shengzhou": "Ǿuɔŋ213",
+      "pinyin": "wáng"
+    },
+    {
+      "han": "旺",
+      "shangyu": "Ǿuɔ̃31",
+      "zhuji": "vɑ̃33",
+      "shengzhou": "Ǿuɔŋ24",
+      "pinyin": "wàng"
+    },
+    {
+      "han": "缚",
+      "shangyu": "voʔ2",
+      "zhuji": "boʔ13",
+      "shengzhou": "boʔ2",
+      "pinyin": "fù"
+    },
+    {
+      "han": "绑",
+      "shangyu": "pɔ̃35",
+      "zhuji": "pɑ̃42",
+      "shengzhou": "pɔŋ53",
+      "pinyin": "bǎng"
+    },
+    {
+      "han": "胖",
+      "shangyu": "phɔ̃53",
+      "zhuji": "phɑ̃544",
+      "shengzhou": "phɔŋ334",
+      "pinyin": "pàng"
+    },
+    {
+      "han": "棒",
+      "shangyu": "bɔ̃213",
+      "zhuji": "bɑ̃242",
+      "shengzhou": "bɔŋ22",
+      "pinyin": "bàng"
+    },
+    {
+      "han": "桩",
+      "shangyu": "tsɔ̃35",
+      "zhuji": "tsɑ̃544",
+      "shengzhou": "tsɔŋ53",
+      "pinyin": "zhuāng"
+    },
+    {
+      "han": "撞",
+      "shangyu": "dzɔ̃31",
+      "zhuji": "dzɑ̃33",
+      "shengzhou": "dzɔŋ24",
+      "pinyin": "zhuàng"
+    },
+    {
+      "han": "窗",
+      "shangyu": "tshɔ̃35",
+      "zhuji": "tshɑ̃544",
+      "shengzhou": "tshɔŋ534",
+      "pinyin": "chuāng"
+    },
+    {
+      "han": "双",
+      "shangyu": "sɔ̃35",
+      "zhuji": "sɑ̃544",
+      "shengzhou": "sɔŋ534",
+      "pinyin": "shuāng"
+    },
+    {
+      "han": "江",
+      "shangyu": "kɔ̃35",
+      "zhuji": "kɑ̃544",
+      "shengzhou": "kɔŋ534",
+      "pinyin": "jiāng"
+    },
+    {
+      "han": "讲",
+      "shangyu": "kɔ̃35",
+      "zhuji": "kɑ̃42",
+      "shengzhou": "kɔŋ53",
+      "pinyin": "jiǎng"
+    },
+    {
+      "han": "降",
+      "shangyu": "Ǿɔ̃213 dʑiã213",
+      "zhuji": "Ǿɑ̃13",
+      "shengzhou": "Ǿɔŋ24",
+      "pinyin": "jiàng"
+    },
+    {
+      "han": "项",
+      "shangyu": "Ǿɔ̃213",
+      "zhuji": "Ǿɑ̃242",
+      "shengzhou": "Ǿɔŋ213",
+      "pinyin": "xiàng"
+    },
+    {
+      "han": "剥",
+      "shangyu": "poʔ5",
+      "zhuji": "poʔ5",
+      "shengzhou": "poʔ5",
+      "pinyin": "bō"
+    },
+    {
+      "han": "桌",
+      "shangyu": "tsoʔ5",
+      "zhuji": "tsoʔ5",
+      "shengzhou": "tsoʔ5",
+      "pinyin": "zhuō"
+    },
+    {
+      "han": "镯",
+      "shangyu": "zoʔ2",
+      "zhuji": "dʑioʔ13",
+      "shengzhou": "dʑyoʔ2",
+      "pinyin": "zhuó"
+    },
+    {
+      "han": "角",
+      "shangyu": "koʔ5",
+      "zhuji": "koʔ5",
+      "shengzhou": "koʔ5",
+      "pinyin": "jiǎo"
+    },
+    {
+      "han": "壳",
+      "shangyu": "khoʔ5",
+      "zhuji": "khoʔ5",
+      "shengzhou": "khoʔ5",
+      "pinyin": "ké"
+    },
+    {
+      "han": "学",
+      "shangyu": "Ǿoʔ2",
+      "zhuji": "Ǿioʔ13",
+      "shengzhou": "Ǿoʔ2 Ǿioʔ2",
+      "pinyin": "xué"
+    },
+    {
+      "han": "握",
+      "shangyu": "Ǿuoʔ5",
+      "zhuji": "Ǿoʔ5",
+      "shengzhou": "Ǿoʔ5",
+      "pinyin": "wò"
+    },
+    {
+      "han": "朋",
+      "shangyu": "bã213",
+      "zhuji": "bã13",
+      "shengzhou": "baŋ213",
+      "pinyin": "péng"
+    },
+    {
+      "han": "灯",
+      "shangyu": "təŋ35",
+      "zhuji": "tɛn544",
+      "shengzhou": "teŋ534",
+      "pinyin": "dēng"
+    },
+    {
+      "han": "等",
+      "shangyu": "təŋ35",
+      "zhuji": "tɛn42",
+      "shengzhou": "teŋ53",
+      "pinyin": "děng"
+    },
+    {
+      "han": "凳",
+      "shangyu": "təŋ53",
+      "zhuji": "tɛn544",
+      "shengzhou": "teŋ334",
+      "pinyin": "dèng"
+    },
+    {
+      "han": "藤",
+      "shangyu": "dəŋ213",
+      "zhuji": "dɛn13",
+      "shengzhou": "deŋ213",
+      "pinyin": "téng"
+    },
+    {
+      "han": "能",
+      "shangyu": "nəŋ213",
+      "zhuji": "lɛn13",
+      "shengzhou": "neŋ213",
+      "pinyin": "néng"
+    },
+    {
+      "han": "层",
+      "shangyu": "dzəŋ213",
+      "zhuji": "dzɛn13",
+      "shengzhou": "dzeŋ24",
+      "pinyin": "céng"
+    },
+    {
+      "han": "僧",
+      "shangyu": "səŋ35",
+      "zhuji": "sɛn544",
+      "shengzhou": "seŋ534",
+      "pinyin": "sēng"
+    },
+    {
+      "han": "肯",
+      "shangyu": "khəŋ35",
+      "zhuji": "khin42",
+      "shengzhou": "kheŋ53",
+      "pinyin": "kěn"
+    },
+    {
+      "han": "北",
+      "shangyu": "poʔ5",
+      "zhuji": "poʔ5",
+      "shengzhou": "pəʔ5",
+      "pinyin": "běi"
+    },
+    {
+      "han": "墨",
+      "shangyu": "moʔ2",
+      "zhuji": "moʔ13",
+      "shengzhou": "moʔ2",
+      "pinyin": "mò"
+    },
+    {
+      "han": "得",
+      "shangyu": "tɐʔ5",
+      "zhuji": "təʔ5",
+      "shengzhou": "təʔ5",
+      "pinyin": "dé"
+    },
+    {
+      "han": "特",
+      "shangyu": "diəʔ2",
+      "zhuji": "dəʔ13",
+      "shengzhou": "dəʔ2",
+      "pinyin": "tè"
+    },
+    {
+      "han": "贼",
+      "shangyu": "zɐʔ2",
+      "zhuji": "zoʔ13",
+      "shengzhou": "zəʔ2",
+      "pinyin": "zéi"
+    },
+    {
+      "han": "塞",
+      "shangyu": "sɐʔ5",
+      "zhuji": "səʔ5",
+      "shengzhou": "səʔ5",
+      "pinyin": "sāi"
+    },
+    {
+      "han": "刻",
+      "shangyu": "khəʔ5",
+      "zhuji": "khieʔ5",
+      "shengzhou": "khəʔ5",
+      "pinyin": "kè"
+    },
+    {
+      "han": "黑",
+      "shangyu": "hɐʔ5",
+      "zhuji": "həʔ5",
+      "shengzhou": "həʔ5",
+      "pinyin": "hēi"
+    },
+    {
+      "han": "冰",
+      "shangyu": "piŋ35",
+      "zhuji": "pin544",
+      "shengzhou": "piŋ534",
+      "pinyin": "bīng"
+    },
+    {
+      "han": "证",
+      "shangyu": "tsəŋ53",
+      "zhuji": "tsɛn544",
+      "shengzhou": "tseŋ334",
+      "pinyin": "zhèng"
+    },
+    {
+      "han": "秤",
+      "shangyu": "tshəŋ53",
+      "zhuji": "tshɛn544",
+      "shengzhou": "tsheŋ334",
+      "pinyin": "chèng"
+    },
+    {
+      "han": "绳",
+      "shangyu": "zəŋ213",
+      "zhuji": "zɛn13",
+      "shengzhou": "zeŋ213",
+      "pinyin": "shéng"
+    },
+    {
+      "han": "剩",
+      "shangyu": "dzəŋ31",
+      "zhuji": "dzɛn33",
+      "shengzhou": "dzeŋ24",
+      "pinyin": "shèng"
+    },
+    {
+      "han": "升",
+      "shangyu": "səŋ35",
+      "zhuji": "sɛn544",
+      "shengzhou": "seŋ534",
+      "pinyin": "shēng"
+    },
+    {
+      "han": "兴",
+      "shangyu": "ɕiŋ35",
+      "zhuji": "ɕin544",
+      "shengzhou": "ɕiŋ334",
+      "pinyin": "xīng"
+    },
+    {
+      "han": "蝇",
+      "shangyu": "Ǿiŋ35",
+      "zhuji": "Ǿin544",
+      "shengzhou": "Ǿiŋ534",
+      "pinyin": "yíng"
+    },
+    {
+      "han": "逼",
+      "shangyu": "piəʔ5",
+      "zhuji": "pieʔ5",
+      "shengzhou": "pieʔ5",
+      "pinyin": "bī"
+    },
+    {
+      "han": "力",
+      "shangyu": "liəʔ2",
+      "zhuji": "lieʔ13",
+      "shengzhou": "lieʔ2",
+      "pinyin": "lì"
+    },
+    {
+      "han": "息",
+      "shangyu": "ɕiəʔ5",
+      "zhuji": "ɕieʔ5",
+      "shengzhou": "ɕieʔ5",
+      "pinyin": "xī"
+    },
+    {
+      "han": "直",
+      "shangyu": "dzɐʔ2",
+      "zhuji": "dzəʔ13",
+      "shengzhou": "dzəʔ2",
+      "pinyin": "zhí"
+    },
+    {
+      "han": "侧",
+      "shangyu": "tsɐʔ5",
+      "zhuji": "tshəʔ5",
+      "shengzhou": "tsəʔ5 tshəʔ5",
+      "pinyin": "cè"
+    },
+    {
+      "han": "测",
+      "shangyu": "tshɐʔ5",
+      "zhuji": "tshəʔ5",
+      "shengzhou": "tshəʔ5",
+      "pinyin": "cè"
+    },
+    {
+      "han": "色",
+      "shangyu": "sɐʔ5",
+      "zhuji": "səʔ5",
+      "shengzhou": "səʔ5",
+      "pinyin": "sè"
+    },
+    {
+      "han": "织",
+      "shangyu": "tsɐʔ5",
+      "zhuji": "tsəʔ5",
+      "shengzhou": "tsəʔ5",
+      "pinyin": "zhī"
+    },
+    {
+      "han": "食",
+      "shangyu": "zɐʔ2",
+      "zhuji": "zəʔ13",
+      "shengzhou": "zəʔ2",
+      "pinyin": "shí"
+    },
+    {
+      "han": "式",
+      "shangyu": "sɐʔ5",
+      "zhuji": "səʔ5",
+      "shengzhou": "səʔ5",
+      "pinyin": "shì"
+    },
+    {
+      "han": "极",
+      "shangyu": "dʑiəʔ2",
+      "zhuji": "dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "jí"
+    },
+    {
+      "han": "国",
+      "shangyu": "koʔ5",
+      "zhuji": "koʔ5",
+      "shengzhou": "kuoʔ5",
+      "pinyin": "guó"
+    },
+    {
+      "han": "或",
+      "shangyu": "Ǿoʔ2",
+      "zhuji": "Ǿoʔ13",
+      "shengzhou": "Ǿoʔ2",
+      "pinyin": "huò"
+    },
+    {
+      "han": "猛",
+      "shangyu": "mã213",
+      "zhuji": "mã242",
+      "shengzhou": "maŋ22",
+      "pinyin": "měng"
+    },
+    {
+      "han": "打",
+      "shangyu": "tã35",
+      "zhuji": "tã42",
+      "shengzhou": "taŋ53",
+      "pinyin": "dǎ"
+    },
+    {
+      "han": "冷",
+      "shangyu": "lã213",
+      "zhuji": "lã242",
+      "shengzhou": "laŋ22",
+      "pinyin": "lěng"
+    },
+    {
+      "han": "生",
+      "shangyu": "sã35",
+      "zhuji": "sã544",
+      "shengzhou": "saŋ534",
+      "pinyin": "shēng"
+    },
+    {
+      "han": "省",
+      "shangyu": "sã35",
+      "zhuji": "sã42",
+      "shengzhou": "saŋ53",
+      "pinyin": "shěng"
+    },
+    {
+      "han": "更",
+      "shangyu": "kã35",
+      "zhuji": "kã544",
+      "shengzhou": "kaŋ534",
+      "pinyin": "gèng"
+    },
+    {
+      "han": "梗",
+      "shangyu": "kuã35",
+      "zhuji": "kuã42",
+      "shengzhou": "kuaŋ53 kaŋ53",
+      "pinyin": "gěng"
+    },
+    {
+      "han": "坑",
+      "shangyu": "khã53",
+      "zhuji": "khã544",
+      "shengzhou": "khaŋ53",
+      "pinyin": "kēng"
+    },
+    {
+      "han": "硬",
+      "shangyu": "ȵã31",
+      "zhuji": "ŋã33",
+      "shengzhou": "ŋaŋ24",
+      "pinyin": "yìng"
+    },
+    {
+      "han": "行",
+      "shangyu": "Ǿiŋ213",
+      "zhuji": "Ǿã13",
+      "shengzhou": "Ǿaŋ213 Ǿiŋ213",
+      "pinyin": "xíng"
+    },
+    {
+      "han": "百",
+      "shangyu": "paʔ5",
+      "zhuji": "paʔ5",
+      "shengzhou": "paʔ5",
+      "pinyin": "bǎi"
+    },
+    {
+      "han": "拍",
+      "shangyu": "phaʔ5",
+      "zhuji": "phaʔ5",
+      "shengzhou": "phaʔ5",
+      "pinyin": "pāi"
+    },
+    {
+      "han": "白",
+      "shangyu": "baʔ2",
+      "zhuji": "baʔ13",
+      "shengzhou": "baʔ2",
+      "pinyin": "bái"
+    },
+    {
+      "han": "拆",
+      "shangyu": "tshaʔ5",
+      "zhuji": "tshaʔ5",
+      "shengzhou": "tshaʔ5",
+      "pinyin": "chāi"
+    },
+    {
+      "han": "择",
+      "shangyu": "dzəʔ2",
+      "zhuji": "dzəʔ13",
+      "shengzhou": "dzəʔ2",
+      "pinyin": "zé"
+    },
+    {
+      "han": "格",
+      "shangyu": "kaʔ5",
+      "zhuji": "kaʔ5",
+      "shengzhou": "kɛʔ5",
+      "pinyin": "gé"
+    },
+    {
+      "han": "客",
+      "shangyu": "khaʔ5",
+      "zhuji": "khaʔ5",
+      "shengzhou": "khɛʔ5",
+      "pinyin": "kè"
+    },
+    {
+      "han": "额",
+      "shangyu": "ŋaʔ2",
+      "zhuji": "ŋaʔ13",
+      "shengzhou": "ŋɛʔ2",
+      "pinyin": "é"
+    },
+    {
+      "han": "棚",
+      "shangyu": "bã213",
+      "zhuji": "bã13",
+      "shengzhou": "baŋ213",
+      "pinyin": "péng"
+    },
+    {
+      "han": "争",
+      "shangyu": "tsã35",
+      "zhuji": "tsã544",
+      "shengzhou": "dzaŋ213 tseŋ534",
+      "pinyin": "zhēng"
+    },
+    {
+      "han": "耕",
+      "shangyu": "kã35",
+      "zhuji": "kã544",
+      "shengzhou": "kaŋ534",
+      "pinyin": "gēng"
+    },
+    {
+      "han": "麦",
+      "shangyu": "maʔ2",
+      "zhuji": "maʔ13",
+      "shengzhou": "maʔ2",
+      "pinyin": "mài"
+    },
+    {
+      "han": "摘",
+      "shangyu": "tsaʔ5",
+      "zhuji": "tsaʔ5",
+      "shengzhou": "tsaʔ5",
+      "pinyin": "zhāi"
+    },
+    {
+      "han": "策",
+      "shangyu": "tshaʔ5",
+      "zhuji": "tshaʔ5 tshəʔ5",
+      "shengzhou": "tshaʔ5",
+      "pinyin": "cè"
+    },
+    {
+      "han": "隔",
+      "shangyu": "kaʔ5",
+      "zhuji": "kaʔ5",
+      "shengzhou": "kɛʔ5",
+      "pinyin": "gé"
+    },
+    {
+      "han": "兵",
+      "shangyu": "piŋ35",
+      "zhuji": "pin544",
+      "shengzhou": "piŋ534",
+      "pinyin": "bīng"
+    },
+    {
+      "han": "柄",
+      "shangyu": "piŋ53",
+      "zhuji": "pin544",
+      "shengzhou": "piŋ334",
+      "pinyin": "bǐng"
+    },
+    {
+      "han": "平",
+      "shangyu": "biŋ213",
+      "zhuji": "bin13",
+      "shengzhou": "biŋ213",
+      "pinyin": "píng"
+    },
+    {
+      "han": "病",
+      "shangyu": "biŋ31",
+      "zhuji": "bin33",
+      "shengzhou": "biŋ24",
+      "pinyin": "bìng"
+    },
+    {
+      "han": "明",
+      "shangyu": "miŋ213",
+      "zhuji": "min13",
+      "shengzhou": "miŋ213",
+      "pinyin": "míng"
+    },
+    {
+      "han": "命",
+      "shangyu": "miŋ31",
+      "zhuji": "min33",
+      "shengzhou": "miŋ24",
+      "pinyin": "mìng"
+    },
+    {
+      "han": "镜",
+      "shangyu": "tɕiŋ53",
+      "zhuji": "tɕin544",
+      "shengzhou": "tɕiŋ334",
+      "pinyin": "jìng"
+    },
+    {
+      "han": "庆",
+      "shangyu": "tɕhiŋ53",
+      "zhuji": "tɕhin544",
+      "shengzhou": "tɕhiŋ334",
+      "pinyin": "qìng"
+    },
+    {
+      "han": "迎",
+      "shangyu": "ȵiŋ213",
+      "zhuji": "Ǿin13",
+      "shengzhou": "ȵiŋ213",
+      "pinyin": "yíng"
+    },
+    {
+      "han": "影",
+      "shangyu": "Ǿiŋ35",
+      "zhuji": "Ǿin42",
+      "shengzhou": "Ǿiŋ53",
+      "pinyin": "yǐng"
+    },
+    {
+      "han": "剧",
+      "shangyu": "dʑiaʔ2",
+      "zhuji": "dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "jù"
+    },
+    {
+      "han": "饼",
+      "shangyu": "piŋ35",
+      "zhuji": "pin42",
+      "shengzhou": "piŋ53",
+      "pinyin": "bǐng"
+    },
+    {
+      "han": "名",
+      "shangyu": "miŋ213",
+      "zhuji": "min13",
+      "shengzhou": "miŋ213",
+      "pinyin": "míng"
+    },
+    {
+      "han": "领",
+      "shangyu": "liŋ213",
+      "zhuji": "lin242",
+      "shengzhou": "liŋ22",
+      "pinyin": "lǐng"
+    },
+    {
+      "han": "井",
+      "shangyu": "tɕiŋ35",
+      "zhuji": "tɕin42",
+      "shengzhou": "tɕiŋ53",
+      "pinyin": "jǐng"
+    },
+    {
+      "han": "清",
+      "shangyu": "tɕhiŋ35",
+      "zhuji": "tɕhin544",
+      "shengzhou": "tɕhiŋ534",
+      "pinyin": "qīng"
+    },
+    {
+      "han": "静",
+      "shangyu": "ʑiŋ213",
+      "zhuji": "dʑin242",
+      "shengzhou": "dʑiŋ22",
+      "pinyin": "jìng"
+    },
+    {
+      "han": "姓",
+      "shangyu": "ɕiŋ53",
+      "zhuji": "ɕin544",
+      "shengzhou": "ɕiŋ334",
+      "pinyin": "xìng"
+    },
+    {
+      "han": "贞",
+      "shangyu": "tsəŋ35",
+      "zhuji": "tsɛn544",
+      "shengzhou": "tseŋ334",
+      "pinyin": "zhēn"
+    },
+    {
+      "han": "程",
+      "shangyu": "dzəŋ213",
+      "zhuji": "dzɛn13",
+      "shengzhou": "dzeŋ24",
+      "pinyin": "chéng"
+    },
+    {
+      "han": "整",
+      "shangyu": "tsəŋ35",
+      "zhuji": "tsɛn42",
+      "shengzhou": "tseŋ53",
+      "pinyin": "zhěng"
+    },
+    {
+      "han": "正",
+      "shangyu": "tsəŋ53",
+      "zhuji": "tsɛn544",
+      "shengzhou": "tseŋ334",
+      "pinyin": "zhèng"
+    },
+    {
+      "han": "声",
+      "shangyu": "səŋ35",
+      "zhuji": "sɛn544",
+      "shengzhou": "seŋ534",
+      "pinyin": "shēng"
+    },
+    {
+      "han": "城",
+      "shangyu": "dzəŋ213",
+      "zhuji": "dzɛn13",
+      "shengzhou": "dzeŋ213",
+      "pinyin": "chéng"
+    },
+    {
+      "han": "轻",
+      "shangyu": "tɕhiŋ35",
+      "zhuji": "tɕhin544",
+      "shengzhou": "tɕhiŋ534",
+      "pinyin": "qīng"
+    },
+    {
+      "han": "赢",
+      "shangyu": "Ǿiŋ213",
+      "zhuji": "Ǿin13",
+      "shengzhou": "Ǿiŋ213",
+      "pinyin": "yíng"
+    },
+    {
+      "han": "积",
+      "shangyu": "tɕiəʔ5",
+      "zhuji": "tɕieʔ5",
+      "shengzhou": "tɕieʔ5",
+      "pinyin": "jī"
+    },
+    {
+      "han": "惜",
+      "shangyu": "ɕiəʔ5",
+      "zhuji": "ɕieʔ5",
+      "shengzhou": "ɕieʔ5",
+      "pinyin": "xī"
+    },
+    {
+      "han": "席",
+      "shangyu": "ʑiəʔ2",
+      "zhuji": "ʑieʔ13 dʑieʔ13",
+      "shengzhou": "dʑieʔ2",
+      "pinyin": "xí"
+    },
+    {
+      "han": "尺",
+      "shangyu": "tshɐʔ5",
+      "zhuji": "tshəʔ5",
+      "shengzhou": "tshəʔ5",
+      "pinyin": "chǐ"
+    },
+    {
+      "han": "石",
+      "shangyu": "zaʔ2",
+      "zhuji": "zəʔ13",
+      "shengzhou": "zɛʔ2",
+      "pinyin": "shí"
+    },
+    {
+      "han": "益",
+      "shangyu": "Ǿiəʔ5",
+      "zhuji": "Ǿieʔ5",
+      "shengzhou": "Ǿieʔ5",
+      "pinyin": "yì"
+    },
+    {
+      "han": "瓶",
+      "shangyu": "biŋ213",
+      "zhuji": "bin13",
+      "shengzhou": "biŋ213",
+      "pinyin": "píng"
+    },
+    {
+      "han": "钉",
+      "shangyu": "tiŋ35",
+      "zhuji": "tin544",
+      "shengzhou": "tiŋ534",
+      "pinyin": "dīng"
+    },
+    {
+      "han": "顶",
+      "shangyu": "tiŋ35",
+      "zhuji": "tin42",
+      "shengzhou": "tiŋ53",
+      "pinyin": "dǐng"
+    },
+    {
+      "han": "厅",
+      "shangyu": "thiŋ35",
+      "zhuji": "thin544",
+      "shengzhou": "thiŋ53",
+      "pinyin": "tīng"
+    },
+    {
+      "han": "听",
+      "shangyu": "thiŋ53",
+      "zhuji": "thin544",
+      "shengzhou": "thiŋ334",
+      "pinyin": "tīng"
+    },
+    {
+      "han": "停",
+      "shangyu": "diŋ213",
+      "zhuji": "din13",
+      "shengzhou": "diŋ213",
+      "pinyin": "tíng"
+    },
+    {
+      "han": "挺",
+      "shangyu": "thiŋ35",
+      "zhuji": "thin42",
+      "shengzhou": "thiŋ53",
+      "pinyin": "tǐng"
+    },
+    {
+      "han": "定",
+      "shangyu": "diŋ31",
+      "zhuji": "din33",
+      "shengzhou": "diŋ24",
+      "pinyin": "dìng"
+    },
+    {
+      "han": "零",
+      "shangyu": "liŋ213",
+      "zhuji": "lin13",
+      "shengzhou": "liŋ213",
+      "pinyin": "líng"
+    },
+    {
+      "han": "青",
+      "shangyu": "tɕhiŋ35",
+      "zhuji": "tɕhin544",
+      "shengzhou": "tɕhiŋ534",
+      "pinyin": "qīng"
+    },
+    {
+      "han": "星",
+      "shangyu": "ɕiŋ35",
+      "zhuji": "ɕin544",
+      "shengzhou": "ɕiŋ534",
+      "pinyin": "xīng"
+    },
+    {
+      "han": "经",
+      "shangyu": "tɕiŋ35",
+      "zhuji": "tɕin544",
+      "shengzhou": "tɕiŋ534",
+      "pinyin": "jīng"
+    },
+    {
+      "han": "形",
+      "shangyu": "Ǿiŋ213",
+      "zhuji": "Ǿin13",
+      "shengzhou": "Ǿiŋ213",
+      "pinyin": "xíng"
+    },
+    {
+      "han": "壁",
+      "shangyu": "piəʔ5",
+      "zhuji": "pieʔ5",
+      "shengzhou": "pieʔ5",
+      "pinyin": "bì"
+    },
+    {
+      "han": "劈",
+      "shangyu": "phiəʔ5",
+      "zhuji": "phieʔ5",
+      "shengzhou": "phieʔ5",
+      "pinyin": "pī"
+    },
+    {
+      "han": "踢",
+      "shangyu": "thiəʔ5",
+      "zhuji": "thieʔ5",
+      "shengzhou": "thieʔ5",
+      "pinyin": "tī"
+    },
+    {
+      "han": "笛",
+      "shangyu": "diəʔ2",
+      "zhuji": "dieʔ13",
+      "shengzhou": "dieʔ2",
+      "pinyin": "dí"
+    },
+    {
+      "han": "历",
+      "shangyu": "liəʔ2",
+      "zhuji": "lieʔ13",
+      "shengzhou": "lieʔ2",
+      "pinyin": "lì"
+    },
+    {
+      "han": "锡",
+      "shangyu": "ɕiəʔ5",
+      "zhuji": "ɕieʔ5",
+      "shengzhou": "ɕieʔ5",
+      "pinyin": "xī"
+    },
+    {
+      "han": "击",
+      "shangyu": "tɕiəʔ5",
+      "zhuji": "tɕieʔ5",
+      "shengzhou": "tɕieʔ5",
+      "pinyin": "jī"
+    },
+    {
+      "han": "吃",
+      "shangyu": "tɕhyoʔ5",
+      "zhuji": "tɕhieʔ5",
+      "shengzhou": "tɕhyoʔ5 tɕhieʔ5",
+      "pinyin": "chī"
+    },
+    {
+      "han": "横",
+      "shangyu": "Ǿuã213",
+      "zhuji": "vã13",
+      "shengzhou": "Ǿuaŋ213",
+      "pinyin": "héng"
+    },
+    {
+      "han": "划",
+      "shangyu": "Ǿuaʔ2",
+      "zhuji": "vaʔ13",
+      "shengzhou": "Ǿuaʔ2",
+      "pinyin": "huà"
+    },
+    {
+      "han": "兄",
+      "shangyu": "ɕyoŋ35",
+      "zhuji": "ɕiom544",
+      "shengzhou": "ɕyoŋ534",
+      "pinyin": "xiōng"
+    },
+    {
+      "han": "荣",
+      "shangyu": "Ǿyoŋ213",
+      "zhuji": "Ǿiom13",
+      "shengzhou": "Ǿyoŋ213",
+      "pinyin": "róng"
+    },
+    {
+      "han": "永",
+      "shangyu": "Ǿyoŋ35",
+      "zhuji": "Ǿiom42",
+      "shengzhou": "Ǿyoŋ53",
+      "pinyin": "yǒng"
+    },
+    {
+      "han": "营",
+      "shangyu": "Ǿiŋ213",
+      "zhuji": "Ǿin13",
+      "shengzhou": "Ǿiŋ213",
+      "pinyin": "yíng"
+    },
+    {
+      "han": "蓬",
+      "shangyu": "boŋ213",
+      "zhuji": "bã13",
+      "shengzhou": "boŋ213",
+      "pinyin": "péng"
+    },
+    {
+      "han": "东",
+      "shangyu": "toŋ35",
+      "zhuji": "tom544",
+      "shengzhou": "toŋ534",
+      "pinyin": "dōng"
+    },
+    {
+      "han": "懂",
+      "shangyu": "toŋ35",
+      "zhuji": "tom42",
+      "shengzhou": "toŋ53",
+      "pinyin": "dǒng"
+    },
+    {
+      "han": "冻",
+      "shangyu": "toŋ53",
+      "zhuji": "tom544",
+      "shengzhou": "toŋ334",
+      "pinyin": "dòng"
+    },
+    {
+      "han": "通",
+      "shangyu": "thoŋ35",
+      "zhuji": "thom544",
+      "shengzhou": "thoŋ534",
+      "pinyin": "tōng"
+    },
+    {
+      "han": "桶",
+      "shangyu": "doŋ213",
+      "zhuji": "dom242",
+      "shengzhou": "doŋ22",
+      "pinyin": "tǒng"
+    },
+    {
+      "han": "痛",
+      "shangyu": "thoŋ53",
+      "zhuji": "thom544",
+      "shengzhou": "thoŋ334",
+      "pinyin": "tòng"
+    },
+    {
+      "han": "铜",
+      "shangyu": "doŋ213",
+      "zhuji": "dom13",
+      "shengzhou": "doŋ213",
+      "pinyin": "tóng"
+    },
+    {
+      "han": "动",
+      "shangyu": "doŋ213",
+      "zhuji": "dom242",
+      "shengzhou": "doŋ24",
+      "pinyin": "dòng"
+    },
+    {
+      "han": "洞",
+      "shangyu": "doŋ31",
+      "zhuji": "dom33",
+      "shengzhou": "doŋ24",
+      "pinyin": "dòng"
+    },
+    {
+      "han": "聋",
+      "shangyu": "loŋ213",
+      "zhuji": "lom13",
+      "shengzhou": "loŋ213",
+      "pinyin": "lóng"
+    },
+    {
+      "han": "弄",
+      "shangyu": "loŋ31",
+      "zhuji": "lom33",
+      "shengzhou": "loŋ24",
+      "pinyin": "nòng"
+    },
+    {
+      "han": "粽",
+      "shangyu": "tsoŋ53",
+      "zhuji": "tsom544",
+      "shengzhou": "tsoŋ334",
+      "pinyin": "zòng"
+    },
+    {
+      "han": "葱",
+      "shangyu": "tshoŋ35",
+      "zhuji": "tshom544",
+      "shengzhou": "tshoŋ534",
+      "pinyin": "cōng"
+    },
+    {
+      "han": "送",
+      "shangyu": "soŋ53",
+      "zhuji": "som544",
+      "shengzhou": "soŋ334",
+      "pinyin": "sòng"
+    },
+    {
+      "han": "公",
+      "shangyu": "koŋ35",
+      "zhuji": "kom544",
+      "shengzhou": "kuoŋ534",
+      "pinyin": "gōng"
+    },
+    {
+      "han": "孔",
+      "shangyu": "khoŋ35",
+      "zhuji": "khom42",
+      "shengzhou": "khoŋ53",
+      "pinyin": "kǒng"
+    },
+    {
+      "han": "烘",
+      "shangyu": "hoŋ35",
+      "zhuji": "hom544",
+      "shengzhou": "hoŋ534",
+      "pinyin": "hōng"
+    },
+    {
+      "han": "红",
+      "shangyu": "Ǿoŋ213",
+      "zhuji": "Ǿom13",
+      "shengzhou": "Ǿoŋ213",
+      "pinyin": "hóng"
+    },
+    {
+      "han": "翁",
+      "shangyu": "Ǿoŋ35",
+      "zhuji": "Ǿom544",
+      "shengzhou": "Ǿoŋ534",
+      "pinyin": "wēng"
+    },
+    {
+      "han": "木",
+      "shangyu": "moʔ2",
+      "zhuji": "moʔ13",
+      "shengzhou": "moʔ2",
+      "pinyin": "mù"
+    },
+    {
+      "han": "读",
+      "shangyu": "doʔ2",
+      "zhuji": "doʔ13",
+      "shengzhou": "doʔ2",
+      "pinyin": "dú"
+    },
+    {
+      "han": "鹿",
+      "shangyu": "loʔ2",
+      "zhuji": "loʔ13",
+      "shengzhou": "loʔ2",
+      "pinyin": "lù"
+    },
+    {
+      "han": "族",
+      "shangyu": "zoʔ2",
+      "zhuji": "dzoʔ13",
+      "shengzhou": "dzoʔ2",
+      "pinyin": "zú"
+    },
+    {
+      "han": "谷",
+      "shangyu": "koʔ5",
+      "zhuji": "koʔ5",
+      "shengzhou": "kuoʔ5",
+      "pinyin": "gǔ"
+    },
+    {
+      "han": "哭",
+      "shangyu": "khoʔ5",
+      "zhuji": "khoʔ5",
+      "shengzhou": "khuoʔ5",
+      "pinyin": "kū"
+    },
+    {
+      "han": "屋",
+      "shangyu": "Ǿoʔ5",
+      "zhuji": "Ǿoʔ5",
+      "shengzhou": "Ǿuo53 Ǿoʔ5",
+      "pinyin": "wū"
+    },
+    {
+      "han": "冬",
+      "shangyu": "toŋ35",
+      "zhuji": "tom544",
+      "shengzhou": "toŋ534",
+      "pinyin": "dōng"
+    },
+    {
+      "han": "统",
+      "shangyu": "thoŋ35",
+      "zhuji": "thom42",
+      "shengzhou": "thoŋ53",
+      "pinyin": "tǒng"
+    },
+    {
+      "han": "脓",
+      "shangyu": "ȵyoŋ213",
+      "zhuji": "lom13",
+      "shengzhou": "noŋ213",
+      "pinyin": "nóng"
+    },
+    {
+      "han": "松",
+      "shangyu": "soŋ35",
+      "zhuji": "som544",
+      "shengzhou": "soŋ534",
+      "pinyin": "sōng"
+    },
+    {
+      "han": "宋",
+      "shangyu": "soŋ53",
+      "zhuji": "som544",
+      "shengzhou": "soŋ334",
+      "pinyin": "sòng"
+    },
+    {
+      "han": "毒",
+      "shangyu": "doʔ2",
+      "zhuji": "doʔ13",
+      "shengzhou": "doʔ2",
+      "pinyin": "dú"
+    },
+    {
+      "han": "风",
+      "shangyu": "hoŋ35 foŋ35",
+      "zhuji": "fom544",
+      "shengzhou": "foŋ534",
+      "pinyin": "fēng"
+    },
+    {
+      "han": "丰",
+      "shangyu": "hoŋ35 foŋ35",
+      "zhuji": "fom544",
+      "shengzhou": "foŋ534",
+      "pinyin": "fēng"
+    },
+    {
+      "han": "凤",
+      "shangyu": "voŋ31",
+      "zhuji": "vom33",
+      "shengzhou": "Ǿuoŋ24",
+      "pinyin": "fèng"
+    },
+    {
+      "han": "梦",
+      "shangyu": "mɔ̃31 moŋ31",
+      "zhuji": "mom33",
+      "shengzhou": "mɔŋ24 moŋ24",
+      "pinyin": "mèng"
+    },
+    {
+      "han": "中",
+      "shangyu": "tsoŋ35",
+      "zhuji": "tsom544",
+      "shengzhou": "tsoŋ534",
+      "pinyin": "zhōng"
+    },
+    {
+      "han": "虫",
+      "shangyu": "dzoŋ213",
+      "zhuji": "dzom13",
+      "shengzhou": "dzoŋ213",
+      "pinyin": "chóng"
+    },
+    {
+      "han": "终",
+      "shangyu": "tsoŋ35",
+      "zhuji": "tsom544",
+      "shengzhou": "tsoŋ534",
+      "pinyin": "zhōng"
+    },
+    {
+      "han": "充",
+      "shangyu": "tshoŋ35",
+      "zhuji": "tshom544",
+      "shengzhou": "tshoŋ534",
+      "pinyin": "chōng"
+    },
+    {
+      "han": "宫",
+      "shangyu": "koŋ35",
+      "zhuji": "kom544",
+      "shengzhou": "kuoŋ534",
+      "pinyin": "gōng"
+    },
+    {
+      "han": "穷",
+      "shangyu": "dʑyoŋ213",
+      "zhuji": "dʑiom13",
+      "shengzhou": "dʑyoŋ213",
+      "pinyin": "qióng"
+    },
+    {
+      "han": "熊",
+      "shangyu": "Ǿyoŋ213",
+      "zhuji": "Ǿiom13",
+      "shengzhou": "Ǿyoŋ213",
+      "pinyin": "xióng"
+    },
+    {
+      "han": "雄",
+      "shangyu": "Ǿyoŋ213",
+      "zhuji": "Ǿiom13",
+      "shengzhou": "Ǿyoŋ213",
+      "pinyin": "xióng"
+    },
+    {
+      "han": "福",
+      "shangyu": "foʔ5",
+      "zhuji": "foʔ5",
+      "shengzhou": "foʔ5",
+      "pinyin": "fú"
+    },
+    {
+      "han": "服",
+      "shangyu": "voʔ2",
+      "zhuji": "voʔ13",
+      "shengzhou": "Ǿuoʔ2",
+      "pinyin": "fú"
+    },
+    {
+      "han": "目",
+      "shangyu": "moʔ2",
+      "zhuji": "moʔ13",
+      "shengzhou": "moʔ2",
+      "pinyin": "mù"
+    },
+    {
+      "han": "六",
+      "shangyu": "loʔ2",
+      "zhuji": "loʔ13",
+      "shengzhou": "loʔ2",
+      "pinyin": "liù"
+    },
+    {
+      "han": "宿",
+      "shangyu": "soʔ5",
+      "zhuji": "soʔ5",
+      "shengzhou": "soʔ5",
+      "pinyin": "sù"
+    },
+    {
+      "han": "竹",
+      "shangyu": "tsoʔ5",
+      "zhuji": "tsoʔ5",
+      "shengzhou": "tsoʔ5",
+      "pinyin": "zhú"
+    },
+    {
+      "han": "畜",
+      "shangyu": "tshoʔ5",
+      "zhuji": "tshoʔ5",
+      "shengzhou": "tshoʔ5",
+      "pinyin": "chù"
+    },
+    {
+      "han": "缩",
+      "shangyu": "soʔ5",
+      "zhuji": "soʔ5",
+      "shengzhou": "soʔ5",
+      "pinyin": "suō"
+    },
+    {
+      "han": "粥",
+      "shangyu": "tsoʔ5",
+      "zhuji": "tsoʔ5",
+      "shengzhou": "tsoʔ5",
+      "pinyin": "zhōu"
+    },
+    {
+      "han": "叔",
+      "shangyu": "soʔ5",
+      "zhuji": "soʔ5",
+      "shengzhou": "soʔ5",
+      "pinyin": "shū"
+    },
+    {
+      "han": "熟",
+      "shangyu": "zoʔ2",
+      "zhuji": "zoʔ13",
+      "shengzhou": "zoʔ2",
+      "pinyin": "shú"
+    },
+    {
+      "han": "肉",
+      "shangyu": "ȵyoʔ2",
+      "zhuji": "nioʔ13",
+      "shengzhou": "ȵyoʔ2",
+      "pinyin": "ròu"
+    },
+    {
+      "han": "菊",
+      "shangyu": "tɕyoʔ5",
+      "zhuji": "tɕioʔ5",
+      "shengzhou": "tɕyoʔ5",
+      "pinyin": "jú"
+    },
+    {
+      "han": "育",
+      "shangyu": "Ǿyoʔ2",
+      "zhuji": "Ǿioʔ13",
+      "shengzhou": "Ǿyoʔ2",
+      "pinyin": "yù"
+    },
+    {
+      "han": "封",
+      "shangyu": "foŋ35",
+      "zhuji": "fom544",
+      "shengzhou": "foŋ534",
+      "pinyin": "fēng"
+    },
+    {
+      "han": "蜂",
+      "shangyu": "hoŋ35",
+      "zhuji": "fom544",
+      "shengzhou": "foŋ534",
+      "pinyin": "fēng"
+    },
+    {
+      "han": "缝",
+      "shangyu": "hoŋ53",
+      "zhuji": "vom33",
+      "shengzhou": "Ǿuoŋ24",
+      "pinyin": "fèng"
+    },
+    {
+      "han": "浓",
+      "shangyu": "ȵyoŋ213",
+      "zhuji": "Ǿiom13",
+      "shengzhou": "ȵyoŋ213 noŋ213",
+      "pinyin": "nóng"
+    },
+    {
+      "han": "龙",
+      "shangyu": "loŋ213",
+      "zhuji": "lom13",
+      "shengzhou": "loŋ213",
+      "pinyin": "lóng"
+    },
+    {
+      "han": "重",
+      "shangyu": "dzoŋ213",
+      "zhuji": "dzom242",
+      "shengzhou": "dzoŋ24",
+      "pinyin": "zhòng"
+    },
+    {
+      "han": "肿",
+      "shangyu": "tsoŋ35",
+      "zhuji": "tsom42",
+      "shengzhou": "tsoŋ53",
+      "pinyin": "zhǒng"
+    },
+    {
+      "han": "种",
+      "shangyu": "tsoŋ53",
+      "zhuji": "tsom544",
+      "shengzhou": "tsoŋ334",
+      "pinyin": "zhǒng"
+    },
+    {
+      "han": "冲",
+      "shangyu": "tshoŋ35",
+      "zhuji": "tshom544",
+      "shengzhou": "tshoŋ534",
+      "pinyin": "chōng"
+    },
+    {
+      "han": "恭",
+      "shangyu": "koŋ35",
+      "zhuji": "kom544",
+      "shengzhou": "kuoŋ534",
+      "pinyin": "gōng"
+    },
+    {
+      "han": "共",
+      "shangyu": "ɡoŋ31",
+      "zhuji": "ɡom33",
+      "shengzhou": "dʑyoŋ24 ɡuoŋ24",
+      "pinyin": "gòng"
+    },
+    {
+      "han": "凶",
+      "shangyu": "ɕyoŋ35",
+      "zhuji": "ɕiom544",
+      "shengzhou": "ɕyoŋ534",
+      "pinyin": "xiōng"
+    },
+    {
+      "han": "拥",
+      "shangyu": "Ǿyoŋ213",
+      "zhuji": "Ǿiom42",
+      "shengzhou": "Ǿyoŋ53",
+      "pinyin": "yōng"
+    },
+    {
+      "han": "容",
+      "shangyu": "Ǿyoŋ213",
+      "zhuji": "Ǿiom13",
+      "shengzhou": "Ǿyoŋ213",
+      "pinyin": "róng"
+    },
+    {
+      "han": "用",
+      "shangyu": "Ǿyoŋ31",
+      "zhuji": "Ǿiom33",
+      "shengzhou": "Ǿyoŋ24",
+      "pinyin": "yòng"
+    },
+    {
+      "han": "绿",
+      "shangyu": "loʔ2",
+      "zhuji": "loʔ13",
+      "shengzhou": "loʔ2",
+      "pinyin": "lǜ"
+    },
+    {
+      "han": "足",
+      "shangyu": "tsoʔ5",
+      "zhuji": "tsoʔ5",
+      "shengzhou": "tsoʔ5",
+      "pinyin": "zú"
+    },
+    {
+      "han": "烛",
+      "shangyu": "tsoʔ5",
+      "zhuji": "tsoʔ5",
+      "shengzhou": "tsoʔ5",
+      "pinyin": "zhú"
+    },
+    {
+      "han": "赎",
+      "shangyu": "zoʔ2",
+      "zhuji": "zoʔ13",
+      "shengzhou": "zoʔ2",
+      "pinyin": "shú"
+    },
+    {
+      "han": "属",
+      "shangyu": "zoʔ2",
+      "zhuji": "zoʔ13",
+      "shengzhou": "zoʔ2",
+      "pinyin": "shǔ"
+    },
+    {
+      "han": "曲",
+      "shangyu": "tɕhyoʔ5",
+      "zhuji": "tɕhioʔ5",
+      "shengzhou": "tɕhyoʔ5",
+      "pinyin": "qǔ"
+    },
+    {
+      "han": "局",
+      "shangyu": "dʑyoʔ2",
+      "zhuji": "dʑioʔ13",
+      "shengzhou": "dʑyoʔ2",
+      "pinyin": "jú"
+    },
+    {
+      "han": "玉",
+      "shangyu": "ȵyoʔ2",
+      "zhuji": "nioʔ13",
+      "shengzhou": "ȵyoʔ2",
+      "pinyin": "yù"
+    },
+    {
+      "han": "浴",
+      "shangyu": "ȵyoʔ2",
+      "zhuji": "Ǿioʔ13",
+      "shengzhou": "Ǿyoʔ2",
+      "pinyin": "yù"
+    }
   ]
 }
