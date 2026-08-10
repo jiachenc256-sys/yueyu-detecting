@@ -62,7 +62,8 @@ async function initZiyin(): Promise<void> {
   const randomBtn = requireEl(document.getElementById("ziyin-random"), "ziyin-random") as HTMLButtonElement;
   const audioBtn = requireEl(document.getElementById("ziyin-audio"), "ziyin-audio") as HTMLButtonElement;
 
-  const res = await fetch("data/learn/ziyin.json");
+  // Bust CDN/browser cache when the curated list changes (keep in sync with index.html ?v=).
+  const res = await fetch("data/learn/ziyin.json?v=20260810r");
   if (!res.ok) throw new Error(`ziyin HTTP ${res.status}`);
   const data = (await res.json()) as ZiyinFile;
   const items = data.items.filter((it) => it.han?.trim());
