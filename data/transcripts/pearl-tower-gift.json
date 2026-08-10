@@ -1,0 +1,250 @@
+{
+  "id": "pearl-tower-gift",
+  "title": "珍珠塔 · 赠塔",
+  "titleEn": "Pearl Tower · The Gift",
+  "audio": "",
+  "category": "tanci",
+  "sourceSrt": "talcne:pearl-tower-gift-woodblock.jpg",
+  "schemaVersion": "1.0.0",
+  "cueCount": 10,
+  "correctedCount": 10,
+  "coverage": {
+    "zh": 10,
+    "zhHant": 10,
+    "enCurated": 10,
+    "enMt": 0,
+    "enAny": 10
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 4,
+      "speaker": "方卿",
+      "speakerEn": "Fang Qing",
+      "rawAsr": "方卿低头无语",
+      "layers": {
+        "zh": {
+          "text": "方卿低头无语",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "方卿低頭無語",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Fang Qing lowers his head in silence",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 4,
+      "end": 8,
+      "speaker": "旁白",
+      "speakerEn": "Narrator",
+      "rawAsr": "只见姑娘含笑相迎",
+      "layers": {
+        "zh": {
+          "text": "只见姑娘含笑相迎",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "只見姑娘含笑相迎",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "He sees the young lady greet him with a smile",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 8,
+      "end": 12,
+      "speaker": "陈翠娥",
+      "speakerEn": "Chen Cui'e",
+      "rawAsr": "陈翠娥见表兄落魄",
+      "layers": {
+        "zh": {
+          "text": "陈翠娥见表兄落魄",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "陳翠娥見表兄落魄",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Chen Cui'e sees her cousin in hardship",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 12,
+      "end": 16,
+      "speaker": "陈翠娥",
+      "speakerEn": "Chen Cui'e",
+      "rawAsr": "心中暗自伤情",
+      "layers": {
+        "zh": {
+          "text": "心中暗自伤情",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "心中暗自傷情",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "And feels secret sorrow in her heart",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 16,
+      "end": 20,
+      "speaker": "陈翠娥",
+      "speakerEn": "Chen Cui'e",
+      "rawAsr": "这珍珠塔传家宝",
+      "layers": {
+        "zh": {
+          "text": "这珍珠塔传家宝",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "這珍珠塔傳家寶",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "This Pearl Tower is a family heirloom",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 20,
+      "end": 24,
+      "speaker": "陈翠娥",
+      "speakerEn": "Chen Cui'e",
+      "rawAsr": "权且赠与兄长作盘缠",
+      "layers": {
+        "zh": {
+          "text": "权且赠与兄长作盘缠",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "權且贈與兄長作盤纏",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "I give it to you, brother, as travel money",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 24,
+      "end": 28,
+      "speaker": "陈翠娥",
+      "speakerEn": "Chen Cui'e",
+      "rawAsr": "望兄长一路珍重",
+      "layers": {
+        "zh": {
+          "text": "望兄长一路珍重",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "望兄長一路珍重",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "May you take care on the road",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 28,
+      "end": 32,
+      "speaker": "陈翠娥",
+      "speakerEn": "Chen Cui'e",
+      "rawAsr": "早日功成名就",
+      "layers": {
+        "zh": {
+          "text": "早日功成名就",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "早日功成名就",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "And soon succeed in your career",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 32,
+      "end": 36,
+      "speaker": "陈翠娥",
+      "speakerEn": "Chen Cui'e",
+      "rawAsr": "莫忘姑苏陈家情",
+      "layers": {
+        "zh": {
+          "text": "莫忘姑苏陈家情",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "莫忘姑蘇陳家情",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Do not forget the Chen family of Suzhou",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 36,
+      "end": 40,
+      "speaker": "方卿",
+      "speakerEn": "Fang Qing",
+      "rawAsr": "方卿接塔谢不尽",
+      "layers": {
+        "zh": {
+          "text": "方卿接塔谢不尽",
+          "status": "corrected"
+        },
+        "zhHant": {
+          "text": "方卿接塔謝不盡",
+          "status": "corrected"
+        },
+        "en": {
+          "text": "Fang Qing accepts the tower with endless thanks",
+          "status": "curated",
+          "source": "starter-tanci-2026-08"
+        }
+      }
+    }
+  ]
+}

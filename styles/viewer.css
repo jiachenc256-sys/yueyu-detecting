@@ -125,6 +125,26 @@
   min-height: 0;
 }
 
+body[data-text-only="true"] .viewer-player audio {
+  display: none;
+}
+
+body[data-text-only="true"] .viewer-player {
+  border-style: dashed;
+}
+
+.viewer-player__text-only {
+  display: none;
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-normal);
+}
+
+body[data-text-only="true"] .viewer-player__text-only {
+  display: block;
+}
+
 .viewer-player {
   position: sticky;
   top: 5.5rem;
