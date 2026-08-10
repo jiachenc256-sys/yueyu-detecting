@@ -1,0 +1,58 @@
+{
+  "id": "pearl-tower-gift",
+  "category": "tanci",
+  "format": "woodblock",
+  "title": "珍珠塔 · 重编本（选页）",
+  "titleEn": "Pearl Tower · Revised edition (selected pages)",
+  "source": "清代弹词刻本 · 珍珠塔重編本 上冊 · 大達圖書供應社",
+  "sourceEn": "Qing-era tanci woodblock / print: Pearl Tower, revised edition, vol. 1 (Dada Book Supply)",
+  "schemaVersion": "1.0.0",
+  "images": [
+    {
+      "id": "cover",
+      "src": "../assets/tanci/pearl-tower/cover.jpg",
+      "labelZh": "封面",
+      "labelEn": "Cover"
+    },
+    {
+      "id": "frontmatter",
+      "src": "../assets/tanci/pearl-tower/frontmatter.jpg",
+      "labelZh": "扉页 / 序前",
+      "labelEn": "Front matter"
+    },
+    {
+      "id": "chapter-02",
+      "src": "../assets/tanci/pearl-tower/chapter-02.jpg",
+      "labelZh": "第二回选页",
+      "labelEn": "Chapter 2 folio"
+    },
+    {
+      "id": "folio-a",
+      "src": "../assets/tanci/pearl-tower/folio-a.jpg",
+      "labelZh": "内页 A",
+      "labelEn": "Interior A"
+    },
+    {
+      "id": "folio-b",
+      "src": "../assets/tanci/pearl-tower/folio-b.jpg",
+      "labelZh": "内页 B",
+      "labelEn": "Interior B"
+    },
+    {
+      "id": "folio-c",
+      "src": "../assets/tanci/pearl-tower/folio-c.jpg",
+      "labelZh": "内页 C",
+      "labelEn": "Interior C"
+    }
+  ],
+  "reading": {
+    "zh": "《珍珠塔》是江南弹词经典。落魄书生方卿投奔姑苏陈家；表兄妹情谊与贫富炎凉交织，陈翠娥以家传珍珠塔相赠，助他上路求功名。本页展示清代 / 民国重编本刻本选页：封面、序文与第二回内页——以图文阅读为主，不是听录音。",
+    "zhHant": "《珍珠塔》是江南彈詞經典。落魄書生方卿投奔姑蘇陳家；表兄妹情誼與貧富炎涼交織，陳翠娥以家傳珍珠塔相贈，助他上路求功名。本頁展示清代 / 民國重編本刻本選頁：封面、序文與第二回內頁——以圖文閱讀為主，不是聽錄音。",
+    "en": "Pearl Tower is a classic Jiangnan tanci story. Scholar Fang Qing, fallen on hard times, visits the Chen family in Suzhou; kin affection and cold status collide as Chen Cui’e gives him the heirloom Pearl Tower as travel money. This entry shows selected pages from a revised woodblock/print edition—cover, preface, and Chapter 2—meant for image + text reading, not audio playback."
+  },
+  "notes": {
+    "zh": "图像来自本机研究用《珍珠塔重編本》上冊 PDF 选页。完整 OCR 校对可在站内「弹词」面板上传更多页。",
+    "zhHant": "圖像來自本機研究用《珍珠塔重編本》上冊 PDF 選頁。完整 OCR 校對可在站內「彈詞」面板上傳更多頁。",
+    "en": "Images are selected pages from a local research PDF of the revised Pearl Tower edition. Use the in-site Tanci panel to OCR more pages."
+  }
+}
