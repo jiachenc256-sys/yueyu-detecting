@@ -37,11 +37,13 @@ function initNavigation() {
 }
 function initSideNavigation(linkAttr, sectionAttr) {
     const links = document.querySelectorAll(`[${linkAttr}]`);
-    const sections = document.querySelectorAll(`[${sectionAttr}]`);
     links.forEach((link) => {
         link.addEventListener("click", () => {
             const target = link.getAttribute(linkAttr);
-            links.forEach((l) => {
+            const root = link.closest(".plan-layout") ?? document;
+            const localLinks = root.querySelectorAll(`[${linkAttr}]`);
+            const sections = root.querySelectorAll(`[${sectionAttr}]`);
+            localLinks.forEach((l) => {
                 if (l === link)
                     l.setAttribute("aria-current", "true");
                 else

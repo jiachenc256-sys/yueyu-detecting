@@ -444,6 +444,74 @@ body {
   font-weight: 600;
 }
 
+.plan-section h4 {
+  margin: var(--space-6) 0 var(--space-3);
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.plan-primer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.plan-primer-card {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.plan-primer-card h4 {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.plan-primer-card p {
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.plan-stage__num {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+}
+
+.plan-try {
+  margin: 0 0 var(--space-6);
+}
+
+.plan-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.plan-offer {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.plan-offer:first-of-type {
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 900px) {
+  .plan-primer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .plan-section p,
 .plan-section li {
   color: var(--color-ink-muted);
