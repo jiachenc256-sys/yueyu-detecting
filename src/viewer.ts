@@ -5,6 +5,7 @@ import {
   secondaryDisplayLines,
   speakerDisplayLabel,
 } from "./display.js";
+import { initA11y } from "./a11y.js";
 import { getLocale, initI18n, onLocaleChange, type SiteLocale } from "./i18n.js";
 import { formatTime } from "./time.js";
 import type { Cue, DisplayMode, Piece } from "./types.js";
@@ -242,6 +243,7 @@ function normalizeMode(raw: string | undefined): DisplayMode | null {
 }
 
 async function init(): Promise<void> {
+  initA11y();
   initI18n();
   const list = requireEl(listEl, "transcript-list");
   const audioEl = requireEl(audio, "audio");
