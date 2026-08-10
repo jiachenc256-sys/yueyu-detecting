@@ -8,13 +8,13 @@
   "sourceEn": "Qing-era tanci print: Tian Yu Hua, vol. 1 (see also vol. 2) — full 239-page PDF",
   "schemaVersion": "1.0.0",
   "reading": {
-    "zh": "左侧翻页阅读全书刻本影像；右侧显示该页 OCR 文字（由 Talcne / 百度识别）。无文字时可点「识别本页」。弹词档案以图文为主，不是越剧那种录音时间轴。",
-    "zhHant": "左側翻頁閱讀全書刻本影像；右側顯示該頁 OCR 文字（由 Talcne / 百度識別）。無文字時可點「識別本頁」。彈詞檔案以圖文為主，不是越劇那種錄音時間軸。",
-    "en": "Flip through the full woodblock/print PDF on the left; the right panel shows OCR text for the current page (Talcne / Baidu). If empty, click “OCR this page”. Tanci here is image + text—not an opera audio timeline."
+    "zh": "《天雨花》是清代长篇弹词，以左维明一家为中心，写忠奸、家国与儿女之情。",
+    "zhHant": "《天雨花》是清代長篇彈詞，以左維明一家為中心，寫忠奸、家國與兒女之情。",
+    "en": "Tian Yu Hua is a long Qing tanci centered on the Zuo Weiming household—loyalty, court intrigue, and family bonds."
   },
   "notes": {
-    "zh": "全书页可翻；文字层用站内同一套 OCR 后端按页识别。识别结果会随按页 OCR 逐渐补全。",
-    "zhHant": "全書頁可翻；文字層用站內同一套 OCR 後端按頁識別。識別結果會隨按頁 OCR 逐漸補全。",
-    "en": "Every page is flip-able. Text comes from the same OCR backend via on-demand per-page recognition."
+    "zh": "左侧翻页阅读刻本影像；右侧显示本页 OCR 文字。无文字时可点「识别本页」。弹词以图文为主，不是录音时间轴。",
+    "zhHant": "左側翻頁閱讀刻本影像；右側顯示本頁 OCR 文字。無文字時可點「識別本頁」。彈詞以圖文為主，不是錄音時間軸。",
+    "en": "Flip the print pages on the left; the right panel shows OCR text for this page. If empty, click “OCR this page”. Tanci here is image + text—not an audio timeline."
   }
 }
