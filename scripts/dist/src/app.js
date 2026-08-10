@@ -1,5 +1,5 @@
 import { initA11y } from "./a11y.js";
-import { initI18n } from "./i18n.js";
+import { initI18n, onLocaleChange, t } from "./i18n.js";
 function initNavigation() {
     const triggers = document.querySelectorAll("[data-panel-target]");
     const navButtons = document.querySelectorAll(".site-nav [data-panel-target]");
@@ -54,19 +54,42 @@ function initSideNavigation(linkAttr, sectionAttr) {
     });
 }
 function initStoryMore() {
-    const links = document.querySelectorAll("[data-story-more]");
-    links.forEach((link) => {
-        link.addEventListener("click", (event) => {
-            const id = link.getAttribute("href")?.replace(/^#/, "");
-            if (!id)
-                return;
-            const target = document.getElementById(id);
-            if (!target)
-                return;
-            event.preventDefault();
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-            history.replaceState(null, "", `#story`);
+    const triggers = document.querySelectorAll("[data-story-more]");
+    const full = document.getElementById("story-full");
+    if (!full || !triggers.length)
+        return;
+    const labelEl = () => document.querySelector("[data-story-more] [data-i18n^='story.more']");
+    const setOpen = (open) => {
+        full.hidden = !open;
+        full.setAttribute("aria-hidden", open ? "false" : "true");
+        triggers.forEach((el) => {
+            el.setAttribute("aria-expanded", open ? "true" : "false");
+            el.classList.toggle("story-more--open", open);
         });
+        const label = labelEl();
+        if (label) {
+            const key = open ? "story.moreHide" : "story.more";
+            label.dataset.i18n = key;
+            label.textContent = t(key);
+        }
+        if (open) {
+            requestAnimationFrame(() => {
+                full.scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+        }
+    };
+    // Closed by default — full story only after “know more”.
+    setOpen(false);
+    triggers.forEach((el) => {
+        el.addEventListener("click", () => {
+            setOpen(full.hidden);
+        });
+    });
+    onLocaleChange(() => {
+        const open = !full.hidden;
+        const label = labelEl();
+        if (label)
+            label.textContent = t(open ? "story.moreHide" : "story.more");
     });
 }
 function initArchiveFilters() {
