@@ -22,11 +22,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260810i" />
-  <link rel="stylesheet" href="styles/main.css?v=20260810i" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260810i" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260810i" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260810i" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260810k" />
+  <link rel="stylesheet" href="styles/main.css?v=20260810k" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260810k" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260810k" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260810k" />
 </head>
 <body>
   <div class="app-shell">
@@ -1088,13 +1088,13 @@
               <p data-i18n="story.s4Body">用已验证语料训练与评测，让系统从普通话基准一步步靠近活态越语与吴语。</p>
             </article>
           </div>
-          <a class="story-more" href="#story-full" data-story-more>
+          <button type="button" class="story-more" data-story-more aria-expanded="false" aria-controls="story-full">
             <span data-i18n="story.more">阅读完整故事</span>
             <span class="story-more__arrow" aria-hidden="true">→</span>
-          </a>
+          </button>
         </div>
 
-        <div class="story-full" id="story-full">
+        <div class="story-full" id="story-full" hidden>
           <div class="story-doc" data-visible-lang="zh-Hans">
             <header class="story-doc__header">
               <p class="story-doc__eyebrow">完整故事</p>
@@ -1164,7 +1164,11 @@
               <p>在训练方面，它用于微调语音识别与语音合成模型，使其从标准的普通话基准逐步迁移至能处理活态越语及吴语口语。在评估方面，它作为测试集，检验系统对越语方言词汇、特殊发音和戏曲唱腔的识别准确率。</p>
               <p>整个流程形成闭环：语料从田野中来，经母语者验证，再回到技术系统中去。我们的目标不是简单地收藏越语，而是让越语重新成为可以被听见、被理解、被生成的语言，从一个以普通话为基准的系统，一步步向活态的越语和吴语靠近。</p>
             </article>
-          </div>
+            <blockquote class="story-coda">
+              <p>每一种声音都会消失，当最后一个说它的人闭上眼睛。但声音也会回来，当有人愿意听、愿意记、愿意把它交给下一个愿意听的人。越剧在台上唱了上百年，越语在绍兴人的嘴里说了更久。我们做的这些事情，录音、转写、验证、训练，说到底不过是在做一个传递的动作——把老一辈交给我们的，再交到下一辈手里。这个动作不会结束，也不会应该结束。</p>
+              <footer>—— Alice Chen</footer>
+            </blockquote>
+</div>
 
           <div class="story-doc" data-visible-lang="zh-Hant">
             <header class="story-doc__header">
@@ -1235,7 +1239,11 @@
               <p>在訓練方面，它用於微調語音識別與語音合成模型，使其從標準的普通話基準逐步遷移至能處理活態越語及吳語口語。在評估方面，它作爲測試集，檢驗系統對越語方言詞彙、特殊發音和戲曲唱腔的識別準確率。</p>
               <p>整個流程形成閉環：語料從田野中來，經母語者驗證，再回到技術系統中去。我們的目標不是簡單地收藏越語，而是讓越語重新成爲可以被聽見、被理解、被生成的語言，從一個以普通話爲基準的系統，一步步向活態的越語和吳語靠近。</p>
             </article>
-          </div>
+            <blockquote class="story-coda">
+              <p>每一種聲音都會消失，當最後一個說它的人閉上眼睛。但聲音也會回來，當有人願意聽、願意記、願意把它交給下一個願意聽的人。越劇在臺上唱了上百年，越語在紹興人的嘴裡說了更久。我們做的這些事情，錄音、轉寫、驗證、訓練，說到底不過是在做一個傳遞的動作——把老一輩交給我們的，再交到下一輩手裡。這個動作不會結束，也不會應該結束。</p>
+              <footer>—— Alice Chen</footer>
+            </blockquote>
+</div>
 
           <div class="story-doc" data-visible-lang="en">
             <header class="story-doc__header">
@@ -1307,7 +1315,11 @@
               <p>For training, it is used to fine-tune speech recognition and synthesis models, gradually transitioning them from a Mandarin baseline toward handling living Yueyu and Wu dialect speech. For evaluation, it serves as a test set to measure system accuracy in recognising Yueyu dialect vocabulary, special pronunciations, and operatic vocal styles.</p>
               <p>The workflow forms a closed loop. Materials come from the field, are validated by native speakers, and are fed back into the technical systems. Our goal is not simply to archive Yueyu, but to make it a language that can once again be heard, understood, and generated—moving step by step from a Mandarin-centric system toward one that embraces living Yueyu and Wu speech.</p>
             </article>
-          </div>
+            <blockquote class="story-coda">
+              <p>Every voice will fade when the last person who speaks it closes their eyes. But a voice can also return, when someone is willing to listen, to remember, and to pass it on to the next pair of willing ears. Yue Opera has been sung on stage for over a century. Yueyu has been spoken in Shaoxing for even longer. What we are doing—the recording, the transcribing, the validating, the training—is at its heart just one continuous act of passing on. Taking what the older generation entrusted to us, and handing it to the next. This act does not end. And it should never end.</p>
+              <footer>—— Alice Chen</footer>
+            </blockquote>
+</div>
 
           <div class="story-note">
             <p>
@@ -1570,8 +1582,8 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260810i"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260810i"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260810i"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260810k"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260810k"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260810k"></script>
 </body>
 </html>
