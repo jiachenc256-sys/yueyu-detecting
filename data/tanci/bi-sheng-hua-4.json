@@ -1,0 +1,20 @@
+{
+  "id": "bi-sheng-hua-4",
+  "category": "tanci",
+  "format": "woodblock-pdf",
+  "title": "绘图笔生花 · 卷4",
+  "titleEn": "Bi Sheng Hua (illustrated) · vol. 4",
+  "source": "清代弹词刻本 · 繪圖筆生花 卷4（全书 58 页 PDF）",
+  "sourceEn": "Qing-era tanci print: Illustrated Bi Sheng Hua, vol. 4 — full 58-page PDF",
+  "schemaVersion": "1.0.0",
+  "reading": {
+    "zh": "左侧翻页阅读全书刻本影像；右侧显示该页 OCR 文字（由 Talcne / 百度识别）。无文字时可点「识别本页」。弹词档案以图文为主，不是越剧那种录音时间轴。",
+    "zhHant": "左側翻頁閱讀全書刻本影像；右側顯示該頁 OCR 文字（由 Talcne / 百度識別）。無文字時可點「識別本頁」。彈詞檔案以圖文為主，不是越劇那種錄音時間軸。",
+    "en": "Flip through the full woodblock/print PDF on the left; the right panel shows OCR text for the current page (Talcne / Baidu). If empty, click “OCR this page”. Tanci here is image + text—not an opera audio timeline."
+  },
+  "notes": {
+    "zh": "全书页可翻；文字层用站内同一套 OCR 后端按页识别。识别结果会随按页 OCR 逐渐补全。",
+    "zhHant": "全書頁可翻；文字層用站內同一套 OCR 後端按頁識別。識別結果會隨按頁 OCR 逐漸補全。",
+    "en": "Every page is flip-able. Text comes from the same OCR backend via on-demand per-page recognition."
+  }
+}

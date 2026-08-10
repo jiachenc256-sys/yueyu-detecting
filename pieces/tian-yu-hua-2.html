@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-theme="dark" data-color-mode="default" data-font-scale="100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天雨花 · 第2卷 · 越语侦听</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var root = document.documentElement;
+        var theme = localStorage.getItem("yueyu.theme");
+        var color = localStorage.getItem("yueyu.colorMode");
+        var font = localStorage.getItem("yueyu.fontScale");
+        if (theme === "dark" || theme === "light") root.dataset.theme = theme;
+        if (color === "default" || color === "deuteranopia" || color === "protanopia" || color === "high-contrast") {
+          root.dataset.colorMode = color;
+        }
+        if (font === "100" || font === "125" || font === "150") root.dataset.fontScale = font;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles/tokens.css?v=20260810d" />
+  <link rel="stylesheet" href="../styles/main.css?v=20260810d" />
+  <link rel="stylesheet" href="../styles/a11y.css?v=20260810d" />
+  <link rel="stylesheet" href="../styles/tanci-reader.css?v=20260810d" />
+</head>
+<body data-piece-id="tian-yu-hua-2" data-piece-category="tanci">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
+        </div>
+        <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <details class="a11y-panel">
+            <summary class="a11y-panel__summary" data-i18n="a11y.open">Aa 无障碍</summary>
+            <div class="a11y-panel__body">
+              <div class="a11y-group" role="group" aria-labelledby="a11y-theme-label">
+                <span class="a11y-group__label" id="a11y-theme-label" data-i18n="a11y.theme">外观</span>
+                <div class="a11y-options">
+                  <button type="button" data-theme-option="dark" aria-pressed="true" data-i18n="a11y.themeDark">深色</button>
+                  <button type="button" data-theme-option="light" aria-pressed="false" data-i18n="a11y.themeLight">浅色</button>
+                </div>
+              </div>
+              <div class="a11y-group" role="group" aria-labelledby="a11y-color-label">
+                <span class="a11y-group__label" id="a11y-color-label" data-i18n="a11y.color">色彩模式（色盲 / 弱视）</span>
+                <div class="a11y-options">
+                  <button type="button" data-color-mode-option="default" aria-pressed="true" data-i18n="a11y.colorDefault">默认</button>
+                  <button type="button" data-color-mode-option="deuteranopia" aria-pressed="false" data-i18n="a11y.colorDeutan">绿色弱视</button>
+                  <button type="button" data-color-mode-option="protanopia" aria-pressed="false" data-i18n="a11y.colorProtan">红色弱视</button>
+                  <button type="button" data-color-mode-option="high-contrast" aria-pressed="false" data-i18n="a11y.colorContrast">高对比</button>
+                </div>
+              </div>
+              <div class="a11y-group" role="group" aria-labelledby="a11y-font-label">
+                <span class="a11y-group__label" id="a11y-font-label" data-i18n="a11y.font">字号（长辈）</span>
+                <div class="a11y-options">
+                  <button type="button" data-font-scale-option="100" aria-pressed="true" data-i18n="a11y.font100">标准</button>
+                  <button type="button" data-font-scale-option="125" aria-pressed="false" data-i18n="a11y.font125">较大</button>
+                  <button type="button" data-font-scale-option="150" aria-pressed="false" data-i18n="a11y.font150">更大</button>
+                </div>
+              </div>
+              <p class="a11y-hint" data-i18n="a11y.hint">设置会保存在本机，刷新后仍有效。</p>
+            </div>
+          </details>
+          <nav class="site-nav" aria-label="Piece">
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive-tanci" data-i18n="viewer.back">← 档案</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="tanci-reader" id="tanci-stage" hidden>
+      <header class="tanci-reader__header">
+        <div>
+          <span class="badge badge--ready" data-i18n="archive.badgeTanci">弹词</span>
+          <h1 class="tanci-reader__title">天雨花 · 第2卷</h1>
+          <p class="tanci-reader__meta">Tian Yu Hua · vol. 2 PDF · image + text</p>
+        </div>
+        <div class="tanci-reader__tools">
+          <div class="lang-toggle" role="group" aria-label="Reading language">
+            <button type="button" class="lang-toggle__btn" data-tanci-lang="zh" aria-pressed="true">简体</button>
+            <button type="button" class="lang-toggle__btn" data-tanci-lang="zhHant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-tanci-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="tanci-reader__layout">
+        <section class="tanci-reader__gallery" aria-label="Woodblock pages">
+          <div class="tanci-reader__figure-wrap">
+            <canvas id="tanci-canvas" class="tanci-reader__canvas"></canvas>
+          </div>
+          <div class="tanci-pager">
+            <button type="button" id="tanci-prev" class="tanci-pager__btn" data-i18n="tanciReader.prev">上一页</button>
+            <label class="tanci-pager__goto">
+              <span data-i18n="tanciReader.page">页</span>
+              <input id="tanci-page-input" class="tanci-pager__input" type="number" min="1" value="1" />
+              <span id="tanci-page-label">1 / —</span>
+            </label>
+            <button type="button" id="tanci-next" class="tanci-pager__btn" data-i18n="tanciReader.next">下一页</button>
+          </div>
+        </section>
+
+        <aside class="tanci-reader__panel" aria-label="Reading notes">
+          <h2 data-i18n="tanciReader.pageText">本页文字</h2>
+          <p id="tanci-ocr-status" class="tanci-reader__status">…</p>
+          <pre id="tanci-page-text" class="tanci-reader__page-text"></pre>
+          <button type="button" id="tanci-ocr-page" class="tanci-reader__cta tanci-reader__cta--btn" data-i18n="tanciReader.ocrPage">识别本页</button>
+
+          <h2 data-i18n="tanciReader.about">图文说明</h2>
+          <p id="tanci-reading"></p>
+          <h2 data-i18n="tanciReader.source">版本来源</h2>
+          <p id="tanci-source" class="tanci-reader__source"></p>
+          <h2 data-i18n="tanciReader.note">说明</h2>
+          <p id="tanci-notes" class="tanci-reader__notes"></p>
+          <a class="tanci-reader__cta" href="../index.html#tanci" data-i18n="tanciReader.ocrMore">打开弹词识别 · 上传更多页</a>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/tanci-reader.js?v=20260810d"></script>
+</body>
+</html>
