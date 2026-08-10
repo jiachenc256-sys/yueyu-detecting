@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>珍珠塔 · 赠塔 · 越语侦听</title>
+  <title>珍珠塔 · 重编本（选页） · 越语侦听</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -25,9 +25,9 @@
   <link rel="stylesheet" href="../styles/tokens.css" />
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="../styles/a11y.css" />
-  <link rel="stylesheet" href="../styles/viewer.css" />
+  <link rel="stylesheet" href="../styles/tanci-reader.css" />
 </head>
-<body data-piece-id="pearl-tower-gift" data-text-only="true">
+<body data-piece-id="pearl-tower-gift" data-piece-category="tanci">
   <div class="app-shell">
     <header class="site-header">
       <div class="site-header__inner">
@@ -37,7 +37,7 @@
             <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
           </a>
         </div>
-                <div class="site-header__tools">
+        <div class="site-header__tools">
           <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
             <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
             <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
@@ -74,71 +74,50 @@
             </div>
           </details>
           <nav class="site-nav" aria-label="Piece">
-            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive-tanci" data-i18n="viewer.back">← 档案</a>
           </nav>
         </div>
       </div>
     </header>
 
-    <main class="viewer">
-      <header class="viewer-header">
-        <div class="viewer-header__text">
-          <span class="badge badge--ready">弹词文字层</span>
-          <h1 class="viewer-title">珍珠塔 · 赠塔</h1>
-          <p class="viewer-meta">Pearl Tower · The Gift · <span id="cue-count">—</span></p>
-          <p class="viewer-coverage" id="coverage-stats"></p>
+    <main class="tanci-reader" id="tanci-stage" hidden>
+      <header class="tanci-reader__header">
+        <div>
+          <span class="badge badge--ready" data-i18n="archive.badgeTanci">弹词</span>
+          <h1 class="tanci-reader__title">珍珠塔 · 重编本（选页）</h1>
+          <p class="tanci-reader__meta">Pearl Tower · woodblock / print pages</p>
         </div>
-        <div class="viewer-controls">
-          <div class="lang-toggle" role="group" aria-label="Display language">
-            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hans" aria-pressed="false">简体</button>
-            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hant" aria-pressed="false">繁體</button>
-            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
-            <button type="button" class="lang-toggle__btn" data-display-mode="trilingual" aria-pressed="true">简 / 繁 / EN</button>
-          </div>
-          <div class="viewer-search">
-            <input type="search" id="search-input" class="viewer-search__input" data-i18n-placeholder="viewer.search" placeholder="搜索 简 / 繁 / EN…" aria-label="Search transcript" />
+        <div class="tanci-reader__tools">
+          <div class="lang-toggle" role="group" aria-label="Reading language">
+            <button type="button" class="lang-toggle__btn" data-tanci-lang="zh" aria-pressed="true">简体</button>
+            <button type="button" class="lang-toggle__btn" data-tanci-lang="zhHant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-tanci-lang="en" aria-pressed="false">EN</button>
           </div>
         </div>
       </header>
 
-      <aside class="viewer-intro" aria-label="Story introduction">
-        <h2 class="viewer-intro__label" data-i18n="viewer.story">剧情简介</h2>
-        <p class="viewer-intro__zh" data-visible-lang="zh-Hans">《珍珠塔》是江南弹词经典。落魄书生方卿投奔姑苏陈家，表兄妹情谊深厚；陈翠娥暗中以家传珍珠塔相赠，助他上路求功名。后文波折迭起，终以团圆收场——此为文字层示范选段。</p>
-        <p class="viewer-intro__zh" data-visible-lang="zh-Hant">《珍珠塔》是江南彈詞經典。落魄書生方卿投奔姑蘇陳家，表兄妹情誼深厚；陳翠娥暗中以家傳珍珠塔相贈，助他上路求功名。後文波折迭起，終以團圓收場——此為文字層示範選段。</p>
-        <p class="viewer-intro__en" data-visible-lang="en">Pearl Tower is a classic Jiangnan tanci story. The impoverished scholar Fang Qing visits the Chen family in Suzhou; his cousin Chen Cui’e secretly gives him the family’s heirloom pearl tower as travel money so he can seek his fortune. Later trials lead to reunion—this is a text-layer starter excerpt.</p>
-        <p class="viewer-intro__clip" data-visible-lang="zh-Hans"><strong data-i18n="viewer.thisClip">本段</strong> — 《赠塔》：翠娥见方卿落魄，以珍珠塔作盘缠相赠。文本来自 Talcne OCR 档案桥，可先阅读，音频可后续补齐。</p>
-        <p class="viewer-intro__clip" data-visible-lang="zh-Hant"><strong data-i18n="viewer.thisClip">本段</strong> — 《贈塔》：翠娥見方卿落魄，以珍珠塔作盤纏相贈。文本來自 Talcne OCR 檔案橋，可先閱讀，音訊可後續補齊。</p>
-        <p class="viewer-intro__en" data-visible-lang="en"><strong data-i18n="viewer.thisClip">This clip</strong> — “The Gift”: Cui’e sees Fang Qing in hardship and gives him the Pearl Tower as travel money. Text arrives via the Talcne OCR archive bridge; audio can be added later.</p>
-      </aside>
-
-      <div class="viewer-body">
-        <aside class="viewer-player" aria-label="Text reader">
-          <p class="viewer-player__text-only" data-i18n="viewer.textOnly">
-            文字层选段 · 暂无配音。点击任一行即可高亮阅读（简 / 繁 / EN）。
-          </p>
-          <audio id="audio" controls preload="none"></audio>
-          <p class="viewer-player__hint">
-            Pearl Tower · text layer from Talcne export bridge. Line timings are synthetic placeholders for reading order.
-          </p>
-          <dl class="viewer-now-playing">
-            <div>
-              <dt>Now</dt>
-              <dd id="now-time">0:00</dd>
-            </div>
-            <div>
-              <dt>Line</dt>
-              <dd id="now-line">—</dd>
-            </div>
-          </dl>
-        </aside>
-
-        <section class="viewer-transcript" aria-label="Transcript">
-          <ol id="transcript-list" class="transcript-list"></ol>
+      <div class="tanci-reader__layout">
+        <section class="tanci-reader__gallery" aria-label="Woodblock pages">
+          <figure class="tanci-reader__figure-wrap">
+            <img id="tanci-figure" class="tanci-reader__figure" alt="" />
+            <figcaption id="tanci-caption" class="tanci-reader__caption"></figcaption>
+          </figure>
+          <div id="tanci-thumbs" class="tanci-thumbs" role="listbox" aria-label="Page thumbnails"></div>
         </section>
+
+        <aside class="tanci-reader__panel" aria-label="Reading notes">
+          <h2 data-i18n="tanciReader.about">图文说明</h2>
+          <p id="tanci-reading"></p>
+          <h2 data-i18n="tanciReader.source">版本来源</h2>
+          <p id="tanci-source" class="tanci-reader__source"></p>
+          <h2 data-i18n="tanciReader.note">说明</h2>
+          <p id="tanci-notes" class="tanci-reader__notes"></p>
+          <a class="tanci-reader__cta" href="../index.html#tanci" data-i18n="tanciReader.ocrMore">打开弹词识别 · 上传更多页</a>
+        </aside>
       </div>
     </main>
   </div>
 
-  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+  <script type="module" src="../scripts/dist/src/tanci-reader.js"></script>
 </body>
 </html>
