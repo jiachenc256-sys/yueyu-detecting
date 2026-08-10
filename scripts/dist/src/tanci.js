@@ -1,4 +1,4 @@
-import { onLocaleChange, t, tf } from "./i18n.js?v=20260810t";
+import { onLocaleChange, t, tf } from "./i18n.js";
 /**
  * In-site Tanci panel: image-only OCR via sister project Talcne backend,
  * then 简 / 繁 / EN translation (same MyMemory path as Speak).

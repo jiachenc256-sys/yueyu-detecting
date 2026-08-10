@@ -1,4 +1,4 @@
-import { onLocaleChange, t, tf } from "./i18n.js?v=20260810t";
+import { onLocaleChange, t, tf } from "./i18n.js";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const recordBtn = document.getElementById("speak-record");
 const clearBtn = document.getElementById("speak-clear");
