@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260810x" />
-  <link rel="stylesheet" href="styles/main.css?v=20260810x" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260810x" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260810x" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260810x" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260810x" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260810y" />
+  <link rel="stylesheet" href="styles/main.css?v=20260810y" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260810y" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260810y" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260810y" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260810y" />
 </head>
 <body>
   <div class="app-shell">
@@ -1696,26 +1696,87 @@
       <section class="panel" data-panel="learn" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="learn.title">学习工具</h2>
-          <p data-i18n="learn.lead">为简体中文使用者准备的小练习：先从单字发音对照开始。</p>
+          <p data-i18n="learn.lead">先学怎么读音标，再按阶练习绍兴一带三地单字对照。</p>
         </header>
 
         <div class="learn-layout">
           <nav class="learn-nav" aria-label="Learn tools" data-i18n-attr="aria-label" data-i18n="learn.navLabel">
-            <button type="button" class="learn-nav__link" data-learn-target="ziyin" aria-current="true" data-i18n="learn.nav.ziyin">字音</button>
-            <!-- Future tools: add data-learn-target buttons here -->
+            <button type="button" class="learn-nav__link" data-learn-target="pinyin" aria-current="true" data-i18n="learn.nav.pinyin">学习拼音</button>
+            <button type="button" class="learn-nav__link" data-learn-target="fayin" aria-current="false" data-i18n="learn.nav.fayin">学习发音</button>
           </nav>
 
           <div class="learn-content">
-            <div class="learn-tool" data-learn-section="ziyin" aria-hidden="false">
+            <div class="learn-tool" data-learn-section="pinyin" aria-hidden="false">
+              <h3 class="learn-primer__title" data-i18n="learn.pinyin.title">学习拼音</h3>
+              <p class="learn-audience" data-i18n="learn.pinyin.lead">给已会普通话拼音的人：先弄清三地音标怎么读，再进入发音练习。</p>
+
+              <div class="learn-primer" data-visible-lang="zh-Hans">
+                <h4>三地是什么</h4>
+                <p>练习对照<strong>上虞 / 诸暨 / 嵊州</strong>。嵊州与越剧念白关系最近，练习页会单独标出。</p>
+                <h4>音标怎么读</h4>
+                <p>每一行是「声韵片段 + 调值数字」。例如嵊州 <code>to534</code>：前面是读音片段，后面 <code>534</code> 是调值，不是普通话四声编号。</p>
+                <h4>你会看到的记号</h4>
+                <ul class="learn-primer__list">
+                  <li><code>ʔ</code>：入声塞音收尾，短促。</li>
+                  <li><code>̃</code> 或带 <code>ŋ</code>：鼻音色彩 / 鼻韵尾。</li>
+                  <li>一行里有空格：同一字在当地有不止一种常见读法。</li>
+                </ul>
+                <h4>建议顺序</h4>
+                <p>先从第 1 阶「开音节入门」练起，再进鼻音韵、入声、多读与综合。</p>
+              </div>
+              <div class="learn-primer" data-visible-lang="zh-Hant">
+                <h4>三地是什麼</h4>
+                <p>練習對照<strong>上虞 / 諸暨 / 嵊州</strong>。嵊州與越劇念白關係最近，練習頁會單獨標出。</p>
+                <h4>音標怎麼讀</h4>
+                <p>每一行是「聲韻片段 + 調值數字」。例如嵊州 <code>to534</code>：前面是讀音片段，後面 <code>534</code> 是調值，不是普通話四聲編號。</p>
+                <h4>你會看到的記號</h4>
+                <ul class="learn-primer__list">
+                  <li><code>ʔ</code>：入聲塞音收尾，短促。</li>
+                  <li><code>̃</code> 或帶 <code>ŋ</code>：鼻音色彩 / 鼻韻尾。</li>
+                  <li>一行裏有空格：同一字在當地有不止一種常見讀法。</li>
+                </ul>
+                <h4>建議順序</h4>
+                <p>先從第 1 階「開音節入門」練起，再進鼻音韻、入聲、多讀與綜合。</p>
+              </div>
+              <div class="learn-primer" data-visible-lang="en">
+                <h4>Three places</h4>
+                <p>You will compare <strong>Shangyu / Zhuji / Shengzhou</strong>. Shengzhou is highlighted because it is closest to Yue Opera speech.</p>
+                <h4>How to read a line</h4>
+                <p>Each line is a sound shape plus tone numbers, e.g. Shengzhou <code>to534</code>. The digits are pitch values, not Mandarin tone 1–4 labels.</p>
+                <h4>Marks you will see</h4>
+                <ul class="learn-primer__list">
+                  <li><code>ʔ</code>: entering-tone stop; short and clipped.</li>
+                  <li><code>̃</code> or <code>ŋ</code>: nasal colour / nasal ending.</li>
+                  <li>A space in one cell: more than one common local reading.</li>
+                </ul>
+                <h4>Suggested path</h4>
+                <p>Start at Level 1 (open syllables), then nasals, entering tones, multiple readings, and mixed review.</p>
+              </div>
+
+              <div class="plan-cta-row">
+                <button type="button" class="home-cta__btn home-cta__btn--primary" id="learn-start-fayin" data-i18n="learn.pinyin.cta">开始第 1 阶发音练习</button>
+              </div>
+            </div>
+
+            <div class="learn-tool" data-learn-section="fayin" aria-hidden="true">
               <p class="learn-audience" data-visible-lang="zh-Hans" data-i18n="learn.audienceHans">
-                面向已会普通话拼音的简体中文使用者：对照汉字、普通话拼音，以及绍兴一带上虞 / 诸暨 / 嵊州三地读音。
+                对照汉字、普通话拼音，以及上虞 / 诸暨 / 嵊州三地读音。请先选阶，再一张张练。
               </p>
               <p class="learn-audience" data-visible-lang="zh-Hant" data-i18n="learn.audienceNote">
-                本練習為已會普通話拼音的學習者設計；卡片為簡體漢字，並對照上虞 / 諸暨 / 嵊州三地讀音。
+                對照漢字、普通話拼音，以及上虞 / 諸暨 / 嵊州三地讀音。請先選階，再一張張練。
               </p>
               <p class="learn-audience" data-visible-lang="en" data-i18n="learn.audienceNote">
-                For learners who already use Mandarin pinyin: compare Simplified hanzi with Shangyu, Zhuji, and Shengzhou readings.
+                Compare Simplified hanzi and Mandarin pinyin with Shangyu, Zhuji, and Shengzhou. Pick a level, then step through cards.
               </p>
+
+              <div class="ziyin-levels" role="group" aria-label="Levels" data-i18n-attr="aria-label" data-i18n="learn.ziyin.levelsLabel">
+                <button type="button" class="ziyin-level" data-ziyin-level="1" aria-pressed="true">1</button>
+                <button type="button" class="ziyin-level" data-ziyin-level="2" aria-pressed="false">2</button>
+                <button type="button" class="ziyin-level" data-ziyin-level="3" aria-pressed="false">3</button>
+                <button type="button" class="ziyin-level" data-ziyin-level="4" aria-pressed="false">4</button>
+                <button type="button" class="ziyin-level" data-ziyin-level="5" aria-pressed="false">5</button>
+                <span id="ziyin-level-name" class="ziyin-level-name">开音节入门</span>
+              </div>
 
               <div id="ziyin-stage" class="ziyin-stage" hidden>
                 <div class="ziyin-card">
@@ -1757,7 +1818,6 @@
                 <p class="ziyin-legend" data-visible-lang="en">The three local readings are for comparison—not Mandarin pinyin. Shengzhou is highlighted for Yue Opera speech.</p>
               </div>
             </div>
-            <!-- Future learn-tool sections go here -->
           </div>
         </div>
       </section>
@@ -2003,9 +2063,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260810x"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260810x"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260810x"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260810x"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260810y"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260810y"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260810y"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260810y"></script>
 </body>
 </html>
