@@ -235,8 +235,9 @@
   gap: var(--space-4);
   align-items: center;
   padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: var(--color-paper-raised, rgba(127, 127, 127, 0.08));
+  background: var(--color-paper-raised);
 }
 
 .ziyin-row__label {
@@ -267,7 +268,8 @@
 
 .ziyin-row--focus {
   background: var(--color-accent-soft);
-  border-left: 3px solid var(--color-accent);
+  border-color: var(--color-accent);
+  border-left-width: 3px;
 }
 
 .ziyin-row--focus .ziyin-row__label,
