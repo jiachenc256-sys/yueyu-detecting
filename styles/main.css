@@ -285,8 +285,15 @@ body {
 /* Author display:flex overrides the UA [hidden] rule — keep filters working */
 .archive-grid > [hidden],
 .piece-card[hidden],
-.add-piece-card[hidden] {
+.add-piece-card[hidden],
+.archive-grid > .archive-card--out {
   display: none !important;
+}
+
+.archive-card--flash {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  transition: outline-color 0.8s ease;
 }
 
 .piece-card--link {
