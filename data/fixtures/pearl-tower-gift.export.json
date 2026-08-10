@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "talcne",
+  "target": "yueyu-detecting",
+  "exportedAt": "2026-08-10T11:17:57.277Z",
+  "script": "zh-Hans",
+  "fileNames": [
+    "pearl-tower-gift-woodblock.jpg"
+  ],
+  "fullText": "方卿低头无语\n只见姑娘含笑相迎\n陈翠娥见表兄落魄\n心中暗自伤情\n这珍珠塔传家宝\n权且赠与兄长作盘缠\n望兄长一路珍重\n早日功成名就\n莫忘姑苏陈家情\n方卿接塔谢不尽",
+  "lines": [
+    "方卿低头无语",
+    "只见姑娘含笑相迎",
+    "陈翠娥见表兄落魄",
+    "心中暗自伤情",
+    "这珍珠塔传家宝",
+    "权且赠与兄长作盘缠",
+    "望兄长一路珍重",
+    "早日功成名就",
+    "莫忘姑苏陈家情",
+    "方卿接塔谢不尽"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text": "方卿低头无语\n只见姑娘含笑相迎\n陈翠娥见表兄落魄\n心中暗自伤情\n这珍珠塔传家宝\n权且赠与兄长作盘缠\n望兄长一路珍重\n早日功成名就\n莫忘姑苏陈家情\n方卿接塔谢不尽",
+      "lines": [
+        "方卿低头无语",
+        "只见姑娘含笑相迎",
+        "陈翠娥见表兄落魄",
+        "心中暗自伤情",
+        "这珍珠塔传家宝",
+        "权且赠与兄长作盘缠",
+        "望兄长一路珍重",
+        "早日功成名就",
+        "莫忘姑苏陈家情",
+        "方卿接塔谢不尽"
+      ],
+      "blocks": []
+    }
+  ],
+  "translations": {
+    "zhHans": "方卿低头无语\n只见姑娘含笑相迎\n陈翠娥见表兄落魄\n心中暗自伤情\n这珍珠塔传家宝\n权且赠与兄长作盘缠\n望兄长一路珍重\n早日功成名就\n莫忘姑苏陈家情\n方卿接塔谢不尽",
+    "zhHant": "方卿低頭無語\n只見姑娘含笑相迎\n陳翠娥見表兄落魄\n心中暗自傷情\n這珍珠塔傳家寶\n權且贈與兄長作盤纏\n望兄長一路珍重\n早日功成名就\n莫忘姑蘇陳家情\n方卿接塔謝不盡",
+    "en": "Fang Qing lowers his head in silence\nHe sees the young lady greet him with a smile\nChen Cui'e sees her cousin in hardship\nAnd feels secret sorrow in her heart\nThis Pearl Tower is a family heirloom\nI give it to you, brother, as travel money\nMay you take care on the road\nAnd soon succeed in your career\nDo not forget the Chen family of Suzhou\nFang Qing accepts the tower with endless thanks"
+  },
+  "note": "Starter text layer for archive: Pearl Tower gift scene, shaped as a Talcne→Yueyu export (OCR bridge). Educational reading sample; timings are synthetic until audio is curated."
+}
