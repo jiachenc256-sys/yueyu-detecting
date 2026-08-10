@@ -8,13 +8,13 @@
   "sourceEn": "Qing-era tanci print: Pearl Tower, revised edition, vol. 1 (Dada) — full 222-page PDF",
   "schemaVersion": "1.0.0",
   "reading": {
-    "zh": "左侧翻页阅读全书刻本影像；右侧显示该页 OCR 文字（由 Talcne / 百度识别）。无文字时可点「识别本页」。弹词档案以图文为主，不是越剧那种录音时间轴。",
-    "zhHant": "左側翻頁閱讀全書刻本影像；右側顯示該頁 OCR 文字（由 Talcne / 百度識別）。無文字時可點「識別本頁」。彈詞檔案以圖文為主，不是越劇那種錄音時間軸。",
-    "en": "Flip through the full woodblock/print PDF on the left; the right panel shows OCR text for the current page (Talcne / Baidu). If empty, click “OCR this page”. Tanci here is image + text—not an opera audio timeline."
+    "zh": "《珍珠塔》是江南弹词经典。落魄书生方卿投奔姑苏陈家，表兄妹情谊深厚；陈翠娥暗中以家传珍珠塔相赠，助他上路求功名。后文波折迭起，终以团圆收场。",
+    "zhHant": "《珍珠塔》是江南彈詞經典。落魄書生方卿投奔姑蘇陳家，表兄妹情誼深厚；陳翠娥暗中以家傳珍珠塔相贈，助他上路求功名。後文波折迭起，終以團圓收場。",
+    "en": "Pearl Tower is a classic Jiangnan tanci story. The impoverished scholar Fang Qing visits the Chen family in Suzhou; his cousin Chen Cui’e secretly gives him the family’s heirloom pearl tower as travel money so he can seek his fortune. Later trials lead to reunion."
   },
   "notes": {
-    "zh": "全书页可翻；文字层用站内同一套 OCR 后端批量/按页识别。识别结果会随全书 OCR 进度逐渐补全。",
-    "zhHant": "全書頁可翻；文字層用站內同一套 OCR 後端批量/按頁識別。識別結果會隨全書 OCR 進度逐漸補全。",
-    "en": "Every page is flip-able. Text comes from the same OCR backend, either page-by-page or via a full-book batch job as it completes."
+    "zh": "左侧翻页阅读刻本影像；右侧显示本页 OCR 文字。无文字时可点「识别本页」。弹词以图文为主，不是录音时间轴。",
+    "zhHant": "左側翻頁閱讀刻本影像；右側顯示本頁 OCR 文字。無文字時可點「識別本頁」。彈詞以圖文為主，不是錄音時間軸。",
+    "en": "Flip the print pages on the left; the right panel shows OCR text for this page. If empty, click “OCR this page”. Tanci here is image + text—not an audio timeline."
   }
 }
