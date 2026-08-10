@@ -7,8 +7,15 @@ import { onLocaleChange, t, tf } from "./i18n.js";
 
 const STORAGE_KEY = "yueyu.talcneApiBase";
 const DEFAULT_API = "http://127.0.0.1:8000";
-/** Filled from `/config.json` → `talcneApiBase` (Render URL for production). */
+/** Production OCR backend (Render). Used when the site is not on localhost. */
+const PRODUCTION_API = "https://talcne.onrender.com";
+/** Filled from `/config.json` → `talcneApiBase` (optional override). */
 let configApiBase = "";
+
+function isLocalHost(): boolean {
+  const host = window.location.hostname;
+  return host === "localhost" || host === "127.0.0.1" || host === "[::1]";
+}
 
 interface OcrBlock {
   text?: string;
@@ -76,6 +83,8 @@ function getApiBase(): string {
     /* ignore */
   }
   if (configApiBase) return configApiBase;
+  // Custom domain / GitHub Pages must never fall back to 127.0.0.1 (causes Failed to fetch).
+  if (!isLocalHost()) return PRODUCTION_API;
   return DEFAULT_API;
 }
 
