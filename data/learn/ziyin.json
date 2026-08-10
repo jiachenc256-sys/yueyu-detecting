@@ -2,7 +2,7 @@
   "schemaVersion": "1.0.0",
   "script": "zh-Hans",
   "title": "单字发音",
-  "note": "越语拼音为嵊州口语参考转写（接近吴语学堂 wugniu 风格），供普通话使用者对照入门；后续可继续校对。「听发音」先播浏览器普通话朗读；越语真人录音以后再补。",
+  "note": "越语拼音为嵊州口语参考转写（接近吴语学堂 wugniu 风格），供已会普通话拼音的使用者对照入门；后续可继续校对。",
   "items": [
     { "han": "听", "pinyin": "tīng", "yueyu": "thin1", "gloss": "听见", "tag": "常用" },
     { "han": "说", "pinyin": "shuō", "yueyu": "seq7", "gloss": "说话", "tag": "常用" },
