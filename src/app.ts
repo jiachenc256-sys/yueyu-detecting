@@ -43,13 +43,15 @@ function initNavigation(): void {
 
 function initSideNavigation(linkAttr: string, sectionAttr: string): void {
   const links = document.querySelectorAll<HTMLButtonElement>(`[${linkAttr}]`);
-  const sections = document.querySelectorAll<HTMLElement>(`[${sectionAttr}]`);
 
   links.forEach((link) => {
     link.addEventListener("click", () => {
       const target = link.getAttribute(linkAttr);
+      const root = link.closest(".plan-layout") ?? document;
+      const localLinks = root.querySelectorAll<HTMLButtonElement>(`[${linkAttr}]`);
+      const sections = root.querySelectorAll<HTMLElement>(`[${sectionAttr}]`);
 
-      links.forEach((l) => {
+      localLinks.forEach((l) => {
         if (l === link) l.setAttribute("aria-current", "true");
         else l.removeAttribute("aria-current");
       });

@@ -22,11 +22,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260810m" />
-  <link rel="stylesheet" href="styles/main.css?v=20260810m" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260810m" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260810m" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260810m" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260810n" />
+  <link rel="stylesheet" href="styles/main.css?v=20260810n" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260810n" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260810n" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260810n" />
 </head>
 <body>
   <div class="app-shell">
@@ -80,7 +80,7 @@
             <button class="site-nav__btn" data-panel-target="tanci" data-i18n="nav.tanci">弹词</button>
             <button class="site-nav__btn" data-panel-target="archive" data-i18n="nav.archive">档案</button>
             <button class="site-nav__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
-            <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">计划</button>
+            <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">学习路径</button>
             <button class="site-nav__btn" data-panel-target="about" data-i18n="nav.about">关于</button>
           </nav>
         </div>
@@ -1335,103 +1335,353 @@
         </div>
       </section>
 
-      <!-- ── Plan panel ── -->
+      <!-- ── Plan panel: learner pathways ── -->
       <section class="panel" data-panel="plan" aria-hidden="true">
         <header class="section-header">
-          <h2 data-i18n="plan.title">项目计划</h2>
-          <p data-i18n="plan.lead">越语侦听：面向越语变体的语言识别——以越剧舞台方言（韵白 / 散白）为切入，不限于单一剧目。</p>
+          <h2 data-i18n="plan.title">学习路径</h2>
+          <p data-i18n="plan.lead">为不同阶段爱好者设计的学习与研究路径：越剧、越语与弹词，可按自己的方式进入。</p>
         </header>
 
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="Plan sections">
-            <button class="plan-nav__link" data-plan-target="scope" aria-current="true" data-i18n="plan.nav.scope">范围</button>
-            <button class="plan-nav__link" data-plan-target="resources" aria-current="false" data-i18n="plan.nav.resources">资源</button>
-            <button class="plan-nav__link" data-plan-target="model" aria-current="false" data-i18n="plan.nav.model">模型</button>
-            <button class="plan-nav__link" data-plan-target="phonology" aria-current="false" data-i18n="plan.nav.phonology">音韵</button>
+            <button class="plan-nav__link" data-plan-target="primer" aria-current="true" data-i18n="plan.nav.primer">简介</button>
+            <button class="plan-nav__link" data-plan-target="beginner" aria-current="false" data-i18n="plan.nav.beginner">初识者</button>
+            <button class="plan-nav__link" data-plan-target="enthusiast" aria-current="false" data-i18n="plan.nav.enthusiast">入门者</button>
+            <button class="plan-nav__link" data-plan-target="practitioner" aria-current="false" data-i18n="plan.nav.practitioner">进阶者</button>
+            <button class="plan-nav__link" data-plan-target="custodian" aria-current="false" data-i18n="plan.nav.custodian">传承者</button>
+            <button class="plan-nav__link" data-plan-target="relation" aria-current="false" data-i18n="plan.nav.relation">阶段关系</button>
           </nav>
 
           <div class="plan-content">
-            <div class="plan-section" data-plan-section="scope" aria-hidden="false">
-              <h3>Task calibration</h3>
-              <div class="callout">
-                <p>
-                  Scope is <strong>越语 (Yueyu) linguistic ASR</strong> — broader than 越剧 alone.
-                  Yue opera stage dialect (韵白 / 散白 / 中州韵 hybrid) is the first high-value domain;
-                  everyday Shengzhou / Shaoxing speech can be mixed in later.
-                </p>
+            <div class="plan-section" data-plan-section="primer" aria-hidden="false">
+              <div data-visible-lang="zh-Hans">
+                <h3>先认识这几件事</h3>
+                <p>进入学习路径前，先分清越语、越剧、弹词，以及本站还会出现的广播口语。</p>
+                <div class="plan-primer-grid">
+                  <article class="plan-primer-card">
+                    <h4>越语</h4>
+                    <p>越语主要指绍兴、嵊州一带的吴语口语。它活在街坊、家庭与日常对话里，也进入舞台。越语不等于普通话，也不等于整场越剧本身。</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>越剧</h4>
+                    <p>越剧是以嵊州话为基础发展起来的戏曲。台上常见散白（更接近口语）与韵白（中州韵与吴语声调的混合）。本站档案里的越剧选段，帮助你边听边读。</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>弹词</h4>
+                    <p>弹词是江南说唱传统，常以纸质唱本、刻本流传。本站弹词档案以图文翻页为主，可按页识别文字，适合跟读与研究。</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>广播口语</h4>
+                    <p>电台方言节目与日常说话，保留更接近“活着说出来”的越语/吴语证据，是舞台之外的重要补充。</p>
+                  </article>
+                </div>
               </div>
-              <p>Two output layers planned:</p>
-              <ul>
-                <li><strong>汉字戏词 / 汉字转写</strong> — most practical for school demos and archive reading</li>
-                <li><strong>wugniu 嵊州拉丁化 + 声调</strong> — high research value for Wu linguistics; smaller audience</li>
-              </ul>
-              <p>Phase 1 targets 汉字. Phase 2 adds 嵊州拼音 layer.</p>
-
-              <h3 style="margin-top: var(--space-8)">Speech types</h3>
-              <ul>
-                <li><strong>散白</strong> — closer to everyday Shengzhou speech; relatively easier to recognize</li>
-                <li><strong>韵白</strong> — hybrid of 中州韵 + Wu tones; where generic ASR fails hardest</li>
-              </ul>
-            </div>
-
-            <div class="plan-section" data-plan-section="resources" aria-hidden="true">
-              <h3>Resource types &amp; pipeline</h3>
-              <table class="dataset-table">
-                <thead>
-                  <tr>
-                    <th>Source</th>
-                    <th>Examples</th>
-                    <th>Approach</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Official recordings</td>
-                    <td>CCTV, Zhejiang TV, Shaoxing Xiaobaihua DVDs</td>
-                    <td>Extract audio + OCR subtitles → Whisper alignment → human correction</td>
-                  </tr>
-                  <tr>
-                    <td>Scripts / subtitles</td>
-                    <td>戏考网, troupe publications</td>
-                    <td>OCR + aeneas / whisper-timestamped coarse align → manual fix</td>
-                  </tr>
-                  <tr>
-                    <td>Private corpus packs</td>
-                    <td>Local Baidu 越剧-1451首 (~1,200+ tracks)</td>
-                    <td>Inventory locally; publish curated clips + text only</td>
-                  </tr>
-                  <tr>
-                    <td>Live / fan covers</td>
-                    <td>Bilibili uploads</td>
-                    <td>test-live split; contemporary pronunciation distribution</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div class="plan-section" data-plan-section="model" aria-hidden="true">
-              <h3>Model approach</h3>
-              <p>Don't train from scratch — <strong>Whisper-small (244M) + LoRA r=32</strong> is the fastest open-source path.</p>
-              <ul>
-                <li>Encoder: frozen or LoRA on q,v (r=8)</li>
-                <li>Decoder: tokenizer + ~200 吴语特字; LoRA r=32 on q,k,v,o</li>
-                <li>Output: 汉字 with timestamps</li>
-                <li>Optional second pass: wugniu-嵊州拼音 via small LM</li>
-              </ul>
-              <p>200–500 hours of aligned data → usable small model. 1000 hours → medium or Data2vec2 + Qwen2 0.5B.</p>
-              <div class="callout">
-                <p>For broader 越语 coverage beyond Yue opera, mix everyday Shengzhou/Shaoxing speech with stage data.</p>
+              <div data-visible-lang="zh-Hant">
+                <h3>先認識這幾件事</h3>
+                <p>進入學習路徑前，先分清越語、越劇、彈詞，以及本站還會出現的廣播口語。</p>
+                <div class="plan-primer-grid">
+                  <article class="plan-primer-card">
+                    <h4>越語</h4>
+                    <p>越語主要指紹興、嵊州一帶的吳語口語。它活在街坊、家庭與日常對話裏，也進入舞臺。越語不等於普通話，也不等於整場越劇本身。</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>越劇</h4>
+                    <p>越劇是以嵊州話爲基礎發展起來的戲曲。臺上常見散白（更接近口語）與韻白（中州韻與吳語聲調的混合）。本站檔案裏的越劇選段，幫助你邊聽邊讀。</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>彈詞</h4>
+                    <p>彈詞是江南說唱傳統，常以紙質唱本、刻本流傳。本站彈詞檔案以圖文翻頁爲主，可按頁識別文字，適合跟讀與研究。</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>廣播口語</h4>
+                    <p>電臺方言節目與日常說話，保留更接近「活着說出來」的越語/吳語證據，是舞臺之外的重要補充。</p>
+                  </article>
+                </div>
+              </div>
+              <div data-visible-lang="en">
+                <h3>First, a short map</h3>
+                <p>Before the pathways, separate Yueyu, Yue Opera, Tanci, and the radio speech you will also meet on this site.</p>
+                <div class="plan-primer-grid">
+                  <article class="plan-primer-card">
+                    <h4>Yueyu</h4>
+                    <p>Yueyu here means Wu speech of the Shaoxing / Shengzhou area. It lives in streets, homes, and daily talk, and also enters the stage. It is not Mandarin, and it is not “the whole of Yue Opera.”</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>Yue Opera</h4>
+                    <p>Yue Opera grew from Shengzhou speech. On stage you hear 散白 (closer to speech) and 韵白 (a hybrid of Zhongzhou rhyme and Wu tones). Archive clips help you listen and read at once.</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>Tanci</h4>
+                    <p>Tanci is Jiangnan storytelling, often preserved in woodblock and printed libretti. Here, tanci pieces are image + text flip readers with per-page OCR—good for reading and research.</p>
+                  </article>
+                  <article class="plan-primer-card">
+                    <h4>Radio speech</h4>
+                    <p>Dialect radio and everyday talk keep living Yueyu / Wu evidence beyond the theatre—an important complement to stage material.</p>
+                  </article>
+                </div>
               </div>
             </div>
-
-            <div class="plan-section" data-plan-section="phonology" aria-hidden="true">
-              <h3>Phonology &amp; 韵白</h3>
-              <p>Yue opera is based on 嵊州话 (Taihu Wu, Lin-Shao sub-group), but 韵白 is a hybrid — not pure Shengzhou.</p>
-              <ul>
-                <li>吴语学堂 wugniu has Shengzhou data for 特字 ↔ pinyin mapping</li>
-                <li>《嵊县志·方言编》 + 钱乃荣《吴语声调实验录》 for tonal acoustics</li>
-                <li>Stage "Shengzhou" ≠ everyday Shengzhou — document scope clearly in README</li>
-              </ul>
+            <div class="plan-section" data-plan-section="beginner" aria-hidden="true">
+              <div data-visible-lang="zh-Hans" class="plan-stage">
+                <p class="plan-stage__num">01</p>
+                <h3>第一阶段：初识者</h3>
+                <h4>如果你是这样的人</h4>
+                <p>你可能只是无意间刷到一段越剧唱段，觉得那个声音很特别、很打动人。你可能完全听不懂唱的是什么，但就是被那股味道吸引住了。或者你家中有长辈喜欢越剧，你从小听过一些片段，但从来没有真正去了解过。又或者你对方言感兴趣，想听听看越语到底和普通话有什么不一样。</p>
+                <h4>你可以从这里开始</h4>
+                <p>我们在档案里准备了入门级精选片段，每段尽量配有情节介绍，并可切换简体 / 繁體 / English。你不需要先懂方言或戏曲知识，也可以跟着文字与简介听懂故事。</p>
+                <p>听说翻译可用来试听自己的声音或短音频，对照简繁英阅读。纯越语旁白双轨等更细的入门素材，我们会随语料推进陆续补上。</p>
+                <h4>你可以试着做这些</h4>
+                <ul class="plan-try">
+                  <li>打开档案，挑一段越剧精选，先听一遍，再打开字幕/文本对照着听。</li>
+                  <li>试着跟读一两句念白，感受越语与普通话不一样的地方。</li>
+                  <li>听到有趣的词就记下来；完整词汇表仍在建设中，可先在档案文本与剧情简介里对照理解。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">打开档案</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="speak">试试听说翻译</button>
+                </div>
+              </div>
+              <div data-visible-lang="zh-Hant" class="plan-stage">
+                <p class="plan-stage__num">01</p>
+                <h3>第一階段：初識者</h3>
+                <h4>如果你是這樣的人</h4>
+                <p>你可能只是無意間刷到一段越劇唱段，覺得那個聲音很特別、很打動人。你可能完全聽不懂唱的是什麼，但就是被那股味道吸引住了。或者你家中有長輩喜歡越劇，你從小聽過一些片段，但從來沒有真正去了解過。又或者你對方言感興趣，想聽聽看越語到底和普通話有什麼不一樣。</p>
+                <h4>你可以從這裡開始</h4>
+                <p>我們在檔案裏準備了入門級精選片段，每段儘量配有情節介紹，並可切換簡體 / 繁體 / English。你不需要先懂方言或戲曲知識，也可以跟着文字與簡介聽懂故事。</p>
+                <p>聽說翻譯可用來試聽自己的聲音或短音頻，對照簡繁英閱讀。純越語旁白雙軌等更細的入門素材，我們會隨語料推進陸續補上。</p>
+                <h4>你可以試着做這些</h4>
+                <ul class="plan-try">
+                  <li>打開檔案，挑一段越劇精選，先聽一遍，再打開字幕/文本對照着聽。</li>
+                  <li>試着跟讀一兩句念白，感受越語與普通話不一樣的地方。</li>
+                  <li>聽到有趣的詞就記下來；完整詞彙表仍在建設中，可先在檔案文本與劇情簡介裏對照理解。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">打開檔案</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="speak">試試聽說翻譯</button>
+                </div>
+              </div>
+              <div data-visible-lang="en" class="plan-stage">
+                <p class="plan-stage__num">01</p>
+                <h3>Stage 1: The Curious Beginner</h3>
+                <h4>If this sounds like you</h4>
+                <p>Maybe you stumbled across a Yue Opera clip online and something about the voice struck you, even though you could not understand a single word. Or maybe you grew up with older relatives who loved Yue Opera, so you have heard bits and pieces over the years but never really looked into it. Perhaps you are simply interested in dialects and want to hear what Yueyu sounds like compared to Mandarin.</p>
+                <h4>You can start here</h4>
+                <p>The Archive offers beginner-friendly clips with plot intros and Simplified / Traditional / English reading. You do not need dialect or opera knowledge first—you can follow the story in writing while you listen.</p>
+                <p>Speak lets you try your own voice or short audio and read the three language outputs. Finer bilingual narration tracks will be added as the corpus grows.</p>
+                <h4>Things you can try</h4>
+                <ul class="plan-try">
+                  <li>Open Archive, pick a Yue Opera clip, listen once, then follow along with the text.</li>
+                  <li>Try reading one or two spoken lines aloud and notice how Yueyu differs from Mandarin.</li>
+                  <li>Jot down interesting words; a full vocabulary list is still being built—use plot intros and transcripts for now.</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">Open Archive</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="speak">Try Speak</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan-section" data-plan-section="enthusiast" aria-hidden="true">
+              <div data-visible-lang="zh-Hans" class="plan-stage">
+                <p class="plan-stage__num">02</p>
+                <h3>第二阶段：入门者</h3>
+                <h4>如果你是这样的人</h4>
+                <p>你已经听过一些越剧或弹词了，至少知道几个常见的剧目名字和大致的故事。你开始注意到越语里面有些词和普通话完全不一样，你想搞清楚它们到底怎么读、什么意思。你可能还说不来方言，但耳朵已经开始变得敏感了，能分辨出哪些是普通话的调子、哪些是越语的调子。</p>
+                <h4>你可以从这里继续</h4>
+                <p>档案中的中等长度选段带有多语对照；弹词刻本可按页识别文字，方便一边看图一边读字。</p>
+                <p>方言词汇卡片与更系统的注音表仍在建设中。现阶段请善用档案文本、剧情简介，以及弹词页上的识别结果做对照。</p>
+                <h4>你可以试着做这些</h4>
+                <ul class="plan-try">
+                  <li>找一段熟悉的唱段，先不看文字只靠耳朵听，再对照档案转写检查听对了什么、听漏了什么。</li>
+                  <li>打开弹词档案，对一页刻本做「识别本页」，把难字与唱词慢慢读出来。</li>
+                  <li>挑两三个方言词，试着跟家里老人聊时抛出来，听听他们的反应。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">继续档案</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="tanci">打开弹词识别</button>
+                </div>
+              </div>
+              <div data-visible-lang="zh-Hant" class="plan-stage">
+                <p class="plan-stage__num">02</p>
+                <h3>第二階段：入門者</h3>
+                <h4>如果你是這樣的人</h4>
+                <p>你已經聽過一些越劇或彈詞了，至少知道幾個常見的劇目名字和大致的故事。你開始注意到越語裡面有些詞和普通話完全不一樣，你想搞清楚它們到底怎麼讀、什麼意思。你可能還說不來方言，但耳朵已經開始變得敏感了，能分辨出哪些是普通話的調子、哪些是越語的調子。</p>
+                <h4>你可以從這裡繼續</h4>
+                <p>檔案中的中等長度選段帶有多語對照；彈詞刻本可按頁識別文字，方便一邊看圖一邊讀字。</p>
+                <p>方言詞彙卡片與更系統的注音表仍在建設中。現階段請善用檔案文本、劇情簡介，以及彈詞頁上的識別結果做對照。</p>
+                <h4>你可以試着做這些</h4>
+                <ul class="plan-try">
+                  <li>找一段熟悉的唱段，先不看文字只靠耳朵聽，再對照檔案轉寫檢查聽對了什麼、聽漏了什麼。</li>
+                  <li>打開彈詞檔案，對一頁刻本做「識別本頁」，把難字與唱詞慢慢讀出來。</li>
+                  <li>挑兩三個方言詞，試着跟家裡老人聊時拋出來，聽聽他們的反應。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">繼續檔案</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="tanci">打開彈詞識別</button>
+                </div>
+              </div>
+              <div data-visible-lang="en" class="plan-stage">
+                <p class="plan-stage__num">02</p>
+                <h3>Stage 2: The Growing Enthusiast</h3>
+                <h4>If this sounds like you</h4>
+                <p>You have already listened to some Yue Opera or Tanci. You know at least a few of the common titles and their basic stories. You are starting to notice that some words in Yueyu are completely different from Mandarin, and you want to figure out how they are pronounced and what they mean. You may not be able to speak the dialect yet, but your ear is becoming more sensitive.</p>
+                <h4>You can continue here</h4>
+                <p>Medium-length Archive excerpts carry multilingual text. Tanci woodblock pages can be OCR’d one by one so you can read while looking at the print.</p>
+                <p>Dialect vocabulary cards and fuller pronunciation notes are in progress. For now, lean on transcripts, plot notes, and per-page OCR.</p>
+                <h4>Things you can try</h4>
+                <ul class="plan-try">
+                  <li>Listen to a familiar passage without text first, then check the Archive transcript.</li>
+                  <li>Open a Tanci piece and run “OCR this page” on a woodblock page.</li>
+                  <li>Try two or three dialect words in a chat with an older relative and notice their reaction.</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">Keep reading Archive</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="tanci">Open Tanci OCR</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan-section" data-plan-section="practitioner" aria-hidden="true">
+              <div data-visible-lang="zh-Hans" class="plan-stage">
+                <p class="plan-stage__num">03</p>
+                <h3>第三阶段：进阶者</h3>
+                <h4>如果你是这样的人</h4>
+                <p>大部分常用越语对话和唱词你已经能听懂了，你对越剧的主要流派和代表剧目也心里有数。你能分辨不同演员的发音差异，甚至能说出某一句唱法是哪个流派的味道。你可能自己也会唱上几句，或者在票友圈子里小有名气。</p>
+                <h4>你可以从这里深入</h4>
+                <p>本站已开放可翻页的弹词全书图文、精选越剧对照档案，以及故事页中的语料采集方法说明。未简化的全本录音对照与多版本流派对照工具仍在推进中。</p>
+                <p>你可以把档案与弹词当作精校材料的入口：先读、先对，再把差异记下来。</p>
+                <h4>你可以试着做这些</h4>
+                <ul class="plan-try">
+                  <li>选一段完整折子或弹词章节，自己先做逐句记录，再与站内文本对照差异。</li>
+                  <li>比较不同选段的念白与唱腔用字，留意流派与舞台习惯带来的差别。</li>
+                  <li>自录对照与多版本并排工具属于后续能力；现阶段可用听说翻译做短句自测。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">深入档案</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="story">阅读研究方法</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="speak">短句自测</button>
+                </div>
+              </div>
+              <div data-visible-lang="zh-Hant" class="plan-stage">
+                <p class="plan-stage__num">03</p>
+                <h3>第三階段：進階者</h3>
+                <h4>如果你是這樣的人</h4>
+                <p>大部分常用越語對話和唱詞你已經能聽懂了，你對越劇的主要流派和代表劇目也心裡有數。你能分辨不同演員的發音差異，甚至能說出某一句唱法是哪個流派的味道。你可能自己也會唱上幾句，或者在票友圈子裡小有名氣。</p>
+                <h4>你可以從這裡深入</h4>
+                <p>本站已開放可翻頁的彈詞全書圖文、精選越劇對照檔案，以及故事頁中的語料採集方法說明。未簡化的全本錄音對照與多版本流派對照工具仍在推進中。</p>
+                <p>你可以把檔案與彈詞當作精校材料的入口：先讀、先對，再把差異記下來。</p>
+                <h4>你可以試着做這些</h4>
+                <ul class="plan-try">
+                  <li>選一段完整摺子或彈詞章節，自己先做逐句記錄，再與站內文本對照差異。</li>
+                  <li>比較不同選段的念白與唱腔用字，留意流派與舞臺習慣帶來的差別。</li>
+                  <li>自錄對照與多版本並排工具屬於後續能力；現階段可用聽說翻譯做短句自測。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">深入檔案</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="story">閱讀研究方法</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="speak">短句自測</button>
+                </div>
+              </div>
+              <div data-visible-lang="en" class="plan-stage">
+                <p class="plan-stage__num">03</p>
+                <h3>Stage 3: The Advancing Practitioner</h3>
+                <h4>If this sounds like you</h4>
+                <p>You can understand most common Yueyu conversations and lyrics. You know the major Yue Opera schools and representative works. You can hear pronunciation differences between performers, and maybe identify a school’s flavour. You might sing a few lines yourself.</p>
+                <h4>You can go deeper here</h4>
+                <p>Full-book tanci flip readers, curated Yue Opera archives, and the Story page’s research workflow are already open. Full unsimplified multi-school comparison tools are still being built.</p>
+                <p>Treat Archive and Tanci as entries into carefully prepared text—read, compare, and note differences.</p>
+                <h4>Things you can try</h4>
+                <ul class="plan-try">
+                  <li>Transcribe a scene or tanci chapter yourself, then compare with on-site text.</li>
+                  <li>Compare spoken and sung diction across clips and notice school or stage habits.</li>
+                  <li>Self-upload comparison tools are later work; for now use Speak for short self-tests.</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="archive">Go deeper in Archive</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="story">Read the research loop</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="speak">Short self-test</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan-section" data-plan-section="custodian" aria-hidden="true">
+              <div data-visible-lang="zh-Hans" class="plan-stage">
+                <p class="plan-stage__num">04</p>
+                <h3>第四阶段：传承者</h3>
+                <h4>如果你是这样的人</h4>
+                <p>你可能是个资深票友、退休艺人、方言研究者，或者只是一个对越语和越剧有深厚感情、愿意花时间做长期工作的普通人。你对发音的细微差别很敏感，对唱腔的传统讲究有自己的判断，你手里可能还存着一些外面找不到的老资料、老唱本。更重要的是，你愿意把你知道的东西拿出来，让更多人看到。</p>
+                <h4>你可以从这里贡献</h4>
+                <p>完整的语料后台与开放标注权限仍在建设中。现在你已经可以通过故事页了解采集—转写—母语者验证—回流的闭环，并在关于页查看我们提供的研究与工程路径。</p>
+                <p>若你愿意合作校对、提供手抄本或老录音线索，欢迎通过项目仓库维护渠道联系开发者 Alice Chen。</p>
+                <h4>你可以试着做这些</h4>
+                <ul class="plan-try">
+                  <li>按故事页中的验证思路，审听档案转写是否说得通，记下方言变体。</li>
+                  <li>补充我们遗漏的词汇或唱段线索，尤其是流传窄、记录少的老段子。</li>
+                  <li>若有私人收藏的手抄本、老录音，可先数字化备份，再与我们讨论纳入档案的方式。</li>
+                  <li>也可以成为其他阶段爱好者的引导者，解释唱词典故与方言讲究。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="story">看采集与验证闭环</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="about">查看我们提供什么</button>
+                </div>
+              </div>
+              <div data-visible-lang="zh-Hant" class="plan-stage">
+                <p class="plan-stage__num">04</p>
+                <h3>第四階段：傳承者</h3>
+                <h4>如果你是這樣的人</h4>
+                <p>你可能是個資深票友、退休藝人、方言研究者，或者只是一個對越語和越劇有深厚感情、願意花時間做長期工作的普通人。你對發音的細微差別很敏感，對唱腔的傳統講究有自己的判斷，你手裡可能還存着一些外面找不到的老資料、老唱本。更重要的是，你願意把你知道的東西拿出來，讓更多人看到。</p>
+                <h4>你可以從這裡貢獻</h4>
+                <p>完整的語料後臺與開放標註權限仍在建設中。現在你已經可以通過故事頁了解採集—轉寫—母語者驗證—回流的閉環，並在關於頁查看我們提供的研究與工程路徑。</p>
+                <p>若你願意合作校對、提供手抄本或老錄音線索，歡迎通過項目倉庫維護渠道聯繫開發者 Alice Chen。</p>
+                <h4>你可以試着做這些</h4>
+                <ul class="plan-try">
+                  <li>按故事頁中的驗證思路，審聽檔案轉寫是否說得通，記下方言變體。</li>
+                  <li>補充我們遺漏的詞彙或唱段線索，尤其是流傳窄、記錄少的老段子。</li>
+                  <li>若有私人收藏的手抄本、老錄音，可先數字化備份，再與我們討論納入檔案的方式。</li>
+                  <li>也可以成爲其他階段愛好者的引導者，解釋唱詞典故與方言講究。</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="story">看採集與驗證閉環</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="about">查看我們提供什麼</button>
+                </div>
+              </div>
+              <div data-visible-lang="en" class="plan-stage">
+                <p class="plan-stage__num">04</p>
+                <h3>Stage 4: The Custodian</h3>
+                <h4>If this sounds like you</h4>
+                <p>You might be a seasoned fan, a retired performer, a dialect researcher, or someone with deep attachment who will invest long-term care. You hear fine differences, hold judgment on tradition, and may keep rare scripts or recordings. Most importantly, you are willing to share what you know.</p>
+                <h4>You can contribute here</h4>
+                <p>A full public annotation backend is still in progress. Today you can study the collect → transcribe → validate → feed-back loop on Story, and see the engineering path under About → What we provide.</p>
+                <p>To collaborate on proofreading or rare materials, contact developer Alice Chen through the project repository.</p>
+                <h4>Things you can try</h4>
+                <ul class="plan-try">
+                  <li>Review transcripts with a native-speaker ear and note dialect variants.</li>
+                  <li>Point us to missed vocabulary or rare arias with thin documentation.</li>
+                  <li>Digitise private scripts or recordings first, then discuss adding them carefully.</li>
+                  <li>Guide beginners and enthusiasts through allusions and dialect detail.</li>
+                </ul>
+                <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn" data-panel-target="story">See the validation loop</button>
+                  <button type="button" class="home-cta__btn" data-panel-target="about">What we provide</button>
+                </div>
+              </div>
+            </div>
+            <div class="plan-section" data-plan-section="relation" aria-hidden="true">
+              <div data-visible-lang="zh-Hans">
+                <h3>四个阶段的关系</h3>
+                <p>这四个阶段不是门槛，也不是等级。初识者可以一直停留在初识者的状态，只是听戏、看字幕、享受越剧的美。进阶者也可以永远不走向传承者，这完全取决于每个人的兴趣和意愿。</p>
+                <p>我们只是希望，不管你从哪个阶段进入，都能在里面找到适合自己的东西。喜欢听的就好好听，喜欢学的就慢慢学，愿意付出的就帮大家一起把这件事做下去。</p>
+                <p>越剧和越语从来不只是表演者和研究者的东西。它们活在每一个愿意听、愿意说、愿意记得它们的人身上。</p>
+              </div>
+              <div data-visible-lang="zh-Hant">
+                <h3>四個階段的關係</h3>
+                <p>這四個階段不是門檻，也不是等級。初識者可以一直停留在初識者的狀態，只是聽戲、看字幕、享受越劇的美。進階者也可以永遠不走向傳承者，這完全取決於每個人的興趣和意願。</p>
+                <p>我們只是希望，不管你從哪個階段進入，都能在裡面找到適合自己的東西。喜歡聽的就好好聽，喜歡學的就慢慢學，願意付出的就幫大家一起把這件事做下去。</p>
+                <p>越劇和越語從來不只是表演者和研究者的東西。它們活在每一個願意聽、願意說、願意記得它們的人身上。</p>
+              </div>
+              <div data-visible-lang="en">
+                <h3>The relationship between the four stages</h3>
+                <p>These four stages are not thresholds or ranks. A curious beginner can stay there forever—listening, reading subtitles, enjoying Yue Opera. An advancing practitioner never has to become a custodian. It depends on each person’s interests.</p>
+                <p>Our hope is simply that no matter which stage you enter from, you will find something that suits you. If you enjoy listening, listen well. If you enjoy learning, learn at your own pace. If you are willing to give, join us in carrying this work forward.</p>
+                <p>Yue Opera and Yueyu have never belonged only to performers and researchers. They live in every person who is willing to listen, willing to speak, and willing to remember.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -1441,20 +1691,116 @@
       <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="about.title">关于</h2>
-          <p data-i18n="about.lead">开发者、网站介绍、隐私与版权。</p>
+          <p data-i18n="about.lead">我们提供什么、开发者、网站介绍、隐私与版权。</p>
         </header>
 
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
-            <button class="plan-nav__link" data-about-target="developer" aria-current="true" data-i18n="about.nav.developer">开发者</button>
+            <button class="plan-nav__link" data-about-target="provide" aria-current="true" data-i18n="about.nav.provide">我们提供什么</button>
+            <button class="plan-nav__link" data-about-target="developer" aria-current="false" data-i18n="about.nav.developer">开发者</button>
             <button class="plan-nav__link" data-about-target="intro" aria-current="false" data-i18n="about.nav.intro">网站介绍</button>
             <button class="plan-nav__link" data-about-target="privacy" aria-current="false" data-i18n="about.nav.privacy">隐私</button>
             <button class="plan-nav__link" data-about-target="copyright" aria-current="false" data-i18n="about.nav.copyright">版权</button>
           </nav>
 
           <div class="plan-content">
-            <div class="plan-section" data-about-section="developer" aria-hidden="false">
-              <h3 data-i18n="about.dev.title">1. 开发者</h3>
+            <div class="plan-section" data-about-section="provide" aria-hidden="false">
+              <h3 data-i18n="about.provide.title">1. 我们提供什么</h3>
+              <div data-visible-lang="zh-Hans">
+                <p>这一页说明越语侦听在<strong>研究与工程</strong>上提供什么：识别范围、语料来源思路、模型路径与音韵背景。爱好者学习路径请看上方导航的「学习路径」。</p>
+              </div>
+              <div data-visible-lang="zh-Hant">
+                <p>這一頁說明越語偵聽在<strong>研究與工程</strong>上提供什麼：識別範圍、語料來源思路、模型路徑與音韻背景。愛好者學習路徑請看上方導航的「學習路徑」。</p>
+              </div>
+              <div data-visible-lang="en">
+                <p>This page explains what Yueyu Detecting offers on the <strong>research and engineering</strong> side: recognition scope, corpus sources, model path, and phonology notes. For learner pathways, open <strong>Pathways</strong> in the top nav.</p>
+              </div>
+
+              <article class="plan-offer">
+                <h3>Task calibration</h3>
+                <div class="callout">
+                  <p>
+                    Scope is <strong>越语 (Yueyu) linguistic ASR</strong> — broader than 越剧 alone.
+                    Yue opera stage dialect (韵白 / 散白 / 中州韵 hybrid) is the first high-value domain;
+                    everyday Shengzhou / Shaoxing speech can be mixed in later.
+                  </p>
+                </div>
+                <p>Two output layers planned:</p>
+                <ul>
+                  <li><strong>汉字戏词 / 汉字转写</strong> — most practical for school demos and archive reading</li>
+                  <li><strong>wugniu 嵊州拉丁化 + 声调</strong> — high research value for Wu linguistics; smaller audience</li>
+                </ul>
+                <p>Phase 1 targets 汉字. Phase 2 adds 嵊州拼音 layer.</p>
+                <h3 style="margin-top: var(--space-8)">Speech types</h3>
+                <ul>
+                  <li><strong>散白</strong> — closer to everyday Shengzhou speech; relatively easier to recognize</li>
+                  <li><strong>韵白</strong> — hybrid of 中州韵 + Wu tones; where generic ASR fails hardest</li>
+                </ul>
+              </article>
+
+              <article class="plan-offer">
+                <h3>Resource types &amp; pipeline</h3>
+                <table class="dataset-table">
+                  <thead>
+                    <tr>
+                      <th>Source</th>
+                      <th>Examples</th>
+                      <th>Approach</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Official recordings</td>
+                      <td>CCTV, Zhejiang TV, Shaoxing Xiaobaihua DVDs</td>
+                      <td>Extract audio + OCR subtitles → Whisper alignment → human correction</td>
+                    </tr>
+                    <tr>
+                      <td>Scripts / subtitles</td>
+                      <td>戏考网, troupe publications</td>
+                      <td>OCR + aeneas / whisper-timestamped coarse align → manual fix</td>
+                    </tr>
+                    <tr>
+                      <td>Private corpus packs</td>
+                      <td>Local Baidu 越剧-1451首 (~1,200+ tracks)</td>
+                      <td>Inventory locally; publish curated clips + text only</td>
+                    </tr>
+                    <tr>
+                      <td>Live / fan covers</td>
+                      <td>Bilibili uploads</td>
+                      <td>test-live split; contemporary pronunciation distribution</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </article>
+
+              <article class="plan-offer">
+                <h3>Model approach</h3>
+                <p>Don't train from scratch — <strong>Whisper-small (244M) + LoRA r=32</strong> is the fastest open-source path.</p>
+                <ul>
+                  <li>Encoder: frozen or LoRA on q,v (r=8)</li>
+                  <li>Decoder: tokenizer + ~200 吴语特字; LoRA r=32 on q,k,v,o</li>
+                  <li>Output: 汉字 with timestamps</li>
+                  <li>Optional second pass: wugniu-嵊州拼音 via small LM</li>
+                </ul>
+                <p>200–500 hours of aligned data → usable small model. 1000 hours → medium or Data2vec2 + Qwen2 0.5B.</p>
+                <div class="callout">
+                  <p>For broader 越语 coverage beyond Yue opera, mix everyday Shengzhou/Shaoxing speech with stage data.</p>
+                </div>
+              </article>
+
+              <article class="plan-offer">
+                <h3>Phonology &amp; 韵白</h3>
+                <p>Yue opera is based on 嵊州话 (Taihu Wu, Lin-Shao sub-group), but 韵白 is a hybrid — not pure Shengzhou.</p>
+                <ul>
+                  <li>吴语学堂 wugniu has Shengzhou data for 特字 ↔ pinyin mapping</li>
+                  <li>《嵊县志·方言编》 + 钱乃荣《吴语声调实验录》 for tonal acoustics</li>
+                  <li>Stage "Shengzhou" ≠ everyday Shengzhou — document scope clearly in README</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="plan-section" data-about-section="developer" aria-hidden="true">
+              <h3 data-i18n="about.dev.title">2. 开发者</h3>
               <div class="callout">
                 <p><strong>Alice Chen (Jiachen Chen)</strong></p>
               </div>
@@ -1477,7 +1823,7 @@
             </div>
 
             <div class="plan-section" data-about-section="intro" aria-hidden="true">
-              <h3 data-i18n="about.intro.title">2. 网站介绍</h3>
+              <h3 data-i18n="about.intro.title">3. 网站介绍</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
                 <p><strong>越语侦听</strong> 是产品化的演示与档案网站，两大支柱同等重要：</p>
                 <ul>
@@ -1525,7 +1871,7 @@
             </div>
 
             <div class="plan-section" data-about-section="privacy" aria-hidden="true">
-              <h3 data-i18n="about.privacy.title">3. 隐私</h3>
+              <h3 data-i18n="about.privacy.title">4. 隐私</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
                 <p>我们希望演示轻量，并尊重用户隐私。</p>
                 <ul>
@@ -1549,7 +1895,7 @@
             </div>
 
             <div class="plan-section" data-about-section="copyright" aria-hidden="true">
-              <h3 data-i18n="about.copyright.title">4. 版权与权利</h3>
+              <h3 data-i18n="about.copyright.title">5. 版权与权利</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
                 <div class="callout">
                   <p><strong>越语侦听</strong> 的网站代码、界面设计、精选转写、剧情介绍与编辑整理，除另有说明外，属于 <strong>Alice Chen (Jiachen Chen)</strong> 的项目成果。</p>
@@ -1582,8 +1928,8 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260810m"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260810m"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260810m"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260810n"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260810n"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260810n"></script>
 </body>
 </html>
