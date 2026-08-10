@@ -282,6 +282,13 @@ body {
   transition: box-shadow 0.2s, border-color 0.2s;
 }
 
+/* Author display:flex overrides the UA [hidden] rule — keep filters working */
+.archive-grid > [hidden],
+.piece-card[hidden],
+.add-piece-card[hidden] {
+  display: none !important;
+}
+
 .piece-card--link {
   color: inherit;
   text-decoration: none;
