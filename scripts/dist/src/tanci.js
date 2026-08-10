@@ -5,6 +5,14 @@ import { onLocaleChange, t, tf } from "./i18n.js";
  */
 const STORAGE_KEY = "yueyu.talcneApiBase";
 const DEFAULT_API = "http://127.0.0.1:8000";
+/** Production OCR backend (Render). Used when the site is not on localhost. */
+const PRODUCTION_API = "https://talcne.onrender.com";
+/** Filled from `/config.json` → `talcneApiBase` (optional override). */
+let configApiBase = "";
+function isLocalHost() {
+    const host = window.location.hostname;
+    return host === "localhost" || host === "127.0.0.1" || host === "[::1]";
+}
 const fileInput = document.getElementById("tanci-file");
 const recognizeBtn = document.getElementById("tanci-recognize");
 const exportBtn = document.getElementById("tanci-export");
@@ -27,7 +35,10 @@ function setStatus(text) {
 function normalizeApiBase(raw) {
     return raw.trim().replace(/\/+$/, "");
 }
-/** Hidden config: window.__YUEYU_TALCNE_API__ or localStorage, else localhost. */
+/**
+ * Priority: window override → localStorage → config.json → localhost.
+ * Production: set `talcneApiBase` in `/config.json` to the Render URL.
+ */
 function getApiBase() {
     try {
         const fromWindow = window.__YUEYU_TALCNE_API__;
@@ -41,7 +52,27 @@ function getApiBase() {
     catch {
         /* ignore */
     }
+    if (configApiBase)
+        return configApiBase;
+    // Custom domain / GitHub Pages must never fall back to 127.0.0.1 (causes Failed to fetch).
+    if (!isLocalHost())
+        return PRODUCTION_API;
     return DEFAULT_API;
+}
+async function loadPublicConfig() {
+    try {
+        const url = new URL("config.json", window.location.href).toString();
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok)
+            return;
+        const data = (await res.json());
+        if (typeof data.talcneApiBase === "string" && data.talcneApiBase.trim()) {
+            configApiBase = normalizeApiBase(data.talcneApiBase);
+        }
+    }
+    catch {
+        /* optional file */
+    }
 }
 function refreshActionState() {
     if (recognizeBtn)
@@ -302,9 +333,10 @@ function clearAll() {
     setStatus(t("tanci.ready"));
     refreshActionState();
 }
-function initTanciPanel() {
+async function initTanciPanel() {
     if (!fileInput || !recognizeBtn || !textEl)
         return;
+    await loadPublicConfig();
     fileInput.addEventListener("change", () => {
         selectedFiles = Array.from(fileInput.files ?? []).filter((f) => f.type.startsWith("image/") || /\.(jpe?g|png|webp|gif)$/i.test(f.name));
         renderPreviews();
@@ -329,5 +361,7 @@ function initTanciPanel() {
     renderPreviews();
     refreshActionState();
 }
-document.addEventListener("DOMContentLoaded", initTanciPanel);
+document.addEventListener("DOMContentLoaded", () => {
+    void initTanciPanel();
+});
 //# sourceMappingURL=tanci.js.map
