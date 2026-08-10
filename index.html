@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260810y" />
-  <link rel="stylesheet" href="styles/main.css?v=20260810y" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260810y" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260810y" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260810y" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260810y" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260811a" />
+  <link rel="stylesheet" href="styles/main.css?v=20260811a" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260811a" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260811a" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260811a" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260811a" />
 </head>
 <body>
   <div class="app-shell">
@@ -131,6 +131,9 @@
             <div class="home-cta">
               <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">
                 开始听说翻译
+              </button>
+              <button type="button" class="home-cta__btn" data-panel-target="learn" data-i18n="home.ctaLearn">
+                打开学习工具
               </button>
               <button type="button" class="home-cta__btn" data-panel-target="tanci" data-i18n="home.ctaTanci">
                 打开弹词识别
@@ -1439,7 +1442,7 @@
                   <li>听到有趣的词就记下来；完整词汇表仍在建设中，可先在档案文本与剧情简介里对照理解。</li>
                 </ul>
                 <div class="plan-cta-row">
-                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">开始单字发音</button>
+                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">打开学习工具</button>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">打开档案</button>
                   <button type="button" class="home-cta__btn" data-panel-target="speak">试试听说翻译</button>
                 </div>
@@ -1459,7 +1462,7 @@
                   <li>聽到有趣的詞就記下來；完整詞彙表仍在建設中，可先在檔案文本與劇情簡介裏對照理解。</li>
                 </ul>
                 <div class="plan-cta-row">
-                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">開始單字發音</button>
+                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">打開學習工具</button>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">打開檔案</button>
                   <button type="button" class="home-cta__btn" data-panel-target="speak">試試聽說翻譯</button>
                 </div>
@@ -1479,7 +1482,7 @@
                   <li>Jot down interesting words; a full vocabulary list is still being built—use plot intros and transcripts for now.</li>
                 </ul>
                 <div class="plan-cta-row">
-                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">Start single-character sounds</button>
+                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">Open Learn tools</button>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">Open Archive</button>
                   <button type="button" class="home-cta__btn" data-panel-target="speak">Try Speak</button>
                 </div>
@@ -1696,7 +1699,7 @@
       <section class="panel" data-panel="learn" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="learn.title">学习工具</h2>
-          <p data-i18n="learn.lead">先学怎么读音标，再按阶练习绍兴一带三地单字对照。</p>
+          <p data-i18n="learn.lead">先弄清上虞 / 诸暨 / 嵊州音标怎么拆，再按五阶练单字对照。</p>
         </header>
 
         <div class="learn-layout">
@@ -1708,49 +1711,229 @@
           <div class="learn-content">
             <div class="learn-tool" data-learn-section="pinyin" aria-hidden="false">
               <h3 class="learn-primer__title" data-i18n="learn.pinyin.title">学习拼音</h3>
-              <p class="learn-audience" data-i18n="learn.pinyin.lead">给已会普通话拼音的人：先弄清三地音标怎么读，再进入发音练习。</p>
+              <p class="learn-audience" data-i18n="learn.pinyin.lead">给已会普通话拼音的人：用真实字例学会读三地音标，再进入第 1 阶发音练习。</p>
 
               <div class="learn-primer" data-visible-lang="zh-Hans">
                 <h4>三地是什么</h4>
-                <p>练习对照<strong>上虞 / 诸暨 / 嵊州</strong>。嵊州与越剧念白关系最近，练习页会单独标出。</p>
-                <h4>音标怎么读</h4>
-                <p>每一行是「声韵片段 + 调值数字」。例如嵊州 <code>to534</code>：前面是读音片段，后面 <code>534</code> 是调值，不是普通话四声编号。</p>
-                <h4>你会看到的记号</h4>
+                <p>练习页每个字先给出普通话拼音，再并列绍兴一带三地读音。栏目含义如下：</p>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr>
+                      <th scope="col">栏目</th>
+                      <th scope="col">拼音名</th>
+                      <th scope="col">看什么</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>上虞</td>
+                      <td>Shangyu</td>
+                      <td>本地音对照之一，帮助听出同字在邻县的差异。</td>
+                    </tr>
+                    <tr>
+                      <td>诸暨</td>
+                      <td>Zhuji</td>
+                      <td>另一路本地音；常与上虞、嵊州只有细微差别。</td>
+                    </tr>
+                    <tr class="learn-primer__table-row--focus">
+                      <td>嵊州</td>
+                      <td>Shengzhou</td>
+                      <td>与越剧念白关系最近；练习页会高亮这一行，优先对照它。</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h4>怎么拆一个音标</h4>
+                <p>每一地单元格大致是：<strong>拉丁 / IPA 声韵片段</strong> + 末尾<strong>调值数字</strong>。数字是音高走势（如 <code>534</code>、<code>35</code>、<code>2</code>），不是普通话阴平 / 阳平 / 上声 / 去声的 1–4。</p>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>多 · 普通话 <code>duō</code> · 嵊州 <code>to534</code></dt>
+                    <dd><code>to</code> 是声韵；<code>534</code> 是调值轮廓。上虞 <code>tɷ35</code>、诸暨 <code>tɤu544</code> 同理：先看字母，再读尾数。</dd>
+                  </div>
+                  <div>
+                    <dt>鼻 · 普通话 <code>bí</code> · 嵊州 <code>bɛʔ2</code></dt>
+                    <dd><code>ʔ</code> 是入声塞音收尾，读得短促；尾数 <code>2</code> 仍是调值，不是普通话第二声。</dd>
+                  </div>
+                  <div>
+                    <dt>贪 · 普通话 <code>tān</code> · 嵊州 <code>thœ̃534</code></dt>
+                    <dd><code>th</code> 里的 <code>h</code> 表示送气；元音上的 <code>̃</code> 是鼻化。另如 鹅 嵊州 <code>ŋo213</code>：开头的 <code>ŋ</code> 是鼻音声母。</dd>
+                  </div>
+                  <div>
+                    <dt>拖 · 普通话 <code>tuō</code> · 嵊州 <code>tha534 tho534</code></dt>
+                    <dd>同一格用空格分开两个形式：当地常见不止一种读法。个 上虞 <code>kəʔ5 kɷ53</code> 也是同一规则。</dd>
+                  </div>
+                </dl>
+
+                <h4>记号速查</h4>
                 <ul class="learn-primer__list">
-                  <li><code>ʔ</code>：入声塞音收尾，短促。</li>
-                  <li><code>̃</code> 或带 <code>ŋ</code>：鼻音色彩 / 鼻韵尾。</li>
-                  <li>一行里有空格：同一字在当地有不止一种常见读法。</li>
+                  <li><code>ʔ</code>：入声塞尾（如 鼻 <code>bɛʔ2</code>、绿 <code>loʔ2</code>），短而收住。</li>
+                  <li><code>̃</code>：元音鼻化（如 贪 <code>thœ̃534</code>）。</li>
+                  <li><code>ŋ</code>：鼻音声母或韵尾（如 鹅 <code>ŋo213</code>）。</li>
+                  <li>塞音后的 <code>h</code>：送气，常见 <code>th</code> <code>kh</code> <code>ph</code>（如 可 <code>kho53</code>）。</li>
+                  <li>尾部数字：调值轮廓（35、534、213、5…），不是阴平 1 / 阳平 2 那套编号。</li>
+                  <li>空格：一格多读（如 拖 <code>tha534 tho534</code>）。</li>
+                  <li>常见字母：<code>t d k o ɤ ɷ ə ɛ œ</code> 等，按近似音去记即可，不必先学完整 IPA。</li>
                 </ul>
-                <h4>建议顺序</h4>
-                <p>先从第 1 阶「开音节入门」练起，再进鼻音韵、入声、多读与综合。</p>
+
+                <h4>和普通话拼音有什么不同</h4>
+                <p>汉字相同，读音形状往往不同。请先用普通话拼音锚定「这是哪个字、什么意思」，再逐行比较上虞 / 诸暨 / 嵊州——目标是对照，不是把三地音改写成普通话拼音。</p>
+
+                <h4>五阶练什么</h4>
+                <ol class="learn-primer__levels">
+                  <li><strong>1 开音节入门</strong> — 无鼻化、无入声塞尾的基础开音节，先学会拆「声韵 + 调值」。</li>
+                  <li><strong>2 鼻音韵</strong> — 练 <code>̃</code>、<code>ŋ</code> 等鼻音色彩与鼻韵。</li>
+                  <li><strong>3 入声</strong> — 专练带 <code>ʔ</code> 的短促收尾。</li>
+                  <li><strong>4 多读对照</strong> — 同一字一地有两种以上写法时，学会用空格分开读。</li>
+                  <li><strong>5 综合巩固</strong> — 开音节、鼻音、入声与多读混在一起复习。</li>
+                </ol>
               </div>
               <div class="learn-primer" data-visible-lang="zh-Hant">
                 <h4>三地是什麼</h4>
-                <p>練習對照<strong>上虞 / 諸暨 / 嵊州</strong>。嵊州與越劇念白關係最近，練習頁會單獨標出。</p>
-                <h4>音標怎麼讀</h4>
-                <p>每一行是「聲韻片段 + 調值數字」。例如嵊州 <code>to534</code>：前面是讀音片段，後面 <code>534</code> 是調值，不是普通話四聲編號。</p>
-                <h4>你會看到的記號</h4>
+                <p>練習頁每個字先給出普通話拼音，再並列紹興一帶三地讀音。欄目含義如下：</p>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr>
+                      <th scope="col">欄目</th>
+                      <th scope="col">拼音名</th>
+                      <th scope="col">看什麼</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>上虞</td>
+                      <td>Shangyu</td>
+                      <td>本地音對照之一，幫助聽出同字在鄰縣的差異。</td>
+                    </tr>
+                    <tr>
+                      <td>諸暨</td>
+                      <td>Zhuji</td>
+                      <td>另一路本地音；常與上虞、嵊州只有細微差別。</td>
+                    </tr>
+                    <tr class="learn-primer__table-row--focus">
+                      <td>嵊州</td>
+                      <td>Shengzhou</td>
+                      <td>與越劇念白關係最近；練習頁會高亮這一行，優先對照它。</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h4>怎麼拆一個音標</h4>
+                <p>每一地單元格大致是：<strong>拉丁 / IPA 聲韻片段</strong> + 末尾<strong>調值數字</strong>。數字是音高走勢（如 <code>534</code>、<code>35</code>、<code>2</code>），不是普通話陰平 / 陽平 / 上聲 / 去聲的 1–4。</p>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>多 · 普通話 <code>duō</code> · 嵊州 <code>to534</code></dt>
+                    <dd><code>to</code> 是聲韻；<code>534</code> 是調值輪廓。上虞 <code>tɷ35</code>、諸暨 <code>tɤu544</code> 同理：先看字母，再讀尾數。</dd>
+                  </div>
+                  <div>
+                    <dt>鼻 · 普通話 <code>bí</code> · 嵊州 <code>bɛʔ2</code></dt>
+                    <dd><code>ʔ</code> 是入聲塞音收尾，讀得短促；尾數 <code>2</code> 仍是調值，不是普通話第二聲。</dd>
+                  </div>
+                  <div>
+                    <dt>貪 · 普通話 <code>tān</code> · 嵊州 <code>thœ̃534</code></dt>
+                    <dd><code>th</code> 裡的 <code>h</code> 表示送氣；元音上的 <code>̃</code> 是鼻化。另如 鵝 嵊州 <code>ŋo213</code>：開頭的 <code>ŋ</code> 是鼻音聲母。</dd>
+                  </div>
+                  <div>
+                    <dt>拖 · 普通話 <code>tuō</code> · 嵊州 <code>tha534 tho534</code></dt>
+                    <dd>同一格用空格分開兩個形式：當地常見不止一種讀法。個 上虞 <code>kəʔ5 kɷ53</code> 也是同一規則。</dd>
+                  </div>
+                </dl>
+
+                <h4>記號速查</h4>
                 <ul class="learn-primer__list">
-                  <li><code>ʔ</code>：入聲塞音收尾，短促。</li>
-                  <li><code>̃</code> 或帶 <code>ŋ</code>：鼻音色彩 / 鼻韻尾。</li>
-                  <li>一行裏有空格：同一字在當地有不止一種常見讀法。</li>
+                  <li><code>ʔ</code>：入聲塞尾（如 鼻 <code>bɛʔ2</code>、綠 <code>loʔ2</code>），短而收住。</li>
+                  <li><code>̃</code>：元音鼻化（如 貪 <code>thœ̃534</code>）。</li>
+                  <li><code>ŋ</code>：鼻音聲母或韻尾（如 鵝 <code>ŋo213</code>）。</li>
+                  <li>塞音後的 <code>h</code>：送氣，常見 <code>th</code> <code>kh</code> <code>ph</code>（如 可 <code>kho53</code>）。</li>
+                  <li>尾部數字：調值輪廓（35、534、213、5…），不是陰平 1 / 陽平 2 那套編號。</li>
+                  <li>空格：一格多讀（如 拖 <code>tha534 tho534</code>）。</li>
+                  <li>常見字母：<code>t d k o ɤ ɷ ə ɛ œ</code> 等，按近似音去記即可，不必先學完整 IPA。</li>
                 </ul>
-                <h4>建議順序</h4>
-                <p>先從第 1 階「開音節入門」練起，再進鼻音韻、入聲、多讀與綜合。</p>
+
+                <h4>和普通話拼音有什麼不同</h4>
+                <p>漢字相同，讀音形狀往往不同。請先用普通話拼音錨定「這是哪個字、什麼意思」，再逐行比較上虞 / 諸暨 / 嵊州——目標是對照，不是把三地音改寫成普通話拼音。</p>
+
+                <h4>五階練什麼</h4>
+                <ol class="learn-primer__levels">
+                  <li><strong>1 開音節入門</strong> — 無鼻化、無入聲塞尾的基礎開音節，先學會拆「聲韻 + 調值」。</li>
+                  <li><strong>2 鼻音韻</strong> — 練 <code>̃</code>、<code>ŋ</code> 等鼻音色彩與鼻韻。</li>
+                  <li><strong>3 入聲</strong> — 專練帶 <code>ʔ</code> 的短促收尾。</li>
+                  <li><strong>4 多讀對照</strong> — 同一字一地有兩種以上寫法時，學會用空格分開讀。</li>
+                  <li><strong>5 綜合鞏固</strong> — 開音節、鼻音、入聲與多讀混在一起複習。</li>
+                </ol>
               </div>
               <div class="learn-primer" data-visible-lang="en">
                 <h4>Three places</h4>
-                <p>You will compare <strong>Shangyu / Zhuji / Shengzhou</strong>. Shengzhou is highlighted because it is closest to Yue Opera speech.</p>
-                <h4>How to read a line</h4>
-                <p>Each line is a sound shape plus tone numbers, e.g. Shengzhou <code>to534</code>. The digits are pitch values, not Mandarin tone 1–4 labels.</p>
-                <h4>Marks you will see</h4>
+                <p>Each card shows Mandarin pinyin first, then three Shaoxing-area readings side by side:</p>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Column</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">What it is for</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>上虞</td>
+                      <td>Shangyu</td>
+                      <td>One local reading line—use it to notice neighbour-county differences.</td>
+                    </tr>
+                    <tr>
+                      <td>诸暨</td>
+                      <td>Zhuji</td>
+                      <td>Another local line; often only a small shift from Shangyu or Shengzhou.</td>
+                    </tr>
+                    <tr class="learn-primer__table-row--focus">
+                      <td>嵊州</td>
+                      <td>Shengzhou</td>
+                      <td>Closest to Yue Opera speech; the drill highlights this row—compare it first.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h4>How to parse a token</h4>
+                <p>Each local cell is roughly a <strong>Latin / IPA body</strong> plus trailing <strong>pitch-contour digits</strong>. Those digits (e.g. <code>534</code>, <code>35</code>, <code>2</code>) are pitch values—not Mandarin tones 1–4 (阴平 / 阳平 / 上声 / 去声).</p>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>多 · Mandarin <code>duō</code> · Shengzhou <code>to534</code></dt>
+                    <dd><code>to</code> is the sound body; <code>534</code> is the contour. Shangyu <code>tɷ35</code> and Zhuji <code>tɤu544</code> work the same way: letters first, digits last.</dd>
+                  </div>
+                  <div>
+                    <dt>鼻 · Mandarin <code>bí</code> · Shengzhou <code>bɛʔ2</code></dt>
+                    <dd><code>ʔ</code> marks an entering-tone stop—short and clipped. The final <code>2</code> is still a pitch value, not Mandarin tone 2.</dd>
+                  </div>
+                  <div>
+                    <dt>贪 · Mandarin <code>tān</code> · Shengzhou <code>thœ̃534</code></dt>
+                    <dd>The <code>h</code> in <code>th</code> means aspiration; <code>̃</code> on the vowel is nasalisation. For a leading nasal, see 鹅 Shengzhou <code>ŋo213</code>.</dd>
+                  </div>
+                  <div>
+                    <dt>拖 · Mandarin <code>tuō</code> · Shengzhou <code>tha534 tho534</code></dt>
+                    <dd>A space separates two common local readings in one cell. Same rule for 个 Shangyu <code>kəʔ5 kɷ53</code>.</dd>
+                  </div>
+                </dl>
+
+                <h4>Symbol legend</h4>
                 <ul class="learn-primer__list">
-                  <li><code>ʔ</code>: entering-tone stop; short and clipped.</li>
-                  <li><code>̃</code> or <code>ŋ</code>: nasal colour / nasal ending.</li>
-                  <li>A space in one cell: more than one common local reading.</li>
+                  <li><code>ʔ</code>: entering-tone stop (e.g. 鼻 <code>bɛʔ2</code>, 绿 <code>loʔ2</code>)—short and checked.</li>
+                  <li><code>̃</code>: nasalised vowel (e.g. 贪 <code>thœ̃534</code>).</li>
+                  <li><code>ŋ</code>: nasal initial or ending (e.g. 鹅 <code>ŋo213</code>).</li>
+                  <li><code>h</code> after a stop: aspiration—common as <code>th</code> <code>kh</code> <code>ph</code> (e.g. 可 <code>kho53</code>).</li>
+                  <li>Trailing digits: pitch contour (35, 534, 213, 5…) — not Mandarin tone numbers 1–4.</li>
+                  <li>Space: more than one reading in a cell (e.g. 拖 <code>tha534 tho534</code>).</li>
+                  <li>Letters you will see often: <code>t d k o ɤ ɷ ə ɛ œ</code>—treat them as approximate shapes; you need not learn full IPA first.</li>
                 </ul>
-                <h4>Suggested path</h4>
-                <p>Start at Level 1 (open syllables), then nasals, entering tones, multiple readings, and mixed review.</p>
+
+                <h4>How this differs from Mandarin pinyin</h4>
+                <p>Same hanzi, different sound shapes. Use Mandarin pinyin to anchor meaning (“which character is this?”), then compare the three local lines. Do not rewrite the local forms as Mandarin pinyin.</p>
+
+                <h4>Level path</h4>
+                <ol class="learn-primer__levels">
+                  <li><strong>1 开音节入门 / Open syllables</strong> — plain open syllables without nasalisation or <code>ʔ</code>; practise splitting body + contour.</li>
+                  <li><strong>2 鼻音韵 / Nasal rhymes</strong> — practise <code>̃</code>, <code>ŋ</code>, and other nasal colour.</li>
+                  <li><strong>3 入声 / Entering tones</strong> — focus on short checked endings with <code>ʔ</code>.</li>
+                  <li><strong>4 多读对照 / Multiple readings</strong> — cells with two+ forms separated by spaces.</li>
+                  <li><strong>5 综合巩固 / Mixed review</strong> — open syllables, nasals, entering tones, and multiple readings together.</li>
+                </ol>
               </div>
 
               <div class="plan-cta-row">
@@ -2063,9 +2246,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260810y"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260810y"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260810y"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260810y"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260811a"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260811a"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260811a"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260811a"></script>
 </body>
 </html>
