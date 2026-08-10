@@ -65,11 +65,11 @@
   },
   {
     "id": "pearl-tower-gift",
-    "title": "珍珠塔 · 赠塔",
-    "titleEn": "Pearl Tower · The Gift",
-    "meta": "Pearl Tower · The Gift · text layer",
-    "note": "First tanci archive piece via Talcne OCR bridge. Trilingual text layer; synthetic line order timings; no audio yet.",
-    "lines": 10,
+    "title": "珍珠塔 · 重编本",
+    "titleEn": "Pearl Tower · Revised edition",
+    "meta": "Pearl Tower · full PDF · image + OCR",
+    "note": "Full woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 222,
     "category": "tanci"
   },
   {
@@ -89,5 +89,167 @@
         "v1.0.0"
       ]
     ]
+  },
+  {
+    "id": "zai-sheng-yuan",
+    "title": "再生缘 · 刻本",
+    "titleEn": "Zai Sheng Yuan · Woodblock print",
+    "meta": "Zai Sheng Yuan · Woodblock print · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 204,
+    "category": "tanci"
+  },
+  {
+    "id": "yu-qing-ting",
+    "title": "玉蜻蜓 · 刻本",
+    "titleEn": "Jade Dragonfly · Woodblock print",
+    "meta": "Jade Dragonfly · Woodblock print · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 163,
+    "category": "tanci"
+  },
+  {
+    "id": "yi-yao-zhuan-1-3",
+    "title": "绣像义妖传 · 卷1–3",
+    "titleEn": "Illustrated Tale of the Righteous Demon · vols. 1–3",
+    "meta": "Illustrated Tale of the Righteous Demon · vols. 1–3 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 110,
+    "category": "tanci"
+  },
+  {
+    "id": "shuang-zhu-feng-1",
+    "title": "双珠凤 · 面1",
+    "titleEn": "Shuang Zhu Feng · part 1",
+    "meta": "Shuang Zhu Feng · part 1 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 1,
+    "category": "tanci"
+  },
+  {
+    "id": "shuang-zhu-feng-2",
+    "title": "双珠凤 · 面2",
+    "titleEn": "Shuang Zhu Feng · part 2",
+    "meta": "Shuang Zhu Feng · part 2 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 1,
+    "category": "tanci"
+  },
+  {
+    "id": "shuang-zhu-feng-3",
+    "title": "双珠凤 · 面3",
+    "titleEn": "Shuang Zhu Feng · part 3",
+    "meta": "Shuang Zhu Feng · part 3 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 1,
+    "category": "tanci"
+  },
+  {
+    "id": "tian-yu-hua-1",
+    "title": "天雨花 · 第1册",
+    "titleEn": "Tian Yu Hua · vol. 1",
+    "meta": "Tian Yu Hua · vol. 1 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 239,
+    "category": "tanci"
+  },
+  {
+    "id": "tian-yu-hua-2",
+    "title": "天雨花 · 第2卷",
+    "titleEn": "Tian Yu Hua · vol. 2",
+    "meta": "Tian Yu Hua · vol. 2 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 231,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-1",
+    "title": "绘图笔生花 · 卷1",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 1",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 1 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 62,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-3",
+    "title": "绘图笔生花 · 卷3",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 3",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 3 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 49,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-4",
+    "title": "绘图笔生花 · 卷4",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 4",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 4 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 58,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-7",
+    "title": "绘图笔生花 · 卷7",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 7",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 7 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 50,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-9",
+    "title": "绘图笔生花 · 卷9",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 9",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 9 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 52,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-10",
+    "title": "绘图笔生花 · 卷10",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 10",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 10 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 50,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-13",
+    "title": "绘图笔生花 · 卷13",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 13",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 13 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 49,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-14",
+    "title": "绘图笔生花 · 卷14",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 14",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 14 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 57,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-15",
+    "title": "绘图笔生花 · 卷15",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 15",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 15 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 61,
+    "category": "tanci"
+  },
+  {
+    "id": "bi-sheng-hua-16",
+    "title": "绘图笔生花 · 卷16",
+    "titleEn": "Bi Sheng Hua (illustrated) · vol. 16",
+    "meta": "Bi Sheng Hua (illustrated) · vol. 16 · full PDF · image + OCR",
+    "note": "Qing tanci woodblock/print PDF flip reader with on-demand per-page OCR. Image+text, not audio timeline.",
+    "lines": 61,
+    "category": "tanci"
   }
 ]
