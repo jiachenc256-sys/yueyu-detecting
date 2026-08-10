@@ -52,7 +52,7 @@
 }
 
 .ziyin-stage {
-  max-width: 28rem;
+  max-width: 34rem;
 }
 
 .ziyin-card {
@@ -105,10 +105,25 @@
   line-height: 1.4;
 }
 
-.ziyin-row__value--yueyu {
-  color: var(--color-accent);
+.ziyin-row__value--ipa {
   font-family: var(--font-mono);
   font-size: var(--text-lg);
+  word-break: break-word;
+}
+
+.ziyin-row--focus .ziyin-row__label,
+.ziyin-row__value--focus {
+  color: var(--color-accent);
+}
+
+.ziyin-source {
+  margin: var(--space-2) 0 0;
+  max-width: 36rem;
+  color: var(--color-ink-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  line-height: var(--leading-relaxed);
 }
 
 .ziyin-gloss {

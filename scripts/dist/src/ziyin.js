@@ -1,5 +1,5 @@
 "use strict";
-/** Single-character pronunciation drill (字音) for Mandarin-pinyin learners. */
+/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州 (语保工程). */
 function requireEl(el, name) {
     if (!el)
         throw new Error(`Missing element: ${name}`);
@@ -11,16 +11,19 @@ async function initZiyin() {
         return;
     const hanEl = requireEl(document.getElementById("ziyin-han"), "ziyin-han");
     const pinyinEl = requireEl(document.getElementById("ziyin-pinyin"), "ziyin-pinyin");
-    const yueyuEl = requireEl(document.getElementById("ziyin-yueyu"), "ziyin-yueyu");
-    const glossEl = requireEl(document.getElementById("ziyin-gloss"), "ziyin-gloss");
+    const shangyuEl = requireEl(document.getElementById("ziyin-shangyu"), "ziyin-shangyu");
+    const zhujiEl = requireEl(document.getElementById("ziyin-zhuji"), "ziyin-zhuji");
+    const shengzhouEl = requireEl(document.getElementById("ziyin-shengzhou"), "ziyin-shengzhou");
+    const glossEl = document.getElementById("ziyin-gloss");
+    const glossRow = document.getElementById("ziyin-gloss-row");
     const tagEl = requireEl(document.getElementById("ziyin-tag"), "ziyin-tag");
     const statusEl = requireEl(document.getElementById("ziyin-status"), "ziyin-status");
     const noteEl = document.getElementById("ziyin-note");
+    const sourceEl = document.getElementById("ziyin-source");
     const prevBtn = requireEl(document.getElementById("ziyin-prev"), "ziyin-prev");
     const nextBtn = requireEl(document.getElementById("ziyin-next"), "ziyin-next");
     const randomBtn = requireEl(document.getElementById("ziyin-random"), "ziyin-random");
-    // Bust CDN/browser cache when the curated list changes (keep in sync with index.html ?v=).
-    const res = await fetch("data/learn/ziyin.json?v=20260810v");
+    const res = await fetch("data/learn/ziyin.json?v=20260810w");
     if (!res.ok)
         throw new Error(`ziyin HTTP ${res.status}`);
     const data = (await res.json());
@@ -29,6 +32,8 @@ async function initZiyin() {
         throw new Error("ziyin list empty");
     if (noteEl && data.note)
         noteEl.textContent = data.note;
+    if (sourceEl && data.source)
+        sourceEl.textContent = data.source;
     let index = 0;
     function paint() {
         const item = items[index];
@@ -36,8 +41,14 @@ async function initZiyin() {
             return;
         hanEl.textContent = item.han;
         pinyinEl.textContent = item.pinyin;
-        yueyuEl.textContent = item.yueyu;
-        glossEl.textContent = item.gloss?.trim() || "—";
+        shangyuEl.textContent = item.shangyu;
+        zhujiEl.textContent = item.zhuji;
+        shengzhouEl.textContent = item.shengzhou;
+        const gloss = item.gloss?.trim();
+        if (glossEl)
+            glossEl.textContent = gloss || "—";
+        if (glossRow)
+            glossRow.hidden = !gloss;
         tagEl.textContent = item.tag?.trim() || "";
         tagEl.hidden = !item.tag?.trim();
         statusEl.textContent = `${index + 1} / ${items.length}`;

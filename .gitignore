@@ -25,3 +25,5 @@ data/corpus/raw/
 # Intermediate tsc outputs (browser runtime under scripts/dist/src is tracked)
 scripts/dist/scripts/
 scripts/dist/tests/
+
+.tmp-fangyan/
