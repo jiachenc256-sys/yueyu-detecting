@@ -47,7 +47,7 @@ function initSideNavigation(linkAttr: string, sectionAttr: string): void {
   links.forEach((link) => {
     link.addEventListener("click", () => {
       const target = link.getAttribute(linkAttr);
-      const root = link.closest(".plan-layout") ?? document;
+      const root = link.closest(".plan-layout, .learn-layout") ?? document;
       const localLinks = root.querySelectorAll<HTMLButtonElement>(`[${linkAttr}]`);
       const sections = root.querySelectorAll<HTMLElement>(`[${sectionAttr}]`);
 
@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initStoryMore();
   initSideNavigation("data-plan-target", "data-plan-section");
   initSideNavigation("data-about-target", "data-about-section");
+  initSideNavigation("data-learn-target", "data-learn-section");
   const applyArchiveFilter = initArchiveFilters();
 
   const hash = window.location.hash.replace(/^#/, "");
