@@ -17,7 +17,7 @@ Nav **弹词** (`#tanci`) on this site:
 - Calls Talcne’s `POST /api/ocr` with `FormData` field `file`
 - Editable result + **简体 / 繁體 / English** (MyMemory, same pattern as Speak)
 - **导出 JSON（档案桥）**
-- API base is hidden: default `http://127.0.0.1:8000`, or set `localStorage.yueyu.talcneApiBase` / `window.__YUEYU_TALCNE_API__`
+- API base (hidden): `config.json` → `talcneApiBase` (Render URL), else `localStorage.yueyu.talcneApiBase` / `window.__YUEYU_TALCNE_API__`, else `http://127.0.0.1:8000`
 
 ```bash
 # Terminal 1 — Talcne backend
