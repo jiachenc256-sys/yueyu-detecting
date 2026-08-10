@@ -124,11 +124,6 @@
   margin-top: var(--space-6);
 }
 
-.ziyin-controls .home-cta__btn:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-}
-
 .ziyin-status {
   margin: var(--space-4) 0 0;
   font-family: var(--font-mono);
