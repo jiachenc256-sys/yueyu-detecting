@@ -16,7 +16,10 @@ function initNavigation() {
         panels.forEach((panel) => {
             panel.setAttribute("aria-hidden", panel.dataset.panel === target ? "false" : "true");
         });
-        if (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`) {
+        const currentHash = window.location.hash.replace(/^#/, "");
+        const keepArchiveSubhash = target === "archive" && /^archive-(tanci|yueju|broadcast)$/.test(currentHash);
+        if (!keepArchiveSubhash &&
+            (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`)) {
             history.replaceState(null, "", `#${target}`);
         }
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -53,24 +56,37 @@ function initSideNavigation(linkAttr, sectionAttr) {
 function initArchiveFilters() {
     const filters = document.querySelectorAll("[data-archive-filter]");
     const cards = document.querySelectorAll("[data-archive-category]");
-    if (!filters.length || !cards.length)
-        return;
-    function apply(category) {
+    const grid = document.querySelector(".archive-grid");
+    function apply(category, opts) {
+        if (!filters.length || !cards.length)
+            return;
         filters.forEach((btn) => {
             btn.setAttribute("aria-pressed", btn.dataset.archiveFilter === category ? "true" : "false");
         });
+        let firstVisible = null;
         cards.forEach((card) => {
             const cat = card.dataset.archiveCategory ?? "yueju";
             const show = category === "all" || cat === category;
             card.hidden = !show;
             card.setAttribute("aria-hidden", show ? "false" : "true");
+            if (show && !firstVisible)
+                firstVisible = card;
         });
+        if (opts?.scroll) {
+            requestAnimationFrame(() => {
+                (firstVisible ?? grid)?.scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+        }
     }
     filters.forEach((btn) => {
         btn.addEventListener("click", () => {
-            apply(btn.dataset.archiveFilter ?? "all");
+            const category = btn.dataset.archiveFilter ?? "all";
+            apply(category, { scroll: true });
+            const nextHash = category === "all" ? "archive" : `archive-${category}`;
+            history.replaceState(null, "", `#${nextHash}`);
         });
     });
+    return apply;
 }
 document.addEventListener("DOMContentLoaded", () => {
     initA11y();
@@ -78,9 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
     initNavigation();
     initSideNavigation("data-plan-target", "data-plan-section");
     initSideNavigation("data-about-target", "data-about-section");
-    initArchiveFilters();
+    const applyArchiveFilter = initArchiveFilters();
     const hash = window.location.hash.replace(/^#/, "");
-    if (hash) {
+    if (hash.startsWith("archive")) {
+        const catMatch = /^archive-(tanci|yueju|broadcast)$/.exec(hash);
+        if (catMatch)
+            history.replaceState(null, "", `#archive-${catMatch[1]}`);
+        document.querySelector(`.site-nav [data-panel-target="archive"]`)?.click();
+        applyArchiveFilter(catMatch?.[1] ?? "all", { scroll: true });
+    }
+    else if (hash) {
         document.querySelector(`.site-nav [data-panel-target="${hash}"]`)?.click();
     }
 });
