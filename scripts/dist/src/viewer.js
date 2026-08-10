@@ -1,4 +1,5 @@
 import { cueMatchesQuery, enBadgeLabel, primaryDisplayText, secondaryDisplayLines, speakerDisplayLabel, } from "./display.js";
+import { initA11y } from "./a11y.js";
 import { getLocale, initI18n, onLocaleChange } from "./i18n.js";
 import { formatTime } from "./time.js";
 let transcript = null;
@@ -223,6 +224,7 @@ function normalizeMode(raw) {
     return null;
 }
 async function init() {
+    initA11y();
     initI18n();
     const list = requireEl(listEl, "transcript-list");
     const audioEl = requireEl(audio, "audio");
