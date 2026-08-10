@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" data-theme="dark" data-color-mode="default" data-font-scale="100">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var root = document.documentElement;
+        var theme = localStorage.getItem("yueyu.theme");
+        var color = localStorage.getItem("yueyu.colorMode");
+        var font = localStorage.getItem("yueyu.fontScale");
+        if (theme === "dark" || theme === "light") root.dataset.theme = theme;
+        if (color === "default" || color === "deuteranopia" || color === "protanopia" || color === "high-contrast") {
+          root.dataset.colorMode = color;
+        }
+        if (font === "100" || font === "125" || font === "150") root.dataset.fontScale = font;
+      } catch (e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="../styles/tokens.css" />
   <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/a11y.css" />
   <link rel="stylesheet" href="../styles/viewer.css" />
 </head>
 <body data-piece-id="wunv-baishou-huashu">
@@ -27,6 +43,36 @@
             <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
             <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
           </div>
+          <details class="a11y-panel">
+            <summary class="a11y-panel__summary" data-i18n="a11y.open">Aa 无障碍</summary>
+            <div class="a11y-panel__body">
+              <div class="a11y-group" role="group" aria-labelledby="a11y-theme-label">
+                <span class="a11y-group__label" id="a11y-theme-label" data-i18n="a11y.theme">外观</span>
+                <div class="a11y-options">
+                  <button type="button" data-theme-option="dark" aria-pressed="true" data-i18n="a11y.themeDark">深色</button>
+                  <button type="button" data-theme-option="light" aria-pressed="false" data-i18n="a11y.themeLight">浅色</button>
+                </div>
+              </div>
+              <div class="a11y-group" role="group" aria-labelledby="a11y-color-label">
+                <span class="a11y-group__label" id="a11y-color-label" data-i18n="a11y.color">色彩模式（色盲 / 弱视）</span>
+                <div class="a11y-options">
+                  <button type="button" data-color-mode-option="default" aria-pressed="true" data-i18n="a11y.colorDefault">默认</button>
+                  <button type="button" data-color-mode-option="deuteranopia" aria-pressed="false" data-i18n="a11y.colorDeutan">绿色弱视</button>
+                  <button type="button" data-color-mode-option="protanopia" aria-pressed="false" data-i18n="a11y.colorProtan">红色弱视</button>
+                  <button type="button" data-color-mode-option="high-contrast" aria-pressed="false" data-i18n="a11y.colorContrast">高对比</button>
+                </div>
+              </div>
+              <div class="a11y-group" role="group" aria-labelledby="a11y-font-label">
+                <span class="a11y-group__label" id="a11y-font-label" data-i18n="a11y.font">字号（长辈）</span>
+                <div class="a11y-options">
+                  <button type="button" data-font-scale-option="100" aria-pressed="true" data-i18n="a11y.font100">标准</button>
+                  <button type="button" data-font-scale-option="125" aria-pressed="false" data-i18n="a11y.font125">较大</button>
+                  <button type="button" data-font-scale-option="150" aria-pressed="false" data-i18n="a11y.font150">更大</button>
+                </div>
+              </div>
+              <p class="a11y-hint" data-i18n="a11y.hint">设置会保存在本机，刷新后仍有效。</p>
+            </div>
+          </details>
           <nav class="site-nav" aria-label="Piece">
             <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
           </nav>

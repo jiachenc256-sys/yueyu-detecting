@@ -1,3 +1,4 @@
+import { initA11y } from "./a11y.js";
 import { initI18n } from "./i18n.js";
 
 function initNavigation(): void {
@@ -82,6 +83,7 @@ function initArchiveFilters(): void {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initA11y();
   initI18n();
   initNavigation();
   initSideNavigation("data-plan-target", "data-plan-section");
