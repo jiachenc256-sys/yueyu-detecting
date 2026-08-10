@@ -225,39 +225,55 @@
 
 .ziyin-rows {
   display: grid;
-  gap: var(--space-4);
+  gap: var(--space-3);
   margin: var(--space-6) 0 0;
 }
 
 .ziyin-row {
   display: grid;
-  grid-template-columns: 5.5rem minmax(0, 1fr);
-  gap: var(--space-3);
-  align-items: baseline;
+  grid-template-columns: 4.75rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--color-paper-raised, rgba(127, 127, 127, 0.08));
 }
 
 .ziyin-row__label {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  color: var(--color-ink-muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-ink);
 }
 
 .ziyin-row__value {
   margin: 0;
-  font-size: var(--text-xl);
-  line-height: 1.4;
+  font-family: var(--font-sans);
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-ink);
 }
 
 .ziyin-row__value--ipa {
   font-family: var(--font-mono);
-  font-size: var(--text-lg);
+  font-size: clamp(1.2rem, 3.2vw, 1.55rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
   word-break: break-word;
+  color: var(--color-ink);
+}
+
+.ziyin-row--focus {
+  background: var(--color-accent-soft);
+  border-left: 3px solid var(--color-accent);
 }
 
 .ziyin-row--focus .ziyin-row__label,
 .ziyin-row__value--focus {
   color: var(--color-accent);
+  font-weight: 700;
 }
 
 .ziyin-source {
@@ -320,5 +336,6 @@
   .ziyin-row {
     grid-template-columns: 1fr;
     gap: var(--space-1);
+    padding: var(--space-3);
   }
 }
