@@ -1,0 +1,170 @@
+/* Language learning tools · 字音 */
+
+.learn-layout {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: var(--space-10);
+  align-items: start;
+}
+
+.learn-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  position: sticky;
+  top: var(--space-6);
+}
+
+.learn-nav__link {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: var(--space-2) 0;
+  color: var(--color-ink-muted);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  cursor: pointer;
+}
+
+.learn-nav__link:hover {
+  color: var(--color-ink);
+}
+
+.learn-nav__link[aria-current="true"] {
+  color: var(--color-accent);
+}
+
+.learn-tool {
+  display: none;
+}
+
+.learn-tool[aria-hidden="false"] {
+  display: block;
+}
+
+.learn-audience {
+  margin: 0 0 var(--space-6);
+  max-width: 40rem;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-stage {
+  max-width: 28rem;
+}
+
+.ziyin-card {
+  padding: var(--space-8) 0 var(--space-6);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ziyin-han {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(4.5rem, 12vw, 6.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+}
+
+.ziyin-tag {
+  display: inline-block;
+  margin: var(--space-3) 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+}
+
+.ziyin-rows {
+  display: grid;
+  gap: var(--space-4);
+  margin: var(--space-6) 0 0;
+}
+
+.ziyin-row {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+.ziyin-row__label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  color: var(--color-ink-muted);
+}
+
+.ziyin-row__value {
+  margin: 0;
+  font-size: var(--text-xl);
+  line-height: 1.4;
+}
+
+.ziyin-row__value--yueyu {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+}
+
+.ziyin-gloss {
+  margin: var(--space-5) 0 0;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+}
+
+.ziyin-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.ziyin-controls .home-cta__btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ziyin-status {
+  margin: var(--space-4) 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  color: var(--color-ink-muted);
+}
+
+.ziyin-note,
+.ziyin-legend {
+  margin: var(--space-6) 0 0;
+  max-width: 36rem;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-legend {
+  margin-top: var(--space-3);
+}
+
+@media (max-width: 768px) {
+  .learn-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .learn-nav {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+
+  .ziyin-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}

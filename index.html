@@ -22,11 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260810n" />
-  <link rel="stylesheet" href="styles/main.css?v=20260810n" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260810n" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260810n" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260810n" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260810p" />
+  <link rel="stylesheet" href="styles/main.css?v=20260810p" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260810p" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260810p" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260810p" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260810p" />
 </head>
 <body>
   <div class="app-shell">
@@ -81,6 +82,7 @@
             <button class="site-nav__btn" data-panel-target="archive" data-i18n="nav.archive">档案</button>
             <button class="site-nav__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
             <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">学习路径</button>
+            <button class="site-nav__btn" data-panel-target="learn" data-i18n="nav.learn">学习工具</button>
             <button class="site-nav__btn" data-panel-target="about" data-i18n="nav.about">关于</button>
           </nav>
         </div>
@@ -1437,6 +1439,7 @@
                   <li>听到有趣的词就记下来；完整词汇表仍在建设中，可先在档案文本与剧情简介里对照理解。</li>
                 </ul>
                 <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">开始单字发音</button>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">打开档案</button>
                   <button type="button" class="home-cta__btn" data-panel-target="speak">试试听说翻译</button>
                 </div>
@@ -1456,6 +1459,7 @@
                   <li>聽到有趣的詞就記下來；完整詞彙表仍在建設中，可先在檔案文本與劇情簡介裏對照理解。</li>
                 </ul>
                 <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">開始單字發音</button>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">打開檔案</button>
                   <button type="button" class="home-cta__btn" data-panel-target="speak">試試聽說翻譯</button>
                 </div>
@@ -1475,6 +1479,7 @@
                   <li>Jot down interesting words; a full vocabulary list is still being built—use plot intros and transcripts for now.</li>
                 </ul>
                 <div class="plan-cta-row">
+                  <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="learn">Start single-character sounds</button>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">Open Archive</button>
                   <button type="button" class="home-cta__btn" data-panel-target="speak">Try Speak</button>
                 </div>
@@ -1683,6 +1688,67 @@
                 <p>Yue Opera and Yueyu have never belonged only to performers and researchers. They live in every person who is willing to listen, willing to speak, and willing to remember.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Learn tools panel ── -->
+      <section class="panel" data-panel="learn" aria-hidden="true">
+        <header class="section-header">
+          <h2 data-i18n="learn.title">学习工具</h2>
+          <p data-i18n="learn.lead">为简体中文使用者准备的小练习：先从单字发音对照开始。</p>
+        </header>
+
+        <div class="learn-layout">
+          <nav class="learn-nav" aria-label="Learn tools" data-i18n-attr="aria-label" data-i18n="learn.navLabel">
+            <button type="button" class="learn-nav__link" data-learn-target="ziyin" aria-current="true" data-i18n="learn.nav.ziyin">字音</button>
+            <!-- Future tools: add data-learn-target buttons here -->
+          </nav>
+
+          <div class="learn-content">
+            <div class="learn-tool" data-learn-section="ziyin" aria-hidden="false">
+              <p class="learn-audience" data-visible-lang="zh-Hans" data-i18n="learn.audienceHans">
+                面向已会普通话拼音的简体中文使用者：对照汉字、普通话拼音与越语拼音。
+              </p>
+              <p class="learn-audience" data-visible-lang="zh-Hant" data-i18n="learn.audienceNote">
+                本練習為已會普通話拼音的學習者設計；卡片內容固定為簡體漢字與普通話拼音。
+              </p>
+              <p class="learn-audience" data-visible-lang="en" data-i18n="learn.audienceNote">
+                This drill is for learners who already use Mandarin pinyin; cards stay in Simplified Chinese.
+              </p>
+
+              <div id="ziyin-stage" class="ziyin-stage" hidden>
+                <div class="ziyin-card">
+                  <p id="ziyin-han" class="ziyin-han" lang="zh-Hans">听</p>
+                  <span id="ziyin-tag" class="ziyin-tag"></span>
+                  <div class="ziyin-rows">
+                    <div class="ziyin-row">
+                      <span class="ziyin-row__label" data-i18n="learn.ziyin.mandarin">普通话</span>
+                      <p id="ziyin-pinyin" class="ziyin-row__value" lang="zh-Latn">tīng</p>
+                    </div>
+                    <div class="ziyin-row">
+                      <span class="ziyin-row__label" data-i18n="learn.ziyin.yueyu">越语</span>
+                      <p id="ziyin-yueyu" class="ziyin-row__value ziyin-row__value--yueyu">thin1</p>
+                    </div>
+                  </div>
+                  <p class="ziyin-gloss">
+                    <span data-i18n="learn.ziyin.gloss">释义</span>：
+                    <span id="ziyin-gloss">听见</span>
+                  </p>
+                </div>
+
+                <div class="ziyin-controls">
+                  <button type="button" class="home-cta__btn" id="ziyin-prev" data-i18n="learn.ziyin.prev">上一个</button>
+                  <button type="button" class="home-cta__btn" id="ziyin-next" data-i18n="learn.ziyin.next">下一个</button>
+                  <button type="button" class="home-cta__btn" id="ziyin-random" data-i18n="learn.ziyin.random">随机</button>
+                  <button type="button" class="home-cta__btn home-cta__btn--ghost" id="ziyin-audio" data-ziyin-audio disabled data-i18n="learn.ziyin.audio">听发音（即将支持）</button>
+                </div>
+                <p id="ziyin-status" class="ziyin-status">1 / 1</p>
+                <p id="ziyin-note" class="ziyin-note"></p>
+                <p class="ziyin-legend" data-i18n="learn.ziyin.legend">越语拼音为嵊州口语参考转写，非普通话拼音。</p>
+              </div>
+            </div>
+            <!-- Future learn-tool sections go here -->
           </div>
         </div>
       </section>
@@ -1928,8 +1994,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260810n"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260810n"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260810n"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260810p"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260810p"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260810p"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260810p"></script>
 </body>
 </html>
