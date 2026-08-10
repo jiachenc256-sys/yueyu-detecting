@@ -1,4 +1,4 @@
-import { onLocaleChange, t, tf } from "./i18n.js?v=20260810t";
+import { onLocaleChange, t, tf } from "./i18n.js";
 
 /**
  * Phase A: Speak → recognize → translate (简体 / 繁體 / English).
