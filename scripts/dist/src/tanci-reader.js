@@ -1,9 +1,10 @@
-/** Full-book tanci reader: PDF page images + per-page OCR text. */
+/** Full-book tanci reader: PDF page images + per-page OCR text (+ EN/繁 translate). */
 import { initA11y } from "./a11y.js";
 import { getLocale, initI18n, onLocaleChange } from "./i18n.js";
 const PDFJS_URL = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.min.mjs";
 const PDFJS_WORKER = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.worker.min.mjs";
 const PRODUCTION_API = "https://talcne.onrender.com";
+const MYMEMORY_CHUNK = 420;
 function langForLocale(locale) {
     if (locale === "en")
         return "en";
@@ -17,13 +18,57 @@ function requireEl(el, name) {
     return el;
 }
 function getApiBase() {
-    // Archive reader uses the live Talcne backend (same as production site).
     return PRODUCTION_API;
+}
+function chunkText(text, max = MYMEMORY_CHUNK) {
+    const cleaned = text.trim();
+    if (!cleaned)
+        return [];
+    if (cleaned.length <= max)
+        return [cleaned];
+    const parts = [];
+    let rest = cleaned;
+    while (rest.length > max) {
+        let cut = rest.lastIndexOf("\n", max);
+        if (cut < max * 0.4)
+            cut = rest.lastIndexOf("。", max);
+        if (cut < max * 0.4)
+            cut = rest.lastIndexOf("，", max);
+        if (cut < max * 0.4)
+            cut = max;
+        parts.push(rest.slice(0, cut).trim());
+        rest = rest.slice(cut).trim();
+    }
+    if (rest)
+        parts.push(rest);
+    return parts.filter(Boolean);
+}
+async function translateWithMyMemory(text, from, to) {
+    const url = new URL("https://api.mymemory.translated.net/get");
+    url.searchParams.set("q", text.slice(0, 450));
+    url.searchParams.set("langpair", `${from}|${to}`);
+    const res = await fetch(url.toString());
+    if (!res.ok)
+        throw new Error(`Translation HTTP ${res.status}`);
+    const data = (await res.json());
+    const out = data.responseData?.translatedText?.trim();
+    if (!out)
+        throw new Error("Empty translation");
+    if (/MYMEMORY WARNING/i.test(out))
+        throw new Error("Translation quota exceeded — try again later");
+    return out;
+}
+async function translateLong(text, from, to) {
+    const chunks = chunkText(text);
+    const out = [];
+    for (const chunk of chunks) {
+        out.push(await translateWithMyMemory(chunk, from, to));
+    }
+    return out.join("\n").trim();
 }
 async function loadPdfJs() {
     if (window.pdfjsLib)
         return window.pdfjsLib;
-    // PDF.js ESM build from CDN
     const mod = (await import(/* @vite-ignore */ PDFJS_URL));
     mod.GlobalWorkerOptions.workerSrc = PDFJS_WORKER;
     window.pdfjsLib = mod;
@@ -67,6 +112,7 @@ async function init() {
     let page = 1;
     let pdfDoc = null;
     let rendering = false;
+    let translateSeq = 0;
     function applyChrome() {
         if (metaEl)
             metaEl.textContent = readLang === "en" ? meta.titleEn : meta.title;
@@ -79,12 +125,12 @@ async function init() {
         if (!entry)
             return "";
         if (readLang === "en")
-            return entry.en?.trim() || entry.zh?.trim() || "";
+            return entry.en?.trim() || "";
         if (readLang === "zhHant")
             return entry.zhHant?.trim() || entry.zh?.trim() || "";
         return entry.zh?.trim() || "";
     }
-    function updateText() {
+    function paintTextPanel() {
         const entry = byN.get(page);
         const text = pageCopy(page);
         pageLabel.textContent = `${page} / ${pagesFile.pageCount}`;
@@ -96,21 +142,72 @@ async function init() {
             pageTextEl.textContent = text;
             statusEl.textContent =
                 readLang === "en"
-                    ? `OCR ready · page ${page}`
+                    ? `English · page ${page}`
                     : readLang === "zhHant"
                         ? `已識別 · 第 ${page} 頁`
                         : `已识别 · 第 ${page} 页`;
+            return;
         }
-        else {
-            pageTextEl.textContent =
-                readLang === "en"
-                    ? "No text for this page yet. Click “OCR this page”, or wait for the full-book OCR pass."
-                    : readLang === "zhHant"
-                        ? "本頁尚無文字。可點「識別本頁」，或等待全書 OCR。"
-                        : "本页尚无文字。可点「识别本页」，或等待全书 OCR。";
-            const st = entry?.status || "pending";
-            statusEl.textContent =
-                readLang === "en" ? `Text status: ${st}` : readLang === "zhHant" ? `文字狀態：${st}` : `文字状态：${st}`;
+        const hasZh = Boolean(entry?.zh?.trim());
+        if (readLang === "en" && hasZh) {
+            pageTextEl.textContent = "Translating to English…";
+            statusEl.textContent = `Translating · page ${page}`;
+            return;
+        }
+        pageTextEl.textContent =
+            readLang === "en"
+                ? "No text for this page yet. Click “OCR this page”."
+                : readLang === "zhHant"
+                    ? "本頁尚無文字。可點「識別本頁」。"
+                    : "本页尚无文字。可点「识别本页」。";
+        const st = entry?.status || "pending";
+        statusEl.textContent =
+            readLang === "en" ? `Text status: ${st}` : readLang === "zhHant" ? `文字狀態：${st}` : `文字状态：${st}`;
+    }
+    async function ensureLangForPage(n, lang) {
+        const entry = byN.get(n);
+        const zh = entry?.zh?.trim();
+        if (!entry || !zh)
+            return;
+        if (lang === "en" && !entry.en?.trim()) {
+            const seq = ++translateSeq;
+            statusEl.textContent = `Translating · page ${n}`;
+            pageTextEl.textContent = "Translating to English…";
+            try {
+                const en = await translateLong(zh, "zh-CN", "en");
+                if (seq !== translateSeq || page !== n || readLang !== "en")
+                    return;
+                entry.en = en;
+                byN.set(n, entry);
+                paintTextPanel();
+            }
+            catch (err) {
+                if (seq !== translateSeq || page !== n)
+                    return;
+                const message = err instanceof Error ? err.message : String(err);
+                pageTextEl.textContent = zh;
+                statusEl.textContent = `English translation failed: ${message}`;
+            }
+            return;
+        }
+        if (lang === "zhHant" && (!entry.zhHant?.trim() || entry.zhHant.trim() === zh)) {
+            try {
+                const hant = await translateLong(zh, "zh-CN", "zh-TW");
+                if (page !== n || readLang !== "zhHant")
+                    return;
+                entry.zhHant = hant || zh;
+                byN.set(n, entry);
+                paintTextPanel();
+            }
+            catch {
+                /* keep zh fallback */
+            }
+        }
+    }
+    function updateText() {
+        paintTextPanel();
+        if (readLang === "en" || readLang === "zhHant") {
+            void ensureLangForPage(page, readLang);
         }
     }
     async function renderPage(n) {
@@ -156,10 +253,9 @@ async function init() {
             const zh = (data.text || "").trim();
             const entry = byN.get(page) || { n: page };
             entry.zh = zh;
+            entry.en = "";
+            entry.zhHant = "";
             entry.status = zh ? "done" : "empty";
-            // Traditional: best-effort via OpenCC CDN is heavy; keep zh for now if empty
-            if (!entry.zhHant)
-                entry.zhHant = zh;
             byN.set(page, entry);
             updateText();
         }
