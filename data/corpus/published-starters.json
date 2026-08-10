@@ -64,6 +64,15 @@
     "lines": 12
   },
   {
+    "id": "pearl-tower-gift",
+    "title": "珍珠塔 · 赠塔",
+    "titleEn": "Pearl Tower · The Gift",
+    "meta": "Pearl Tower · The Gift · text layer",
+    "note": "First tanci archive piece via Talcne OCR bridge. Trilingual text layer; synthetic line order timings; no audio yet.",
+    "lines": 10,
+    "category": "tanci"
+  },
+  {
     "id": "longmen-kezhai",
     "title": "新龙门客寨",
     "titleEn": "New Dragon Inn · Yue opera adaptation",

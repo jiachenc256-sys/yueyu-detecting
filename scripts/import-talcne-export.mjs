@@ -6,7 +6,8 @@
  *   node scripts/import-talcne-export.mjs path/to/export.json \
  *     --id pearl-tower-text \
  *     --title "珍珠塔 · 文字层" \
- *     --title-en "Pearl Tower · text layer"
+ *     --title-en "Pearl Tower · text layer" \
+ *     [--text-only]
  */
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
@@ -23,11 +24,13 @@ function usage(msg) {
 }
 
 function parseArgs(argv) {
-  const args = { _: [] };
+  const args = { _: [], "text-only": false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--id" || a === "--title" || a === "--title-en") {
       args[a.slice(2)] = argv[++i];
+    } else if (a === "--text-only") {
+      args["text-only"] = true;
     } else if (a.startsWith("--")) {
       usage(`Unknown flag: ${a}`);
     } else {
@@ -35,6 +38,15 @@ function parseArgs(argv) {
     }
   }
   return args;
+}
+
+function splitTranslationLines(block, expected) {
+  if (!block || typeof block !== "string") return null;
+  const parts = block
+    .split(/\r?\n/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return parts.length === expected ? parts : null;
 }
 
 function main() {
@@ -52,14 +64,28 @@ function main() {
   if (!lines.length) usage("Export has no non-empty lines[].");
 
   const script = raw.script === "zh-Hant" ? "zh-Hant" : "zh-Hans";
+  const hantLines = splitTranslationLines(raw.translations?.zhHant, lines.length);
+  const enLines = splitTranslationLines(raw.translations?.en, lines.length);
+  let enCurated = 0;
+  let zhHantCount = 0;
+
   const cues = lines.map((text, i) => {
     const start = i * SECONDS_PER_LINE;
     const end = start + SECONDS_PER_LINE;
-    const zhLayer = { text, status: "corrected" };
-    const layers =
-      script === "zh-Hant"
-        ? { zh: { text, status: "corrected" }, zhHant: zhLayer }
-        : { zh: zhLayer };
+    const layers = {
+      zh: { text: script === "zh-Hant" ? text : text, status: "corrected" },
+    };
+    if (script === "zh-Hant") {
+      layers.zhHant = { text, status: "corrected" };
+      zhHantCount += 1;
+    } else if (hantLines) {
+      layers.zhHant = { text: hantLines[i], status: "corrected" };
+      zhHantCount += 1;
+    }
+    if (enLines) {
+      layers.en = { text: enLines[i], status: "curated", source: "talcne-export" };
+      enCurated += 1;
+    }
     return {
       id: i + 1,
       start,
@@ -69,11 +95,12 @@ function main() {
     };
   });
 
+  const textOnly = Boolean(args["text-only"]);
   const piece = {
     id: args.id,
     title: args.title,
     titleEn: args["title-en"],
-    audio: `assets/audio/${args.id}.mp3`,
+    audio: textOnly ? "" : `assets/audio/${args.id}.mp3`,
     category: "tanci",
     sourceSrt: raw.fileNames?.[0] ? `talcne:${raw.fileNames[0]}` : "talcne-export",
     schemaVersion: "1.0.0",
@@ -81,10 +108,10 @@ function main() {
     correctedCount: cues.length,
     coverage: {
       zh: cues.length,
-      enCurated: 0,
+      enCurated,
       enMt: 0,
-      enAny: 0,
-      ...(script === "zh-Hant" ? { zhHant: cues.length } : {}),
+      enAny: enCurated,
+      ...(zhHantCount ? { zhHant: zhHantCount } : {}),
     },
     cues,
   };
@@ -93,8 +120,12 @@ function main() {
   mkdirSync(dirname(outPath), { recursive: true });
   writeFileSync(outPath, `${JSON.stringify(piece, null, 2)}\n`, "utf8");
   console.log(`Wrote ${outPath}`);
-  console.log(`Next: add an Archive card in index.html with data-archive-category="tanci" href="pieces/${args.id}.html"`);
-  console.log(`Note: audio path is a placeholder until you add assets/audio/${args.id}.mp3`);
+  console.log(`Next: add pieces/${args.id}.html and an Archive card with data-archive-category="tanci"`);
+  if (textOnly) {
+    console.log("Text-only piece: set body data-text-only=\"true\" on the piece page (no audio required).");
+  } else {
+    console.log(`Note: audio path is a placeholder until you add assets/audio/${args.id}.mp3`);
+  }
 }
 
 main();

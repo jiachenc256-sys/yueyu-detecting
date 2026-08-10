@@ -6,6 +6,12 @@ let transcript = null;
 let activeId = null;
 let searchQuery = "";
 let displayMode = "trilingual";
+let textOnly = false;
+function isTextOnlyPiece(piece) {
+    if (document.body.dataset.textOnly === "true")
+        return true;
+    return !piece.audio?.trim();
+}
 function displayModeForSiteLocale(locale) {
     if (locale === "en")
         return "en";
@@ -121,7 +127,7 @@ function renderTranscript() {
     if (!transcript)
         return;
     const list = requireEl(listEl, "transcript-list");
-    const audioEl = requireEl(audio, "audio");
+    const audioEl = textOnly ? null : audio;
     list.innerHTML = "";
     for (const cue of transcript.cues) {
         const matches = cueMatchesQuery(cue, searchQuery);
@@ -177,10 +183,17 @@ function renderTranscript() {
         li.appendChild(body);
         const jumpToCue = () => {
             setActiveCue(cue.id, false);
-            void seekAndPlay(audioEl, cue.start);
+            if (audioEl)
+                void seekAndPlay(audioEl, cue.start);
+            if (nowTimeEl && textOnly)
+                nowTimeEl.textContent = formatTime(cue.start);
+            if (nowLineEl && textOnly)
+                nowLineEl.textContent = primaryDisplayText(cue, displayMode);
         };
         li.addEventListener("click", jumpToCue);
-        time.title = `Jump to ${formatTime(cue.start)} and play`;
+        time.title = textOnly
+            ? `Select line ${formatTime(cue.start)}`
+            : `Jump to ${formatTime(cue.start)} and play`;
         time.addEventListener("click", (event) => {
             event.stopPropagation();
             jumpToCue();
@@ -227,7 +240,6 @@ async function init() {
     initA11y();
     initI18n();
     const list = requireEl(listEl, "transcript-list");
-    const audioEl = requireEl(audio, "audio");
     const search = requireEl(searchInput, "search-input");
     const pieceId = document.body.dataset.pieceId?.trim() ||
         document.documentElement.dataset.pieceId?.trim() ||
@@ -237,6 +249,9 @@ async function init() {
         throw new Error(`HTTP ${response.status}`);
     }
     transcript = (await response.json());
+    textOnly = isTextOnlyPiece(transcript);
+    document.body.dataset.textOnly = textOnly ? "true" : "false";
+    document.body.dataset.pieceCategory = transcript.category ?? "yueju";
     if (cueCountEl) {
         cueCountEl.textContent = `${transcript.cueCount.toLocaleString()} lines · ${transcript.correctedCount} zh corrected`;
     }
@@ -255,7 +270,14 @@ async function init() {
     renderTranscript();
     setDisplayMode(displayModeForSiteLocale(getLocale()));
     onLocaleChange((locale) => setDisplayMode(displayModeForSiteLocale(locale)));
-    audioEl.addEventListener("timeupdate", onTimeUpdate);
+    if (!textOnly) {
+        const audioEl = requireEl(audio, "audio");
+        audioEl.addEventListener("timeupdate", onTimeUpdate);
+    }
+    else if (audio) {
+        audio.removeAttribute("src");
+        audio.load();
+    }
     search.addEventListener("input", (event) => {
         searchQuery = event.target.value;
         renderTranscript();

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-theme="dark" data-color-mode="default" data-font-scale="100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>珍珠塔 · 赠塔 · 越语侦听</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var root = document.documentElement;
+        var theme = localStorage.getItem("yueyu.theme");
+        var color = localStorage.getItem("yueyu.colorMode");
+        var font = localStorage.getItem("yueyu.fontScale");
+        if (theme === "dark" || theme === "light") root.dataset.theme = theme;
+        if (color === "default" || color === "deuteranopia" || color === "protanopia" || color === "high-contrast") {
+          root.dataset.colorMode = color;
+        }
+        if (font === "100" || font === "125" || font === "150") root.dataset.fontScale = font;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../styles/tokens.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/a11y.css" />
+  <link rel="stylesheet" href="../styles/viewer.css" />
+</head>
+<body data-piece-id="pearl-tower-gift" data-text-only="true">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div>
+          <a class="site-title site-title--link" href="../index.html">
+            <span data-i18n="meta.title">越语侦听</span>
+            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+          </a>
+        </div>
+                <div class="site-header__tools">
+          <div class="locale-switch" role="group" aria-label="Interface language" data-i18n-attr="aria-label" data-i18n="nav.lang">
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hans" aria-pressed="true">简体</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="locale-switch__btn" data-locale-option="en" aria-pressed="false">EN</button>
+          </div>
+          <details class="a11y-panel">
+            <summary class="a11y-panel__summary" data-i18n="a11y.open">Aa 无障碍</summary>
+            <div class="a11y-panel__body">
+              <div class="a11y-group" role="group" aria-labelledby="a11y-theme-label">
+                <span class="a11y-group__label" id="a11y-theme-label" data-i18n="a11y.theme">外观</span>
+                <div class="a11y-options">
+                  <button type="button" data-theme-option="dark" aria-pressed="true" data-i18n="a11y.themeDark">深色</button>
+                  <button type="button" data-theme-option="light" aria-pressed="false" data-i18n="a11y.themeLight">浅色</button>
+                </div>
+              </div>
+              <div class="a11y-group" role="group" aria-labelledby="a11y-color-label">
+                <span class="a11y-group__label" id="a11y-color-label" data-i18n="a11y.color">色彩模式（色盲 / 弱视）</span>
+                <div class="a11y-options">
+                  <button type="button" data-color-mode-option="default" aria-pressed="true" data-i18n="a11y.colorDefault">默认</button>
+                  <button type="button" data-color-mode-option="deuteranopia" aria-pressed="false" data-i18n="a11y.colorDeutan">绿色弱视</button>
+                  <button type="button" data-color-mode-option="protanopia" aria-pressed="false" data-i18n="a11y.colorProtan">红色弱视</button>
+                  <button type="button" data-color-mode-option="high-contrast" aria-pressed="false" data-i18n="a11y.colorContrast">高对比</button>
+                </div>
+              </div>
+              <div class="a11y-group" role="group" aria-labelledby="a11y-font-label">
+                <span class="a11y-group__label" id="a11y-font-label" data-i18n="a11y.font">字号（长辈）</span>
+                <div class="a11y-options">
+                  <button type="button" data-font-scale-option="100" aria-pressed="true" data-i18n="a11y.font100">标准</button>
+                  <button type="button" data-font-scale-option="125" aria-pressed="false" data-i18n="a11y.font125">较大</button>
+                  <button type="button" data-font-scale-option="150" aria-pressed="false" data-i18n="a11y.font150">更大</button>
+                </div>
+              </div>
+              <p class="a11y-hint" data-i18n="a11y.hint">设置会保存在本机，刷新后仍有效。</p>
+            </div>
+          </details>
+          <nav class="site-nav" aria-label="Piece">
+            <a class="site-nav__btn site-nav__btn--link" href="../index.html#archive" data-i18n="viewer.back">← 档案</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="viewer">
+      <header class="viewer-header">
+        <div class="viewer-header__text">
+          <span class="badge badge--ready">弹词文字层</span>
+          <h1 class="viewer-title">珍珠塔 · 赠塔</h1>
+          <p class="viewer-meta">Pearl Tower · The Gift · <span id="cue-count">—</span></p>
+          <p class="viewer-coverage" id="coverage-stats"></p>
+        </div>
+        <div class="viewer-controls">
+          <div class="lang-toggle" role="group" aria-label="Display language">
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hans" aria-pressed="false">简体</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="zh-Hant" aria-pressed="false">繁體</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-toggle__btn" data-display-mode="trilingual" aria-pressed="true">简 / 繁 / EN</button>
+          </div>
+          <div class="viewer-search">
+            <input type="search" id="search-input" class="viewer-search__input" data-i18n-placeholder="viewer.search" placeholder="搜索 简 / 繁 / EN…" aria-label="Search transcript" />
+          </div>
+        </div>
+      </header>
+
+      <aside class="viewer-intro" aria-label="Story introduction">
+        <h2 class="viewer-intro__label" data-i18n="viewer.story">剧情简介</h2>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hans">《珍珠塔》是江南弹词经典。落魄书生方卿投奔姑苏陈家，表兄妹情谊深厚；陈翠娥暗中以家传珍珠塔相赠，助他上路求功名。后文波折迭起，终以团圆收场——此为文字层示范选段。</p>
+        <p class="viewer-intro__zh" data-visible-lang="zh-Hant">《珍珠塔》是江南彈詞經典。落魄書生方卿投奔姑蘇陳家，表兄妹情誼深厚；陳翠娥暗中以家傳珍珠塔相贈，助他上路求功名。後文波折迭起，終以團圓收場——此為文字層示範選段。</p>
+        <p class="viewer-intro__en" data-visible-lang="en">Pearl Tower is a classic Jiangnan tanci story. The impoverished scholar Fang Qing visits the Chen family in Suzhou; his cousin Chen Cui’e secretly gives him the family’s heirloom pearl tower as travel money so he can seek his fortune. Later trials lead to reunion—this is a text-layer starter excerpt.</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hans"><strong data-i18n="viewer.thisClip">本段</strong> — 《赠塔》：翠娥见方卿落魄，以珍珠塔作盘缠相赠。文本来自 Talcne OCR 档案桥，可先阅读，音频可后续补齐。</p>
+        <p class="viewer-intro__clip" data-visible-lang="zh-Hant"><strong data-i18n="viewer.thisClip">本段</strong> — 《贈塔》：翠娥見方卿落魄，以珍珠塔作盤纏相贈。文本來自 Talcne OCR 檔案橋，可先閱讀，音訊可後續補齊。</p>
+        <p class="viewer-intro__en" data-visible-lang="en"><strong data-i18n="viewer.thisClip">This clip</strong> — “The Gift”: Cui’e sees Fang Qing in hardship and gives him the Pearl Tower as travel money. Text arrives via the Talcne OCR archive bridge; audio can be added later.</p>
+      </aside>
+
+      <div class="viewer-body">
+        <aside class="viewer-player" aria-label="Text reader">
+          <p class="viewer-player__text-only" data-i18n="viewer.textOnly">
+            文字层选段 · 暂无配音。点击任一行即可高亮阅读（简 / 繁 / EN）。
+          </p>
+          <audio id="audio" controls preload="none"></audio>
+          <p class="viewer-player__hint">
+            Pearl Tower · text layer from Talcne export bridge. Line timings are synthetic placeholders for reading order.
+          </p>
+          <dl class="viewer-now-playing">
+            <div>
+              <dt>Now</dt>
+              <dd id="now-time">0:00</dd>
+            </div>
+            <div>
+              <dt>Line</dt>
+              <dd id="now-line">—</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="viewer-transcript" aria-label="Transcript">
+          <ol id="transcript-list" class="transcript-list"></ol>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/dist/src/viewer.js"></script>
+</body>
+</html>
