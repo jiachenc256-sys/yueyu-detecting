@@ -28,7 +28,7 @@ uvicorn main:app --reload
 
 Then open Yueyu → **弹词** → choose image → recognize → read translations.
 
-For GitHub Pages against a deployed Render backend, set `localStorage.setItem('yueyu.talcneApiBase', 'https://your-backend.onrender.com')` once in the browser console, and ensure `CORS_ORIGINS` allows `https://jiachenc256-sys.github.io`.
+Production OCR backend: `https://talcne.onrender.com` (set in [`config.json`](../config.json)). Ensure Render `CORS_ORIGINS` includes `https://yueyudetecting.com`. Free tier may sleep after ~15 minutes idle.
 
 ## Export → archive piece
 
