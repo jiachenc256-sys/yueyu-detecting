@@ -68,20 +68,28 @@ function initArchiveFilters() {
             const cat = card.dataset.archiveCategory ?? "yueju";
             const show = category === "all" || cat === category;
             card.hidden = !show;
+            card.classList.toggle("archive-card--out", !show);
             card.setAttribute("aria-hidden", show ? "false" : "true");
             if (show && !firstVisible)
                 firstVisible = card;
         });
-        if (opts?.scroll) {
+        if (opts?.scroll || opts?.flash) {
             requestAnimationFrame(() => {
-                (firstVisible ?? grid)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                const target = firstVisible ?? grid;
+                target?.scrollIntoView({ behavior: "smooth", block: "start" });
+                if (opts.flash && firstVisible) {
+                    firstVisible.classList.add("archive-card--flash");
+                    window.setTimeout(() => firstVisible?.classList.remove("archive-card--flash"), 1200);
+                }
             });
         }
     }
     filters.forEach((btn) => {
-        btn.addEventListener("click", () => {
+        btn.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
             const category = btn.dataset.archiveFilter ?? "all";
-            apply(category, { scroll: true });
+            apply(category, { scroll: true, flash: category !== "all" });
             const nextHash = category === "all" ? "archive" : `archive-${category}`;
             history.replaceState(null, "", `#${nextHash}`);
         });

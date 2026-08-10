@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>珍珠塔 · 重编本（选页） · 越语侦听</title>
+  <title>珍珠塔 · 重编本 · 越语侦听</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -22,10 +22,10 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="../styles/tokens.css" />
-  <link rel="stylesheet" href="../styles/main.css" />
-  <link rel="stylesheet" href="../styles/a11y.css" />
-  <link rel="stylesheet" href="../styles/tanci-reader.css" />
+  <link rel="stylesheet" href="../styles/tokens.css?v=20260810c" />
+  <link rel="stylesheet" href="../styles/main.css?v=20260810c" />
+  <link rel="stylesheet" href="../styles/a11y.css?v=20260810c" />
+  <link rel="stylesheet" href="../styles/tanci-reader.css?v=20260810c" />
 </head>
 <body data-piece-id="pearl-tower-gift" data-piece-category="tanci">
   <div class="app-shell">
@@ -84,8 +84,8 @@
       <header class="tanci-reader__header">
         <div>
           <span class="badge badge--ready" data-i18n="archive.badgeTanci">弹词</span>
-          <h1 class="tanci-reader__title">珍珠塔 · 重编本（选页）</h1>
-          <p class="tanci-reader__meta">Pearl Tower · woodblock / print pages</p>
+          <h1 class="tanci-reader__title">珍珠塔 · 重编本</h1>
+          <p class="tanci-reader__meta">Pearl Tower · full woodblock PDF · image + text</p>
         </div>
         <div class="tanci-reader__tools">
           <div class="lang-toggle" role="group" aria-label="Reading language">
@@ -98,14 +98,26 @@
 
       <div class="tanci-reader__layout">
         <section class="tanci-reader__gallery" aria-label="Woodblock pages">
-          <figure class="tanci-reader__figure-wrap">
-            <img id="tanci-figure" class="tanci-reader__figure" alt="" />
-            <figcaption id="tanci-caption" class="tanci-reader__caption"></figcaption>
-          </figure>
-          <div id="tanci-thumbs" class="tanci-thumbs" role="listbox" aria-label="Page thumbnails"></div>
+          <div class="tanci-reader__figure-wrap">
+            <canvas id="tanci-canvas" class="tanci-reader__canvas"></canvas>
+          </div>
+          <div class="tanci-pager">
+            <button type="button" id="tanci-prev" class="tanci-pager__btn" data-i18n="tanciReader.prev">上一页</button>
+            <label class="tanci-pager__goto">
+              <span data-i18n="tanciReader.page">页</span>
+              <input id="tanci-page-input" class="tanci-pager__input" type="number" min="1" value="1" />
+              <span id="tanci-page-label">1 / —</span>
+            </label>
+            <button type="button" id="tanci-next" class="tanci-pager__btn" data-i18n="tanciReader.next">下一页</button>
+          </div>
         </section>
 
         <aside class="tanci-reader__panel" aria-label="Reading notes">
+          <h2 data-i18n="tanciReader.pageText">本页文字</h2>
+          <p id="tanci-ocr-status" class="tanci-reader__status">…</p>
+          <pre id="tanci-page-text" class="tanci-reader__page-text"></pre>
+          <button type="button" id="tanci-ocr-page" class="tanci-reader__cta tanci-reader__cta--btn" data-i18n="tanciReader.ocrPage">识别本页</button>
+
           <h2 data-i18n="tanciReader.about">图文说明</h2>
           <p id="tanci-reading"></p>
           <h2 data-i18n="tanciReader.source">版本来源</h2>
@@ -118,6 +130,6 @@
     </main>
   </div>
 
-  <script type="module" src="../scripts/dist/src/tanci-reader.js"></script>
+  <script type="module" src="../scripts/dist/src/tanci-reader.js?v=20260810c"></script>
 </body>
 </html>
