@@ -1,0 +1,54 @@
+3d45bb7 fix: make OCR and speak panels readable in light theme.
+42b090f Tighten ziyin row borders so light theme stays readable.
+539f67c Improve ziyin reading rows for contrast and size.
+865152e Expand Pinyin guide and surface Learn tools more clearly.
+4271768 Split Learn tools into pinyin guide and leveled pronunciation.
+38a9021 Remove 语保工程 attribution lines from the ziyin notes.
+1c21ef0 Turn 字音 into Shangyu / Zhuji / Shengzhou comparison.
+2eace3c Start ziyin on 人/好 so the first card is not 听.
+26eb364 Fix build after i18n cache-bust import and republish ziyin UI.
+ac8e4f8 Force-clear stale Listen copy on the ziyin drill.
+0f71f98 Remove ziyin listen button; keep pinyin-only practice.
+1eca149 Cache-bust ziyin.json fetch so learners see the expanded list.
+2db7826 Enable Mandarin TTS for 字音 and expand the starter list.
+0b12722 Add Learn tools panel with single-character pronunciation drill.
+9d19278 Turn Plan into learner pathways; move tech plan into About.
+88fd7ba Bump asset cache so the latest Story page ships on Pages.
+e1358ae Reveal full story on demand and end with Alice’s coda.
+3c3d5ea Add full corpus workflow story under the routine rail.
+ecf122f Add short plot intros to each Qing tanci piece.
+1534508 Translate tanci page OCR to English when EN is selected.
+5c42091 Translate tanci page OCR to English when EN is selected.
+93139d0 Add Qing tanci woodblock PDFs as full flip readers.
+29a2afb Ship Pearl Tower full-PDF flip reader with on-demand OCR
+468c697 Merge pull request #10 from jiachenc256-sys/cursor/tanci-woodblock-reader
+8a169db Make tanci archive image+text and fix category filters.
+cc6c62c Merge pull request #9 from jiachenc256-sys/cursor/tanci-archive-piece
+8ae6a1d Add first tanci archive piece via Talcne text-layer bridge.
+2431f45 Merge pull request #8 from jiachenc256-sys/cursor/a11y-theme-font
+add581f Add accessibility controls for theme, color vision, and font size.
+8f4c763 Merge pull request #7 from jiachenc256-sys/cursor/talcne-render-config
+c50ef3f Default production OCR to talcne.onrender.com off localhost.
+461edd0 Merge main; keep yueyudetecting.com CNAME.
+035937e Point Tanci OCR at the live Render backend.
+d0b5d03 Load Talcne API base from public config.json.
+4a79c61 Create CNAME
+a97b98d Delete CNAME
+dd3ee0a Create CNAME
+2139dcf Add GitHub Pages CNAME for yueyudetecting.com.
+037ac43 Merge pull request #5 from jiachenc256-sys/cursor/tanci-ui-translate
+7499095 Hide Tanci API field and restore 简繁EN translation.
+ec338cd Merge pull request #4 from jiachenc256-sys/cursor/tanci-panel-ocr
+daca66d Add in-site Tanci panel for image OCR via Talcne.
+bf60f59 Merge pull request #3 from jiachenc256-sys/cursor/talcne-bridge-import
+e875a0e Document Talcne JSON bridge and add import script.
+8852760 Merge pull request #2 from jiachenc256-sys/cursor/yueju-archive-planning-ui
+470ee83 Scaffold Archive taxonomy for Talcne tanci merge.
+e69eeaf Merge pull request #1 from jiachenc256-sys/cursor/yueju-archive-planning-ui
+40cdcd1 Ship Yueyu Detecting: multilingual UI, archive starters, and story landing.
+82e7bf8 Add Baidu corpus inventory and eight classic-play starter manifests.
+76da231 Add Phase A speak-recognize-translate demo for school.
+e232548 Add local Baidu corpus intake workflow for larger Yueju packs.
+af7dac3 Add gated publisher for a new GitHub archive only.
+2fa3f92 Add academic multilingual archive with typed dialogue layers.
+2917b46 Add static planning UI scaffold for the Yueju linguistic archive.
