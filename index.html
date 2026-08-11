@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260811f" />
-  <link rel="stylesheet" href="styles/main.css?v=20260811f" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260811f" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260811f" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260811f" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260811f" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260811g" />
+  <link rel="stylesheet" href="styles/main.css?v=20260811g" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260811g" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260811g" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260811g" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260811g" />
 </head>
 <body>
   <div class="app-shell">
@@ -1972,17 +1972,27 @@
                     </div>
                     <div class="ziyin-row">
                       <span class="ziyin-row__label" data-i18n="learn.ziyin.shangyu">上虞</span>
-                      <p id="ziyin-shangyu" class="ziyin-row__value ziyin-row__value--ipa">tɷ35</p>
+                      <div class="ziyin-row__main">
+                        <p id="ziyin-shangyu" class="ziyin-row__value ziyin-row__value--ipa">tɷ35</p>
+                        <button type="button" class="ziyin-listen" id="ziyin-listen-shangyu" data-ziyin-place="shangyu" data-i18n="learn.ziyin.listenShort" disabled>听</button>
+                      </div>
                     </div>
                     <div class="ziyin-row">
                       <span class="ziyin-row__label" data-i18n="learn.ziyin.zhuji">诸暨</span>
-                      <p id="ziyin-zhuji" class="ziyin-row__value ziyin-row__value--ipa">tɤu544</p>
+                      <div class="ziyin-row__main">
+                        <p id="ziyin-zhuji" class="ziyin-row__value ziyin-row__value--ipa">tɤu544</p>
+                        <button type="button" class="ziyin-listen" id="ziyin-listen-zhuji" data-ziyin-place="zhuji" data-i18n="learn.ziyin.listenShort" disabled>听</button>
+                      </div>
                     </div>
                     <div class="ziyin-row ziyin-row--focus">
                       <span class="ziyin-row__label" data-i18n="learn.ziyin.shengzhou">嵊州</span>
-                      <p id="ziyin-shengzhou" class="ziyin-row__value ziyin-row__value--ipa ziyin-row__value--focus">to534</p>
+                      <div class="ziyin-row__main">
+                        <p id="ziyin-shengzhou" class="ziyin-row__value ziyin-row__value--ipa ziyin-row__value--focus">to534</p>
+                        <button type="button" class="ziyin-listen ziyin-listen--primary" id="ziyin-listen-shengzhou" data-ziyin-place="shengzhou" data-i18n="learn.ziyin.listenShengzhou" disabled>听嵊州</button>
+                      </div>
                     </div>
                   </div>
+                  <p id="ziyin-speaker" class="ziyin-speaker" hidden></p>
                   <p id="ziyin-gloss-row" class="ziyin-gloss" hidden>
                     <span data-i18n="learn.ziyin.gloss">释义</span>：
                     <span id="ziyin-gloss">—</span>
@@ -1994,6 +2004,7 @@
                   <button type="button" class="home-cta__btn" id="ziyin-next" data-i18n="learn.ziyin.next">下一个</button>
                   <button type="button" class="home-cta__btn" id="ziyin-random" data-i18n="learn.ziyin.random">随机</button>
                 </div>
+                <p id="ziyin-audio-status" class="ziyin-audio-status" data-i18n="learn.ziyin.audioHint">真人发音试点：放入录音后即可点「听」。尚无文件时按钮不可用。</p>
                 <p id="ziyin-status" class="ziyin-status">1 / 1</p>
                 <p id="ziyin-note" class="ziyin-note"></p>
                 <p class="ziyin-legend" data-visible-lang="zh-Hans">三地读音为对照参考，非普通话拼音。嵊州与越剧念白关系最近，已单独标出。</p>
@@ -2246,9 +2257,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260811f"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260811f"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260811f"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260811f"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260811g"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260811g"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260811g"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260811g"></script>
 </body>
 </html>
