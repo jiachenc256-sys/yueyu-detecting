@@ -784,15 +784,15 @@ body {
 }
 
 .home-cta__btn--primary {
-  background: var(--color-ink);
-  border-color: var(--color-ink);
-  color: #0a0b10;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff7f2;
 }
 
 .home-cta__btn--primary:hover {
-  background: #fff;
-  border-color: #fff;
-  color: #0a0b10;
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: #fff7f2;
 }
 
 .home-cta__btn--ghost {
