@@ -109,6 +109,26 @@
   opacity: 1;
 }
 
+/* Light theme: pale OCR cards (match Speak panels). */
+html[data-theme="light"] .tanci-preview,
+html[data-theme="light"] .tanci-result {
+  background: #ffffff;
+  color: #1a1f29;
+  border-color: #d0d7e2;
+}
+
+html[data-theme="light"] .tanci-result__hint,
+html[data-theme="light"] .tanci-preview__empty,
+html[data-theme="light"] .tanci-preview__item figcaption {
+  color: #4a5568;
+}
+
+html[data-theme="light"] .tanci-text {
+  background: #f7f8fb;
+  color: #1a1f29;
+  border-color: #9aa8bc;
+}
+
 .tanci-text:focus {
   outline: 2px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
   outline-offset: 1px;
