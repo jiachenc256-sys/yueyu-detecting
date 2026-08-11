@@ -39,7 +39,9 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
-  background: rgba(26, 32, 48, 0.72);
+  background: var(--color-paper-raised);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-sm);
 }
 
 .tanci-preview__label,
@@ -47,6 +49,7 @@
   margin: 0 0 var(--space-3);
   font-family: var(--font-serif);
   font-size: var(--text-lg);
+  color: var(--color-ink);
 }
 
 .tanci-result__hint {
@@ -76,7 +79,7 @@
   max-height: 28rem;
   object-fit: contain;
   border-radius: var(--radius-md);
-  background: #0e121c;
+  background: var(--color-paper);
   border: 1px solid var(--color-border);
 }
 
@@ -93,12 +96,17 @@
   resize: vertical;
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-md);
-  background: rgba(14, 18, 28, 0.9);
+  background: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-serif);
   font-size: var(--text-base);
   line-height: 1.7;
   padding: var(--space-4);
+}
+
+.tanci-text::placeholder {
+  color: var(--color-ink-faint);
+  opacity: 1;
 }
 
 .tanci-text:focus {
