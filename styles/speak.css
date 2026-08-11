@@ -21,7 +21,9 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
-  background: rgba(26, 32, 48, 0.72);
+  background: var(--color-paper-raised);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-sm);
   animation: speak-in 0.55s ease both;
 }
 
@@ -114,13 +116,15 @@
 }
 
 .speak-panel {
-  background: rgba(26, 32, 48, 0.72);
+  background: var(--color-paper-raised);
+  color: var(--color-ink);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+  box-shadow: var(--shadow-sm);
   animation: speak-in 0.55s ease 0.12s both;
 }
 
@@ -157,11 +161,13 @@
 }
 
 .speak-output {
-  background: rgba(26, 32, 48, 0.72);
+  background: var(--color-paper-raised);
+  color: var(--color-ink);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   min-height: 10rem;
+  box-shadow: var(--shadow-sm);
   animation: speak-in 0.55s ease 0.18s both;
 }
 
