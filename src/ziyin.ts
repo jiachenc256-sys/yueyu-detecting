@@ -1,4 +1,14 @@
-/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州, by level. */
+/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州, by level + optional speaker audio. */
+
+type ZiyinPlace = "shangyu" | "zhuji" | "shengzhou";
+
+interface ZiyinAudio {
+  shangyu?: string;
+  zhuji?: string;
+  shengzhou?: string;
+  /** Credit line shown under the card when a clip plays / is available */
+  speaker?: string;
+}
 
 interface ZiyinItem {
   han: string;
@@ -9,6 +19,7 @@ interface ZiyinItem {
   level?: number;
   gloss?: string;
   tag?: string;
+  audio?: ZiyinAudio;
 }
 
 interface ZiyinLevelMeta {
@@ -26,6 +37,8 @@ interface ZiyinFile {
   items: ZiyinItem[];
 }
 
+const PLACES: ZiyinPlace[] = ["shangyu", "zhuji", "shengzhou"];
+
 function requireEl<T extends Element>(el: T | null, name: string): T {
   if (!el) throw new Error(`Missing element: ${name}`);
   return el;
@@ -34,6 +47,30 @@ function requireEl<T extends Element>(el: T | null, name: string): T {
 function openLearnSection(target: string): void {
   const link = document.querySelector<HTMLButtonElement>(`[data-learn-target="${target}"]`);
   link?.click();
+}
+
+/** Explicit path in JSON, else convention: assets/learn/ziyin-audio/<place>/<han>.m4a */
+function resolveAudioUrl(item: ZiyinItem, place: ZiyinPlace): string | null {
+  const explicit = item.audio?.[place]?.trim();
+  if (explicit) return explicit;
+  const han = item.han?.trim();
+  if (!han) return null;
+  return `assets/learn/ziyin-audio/${place}/${han}.m4a`;
+}
+
+async function audioExists(url: string): Promise<boolean> {
+  try {
+    const res = await fetch(url, { method: "HEAD", cache: "no-cache" });
+    if (res.ok) return true;
+    // Some static hosts reject HEAD — try a tiny ranged GET
+    if (res.status === 405 || res.status === 501) {
+      const get = await fetch(url, { method: "GET", headers: { Range: "bytes=0-0" }, cache: "no-cache" });
+      return get.ok || get.status === 206;
+    }
+    return false;
+  } catch {
+    return false;
+  }
 }
 
 async function initZiyin(): Promise<void> {
@@ -47,8 +84,10 @@ async function initZiyin(): Promise<void> {
   const shengzhouEl = requireEl(document.getElementById("ziyin-shengzhou"), "ziyin-shengzhou");
   const glossEl = document.getElementById("ziyin-gloss");
   const glossRow = document.getElementById("ziyin-gloss-row");
+  const speakerEl = document.getElementById("ziyin-speaker");
   const tagEl = requireEl(document.getElementById("ziyin-tag"), "ziyin-tag");
   const statusEl = requireEl(document.getElementById("ziyin-status"), "ziyin-status");
+  const audioStatusEl = document.getElementById("ziyin-audio-status");
   const noteEl = document.getElementById("ziyin-note");
   const levelNameEl = document.getElementById("ziyin-level-name");
   const levelButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-ziyin-level]"));
@@ -56,8 +95,11 @@ async function initZiyin(): Promise<void> {
   const nextBtn = requireEl(document.getElementById("ziyin-next"), "ziyin-next") as HTMLButtonElement;
   const randomBtn = requireEl(document.getElementById("ziyin-random"), "ziyin-random") as HTMLButtonElement;
   const startBtn = document.getElementById("learn-start-fayin") as HTMLButtonElement | null;
+  const listenButtons = Object.fromEntries(
+    PLACES.map((place) => [place, document.getElementById(`ziyin-listen-${place}`) as HTMLButtonElement | null]),
+  ) as Record<ZiyinPlace, HTMLButtonElement | null>;
 
-  const res = await fetch("data/learn/ziyin.json?v=20260811a");
+  const res = await fetch("data/learn/ziyin.json?v=20260811g");
   if (!res.ok) throw new Error(`ziyin HTTP ${res.status}`);
   const data = (await res.json()) as ZiyinFile;
   const allItems = data.items.filter((it) => it.han?.trim());
@@ -70,6 +112,9 @@ async function initZiyin(): Promise<void> {
   let pool = allItems.filter((it) => (it.level ?? 1) === level);
   if (!pool.length) pool = allItems;
   let index = 0;
+  let paintToken = 0;
+  const player = new Audio();
+  player.preload = "none";
 
   function levelLabel(lv: number): string {
     const meta = levelsMeta.find((m) => m.id === lv);
@@ -78,6 +123,83 @@ async function initZiyin(): Promise<void> {
     if (lang === "en") return meta.nameEn ?? meta.name;
     if (lang === "zh-Hant") return meta.nameHant ?? meta.name;
     return meta.name;
+  }
+
+  function setAudioHint(key: "hint" | "missing" | "playing" | "error", detail = ""): void {
+    if (!audioStatusEl) return;
+    const lang = document.documentElement.lang || "zh-Hans";
+    const messages = {
+      hint: {
+        "zh-Hans": "真人发音试点：放入录音后即可点「听」。尚无文件时按钮不可用。",
+        "zh-Hant": "真人發音試點：放入錄音後即可點「聽」。尚無檔案時按鈕不可用。",
+        en: "Speaker pilot: Listen unlocks when a clip is on disk. Buttons stay off until then.",
+      },
+      missing: {
+        "zh-Hans": "此字暂无录音。请将 m4a 放到 assets/learn/ziyin-audio/。",
+        "zh-Hant": "此字暫無錄音。請將 m4a 放到 assets/learn/ziyin-audio/。",
+        en: "No recording for this character yet. Add an m4a under assets/learn/ziyin-audio/.",
+      },
+      playing: {
+        "zh-Hans": `正在播放${detail}…`,
+        "zh-Hant": `正在播放${detail}…`,
+        en: `Playing ${detail}…`,
+      },
+      error: {
+        "zh-Hans": "播放失败。请检查录音文件。",
+        "zh-Hant": "播放失敗。請檢查錄音檔。",
+        en: "Could not play this clip. Check the audio file.",
+      },
+    } as const;
+    const table = messages[key];
+    audioStatusEl.textContent =
+      (lang === "zh-Hant" ? table["zh-Hant"] : lang === "en" ? table.en : table["zh-Hans"]) || table.en;
+  }
+
+  async function refreshListenButtons(item: ZiyinItem): Promise<void> {
+    const token = ++paintToken;
+    for (const place of PLACES) {
+      const btn = listenButtons[place];
+      if (!btn) continue;
+      btn.disabled = true;
+      const url = resolveAudioUrl(item, place);
+      if (!url) continue;
+      const ok = await audioExists(url);
+      if (token !== paintToken) return;
+      btn.disabled = !ok;
+      btn.dataset.audioUrl = ok ? url : "";
+    }
+    if (token !== paintToken) return;
+    const anyReady = PLACES.some((p) => listenButtons[p] && !listenButtons[p]!.disabled);
+    if (!anyReady) setAudioHint("hint");
+  }
+
+  function paint(): void {
+    const item = pool[index];
+    if (!item) {
+      statusEl.textContent = `0 / 0 · ${levelLabel(level)}`;
+      return;
+    }
+    player.pause();
+    hanEl.textContent = item.han;
+    pinyinEl.textContent = item.pinyin;
+    shangyuEl.textContent = item.shangyu;
+    zhujiEl.textContent = item.zhuji;
+    shengzhouEl.textContent = item.shengzhou;
+    const gloss = item.gloss?.trim();
+    if (glossEl) glossEl.textContent = gloss || "—";
+    if (glossRow) glossRow.hidden = !gloss;
+    const credit = item.audio?.speaker?.trim();
+    if (speakerEl) {
+      speakerEl.textContent = credit || "";
+      speakerEl.hidden = !credit;
+    }
+    tagEl.textContent = item.tag?.trim() || levelLabel(level);
+    tagEl.hidden = false;
+    statusEl.textContent = `${index + 1} / ${pool.length} · ${levelLabel(level)}`;
+    prevBtn.disabled = pool.length <= 1;
+    nextBtn.disabled = pool.length <= 1;
+    randomBtn.disabled = pool.length <= 1;
+    void refreshListenButtons(item);
   }
 
   function setLevel(next: number, resetIndex = true): void {
@@ -94,26 +216,29 @@ async function initZiyin(): Promise<void> {
     paint();
   }
 
-  function paint(): void {
+  async function playPlace(place: ZiyinPlace): Promise<void> {
     const item = pool[index];
-    if (!item) {
-      statusEl.textContent = `0 / 0 · ${levelLabel(level)}`;
+    if (!item) return;
+    const btn = listenButtons[place];
+    const url = btn?.dataset.audioUrl || resolveAudioUrl(item, place);
+    if (!url) {
+      setAudioHint("missing");
       return;
     }
-    hanEl.textContent = item.han;
-    pinyinEl.textContent = item.pinyin;
-    shangyuEl.textContent = item.shangyu;
-    zhujiEl.textContent = item.zhuji;
-    shengzhouEl.textContent = item.shengzhou;
-    const gloss = item.gloss?.trim();
-    if (glossEl) glossEl.textContent = gloss || "—";
-    if (glossRow) glossRow.hidden = !gloss;
-    tagEl.textContent = item.tag?.trim() || levelLabel(level);
-    tagEl.hidden = false;
-    statusEl.textContent = `${index + 1} / ${pool.length} · ${levelLabel(level)}`;
-    prevBtn.disabled = pool.length <= 1;
-    nextBtn.disabled = pool.length <= 1;
-    randomBtn.disabled = pool.length <= 1;
+    const labels: Record<ZiyinPlace, string> = {
+      shangyu: "上虞 Shangyu",
+      zhuji: "诸暨 Zhuji",
+      shengzhou: "嵊州 Shengzhou",
+    };
+    try {
+      player.pause();
+      player.src = url;
+      setAudioHint("playing", labels[place]);
+      await player.play();
+    } catch {
+      setAudioHint("error");
+      if (btn) btn.disabled = true;
+    }
   }
 
   levelButtons.forEach((btn) => {
@@ -142,18 +267,24 @@ async function initZiyin(): Promise<void> {
     paint();
   });
 
+  for (const place of PLACES) {
+    listenButtons[place]?.addEventListener("click", () => {
+      void playPlace(place);
+    });
+  }
+
   startBtn?.addEventListener("click", () => {
     openLearnSection("fayin");
     setLevel(1, true);
     stage.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  // Locale switch may change level name language.
   const observer = new MutationObserver(() => {
     if (levelNameEl) levelNameEl.textContent = levelLabel(level);
     statusEl.textContent = pool.length
       ? `${index + 1} / ${pool.length} · ${levelLabel(level)}`
       : `0 / 0 · ${levelLabel(level)}`;
+    setAudioHint("hint");
   });
   observer.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
 
