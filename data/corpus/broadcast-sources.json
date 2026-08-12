@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "updated": "2026-08-12",
-  "note": "Catalogued stations for Archive → Broadcast. UI does not link off-site; listenUrl is internal reference only. Short clips stay on-site when ready.",
+  "note": "Internal research notes only. Public Archive uses Speakers (口语) for local read-aloud clips—not station cards or off-site listen links.",
   "sources": [
     {
       "id": "keqiao-fm1068",
