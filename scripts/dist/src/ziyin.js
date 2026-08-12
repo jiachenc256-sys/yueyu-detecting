@@ -6,7 +6,7 @@ function requireEl(el, name) {
     return el;
 }
 function openLearnSection(target) {
-    const link = document.querySelector(`[data-learn-target="${target}"]`);
+    const link = document.querySelector(`.learn-nav__link[data-learn-target="${target}"]`);
     link?.click();
 }
 function shuffleInPlace(arr) {
@@ -78,7 +78,7 @@ async function initZiyin() {
         document.getElementById("ziyin-listen-shengzhou"),
         document.getElementById("ziyin-flash-listen"),
     ].filter(Boolean);
-    const res = await fetch("data/learn/ziyin.json?v=20260812e");
+    const res = await fetch("data/learn/ziyin.json?v=20260812f");
     if (!res.ok)
         throw new Error(`ziyin HTTP ${res.status}`);
     const data = (await res.json());
@@ -404,6 +404,14 @@ async function initZiyin() {
         openLearnSection("fayin");
         setLevel(1, true);
         stage.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    document.getElementById("learn-start-from-guide")?.addEventListener("click", () => {
+        openLearnSection("fayin");
+        setLevel(1, true);
+        stage.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    document.getElementById("learn-open-pinyin")?.addEventListener("click", () => {
+        openLearnSection("pinyin");
     });
     const observer = new MutationObserver(() => {
         if (levelNameEl)

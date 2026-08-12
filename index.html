@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260812e" />
-  <link rel="stylesheet" href="styles/main.css?v=20260812e" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260812e" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260812e" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260812e" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260812e" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260812f" />
+  <link rel="stylesheet" href="styles/main.css?v=20260812f" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260812f" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260812f" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260812f" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260812f" />
 </head>
 <body>
   <div class="app-shell">
@@ -1704,12 +1704,28 @@
 
         <div class="learn-layout">
           <nav class="learn-nav" aria-label="Learn tools" data-i18n-attr="aria-label" data-i18n="learn.navLabel">
-            <button type="button" class="learn-nav__link" data-learn-target="pinyin" aria-current="true" data-i18n="learn.nav.pinyin">学习拼音</button>
+            <button type="button" class="learn-nav__link" data-learn-target="guide" aria-current="true" data-i18n="learn.nav.guide">学习指南</button>
+            <button type="button" class="learn-nav__link" data-learn-target="pinyin" aria-current="false" data-i18n="learn.nav.pinyin">学习拼音</button>
             <button type="button" class="learn-nav__link" data-learn-target="fayin" aria-current="false" data-i18n="learn.nav.fayin">学习发音</button>
           </nav>
 
           <div class="learn-content">
-            <div class="learn-tool" data-learn-section="pinyin" aria-hidden="false">
+            <div class="learn-tool" data-learn-section="guide" aria-hidden="false">
+              <section id="ziyin-syllabus" class="ziyin-syllabus" aria-labelledby="ziyin-syllabus-title">
+                <h3 id="ziyin-syllabus-title" class="ziyin-syllabus__title" data-i18n="learn.syllabus.title">本课学什么</h3>
+                <p class="ziyin-syllabus__lead" data-i18n="learn.syllabus.lead">
+                  五阶共练多少字、每阶练什么，先看清楚再开始。第 1–4 阶按类型学新字；第 5 阶用翻卡复习前四阶全部字与嵊州录音。
+                </p>
+                <p id="ziyin-syllabus-total" class="ziyin-syllabus__total"></p>
+                <div id="ziyin-syllabus-list" class="ziyin-syllabus__list"></div>
+              </section>
+              <div class="plan-cta-row">
+                <button type="button" class="home-cta__btn" id="learn-open-pinyin" data-i18n="learn.nav.pinyin">学习拼音</button>
+                <button type="button" class="home-cta__btn home-cta__btn--primary" id="learn-start-from-guide" data-i18n="learn.pinyin.cta">开始第 1 阶发音练习</button>
+              </div>
+            </div>
+
+            <div class="learn-tool" data-learn-section="pinyin" aria-hidden="true">
               <h3 class="learn-primer__title" data-i18n="learn.pinyin.title">学习拼音</h3>
               <p class="learn-audience" data-i18n="learn.pinyin.lead">给已会普通话拼音的人：用真实字例学会读三地音标，再进入第 1 阶发音练习。</p>
 
@@ -1945,15 +1961,6 @@
             </div>
 
             <div class="learn-tool" data-learn-section="fayin" aria-hidden="true">
-              <section id="ziyin-syllabus" class="ziyin-syllabus" aria-labelledby="ziyin-syllabus-title">
-                <h3 id="ziyin-syllabus-title" class="ziyin-syllabus__title" data-i18n="learn.syllabus.title">本课学什么</h3>
-                <p class="ziyin-syllabus__lead" data-i18n="learn.syllabus.lead">
-                  五阶共练多少字、每阶练什么，先看清楚再开始。第 1–4 阶按类型学新字；第 5 阶用翻卡复习前四阶全部字与嵊州录音。
-                </p>
-                <p id="ziyin-syllabus-total" class="ziyin-syllabus__total"></p>
-                <div id="ziyin-syllabus-list" class="ziyin-syllabus__list"></div>
-              </section>
-
               <p class="learn-audience" data-visible-lang="zh-Hans" data-i18n="learn.audienceHans">
                 对照汉字、普通话拼音，以及上虞 / 诸暨 / 嵊州三地读音。请先选阶，再一张张练。真人录音仅提供嵊州话。
               </p>
@@ -2297,9 +2304,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260812e"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260812e"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260812e"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812e"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260812f"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260812f"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260812f"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812f"></script>
 </body>
 </html>

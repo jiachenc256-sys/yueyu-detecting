@@ -41,14 +41,14 @@ function initNavigation(): void {
   });
 }
 
-function initSideNavigation(linkAttr: string, sectionAttr: string): void {
-  const links = document.querySelectorAll<HTMLButtonElement>(`[${linkAttr}]`);
+function initSideNavigation(linkAttr: string, sectionAttr: string, linkSelector?: string): void {
+  const links = document.querySelectorAll<HTMLButtonElement>(linkSelector ?? `[${linkAttr}]`);
 
   links.forEach((link) => {
     link.addEventListener("click", () => {
       const target = link.getAttribute(linkAttr);
       const root = link.closest(".plan-layout, .learn-layout") ?? document;
-      const localLinks = root.querySelectorAll<HTMLButtonElement>(`[${linkAttr}]`);
+      const localLinks = root.querySelectorAll<HTMLButtonElement>(linkSelector ?? `[${linkAttr}]`);
       const sections = root.querySelectorAll<HTMLElement>(`[${sectionAttr}]`);
 
       localLinks.forEach((l) => {
@@ -160,9 +160,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initI18n();
   initNavigation();
   initStoryMore();
-  initSideNavigation("data-plan-target", "data-plan-section");
-  initSideNavigation("data-about-target", "data-about-section");
-  initSideNavigation("data-learn-target", "data-learn-section");
+  initSideNavigation("data-plan-target", "data-plan-section", ".plan-nav__link[data-plan-target]");
+  initSideNavigation("data-about-target", "data-about-section", ".plan-nav__link[data-about-target]");
+  initSideNavigation("data-learn-target", "data-learn-section", ".learn-nav__link[data-learn-target]");
   const applyArchiveFilter = initArchiveFilters();
 
   const hash = window.location.hash.replace(/^#/, "");
