@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260812a" />
-  <link rel="stylesheet" href="styles/main.css?v=20260812a" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260812a" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260812a" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260812a" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260812a" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260812b" />
+  <link rel="stylesheet" href="styles/main.css?v=20260812b" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260812b" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260812b" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260812b" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260812b" />
 </head>
 <body>
   <div class="app-shell">
@@ -1965,7 +1965,11 @@
               </div>
 
               <div id="ziyin-stage" class="ziyin-stage" hidden>
-                <div class="ziyin-card">
+                <p id="ziyin-mode-note" class="ziyin-mode-note" hidden data-i18n="learn.ziyin.flashIntro">
+                  第 5 阶为翻卡巩固：正面只看汉字，点卡片揭晓拼音，并用「听嵊州」自检读音。
+                </p>
+
+                <div id="ziyin-drill" class="ziyin-card">
                   <p id="ziyin-han" class="ziyin-han" lang="zh-Hans">多</p>
                   <span id="ziyin-tag" class="ziyin-tag"></span>
                   <div class="ziyin-rows">
@@ -1996,10 +2000,39 @@
                   </p>
                 </div>
 
+                <div id="ziyin-flash" class="ziyin-flash" hidden>
+                  <div
+                    id="ziyin-flash-card"
+                    class="ziyin-flash__card"
+                    role="button"
+                    tabindex="0"
+                    aria-pressed="false"
+                    data-i18n-attr="aria-label"
+                    data-i18n="learn.ziyin.flashToggleLabel"
+                  >
+                    <div class="ziyin-flash__inner">
+                      <div class="ziyin-flash__face ziyin-flash__face--front">
+                        <p id="ziyin-flash-han" class="ziyin-flash__han" lang="zh-Hans">多</p>
+                        <p class="ziyin-flash__hint" data-i18n="learn.ziyin.flashFrontHint">点卡片揭晓</p>
+                      </div>
+                      <div class="ziyin-flash__face ziyin-flash__face--back">
+                        <p id="ziyin-flash-han-back" class="ziyin-flash__han ziyin-flash__han--small" lang="zh-Hans">多</p>
+                        <p id="ziyin-flash-pinyin" class="ziyin-flash__pinyin" lang="zh-Latn">duō</p>
+                        <p id="ziyin-flash-shengzhou" class="ziyin-flash__ipa">to534</p>
+                        <div class="ziyin-flash__listen-wrap">
+                          <button type="button" class="ziyin-listen ziyin-listen--primary" id="ziyin-flash-listen" data-ziyin-place="shengzhou" data-i18n="learn.ziyin.listenShengzhou" disabled>听嵊州</button>
+                        </div>
+                        <p class="ziyin-flash__hint" data-i18n="learn.ziyin.flashBackHint">再点卡片翻回 · 用录音自检</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="ziyin-controls">
                   <button type="button" class="home-cta__btn" id="ziyin-prev" data-i18n="learn.ziyin.prev">上一个</button>
                   <button type="button" class="home-cta__btn" id="ziyin-next" data-i18n="learn.ziyin.next">下一个</button>
                   <button type="button" class="home-cta__btn" id="ziyin-random" data-i18n="learn.ziyin.random">随机</button>
+                  <button type="button" class="home-cta__btn" id="ziyin-shuffle" data-i18n="learn.ziyin.shuffle" hidden>洗牌</button>
                 </div>
                 <p id="ziyin-audio-status" class="ziyin-audio-status" data-i18n="learn.ziyin.audioHint">点击「听嵊州」可听真人发音。上虞、诸暨仅显示音标对照。</p>
                 <p id="ziyin-status" class="ziyin-status">1 / 1</p>
@@ -2252,9 +2285,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260812a"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260812a"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260812a"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812a"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260812b"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260812b"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260812b"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812b"></script>
 </body>
 </html>
