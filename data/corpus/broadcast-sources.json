@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "updated": "2026-08-12",
+  "note": "Locked listening sources for Archive → Broadcast. External platforms only; no full commercial episodes hosted in-repo.",
+  "sources": [
+    {
+      "id": "keqiao-fm1068",
+      "priority": 1,
+      "station": "柯桥经典汽车广播 FM106.8",
+      "stationEn": "Keqiao Classic Car Radio FM106.8",
+      "place": "绍兴 · 柯桥",
+      "placeEn": "Shaoxing · Keqiao",
+      "why": "本地车载台，节目单稳定可回听；优先抽听含绍兴话互动的栏目。",
+      "whyEn": "Stable local car radio with replayable schedule; prioritize segments with Shaoxing-dialect talk.",
+      "listenUrl": "https://m.qingting.fm/channels/2422/",
+      "platform": "蜻蜓 FM",
+      "status": "locked",
+      "dialectHint": "mixed",
+      "programsToTry": ["下班万岁", "绍兴早上好", "悦读绍兴", "越歌越好听"]
+    },
+    {
+      "id": "shaoxing-hua-search",
+      "priority": 2,
+      "station": "学好绍兴话，走遍绍兴都不怕",
+      "stationEn": "Learn Shaoxing speech (dialect feature)",
+      "place": "绍兴",
+      "placeEn": "Shaoxing",
+      "why": "明确以绍兴话教学 / 互动为目标的栏目线索；在蜻蜓搜节目名找往期。",
+      "whyEn": "Dialect-teaching feature associated with Keqiao radio hosts; search Qingting by show title.",
+      "listenUrl": "https://www.qtfm.cn/search/%E5%AD%A6%E5%A5%BD%E7%BB%8D%E5%85%B4%E8%AF%9D/",
+      "platform": "蜻蜓 FM 搜索",
+      "status": "locked",
+      "dialectHint": "shaoxing",
+      "programsToTry": ["学好绍兴话，走遍绍兴都不怕"]
+    },
+    {
+      "id": "shaoxing-fm1035",
+      "priority": 3,
+      "station": "绍兴音乐广播 FM103.5",
+      "stationEn": "Shaoxing Music Radio FM103.5",
+      "place": "绍兴",
+      "placeEn": "Shaoxing",
+      "why": "本地音乐台，方言密度通常较低，作备选回听源。",
+      "whyEn": "Local music station; usually less dialect density—secondary source.",
+      "listenUrl": "https://m.qingting.fm/channels/5054/",
+      "platform": "蜻蜓 FM",
+      "status": "locked",
+      "dialectHint": "low",
+      "programsToTry": ["1035早高峰", "1035晚高峰"]
+    },
+    {
+      "id": "shengzhou-fm1003",
+      "priority": 4,
+      "station": "嵊州电台 FM100.3",
+      "stationEn": "Shengzhou Radio FM100.3",
+      "place": "嵊州",
+      "placeEn": "Shengzhou",
+      "why": "越剧发源地本地台；口音更贴近字音练习。微信搜「嵊广1003」或 App「嵊州手机台」。",
+      "whyEn": "Home of Yue opera; closer to Shengzhou speech. WeChat: 嵊广1003 or app 嵊州手机台.",
+      "listenUrl": "https://www.hitime5.com/radio/zhejiang/fm1003.html",
+      "platform": "在线收听页 / 嵊州手机台",
+      "status": "locked",
+      "dialectHint": "shengzhou-possible",
+      "programsToTry": ["城市早班车", "嵊州晚高峰", "上午好我的亲"]
+    }
+  ]
+}

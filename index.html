@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260812h" />
-  <link rel="stylesheet" href="styles/main.css?v=20260812h" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260812h" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260812h" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260812h" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260812h" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260812i" />
+  <link rel="stylesheet" href="styles/main.css?v=20260812i" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260812i" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260812i" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260812i" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260812i" />
 </head>
 <body>
   <div class="app-shell">
@@ -297,7 +297,7 @@
           <button type="button" class="archive-filter" data-archive-filter="tanci" aria-pressed="false" data-i18n="archive.filterTanci">弹词</button>
           <button type="button" class="archive-filter" data-archive-filter="broadcast" aria-pressed="false" data-i18n="archive.filterBroadcast">广播</button>
         </div>
-        <p class="archive-filter-note" data-i18n="archive.filterNote">点「弹词」只看刻本图文档案；点「越剧」看听录音选段；「广播」筹备中。弹词还可上传图片做 OCR。</p>
+        <p class="archive-filter-note" data-i18n="archive.filterNote">点「弹词」只看刻本图文档案；点「越剧」看听录音选段；「广播」已锁定可听来源（外链蜻蜓等），短选段转写进行中。</p>
 
         <div class="archive-grid">
           <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong.html" data-archive-category="yueju">
@@ -1044,16 +1044,87 @@
             </div>
           </button>
 
-          <div class="piece-card piece-card--placeholder" data-archive-category="broadcast" aria-hidden="false">
-            <span class="badge" data-i18n="archive.badgeSoon">筹备中</span>
-            <h3 class="piece-card__title" data-i18n="archive.broadcastTitle">广播 · 日常吴语</h3>
-            <p class="piece-card__meta" data-i18n="archive.broadcastMeta">Radio / everyday Wu speech · coming next</p>
+          <a
+            class="piece-card piece-card--link"
+            href="https://m.qingting.fm/channels/2422/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-archive-category="broadcast"
+          >
+            <span class="badge badge--ready" data-i18n="archive.badgeBroadcastLocked">已锁定来源</span>
+            <h3 class="piece-card__title" data-i18n="archive.broadcastFm1068Title">柯桥 FM106.8 · 经典汽车广播</h3>
+            <p class="piece-card__meta" data-i18n="archive.broadcastFm1068Meta">蜻蜓 FM · 可回听 · 首选</p>
             <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">为长辈与日常说话人预留席位：广播选段与生活口语，和舞台越剧并列，让档案更完整。</span>
-              <span data-visible-lang="zh-Hant">為長輩與日常說話人預留席位：廣播選段與生活口語，和舞臺越劇並列，讓檔案更完整。</span>
-              <span data-visible-lang="en">A seat for elders and everyday speakers: radio clips and living speech beside stage Yue opera, so the archive is more complete.</span>
+              <span data-visible-lang="zh-Hans">已锁定：打开蜻蜓收听柯桥人民广播电台。优先听《下班万岁》《绍兴早上好》《悦读绍兴》等本地口播，再剪 1–3 分钟做人转写。</span>
+              <span data-visible-lang="zh-Hant">已鎖定：打開蜻蜓收聽柯橋人民廣播電台。優先聽《下班萬歲》《紹興早上好》《悅讀紹興》等本地口播，再剪 1–3 分鐘做人轉寫。</span>
+              <span data-visible-lang="en">Locked source: open Qingting for Keqiao FM106.8. Prefer local talk blocks, then clip 1–3 minutes for human transcript.</span>
             </p>
-          </div>
+            <div class="piece-card__stats">
+              <div class="stat">
+                <span class="stat__label">Platform</span>
+                <span class="stat__value">Qingting</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Freq</span>
+                <span class="stat__value">106.8</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Open</span>
+                <span class="stat__value">↗</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="piece-card piece-card--link"
+            href="https://www.qtfm.cn/search/%E5%AD%A6%E5%A5%BD%E7%BB%8D%E5%85%B4%E8%AF%9D/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-archive-category="broadcast"
+          >
+            <span class="badge badge--ready" data-i18n="archive.badgeBroadcastDialect">方言栏目</span>
+            <h3 class="piece-card__title" data-i18n="archive.broadcastDialectTitle">学好绍兴话，走遍绍兴都不怕</h3>
+            <p class="piece-card__meta" data-i18n="archive.broadcastDialectMeta">蜻蜓搜索 · 绍兴话教学 / 互动</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">已锁定搜索入口：在蜻蜓搜此节目名找往期。明确做绍兴话，最适合当广播口语试点。</span>
+              <span data-visible-lang="zh-Hant">已鎖定搜尋入口：在蜻蜓搜此節目名找往期。明確做紹興話，最適合當廣播口語試點。</span>
+              <span data-visible-lang="en">Locked Qingting search for the Shaoxing-dialect feature—best first pilot for everyday speech clips.</span>
+            </p>
+          </a>
+
+          <a
+            class="piece-card piece-card--link"
+            href="https://m.qingting.fm/channels/5054/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-archive-category="broadcast"
+          >
+            <span class="badge" data-i18n="archive.badgeBroadcastAlt">备选</span>
+            <h3 class="piece-card__title" data-i18n="archive.broadcastFm1035Title">绍兴音乐广播 FM103.5</h3>
+            <p class="piece-card__meta" data-i18n="archive.broadcastFm1035Meta">蜻蜓 FM · 备选回听</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">已锁定台页。方言密度通常较低，作备选。</span>
+              <span data-visible-lang="zh-Hant">已鎖定台頁。方言密度通常較低，作備選。</span>
+              <span data-visible-lang="en">Locked station page. Usually less dialect—secondary source.</span>
+            </p>
+          </a>
+
+          <a
+            class="piece-card piece-card--link"
+            href="https://www.hitime5.com/radio/zhejiang/fm1003.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-archive-category="broadcast"
+          >
+            <span class="badge badge--ready" data-i18n="archive.badgeBroadcastShengzhou">嵊州口音</span>
+            <h3 class="piece-card__title" data-i18n="archive.broadcastFm1003Title">嵊州电台 FM100.3</h3>
+            <p class="piece-card__meta" data-i18n="archive.broadcastFm1003Meta">在线收听 · 也可搜微信「嵊广1003」</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">已锁定：嵊州本地台，口音更贴近字音练习。也可开 App「嵊州手机台」听早高峰。</span>
+              <span data-visible-lang="zh-Hant">已鎖定：嵊州本地台，口音更貼近字音練習。也可開 App「嵊州手機台」聽早高峰。</span>
+              <span data-visible-lang="en">Locked Shengzhou FM100.3—closer to the Learn audio accent. WeChat 嵊广1003 or app 嵊州手机台 also work.</span>
+            </p>
+          </a>
 
           <div class="add-piece-card" aria-hidden="true">
             <span class="add-piece-card__icon">＋</span>
@@ -2304,9 +2375,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260812h"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260812h"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260812h"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812h"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260812i"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260812i"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260812i"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812i"></script>
 </body>
 </html>
