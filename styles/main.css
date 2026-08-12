@@ -1052,7 +1052,7 @@ body {
 }
 
 .story-step {
-  padding: var(--space-6) var(--space-6);
+  padding: var(--space-6) clamp(1.5rem, 2.8vw, 2.25rem);
   border-right: 1px solid var(--color-border);
   animation: home-rise 0.7s ease both;
 }
@@ -1137,6 +1137,11 @@ body {
 
   .story-step:nth-child(2) {
     border-right: none;
+    padding-right: 0;
+  }
+
+  .story-step:nth-child(3) {
+    padding-left: 0;
   }
 
   .story-step:nth-child(1),
