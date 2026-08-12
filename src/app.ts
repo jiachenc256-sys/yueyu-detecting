@@ -20,7 +20,7 @@ function initNavigation(): void {
 
     const currentHash = window.location.hash.replace(/^#/, "");
     const keepArchiveSubhash =
-      target === "archive" && /^archive-(tanci|yueju|broadcast)$/.test(currentHash);
+      target === "archive" && /^archive-(tanci|yueju|speakers|broadcast)$/.test(currentHash);
     if (
       !keepArchiveSubhash &&
       (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`)
@@ -167,10 +167,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const hash = window.location.hash.replace(/^#/, "");
   if (hash.startsWith("archive")) {
-    const catMatch = /^archive-(tanci|yueju|broadcast)$/.exec(hash);
-    if (catMatch) history.replaceState(null, "", `#archive-${catMatch[1]}`);
+    const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
+    const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
+    if (catMatch) history.replaceState(null, "", `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`);
     document.querySelector<HTMLElement>(`.site-nav [data-panel-target="archive"]`)?.click();
-    applyArchiveFilter(catMatch?.[1] ?? "all", { scroll: true });
+    applyArchiveFilter(filterCat, { scroll: true });
   } else if (hash) {
     document.querySelector<HTMLElement>(`.site-nav [data-panel-target="${hash}"]`)?.click();
   }

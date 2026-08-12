@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260812j" />
-  <link rel="stylesheet" href="styles/main.css?v=20260812j" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260812j" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260812j" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260812j" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260812j" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260812m" />
+  <link rel="stylesheet" href="styles/main.css?v=20260812m" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260812m" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260812m" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260812m" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260812m" />
 </head>
 <body>
   <div class="app-shell">
@@ -295,9 +295,9 @@
           <button type="button" class="archive-filter" data-archive-filter="all" aria-pressed="true" data-i18n="archive.filterAll">全部</button>
           <button type="button" class="archive-filter" data-archive-filter="yueju" aria-pressed="false" data-i18n="archive.filterYueju">越剧</button>
           <button type="button" class="archive-filter" data-archive-filter="tanci" aria-pressed="false" data-i18n="archive.filterTanci">弹词</button>
-          <button type="button" class="archive-filter" data-archive-filter="broadcast" aria-pressed="false" data-i18n="archive.filterBroadcast">广播</button>
+          <button type="button" class="archive-filter" data-archive-filter="speakers" aria-pressed="false" data-i18n="archive.filterSpeakers">口语</button>
         </div>
-        <p class="archive-filter-note" data-i18n="archive.filterNote">点「弹词」只看刻本图文档案；点「越剧」看听录音选段；「广播」已锁定可听来源（外链蜻蜓等），短选段转写进行中。</p>
+        <p class="archive-filter-note" data-i18n="archive.filterNote">点「弹词」只看刻本图文档案；点「越剧」看听录音选段；「口语」将收录本地说话人朗读短选段（筹备中）。弹词还可上传图片做 OCR。</p>
 
         <div class="archive-grid">
           <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong.html" data-archive-category="yueju">
@@ -1044,61 +1044,12 @@
             </div>
           </button>
 
-          <article class="piece-card" data-archive-category="broadcast">
-            <span class="badge badge--ready" data-i18n="archive.badgeBroadcastLocked">已锁定来源</span>
-            <h3 class="piece-card__title" data-i18n="archive.broadcastFm1068Title">柯桥 FM106.8 · 经典汽车广播</h3>
-            <p class="piece-card__meta" data-i18n="archive.broadcastFm1068Meta">绍兴 · 柯桥 · 首选口语源</p>
-            <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">台源已编目（不跳转外站）。短选段与人转写将放在本站 Archive，优先本地口播栏目。</span>
-              <span data-visible-lang="zh-Hant">臺源已編目（不跳轉外站）。短選段與人轉寫將放在本站 Archive，優先本地口播欄目。</span>
-              <span data-visible-lang="en">Catalogued source (no off-site link). Short clips + human transcripts will stay on this Archive.</span>
-            </p>
-            <div class="piece-card__stats">
-              <div class="stat">
-                <span class="stat__label">Place</span>
-                <span class="stat__value">Keqiao</span>
-              </div>
-              <div class="stat">
-                <span class="stat__label">Freq</span>
-                <span class="stat__value">106.8</span>
-              </div>
-              <div class="stat">
-                <span class="stat__label">Status</span>
-                <span class="stat__value">On-site next</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="piece-card" data-archive-category="broadcast">
-            <span class="badge badge--ready" data-i18n="archive.badgeBroadcastDialect">方言栏目</span>
-            <h3 class="piece-card__title" data-i18n="archive.broadcastDialectTitle">学好绍兴话，走遍绍兴都不怕</h3>
-            <p class="piece-card__meta" data-i18n="archive.broadcastDialectMeta">绍兴话教学 / 互动 · 口语试点</p>
-            <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">方言栏目已编目（不跳转外站）。适合做广播口语试点；选段将留在本站。</span>
-              <span data-visible-lang="zh-Hant">方言欄目已編目（不跳轉外站）。適合做廣播口語試點；選段將留在本站。</span>
-              <span data-visible-lang="en">Dialect feature catalogued (no off-site link). Best pilot for everyday speech; clips stay here.</span>
-            </p>
-          </article>
-
-          <article class="piece-card" data-archive-category="broadcast">
-            <span class="badge" data-i18n="archive.badgeBroadcastAlt">备选</span>
-            <h3 class="piece-card__title" data-i18n="archive.broadcastFm1035Title">绍兴音乐广播 FM103.5</h3>
-            <p class="piece-card__meta" data-i18n="archive.broadcastFm1035Meta">绍兴 · 备选源</p>
-            <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">备选台源已编目（不跳转外站）。方言密度通常较低。</span>
-              <span data-visible-lang="zh-Hant">備選臺源已編目（不跳轉外站）。方言密度通常較低。</span>
-              <span data-visible-lang="en">Secondary source catalogued (no off-site link). Usually less dialect density.</span>
-            </p>
-          </article>
-
-          <article class="piece-card" data-archive-category="broadcast">
-            <span class="badge badge--ready" data-i18n="archive.badgeBroadcastShengzhou">嵊州口音</span>
-            <h3 class="piece-card__title" data-i18n="archive.broadcastFm1003Title">嵊州电台 FM100.3</h3>
-            <p class="piece-card__meta" data-i18n="archive.broadcastFm1003Meta">嵊州 · 贴近字音练习</p>
-            <p class="piece-card__note">
-              <span data-visible-lang="zh-Hans">嵊州本地台已编目（不跳转外站）。口音更贴近字音练习；选段将放在本站。</span>
-              <span data-visible-lang="zh-Hant">嵊州本地臺已編目（不跳轉外站）。口音更貼近字音練習；選段將放在本站。</span>
-              <span data-visible-lang="en">Shengzhou station catalogued (no off-site link). Closer to Learn accent; clips stay here.</span>
+          <article class="piece-card" data-archive-category="speakers">
+            <span class="badge" data-i18n="archive.badgeSpeakersSoon">筹备中</span>
+            <h3 class="piece-card__title" data-i18n="archive.speakersTitle">口语 · 说话人朗读</h3>
+            <p class="piece-card__meta" data-i18n="archive.speakersMeta">本地说话人短选段 · 只在本站播放</p>
+            <p class="piece-card__note" data-i18n="archive.speakersNote">
+              不再挂电台台名。将邀请本地说话人朗读短文并录音；整理好人转写后放在这里收听。
             </p>
           </article>
 
@@ -2351,9 +2302,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260812j"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260812j"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260812j"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812j"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260812m"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260812m"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260812m"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812m"></script>
 </body>
 </html>

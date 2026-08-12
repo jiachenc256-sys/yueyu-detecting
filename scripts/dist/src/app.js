@@ -17,7 +17,7 @@ function initNavigation() {
             panel.setAttribute("aria-hidden", panel.dataset.panel === target ? "false" : "true");
         });
         const currentHash = window.location.hash.replace(/^#/, "");
-        const keepArchiveSubhash = target === "archive" && /^archive-(tanci|yueju|broadcast)$/.test(currentHash);
+        const keepArchiveSubhash = target === "archive" && /^archive-(tanci|yueju|speakers|broadcast)$/.test(currentHash);
         if (!keepArchiveSubhash &&
             (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`)) {
             history.replaceState(null, "", `#${target}`);
@@ -148,11 +148,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const applyArchiveFilter = initArchiveFilters();
     const hash = window.location.hash.replace(/^#/, "");
     if (hash.startsWith("archive")) {
-        const catMatch = /^archive-(tanci|yueju|broadcast)$/.exec(hash);
+        const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
+        const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
         if (catMatch)
-            history.replaceState(null, "", `#archive-${catMatch[1]}`);
+            history.replaceState(null, "", `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`);
         document.querySelector(`.site-nav [data-panel-target="archive"]`)?.click();
-        applyArchiveFilter(catMatch?.[1] ?? "all", { scroll: true });
+        applyArchiveFilter(filterCat, { scroll: true });
     }
     else if (hash) {
         document.querySelector(`.site-nav [data-panel-target="${hash}"]`)?.click();
