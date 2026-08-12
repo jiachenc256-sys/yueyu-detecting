@@ -1,6 +1,5 @@
 "use strict";
-/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州, by level + optional speaker audio. */
-const PLACES = ["shangyu", "zhuji", "shengzhou"];
+/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州 IPA; speaker audio for Shengzhou only. */
 function requireEl(el, name) {
     if (!el)
         throw new Error(`Missing element: ${name}`);
@@ -10,7 +9,7 @@ function openLearnSection(target) {
     const link = document.querySelector(`[data-learn-target="${target}"]`);
     link?.click();
 }
-/** Explicit path in JSON, else convention: assets/learn/ziyin-audio/<place>/<han>.m4a */
+/** Explicit path in JSON, else convention: assets/learn/ziyin-audio/shengzhou/<han>.m4a */
 function resolveAudioUrl(item, place) {
     const explicit = item.audio?.[place]?.trim();
     if (explicit)
@@ -58,8 +57,8 @@ async function initZiyin() {
     const nextBtn = requireEl(document.getElementById("ziyin-next"), "ziyin-next");
     const randomBtn = requireEl(document.getElementById("ziyin-random"), "ziyin-random");
     const startBtn = document.getElementById("learn-start-fayin");
-    const listenButtons = Object.fromEntries(PLACES.map((place) => [place, document.getElementById(`ziyin-listen-${place}`)]));
-    const res = await fetch("data/learn/ziyin.json?v=20260811g");
+    const listenBtn = document.getElementById("ziyin-listen-shengzhou");
+    const res = await fetch("data/learn/ziyin.json?v=20260812a");
     if (!res.ok)
         throw new Error(`ziyin HTTP ${res.status}`);
     const data = (await res.json());
@@ -94,14 +93,14 @@ async function initZiyin() {
         const lang = document.documentElement.lang || "zh-Hans";
         const messages = {
             hint: {
-                "zh-Hans": "真人发音试点：放入录音后即可点「听」。尚无文件时按钮不可用。",
-                "zh-Hant": "真人發音試點：放入錄音後即可點「聽」。尚無檔案時按鈕不可用。",
-                en: "Speaker pilot: Listen unlocks when a clip is on disk. Buttons stay off until then.",
+                "zh-Hans": "点击「听嵊州」可听真人发音。上虞、诸暨仅显示音标对照。",
+                "zh-Hant": "點擊「聽嵊州」可聽真人發音。上虞、諸暨僅顯示音標對照。",
+                en: "Tap Hear Shengzhou for a speaker clip. Shangyu and Zhuji show IPA for reference only.",
             },
             missing: {
-                "zh-Hans": "此字暂无录音。请将 m4a 放到 assets/learn/ziyin-audio/。",
-                "zh-Hant": "此字暫無錄音。請將 m4a 放到 assets/learn/ziyin-audio/。",
-                en: "No recording for this character yet. Add an m4a under assets/learn/ziyin-audio/.",
+                "zh-Hans": "此字暂无嵊州录音。",
+                "zh-Hant": "此字暫無嵊州錄音。",
+                en: "No Shengzhou recording for this character yet.",
             },
             playing: {
                 "zh-Hans": `正在播放${detail}…`,
@@ -118,26 +117,23 @@ async function initZiyin() {
         audioStatusEl.textContent =
             (lang === "zh-Hant" ? table["zh-Hant"] : lang === "en" ? table.en : table["zh-Hans"]) || table.en;
     }
-    async function refreshListenButtons(item) {
+    async function refreshListenButton(item) {
+        if (!listenBtn)
+            return;
         const token = ++paintToken;
-        for (const place of PLACES) {
-            const btn = listenButtons[place];
-            if (!btn)
-                continue;
-            btn.disabled = true;
-            const url = resolveAudioUrl(item, place);
-            if (!url)
-                continue;
-            const ok = await audioExists(url);
-            if (token !== paintToken)
-                return;
-            btn.disabled = !ok;
-            btn.dataset.audioUrl = ok ? url : "";
+        listenBtn.disabled = true;
+        listenBtn.dataset.audioUrl = "";
+        const url = resolveAudioUrl(item, "shengzhou");
+        if (!url) {
+            setAudioHint("hint");
+            return;
         }
+        const ok = await audioExists(url);
         if (token !== paintToken)
             return;
-        const anyReady = PLACES.some((p) => listenButtons[p] && !listenButtons[p].disabled);
-        if (!anyReady)
+        listenBtn.disabled = !ok;
+        listenBtn.dataset.audioUrl = ok ? url : "";
+        if (!ok)
             setAudioHint("hint");
     }
     function paint() {
@@ -168,7 +164,7 @@ async function initZiyin() {
         prevBtn.disabled = pool.length <= 1;
         nextBtn.disabled = pool.length <= 1;
         randomBtn.disabled = pool.length <= 1;
-        void refreshListenButtons(item);
+        void refreshListenButton(item);
     }
     function setLevel(next, resetIndex = true) {
         level = next;
@@ -187,31 +183,25 @@ async function initZiyin() {
             levelNameEl.textContent = levelLabel(level);
         paint();
     }
-    async function playPlace(place) {
+    async function playShengzhou() {
         const item = pool[index];
         if (!item)
             return;
-        const btn = listenButtons[place];
-        const url = btn?.dataset.audioUrl || resolveAudioUrl(item, place);
+        const url = listenBtn?.dataset.audioUrl || resolveAudioUrl(item, "shengzhou");
         if (!url) {
             setAudioHint("missing");
             return;
         }
-        const labels = {
-            shangyu: "上虞 Shangyu",
-            zhuji: "诸暨 Zhuji",
-            shengzhou: "嵊州 Shengzhou",
-        };
         try {
             player.pause();
             player.src = url;
-            setAudioHint("playing", labels[place]);
+            setAudioHint("playing", "嵊州 Shengzhou");
             await player.play();
         }
         catch {
             setAudioHint("error");
-            if (btn)
-                btn.disabled = true;
+            if (listenBtn)
+                listenBtn.disabled = true;
         }
     }
     levelButtons.forEach((btn) => {
@@ -243,11 +233,9 @@ async function initZiyin() {
         index = next;
         paint();
     });
-    for (const place of PLACES) {
-        listenButtons[place]?.addEventListener("click", () => {
-            void playPlace(place);
-        });
-    }
+    listenBtn?.addEventListener("click", () => {
+        void playShengzhou();
+    });
     startBtn?.addEventListener("click", () => {
         openLearnSection("fayin");
         setLevel(1, true);

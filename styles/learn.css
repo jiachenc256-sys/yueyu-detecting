@@ -44,11 +44,21 @@
 }
 
 .learn-audience {
-  margin: 0 0 var(--space-6);
+  margin: 0 0 var(--space-4);
   max-width: 40rem;
   color: var(--color-ink-muted);
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
+}
+
+.ziyin-audio-note {
+  margin: 0 0 var(--space-6);
+  max-width: 40rem;
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  padding: var(--space-3) 0 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
 }
 
 .learn-primer__title {
