@@ -225,7 +225,16 @@ async function initZiyin() {
     }
     function setLevel(next, resetIndex = true) {
         level = next;
-        pool = allItems.filter((it) => (it.level ?? 1) === level);
+        if (isFlashMode()) {
+            // Level 5 = shuffled review of Levels 1–4 (with existing Shengzhou clips).
+            pool = allItems.filter((it) => {
+                const lv = it.level ?? 1;
+                return lv >= 1 && lv <= 4;
+            });
+        }
+        else {
+            pool = allItems.filter((it) => (it.level ?? 1) === level);
+        }
         if (!pool.length)
             pool = allItems.slice();
         else
