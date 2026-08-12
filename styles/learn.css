@@ -389,6 +389,122 @@
   margin-top: var(--space-3);
 }
 
+.ziyin-mode-note {
+  margin: 0 0 var(--space-5);
+  max-width: 36rem;
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-flash {
+  perspective: 1200px;
+  max-width: 22rem;
+}
+
+.ziyin-flash__card {
+  position: relative;
+  width: 100%;
+  min-height: 18rem;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.ziyin-flash__card:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-accent);
+  border-radius: var(--radius-md, 0.75rem);
+}
+
+.ziyin-flash__inner {
+  position: relative;
+  width: 100%;
+  min-height: 18rem;
+  transform-style: preserve-3d;
+  transition: transform 0.55s ease;
+}
+
+.ziyin-flash__card.is-flipped .ziyin-flash__inner {
+  transform: rotateY(180deg);
+}
+
+.ziyin-flash__face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-8) var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 0.75rem);
+  background: var(--color-paper-raised);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.ziyin-flash__face--front {
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--color-accent-soft) 55%, transparent), transparent 55%),
+    var(--color-paper-raised);
+}
+
+.ziyin-flash__face--back {
+  transform: rotateY(180deg);
+  border-color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent-soft) 35%, var(--color-paper-raised));
+}
+
+.ziyin-flash__han {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(4.25rem, 14vw, 5.75rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: var(--color-ink);
+}
+
+.ziyin-flash__han--small {
+  font-size: clamp(2.25rem, 8vw, 3rem);
+}
+
+.ziyin-flash__pinyin {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 4vw, 1.85rem);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.ziyin-flash__ipa {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+}
+
+.ziyin-flash__listen-wrap {
+  margin-top: var(--space-2);
+}
+
+.ziyin-flash__hint {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  color: var(--color-ink-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ziyin-flash__inner {
+    transition: none;
+  }
+}
+
 @media (max-width: 768px) {
   .learn-layout {
     grid-template-columns: 1fr;

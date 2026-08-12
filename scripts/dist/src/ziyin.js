@@ -1,5 +1,5 @@
 "use strict";
-/** Single-character drill: Mandarin pinyin + 上虞 / 诸暨 / 嵊州 IPA; speaker audio for Shengzhou only. */
+/** Single-character drill (L1–4) + Level 5 reveal flashcards; Shengzhou speaker audio only. */
 function requireEl(el, name) {
     if (!el)
         throw new Error(`Missing element: ${name}`);
@@ -8,6 +8,15 @@ function requireEl(el, name) {
 function openLearnSection(target) {
     const link = document.querySelector(`[data-learn-target="${target}"]`);
     link?.click();
+}
+function shuffleInPlace(arr) {
+    for (let i = arr.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const a = arr[i];
+        const b = arr[j];
+        arr[i] = b;
+        arr[j] = a;
+    }
 }
 /** Explicit path in JSON, else convention: assets/learn/ziyin-audio/shengzhou/<han>.m4a */
 function resolveAudioUrl(item, place) {
@@ -24,7 +33,6 @@ async function audioExists(url) {
         const res = await fetch(url, { method: "HEAD", cache: "no-cache" });
         if (res.ok)
             return true;
-        // Some static hosts reject HEAD — try a tiny ranged GET
         if (res.status === 405 || res.status === 501) {
             const get = await fetch(url, { method: "GET", headers: { Range: "bytes=0-0" }, cache: "no-cache" });
             return get.ok || get.status === 206;
@@ -39,6 +47,10 @@ async function initZiyin() {
     const stage = document.getElementById("ziyin-stage");
     if (!stage)
         return;
+    const drillEl = requireEl(document.getElementById("ziyin-drill"), "ziyin-drill");
+    const flashEl = requireEl(document.getElementById("ziyin-flash"), "ziyin-flash");
+    const flashCard = requireEl(document.getElementById("ziyin-flash-card"), "ziyin-flash-card");
+    const modeNoteEl = document.getElementById("ziyin-mode-note");
     const hanEl = requireEl(document.getElementById("ziyin-han"), "ziyin-han");
     const pinyinEl = requireEl(document.getElementById("ziyin-pinyin"), "ziyin-pinyin");
     const shangyuEl = requireEl(document.getElementById("ziyin-shangyu"), "ziyin-shangyu");
@@ -48,6 +60,10 @@ async function initZiyin() {
     const glossRow = document.getElementById("ziyin-gloss-row");
     const speakerEl = document.getElementById("ziyin-speaker");
     const tagEl = requireEl(document.getElementById("ziyin-tag"), "ziyin-tag");
+    const flashHanEl = requireEl(document.getElementById("ziyin-flash-han"), "ziyin-flash-han");
+    const flashHanBackEl = requireEl(document.getElementById("ziyin-flash-han-back"), "ziyin-flash-han-back");
+    const flashPinyinEl = requireEl(document.getElementById("ziyin-flash-pinyin"), "ziyin-flash-pinyin");
+    const flashShengzhouEl = requireEl(document.getElementById("ziyin-flash-shengzhou"), "ziyin-flash-shengzhou");
     const statusEl = requireEl(document.getElementById("ziyin-status"), "ziyin-status");
     const audioStatusEl = document.getElementById("ziyin-audio-status");
     const noteEl = document.getElementById("ziyin-note");
@@ -56,9 +72,13 @@ async function initZiyin() {
     const prevBtn = requireEl(document.getElementById("ziyin-prev"), "ziyin-prev");
     const nextBtn = requireEl(document.getElementById("ziyin-next"), "ziyin-next");
     const randomBtn = requireEl(document.getElementById("ziyin-random"), "ziyin-random");
+    const shuffleBtn = document.getElementById("ziyin-shuffle");
     const startBtn = document.getElementById("learn-start-fayin");
-    const listenBtn = document.getElementById("ziyin-listen-shengzhou");
-    const res = await fetch("data/learn/ziyin.json?v=20260812a");
+    const listenBtns = [
+        document.getElementById("ziyin-listen-shengzhou"),
+        document.getElementById("ziyin-flash-listen"),
+    ].filter(Boolean);
+    const res = await fetch("data/learn/ziyin.json?v=20260812b");
     if (!res.ok)
         throw new Error(`ziyin HTTP ${res.status}`);
     const data = (await res.json());
@@ -73,9 +93,13 @@ async function initZiyin() {
     if (!pool.length)
         pool = allItems;
     let index = 0;
+    let flipped = false;
     let paintToken = 0;
     const player = new Audio();
     player.preload = "none";
+    function isFlashMode() {
+        return level === 5;
+    }
     function levelLabel(lv) {
         const meta = levelsMeta.find((m) => m.id === lv);
         const lang = document.documentElement.lang || "zh-Hans";
@@ -97,6 +121,11 @@ async function initZiyin() {
                 "zh-Hant": "點擊「聽嵊州」可聽真人發音。上虞、諸暨僅顯示音標對照。",
                 en: "Tap Hear Shengzhou for a speaker clip. Shangyu and Zhuji show IPA for reference only.",
             },
+            flashHint: {
+                "zh-Hans": "先看正面汉字，点卡片揭晓拼音，再点「听嵊州」自检。",
+                "zh-Hant": "先看正面漢字，點卡片揭曉拼音，再點「聽嵊州」自檢。",
+                en: "See the character first, tap to reveal pinyin, then Hear Shengzhou to self-check.",
+            },
             missing: {
                 "zh-Hans": "此字暂无嵊州录音。",
                 "zh-Hant": "此字暫無嵊州錄音。",
@@ -117,24 +146,44 @@ async function initZiyin() {
         audioStatusEl.textContent =
             (lang === "zh-Hant" ? table["zh-Hant"] : lang === "en" ? table.en : table["zh-Hans"]) || table.en;
     }
-    async function refreshListenButton(item) {
-        if (!listenBtn)
-            return;
+    function setFlipped(next) {
+        flipped = next;
+        flashCard.classList.toggle("is-flipped", flipped);
+        flashCard.setAttribute("aria-pressed", flipped ? "true" : "false");
+    }
+    function syncModeUi() {
+        const flash = isFlashMode();
+        drillEl.hidden = flash;
+        flashEl.hidden = !flash;
+        if (modeNoteEl)
+            modeNoteEl.hidden = !flash;
+        if (shuffleBtn)
+            shuffleBtn.hidden = !flash;
+        randomBtn.hidden = flash;
+        stage.classList.toggle("ziyin-stage--flash", flash);
+        if (!flash)
+            setFlipped(false);
+    }
+    async function refreshListenButtons(item) {
         const token = ++paintToken;
-        listenBtn.disabled = true;
-        listenBtn.dataset.audioUrl = "";
+        for (const btn of listenBtns) {
+            btn.disabled = true;
+            btn.dataset.audioUrl = "";
+        }
         const url = resolveAudioUrl(item, "shengzhou");
         if (!url) {
-            setAudioHint("hint");
+            setAudioHint(isFlashMode() ? "flashHint" : "hint");
             return;
         }
         const ok = await audioExists(url);
         if (token !== paintToken)
             return;
-        listenBtn.disabled = !ok;
-        listenBtn.dataset.audioUrl = ok ? url : "";
+        for (const btn of listenBtns) {
+            btn.disabled = !ok;
+            btn.dataset.audioUrl = ok ? url : "";
+        }
         if (!ok)
-            setAudioHint("hint");
+            setAudioHint(isFlashMode() ? "flashHint" : "hint");
     }
     function paint() {
         const item = pool[index];
@@ -143,11 +192,16 @@ async function initZiyin() {
             return;
         }
         player.pause();
+        setFlipped(false);
         hanEl.textContent = item.han;
         pinyinEl.textContent = item.pinyin;
         shangyuEl.textContent = item.shangyu;
         zhujiEl.textContent = item.zhuji;
         shengzhouEl.textContent = item.shengzhou;
+        flashHanEl.textContent = item.han;
+        flashHanBackEl.textContent = item.han;
+        flashPinyinEl.textContent = item.pinyin;
+        flashShengzhouEl.textContent = item.shengzhou;
         const gloss = item.gloss?.trim();
         if (glossEl)
             glossEl.textContent = gloss || "—";
@@ -164,13 +218,20 @@ async function initZiyin() {
         prevBtn.disabled = pool.length <= 1;
         nextBtn.disabled = pool.length <= 1;
         randomBtn.disabled = pool.length <= 1;
-        void refreshListenButton(item);
+        if (shuffleBtn)
+            shuffleBtn.disabled = pool.length <= 1;
+        void refreshListenButtons(item);
+        setAudioHint(isFlashMode() ? "flashHint" : "hint");
     }
     function setLevel(next, resetIndex = true) {
         level = next;
         pool = allItems.filter((it) => (it.level ?? 1) === level);
         if (!pool.length)
-            pool = allItems;
+            pool = allItems.slice();
+        else
+            pool = pool.slice();
+        if (isFlashMode())
+            shuffleInPlace(pool);
         if (resetIndex)
             index = 0;
         else
@@ -181,13 +242,14 @@ async function initZiyin() {
         });
         if (levelNameEl)
             levelNameEl.textContent = levelLabel(level);
+        syncModeUi();
         paint();
     }
-    async function playShengzhou() {
+    async function playShengzhou(fromBtn) {
         const item = pool[index];
         if (!item)
             return;
-        const url = listenBtn?.dataset.audioUrl || resolveAudioUrl(item, "shengzhou");
+        const url = fromBtn?.dataset.audioUrl || listenBtns.find((b) => b.dataset.audioUrl)?.dataset.audioUrl || resolveAudioUrl(item, "shengzhou");
         if (!url) {
             setAudioHint("missing");
             return;
@@ -200,8 +262,8 @@ async function initZiyin() {
         }
         catch {
             setAudioHint("error");
-            if (listenBtn)
-                listenBtn.disabled = true;
+            for (const btn of listenBtns)
+                btn.disabled = true;
         }
     }
     levelButtons.forEach((btn) => {
@@ -233,9 +295,35 @@ async function initZiyin() {
         index = next;
         paint();
     });
-    listenBtn?.addEventListener("click", () => {
-        void playShengzhou();
+    shuffleBtn?.addEventListener("click", () => {
+        if (pool.length < 2)
+            return;
+        const current = pool[index];
+        if (!current)
+            return;
+        shuffleInPlace(pool);
+        const at = pool.indexOf(current);
+        index = at >= 0 ? at : 0;
+        paint();
     });
+    flashCard.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target?.closest("button"))
+            return;
+        setFlipped(!flipped);
+    });
+    flashCard.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ")
+            return;
+        event.preventDefault();
+        setFlipped(!flipped);
+    });
+    for (const btn of listenBtns) {
+        btn.addEventListener("click", (event) => {
+            event.stopPropagation();
+            void playShengzhou(btn);
+        });
+    }
     startBtn?.addEventListener("click", () => {
         openLearnSection("fayin");
         setLevel(1, true);
@@ -247,7 +335,7 @@ async function initZiyin() {
         statusEl.textContent = pool.length
             ? `${index + 1} / ${pool.length} · ${levelLabel(level)}`
             : `0 / 0 · ${levelLabel(level)}`;
-        setAudioHint("hint");
+        setAudioHint(isFlashMode() ? "flashHint" : "hint");
     });
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
     setLevel(1, true);
