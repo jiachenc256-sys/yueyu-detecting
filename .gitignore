@@ -17,6 +17,10 @@ assets/video/
 *.flac
 *.wav
 
+# Short per-character Learn clips ship with the site; raw group batches stay local.
+!assets/learn/ziyin-audio/**/*.m4a
+assets/learn/ziyin-audio/batches/
+
 # Private Baidu / purchase notes and huge local dumps never enter git
 data/corpus/SOURCES.local.md
 data/corpus/raw/
