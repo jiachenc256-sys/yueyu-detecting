@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "updated": "2026-08-12",
-  "note": "Locked listening sources for Archive → Broadcast. External platforms only; no full commercial episodes hosted in-repo.",
+  "note": "Catalogued stations for Archive → Broadcast. UI does not link off-site; listenUrl is internal reference only. Short clips stay on-site when ready.",
   "sources": [
     {
       "id": "keqiao-fm1068",
