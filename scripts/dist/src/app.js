@@ -35,13 +35,13 @@ function initNavigation() {
         });
     });
 }
-function initSideNavigation(linkAttr, sectionAttr) {
-    const links = document.querySelectorAll(`[${linkAttr}]`);
+function initSideNavigation(linkAttr, sectionAttr, linkSelector) {
+    const links = document.querySelectorAll(linkSelector ?? `[${linkAttr}]`);
     links.forEach((link) => {
         link.addEventListener("click", () => {
             const target = link.getAttribute(linkAttr);
             const root = link.closest(".plan-layout, .learn-layout") ?? document;
-            const localLinks = root.querySelectorAll(`[${linkAttr}]`);
+            const localLinks = root.querySelectorAll(linkSelector ?? `[${linkAttr}]`);
             const sections = root.querySelectorAll(`[${sectionAttr}]`);
             localLinks.forEach((l) => {
                 if (l === link)
@@ -142,9 +142,9 @@ document.addEventListener("DOMContentLoaded", () => {
     initI18n();
     initNavigation();
     initStoryMore();
-    initSideNavigation("data-plan-target", "data-plan-section");
-    initSideNavigation("data-about-target", "data-about-section");
-    initSideNavigation("data-learn-target", "data-learn-section");
+    initSideNavigation("data-plan-target", "data-plan-section", ".plan-nav__link[data-plan-target]");
+    initSideNavigation("data-about-target", "data-about-section", ".plan-nav__link[data-about-target]");
+    initSideNavigation("data-learn-target", "data-learn-section", ".learn-nav__link[data-learn-target]");
     const applyArchiveFilter = initArchiveFilters();
     const hash = window.location.hash.replace(/^#/, "");
     if (hash.startsWith("archive")) {

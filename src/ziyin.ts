@@ -44,7 +44,9 @@ function requireEl<T extends Element>(el: T | null, name: string): T {
 }
 
 function openLearnSection(target: string): void {
-  const link = document.querySelector<HTMLButtonElement>(`[data-learn-target="${target}"]`);
+  const link = document.querySelector<HTMLButtonElement>(
+    `.learn-nav__link[data-learn-target="${target}"]`,
+  );
   link?.click();
 }
 
@@ -120,7 +122,7 @@ async function initZiyin(): Promise<void> {
     document.getElementById("ziyin-flash-listen") as HTMLButtonElement | null,
   ].filter(Boolean) as HTMLButtonElement[];
 
-  const res = await fetch("data/learn/ziyin.json?v=20260812e");
+  const res = await fetch("data/learn/ziyin.json?v=20260812f");
   if (!res.ok) throw new Error(`ziyin HTTP ${res.status}`);
   const data = (await res.json()) as ZiyinFile;
   const allItems = data.items.filter((it) => it.han?.trim());
@@ -440,6 +442,15 @@ async function initZiyin(): Promise<void> {
     openLearnSection("fayin");
     setLevel(1, true);
     stage.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  document.getElementById("learn-start-from-guide")?.addEventListener("click", () => {
+    openLearnSection("fayin");
+    setLevel(1, true);
+    stage.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.getElementById("learn-open-pinyin")?.addEventListener("click", () => {
+    openLearnSection("pinyin");
   });
 
   const observer = new MutationObserver(() => {
