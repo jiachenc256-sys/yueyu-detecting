@@ -1,5 +1,7 @@
 /** Single-character drill (L1–4) + Level 5 reveal flashcards; Shengzhou speaker audio only. */
 
+import { applyLocale, getLocale } from "./i18n.js";
+
 type ZiyinPlace = "shengzhou";
 
 interface ZiyinAudio {
@@ -199,6 +201,8 @@ async function initZiyin(): Promise<void> {
     randomBtn.hidden = flash;
     stage!.classList.toggle("ziyin-stage--flash", flash);
     if (!flash) setFlipped(false);
+    // Re-apply labels when Level 5 controls become visible (avoids stale/missing i18n text).
+    applyLocale(getLocale());
   }
 
   async function refreshListenButtons(item: ZiyinItem): Promise<void> {
@@ -331,11 +335,18 @@ async function initZiyin(): Promise<void> {
   });
   shuffleBtn?.addEventListener("click", () => {
     if (pool.length < 2) return;
-    const current = pool[index];
-    if (!current) return;
+    const previous = pool[index];
     shuffleInPlace(pool);
-    const at = pool.indexOf(current);
-    index = at >= 0 ? at : 0;
+    // Start at the top of the new deck so the learner sees a new route immediately.
+    index = 0;
+    if (previous && pool[0] === previous) {
+      // Extremely rare after a full shuffle, but avoid a no-op first card.
+      const swapWith = 1 + Math.floor(Math.random() * (pool.length - 1));
+      const a = pool[0] as ZiyinItem;
+      const b = pool[swapWith] as ZiyinItem;
+      pool[0] = b;
+      pool[swapWith] = a;
+    }
     paint();
   });
 
