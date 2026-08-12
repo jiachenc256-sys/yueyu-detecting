@@ -1,5 +1,5 @@
 /** Single-character drill (L1–4) + Level 5 reveal flashcards; Shengzhou speaker audio only. */
-import { applyLocale, getLocale } from "./i18n.js";
+import { onLocaleChange, t, tf } from "./i18n.js";
 function requireEl(el, name) {
     if (!el)
         throw new Error(`Missing element: ${name}`);
@@ -78,7 +78,7 @@ async function initZiyin() {
         document.getElementById("ziyin-listen-shengzhou"),
         document.getElementById("ziyin-flash-listen"),
     ].filter(Boolean);
-    const res = await fetch("data/learn/ziyin.json?v=20260812b");
+    const res = await fetch("data/learn/ziyin.json?v=20260812e");
     if (!res.ok)
         throw new Error(`ziyin HTTP ${res.status}`);
     const data = (await res.json());
@@ -88,6 +88,67 @@ async function initZiyin() {
     if (noteEl && data.note)
         noteEl.textContent = data.note;
     const levelsMeta = data.levels ?? [];
+    const syllabusListEl = document.getElementById("ziyin-syllabus-list");
+    const syllabusTotalEl = document.getElementById("ziyin-syllabus-total");
+    function itemsForLevel(lv) {
+        return allItems.filter((it) => (it.level ?? 1) === lv);
+    }
+    function renderSyllabus() {
+        if (!syllabusListEl)
+            return;
+        const l14 = allItems.filter((it) => {
+            const lv = it.level ?? 1;
+            return lv >= 1 && lv <= 4;
+        });
+        if (syllabusTotalEl) {
+            syllabusTotalEl.textContent = tf("learn.syllabus.total", { n: l14.length });
+        }
+        const descKey = (lv) => `learn.syllabus.l${lv}desc`;
+        syllabusListEl.replaceChildren();
+        for (const lv of [1, 2, 3, 4, 5]) {
+            const hans = lv === 5
+                ? l14.map((it) => it.han)
+                : itemsForLevel(lv).map((it) => it.han);
+            const article = document.createElement("article");
+            article.className = "ziyin-syllabus__item";
+            const head = document.createElement("div");
+            head.className = "ziyin-syllabus__head";
+            const title = document.createElement("h4");
+            title.className = "ziyin-syllabus__level";
+            title.textContent = `${lv}. ${levelLabel(lv)}`;
+            const count = document.createElement("span");
+            count.className = "ziyin-syllabus__count";
+            count.textContent = tf("learn.syllabus.count", { n: hans.length });
+            head.append(title, count);
+            const desc = document.createElement("p");
+            desc.className = "ziyin-syllabus__desc";
+            desc.textContent = t(descKey(lv));
+            article.append(head, desc);
+            if (lv === 5) {
+                const note = document.createElement("p");
+                note.className = "ziyin-syllabus__note";
+                note.textContent = t("learn.syllabus.l5wordsNote");
+                article.append(note);
+            }
+            else {
+                const details = document.createElement("details");
+                const summary = document.createElement("summary");
+                summary.textContent = t("learn.syllabus.showWords");
+                details.addEventListener("toggle", () => {
+                    summary.textContent = details.open
+                        ? t("learn.syllabus.hideWords")
+                        : t("learn.syllabus.showWords");
+                });
+                const words = document.createElement("p");
+                words.className = "ziyin-syllabus__words";
+                words.lang = "zh-Hans";
+                words.textContent = hans.join("");
+                details.append(summary, words);
+                article.append(details);
+            }
+            syllabusListEl.append(article);
+        }
+    }
     let level = 1;
     let pool = allItems.filter((it) => (it.level ?? 1) === level);
     if (!pool.length)
@@ -163,8 +224,6 @@ async function initZiyin() {
         stage.classList.toggle("ziyin-stage--flash", flash);
         if (!flash)
             setFlipped(false);
-        // Re-apply labels when Level 5 controls become visible (avoids stale/missing i18n text).
-        applyLocale(getLocale());
     }
     async function refreshListenButtons(item) {
         const token = ++paintToken;
@@ -355,6 +414,10 @@ async function initZiyin() {
         setAudioHint(isFlashMode() ? "flashHint" : "hint");
     });
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
+    onLocaleChange(() => {
+        renderSyllabus();
+    });
+    renderSyllabus();
     setLevel(1, true);
     stage.removeAttribute("hidden");
 }
