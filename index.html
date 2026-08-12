@@ -22,12 +22,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260811g" />
-  <link rel="stylesheet" href="styles/main.css?v=20260811g" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260811g" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260811g" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260811g" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260811g" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260812a" />
+  <link rel="stylesheet" href="styles/main.css?v=20260812a" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260812a" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260812a" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260812a" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260812a" />
 </head>
 <body>
   <div class="app-shell">
@@ -1943,13 +1943,16 @@
 
             <div class="learn-tool" data-learn-section="fayin" aria-hidden="true">
               <p class="learn-audience" data-visible-lang="zh-Hans" data-i18n="learn.audienceHans">
-                对照汉字、普通话拼音，以及上虞 / 诸暨 / 嵊州三地读音。请先选阶，再一张张练。
+                对照汉字、普通话拼音，以及上虞 / 诸暨 / 嵊州三地读音。请先选阶，再一张张练。真人录音仅提供嵊州话。
               </p>
               <p class="learn-audience" data-visible-lang="zh-Hant" data-i18n="learn.audienceNote">
-                對照漢字、普通話拼音，以及上虞 / 諸暨 / 嵊州三地讀音。請先選階，再一張張練。
+                對照漢字、普通話拼音，以及上虞 / 諸暨 / 嵊州三地讀音。請先選階，再一張張練。真人錄音僅提供嵊州話。
               </p>
               <p class="learn-audience" data-visible-lang="en" data-i18n="learn.audienceNote">
-                Compare Simplified hanzi and Mandarin pinyin with Shangyu, Zhuji, and Shengzhou. Pick a level, then step through cards.
+                Compare hanzi and Mandarin pinyin with Shangyu, Zhuji, and Shengzhou. Pick a level, then step through cards. Spoken audio is Shengzhou only.
+              </p>
+              <p class="ziyin-audio-note" data-i18n="learn.ziyin.audioPolicy">
+                真人录音只提供嵊州话：它更贴近越剧念白，也更通行。上虞、诸暨读音仍以音标对照，仅供参考。
               </p>
 
               <div class="ziyin-levels" role="group" aria-label="Levels" data-i18n-attr="aria-label" data-i18n="learn.ziyin.levelsLabel">
@@ -1972,17 +1975,11 @@
                     </div>
                     <div class="ziyin-row">
                       <span class="ziyin-row__label" data-i18n="learn.ziyin.shangyu">上虞</span>
-                      <div class="ziyin-row__main">
-                        <p id="ziyin-shangyu" class="ziyin-row__value ziyin-row__value--ipa">tɷ35</p>
-                        <button type="button" class="ziyin-listen" id="ziyin-listen-shangyu" data-ziyin-place="shangyu" data-i18n="learn.ziyin.listenShort" disabled>听</button>
-                      </div>
+                      <p id="ziyin-shangyu" class="ziyin-row__value ziyin-row__value--ipa">tɷ35</p>
                     </div>
                     <div class="ziyin-row">
                       <span class="ziyin-row__label" data-i18n="learn.ziyin.zhuji">诸暨</span>
-                      <div class="ziyin-row__main">
-                        <p id="ziyin-zhuji" class="ziyin-row__value ziyin-row__value--ipa">tɤu544</p>
-                        <button type="button" class="ziyin-listen" id="ziyin-listen-zhuji" data-ziyin-place="zhuji" data-i18n="learn.ziyin.listenShort" disabled>听</button>
-                      </div>
+                      <p id="ziyin-zhuji" class="ziyin-row__value ziyin-row__value--ipa">tɤu544</p>
                     </div>
                     <div class="ziyin-row ziyin-row--focus">
                       <span class="ziyin-row__label" data-i18n="learn.ziyin.shengzhou">嵊州</span>
@@ -2004,12 +2001,10 @@
                   <button type="button" class="home-cta__btn" id="ziyin-next" data-i18n="learn.ziyin.next">下一个</button>
                   <button type="button" class="home-cta__btn" id="ziyin-random" data-i18n="learn.ziyin.random">随机</button>
                 </div>
-                <p id="ziyin-audio-status" class="ziyin-audio-status" data-i18n="learn.ziyin.audioHint">真人发音试点：放入录音后即可点「听」。尚无文件时按钮不可用。</p>
+                <p id="ziyin-audio-status" class="ziyin-audio-status" data-i18n="learn.ziyin.audioHint">点击「听嵊州」可听真人发音。上虞、诸暨仅显示音标对照。</p>
                 <p id="ziyin-status" class="ziyin-status">1 / 1</p>
                 <p id="ziyin-note" class="ziyin-note"></p>
-                <p class="ziyin-legend" data-visible-lang="zh-Hans">三地读音为对照参考，非普通话拼音。嵊州与越剧念白关系最近，已单独标出。</p>
-                <p class="ziyin-legend" data-visible-lang="zh-Hant">三地讀音為對照參考，非普通話拼音。嵊州與越劇念白關係最近，已單獨標出。</p>
-                <p class="ziyin-legend" data-visible-lang="en">The three local readings are for comparison—not Mandarin pinyin. Shengzhou is highlighted for Yue Opera speech.</p>
+                <p class="ziyin-legend" data-i18n="learn.ziyin.legend">三地读音为对照参考，非普通话拼音。真人录音仅提供嵊州话。</p>
               </div>
             </div>
           </div>
@@ -2257,9 +2252,9 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260811g"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260811g"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260811g"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260811g"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260812a"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260812a"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260812a"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812a"></script>
 </body>
 </html>
