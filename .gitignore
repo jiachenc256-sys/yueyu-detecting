@@ -17,6 +17,9 @@ assets/video/
 *.flac
 *.wav
 
+# Archive starter Yue-opera clips ship with the site (~11MB); full packs stay local.
+!assets/audio/*.mp3
+
 # Short per-character Learn clips ship with the site; raw group batches stay local.
 !assets/learn/ziyin-audio/**/*.m4a
 assets/learn/ziyin-audio/batches/
