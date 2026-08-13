@@ -19,6 +19,8 @@ assets/video/
 
 # Archive starter Yue-opera clips ship with the site (~11MB); full packs stay local.
 !assets/audio/*.mp3
+# Full-length 新龙门客寨 starter (needed for live piece player).
+!assets/audio/longmen-kezhai.m4a
 
 # Short per-character Learn clips ship with the site; raw group batches stay local.
 !assets/learn/ziyin-audio/**/*.m4a
