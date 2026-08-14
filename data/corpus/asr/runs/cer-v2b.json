@@ -1,0 +1,694 @@
+{
+  "schema": "cer-v2",
+  "nTest": 27,
+  "device": "mps",
+  "split": "whole-piece holdout test",
+  "decode": {
+    "max_new_tokens": 444,
+    "cap_ratio": 2.5
+  },
+  "tiny": {
+    "model": "openai/whisper-tiny",
+    "n": 27,
+    "meanCer": 7.312316284538507,
+    "meanCerCapped": 1.8813932980599648,
+    "meanCerClipped": 1.0,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "he-wenxiu-suanming-10",
+        "ref": "待我掐指细推算",
+        "hyp": "這星期六 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你 又是你",
+        "cer": 63.42857142857143,
+        "cerCapped": 3.4285714285714284,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-11",
+        "ref": "其中奥妙不一般",
+        "hyp": "咱们就能想到你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-2",
+        "ref": "尊一声大娘听端详",
+        "hyp": "什麼?",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-3",
+        "ref": "小人算命走四方",
+        "hyp": "謝謝",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-4",
+        "ref": "不知大娘有何疑难事",
+        "hyp": "冰冻 呃 冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰冰",
+        "cer": 24.77777777777778,
+        "cerCapped": 3.3333333333333335,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-5",
+        "ref": "说来与我细商量",
+        "hyp": "人生 怕不樂 怕陪你愛你 愛你 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去世 去",
+        "cer": 63.285714285714285,
+        "cerCapped": 3.4285714285714284,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-6",
+        "ref": "尊一声先生听我言",
+        "hyp": "我第一步会给你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-7",
+        "ref": "家中有事费疑难",
+        "hyp": "我們已經在說 媽媽 妳 妳知道嗎?謝謝妳 妳有這樣的戲子?沒有的事",
+        "cer": 4.571428571428571,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-8",
+        "ref": "我把生辰八字报",
+        "hyp": "明天的天",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-9",
+        "ref": "望求先生仔细看",
+        "hyp": "馬古山長 也提供萬 鎖裡的雅山心的",
+        "cer": 2.4285714285714284,
+        "cerCapped": 2.4285714285714284,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-10",
+        "ref": "满腹苦水向谁诉",
+        "hyp": "安靈 害心在 跟你要目的把心致",
+        "cer": 2.142857142857143,
+        "cerCapped": 2.142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-11",
+        "ref": "泪湿衣襟心如麻",
+        "hyp": "黑拉路 下禮了一三天",
+        "cer": 1.4285714285714286,
+        "cerCapped": 1.4285714285714286,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-12",
+        "ref": "阿毛啊，我的阿毛",
+        "hyp": "莫害瑪斯 远不过莫过陰景",
+        "cer": 1.5,
+        "cerCapped": 1.5,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-13",
+        "ref": "狼衔了你去再不见",
+        "hyp": "今天下落了最多最近他可以如此拿海",
+        "cer": 1.875,
+        "cerCapped": 1.875,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-14",
+        "ref": "四叔四婶冷眼看",
+        "hyp": "她投訴我一把她的樣子打架我要死我淚死",
+        "cer": 2.5714285714285716,
+        "cerCapped": 2.5714285714285716,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-15",
+        "ref": "捐门槛也洗不清",
+        "hyp": "阿回忆 阿回 咬 阿回 咬 阿回",
+        "cer": 2.2857142857142856,
+        "cerCapped": 2.2857142857142856,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-16",
+        "ref": "人间何处容我身",
+        "hyp": "你不見得 再做 再見 太累",
+        "cer": 1.8571428571428572,
+        "cerCapped": 1.8571428571428572,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-17",
+        "ref": "苦命人儿泪成河",
+        "hyp": "今天來啦",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-18",
+        "ref": "诉不尽这心酸话",
+        "hyp": "明天明天我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-2",
+        "ref": "听他一番心酸话",
+        "hyp": "請問他",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-3",
+        "ref": "不由我珠泪往下洒",
+        "hyp": "阿姨 阿姨 阿姨 阿姨",
+        "cer": 1.375,
+        "cerCapped": 1.375,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-4",
+        "ref": "想我祥林嫂命苦",
+        "hyp": "我已可以見到你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-5",
+        "ref": "丧夫失子受尽欺压",
+        "hyp": "《不幸的天》",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-6",
+        "ref": "苍天啊",
+        "hyp": "You deserve you, you deserve",
+        "cer": 9.333333333333334,
+        "cerCapped": 5.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-7",
+        "ref": "为何这般不公平",
+        "hyp": "我平常送那種在我的家",
+        "cer": 1.4285714285714286,
+        "cerCapped": 1.4285714285714286,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-8",
+        "ref": "世道冷漠人心假",
+        "hyp": "今晚平 她花了一千隻",
+        "cer": 1.4285714285714286,
+        "cerCapped": 1.4285714285714286,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-9",
+        "ref": "何处才是安身家",
+        "hyp": "我紅gie 傻妄卻 吃晚",
+        "cer": 1.7142857142857142,
+        "cerCapped": 1.7142857142857142,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "small": {
+    "model": "openai/whisper-small",
+    "n": 27,
+    "meanCer": 10.701793062904176,
+    "meanCerCapped": 2.1009700176366843,
+    "meanCerClipped": 0.9894179894179894,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "he-wenxiu-suanming-10",
+        "ref": "待我掐指细推算",
+        "hyp": "《小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小",
+        "cer": 63.42857142857143,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-11",
+        "ref": "其中奥妙不一般",
+        "hyp": "三五四五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五五",
+        "cer": 63.42857142857143,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-2",
+        "ref": "尊一声大娘听端详",
+        "hyp": "要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?要在那邊嗎?",
+        "cer": 49.5,
+        "cerCapped": 3.5,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-3",
+        "ref": "小人算命走四方",
+        "hyp": "請走",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-4",
+        "ref": "不知大娘有何疑难事",
+        "hyp": "聽摩尼,會摩尼,叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮叮",
+        "cer": 24.88888888888889,
+        "cerCapped": 3.3333333333333335,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-5",
+        "ref": "说来与我细商量",
+        "hyp": "新鮮八字八倍米, 本是要說是幾米, 人家的名",
+        "cer": 3.142857142857143,
+        "cerCapped": 3.142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-6",
+        "ref": "尊一声先生听我言",
+        "hyp": "我一不回家而不哄人",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-7",
+        "ref": "家中有事费疑难",
+        "hyp": "我明天再說一遍媽媽聽到現在你要這樣 這樣是一種老的這個事",
+        "cer": 4.0,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "he-wenxiu-suanming-8",
+        "ref": "我把生辰八字报",
+        "hyp": "《天空》",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-9",
+        "ref": "望求先生仔细看",
+        "hyp": "《大陸上駕駛天屋外》四里正家 長行飛鴨",
+        "cer": 2.7142857142857144,
+        "cerCapped": 2.7142857142857144,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-10",
+        "ref": "满腹苦水向谁诉",
+        "hyp": "在來恆星載的兩目的馬上見",
+        "cer": 1.7142857142857142,
+        "cerCapped": 1.7142857142857142,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-11",
+        "ref": "泪湿衣襟心如麻",
+        "hyp": "天天落落 土下涼一生罪",
+        "cer": 1.5714285714285714,
+        "cerCapped": 1.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-12",
+        "ref": "阿毛啊，我的阿毛",
+        "hyp": "我係蠟燭,我係無辜,我過癮嘅飯",
+        "cer": 1.75,
+        "cerCapped": 1.75,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-13",
+        "ref": "狼衔了你去再不见",
+        "hyp": "見了落淚最後再見他又是腦海又是灰",
+        "cer": 1.875,
+        "cerCapped": 1.875,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-14",
+        "ref": "四叔四婶冷眼看",
+        "hyp": "他都注意吧 發料的大將要死 不能死",
+        "cer": 2.4285714285714284,
+        "cerCapped": 2.4285714285714284,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-15",
+        "ref": "捐门槛也洗不清",
+        "hyp": "我回府吃苦要拿不來拿要別",
+        "cer": 1.5714285714285714,
+        "cerCapped": 1.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-16",
+        "ref": "人间何处容我身",
+        "hyp": "與我天背 非真實 此夜埋怜",
+        "cer": 1.8571428571428572,
+        "cerCapped": 1.8571428571428572,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-17",
+        "ref": "苦命人儿泪成河",
+        "hyp": "這首歌是在《天空》中的",
+        "cer": 1.5714285714285714,
+        "cerCapped": 1.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-18",
+        "ref": "诉不尽这心酸话",
+        "hyp": "音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培",
+        "cer": 47.42857142857143,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-2",
+        "ref": "听他一番心酸话",
+        "hyp": "聽他",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-3",
+        "ref": "不由我珠泪往下洒",
+        "hyp": "大一方 星帥我大將",
+        "cer": 1.125,
+        "cerCapped": 1.125,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-4",
+        "ref": "想我祥林嫂命苦",
+        "hyp": "我遇到一個夜晚天",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-5",
+        "ref": "丧夫失子受尽欺压",
+        "hyp": "《一旦你回家》",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-6",
+        "ref": "苍天啊",
+        "hyp": "You did say she's",
+        "cer": 5.666666666666667,
+        "cerCapped": 5.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-7",
+        "ref": "为何这般不公平",
+        "hyp": "平滩思那重灾不解其",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-8",
+        "ref": "世道冷漠人心假",
+        "hyp": "我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-9",
+        "ref": "何处才是安身家",
+        "hyp": "同意 如撒旋 施亡",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "adapted": {
+    "model": "data/corpus/asr/runs/whisper-small-lora-v2",
+    "n": 27,
+    "meanCer": 1.0982510288065843,
+    "meanCerCapped": 1.0982510288065843,
+    "meanCerClipped": 0.9894179894179894,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "he-wenxiu-suanming-10",
+        "ref": "待我掐指细推算",
+        "hyp": "小姐姐",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-11",
+        "ref": "其中奥妙不一般",
+        "hyp": "梁兄姐姐姐姐姐姐姐姐姐姐姐姐姐",
+        "cer": 2.142857142857143,
+        "cerCapped": 2.142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-2",
+        "ref": "尊一声大娘听端详",
+        "hyp": "梁兄姐姐姐姐姐姐",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-3",
+        "ref": "小人算命走四方",
+        "hyp": "请请请",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-4",
+        "ref": "不知大娘有何疑难事",
+        "hyp": "丝梅有屏屏 心是豉梅",
+        "cer": 1.1111111111111112,
+        "cerCapped": 1.1111111111111112,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-5",
+        "ref": "说来与我细商量",
+        "hyp": "夫人何時發悲憤",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-6",
+        "ref": "尊一声先生听我言",
+        "hyp": "妹妹说自己的女儿说自己的女儿",
+        "cer": 1.75,
+        "cerCapped": 1.75,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-7",
+        "ref": "家中有事费疑难",
+        "hyp": "我明天再说一遍",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-8",
+        "ref": "我把生辰八字报",
+        "hyp": "红烛铛",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "he-wenxiu-suanming-9",
+        "ref": "望求先生仔细看",
+        "hyp": "红花花在身边",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-10",
+        "ref": "满腹苦水向谁诉",
+        "hyp": "梁兄姐到哪里来",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-11",
+        "ref": "泪湿衣襟心如麻",
+        "hyp": "一天到来一日",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-12",
+        "ref": "阿毛啊，我的阿毛",
+        "hyp": "我看见你身体有点难",
+        "cer": 1.125,
+        "cerCapped": 1.125,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-13",
+        "ref": "狼衔了你去再不见",
+        "hyp": "一见老老脸才看见他",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-14",
+        "ref": "四叔四婶冷眼看",
+        "hyp": "梁兄你何必再说",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-15",
+        "ref": "捐门槛也洗不清",
+        "hyp": "梁兄姐有何疑",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-16",
+        "ref": "人间何处容我身",
+        "hyp": "一副天辈再成图",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-17",
+        "ref": "苦命人儿泪成河",
+        "hyp": "这一片水",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-18",
+        "ref": "诉不尽这心酸话",
+        "hyp": "一片灵灯花花",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-2",
+        "ref": "听他一番心酸话",
+        "hyp": "听她说话",
+        "cer": 0.7142857142857143,
+        "cerCapped": 0.7142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-3",
+        "ref": "不由我珠泪往下洒",
+        "hyp": "我看见她一番心酸",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-4",
+        "ref": "想我祥林嫂命苦",
+        "hyp": "月下昏暗",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-5",
+        "ref": "丧夫失子受尽欺压",
+        "hyp": "小姐 请",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-6",
+        "ref": "苍天啊",
+        "hyp": "有见再有去",
+        "cer": 1.6666666666666667,
+        "cerCapped": 1.6666666666666667,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-7",
+        "ref": "为何这般不公平",
+        "hyp": "平满寺那重灾不见情",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-8",
+        "ref": "世道冷漠人心假",
+        "hyp": "妹妹在前面看见",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-9",
+        "ref": "何处才是安身家",
+        "hyp": "雄一路撒玄七万",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "deltaCerSmallMinusTiny": 3.38947677836567,
+  "deltaCerAdaptedMinusSmall": -9.603542034097591,
+  "note": "deltaCerSmallMinusTiny: capacity effect (small − tiny). deltaCerAdaptedMinusSmall: adaptation effect (LoRA − plain small); this is the size-matched claim. Negative deltas mean lower error."
+}
