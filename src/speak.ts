@@ -345,6 +345,63 @@ function clearAll(): void {
   setStatus(t("speak.status.cleared"));
 }
 
+function initSpeakOutputTabs(): void {
+  const tabs = document.querySelectorAll<HTMLButtonElement>("[data-speak-output-tab]");
+  const panels = document.querySelectorAll<HTMLElement>("[data-speak-output]");
+  if (!tabs.length || !panels.length) return;
+
+  function activate(lang: string): void {
+    tabs.forEach((tab) => {
+      const on = tab.dataset.speakOutputTab === lang;
+      tab.setAttribute("aria-selected", on ? "true" : "false");
+      tab.classList.toggle("speak-output-tab--active", on);
+    });
+    panels.forEach((panel) => {
+      const on = panel.dataset.speakOutput === lang;
+      panel.classList.toggle("speak-output--active", on);
+      panel.hidden = !on && window.matchMedia("(max-width: 900px)").matches;
+    });
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => activate(tab.dataset.speakOutputTab ?? "zh-Hans"));
+  });
+
+  const mq = window.matchMedia("(max-width: 900px)");
+  const syncMode = (): void => {
+    const tablist = document.querySelector<HTMLElement>(".speak-output-tabs");
+    if (tablist) tablist.hidden = !mq.matches;
+    if (mq.matches) {
+      const current =
+        document.querySelector<HTMLButtonElement>(".speak-output-tab[aria-selected='true']")
+          ?.dataset.speakOutputTab ?? "zh-Hans";
+      activate(current);
+    } else {
+      panels.forEach((panel) => {
+        panel.hidden = false;
+        panel.classList.add("speak-output--active");
+      });
+    }
+  };
+  mq.addEventListener("change", syncMode);
+  syncMode();
+}
+
+async function runSample(url: string, label: string): Promise<void> {
+  setStatus(tf("speak.status.sampleLoading", { name: label }));
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const blob = await res.blob();
+    const name = url.split("/").pop() ?? "sample.m4a";
+    const file = new File([blob], name, { type: blob.type || "audio/mp4" });
+    await recognizeUploadedFile(file);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    setStatus(tf("speak.status.sampleFail", { msg: message }));
+  }
+}
+
 function initSpeak(): void {
   if (!recognizedEl) return;
 
@@ -368,6 +425,15 @@ function initSpeak(): void {
     void recognizeUploadedFile(file);
   });
 
+  document.querySelectorAll<HTMLButtonElement>("[data-speak-sample]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const url = btn.dataset.speakSample;
+      if (!url) return;
+      const label = btn.textContent?.trim() || url;
+      void runSample(url, label);
+    });
+  });
+
   recognizedEl.addEventListener("input", () => {
     finalTranscript = recognizedEl.value;
     scheduleTranslate(finalTranscript);
@@ -389,6 +455,8 @@ function initSpeak(): void {
       }
     });
   });
+
+  initSpeakOutputTabs();
 }
 
 function syncSpeakChrome(): void {

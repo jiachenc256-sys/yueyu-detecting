@@ -1,0 +1,375 @@
+{
+  "schemaVersion": "1.0.0",
+  "note": "Draft everyday phrases for Shaoxing/Shengzhou-area learners; dialect wording may need native correction.",
+  "items": [
+    {
+      "id": "p001",
+      "zh": "你好。",
+      "en": "Hello.",
+      "scene": "greet",
+      "chars": ["你", "好"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p002",
+      "zh": "早上好。",
+      "en": "Good morning.",
+      "scene": "greet",
+      "chars": ["早"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p003",
+      "zh": "好久不见。",
+      "en": "Long time no see.",
+      "scene": "greet",
+      "chars": ["见"]
+    },
+    {
+      "id": "p004",
+      "zh": "你吃饭了吗？",
+      "en": "Have you eaten?",
+      "scene": "greet",
+      "chars": ["吃", "饭"],
+      "note": "常见寒暄，嵊州口语练习用"
+    },
+    {
+      "id": "p005",
+      "zh": "请多关照。",
+      "en": "Please look after me / nice to meet you.",
+      "scene": "greet",
+      "chars": ["请"]
+    },
+    {
+      "id": "p006",
+      "zh": "谢谢你。",
+      "en": "Thank you.",
+      "scene": "greet",
+      "chars": ["谢"]
+    },
+    {
+      "id": "p007",
+      "zh": "再见。",
+      "en": "Goodbye.",
+      "scene": "greet",
+      "chars": ["再", "见"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p008",
+      "zh": "这个多少钱？",
+      "en": "How much is this?",
+      "scene": "buy",
+      "chars": ["多", "钱"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p009",
+      "zh": "太贵了。",
+      "en": "That's too expensive.",
+      "scene": "buy",
+      "chars": ["贵"]
+    },
+    {
+      "id": "p010",
+      "zh": "便宜一点好吗？",
+      "en": "Can you make it a bit cheaper?",
+      "scene": "buy",
+      "chars": ["便", "宜"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p011",
+      "zh": "我要这一斤。",
+      "en": "I'll take one jin of this.",
+      "scene": "buy",
+      "chars": ["斤"]
+    },
+    {
+      "id": "p012",
+      "zh": "有没有新鲜的？",
+      "en": "Do you have anything fresh?",
+      "scene": "buy",
+      "chars": ["新", "鲜"]
+    },
+    {
+      "id": "p013",
+      "zh": "请给我袋子。",
+      "en": "Please give me a bag.",
+      "scene": "buy",
+      "chars": ["袋"]
+    },
+    {
+      "id": "p014",
+      "zh": "我用现金付。",
+      "en": "I'll pay in cash.",
+      "scene": "buy",
+      "chars": ["现", "金"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p015",
+      "zh": "这是哪里？",
+      "en": "Where is this?",
+      "scene": "ask",
+      "chars": ["哪"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p016",
+      "zh": "去车站怎么走？",
+      "en": "How do I get to the station?",
+      "scene": "ask",
+      "chars": ["车", "站"]
+    },
+    {
+      "id": "p017",
+      "zh": "请问现在几点？",
+      "en": "Excuse me, what time is it?",
+      "scene": "ask",
+      "chars": ["点"]
+    },
+    {
+      "id": "p018",
+      "zh": "你说什么？",
+      "en": "What did you say?",
+      "scene": "ask",
+      "chars": ["说"],
+      "note": "听不清时可复用"
+    },
+    {
+      "id": "p019",
+      "zh": "请再说一遍。",
+      "en": "Please say that again.",
+      "scene": "ask",
+      "chars": ["遍"]
+    },
+    {
+      "id": "p020",
+      "zh": "这个字怎么读？",
+      "en": "How do you read this character?",
+      "scene": "ask",
+      "chars": ["字", "读"],
+      "note": "学习对照常用"
+    },
+    {
+      "id": "p021",
+      "zh": "厕所在哪里？",
+      "en": "Where is the restroom?",
+      "scene": "ask",
+      "chars": ["厕"]
+    },
+    {
+      "id": "p022",
+      "zh": "这是我爸爸。",
+      "en": "This is my father.",
+      "scene": "family",
+      "chars": ["爸"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p023",
+      "zh": "这是我妈妈。",
+      "en": "This is my mother.",
+      "scene": "family",
+      "chars": ["妈"]
+    },
+    {
+      "id": "p024",
+      "zh": "爷爷在家吗？",
+      "en": "Is Grandpa at home?",
+      "scene": "family",
+      "chars": ["爷", "家"]
+    },
+    {
+      "id": "p025",
+      "zh": "奶奶身体好吗？",
+      "en": "Is Grandma well?",
+      "scene": "family",
+      "chars": ["奶", "身"]
+    },
+    {
+      "id": "p026",
+      "zh": "我有一个姐姐。",
+      "en": "I have an older sister.",
+      "scene": "family",
+      "chars": ["姐"]
+    },
+    {
+      "id": "p027",
+      "zh": "弟弟还在读书。",
+      "en": "My younger brother is still in school.",
+      "scene": "family",
+      "chars": ["弟", "读"]
+    },
+    {
+      "id": "p028",
+      "zh": "全家一起吃饭。",
+      "en": "The whole family eats together.",
+      "scene": "family",
+      "chars": ["全", "家"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p029",
+      "zh": "今天天气真好。",
+      "en": "The weather is really nice today.",
+      "scene": "weather",
+      "chars": ["天", "气"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p030",
+      "zh": "外面在下雨。",
+      "en": "It's raining outside.",
+      "scene": "weather",
+      "chars": ["雨"]
+    },
+    {
+      "id": "p031",
+      "zh": "风很大。",
+      "en": "The wind is strong.",
+      "scene": "weather",
+      "chars": ["风"]
+    },
+    {
+      "id": "p032",
+      "zh": "今天好热。",
+      "en": "It's so hot today.",
+      "scene": "weather",
+      "chars": ["热"]
+    },
+    {
+      "id": "p033",
+      "zh": "夜里有点冷。",
+      "en": "It's a bit cold at night.",
+      "scene": "weather",
+      "chars": ["冷", "夜"]
+    },
+    {
+      "id": "p034",
+      "zh": "明天会晴吗？",
+      "en": "Will it be sunny tomorrow?",
+      "scene": "weather",
+      "chars": ["晴", "明"]
+    },
+    {
+      "id": "p035",
+      "zh": "带把伞吧。",
+      "en": "Better bring an umbrella.",
+      "scene": "weather",
+      "chars": ["伞"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p036",
+      "zh": "今晚有越剧吗？",
+      "en": "Is there Yue opera tonight?",
+      "scene": "theatre",
+      "chars": ["越", "剧"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p037",
+      "zh": "这出戏好听。",
+      "en": "This play sounds beautiful.",
+      "scene": "theatre",
+      "chars": ["戏"]
+    },
+    {
+      "id": "p038",
+      "zh": "请安静一点。",
+      "en": "Please be a bit quieter.",
+      "scene": "theatre",
+      "chars": ["静"]
+    },
+    {
+      "id": "p039",
+      "zh": "票还有吗？",
+      "en": "Are there still tickets?",
+      "scene": "theatre",
+      "chars": ["票"]
+    },
+    {
+      "id": "p040",
+      "zh": "台上在唱什么？",
+      "en": "What are they singing on stage?",
+      "scene": "theatre",
+      "chars": ["台", "唱"]
+    },
+    {
+      "id": "p041",
+      "zh": "念白我听不太懂。",
+      "en": "I don't quite understand the spoken lines.",
+      "scene": "theatre",
+      "chars": ["念", "白"],
+      "note": "舞台与口语差异提醒"
+    },
+    {
+      "id": "p042",
+      "zh": "谢幕时再鼓掌。",
+      "en": "Clap again at the curtain call.",
+      "scene": "theatre",
+      "chars": ["幕", "鼓"]
+    },
+    {
+      "id": "p043",
+      "zh": "我先去买菜。",
+      "en": "I'll go buy groceries first.",
+      "scene": "daily",
+      "chars": ["买", "菜"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p044",
+      "zh": "门口等我一下。",
+      "en": "Wait for me at the door a moment.",
+      "scene": "daily",
+      "chars": ["门", "等"]
+    },
+    {
+      "id": "p045",
+      "zh": "慢慢走，当心。",
+      "en": "Go slowly—be careful.",
+      "scene": "daily",
+      "chars": ["慢", "心"]
+    },
+    {
+      "id": "p046",
+      "zh": "手机没电了。",
+      "en": "My phone is out of battery.",
+      "scene": "daily",
+      "chars": ["手", "电"]
+    },
+    {
+      "id": "p047",
+      "zh": "先坐下来喝茶。",
+      "en": "Sit down first and have some tea.",
+      "scene": "daily",
+      "chars": ["茶", "坐"],
+      "note": "嵊州口语练习用"
+    },
+    {
+      "id": "p048",
+      "zh": "今天忙不忙？",
+      "en": "Are you busy today?",
+      "scene": "daily",
+      "chars": ["忙"]
+    },
+    {
+      "id": "p049",
+      "zh": "我回去了。",
+      "en": "I'm heading back.",
+      "scene": "daily",
+      "chars": ["回"]
+    },
+    {
+      "id": "p050",
+      "zh": "明天见。",
+      "en": "See you tomorrow.",
+      "scene": "daily",
+      "chars": ["明", "见"],
+      "note": "嵊州口语练习用"
+    }
+  ]
+}

@@ -114,16 +114,23 @@ function initArchiveFilters(): (category: string, opts?: { scroll?: boolean }) =
   const filters = document.querySelectorAll<HTMLButtonElement>("[data-archive-filter]");
   const cards = document.querySelectorAll<HTMLElement>("[data-archive-category]");
   const grid = document.querySelector<HTMLElement>(".archive-grid");
+  const searchInput = document.getElementById("archive-search") as HTMLInputElement | null;
+  let activeCategory = "all";
 
   function apply(category: string, opts?: { scroll?: boolean; flash?: boolean }): void {
     if (!filters.length || !cards.length) return;
+    activeCategory = category;
     filters.forEach((btn) => {
       btn.setAttribute("aria-pressed", btn.dataset.archiveFilter === category ? "true" : "false");
     });
+    const q = (searchInput?.value ?? "").trim().toLowerCase();
     let firstVisible: HTMLElement | null = null;
     cards.forEach((card) => {
       const cat = card.dataset.archiveCategory ?? "yueju";
-      const show = category === "all" || cat === category;
+      const catOk = category === "all" || cat === category;
+      const text = card.textContent?.toLowerCase() ?? "";
+      const searchOk = !q || text.includes(q);
+      const show = catOk && searchOk;
       card.hidden = !show;
       card.classList.toggle("archive-card--out", !show);
       card.setAttribute("aria-hidden", show ? "false" : "true");
@@ -150,6 +157,10 @@ function initArchiveFilters(): (category: string, opts?: { scroll?: boolean }) =
       const nextHash = category === "all" ? "archive" : `archive-${category}`;
       history.replaceState(null, "", `#${nextHash}`);
     });
+  });
+
+  searchInput?.addEventListener("input", () => {
+    apply(activeCategory);
   });
 
   return apply;
