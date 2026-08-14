@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260814a" />
-  <link rel="stylesheet" href="styles/main.css?v=20260814a" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260814a" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260814a" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260814a" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260814a" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260814a" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260814b" />
+  <link rel="stylesheet" href="styles/main.css?v=20260814b" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260814b" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260814b" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260814b" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260814b" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260814b" />
 </head>
 <body>
   <div class="app-shell">
@@ -78,15 +78,15 @@
           </details>
           <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label" data-i18n="nav.main">
             <button class="site-nav__btn" data-panel-target="home" aria-current="page" data-i18n="nav.home">首页</button>
-            <button class="site-nav__btn" data-panel-target="speak" data-i18n="nav.speak">听说翻译</button>
+            <button class="site-nav__btn" data-panel-target="speak" data-i18n="nav.speak">听说</button>
+            <button class="site-nav__btn" data-panel-target="archive" data-i18n="nav.archive">对话档案</button>
+            <button class="site-nav__btn" data-panel-target="tanci" data-i18n="nav.tanci">弹词识别</button>
+            <button class="site-nav__btn" data-panel-target="learn" data-i18n="nav.learn">学习</button>
             <button class="site-nav__btn" data-panel-target="dictionary" data-i18n="nav.dictionary">词典</button>
-            <button class="site-nav__btn" data-panel-target="tanci" data-i18n="nav.tanci">弹词</button>
-            <button class="site-nav__btn" data-panel-target="archive" data-i18n="nav.archive">档案</button>
-            <button class="site-nav__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
-            <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">学习路径</button>
-            <button class="site-nav__btn" data-panel-target="learn" data-i18n="nav.learn">学习工具</button>
+            <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">路径</button>
             <button class="site-nav__btn" data-panel-target="faq" data-i18n="nav.faq">FAQ</button>
-            <button class="site-nav__btn" data-panel-target="about" data-i18n="nav.about">关于</button>
+            <button class="site-nav__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
+            <button class="site-nav__btn" data-panel-target="about" data-i18n="nav.about">关于项目</button>
           </nav>
         </div>
       </div>
@@ -1148,6 +1148,15 @@
               <p class="story-doc__eyebrow">完整故事</p>
               <h3 class="story-doc__title">我们的语料采集与研究流程</h3>
             </header>
+            <div class="story-flow-summary" aria-label="研究流程摘要">
+              <p class="story-flow-summary__label">研究闭环（摘要）</p>
+              <ol class="story-flow-summary__steps">
+                <li><strong>采集</strong><span>纸质 · 戏曲 · 口语</span></li>
+                <li><strong>转写</strong><span>时间轴 · 简繁英</span></li>
+                <li><strong>验证</strong><span>母语者听校</span></li>
+                <li><strong>回流</strong><span>档案 · 学习 · 识别</span></li>
+              </ol>
+            </div>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
               <p>这两件事放在一起，让我觉得不能只是喜欢就完了。如果连我们这些既懂方言又爱戏的人都不去做点什么，等老一辈走了，越语和越剧里那些鲜活的、细微的、只可意会的东西，就真的很难再找回来了。</p>
@@ -1223,6 +1232,15 @@
               <p class="story-doc__eyebrow">完整故事</p>
               <h3 class="story-doc__title">我們的語料採集與研究流程</h3>
             </header>
+            <div class="story-flow-summary" aria-label="研究流程摘要">
+              <p class="story-flow-summary__label">研究閉環（摘要）</p>
+              <ol class="story-flow-summary__steps">
+                <li><strong>採集</strong><span>紙質 · 戲曲 · 口語</span></li>
+                <li><strong>轉寫</strong><span>時間軸 · 簡繁英</span></li>
+                <li><strong>驗證</strong><span>母語者聽校</span></li>
+                <li><strong>回流</strong><span>檔案 · 學習 · 識別</span></li>
+              </ol>
+            </div>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
               <p>這兩件事放在一起，讓我覺得不能只是喜歡就完了。如果連我們這些既懂方言又愛戲的人都不去做點什麼，等老一輩走了，越語和越劇裏那些鮮活的、細微的、只可意會的東西，就真的很難再找回來了。</p>
@@ -1298,6 +1316,15 @@
               <p class="story-doc__eyebrow">Full story</p>
               <h3 class="story-doc__title">Our Corpus Collection and Research Workflow</h3>
             </header>
+            <div class="story-flow-summary" aria-label="Research loop summary">
+              <p class="story-flow-summary__label">Research loop (summary)</p>
+              <ol class="story-flow-summary__steps">
+                <li><strong>Collect</strong><span>print · opera · speech</span></li>
+                <li><strong>Transcribe</strong><span>timeline · ZH/EN</span></li>
+                <li><strong>Validate</strong><span>native listening</span></li>
+                <li><strong>Feed back</strong><span>archive · learn · ASR</span></li>
+              </ol>
+            </div>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
               <p>But over the years, I have noticed two things that worry me. First, fewer and fewer people speak authentic Yueyu. The younger generation communicates almost entirely in Mandarin, and the older vocabulary and distinctive pronunciations are quietly fading. Second, the audience for Yue Opera is aging as well. Many precious singing styles, spoken parts, and unique interpretations passed down by veteran performers are at risk of being lost as they grow older.</p>
@@ -2063,6 +2090,7 @@
                 </div>
 
                 <div id="ziyin-flash" class="ziyin-flash" hidden>
+                  <p id="ziyin-flash-progress" class="ziyin-flash__progress" aria-live="polite">已掌握 0 / 862</p>
                   <div
                     id="ziyin-flash-card"
                     class="ziyin-flash__card"
@@ -2088,6 +2116,12 @@
                       </div>
                     </div>
                   </div>
+                  <div class="ziyin-flash__grade" id="ziyin-flash-grade" hidden>
+                    <button type="button" class="home-cta__btn home-cta__btn--primary" id="ziyin-know" data-i18n="learn.ziyin.know">认识</button>
+                    <button type="button" class="home-cta__btn" id="ziyin-unknown" data-i18n="learn.ziyin.unknown">不认识</button>
+                    <button type="button" class="home-cta__btn" id="ziyin-review-wrong" data-i18n="learn.ziyin.reviewWrong" hidden>复习错题</button>
+                    <button type="button" class="home-cta__btn home-cta__btn--ghost" id="ziyin-clear-progress" data-i18n="learn.ziyin.clearProgress">清空进度</button>
+                  </div>
                 </div>
 
                 <div class="ziyin-controls">
@@ -2104,8 +2138,6 @@
             </div>
           </div>
         </div>
-      </section>
-
       </section>
 
       <!-- ── Dictionary ── -->
@@ -2464,11 +2496,11 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260814a"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260814a"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260814a"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814a"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260814a"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814a"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260814b"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260814b"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260814b"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814b"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260814b"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814b"></script>
 </body>
 </html>

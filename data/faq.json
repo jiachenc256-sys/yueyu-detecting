@@ -96,8 +96,8 @@
         "en": "Who is this project for?"
       },
       "a": {
-        "zh": "主要面向计算机科学与语言学交叉的学生与研究者，以及希望严肃入门绍兴方言与越剧语音文化的爱好者。它适合做语料组织、对读演示与基线 ASR 实验入口；不是替代课堂或母语社群的完整课程，也不承诺即时流利口语教学。",
-        "en": "It is aimed at students and researchers at the CS–linguistics intersection, and at learners who want a serious entry into Shaoxing-area dialect and Yue-opera voice culture. It suits corpus organization, parallel-text demos, and baseline ASR experiments—not a full classroom substitute or a promise of instant spoken fluency."
+        "zh": "主要面向语言学与相关人文学科的学习者与研究者，以及希望严肃接触绍兴方言与越剧语音文化的公众。它提供可听可读的语料入口、对照学习与基线识别演示；也适合讨论转写如何被校验、口语与舞台语如何区分等问题。它不是完整口语课程，也不替代母语社群。",
+        "en": "It is aimed at learners and researchers in linguistics and neighboring humanities fields, and at the public who want a serious encounter with Shaoxing-area dialect and Yue-opera voice culture. It offers listen-and-read corpus entry points, comparative study, and a baseline recognition demo—and a place to ask how transcripts are validated and how everyday speech differs from stage speech. It is not a full spoken course and does not replace native communities."
       }
     },
     {
@@ -107,8 +107,41 @@
         "en": "What is on the roadmap?"
       },
       "a": {
-        "zh": "近期重点包括：口语说话人短选段（本地朗读、站内播放）、扩展与校正日常短语、继续精选越剧与弹词对读条目，并用已验证语料改进评测。识别准确度与贡献流程会随档案与同意书机制一起推进，而不是一次“上线即完成”。",
-        "en": "Near-term priorities include short speaker clips (local read-alouds played on-site), expanding and correcting everyday phrases, continuing curated Yueju and tanci parallel entries, and improving evaluation with verified corpus data. Recognition quality and contribution workflows will advance with the archive and consent process—not as a one-shot “shipped forever” product."
+        "zh": "近期重点包括：口语说话人短选段（本地朗读、站内播放）、根据纸质辞书扩展与校正词典、继续精选越剧与弹词对读条目，并用已验证语料改进评测。识别准确度与贡献流程会随档案与同意书机制一起推进，而不是一次“上线即完成”。",
+        "en": "Near-term priorities include short speaker clips (local read-alouds played on-site), expanding and correcting the dictionary from print sources, continuing curated Yueju and tanci parallel entries, and improving evaluation with verified corpus data. Recognition quality and contribution workflows will advance with the archive and consent process—not as a one-shot “shipped forever” product."
+      }
+    },
+    {
+      "id": "q11",
+      "q": {
+        "zh": "识别结果不准确怎么办？",
+        "en": "What if recognition is inaccurate?"
+      },
+      "a": {
+        "zh": "这是预期现象：当前为普通话/通用基线，对越语与舞台韵白容易错漏。你可以：① 改用更短、更清晰的片段或「试试示例」；② 在识别框里直接改正文字，翻译会刷新；③ 对照「对话档案」里人工校对过的台词学习。若你发现系统性错误，欢迎通过 About 的参与贡献渠道反馈。",
+        "en": "This is expected: the demo is a Mandarin/general baseline and often misses Yueyu and stage rhyme-speech. You can (1) try a shorter, clearer clip or Try sample; (2) edit the recognized text box so translations refresh; (3) study human-corrected lines in the Archive. If you spot systematic errors, send feedback via Contribute on the About page."
+      }
+    },
+    {
+      "id": "q12",
+      "q": {
+        "zh": "如何引用本站语料？",
+        "en": "How should I cite materials from this site?"
+      },
+      "a": {
+        "zh": "引用时请注明：项目名「越语侦听 / Yueyu Detecting」、具体剧目或页面标题、访问日期与网址（https://yueyudetecting.com）。戏曲录音与唱词仍属原权利人，本站短选段仅供学习研究演示；正式出版或再分发请另行取得授权。站点另有 CITATION.cff 可供学术引用格式参考。",
+        "en": "Please cite: project name “Yueyu Detecting”, the piece or page title, access date, and URL (https://yueyudetecting.com). Opera recordings and scripts remain with original rights holders; on-site short clips are for study/demo only—seek separate permission for publication or redistribution. CITATION.cff on the project provides a scholarly citation template."
+      }
+    },
+    {
+      "id": "q13",
+      "q": {
+        "zh": "我想参与校对，需要什么条件？",
+        "en": "What do I need to help with proofreading?"
+      },
+      "a": {
+        "zh": "欢迎：① 能听绍兴/嵊州一带口音或熟悉越剧念白的校对者；② 能核对时间轴、错字、说话人标记的文字编辑；③ 能提供知情同意的短朗读。请先通过 About「参与贡献」说明你的背景与可投入时间；请勿寄送未获授权的整集音视频。材料公开前需要来源说明与同意范围。",
+        "en": "Welcome: (1) listeners familiar with Shaoxing/Shengzhou speech or Yue-opera spoken lines; (2) editors who can check timing, typos, and speaker labels; (3) short consented read-alouds. Contact via About → Contribute with your background and availability. Do not send full unauthorized AV packs. Source notes and consent scope are required before anything is published."
       }
     }
   ]
