@@ -106,6 +106,12 @@ async function initZiyin(): Promise<void> {
   const flashHanBackEl = requireEl(document.getElementById("ziyin-flash-han-back"), "ziyin-flash-han-back");
   const flashPinyinEl = requireEl(document.getElementById("ziyin-flash-pinyin"), "ziyin-flash-pinyin");
   const flashShengzhouEl = requireEl(document.getElementById("ziyin-flash-shengzhou"), "ziyin-flash-shengzhou");
+  const flashProgressEl = document.getElementById("ziyin-flash-progress");
+  const flashGradeEl = document.getElementById("ziyin-flash-grade");
+  const knowBtn = document.getElementById("ziyin-know") as HTMLButtonElement | null;
+  const unknownBtn = document.getElementById("ziyin-unknown") as HTMLButtonElement | null;
+  const reviewWrongBtn = document.getElementById("ziyin-review-wrong") as HTMLButtonElement | null;
+  const clearProgressBtn = document.getElementById("ziyin-clear-progress") as HTMLButtonElement | null;
 
   const statusEl = requireEl(document.getElementById("ziyin-status"), "ziyin-status");
   const audioStatusEl = document.getElementById("ziyin-audio-status");
@@ -128,6 +134,83 @@ async function initZiyin(): Promise<void> {
   const allItems = data.items.filter((it) => it.han?.trim());
   if (!allItems.length) throw new Error("ziyin list empty");
 
+  const PROGRESS_KEY = "yueyu-ziyin-flash-progress-v1";
+  type ProgressState = { known: string[]; unknown: string[] };
+  let reviewWrongOnly = false;
+
+  function loadProgress(): ProgressState {
+    try {
+      const raw = localStorage.getItem(PROGRESS_KEY);
+      if (!raw) return { known: [], unknown: [] };
+      const parsed = JSON.parse(raw) as ProgressState;
+      return {
+        known: Array.isArray(parsed.known) ? parsed.known.map(String) : [],
+        unknown: Array.isArray(parsed.unknown) ? parsed.unknown.map(String) : [],
+      };
+    } catch {
+      return { known: [], unknown: [] };
+    }
+  }
+
+  function saveProgress(state: ProgressState): void {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(state));
+  }
+
+  let progress = loadProgress();
+
+  function reviewBaseItems(): ZiyinItem[] {
+    return allItems.filter((it) => {
+      const lv = it.level ?? 1;
+      return lv >= 1 && lv <= 4;
+    });
+  }
+
+  function updateProgressUi(): void {
+    const total = reviewBaseItems().length;
+    const knownCount = progress.known.filter((han) =>
+      reviewBaseItems().some((it) => it.han === han),
+    ).length;
+    const unknownCount = progress.unknown.filter((han) =>
+      reviewBaseItems().some((it) => it.han === han),
+    ).length;
+    if (flashProgressEl) {
+      flashProgressEl.textContent = tf("learn.ziyin.progress", {
+        known: knownCount,
+        total,
+        wrong: unknownCount,
+      });
+    }
+    if (reviewWrongBtn) {
+      reviewWrongBtn.hidden = unknownCount === 0;
+      reviewWrongBtn.setAttribute("aria-pressed", reviewWrongOnly ? "true" : "false");
+    }
+    if (flashGradeEl) flashGradeEl.hidden = !isFlashMode();
+  }
+
+  function markCard(kind: "known" | "unknown"): void {
+    const item = pool[index];
+    if (!item || !isFlashMode()) return;
+    const han = item.han;
+    progress.known = progress.known.filter((h) => h !== han);
+    progress.unknown = progress.unknown.filter((h) => h !== han);
+    if (kind === "known") progress.known.push(han);
+    else progress.unknown.push(han);
+    saveProgress(progress);
+    updateProgressUi();
+    if (reviewWrongOnly) {
+      pool = pool.filter((it) => it.han !== han);
+      if (!pool.length) {
+        reviewWrongOnly = false;
+        setLevel(5, true);
+        return;
+      }
+      index = Math.min(index, pool.length - 1);
+      paint();
+      return;
+    }
+    index = (index + 1) % pool.length;
+    paint();
+  }
   if (noteEl && data.note) noteEl.textContent = data.note;
 
   const levelsMeta = data.levels ?? [];
@@ -272,7 +355,12 @@ async function initZiyin(): Promise<void> {
     if (shuffleBtn) shuffleBtn.hidden = !flash;
     randomBtn.hidden = flash;
     stage!.classList.toggle("ziyin-stage--flash", flash);
-    if (!flash) setFlipped(false);
+    if (flashGradeEl) flashGradeEl.hidden = !flash;
+    if (!flash) {
+      setFlipped(false);
+      reviewWrongOnly = false;
+    }
+    updateProgressUi();
   }
 
   async function refreshListenButtons(item: ZiyinItem): Promise<void> {
@@ -337,11 +425,17 @@ async function initZiyin(): Promise<void> {
   function setLevel(next: number, resetIndex = true): void {
     level = next;
     if (isFlashMode()) {
-      // Level 5 = shuffled review of Levels 1–4 (with existing Shengzhou clips).
-      pool = allItems.filter((it) => {
-        const lv = it.level ?? 1;
-        return lv >= 1 && lv <= 4;
-      });
+      const base = reviewBaseItems();
+      if (reviewWrongOnly) {
+        const wrong = new Set(progress.unknown);
+        pool = base.filter((it) => wrong.has(it.han));
+        if (!pool.length) {
+          reviewWrongOnly = false;
+          pool = base.slice();
+        }
+      } else {
+        pool = base.slice();
+      }
     } else {
       pool = allItems.filter((it) => (it.level ?? 1) === level);
     }
@@ -420,6 +514,20 @@ async function initZiyin(): Promise<void> {
     paint();
   });
 
+  knowBtn?.addEventListener("click", () => markCard("known"));
+  unknownBtn?.addEventListener("click", () => markCard("unknown"));
+  reviewWrongBtn?.addEventListener("click", () => {
+    reviewWrongOnly = !reviewWrongOnly;
+    setLevel(5, true);
+  });
+  clearProgressBtn?.addEventListener("click", () => {
+    progress = { known: [], unknown: [] };
+    saveProgress(progress);
+    reviewWrongOnly = false;
+    updateProgressUi();
+    if (isFlashMode()) setLevel(5, true);
+  });
+
   flashCard.addEventListener("click", (event) => {
     const target = event.target as HTMLElement | null;
     if (target?.closest("button")) return;
@@ -464,9 +572,11 @@ async function initZiyin(): Promise<void> {
 
   onLocaleChange(() => {
     renderSyllabus();
+    updateProgressUi();
   });
 
   renderSyllabus();
+  updateProgressUi();
   setLevel(1, true);
   stage.removeAttribute("hidden");
 }
