@@ -34,7 +34,7 @@ assets/learn/ziyin-audio/batches/
 data/corpus/SOURCES.local.md
 data/corpus/raw/
 data/corpus/asr/clips/
-data/corpus/asr/runs/
+data/corpus/asr/runs/*
 !data/corpus/asr/runs/cer-*.json
 data/corpus/asr/hf-upload/
 data/corpus/asr/*.zip

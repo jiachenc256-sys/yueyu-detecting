@@ -86,6 +86,31 @@ asr-pack-colab:
 	@chmod +x scripts/asr/pack-colab.sh
 	@./scripts/asr/pack-colab.sh
 
+# Size-matched CER: tiny / plain small / small+LoRA → cer-v2.json
+asr-eval-v2:
+	@./.venv-asr/bin/python scripts/asr/eval_cer.py \
+		--manifest data/corpus/asr/gold-clips.jsonl \
+		--clips-dir data/corpus/asr/clips \
+		--tiny openai/whisper-tiny \
+		--small openai/whisper-small \
+		--adapted data/corpus/asr/runs/whisper-small-lora-v1 \
+		--adapted-base openai/whisper-small \
+		--max-new-tokens 444 \
+		--out data/corpus/asr/runs/cer-v2.json
+
+# Longer LoRA pilot (local MPS/CUDA). Re-eval with adapted path → whisper-small-lora-v2
+asr-train-v2:
+	@./.venv-asr/bin/python scripts/asr/train_whisper_lora.py \
+		--manifest data/corpus/asr/gold-clips.jsonl \
+		--clips-dir data/corpus/asr/clips \
+		--model openai/whisper-small \
+		--output-dir data/corpus/asr/runs/whisper-small-lora-v2 \
+		--max-steps 400 \
+		--batch-size 2 \
+		--lora-r 32 \
+		--lora-alpha 64 \
+		--no-text-normalizer
+
 status:
 	@git status -sb
 	@git remote -v 2>/dev/null || true

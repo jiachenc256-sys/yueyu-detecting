@@ -77,6 +77,13 @@ def main() -> int:
     ap.add_argument("--max-steps", type=int, default=200)
     ap.add_argument("--batch-size", type=int, default=4)
     ap.add_argument("--lr", type=float, default=1e-4)
+    ap.add_argument("--lora-r", type=int, default=16)
+    ap.add_argument("--lora-alpha", type=int, default=32)
+    ap.add_argument(
+        "--no-text-normalizer",
+        action="store_true",
+        help="Keep Chinese labels verbatim (recommended for Yueyu).",
+    )
     args = ap.parse_args()
 
     all_rows = load_rows(
@@ -107,8 +114,8 @@ def main() -> int:
     model.config.suppress_tokens = []
 
     lora = LoraConfig(
-        r=16,
-        lora_alpha=32,
+        r=args.lora_r,
+        lora_alpha=args.lora_alpha,
         target_modules=["q_proj", "v_proj"],
         lora_dropout=0.05,
         bias="none",
@@ -116,7 +123,8 @@ def main() -> int:
     model = get_peft_model(model, lora)
     model.print_trainable_parameters()
 
-    normalizer = BasicTextNormalizer()
+    # BasicTextNormalizer is English-oriented; for Chinese gold we keep text as-is by default.
+    normalizer = (lambda t: t) if args.no_text_normalizer else BasicTextNormalizer()
 
     def to_dataset(rows: list[ClipRow]) -> Dataset:
         return Dataset.from_list([{"audio": r.path, "text": r.text} for r in rows])
@@ -158,21 +166,22 @@ def main() -> int:
     collator = DataCollatorSpeechSeq2SeqWithPadding(processor)
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
+    use_cuda = torch.cuda.is_available()
     training_args = Seq2SeqTrainingArguments(
         output_dir=str(args.output_dir),
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.batch_size,
         learning_rate=args.lr,
         max_steps=args.max_steps,
-        fp16=torch.cuda.is_available(),
-        eval_strategy="steps",
+        fp16=use_cuda,
+        eval_strategy="steps" if use_cuda else "no",
         eval_steps=50,
         save_steps=50,
         logging_steps=10,
-        predict_with_generate=True,
-        generation_max_length=128,
+        predict_with_generate=False,
         report_to=[],
         remove_unused_columns=False,
+        dataloader_num_workers=0,
     )
 
     trainer_kwargs = dict(

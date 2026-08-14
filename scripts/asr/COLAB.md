@@ -77,7 +77,34 @@ print("patched OK")
   --max-steps 200
 ```
 
-## E. 评测 CER（基线 tiny vs 微调）
+## E. 评测 CER（推荐：同尺寸消融 v2）
+
+一次跑三列：**tiny / plain small / small+LoRA**（这才是公平对比）：
+
+```python
+!python scripts/asr/eval_cer.py \
+  --manifest data/corpus/asr/gold-clips.jsonl \
+  --clips-dir data/corpus/asr/clips \
+  --tiny openai/whisper-tiny \
+  --small openai/whisper-small \
+  --adapted data/corpus/asr/runs/whisper-small-lora-v1 \
+  --adapted-base openai/whisper-small \
+  --out data/corpus/asr/runs/cer-v2.json
+
+!python - <<'PY'
+import json
+r=json.load(open("data/corpus/asr/runs/cer-v2.json"))
+for k in ("tiny","small","adapted"):
+    b=r[k]
+    print(f"{k:8} meanCer={b['meanCer']*100:.1f}%  capped={b['meanCerCapped']*100:.1f}%  ({b['model']})")
+print("delta small−tiny:", round(r.get("deltaCerSmallMinusTiny",0)*100,1), "pp")
+print("delta LoRA−small:", round(r.get("deltaCerAdaptedMinusSmall",0)*100,1), "pp")
+PY
+```
+
+重点看 **`deltaCerAdaptedMinusSmall`**：负数 = LoRA 在同尺寸下真的更好。
+
+若已有旧的 tiny-vs-LoRA 结果，仍可用 legacy：
 
 ```python
 !python scripts/asr/eval_cer.py \
@@ -86,8 +113,6 @@ print("patched OK")
   --baseline openai/whisper-tiny \
   --adapted data/corpus/asr/runs/whisper-small-lora-v1 \
   --out data/corpus/asr/runs/cer-v1.json
-
-!cat data/corpus/asr/runs/cer-v1.json | head -c 2000
 ```
 
 ## F. 下载结果
@@ -95,12 +120,12 @@ print("patched OK")
 在 Colab 文件树里下载：
 
 - `data/corpus/asr/runs/whisper-small-lora-v1/`（模型）
-- `data/corpus/asr/runs/cer-v1.json`（数字）
+- `data/corpus/asr/runs/cer-v2.json`（三列 CER；优先）
 
-把 `cer-v1.json` 发回聊天，我可以帮你写进 About，并规划如何接到网站「听说」页。
+把 `cer-v2.json` 发回聊天，我可以写进技术报告 / About。
 
 ## 预期（要诚实）
 
-- ~18 分钟语料：能**跑通流程**；CER 可能只小幅下降，甚至差不多——正常。
+- ~18 分钟语料：能**跑通流程**；plain `small` 可能已接近 LoRA，LoRA 增益可能只有几个百分点——正常。
 - 这已经是申请材料里很有力的「我做过可复现实验」证据。
-- 以后加更多金标，模型才会更像「越语专用」。
+- 继续降 CER：优先加金标（30–60 分钟），再谈更大模型。
