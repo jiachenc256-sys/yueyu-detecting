@@ -81,28 +81,46 @@ Register labels (`sanbai` / `yunbai` / `changci`) are provisional heuristics for
 
 ## 4. Results
 
-| System | Mean CER (n=27) |
+### 4.1 Pilot v1 (Colab; tiny vs LoRA — size-mismatched)
+
+| System | Mean raw CER (n=27) |
 | --- | --- |
-| Baseline `openai/whisper-tiny` | **42.9%** |
-| Adapted `whisper-small` + LoRA | **18.7%** |
-| Δ (adapted − baseline) | **−24.2 pp** (lower is better) |
+| Baseline `openai/whisper-tiny` | **42.9** |
+| Adapted `whisper-small` + LoRA | **18.7** |
+| Δ (adapted − baseline) | **−24.2** (lower is better) |
 
 Raw JSON: [`data/corpus/asr/runs/cer-v1.json`](../data/corpus/asr/runs/cer-v1.json).
 
 ```text
-CER (lower better)
-tiny  |############################| 42.9%
-LoRA  |############                | 18.7%
+CER raw mean (lower better; can exceed 1.0 with insertions)
+tiny  |############################| 42.9
+LoRA  |############                | 18.7
 ```
+
+### 4.2 Pilot v2 (local; size-matched ablation)
+
+Same test set; decode `max_new_tokens=444`. Columns: tiny / plain `whisper-small` / `small`+LoRA.
+
+| System | meanCer (raw) | meanCerCapped | exactMatchRate |
+| --- | ---: | ---: | ---: |
+| `whisper-tiny` | 7.31 | 1.88 | 0% |
+| `whisper-small` (no LoRA) | 10.70 | 2.10 | 0% |
+| `whisper-small` + LoRA | **5.55** | **1.35** | 0% |
+| Δ LoRA − plain small | **−5.15** | −0.76 | — |
+
+Raw JSON: [`data/corpus/asr/runs/cer-v2.json`](../data/corpus/asr/runs/cer-v2.json).
+
+**How to read this:** raw CER averages jiwer scores that can exceed 1.0 when the model loops/repeats. LoRA clearly reduces that failure mode versus a **size-matched** plain `small` baseline (`deltaCerAdaptedMinusSmall`). Exact-match rate is still 0% on this 27-clip holdout — the pilot is a reproducible adaptation loop, not production Yueyu ASR.
 
 ---
 
 ## 5. Limits and interpretation
 
-1. **Size mismatch:** comparing `tiny` to `small`+LoRA confounds adaptation with capacity. A fairer ablation is plain `whisper-small` vs LoRA on the same test set (planned).  
-2. **Small N / short gold:** 27 test clips; results can shift as gold grows.  
-3. **Domain:** archive starters are mostly Yue-opera excerpts, not a full everyday Yueyu conversational benchmark.  
-4. **Product gap:** Speak on the live site still uses the generic baseline until an adapted model is wired in.
+1. **Size mismatch (v1):** comparing `tiny` to `small`+LoRA confounds adaptation with capacity. Prefer **v2** `deltaCerAdaptedMinusSmall` for the adaptation claim.  
+2. **Metric honesty:** raw CER drop ≠ fluent transcripts yet; exact match is still ~0 on n=27. Growing gold is required before claiming usable recognition.  
+3. **Small N / short gold:** 27 test clips / ~18.4 min total; results can shift as gold grows.  
+4. **Domain:** archive starters are mostly Yue-opera excerpts, not a full everyday Yueyu conversational benchmark.  
+5. **Product gap:** Speak on the live site still uses the generic baseline until an adapted model is wired in.
 
 What the pilot **does** show: a closed loop from curated archive → trainable clips → measured CER → public adapter weights, authored by Alice Chen.
 
@@ -110,12 +128,12 @@ What the pilot **does** show: a closed loop from curated archive → trainable c
 
 ## 6. Future work
 
-- Size-matched ablation (`whisper-small` without LoRA).  
+- Longer LoRA runs (`--max-steps` 400–800, `--no-text-normalizer`) and re-eval with `make asr-eval-v2`.  
 - Grow gold toward 30–60 minutes, then 2h+, with clearer 散白 / 韵白 tagging.  
 - Integrate the Hugging Face adapter into Speak when hosting allows.  
 - Treat the held-out slice as a seed for a reusable Yueyu evaluation set.
 
-Operational notes: [`docs/YUEYU_ASR.md`](YUEYU_ASR.md).
+Operational notes: [`docs/YUEYU_ASR.md`](YUEYU_ASR.md); Colab steps: [`scripts/asr/COLAB.md`](../scripts/asr/COLAB.md).
 
 ---
 

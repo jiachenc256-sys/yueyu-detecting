@@ -72,16 +72,21 @@ make asr-pack-colab     # 生成 data/corpus/asr/yueyu-asr-colab.zip
 
 ### 4. 评测（必须有数字再宣传）
 
+推荐同尺寸消融（tiny / plain small / small+LoRA）：
+
 ```bash
-python3 scripts/asr/eval_cer.py \
+make asr-eval-v2
+# 或：
+./.venv-asr/bin/python scripts/asr/eval_cer.py \
   --manifest data/corpus/asr/gold-clips.jsonl \
   --clips-dir data/corpus/asr/clips \
-  --baseline openai/whisper-tiny \
+  --tiny openai/whisper-tiny \
+  --small openai/whisper-small \
   --adapted data/corpus/asr/runs/whisper-small-lora-v1 \
-  --out data/corpus/asr/runs/cer-v1.json
+  --out data/corpus/asr/runs/cer-v2.json
 ```
 
-把 `cer-v1.json` 里的数字写进 About「技术流程」——**没有跑通评测就不要写「准确率提升」**。
+把 `cer-v2.json` 写进技术报告 / About——**没有跑通评测就不要写「准确率提升」**。重点引用 `deltaCerAdaptedMinusSmall`（同尺寸下的适配增益）。
 
 ### 5. 上线（有模型之后）
 
