@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260814c" />
-  <link rel="stylesheet" href="styles/main.css?v=20260814c" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260814c" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260814c" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260814c" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260814c" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260814c" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260814d" />
+  <link rel="stylesheet" href="styles/main.css?v=20260814d" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260814d" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260814d" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260814d" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260814d" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260814d" />
 </head>
 <body>
   <div class="app-shell">
@@ -2304,7 +2304,7 @@
                   <li>基线 <code>whisper-tiny</code> 平均 CER ≈ <strong>42.9%</strong></li>
                   <li>适配 <code>whisper-small</code> + LoRA 平均 CER ≈ <strong>18.7%</strong>（Δ ≈ −24 个百分点）</li>
                 </ul>
-                <p>说明：这是可复现的小样本结果，不是生产级越语 ASR；基线与适配模型体量不完全对等。下一步是更严格的同尺寸消融、扩大金标，并把适配模型接到网站。详见 <code>docs/YUEYU_ASR.md</code> 与 <code>data/corpus/asr/runs/cer-v1.json</code>。</p>
+                <p>说明：这是可复现的小样本结果，不是生产级越语 ASR；基线与适配模型体量不完全对等。适配权重已公开：<a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face · yueyu-whisper-small-lora-v1</a>。下一步是更严格的同尺寸消融、扩大金标，并把适配模型接到「听说」。详见 <code>docs/YUEYU_ASR.md</code>。</p>
                 <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
               </div>
               <div data-visible-lang="en">
@@ -2320,7 +2320,7 @@
                   <li>Baseline <code>whisper-tiny</code> mean CER ≈ <strong>42.9%</strong></li>
                   <li>Adapted <code>whisper-small</code> + LoRA mean CER ≈ <strong>18.7%</strong> (Δ ≈ −24 points)</li>
                 </ul>
-                <p>This is a reproducible small-sample result, not production Yueyu ASR; baseline and adapted sizes are not matched. Next: size-matched ablation, more gold data, then wire the adapted model into Speak. See <code>docs/YUEYU_ASR.md</code> and <code>data/corpus/asr/runs/cer-v1.json</code>.</p>
+                <p>This is a reproducible small-sample result, not production Yueyu ASR; baseline and adapted sizes are not matched. Adapter weights: <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face · yueyu-whisper-small-lora-v1</a>. Next: size-matched ablation, more gold data, then wire the adapted model into Speak. See <code>docs/YUEYU_ASR.md</code>.</p>
                 <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
               </div>
               <div class="about-flow" aria-hidden="true">
@@ -2508,11 +2508,11 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260814c"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260814c"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260814c"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814c"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260814c"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814c"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260814d"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260814d"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260814d"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814d"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260814d"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814d"></script>
 </body>
 </html>
