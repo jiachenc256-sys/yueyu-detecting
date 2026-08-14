@@ -105,12 +105,13 @@ Same test set; decode `max_new_tokens=444`. Columns: tiny / plain `whisper-small
 | --- | ---: | ---: | ---: |
 | `whisper-tiny` | 7.31 | 1.88 | 0% |
 | `whisper-small` (no LoRA) | 10.70 | 2.10 | 0% |
-| `whisper-small` + LoRA | **5.55** | **1.35** | 0% |
-| Δ LoRA − plain small | **−5.15** | −0.76 | — |
+| `whisper-small` + LoRA v1 (200 steps) | 5.55 | 1.35 | 0% |
+| `whisper-small` + LoRA v2 (400 steps, r=32) | **1.10** | **1.10** | 0% |
+| Δ LoRA v2 − plain small | **−9.60** | −1.00 | — |
 
-Raw JSON: [`data/corpus/asr/runs/cer-v2.json`](../data/corpus/asr/runs/cer-v2.json).
+JSON: [`cer-v2.json`](../data/corpus/asr/runs/cer-v2.json) (v1 adapter), [`cer-v2b.json`](../data/corpus/asr/runs/cer-v2b.json) (longer v2 adapter).
 
-**How to read this:** raw CER averages jiwer scores that can exceed 1.0 when the model loops/repeats. LoRA clearly reduces that failure mode versus a **size-matched** plain `small` baseline (`deltaCerAdaptedMinusSmall`). Exact-match rate is still 0% on this 27-clip holdout — the pilot is a reproducible adaptation loop, not production Yueyu ASR.
+**How to read this:** raw CER averages jiwer scores that can exceed 1.0 when the model loops/repeats. Longer LoRA training further cuts that failure mode versus a **size-matched** plain `small` baseline. Exact-match rate is still 0% on this 27-clip holdout — the pilot is a reproducible adaptation loop, not production Yueyu ASR. Next lever: grow gold, not only train longer.
 
 ---
 

@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260814f" />
-  <link rel="stylesheet" href="styles/main.css?v=20260814f" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260814f" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260814f" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260814f" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260814f" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260814f" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260814g" />
+  <link rel="stylesheet" href="styles/main.css?v=20260814g" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260814g" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260814g" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260814g" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260814g" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260814g" />
 </head>
 <body>
   <div class="app-shell">
@@ -2317,8 +2317,8 @@
               <div data-visible-lang="zh-Hans,zh-Hant">
                 <p><strong>问题。</strong>在标注稀缺时，少量高质量音文对齐语料能否提升开源 ASR 对越语／越剧相关语音的识别准确率？</p>
                 <p><strong>方法。</strong>从本站校对档案导出金标切片 → 整剧留出测试集 → <code>whisper-small</code> + LoRA 微调 → 与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
-                <p><strong>结果（v2 同尺寸消融，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · small+LoRA <strong>5.6</strong>（相对同尺寸基线约 −5.1）。v1（tiny vs LoRA，体量不对等）曾报 42.9 → 18.7，见技术报告。</p>
-                <div class="cer-chart" role="img" aria-label="同尺寸 CER：tiny 7.3，small 10.7，LoRA 5.6">
+                <p><strong>结果（v2 同尺寸消融，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA v2（加长训练）<strong>1.1</strong>（相对同尺寸基线约 −9.6）。内容级 exact match 仍约 0%——继续降错主要靠扩金标。</p>
+                <div class="cer-chart" role="img" aria-label="同尺寸 CER：tiny 7.3，small 10.7，LoRA 1.1">
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">tiny</span>
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:68"></span></div>
@@ -2331,18 +2331,18 @@
                   </div>
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">LoRA</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:52"></span></div>
-                    <span class="cer-chart__val">5.6</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:10"></span></div>
+                    <span class="cer-chart__val">1.1</span>
                   </div>
-                  <p class="cer-chart__caption">原始 CER 均值（越低越好；可因复读 &gt;1）· n=27 · v2 同尺寸消融</p>
+                  <p class="cer-chart__caption">原始 CER 均值（越低越好）· n=27 · v2b 加长 LoRA</p>
                 </div>
                 <p><strong>意义与局限。</strong>同尺寸下 LoRA 降低了复读型错误；当前测试集 exact match 仍约 0%，金标仅约 18.4 分钟——这是可复现试点，不是生产级越语 ASR。「听说」页仍用通用基线。完整报告：<a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>；权重：<a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>。</p>
               </div>
               <div data-visible-lang="en">
                 <p><strong>Question.</strong> With scarce labels, can a small high-quality aligned set improve open ASR on Yueyu / Yue-opera-related speech?</p>
                 <p><strong>Method.</strong> Gold clips from corrected archive transcripts → whole-piece holdout → <code>whisper-small</code> + LoRA → CER vs <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
-                <p><strong>Result (v2 size-matched, n=27).</strong> Raw mean CER: tiny 7.3 · plain small 10.7 · small+LoRA <strong>5.6</strong> (about −5.1 vs size-matched baseline). v1 (tiny vs LoRA, size-mismatched) reported 42.9 → 18.7; see the technical report.</p>
-                <div class="cer-chart" role="img" aria-label="Size-matched CER: tiny 7.3, small 10.7, LoRA 5.6">
+                <p><strong>Result (v2 size-matched, n=27).</strong> Raw mean CER: tiny 7.3 · plain small 10.7 · LoRA v2 (longer train) <strong>1.1</strong> (about −9.6 vs size-matched baseline). Exact match still ~0% — further gains need more gold.</p>
+                <div class="cer-chart" role="img" aria-label="Size-matched CER: tiny 7.3, small 10.7, LoRA 1.1">
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">tiny</span>
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:68"></span></div>
@@ -2355,10 +2355,10 @@
                   </div>
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">LoRA</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:52"></span></div>
-                    <span class="cer-chart__val">5.6</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:10"></span></div>
+                    <span class="cer-chart__val">1.1</span>
                   </div>
-                  <p class="cer-chart__caption">Raw mean CER (lower better; can exceed 1.0 with loops) · n=27 · v2 ablation</p>
+                  <p class="cer-chart__caption">Raw mean CER (lower better) · n=27 · v2b longer LoRA</p>
                 </div>
                 <p><strong>Significance &amp; limits.</strong> LoRA reduces repetition-style errors vs size-matched small; exact match is still ~0% on this holdout; gold ≈ 18.4 min — a reproducible pilot, not production ASR. Speak still uses the generic baseline. Full report: <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>; weights: <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>.</p>
               </div>
@@ -2599,11 +2599,11 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260814f"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260814f"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260814f"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814f"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260814f"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814f"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260814g"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260814g"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260814g"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814g"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260814g"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814g"></script>
 </body>
 </html>
