@@ -21,6 +21,8 @@
 
 测试集按整剧留出：`祥林嫂`、`何文秀`。原始数字：[`data/corpus/asr/runs/cer-v1.json`](../data/corpus/asr/runs/cer-v1.json)。
 
+**公开权重：** [`ArikaisAllie/yueyu-whisper-small-lora-v1`](https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1)
+
 **诚实边界：** 基线是 tiny、适配是 small+LoRA，体量不完全对等；应用文书时可写「完成了可复现的低资源适应实验」，并计划补跑同尺寸 `whisper-small` 无 LoRA 对照。
 
 ## 四步流程
