@@ -132,6 +132,7 @@ File-by-file map (if present): [`FILE_PURPOSES.md`](./FILE_PURPOSES.md).
 
 | Doc | Topic |
 | :--- | :--- |
+| [`docs/TECHNICAL_REPORT.md`](docs/TECHNICAL_REPORT.md) | Research abstract / ASR pilot report (CER) |
 | [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) | Transcript / cue layers and statuses |
 | [`docs/YUEYU_ASR.md`](docs/YUEYU_ASR.md) | ASR gold → fine-tune → CER → HF |
 | [`docs/DICTIONARY.md`](docs/DICTIONARY.md) | Dictionary design notes |

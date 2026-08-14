@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260814d" />
-  <link rel="stylesheet" href="styles/main.css?v=20260814d" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260814d" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260814d" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260814d" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260814d" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260814d" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260814e" />
+  <link rel="stylesheet" href="styles/main.css?v=20260814e" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260814e" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260814e" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260814e" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260814e" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260814e" />
 </head>
 <body>
   <div class="app-shell">
@@ -1157,6 +1157,13 @@
                 <li><strong>回流</strong><span>档案 · 学习 · 识别</span></li>
               </ol>
             </div>
+            <aside class="research-abstract" aria-label="研究摘要">
+              <p class="research-abstract__eyebrow">研究摘要 · 问题—方法—结果</p>
+              <p><strong>背景。</strong>越语作为濒危吴语方言，语音识别面临语料稀缺与发音／语域变体（散白、韵白、唱词）复杂的双重挑战。</p>
+              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建小型高质量金标切片，按整剧留出测试集，对 Whisper-small 做 LoRA 微调，并与站点基线 Whisper-tiny 比较 CER。</p>
+              <p><strong>结果。</strong>在 27 句测试集上，平均 CER 由约 42.9% 降至约 18.7%（绝对降幅约 24 个百分点）。详见「关于 → 研究摘要」与仓库技术报告。</p>
+              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径，为扩大金标与接入网站识别流程奠定基础——同时诚实记录局限（小样本、模型体量不完全对等）。</p>
+            </aside>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
               <p>这两件事放在一起，让我觉得不能只是喜欢就完了。如果连我们这些既懂方言又爱戏的人都不去做点什么，等老一辈走了，越语和越剧里那些鲜活的、细微的、只可意会的东西，就真的很难再找回来了。</p>
@@ -1241,6 +1248,13 @@
                 <li><strong>回流</strong><span>檔案 · 學習 · 識別</span></li>
               </ol>
             </div>
+            <aside class="research-abstract" aria-label="研究摘要">
+              <p class="research-abstract__eyebrow">研究摘要 · 問題—方法—結果</p>
+              <p><strong>背景。</strong>越語作為瀕危吳語方言，語音識別面臨語料稀缺與發音／語域變體（散白、韻白、唱詞）複雜的雙重挑戰。</p>
+              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建小型高質量金標切片，按整劇留出測試集，對 Whisper-small 做 LoRA 微調，並與站點基線 Whisper-tiny 比較 CER。</p>
+              <p><strong>結果。</strong>在 27 句測試集上，平均 CER 由約 42.9% 降至約 18.7%（絕對降幅約 24 個百分點）。詳見「關於 → 研究摘要」與倉庫技術報告。</p>
+              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑，為擴大金標與接入網站識別流程奠定基礎——同時誠實記錄局限（小樣本、模型體量不完全對等）。</p>
+            </aside>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
               <p>這兩件事放在一起，讓我覺得不能只是喜歡就完了。如果連我們這些既懂方言又愛戲的人都不去做點什麼，等老一輩走了，越語和越劇裏那些鮮活的、細微的、只可意會的東西，就真的很難再找回來了。</p>
@@ -1325,6 +1339,13 @@
                 <li><strong>Feed back</strong><span>archive · learn · ASR</span></li>
               </ol>
             </div>
+            <aside class="research-abstract" aria-label="Research abstract">
+              <p class="research-abstract__eyebrow">Research abstract · problem–method–result</p>
+              <p><strong>Background.</strong> Yueyu, a threatened Wu variety, poses a dual ASR challenge: scarce aligned data and complex pronunciation / register variation (sanbai, yunbai, sung lines).</p>
+              <p><strong>Method.</strong> I built a small high-quality gold set from this site’s corrected timed archive, held out whole plays for testing, fine-tuned Whisper-small with LoRA, and compared CER to the site baseline Whisper-tiny.</p>
+              <p><strong>Result.</strong> On 27 test clips, mean CER fell from ≈ 42.9% to ≈ 18.7% (about −24 absolute points). See About → Research brief and the repository technical report.</p>
+              <p><strong>Significance.</strong> This supports a reproducible low-resource adaptation path and a foundation for larger gold sets and Speak integration—while recording limits honestly (small N; size mismatch).</p>
+            </aside>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
               <p>But over the years, I have noticed two things that worry me. First, fewer and fewer people speak authentic Yueyu. The younger generation communicates almost entirely in Mandarin, and the older vocabulary and distinctive pronunciations are quietly fading. Second, the audience for Yue Opera is aging as well. Many precious singing styles, spoken parts, and unique interpretations passed down by veteran performers are at risk of being lost as they grow older.</p>
@@ -2184,8 +2205,10 @@
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
             <button class="plan-nav__link" data-about-target="provide" aria-current="true" data-i18n="about.nav.provide">我们提供什么</button>
+            <button class="plan-nav__link" data-about-target="research" aria-current="false" data-i18n="about.nav.research">研究摘要</button>
             <button class="plan-nav__link" data-about-target="pipeline" aria-current="false" data-i18n="about.nav.pipeline">技术流程</button>
             <button class="plan-nav__link" data-about-target="findings" aria-current="false" data-i18n="about.nav.findings">初步观察</button>
+            <button class="plan-nav__link" data-about-target="roadmap" aria-current="false" data-i18n="about.nav.roadmap">路线图</button>
             <button class="plan-nav__link" data-about-target="contribute" aria-current="false" data-i18n="about.nav.contribute">参与贡献</button>
             <button class="plan-nav__link" data-about-target="developer" aria-current="false" data-i18n="about.nav.developer">开发者</button>
             <button class="plan-nav__link" data-about-target="intro" aria-current="false" data-i18n="about.nav.intro">网站介绍</button>
@@ -2289,6 +2312,48 @@
               </article>
             </div>
 
+            <div class="plan-section" data-about-section="research" aria-hidden="true">
+              <h3 data-i18n="about.research.title">研究摘要</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p><strong>问题。</strong>在标注稀缺时，少量高质量音文对齐语料能否提升开源 ASR 对越语／越剧相关语音的识别准确率？</p>
+                <p><strong>方法。</strong>从本站校对档案导出金标切片 → 整剧留出测试集 → <code>whisper-small</code> + LoRA 微调 → 与站点基线 <code>whisper-tiny</code> 比较 CER。</p>
+                <p><strong>结果。</strong>测试集 27 句：基线平均 CER ≈ 42.9%，适配后 ≈ 18.7%（约 −24 个百分点）。</p>
+                <div class="cer-chart" role="img" aria-label="CER 对比柱状示意：tiny 42.9%，LoRA 18.7%">
+                  <div class="cer-chart__row">
+                    <span class="cer-chart__label">tiny</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:42.9"></span></div>
+                    <span class="cer-chart__val">42.9%</span>
+                  </div>
+                  <div class="cer-chart__row">
+                    <span class="cer-chart__label">LoRA</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:18.7"></span></div>
+                    <span class="cer-chart__val">18.7%</span>
+                  </div>
+                  <p class="cer-chart__caption">字错误率 CER（越低越好）· n=27 · 2026-08-14 试点</p>
+                </div>
+                <p><strong>意义与局限。</strong>验证了低资源越语适应的可复现路径；金标约 18.4 分钟；基线与适配体量不完全对等；「听说」页仍用通用基线。完整报告见仓库 <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>；权重：<a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>；操作说明：<code>docs/YUEYU_ASR.md</code>。</p>
+              </div>
+              <div data-visible-lang="en">
+                <p><strong>Question.</strong> With scarce labels, can a small high-quality aligned set improve open ASR on Yueyu / Yue-opera-related speech?</p>
+                <p><strong>Method.</strong> Gold clips from corrected archive transcripts → whole-piece holdout → <code>whisper-small</code> + LoRA → CER vs site baseline <code>whisper-tiny</code>.</p>
+                <p><strong>Result.</strong> On 27 test clips, mean CER fell from ≈ 42.9% to ≈ 18.7% (about −24 points).</p>
+                <div class="cer-chart" role="img" aria-label="CER bar chart: tiny 42.9%, LoRA 18.7%">
+                  <div class="cer-chart__row">
+                    <span class="cer-chart__label">tiny</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:42.9"></span></div>
+                    <span class="cer-chart__val">42.9%</span>
+                  </div>
+                  <div class="cer-chart__row">
+                    <span class="cer-chart__label">LoRA</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:18.7"></span></div>
+                    <span class="cer-chart__val">18.7%</span>
+                  </div>
+                  <p class="cer-chart__caption">Character error rate (lower is better) · n=27 · pilot 2026-08-14</p>
+                </div>
+                <p><strong>Significance &amp; limits.</strong> Shows a reproducible low-resource path; gold ≈ 18.4 min; sizes not matched; Speak still uses the generic baseline. Full report: <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>; weights: <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>; ops notes: <code>docs/YUEYU_ASR.md</code>.</p>
+              </div>
+            </div>
+
             <div class="plan-section" data-about-section="pipeline" aria-hidden="true">
               <h3 data-i18n="about.pipeline.title">技术流程</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
@@ -2299,12 +2364,7 @@
                   <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
                   <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
                 </ol>
-                <p>当前「听说」页仍加载浏览器端通用 Whisper 基线。研究侧已完成试点实验（约 18 分钟金标；测试集 27 句，整剧留出）：</p>
-                <ul>
-                  <li>基线 <code>whisper-tiny</code> 平均 CER ≈ <strong>42.9%</strong></li>
-                  <li>适配 <code>whisper-small</code> + LoRA 平均 CER ≈ <strong>18.7%</strong>（Δ ≈ −24 个百分点）</li>
-                </ul>
-                <p>说明：这是可复现的小样本结果，不是生产级越语 ASR；基线与适配模型体量不完全对等。适配权重已公开：<a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face · yueyu-whisper-small-lora-v1</a>。下一步是更严格的同尺寸消融、扩大金标，并把适配模型接到「听说」。详见 <code>docs/YUEYU_ASR.md</code>。</p>
+                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见左侧「研究摘要」；完整技术报告：<a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>。适配权重：<a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>。</p>
                 <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
               </div>
               <div data-visible-lang="en">
@@ -2315,12 +2375,7 @@
                   <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
                   <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
                 </ol>
-                <p>Speak still loads a generic on-device Whisper baseline. A pilot experiment is done (~18 min gold; 27 held-out clips by whole-piece split):</p>
-                <ul>
-                  <li>Baseline <code>whisper-tiny</code> mean CER ≈ <strong>42.9%</strong></li>
-                  <li>Adapted <code>whisper-small</code> + LoRA mean CER ≈ <strong>18.7%</strong> (Δ ≈ −24 points)</li>
-                </ul>
-                <p>This is a reproducible small-sample result, not production Yueyu ASR; baseline and adapted sizes are not matched. Adapter weights: <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face · yueyu-whisper-small-lora-v1</a>. Next: size-matched ablation, more gold data, then wire the adapted model into Speak. See <code>docs/YUEYU_ASR.md</code>.</p>
+                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. Full report: <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>. Weights: <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>.</p>
                 <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
               </div>
               <div class="about-flow" aria-hidden="true">
@@ -2355,6 +2410,32 @@
               </div>
             </div>
 
+            <div class="plan-section" data-about-section="roadmap" aria-hidden="true">
+              <h3 data-i18n="about.roadmap.title">路线图</h3>
+              <ol class="roadmap">
+                <li class="roadmap__item roadmap__item--done">
+                  <h4 data-visible-lang="zh-Hans,zh-Hant">短期 · 已完成</h4>
+                  <h4 data-visible-lang="en">Short term · done</h4>
+                  <p data-visible-lang="zh-Hans,zh-Hant">公共工具站上线；金标导出；Whisper-small + LoRA 试点；CER 对比；权重发布至 Hugging Face；研究摘要与技术报告可引用。</p>
+                  <p data-visible-lang="en">Public toolkit live; gold export; Whisper-small + LoRA pilot; CER comparison; weights on Hugging Face; citable research brief / technical report.</p>
+                </li>
+                <li class="roadmap__item">
+                  <h4 data-visible-lang="zh-Hans,zh-Hant">中期 · 规划中</h4>
+                  <h4 data-visible-lang="en">Mid term · planned</h4>
+                  <p data-visible-lang="zh-Hans,zh-Hant">将适配模型接入「听说」；金标扩至约 30–60 分钟再冲 2 小时+；同尺寸消融（plain small vs LoRA）；口语说话人短选段；辞书到齐后扩展词典。欢迎经同意的材料——见「参与贡献」。</p>
+                  <p data-visible-lang="en">Wire the adapted model into Speak; grow gold toward ~30–60 min then 2h+; size-matched ablation; Speakers clips with consent; dictionary growth when books arrive. Consented contributions welcome — see Contribute.</p>
+                </li>
+                <li class="roadmap__item">
+                  <h4 data-visible-lang="zh-Hans,zh-Hant">长期 · 愿景</h4>
+                  <h4 data-visible-lang="en">Long term · vision</h4>
+                  <p data-visible-lang="zh-Hans,zh-Hant">把留出测试切片沉淀为可复用的越语评测基准；服务更广的吴语／方言研究社区；在权利清晰的前提下探索与其他方言保护项目的合作。此为志向，非已宣称完成的成果。</p>
+                  <p data-visible-lang="en">Grow the hold-out slice into a reusable Yueyu evaluation seed; support a wider Wu / dialect research community; explore collaboration with other preservation projects when rights are clear. Aspiration, not a completed claim.</p>
+                </li>
+              </ol>
+              <p data-visible-lang="zh-Hans,zh-Hant">传承与共建细节见左侧「参与贡献」。作者：Alice Chen。</p>
+              <p data-visible-lang="en">Custodianship details: see Contribute in the About nav. Author: Alice Chen.</p>
+            </div>
+
             <div class="plan-section" data-about-section="contribute" aria-hidden="true">
               <h3 data-i18n="about.contribute.title">参与贡献</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
@@ -2385,7 +2466,7 @@
                 <p><strong>Alice Chen (Jiachen Chen)</strong></p>
               </div>
               <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。</p>
+                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。研究摘要与技术报告：<a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>。</p>
                 <ul>
                   <li>重点：听说翻译 + 精选对话档案</li>
                   <li>技术：TypeScript 静态站、浏览器麦克风识别、上传音频的设备端 Whisper</li>
@@ -2393,7 +2474,7 @@
                 </ul>
               </div>
               <div data-visible-lang="en">
-                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design.</p>
+                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. Research abstract / technical report: <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>.</p>
                 <ul>
                   <li>Focus: speak → recognize → translate, plus a curated dialogue archive</li>
                   <li>Stack: TypeScript static site, browser mic ASR, on-device Whisper for uploads</li>
@@ -2508,11 +2589,11 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260814d"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260814d"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260814d"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814d"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260814d"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814d"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260814e"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260814e"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260814e"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814e"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260814e"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814e"></script>
 </body>
 </html>
