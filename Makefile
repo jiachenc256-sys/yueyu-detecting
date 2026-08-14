@@ -1,4 +1,4 @@
-.PHONY: help serve open status push setup-remote publish-new branch transcript sync-audio data check corpus-setup corpus-inventory corpus-status
+.PHONY: help serve open status push setup-remote publish-new branch transcript sync-audio data check corpus-setup corpus-inventory corpus-status asr-export asr-status asr-slice asr-pack-colab
 
 PORT ?= 8080
 SOURCE_DIR := $(HOME)/Desktop/linguilistic project
@@ -17,6 +17,10 @@ help:
 	@echo "  make corpus-setup   Create Desktop drop folders for Baidu packs"
 	@echo "  make corpus-inventory  Scan downloads -> data/corpus/inventory.json"
 	@echo "  make corpus-status  Show corpus readiness"
+	@echo "  make asr-export     Export ASR gold-clip candidates from transcripts"
+	@echo "  make asr-status     Show gold-summary.json minutes / goldOk counts"
+	@echo "  make asr-slice      Slice goldOk cues to 16k mono wavs"
+	@echo "  make asr-pack-colab Zip clips + scripts for Colab upload"
 	@echo "  make status         Show git branch and working tree"
 	@echo "  make setup-remote URL=<new-repo-url>   Add origin (NEW repo only)"
 	@echo "  make publish-new    Create+push NEW GitHub repo yueju-linguistic-archive"
@@ -61,6 +65,26 @@ corpus-inventory:
 
 corpus-status:
 	@./scripts/corpus-status.sh
+
+asr-export:
+	@npm run asr:export-gold
+
+asr-status:
+	@test -f data/corpus/asr/gold-summary.json && cat data/corpus/asr/gold-summary.json || (echo "Run make asr-export first"; exit 1)
+
+asr-slice:
+	@./.venv-asr/bin/python scripts/asr/slice_clips.py \
+		--manifest data/corpus/asr/gold-clips.jsonl \
+		--out-dir data/corpus/asr/clips \
+		--only-gold-ok || \
+	python3 scripts/asr/slice_clips.py \
+		--manifest data/corpus/asr/gold-clips.jsonl \
+		--out-dir data/corpus/asr/clips \
+		--only-gold-ok
+
+asr-pack-colab:
+	@chmod +x scripts/asr/pack-colab.sh
+	@./scripts/asr/pack-colab.sh
 
 status:
 	@git status -sb

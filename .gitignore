@@ -30,8 +30,14 @@ assets/learn/ziyin-audio/batches/
 !assets/speak/samples/**/*.m4a
 
 # Private Baidu / purchase notes and huge local dumps never enter git
+.venv-asr/
 data/corpus/SOURCES.local.md
 data/corpus/raw/
+data/corpus/asr/clips/
+data/corpus/asr/runs/
+!data/corpus/asr/runs/cer-*.json
+data/corpus/asr/hf-upload/
+data/corpus/asr/*.zip
 **/baidu-yueju/
 
 # Intermediate tsc outputs (browser runtime under scripts/dist/src is tracked)

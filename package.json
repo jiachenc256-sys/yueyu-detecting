@@ -10,6 +10,7 @@
     "seed:mt": "tsx scripts/seed-mt.ts",
     "seed:zh-hant": "tsx scripts/seed-zh-hant.ts",
     "corpus:inventory": "tsx scripts/inventory-corpus.ts",
+    "asr:export-gold": "python3 scripts/export-asr-gold.py",
     "merge": "tsx scripts/merge-layers.ts",
     "validate": "tsx scripts/validate-piece.ts",
     "test": "tsx --test tests/**/*.test.ts",

@@ -66,3 +66,11 @@ make corpus-setup      # create Desktop drop folders
 make corpus-inventory  # scan downloads → data/corpus/inventory.json
 make corpus-status     # show counts / readiness
 ```
+
+## Yueyu ASR fine-tune path
+
+Timed, corrected archive cues can be exported as gold clips for Whisper adaptation:
+
+- Guide: [`docs/YUEYU_ASR.md`](YUEYU_ASR.md)
+- Daily checklist: [`data/corpus/asr/README.md`](../data/corpus/asr/README.md)
+- `make asr-export` / `npm run asr:export-gold`
