@@ -6,7 +6,6 @@
 
 A public **linguistic toolkit and archive** for Yueyu (Shaoxing / Shengzhou-area Wu speech), Yue-opera dialogue, and Qing tanci woodblock reading — with timed multilingual transcripts, learning tools, a draft dictionary, and a reproducible low-resource ASR adaptation experiment.
 
-This is **not** a personal résumé page. It is framed as a public academic / educational resource: hear Yueyu, read aligned dialogue, try recognition baselines, and follow a transparent research path toward better Yueyu ASR.
 
 ---
 
