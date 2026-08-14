@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-08-14T11:59:20.248885+00:00",
+  "clipCount": 124,
+  "goldOkCount": 124,
+  "pendingReviewCount": 0,
+  "durationSec": {
+    "all": 1104.6799999999992,
+    "train": 820.846,
+    "test": 283.834,
+    "goldOk": 1104.6799999999992,
+    "pending": 0.0
+  },
+  "durationMin": {
+    "all": 18.4,
+    "train": 13.7,
+    "test": 4.7,
+    "goldOk": 18.4
+  },
+  "testPieces": [
+    "he-wenxiu-suanming",
+    "xianglin-sao-xinsuanhua"
+  ],
+  "byPiece": {
+    "biyu-zan-xinfang": {
+      "n": 10,
+      "sec": 168.16600000000003,
+      "split": "train"
+    },
+    "he-wenxiu-suanming": {
+      "n": 10,
+      "sec": 149.834,
+      "split": "test"
+    },
+    "hongloumeng-tianxia": {
+      "n": 16,
+      "sec": 99.5,
+      "split": "train"
+    },
+    "liangzhu-shibaxiangsong": {
+      "n": 27,
+      "sec": 141.0,
+      "split": "train"
+    },
+    "longmen-kezhai": {
+      "n": 17,
+      "sec": 66.244,
+      "split": "train"
+    },
+    "wunv-baishou-huashu": {
+      "n": 8,
+      "sec": 96.15999999999998,
+      "split": "train"
+    },
+    "xianglin-sao-xinsuanhua": {
+      "n": 17,
+      "sec": 134.0,
+      "split": "test"
+    },
+    "xixiangji-kaohong": {
+      "n": 11,
+      "sec": 168.976,
+      "split": "train"
+    },
+    "zhuiyu-guandeng": {
+      "n": 8,
+      "sec": 80.8,
+      "split": "train"
+    }
+  },
+  "nextSteps": [
+    "听校每条，设置 goldOk=true 并填写 register（sanbai/yunbai/changci）",
+    "npm run asr:export-gold 会保留你已填的 register / goldOk / notes",
+    "见 docs/YUEYU_ASR.md"
+  ]
+}

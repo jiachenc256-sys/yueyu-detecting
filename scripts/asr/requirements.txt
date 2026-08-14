@@ -1,0 +1,14 @@
+# Yueyu ASR fine-tune / eval (Python 3.10+)
+# Install: pip install -r scripts/asr/requirements.txt
+torch>=2.1.0
+torchaudio>=2.1.0
+transformers>=4.40.0
+datasets>=2.18.0
+accelerate>=0.28.0
+peft>=0.11.0
+torchao>=0.16.0
+evaluate>=0.4.1
+jiwer>=3.0.0
+librosa>=0.10.0
+soundfile>=0.12.0
+tqdm>=4.66.0
