@@ -8,6 +8,7 @@
 | 切片 | 124 wav（本地） |
 | 微调 | Colab：whisper-small + LoRA v1 |
 | CER | tiny 42.9% → adapted 18.7%（n=27）见 `runs/cer-v1.json` |
+| HF | https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1 |
 
 网站「听说」仍用通用基线；上线适配模型是下一步。
 
