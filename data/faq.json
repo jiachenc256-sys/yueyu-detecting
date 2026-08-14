@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "q1",
+      "q": {
+        "zh": "什么是「越语侦听」（Yueyu Detecting）？",
+        "en": "What is Yueyu Detecting?"
+      },
+      "a": {
+        "zh": "越语侦听是一个面向研究与学习的静态站点项目：把绍兴一带可听见的越语（口语与舞台相关语音）与可对读的文字放在一起，并提供基线语音识别与词典练习。它强调方法与档案诚实——先留下可听、可读、可校对的样本，再逐步改进识别，而不是声称已经“听懂一切”。",
+        "en": "Yueyu Detecting is a static-site project for research and learning: it pairs audible Yueyu from the Shaoxing area (everyday speech and stage-related voice) with readable parallel text, plus baseline speech recognition and dictionary practice. It prioritizes honest methods and archives—leave listen-read-checkable samples first, then improve recognition gradually—rather than claiming to already “understand everything.”"
+      }
+    },
+    {
+      "id": "q2",
+      "q": {
+        "zh": "「越语」、越剧与普通话有何区别？",
+        "en": "How do Yueyu, Yueju (Yue opera), and Mandarin differ?"
+      },
+      "a": {
+        "zh": "「越语」在本站指绍兴方言系统中的口语与相关语音传统（含嵊州等地读音），不是普通话。越剧（Yueju）是发源于嵊州一带的戏曲剧种：台上有韵白、散白与唱腔，与街上日常说话并不等同。普通话是国家标准语。本站用普通话汉字作对读与学习入口，并尽量标明舞台与口语的差异，避免把三者混为一谈。",
+        "en": "Here “Yueyu” means spoken Shaoxing-area dialect speech and related voice traditions (including Shengzhou readings)—not Mandarin. Yueju (Yue opera) is the theatrical form rooted around Shengzhou: stage rhyme-speech, prose-speech, and singing differ from everyday street talk. Mandarin is the national standard. This site uses Mandarin Chinese characters as a reading and learning entry point, and tries to mark stage-versus-everyday differences rather than collapsing the three."
+      }
+    },
+    {
+      "id": "q3",
+      "q": {
+        "zh": "「听说」页如何工作？首次加载 Whisper 要多久？",
+        "en": "How does Speak work, and what about the first Whisper download?"
+      },
+      "a": {
+        "zh": "实时麦克风走浏览器语音引擎（推荐 Chrome / Edge）。上传音频则在设备端运行 Whisper：首次会下载约 75MB 的小模型，之后可离线复用缓存。识别完成后，译文经 MyMemory 接口生成（无需本站 API 密钥）。当前对越语 / 舞台方言仍是基线演示，准确度会随档案语料积累而提升；请用清晰、较短的片段试听。",
+        "en": "Live microphone input uses the browser speech engine (Chrome/Edge recommended). Uploaded files run Whisper on-device: the first visit downloads a small model (~75MB), then the cache can be reused. After recognition, translations come from MyMemory (no API key on this site). Yueyu / stage-dialect accuracy is still a baseline demo and should improve as the archive corpus grows; prefer clear, short clips."
+      }
+    },
+    {
+      "id": "q4",
+      "q": {
+        "zh": "为什么真人录音优先提供嵊州话？",
+        "en": "Why is Shengzhou audio provided first?"
+      },
+      "a": {
+        "zh": "学习页对照上虞、诸暨、嵊州三地音标，但真人录音目前只提供嵊州话：它更贴近越剧念白传统，也更便于作为通行参考。上虞、诸暨读音仍以音标对照展示，仅供参考，不等于已有同等录音覆盖。",
+        "en": "The Learn pages compare Shangyu, Zhuji, and Shengzhou readings, but human recordings currently cover Shengzhou only: it is closer to Yue-opera spoken tradition and a practical common reference. Shangyu and Zhuji remain transcription-only comparisons—not equivalent recorded coverage."
+      }
+    },
+    {
+      "id": "q5",
+      "q": {
+        "zh": "档案材料从哪里来？版权如何处理？",
+        "en": "Where do archive materials come from, and how is copyright handled?"
+      },
+      "a": {
+        "zh": "公开内容以精选短选段、弹词图文与元数据为主，来自图书馆查阅、民间收藏扫描、研究用录音线索等；原始大包不直接公开上传。戏曲录音与唱词权利归表演者、剧团、出版方等权利人；短选段仅供学习研究演示，不构成整包传播授权。请勿再分发已购录音或主张本站未持有的权利。电台等外部来源优先短引用并注明出处；长期挂站宜联系授权或改用有同意书的自采口语。",
+        "en": "Public pages focus on curated short clips, tanci page images, and metadata from library work, private-collection scans, and research audio leads—raw packs are not uploaded wholesale. Opera recordings and scripts remain with performers, troupes, publishers, and other rights holders; short clips are for educational demo only and are not a redistribution license. Do not redistribute purchased recordings or claim rights this site does not hold. For radio and similar sources, prefer short cited excerpts; long-term hosting should seek permission or use consented self-recorded speech."
+      }
+    },
+    {
+      "id": "q6",
+      "q": {
+        "zh": "词典里有什么？字与短语如何配合？",
+        "en": "What is in the dictionary—characters and phrases?"
+      },
+      "a": {
+        "zh": "词典把单字学习（三地音标对照、嵊州录音与闪卡）与日常短语草稿放在同一学习路径里：字帮助建立读音与字形入口，短语提供场景化跟读材料。短语字段多为普通话对读用汉字，便于绍兴学习者练习用越语说出；方言用词仍可能需要本地母语者校正。",
+        "en": "The dictionary joins character study (three-place readings, Shengzhou audio, flashcards) with a draft of everyday phrases: characters open sound and glyph entry points; phrases give scene-based practice. Phrase Chinese is mostly Mandarin-gloss text for Shaoxing-area learners to practice saying in Yueyu; dialect wording may still need native correction."
+      }
+    },
+    {
+      "id": "q7",
+      "q": {
+        "zh": "以后如何贡献语料或校对？",
+        "en": "How can people contribute later?"
+      },
+      "a": {
+        "zh": "当前站点以作者维护的精选档案与基线工具为主，尚未开放公开上传入口。后续计划在明确同意书、署名与权利说明的前提下，接受母语者朗读短选段、转写校对与短语订正。若你有可公开的材料或愿意参与校对，请通过 About 页的联系方式留言；在流程就绪前，请勿直接寄送受版权保护的整集音视频。",
+        "en": "The site currently centers on author-curated clips and baseline tools; there is no open upload portal yet. Later work aims to accept consented short read-alouds, transcript checks, and phrase corrections under clear consent, credit, and rights notes. If you have shareable material or want to help proofread, contact via the About page. Until that process is ready, please do not send full copyrighted audio/video packs."
+      }
+    },
+    {
+      "id": "q8",
+      "q": {
+        "zh": "技术栈是什么？",
+        "en": "What is the technical stack?"
+      },
+      "a": {
+        "zh": "前端为静态 HTML/CSS 与 TypeScript（ES modules），经 Node 工具校验后可部署到 GitHub Pages 一类静态托管。上传识别使用设备端 Whisper；译文使用 MyMemory（无本站密钥）。另有 Ajv 模式校验、opencc-js 简繁转换，以及可选的 OCR 服务地址（见配置，密钥不进前端）。识别与翻译均为基线能力，不是专用越语商用引擎。",
+        "en": "The frontend is static HTML/CSS and TypeScript (ES modules), validated with Node tooling and deployable to hosts such as GitHub Pages. Upload ASR uses on-device Whisper; translation uses MyMemory (no site-held API key). The stack also uses Ajv schema checks, opencc-js for script conversion, and an optional OCR service URL in config (secrets stay off the frontend). ASR and translation are baseline capabilities, not a dedicated commercial Yueyu engine."
+      }
+    },
+    {
+      "id": "q9",
+      "q": {
+        "zh": "这个项目主要给谁用？",
+        "en": "Who is this project for?"
+      },
+      "a": {
+        "zh": "主要面向计算机科学与语言学交叉的学生与研究者，以及希望严肃入门绍兴方言与越剧语音文化的爱好者。它适合做语料组织、对读演示与基线 ASR 实验入口；不是替代课堂或母语社群的完整课程，也不承诺即时流利口语教学。",
+        "en": "It is aimed at students and researchers at the CS–linguistics intersection, and at learners who want a serious entry into Shaoxing-area dialect and Yue-opera voice culture. It suits corpus organization, parallel-text demos, and baseline ASR experiments—not a full classroom substitute or a promise of instant spoken fluency."
+      }
+    },
+    {
+      "id": "q10",
+      "q": {
+        "zh": "接下来的路线图是什么？",
+        "en": "What is on the roadmap?"
+      },
+      "a": {
+        "zh": "近期重点包括：口语说话人短选段（本地朗读、站内播放）、扩展与校正日常短语、继续精选越剧与弹词对读条目，并用已验证语料改进评测。识别准确度与贡献流程会随档案与同意书机制一起推进，而不是一次“上线即完成”。",
+        "en": "Near-term priorities include short speaker clips (local read-alouds played on-site), expanding and correcting everyday phrases, continuing curated Yueju and tanci parallel entries, and improving evaluation with verified corpus data. Recognition quality and contribution workflows will advance with the archive and consent process—not as a one-shot “shipped forever” product."
+      }
+    }
+  ]
+}

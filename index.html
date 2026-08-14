@@ -22,12 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260812m" />
-  <link rel="stylesheet" href="styles/main.css?v=20260812m" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260812m" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260812m" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260812m" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260812m" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260814a" />
+  <link rel="stylesheet" href="styles/main.css?v=20260814a" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260814a" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260814a" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260814a" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260814a" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260814a" />
 </head>
 <body>
   <div class="app-shell">
@@ -78,11 +79,13 @@
           <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label" data-i18n="nav.main">
             <button class="site-nav__btn" data-panel-target="home" aria-current="page" data-i18n="nav.home">首页</button>
             <button class="site-nav__btn" data-panel-target="speak" data-i18n="nav.speak">听说翻译</button>
+            <button class="site-nav__btn" data-panel-target="dictionary" data-i18n="nav.dictionary">词典</button>
             <button class="site-nav__btn" data-panel-target="tanci" data-i18n="nav.tanci">弹词</button>
             <button class="site-nav__btn" data-panel-target="archive" data-i18n="nav.archive">档案</button>
             <button class="site-nav__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
             <button class="site-nav__btn" data-panel-target="plan" data-i18n="nav.plan">学习路径</button>
             <button class="site-nav__btn" data-panel-target="learn" data-i18n="nav.learn">学习工具</button>
+            <button class="site-nav__btn" data-panel-target="faq" data-i18n="nav.faq">FAQ</button>
             <button class="site-nav__btn" data-panel-target="about" data-i18n="nav.about">关于</button>
           </nav>
         </div>
@@ -128,9 +131,36 @@
               </li>
             </ol>
 
+            <div class="home-pillars" aria-label="Three functions">
+              <p class="home-pillars__label" data-i18n="home.pillarsLabel">一个网站，三大功能</p>
+              <div class="home-pillars__grid">
+                <button type="button" class="home-pillar" data-panel-target="speak">
+                  <span class="home-pillar__kicker" data-i18n="home.pillarSpeakKicker">01 · Speak</span>
+                  <h3 data-i18n="home.pillarSpeakTitle">听说翻译</h3>
+                  <p data-i18n="home.pillarSpeakBody">麦克风或示例音频 → 识别 → 简 / 繁 / EN。一分钟体验核心流程。</p>
+                </button>
+                <button type="button" class="home-pillar" data-panel-target="archive">
+                  <span class="home-pillar__kicker" data-i18n="home.pillarArchiveKicker">02 · Archive</span>
+                  <h3 data-i18n="home.pillarArchiveTitle">对话档案</h3>
+                  <p data-i18n="home.pillarArchiveBody">越剧 / 弹词 / 口语分类；点时间戳即跳转播放，带剧情与三语台词。</p>
+                </button>
+                <button type="button" class="home-pillar" data-panel-target="learn">
+                  <span class="home-pillar__kicker" data-i18n="home.pillarLearnKicker">03 · Learn</span>
+                  <h3 data-i18n="home.pillarLearnTitle">学习与词典</h3>
+                  <p data-i18n="home.pillarLearnBody">三地单字对照、闪卡练习，以及字与常用句检索（词典）。</p>
+                </button>
+              </div>
+            </div>
+
             <div class="home-cta">
               <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-i18n="home.ctaSpeak">
                 开始听说翻译
+              </button>
+              <button type="button" class="home-cta__btn" data-panel-target="dictionary" data-i18n="home.ctaDictionary">
+                打开词典
+              </button>
+              <button type="button" class="home-cta__btn" data-panel-target="faq" data-i18n="home.ctaFaq">
+                常见问题
               </button>
               <button type="button" class="home-cta__btn" data-panel-target="learn" data-i18n="home.ctaLearn">
                 打开学习工具
@@ -185,13 +215,19 @@
                   <span data-i18n="speak.chooseFile">选择音频文件</span>
                   <input id="speak-file" type="file" accept="audio/*,.mp3,.wav,.m4a,.ogg" hidden />
                 </label>
+                <button type="button" id="speak-sample-liangzhu" class="speak-btn speak-btn--primary" data-speak-sample="assets/speak/samples/liangzhu-demo.m4a" data-i18n="speak.trySample1">
+                  试试示例 · 梁祝
+                </button>
+                <button type="button" id="speak-sample-xianglin" class="speak-btn" data-speak-sample="assets/speak/samples/xianglin-demo.m4a" data-i18n="speak.trySample2">
+                  试试示例 · 祥林嫂
+                </button>
                 <button type="button" id="speak-clear" class="speak-btn" data-i18n="speak.clear">清除</button>
               </div>
-              <p class="speak-panel__hint" data-i18n="speak.fileHint">支持 MP3 / WAV / M4A · 短片段演示效果更好</p>
+              <p class="speak-panel__hint" data-i18n="speak.fileHint">支持 MP3 / WAV / M4A · 或点「试试示例」一键跑完整识别（首次加载模型约需 15–30 秒）</p>
             </div>
           </div>
 
-          <p id="speak-status" class="speak-status" aria-live="polite" data-i18n="speak.ready">已就绪。可用麦克风或上传音频——识别后会很快出现翻译。</p>
+          <p id="speak-status" class="speak-status" aria-live="polite" data-i18n="speak.ready">已就绪。可用麦克风、上传音频，或点「试试示例」——识别后会很快出现翻译。</p>
           <audio id="speak-audio-preview" class="speak-audio" controls hidden></audio>
 
           <div class="speak-panel">
@@ -200,16 +236,21 @@
             <textarea id="speak-recognized" data-i18n-placeholder="speak.placeholder" placeholder="识别到的对话会出现在这里…"></textarea>
           </div>
 
+          <div class="speak-output-tabs" role="tablist" aria-label="Translation language" data-i18n-attr="aria-label" data-i18n="speak.outputTabsLabel" hidden>
+            <button type="button" class="speak-output-tab" role="tab" aria-selected="true" data-speak-output-tab="zh-Hans" data-i18n="speak.outHans">简体中文</button>
+            <button type="button" class="speak-output-tab" role="tab" aria-selected="false" data-speak-output-tab="zh-Hant" data-i18n="speak.outHant">繁體中文</button>
+            <button type="button" class="speak-output-tab" role="tab" aria-selected="false" data-speak-output-tab="en" data-i18n="speak.outEn">English</button>
+          </div>
           <div class="speak-outputs" aria-label="Translations">
-            <article class="speak-output">
+            <article class="speak-output" data-speak-output="zh-Hans">
               <h3 data-i18n="speak.outHans">简体中文</h3>
               <p id="speak-zh-hans">—</p>
             </article>
-            <article class="speak-output">
+            <article class="speak-output" data-speak-output="zh-Hant">
               <h3 data-i18n="speak.outHant">繁體中文</h3>
               <p id="speak-zh-hant">—</p>
             </article>
-            <article class="speak-output">
+            <article class="speak-output" data-speak-output="en">
               <h3 data-i18n="speak.outEn">English</h3>
               <p id="speak-en">—</p>
             </article>
@@ -297,6 +338,10 @@
           <button type="button" class="archive-filter" data-archive-filter="tanci" aria-pressed="false" data-i18n="archive.filterTanci">弹词</button>
           <button type="button" class="archive-filter" data-archive-filter="speakers" aria-pressed="false" data-i18n="archive.filterSpeakers">口语</button>
         </div>
+        <label class="archive-search">
+          <span class="visually-hidden" data-i18n="archive.searchLabel">搜索剧目</span>
+          <input id="archive-search" type="search" autocomplete="off" data-i18n-placeholder="archive.searchPlaceholder" placeholder="搜索剧目名称…" />
+        </label>
         <p class="archive-filter-note" data-i18n="archive.filterNote">点「弹词」只看刻本图文档案；点「越剧」看听录音选段；「口语」将收录本地说话人朗读短选段（筹备中）。弹词还可上传图片做 OCR。</p>
 
         <div class="archive-grid">
@@ -2061,6 +2106,42 @@
         </div>
       </section>
 
+      </section>
+
+      <!-- ── Dictionary ── -->
+      <section class="panel" data-panel="dictionary" aria-hidden="true">
+        <header class="section-header">
+          <h2 data-i18n="dict.title">越语词典</h2>
+          <p data-i18n="dict.lead">检索单字（三地标音 + 嵊州录音）与日常常用句。短语为草稿，欢迎母语者校正。</p>
+        </header>
+        <div class="dict-layout">
+          <label class="dict-search">
+            <span class="dict-search__label" data-i18n="dict.searchLabel">搜索</span>
+            <input id="dict-query" type="search" autocomplete="off" data-i18n-placeholder="dict.searchPlaceholder" placeholder="汉字 / 拼音 / 短语 / English…" />
+          </label>
+          <p id="dict-status" class="dict-status" data-i18n="dict.hint">输入关键字，结果分为「字」与「短语」。</p>
+          <div class="dict-columns">
+            <section class="dict-col" aria-labelledby="dict-chars-heading">
+              <h3 id="dict-chars-heading" data-i18n="dict.charsHeading">字</h3>
+              <div id="dict-chars" class="dict-results"></div>
+            </section>
+            <section class="dict-col" aria-labelledby="dict-phrases-heading">
+              <h3 id="dict-phrases-heading" data-i18n="dict.phrasesHeading">短语 / 常用句</h3>
+              <div id="dict-phrases" class="dict-results"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FAQ ── -->
+      <section class="panel" data-panel="faq" aria-hidden="true">
+        <header class="section-header">
+          <h2 data-i18n="faq.title">常见问题</h2>
+          <p data-i18n="faq.lead">关于项目范围、听说翻译、档案来源与下一步计划。</p>
+        </header>
+        <div id="faq-list" class="faq-list"></div>
+      </section>
+
       <!-- ── About panel ── -->
       <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
@@ -2071,6 +2152,9 @@
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
             <button class="plan-nav__link" data-about-target="provide" aria-current="true" data-i18n="about.nav.provide">我们提供什么</button>
+            <button class="plan-nav__link" data-about-target="pipeline" aria-current="false" data-i18n="about.nav.pipeline">技术流程</button>
+            <button class="plan-nav__link" data-about-target="findings" aria-current="false" data-i18n="about.nav.findings">初步观察</button>
+            <button class="plan-nav__link" data-about-target="contribute" aria-current="false" data-i18n="about.nav.contribute">参与贡献</button>
             <button class="plan-nav__link" data-about-target="developer" aria-current="false" data-i18n="about.nav.developer">开发者</button>
             <button class="plan-nav__link" data-about-target="intro" aria-current="false" data-i18n="about.nav.intro">网站介绍</button>
             <button class="plan-nav__link" data-about-target="privacy" aria-current="false" data-i18n="about.nav.privacy">隐私</button>
@@ -2171,6 +2255,84 @@
                   <li>Stage "Shengzhou" ≠ everyday Shengzhou — document scope clearly in README</li>
                 </ul>
               </article>
+            </div>
+
+            <div class="plan-section" data-about-section="pipeline" aria-hidden="true">
+              <h3 data-i18n="about.pipeline.title">技术流程</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p>本站是静态网站：核心演示在浏览器内完成，便于学术求职演示与离线复现。</p>
+                <ol class="about-pipeline">
+                  <li><strong>输入</strong>：麦克风、上传音频，或「试试示例」短选段</li>
+                  <li><strong>识别</strong>：设备端 Whisper（首次下载小模型）或浏览器语音引擎</li>
+                  <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
+                  <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
+                </ol>
+                <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
+              </div>
+              <div data-visible-lang="en">
+                <p>This is a static site: the core demo runs in the browser for academic review and offline reproduction.</p>
+                <ol class="about-pipeline">
+                  <li><strong>Input</strong>: mic, upload, or Try-sample clips</li>
+                  <li><strong>ASR</strong>: on-device Whisper (first-run model download) or browser speech API</li>
+                  <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
+                  <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
+                </ol>
+                <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
+              </div>
+              <div class="about-flow" aria-hidden="true">
+                <span>Mic / Sample</span><span aria-hidden="true">→</span>
+                <span>Whisper</span><span aria-hidden="true">→</span>
+                <span>Translate</span><span aria-hidden="true">→</span>
+                <span>UI</span>
+              </div>
+            </div>
+
+            <div class="plan-section" data-about-section="findings" aria-hidden="true">
+              <h3 data-i18n="about.findings.title">初步观察</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p>学习工具中的三地单字对照，不只是「列表」，而是可观察的音韵差异入口。示例（字「多」）：</p>
+                <ul>
+                  <li>上虞：<code>tɷ35</code></li>
+                  <li>诸暨：<code>tɤu544</code></li>
+                  <li>嵊州：<code>to534</code></li>
+                </ul>
+                <p>同一汉字在邻近县市的韵母与调值并不相同；普通话拼音只能作「锚定义项」的索引，不能替代吴语标音。本站真人录音目前优先嵊州，是为了先建立一条可听、可复现的金标路径，再扩展对照。</p>
+                <p>第二点观察：越剧<strong>散白</strong>更接近口语，通用 ASR 相对可跟；<strong>韵白</strong>混有中州韵与吴语声调，是基线模型最容易失败的区间——这也是档案转写必须人工校对的原因。</p>
+              </div>
+              <div data-visible-lang="en">
+                <p>The three-place character chart is an entry to observable phonology, not only a list. Example (character 多 “many”):</p>
+                <ul>
+                  <li>Shangyu: <code>tɷ35</code></li>
+                  <li>Zhuji: <code>tɤu544</code></li>
+                  <li>Shengzhou: <code>to534</code></li>
+                </ul>
+                <p>Vowels and tones differ across neighboring counties; Mandarin pinyin is only a gloss anchor, not a Wu transcription. Shengzhou audio ships first as a reproducible gold path before widening coverage.</p>
+                <p>Second observation: Yue-opera <strong>sanbai</strong> (spoken-like) is closer to everyday speech and somewhat friendlier to generic ASR; <strong>yunbai</strong> mixes Zhongzhou rhyme with Wu tones—where baseline models fail hardest, so archive transcripts need human correction.</p>
+              </div>
+            </div>
+
+            <div class="plan-section" data-about-section="contribute" aria-hidden="true">
+              <h3 data-i18n="about.contribute.title">参与贡献</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p>项目强调传承，欢迎有权限、可知情同意的材料：</p>
+                <ul>
+                  <li>本地说话人短朗读 / 日常短对话（建议 30–90 秒）</li>
+                  <li>弹词 / 手抄本清晰照片（用于 OCR 校对）</li>
+                  <li>档案转写校对意见（时间轴、说话人、错字）</li>
+                  <li>词典短语的方言措辞修正</li>
+                </ul>
+                <p>请通过开发者联系渠道说明材料来源与授权范围。本站不会公开未获同意的私人录音。</p>
+              </div>
+              <div data-visible-lang="en">
+                <p>Contribution is welcome when rights and consent are clear:</p>
+                <ul>
+                  <li>Short read-alouds / everyday clips from local speakers (30–90s preferred)</li>
+                  <li>Clear photos of tanci / manuscripts for OCR proofreading</li>
+                  <li>Archive transcript corrections (timing, speakers, typos)</li>
+                  <li>Dialect wording fixes for dictionary phrases</li>
+                </ul>
+                <p>Contact the developer with source and permission notes. Private recordings without consent are not published.</p>
+              </div>
             </div>
 
             <div class="plan-section" data-about-section="developer" aria-hidden="true">
@@ -2302,9 +2464,11 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260812m"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260812m"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260812m"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260812m"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260814a"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260814a"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260814a"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814a"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260814a"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814a"></script>
 </body>
 </html>
