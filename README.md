@@ -15,6 +15,9 @@ Alice Chen is the **only author and only contributor**. Concept, collection work
 
 Ordinary dependencies (not co-authors): TypeScript, Node.js/npm, browser speech APIs, on-device Whisper for demos, Hugging Face for hosting adapter weights, GitHub Pages, Ajv, opencc-js, etc. Media rights remain with their holders.
 
+**Development Note**  
+This project's core research—including problem definition, corpus design and validation, experimental methodology, and system architecture—was independently conducted by me (Alice Chen). During the implementation phase, I utilized AI-assisted coding tools (such as Cursor) to accelerate routine implementation tasks. All AI-generated code has been thoroughly reviewed, tested, and integrated by me to ensure it aligns with the project's overall design, quality standards, and research goals. My role as the primary designer and decision-maker remains central to every aspect of this work.
+
 ---
 
 ## Project arc (≈ 1–2 years)
