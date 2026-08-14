@@ -1,5 +1,7 @@
 # 越语 ASR 金标
 
+**作者：** Alice Chen（Chen Jiachen）
+
 ## 当前状态
 
 | 步骤 | 状态 |
