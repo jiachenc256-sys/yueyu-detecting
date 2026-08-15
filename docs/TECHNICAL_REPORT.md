@@ -2,8 +2,8 @@
 
 **Sole author:** Alice Chen (Chen Jiachen / Jiachen Chen)  
 **Project:** [Yueyu Detecting (越语侦听)](https://yueyudetecting.com)  
-**Date:** 2026-08-14 (pilot v1)  
-**Adapter:** [ArikaisAllie/yueyu-whisper-small-lora-v1](https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1)
+**Date:** 2026-08-15 (pilot v2 size-matched; v1 Colab retained)  
+**Adapter:** [ArikaisAllie/yueyu-whisper-small-lora-v1](https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1) (public); longer local LoRA v2 evaluated in [`cer-v2b.json`](../data/corpus/asr/runs/cer-v2b.json)
 
 ---
 
@@ -11,11 +11,11 @@
 
 **研究问题：** 在标注数据稀缺的条件下，能否用少量高质量音文对齐语料，微调开源自动语音识别（ASR）模型，提升对吴语越语／越剧相关语音的识别准确率？
 
-**方法：** 从本站已校对的时间轴档案导出金标切片 → 按整剧留出测试集 → 在 `whisper-small` 上以 LoRA 微调 → 与站点基线 `whisper-tiny` 在独立测试集上比较字错误率（CER）。
+**方法：** 从本站已校对的时间轴档案导出金标切片 → 按整剧留出测试集 → 在 `whisper-small` 上以 LoRA 微调 → 与 `whisper-tiny` 及同尺寸裸 `whisper-small` 比较字错误率（CER）。
 
-**结果：** 测试集 27 句上，基线平均 CER ≈ 42.9%，适配后 ≈ 18.7%（绝对降幅约 24 个百分点）。
+**结果（v2 同尺寸，n=27）：** 原始 CER 均值 tiny 7.3 · plain small 10.7 · LoRA v2（加长训练）**1.1**（相对同尺寸基线约 −9.6）。内容级 exact match 仍约 0%。早期 v1（tiny vs LoRA，体量不对等）见下文 §4.1。
 
-**局限：** 金标约 18.4 分钟；基线与适配模型体量不完全对等；网站「听说」页仍加载通用基线 Whisper。本报告记录可复现试点，而非生产级越语 ASR。
+**局限：** 金标约 18.4 分钟；网站「听说」页仍加载通用基线 Whisper。本报告记录可复现试点，而非生产级越语 ASR。
 
 ---
 
@@ -23,11 +23,11 @@
 
 **Question.** Can a small, high-quality aligned speech–text set improve open ASR on low-resource Yueyu / Yue-opera-related speech via parameter-efficient fine-tuning?
 
-**Method.** Export gold clips from corrected timed archive transcripts; hold out whole pieces for test; fine-tune `whisper-small` with LoRA; evaluate character error rate (CER) against the site baseline `whisper-tiny`.
+**Method.** Export gold clips from corrected timed archive transcripts; hold out whole pieces for test; fine-tune `whisper-small` with LoRA; evaluate character error rate (CER) against `whisper-tiny` and size-matched plain `whisper-small`.
 
-**Result.** On 27 held-out clips, mean CER fell from ≈ 42.9% (tiny) to ≈ 18.7% (small + LoRA), about −24 absolute points.
+**Result (v2 size-matched, n=27).** Raw mean CER: tiny 7.3 · plain small 10.7 · LoRA v2 (longer train) **1.1** (about −9.6 vs size-matched baseline). Exact match still ~0%. Early v1 (tiny vs LoRA, size-mismatched) is retained in §4.1.
 
-**Limits.** Gold set ≈ 18.4 minutes; baseline and adapted sizes are not matched; Speak still runs generic on-device Whisper. This is a reproducible pilot, not production Yueyu ASR.
+**Limits.** Gold set ≈ 18.4 minutes; Speak still runs generic on-device Whisper. This is a reproducible pilot, not production Yueyu ASR.
 
 ---
 
@@ -129,10 +129,10 @@ What the pilot **does** show: a closed loop from curated archive → trainable c
 
 ## 6. Future work
 
-- Longer LoRA runs (`--max-steps` 400–800, `--no-text-normalizer`) and re-eval with `make asr-eval-v2`.  
 - Grow gold toward 30–60 minutes, then 2h+, with clearer 散白 / 韵白 tagging.  
-- Integrate the Hugging Face adapter into Speak when hosting allows.  
+- Integrate an adapted checkpoint into Speak when hosting allows.  
 - Treat the held-out slice as a seed for a reusable Yueyu evaluation set.
+- Optionally publish the longer LoRA v2 adapter alongside the current HF v1 card.
 
 Operational notes: [`docs/YUEYU_ASR.md`](YUEYU_ASR.md); Colab steps: [`scripts/asr/COLAB.md`](../scripts/asr/COLAB.md).
 

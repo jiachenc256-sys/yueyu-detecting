@@ -1160,9 +1160,9 @@
             <aside class="research-abstract" aria-label="研究摘要">
               <p class="research-abstract__eyebrow">研究摘要 · 问题—方法—结果</p>
               <p><strong>背景。</strong>越语作为濒危吴语方言，语音识别面临语料稀缺与发音／语域变体（散白、韵白、唱词）复杂的双重挑战。</p>
-              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建小型高质量金标切片，按整剧留出测试集，对 Whisper-small 做 LoRA 微调，并与站点基线 Whisper-tiny 比较 CER。</p>
-              <p><strong>结果。</strong>在 27 句测试集上，平均 CER 由约 42.9% 降至约 18.7%（绝对降幅约 24 个百分点）。详见「关于 → 研究摘要」与仓库技术报告。</p>
-              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径，为扩大金标与接入网站识别流程奠定基础——同时诚实记录局限（小样本、模型体量不完全对等）。</p>
+              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建小型高质量金标切片，按整剧留出测试集，对 Whisper-small 做 LoRA 微调，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
+              <p><strong>结果（v2 同尺寸，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA（加长训练）<strong>1.1</strong>（相对同尺寸基线约 −9.6）。内容级 exact match 仍约 0%。详见「关于 → 研究摘要」与仓库技术报告。</p>
+              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径，为扩大金标与接入网站识别流程奠定基础——同时诚实记录局限（小样本；听说页仍用通用基线）。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
@@ -1251,9 +1251,9 @@
             <aside class="research-abstract" aria-label="研究摘要">
               <p class="research-abstract__eyebrow">研究摘要 · 問題—方法—結果</p>
               <p><strong>背景。</strong>越語作為瀕危吳語方言，語音識別面臨語料稀缺與發音／語域變體（散白、韻白、唱詞）複雜的雙重挑戰。</p>
-              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建小型高質量金標切片，按整劇留出測試集，對 Whisper-small 做 LoRA 微調，並與站點基線 Whisper-tiny 比較 CER。</p>
-              <p><strong>結果。</strong>在 27 句測試集上，平均 CER 由約 42.9% 降至約 18.7%（絕對降幅約 24 個百分點）。詳見「關於 → 研究摘要」與倉庫技術報告。</p>
-              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑，為擴大金標與接入網站識別流程奠定基礎——同時誠實記錄局限（小樣本、模型體量不完全對等）。</p>
+              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建小型高質量金標切片，按整劇留出測試集，對 Whisper-small 做 LoRA 微調，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER。</p>
+              <p><strong>結果（v2 同尺寸，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA（加長訓練）<strong>1.1</strong>（相對同尺寸基線約 −9.6）。內容級 exact match 仍約 0%。詳見「關於 → 研究摘要」與倉庫技術報告。</p>
+              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑，為擴大金標與接入網站識別流程奠定基礎——同時誠實記錄局限（小樣本；聽說頁仍用通用基線）。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
@@ -1342,9 +1342,9 @@
             <aside class="research-abstract" aria-label="Research abstract">
               <p class="research-abstract__eyebrow">Research abstract · problem–method–result</p>
               <p><strong>Background.</strong> Yueyu, a threatened Wu variety, poses a dual ASR challenge: scarce aligned data and complex pronunciation / register variation (sanbai, yunbai, sung lines).</p>
-              <p><strong>Method.</strong> I built a small high-quality gold set from this site’s corrected timed archive, held out whole plays for testing, fine-tuned Whisper-small with LoRA, and compared CER to the site baseline Whisper-tiny.</p>
-              <p><strong>Result.</strong> On 27 test clips, mean CER fell from ≈ 42.9% to ≈ 18.7% (about −24 absolute points). See About → Research brief.</p>
-              <p><strong>Significance.</strong> This supports a reproducible low-resource adaptation path and a foundation for larger gold sets and Speak integration—while recording limits honestly (small N; size mismatch).</p>
+              <p><strong>Method.</strong> I built a small high-quality gold set from this site’s corrected timed archive, held out whole plays for testing, fine-tuned Whisper-small with LoRA, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
+              <p><strong>Result (v2 size-matched, n=27).</strong> Raw mean CER: tiny 7.3 · plain small 10.7 · LoRA (longer train) <strong>1.1</strong> (about −9.6 vs size-matched baseline). Exact match still ~0%. See About → Research brief.</p>
+              <p><strong>Significance.</strong> This supports a reproducible low-resource adaptation path and a foundation for larger gold sets and Speak integration—while recording limits honestly (small N; Speak still uses a generic baseline).</p>
             </aside>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
@@ -2487,8 +2487,8 @@
                 <li class="roadmap__item">
                   <h4 data-visible-lang="zh-Hans,zh-Hant">中期 · 规划中</h4>
                   <h4 data-visible-lang="en">Mid term · planned</h4>
-                  <p data-visible-lang="zh-Hans,zh-Hant">将适配模型接入「听说」；金标扩至约 30–60 分钟再冲 2 小时+；同尺寸消融（plain small vs LoRA）；口语说话人短选段；辞书到齐后扩展词典。欢迎经同意的材料——见「参与贡献」。</p>
-                  <p data-visible-lang="en">Wire the adapted model into Speak; grow gold toward ~30–60 min then 2h+; size-matched ablation; Speakers clips with consent; dictionary growth when books arrive. Consented contributions welcome — see Contribute.</p>
+                  <p data-visible-lang="zh-Hans,zh-Hant">将适配模型接入「听说」；金标扩至约 30–60 分钟再冲 2 小时+；口语说话人短选段；辞书到齐后扩展词典。欢迎经同意的材料——见「参与贡献」。</p>
+                  <p data-visible-lang="en">Wire the adapted model into Speak; grow gold toward ~30–60 min then 2h+; Speakers clips with consent; dictionary growth when books arrive. Consented contributions welcome — see Contribute.</p>
                 </li>
                 <li class="roadmap__item">
                   <h4 data-visible-lang="zh-Hans,zh-Hant">长期 · 愿景</h4>

@@ -56,13 +56,14 @@ Site Speak still uses a **generic on-device Whisper baseline** for privacy-frien
 | :--- | :--- |
 | Gold clips | ~124 cues / ~18.4 minutes from corrected archive alignments |
 | Hold-out test | 27 clips (whole-piece split: 祥林嫂, 何文秀) |
-| Baseline CER | `whisper-tiny` ≈ **42.9%** |
-| Adapted CER | `whisper-small` + LoRA ≈ **18.7%** (Δ ≈ −24 pp) |
+| Size-matched CER (v2b) | tiny **7.3** · plain `whisper-small` **10.7** · LoRA **1.1** |
+| Adaptation Δ | LoRA − plain small ≈ **−9.6** (lower is better) |
+| Exact match | still **~0%** on this holdout |
 | Public adapter | https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1 |
 
-**Honest limits:** small gold set; baseline and adapted model sizes are not matched; not production Yueyu ASR. Next steps: size-matched ablation, more gold data, then wire an adapted model into Speak when hosting is ready.
+**Honest limits:** small gold set; raw CER drop ≠ fluent transcripts yet; Speak is still the generic baseline. Next steps: more gold data, then wire an adapted model into Speak when hosting is ready.
 
-Full write-up: [`docs/YUEYU_ASR.md`](docs/YUEYU_ASR.md) · numbers: [`data/corpus/asr/runs/cer-v1.json`](data/corpus/asr/runs/cer-v1.json) · model card: [`docs/HF_MODEL_CARD.md`](docs/HF_MODEL_CARD.md)
+Full write-up: [`docs/TECHNICAL_REPORT.md`](docs/TECHNICAL_REPORT.md) · [`docs/YUEYU_ASR.md`](docs/YUEYU_ASR.md) · numbers: [`data/corpus/asr/runs/cer-v2b.json`](data/corpus/asr/runs/cer-v2b.json) · model card: [`docs/HF_MODEL_CARD.md`](docs/HF_MODEL_CARD.md)
 
 ---
 
