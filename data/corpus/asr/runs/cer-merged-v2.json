@@ -1,0 +1,19 @@
+{
+  "schema": "cer-merged-v2",
+  "nTest": 27,
+  "device": "-1",
+  "merged": {
+    "model": "data/corpus/asr/runs/whisper-small-merged-v2",
+    "n": 27,
+    "meanCer": 1.0982510288065843,
+    "meanCerCapped": 1.0982510288065843,
+    "meanCerClipped": 0.9894179894179894,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "nItems": 27
+  },
+  "compareTo": {
+    "cerV2bLoRA": 1.098,
+    "note": "expect similar to LoRA v2 after merge_and_unload"
+  }
+}

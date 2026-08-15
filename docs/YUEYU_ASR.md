@@ -2,7 +2,7 @@
 
 **作者：** Alice Chen（Chen Jiachen）独立完成。
 
-目标：把「听说」从通用 `Xenova/whisper-tiny` 换成**在越语/越剧语料上微调过的模型**。  
+目标：把「听说」接到**在越语/越剧语料上微调过的模型**（设备端）。  
 不做用户反馈邮箱；主线是金标语料 → 微调 → CER → 上线。
 
 ## 现状（仓库里已有）
@@ -11,7 +11,8 @@
 |------|------|
 | `data/transcripts/*.json` | 带时间轴的校对台词（`zh.status` = corrected/reviewed） |
 | `assets/audio/*.mp3` 等 | 与档案页同步的短选段 |
-| 粗估 | 约 **124 句 / ~18.4 分钟** 试点金标（已导出并完成首次微调） |
+| 粗估 | 约 **124 句 / ~18.4 分钟** 试点金标（已导出并完成微调） |
+| Speak 权重 | `assets/asr/yueyu-whisper-small-onnx/`（合并 LoRA v2 → INT8 ONNX；decoder 分片） |
 
 ## 试点 CER
 
@@ -24,13 +25,16 @@
 | `openai/whisper-tiny` | 7.3 | 0% |
 | `whisper-small`（无 LoRA） | 10.7 | 0% |
 | `whisper-small` + LoRA v2（加长训练） | **1.1** | 0% |
+| 合并后 checkpoint（`whisper-small-merged-v2`） | **1.1** | 0% |
 | Δ（LoRA − plain small） | **−9.6** | — |
 
-数字：[`data/corpus/asr/runs/cer-v2b.json`](../data/corpus/asr/runs/cer-v2b.json)。技术报告：[`docs/TECHNICAL_REPORT.md`](TECHNICAL_REPORT.md)。
+数字：[`data/corpus/asr/runs/cer-v2b.json`](../data/corpus/asr/runs/cer-v2b.json)、[`cer-merged-v2.json`](../data/corpus/asr/runs/cer-merged-v2.json)。
 
-**公开权重（HF v1）：** [`ArikaisAllie/yueyu-whisper-small-lora-v1`](https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1)
+**公开 LoRA（HF）：** [`ArikaisAllie/yueyu-whisper-small-lora-v1`](https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1)
 
-**诚实边界：** exact match 仍约 0%；网站「听说」仍用通用基线。主声明引用同尺寸 `deltaCerAdaptedMinusSmall`。
+**产品：** 「听说」麦克风与上传均走本站适配 ONNX。口语/电台金标是后续域扩展，不在当前适配域内。
+
+**诚实边界：** exact match 仍约 0%。主声明引用同尺寸 `deltaCerAdaptedMinusSmall`。
 
 ### v1 早期对照（2026-08-14，Colab；体量不对等，仅作历史）
 
@@ -103,13 +107,15 @@ make asr-eval-v2
 
 把 `cer-v2.json` 写进技术报告 / About——**没有跑通评测就不要写「准确率提升」**。重点引用 `deltaCerAdaptedMinusSmall`（同尺寸下的适配增益）。
 
-### 5. 上线（有模型之后）
+### 5. 上线（已完成试点）
 
-1. 推到 Hugging Face（你的账号）
-2. 导出/转换到 `@xenova/transformers` 可用格式，或用小型推理 API
-3. 改 `src/speak.ts` 里的模型 ID（当前是 `Xenova/whisper-tiny`）
+1. `make asr-merge-v2` 合并 LoRA → full checkpoint  
+2. Optimum 导出 ONNX + INT8 量化 → `assets/asr/yueyu-whisper-small-onnx/`（decoder 分片）  
+3. [`src/speak.ts`](../src/speak.ts) 麦克风（MediaRecorder）与上传均加载该本地模型  
 
-静态 GitHub Pages **不能训练**；可以 **加载你托管好的权重**。
+可选：用 `scripts/asr/upload-onnx-hf.sh` 再镜像到 Hugging Face。口语/电台金标另开域，不假设被越剧 LoRA 覆盖。
+
+静态 GitHub Pages **不能训练**；可以 **加载仓库内托管的权重**。
 
 ## 字段说明（jsonl）
 

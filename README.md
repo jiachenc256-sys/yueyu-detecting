@@ -50,18 +50,18 @@ Software commits document the site-building and research-tooling phases. Applica
 
 ## Research track: Yueyu ASR adaptation
 
-Site Speak still uses a **generic on-device Whisper baseline** for privacy-friendly demos. Separately, a pilot adaptation was completed:
+Site Speak loads a **Yueyu-adapted on-device Whisper** (merged LoRA v2 → INT8 ONNX under `assets/asr/yueyu-whisper-small-onnx/`). Mic and upload share that path. Separately, the research loop reports:
 
 | Item | Result |
 | :--- | :--- |
 | Gold clips | ~124 cues / ~18.4 minutes from corrected archive alignments |
 | Hold-out test | 27 clips (whole-piece split: 祥林嫂, 何文秀) |
-| Size-matched CER (v2b) | tiny **7.3** · plain `whisper-small` **10.7** · LoRA **1.1** |
+| Size-matched CER (v2b / merged) | tiny **7.3** · plain `whisper-small` **10.7** · LoRA/merged **1.1** |
 | Adaptation Δ | LoRA − plain small ≈ **−9.6** (lower is better) |
 | Exact match | still **~0%** on this holdout |
-| Public adapter | https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1 |
+| Public LoRA adapter | https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1 |
 
-**Honest limits:** small gold set; raw CER drop ≠ fluent transcripts yet; Speak is still the generic baseline. Next steps: more gold data, then wire an adapted model into Speak when hosting is ready.
+**Honest limits:** small gold set; raw CER drop ≠ fluent transcripts yet; adapted domain is archive Yue-opera starters (not radio talk). Next: more gold data (incl. spoken/radio later).
 
 Full write-up: [`docs/TECHNICAL_REPORT.md`](docs/TECHNICAL_REPORT.md) · [`docs/YUEYU_ASR.md`](docs/YUEYU_ASR.md) · numbers: [`data/corpus/asr/runs/cer-v2b.json`](data/corpus/asr/runs/cer-v2b.json) · model card: [`docs/HF_MODEL_CARD.md`](docs/HF_MODEL_CARD.md)
 
