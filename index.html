@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/tokens.css?v=20260815a" />
-  <link rel="stylesheet" href="styles/main.css?v=20260815a" />
+  <link rel="stylesheet" href="styles/main.css?v=20260815c" />
   <link rel="stylesheet" href="styles/a11y.css?v=20260815a" />
   <link rel="stylesheet" href="styles/speak.css?v=20260815a" />
   <link rel="stylesheet" href="styles/tanci.css?v=20260815a" />
@@ -2200,15 +2200,14 @@
       <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="about.title">关于</h2>
-          <p data-i18n="about.lead">研究摘要、联系、技术资源申请、技术流程、路线图、开发者、隐私与版权。</p>
+          <p data-i18n="about.lead">研究摘要、联系与申请、技术流程、路线图、开发者、隐私与版权。</p>
         </header>
 
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
             <button class="plan-nav__link" data-about-target="provide" aria-current="true" data-i18n="about.nav.provide">我们提供什么</button>
             <button class="plan-nav__link" data-about-target="research" aria-current="false" data-i18n="about.nav.research">研究摘要</button>
-            <button class="plan-nav__link" data-about-target="contact" aria-current="false" data-i18n="about.nav.contact">联系</button>
-            <button class="plan-nav__link" data-about-target="apply" aria-current="false" data-i18n="about.nav.apply">技术资源申请</button>
+            <button class="plan-nav__link" data-about-target="contact" aria-current="false" data-i18n="about.nav.contact">联系与申请</button>
             <button class="plan-nav__link" data-about-target="pipeline" aria-current="false" data-i18n="about.nav.pipeline">技术流程</button>
             <button class="plan-nav__link" data-about-target="findings" aria-current="false" data-i18n="about.nav.findings">初步观察</button>
             <button class="plan-nav__link" data-about-target="roadmap" aria-current="false" data-i18n="about.nav.roadmap">路线图</button>
@@ -2340,7 +2339,7 @@
                   <p class="cer-chart__caption">原始 CER 均值（越低越好）· n=27 · v2b 加长 LoRA</p>
                 </div>
                 <p><strong>意义与局限。</strong>验证了一条可复现的低资源优化路径（金标约 18.4 分钟；基线与适配模型规模不完全对等；测试集 exact match 仍约 0%）。当前「听说」仍使用通用基线模型。</p>
-                <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系 / 技术资源申请」说明用途与身份，确认后提供访问指引。</p>
+                <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。</p>
               </div>
               <div data-visible-lang="en">
                 <p><strong>Question.</strong> With scarce labels, can a small high-quality aligned set improve open ASR on Yueyu / Yue-opera-related speech?</p>
@@ -2365,32 +2364,35 @@
                   <p class="cer-chart__caption">Raw mean CER (lower better) · n=27 · v2b longer LoRA</p>
                 </div>
                 <p><strong>Significance &amp; limits.</strong> Shows a reproducible low-resource path (gold ≈ 18.4 min; baseline and adapted sizes not fully matched; exact match still ~0% on the holdout). Speak still uses a generic baseline model.</p>
-                <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact / Apply for code</strong> with your role and purpose. Access guidance is shared after confirmation.</p>
+                <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose. Access guidance is shared after confirmation.</p>
               </div>
             </div>
 
             <div class="plan-section" data-about-section="contact" aria-hidden="true" id="about-contact">
-              <h3 data-i18n="about.contact.title">联系</h3>
+              <h3 data-i18n="about.contact.title">联系与申请</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
                 <p>欢迎就学习使用、材料贡献、授权与下架等事项联系项目负责人 <strong>Alice Chen</strong>。</p>
-                <p>邮箱：<a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a></p>
-                <p>若你需要代码、实验脚本或模型权重，请改走「技术资源申请」并简要说明用途。</p>
+                <p class="contact-email-line">
+                  <span data-i18n="about.contact.emailLabel">邮箱</span>
+                  <a class="contact-email" href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a>
+                </p>
               </div>
               <div data-visible-lang="en">
                 <p>For learning use, material contributions, permissions, or takedown requests, contact project lead <strong>Alice Chen</strong>.</p>
-                <p>Email: <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a></p>
-                <p>If you need code, experiment scripts, or model weights, use <strong>Apply for code</strong> and briefly describe your purpose.</p>
+                <p class="contact-email-line">
+                  <span data-i18n="about.contact.emailLabel">Email</span>
+                  <a class="contact-email" href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a>
+                </p>
               </div>
-            </div>
 
-            <div class="plan-section" data-about-section="apply" aria-hidden="true" id="about-apply">
-              <h3 data-i18n="about.apply.title">技术资源申请</h3>
-              <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>如需获取本项目完整代码、实验脚本或模型权重，请发送邮件至 <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a>，或填写下方申请表，简要说明你的用途和身份（如研究者、开发者、学生等）。我们会在确认后提供访问指引。</p>
-              </div>
-              <div data-visible-lang="en">
-                <p>To request full project code, experiment scripts, or model weights, email <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a> or use the form below. Briefly state your purpose and role (researcher, developer, student, etc.). Access guidance is shared after confirmation.</p>
-              </div>
+              <div class="contact-apply" id="about-apply">
+                <h4 class="contact-apply-heading" data-i18n="about.apply.heading">技术资源申请</h4>
+                <div data-visible-lang="zh-Hans,zh-Hant">
+                  <p>如需获取本项目完整代码、实验脚本或模型权重，请发送邮件或填写下方申请表，简要说明用途和身份（研究者、开发者、学生等）。确认后我们会提供访问指引。</p>
+                </div>
+                <div data-visible-lang="en">
+                  <p>To request full project code, experiment scripts, or model weights, email us or use the form below. Briefly state your purpose and role (researcher, developer, student, etc.). Access guidance is shared after confirmation.</p>
+                </div>
               <form
                 class="contact-form"
                 action="https://formsubmit.co/yueyudetecting@proton.me"
@@ -2398,24 +2400,23 @@
               >
                 <input type="hidden" name="_subject" value="Yueyu Detecting — technical access / contact" />
                 <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_next" value="https://yueyudetecting.com/#about-apply" />
-                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="_next" value="https://yueyudetecting.com/#about-contact" />
+                <input type="text" name="_honey" class="contact-form__honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <label class="contact-form__field">
-                  <span class="contact-form__label" data-i18n="about.apply.nameLabel">姓名 · NAME</span>
-                  <input type="text" name="name" required autocomplete="name" />
+                  <span class="contact-form__label" data-i18n="about.apply.nameLabel">姓名</span>
+                  <input type="text" name="name" required autocomplete="name" placeholder=" " />
                 </label>
                 <label class="contact-form__field">
-                  <span class="contact-form__label" data-i18n="about.apply.emailLabel">邮箱 · EMAIL</span>
-                  <input type="email" name="email" required autocomplete="email" />
+                  <span class="contact-form__label" data-i18n="about.apply.emailLabel">邮箱</span>
+                  <input type="email" name="email" required autocomplete="email" placeholder=" " />
                 </label>
                 <label class="contact-form__field">
-                  <span class="contact-form__label" data-i18n="about.apply.messageLabel">留言 · MESSAGE（用途与身份）</span>
-                  <textarea name="message" rows="6" required></textarea>
+                  <span class="contact-form__label" data-i18n="about.apply.messageLabel">留言（用途与身份）</span>
+                  <textarea name="message" rows="5" required placeholder=" "></textarea>
                 </label>
                 <button type="submit" class="contact-form__submit" data-i18n="about.apply.submit">发送</button>
               </form>
-              <p class="contact-form__alt" data-visible-lang="zh-Hans,zh-Hant">也可以直接写邮件：<a href="mailto:yueyudetecting@proton.me?subject=Yueyu%20Detecting%20access%20request">打开邮件客户端</a>。</p>
-              <p class="contact-form__alt" data-visible-lang="en">Or email directly: <a href="mailto:yueyudetecting@proton.me?subject=Yueyu%20Detecting%20access%20request">open your mail app</a>.</p>
+              </div>
             </div>
 
             <div class="plan-section" data-about-section="pipeline" aria-hidden="true">
@@ -2428,7 +2429,7 @@
                   <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
                   <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
                 </ol>
-                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见「研究摘要」。如需代码、脚本或权重，请走「技术资源申请」。</p>
+                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见「研究摘要」。如需代码、脚本或权重，请走「联系与申请」。</p>
                 <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
               </div>
               <div data-visible-lang="en">
@@ -2439,7 +2440,7 @@
                   <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
                   <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
                 </ol>
-                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. For code, scripts, or weights, use <strong>Apply for code</strong>.</p>
+                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. For code, scripts, or weights, use <strong>Contact &amp; apply</strong>.</p>
                 <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
               </div>
               <div class="about-flow" aria-hidden="true">
@@ -2530,7 +2531,7 @@
                 <p><strong>Alice Chen (Jiachen Chen)</strong></p>
               </div>
               <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。如需代码或模型，请使用「技术资源申请」。</p>
+                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。如需代码或模型，请使用「联系与申请」。</p>
                 <ul>
                   <li>重点：听说翻译 + 精选对话档案</li>
                   <li>技术：TypeScript 静态站、浏览器麦克风识别、上传音频的设备端 Whisper</li>
@@ -2538,7 +2539,7 @@
                 </ul>
               </div>
               <div data-visible-lang="en">
-                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. For code or model access, use <strong>Apply for code</strong>.</p>
+                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. For code or model access, use <strong>Contact &amp; apply</strong>.</p>
                 <ul>
                   <li>Focus: speak → recognize → translate, plus a curated dialogue archive</li>
                   <li>Stack: TypeScript static site, browser mic ASR, on-device Whisper for uploads</li>
@@ -2653,23 +2654,21 @@
     </main>
 
     <footer class="site-footer">
-      <p class="site-footer__line">
-        <span data-i18n="footer.copy">© 2026 越语侦听</span>
-        <span class="site-footer__sep" aria-hidden="true">·</span>
-        <a href="#about" data-panel-target="about" data-i18n="footer.about">关于</a>
-        <span class="site-footer__sep" aria-hidden="true">·</span>
-        <a href="#about-contact" data-footer-about="contact" data-i18n="footer.contact">联系</a>
-        <span class="site-footer__sep" aria-hidden="true">·</span>
-        <a href="#about-apply" data-footer-about="apply" data-i18n="footer.apply">申请代码</a>
-      </p>
+      <div class="site-footer__inner">
+        <p class="site-footer__brand" data-i18n="footer.copy">© 2026 越语侦听</p>
+        <nav class="site-footer__nav" aria-label="Footer">
+          <a href="#about" data-panel-target="about" data-i18n="footer.about">关于</a>
+          <a href="#about-contact" data-footer-about="contact" data-i18n="footer.contact">联系与申请</a>
+        </nav>
+      </div>
     </footer>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260815b"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260815b"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260815b"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260815b"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260815b"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260815b"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260815c"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260815c"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260815c"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260815c"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260815c"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260815c"></script>
 </body>
 </html>
