@@ -147,6 +147,39 @@ function initArchiveFilters() {
     });
     return apply;
 }
+function showAboutSection(target) {
+    const aboutRoot = document.querySelector(".panel[data-panel='about'] .plan-layout");
+    if (!aboutRoot)
+        return;
+    const links = aboutRoot.querySelectorAll(".plan-nav__link[data-about-target]");
+    const sections = aboutRoot.querySelectorAll("[data-about-section]");
+    links.forEach((l) => {
+        l.setAttribute("aria-current", l.getAttribute("data-about-target") === target ? "true" : "false");
+    });
+    sections.forEach((section) => {
+        section.setAttribute("aria-hidden", section.getAttribute("data-about-section") === target ? "false" : "true");
+    });
+    const anchor = document.getElementById(`about-${target}`);
+    requestAnimationFrame(() => {
+        (anchor ?? aboutRoot).scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+}
+function openAboutSection(target) {
+    document.querySelector(`.site-nav [data-panel-target="about"]`)?.click();
+    showAboutSection(target);
+    history.replaceState(null, "", `#about-${target}`);
+}
+function initAboutDeepLinks() {
+    document.querySelectorAll("[data-footer-about]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const target = link.dataset.footerAbout;
+            if (!target)
+                return;
+            openAboutSection(target);
+        });
+    });
+}
 document.addEventListener("DOMContentLoaded", () => {
     initA11y();
     initI18n();
@@ -155,9 +188,13 @@ document.addEventListener("DOMContentLoaded", () => {
     initSideNavigation("data-plan-target", "data-plan-section", ".plan-nav__link[data-plan-target]");
     initSideNavigation("data-about-target", "data-about-section", ".plan-nav__link[data-about-target]");
     initSideNavigation("data-learn-target", "data-learn-section", ".learn-nav__link[data-learn-target]");
+    initAboutDeepLinks();
     const applyArchiveFilter = initArchiveFilters();
     const hash = window.location.hash.replace(/^#/, "");
-    if (hash.startsWith("archive")) {
+    if (hash === "about-contact" || hash === "about-apply") {
+        openAboutSection(hash === "about-contact" ? "contact" : "apply");
+    }
+    else if (hash.startsWith("archive")) {
         const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
         const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
         if (catMatch)
