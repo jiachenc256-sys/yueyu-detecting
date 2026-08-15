@@ -231,6 +231,8 @@ const zhHans = {
     "speak.status.whisperLoad": "正在加载设备端越语适配 Whisper（约 250MB，首次从本站缓存）…",
     "speak.status.whisperProgress": "正在加载 Whisper 模型… {pct}%",
     "speak.status.whisperReady": "适配 Whisper 已就绪。可用麦克风、上传或示例识别。",
+    "speak.status.whisperFallback": "本站适配权重暂不可用，回退通用 Whisper-tiny…",
+    "speak.status.whisperReadyFallback": "通用 Whisper 已就绪（适配权重未加载）。",
     "speak.status.recognizing": "正在用越语适配 Whisper 识别「{name}」…",
     "speak.status.noSpeech": "未检测到语音。请换更清晰、更短的片段再试。",
     "speak.status.recogDone": "识别完成，正在翻译…",
