@@ -192,7 +192,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const applyArchiveFilter = initArchiveFilters();
     const hash = window.location.hash.replace(/^#/, "");
     if (hash === "about-contact" || hash === "about-apply") {
-        openAboutSection(hash === "about-contact" ? "contact" : "apply");
+        document.querySelector(`.site-nav [data-panel-target="about"]`)?.click();
+        showAboutSection("contact");
+        history.replaceState(null, "", `#${hash}`);
+        if (hash === "about-apply") {
+            requestAnimationFrame(() => {
+                document.getElementById("about-apply")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+        }
     }
     else if (hash.startsWith("archive")) {
         const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
