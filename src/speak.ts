@@ -238,9 +238,45 @@ async function ensureWhisper(): Promise<AsrPipeline> {
 
   try {
     return await whisperLoading;
-  } catch (error) {
+  } catch (localError) {
     whisperLoading = null;
-    throw error;
+    // Fallback if local ONNX assets are missing (e.g. not yet deployed).
+    setStatus(t("speak.status.whisperFallback"));
+    whisperLoading = (async () => {
+      const mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN)) as {
+        pipeline: (
+          task: string,
+          model: string,
+          options?: {
+            progress_callback?: (data: { status?: string; progress?: number }) => void;
+          },
+        ) => Promise<AsrPipeline>;
+        env: {
+          allowLocalModels: boolean;
+          allowRemoteModels: boolean;
+          useBrowserCache: boolean;
+        };
+      };
+      mod.env.allowLocalModels = false;
+      mod.env.allowRemoteModels = true;
+      mod.env.useBrowserCache = true;
+      const asr = await mod.pipeline("automatic-speech-recognition", "Xenova/whisper-tiny", {
+        progress_callback: (data) => {
+          if (data.status === "progress" && typeof data.progress === "number") {
+            setStatus(tf("speak.status.whisperProgress", { pct: Math.round(data.progress) }));
+          }
+        },
+      });
+      whisperPipeline = asr;
+      setStatus(t("speak.status.whisperReadyFallback"));
+      return asr;
+    })();
+    try {
+      return await whisperLoading;
+    } catch (error) {
+      whisperLoading = null;
+      throw localError instanceof Error ? localError : error;
+    }
   }
 }
 
