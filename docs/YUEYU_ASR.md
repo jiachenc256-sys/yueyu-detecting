@@ -13,19 +13,34 @@
 | `assets/audio/*.mp3` 等 | 与档案页同步的短选段 |
 | 粗估 | 约 **124 句 / ~18.4 分钟** 试点金标（已导出并完成首次微调） |
 
-## 试点 CER（2026-08-14，Colab T4）
+## 试点 CER
+
+### v2 同尺寸消融（推荐引用，2026-08）
+
+同一测试集 n=27；原始 CER 均值（可 >1，因插入／循环）：
+
+| 模型 | meanCer (raw) | exact match |
+|------|---------------|-------------|
+| `openai/whisper-tiny` | 7.3 | 0% |
+| `whisper-small`（无 LoRA） | 10.7 | 0% |
+| `whisper-small` + LoRA v2（加长训练） | **1.1** | 0% |
+| Δ（LoRA − plain small） | **−9.6** | — |
+
+数字：[`data/corpus/asr/runs/cer-v2b.json`](../data/corpus/asr/runs/cer-v2b.json)。技术报告：[`docs/TECHNICAL_REPORT.md`](TECHNICAL_REPORT.md)。
+
+**公开权重（HF v1）：** [`ArikaisAllie/yueyu-whisper-small-lora-v1`](https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1)
+
+**诚实边界：** exact match 仍约 0%；网站「听说」仍用通用基线。主声明引用同尺寸 `deltaCerAdaptedMinusSmall`。
+
+### v1 早期对照（2026-08-14，Colab；体量不对等，仅作历史）
 
 | 模型 | 测试集 n | 平均 CER |
 |------|----------|----------|
-| `openai/whisper-tiny`（基线） | 27 | **42.9%** |
-| `whisper-small` + LoRA（适配） | 27 | **18.7%** |
-| Δ（adapted − baseline） | | **−24.2 pp**（负数更好） |
+| `openai/whisper-tiny`（基线） | 27 | **42.9** |
+| `whisper-small` + LoRA（适配） | 27 | **18.7** |
+| Δ（adapted − baseline） | | **−24.2** |
 
-测试集按整剧留出：`祥林嫂`、`何文秀`。原始数字：[`data/corpus/asr/runs/cer-v1.json`](../data/corpus/asr/runs/cer-v1.json)。
-
-**公开权重：** [`ArikaisAllie/yueyu-whisper-small-lora-v1`](https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1)
-
-**诚实边界：** 基线是 tiny、适配是 small+LoRA，体量不完全对等；应用文书时可写「完成了可复现的低资源适应实验」，并计划补跑同尺寸 `whisper-small` 无 LoRA 对照。
+原始数字：[`data/corpus/asr/runs/cer-v1.json`](../data/corpus/asr/runs/cer-v1.json)。
 
 ## 四步流程
 
@@ -72,7 +87,7 @@ make asr-pack-colab     # 生成 data/corpus/asr/yueyu-asr-colab.zip
 
 ### 4. 评测（必须有数字再宣传）
 
-推荐同尺寸消融（tiny / plain small / small+LoRA）：
+同尺寸消融（tiny / plain small / small+LoRA）已跑通，见 `cer-v2b.json`。扩金标后请重跑：
 
 ```bash
 make asr-eval-v2

@@ -8,8 +8,9 @@
 |------|------|
 | 金标 | 124 句 / 18.4 分钟 |
 | 切片 | 124 wav（本地） |
-| 微调 | Colab：whisper-small + LoRA v1 |
-| CER | tiny 42.9% → adapted 18.7%（n=27）见 `runs/cer-v1.json` |
+| 微调 | whisper-small + LoRA（HF v1 已公开；本地加长 v2 已评测） |
+| CER（推荐） | tiny 7.3 · plain small 10.7 · LoRA 1.1（n=27，同尺寸）见 `runs/cer-v2b.json` |
+| CER（早期 v1） | tiny 42.9 → adapted 18.7（体量不对等）见 `runs/cer-v1.json` |
 | HF | https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1 |
 
 网站「听说」仍用通用基线；上线适配模型是下一步。

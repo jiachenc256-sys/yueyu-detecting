@@ -23,16 +23,31 @@ LoRA adapter for **Yueyu / Yue opera (越语·越剧)** speech recognition, fine
 
 Part of the public project **[Yueyu Detecting (越语侦听)](https://yueyudetecting.com)**, built and maintained solely by Alice Chen.
 
-## Pilot evaluation (2026-08-14)
+## Pilot evaluation
 
-Held-out test set: **27 clips** (~4.7 min), whole-piece split (`祥林嫂`, `何文秀`).
+Held-out test set: **27 clips**, whole-piece split (`祥林嫂`, `何文秀`).
+
+### Size-matched claim (preferred)
+
+| Model | Mean raw CER |
+| --- | ---: |
+| `openai/whisper-tiny` | 7.3 |
+| `openai/whisper-small` (no LoRA) | 10.7 |
+| longer local LoRA v2 on `whisper-small` | **1.1** |
+| Δ (LoRA − plain small) | **−9.6** |
+
+JSON: repo `data/corpus/asr/runs/cer-v2b.json`. Exact match still **0%** on this holdout.
+
+### This HF adapter (v1) — early / size-mismatched note
 
 | Model | Mean CER |
-| --- | --- |
-| `openai/whisper-tiny` (site baseline) | 42.9% |
-| this adapter on `whisper-small` | **18.7%** |
+| --- | ---: |
+| `openai/whisper-tiny` (site baseline) | 42.9 |
+| this adapter on `whisper-small` | **18.7** |
 
-**Caveats:** small gold set (~18.4 min total); baseline size ≠ adapted size; not production Yueyu ASR. See repo `docs/YUEYU_ASR.md`.
+On the later size-matched decode, the same v1 adapter scores raw mean CER **5.55** (`cer-v2.json`).
+
+**Caveats:** small gold set (~18.4 min total); Speak on the live site still uses a generic baseline; not production Yueyu ASR. See repo `docs/TECHNICAL_REPORT.md`.
 
 ## Load
 
