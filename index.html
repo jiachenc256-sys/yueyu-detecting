@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/tokens.css?v=20260815a" />
-  <link rel="stylesheet" href="styles/main.css?v=20260815c" />
+  <link rel="stylesheet" href="styles/main.css?v=20260815e" />
   <link rel="stylesheet" href="styles/a11y.css?v=20260815a" />
   <link rel="stylesheet" href="styles/speak.css?v=20260815a" />
   <link rel="stylesheet" href="styles/tanci.css?v=20260815a" />
@@ -1162,7 +1162,7 @@
               <p><strong>背景。</strong>越语作为濒危吴语方言，语音识别面临语料稀缺与发音／语域变体（散白、韵白、唱词）复杂的双重挑战。</p>
               <p><strong>方法。</strong>我从本站已校对的时间轴档案构建小型高质量金标切片，按整剧留出测试集，对 Whisper-small 做 LoRA 微调，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
               <p><strong>结果（v2 同尺寸，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA（加长训练）<strong>1.1</strong>（相对同尺寸基线约 −9.6）。内容级 exact match 仍约 0%。详见「关于 → 研究摘要」与仓库技术报告。</p>
-              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径，为扩大金标与接入网站识别流程奠定基础——同时诚实记录局限（小样本；听说页仍用通用基线）。</p>
+              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径；听说页已接入适配模型（试点）。exact match 仍有限，扩金标是下一步。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
@@ -1253,7 +1253,7 @@
               <p><strong>背景。</strong>越語作為瀕危吳語方言，語音識別面臨語料稀缺與發音／語域變體（散白、韻白、唱詞）複雜的雙重挑戰。</p>
               <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建小型高質量金標切片，按整劇留出測試集，對 Whisper-small 做 LoRA 微調，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER。</p>
               <p><strong>結果（v2 同尺寸，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA（加長訓練）<strong>1.1</strong>（相對同尺寸基線約 −9.6）。內容級 exact match 仍約 0%。詳見「關於 → 研究摘要」與倉庫技術報告。</p>
-              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑，為擴大金標與接入網站識別流程奠定基礎——同時誠實記錄局限（小樣本；聽說頁仍用通用基線）。</p>
+              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑；聽說頁已接入適配模型（試點）。exact match 仍有限，擴金標是下一步。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
@@ -1344,7 +1344,7 @@
               <p><strong>Background.</strong> Yueyu, a threatened Wu variety, poses a dual ASR challenge: scarce aligned data and complex pronunciation / register variation (sanbai, yunbai, sung lines).</p>
               <p><strong>Method.</strong> I built a small high-quality gold set from this site’s corrected timed archive, held out whole plays for testing, fine-tuned Whisper-small with LoRA, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
               <p><strong>Result (v2 size-matched, n=27).</strong> Raw mean CER: tiny 7.3 · plain small 10.7 · LoRA (longer train) <strong>1.1</strong> (about −9.6 vs size-matched baseline). Exact match still ~0%. See About → Research brief.</p>
-              <p><strong>Significance.</strong> This supports a reproducible low-resource adaptation path and a foundation for larger gold sets and Speak integration—while recording limits honestly (small N; Speak still uses a generic baseline).</p>
+              <p><strong>Significance.</strong> This supports a reproducible low-resource adaptation path; Speak now loads the adapted model (pilot). Exact match is still limited — growing gold is next.</p>
             </aside>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
@@ -2338,7 +2338,7 @@
                   </div>
                   <p class="cer-chart__caption">原始 CER 均值（越低越好）· n=27 · v2b 加长 LoRA</p>
                 </div>
-                <p><strong>意义与局限。</strong>验证了一条可复现的低资源优化路径（金标约 18.4 分钟；基线与适配模型规模不完全对等；测试集 exact match 仍约 0%）。当前「听说」仍使用通用基线模型。</p>
+                <p><strong>意义与局限。</strong>验证了一条可复现的低资源优化路径（金标约 18.4 分钟；测试集 exact match 仍约 0%）。「听说」已加载越语适配 Whisper（合并 LoRA v2 的 INT8 ONNX）；口语/电台金标是后续域扩展。</p>
                 <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。</p>
               </div>
               <div data-visible-lang="en">
@@ -2363,7 +2363,7 @@
                   </div>
                   <p class="cer-chart__caption">Raw mean CER (lower better) · n=27 · v2b longer LoRA</p>
                 </div>
-                <p><strong>Significance &amp; limits.</strong> Shows a reproducible low-resource path (gold ≈ 18.4 min; baseline and adapted sizes not fully matched; exact match still ~0% on the holdout). Speak still uses a generic baseline model.</p>
+                <p><strong>Significance &amp; limits.</strong> Shows a reproducible low-resource path (gold ≈ 18.4 min; exact match still ~0% on the holdout). Speak now loads the Yueyu-adapted Whisper (merged LoRA v2, INT8 ONNX). Spoken/radio gold is a later domain extension.</p>
                 <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose. Access guidance is shared after confirmation.</p>
               </div>
             </div>
@@ -2429,7 +2429,7 @@
                   <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
                   <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
                 </ol>
-                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见「研究摘要」。如需代码、脚本或权重，请走「联系与申请」。</p>
+                <p>当前「听说」已加载<strong>越语适配</strong> Whisper（设备端）。试点 CER 见「研究摘要」。口语/电台另需金标。如需代码或权重，请走「联系与申请」。</p>
                 <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
               </div>
               <div data-visible-lang="en">
@@ -2440,7 +2440,7 @@
                   <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
                   <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
                 </ol>
-                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. For code, scripts, or weights, use <strong>Contact &amp; apply</strong>.</p>
+                <p>Speak now loads the <strong>Yueyu-adapted</strong> on-device Whisper. Pilot CER: see <strong>Research brief</strong>. Spoken/radio needs separate gold. For code or weights, use <strong>Contact &amp; apply</strong>.</p>
                 <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
               </div>
               <div class="about-flow" aria-hidden="true">
@@ -2487,8 +2487,8 @@
                 <li class="roadmap__item">
                   <h4 data-visible-lang="zh-Hans,zh-Hant">中期 · 规划中</h4>
                   <h4 data-visible-lang="en">Mid term · planned</h4>
-                  <p data-visible-lang="zh-Hans,zh-Hant">将适配模型接入「听说」；金标扩至约 30–60 分钟再冲 2 小时+；口语说话人短选段；辞书到齐后扩展词典。欢迎经同意的材料——见「参与贡献」。</p>
-                  <p data-visible-lang="en">Wire the adapted model into Speak; grow gold toward ~30–60 min then 2h+; Speakers clips with consent; dictionary growth when books arrive. Consented contributions welcome — see Contribute.</p>
+                  <p data-visible-lang="zh-Hans,zh-Hant">金标扩至约 30–60 分钟再冲 2 小时+；口语/电台说话人短选段；辞书到齐后扩展词典。欢迎经同意的材料——见「参与贡献」。</p>
+                  <p data-visible-lang="en">Grow gold toward ~30–60 min then 2h+; spoken/radio Speakers clips with consent; dictionary growth when books arrive. Consented contributions welcome — see Contribute.</p>
                 </li>
                 <li class="roadmap__item">
                   <h4 data-visible-lang="zh-Hans,zh-Hant">长期 · 愿景</h4>
@@ -2664,11 +2664,11 @@
     </footer>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260815d"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260815d"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260815d"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260815d"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260815d"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260815d"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260815e"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260815e"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260815e"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260815e"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260815e"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260815e"></script>
 </body>
 </html>

@@ -121,7 +121,7 @@ JSON: [`cer-v2.json`](../data/corpus/asr/runs/cer-v2.json) (v1 adapter), [`cer-v
 2. **Metric honesty:** raw CER drop ≠ fluent transcripts yet; exact match is still ~0 on n=27. Growing gold is required before claiming usable recognition.  
 3. **Small N / short gold:** 27 test clips / ~18.4 min total; results can shift as gold grows.  
 4. **Domain:** archive starters are mostly Yue-opera excerpts, not a full everyday Yueyu conversational benchmark.  
-5. **Product gap:** Speak on the live site still uses the generic baseline until an adapted model is wired in.
+5. **Product:** Speak on the live site loads the merged LoRA v2 INT8 ONNX under `assets/asr/yueyu-whisper-small-onnx/` (mic via MediaRecorder + upload). Spoken/radio gold is not in this adaptation domain yet.
 
 What the pilot **does** show: a closed loop from curated archive → trainable clips → measured CER → public adapter weights, authored by Alice Chen.
 
@@ -130,9 +130,9 @@ What the pilot **does** show: a closed loop from curated archive → trainable c
 ## 6. Future work
 
 - Grow gold toward 30–60 minutes, then 2h+, with clearer 散白 / 韵白 tagging.  
-- Integrate an adapted checkpoint into Speak when hosting allows.  
+- Add spoken/radio gold as a separate domain (not assumed covered by opera LoRA).  
+- Optionally publish the full ONNX pack to Hugging Face (`scripts/asr/upload-onnx-hf.sh`).  
 - Treat the held-out slice as a seed for a reusable Yueyu evaluation set.
-- Optionally publish the longer LoRA v2 adapter alongside the current HF v1 card.
 
 Operational notes: [`docs/YUEYU_ASR.md`](YUEYU_ASR.md); Colab steps: [`scripts/asr/COLAB.md`](../scripts/asr/COLAB.md).
 

@@ -1,0 +1,9 @@
+{
+  "modelId": "yueyu-whisper-small-onnx",
+  "decoderParts": [
+    "decoder_model_quantized.onnx.part00",
+    "decoder_model_quantized.onnx.part01"
+  ],
+  "encoder": "encoder_model_quantized.onnx",
+  "note": "Browser joins decoder parts into transformers-cache before pipeline load."
+}

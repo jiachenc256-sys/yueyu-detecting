@@ -1,5 +1,6 @@
 import { onLocaleChange, t, tf } from "./i18n.js";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
+const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 const recordBtn = document.getElementById("speak-record");
 const clearBtn = document.getElementById("speak-clear");
 const fileInput = document.getElementById("speak-file");
@@ -10,20 +11,25 @@ const zhHansEl = document.getElementById("speak-zh-hans");
 const zhHantEl = document.getElementById("speak-zh-hant");
 const enEl = document.getElementById("speak-en");
 const langSelect = document.getElementById("speak-input-lang");
-let recognition = null;
 let listening = false;
 let finalTranscript = "";
 let translateTimer = null;
 let whisperPipeline = null;
 let whisperLoading = null;
+let modelPrep = null;
 let previewObjectUrl = null;
+let mediaStream = null;
+let mediaRecorder = null;
+let recordedChunks = [];
 function setStatus(text) {
     if (statusEl)
         statusEl.textContent = text;
 }
-function getRecognitionCtor() {
-    const w = window;
-    return w.SpeechRecognition ?? w.webkitSpeechRecognition ?? null;
+/** Absolute URL to assets/asr/<model>/ on this site. */
+function modelBaseHref() {
+    const path = window.location.pathname;
+    const dir = path.endsWith("/") ? path : path.replace(/[^/]+$/, "");
+    return new URL(`assets/asr/${LOCAL_MODEL_ID}/`, `${window.location.origin}${dir}`).href;
 }
 async function translateWithMyMemory(text, from, to) {
     const url = new URL("https://api.mymemory.translated.net/get");
@@ -126,17 +132,64 @@ function applyRecognizedText(text, translateSoon = true) {
     if (translateSoon && finalTranscript)
         scheduleTranslate(finalTranscript);
 }
+async function joinDecoderIntoCache(base) {
+    const manifestRes = await fetch(new URL("speak-manifest.json", base));
+    if (!manifestRes.ok)
+        throw new Error(`speak-manifest HTTP ${manifestRes.status}`);
+    const manifest = (await manifestRes.json());
+    const cache = await caches.open("transformers-cache");
+    const decoderNames = ["decoder_model_quantized.onnx", "decoder_model.onnx"];
+    const primary = new URL(`onnx/${decoderNames[0]}`, base).href;
+    if (await cache.match(primary))
+        return;
+    setStatus(t("speak.status.modelJoin"));
+    const buffers = [];
+    for (const part of manifest.decoderParts) {
+        const res = await fetch(new URL(`onnx/${part}`, base));
+        if (!res.ok)
+            throw new Error(`Missing decoder part ${part}`);
+        buffers.push(await res.arrayBuffer());
+    }
+    const blob = new Blob(buffers, { type: "application/octet-stream" });
+    for (const name of decoderNames) {
+        const url = new URL(`onnx/${name}`, base).href;
+        await cache.put(url, new Response(blob.slice(), {
+            headers: {
+                "Content-Type": "application/octet-stream",
+                "Content-Length": String(blob.size),
+            },
+        }));
+    }
+}
+async function prepareLocalModel() {
+    if (!modelPrep) {
+        modelPrep = (async () => {
+            setStatus(t("speak.status.modelPrep"));
+            await joinDecoderIntoCache(modelBaseHref());
+        })().catch((err) => {
+            modelPrep = null;
+            throw err;
+        });
+    }
+    await modelPrep;
+}
 async function ensureWhisper() {
     if (whisperPipeline)
         return whisperPipeline;
     if (whisperLoading)
         return whisperLoading;
     whisperLoading = (async () => {
+        await prepareLocalModel();
         setStatus(t("speak.status.whisperLoad"));
         const mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN));
-        mod.env.allowLocalModels = false;
+        const base = modelBaseHref();
+        mod.env.allowLocalModels = true;
+        mod.env.allowRemoteModels = false;
         mod.env.useBrowserCache = true;
-        const asr = await mod.pipeline("automatic-speech-recognition", "Xenova/whisper-tiny", {
+        // localModelPath + modelId → .../assets/asr/yueyu-whisper-small-onnx/
+        mod.env.localModelPath = new URL("../", base).href;
+        const asr = await mod.pipeline("automatic-speech-recognition", LOCAL_MODEL_ID, {
+            quantized: true,
             progress_callback: (data) => {
                 if (data.status === "progress" && typeof data.progress === "number") {
                     setStatus(tf("speak.status.whisperProgress", { pct: Math.round(data.progress) }));
@@ -163,19 +216,17 @@ function whisperLanguageHint() {
         return "chinese";
     return undefined;
 }
-async function recognizeUploadedFile(file) {
-    if (listening)
-        recognition?.abort();
+async function recognizeBlob(blob, label) {
     if (previewObjectUrl) {
         URL.revokeObjectURL(previewObjectUrl);
         previewObjectUrl = null;
     }
-    previewObjectUrl = URL.createObjectURL(file);
+    previewObjectUrl = URL.createObjectURL(blob);
     if (audioPreview) {
         audioPreview.src = previewObjectUrl;
         audioPreview.hidden = false;
     }
-    setStatus(tf("speak.status.recognizing", { name: file.name }));
+    setStatus(tf("speak.status.recognizing", { name: label }));
     if (recognizedEl)
         recognizedEl.value = "";
     if (zhHansEl)
@@ -208,82 +259,100 @@ async function recognizeUploadedFile(file) {
         setStatus(tf("speak.status.uploadFail", { msg: message }));
     }
 }
-function ensureRecognition() {
-    if (recognition)
-        return recognition;
-    const Ctor = getRecognitionCtor();
-    if (!Ctor) {
-        throw new Error("This browser has no Speech Recognition. Please use Chrome or Edge.");
+async function recognizeUploadedFile(file) {
+    if (listening)
+        stopListening(false);
+    await recognizeBlob(file, file.name);
+}
+function pickRecorderMime() {
+    const candidates = [
+        "audio/webm;codecs=opus",
+        "audio/webm",
+        "audio/mp4",
+        "audio/ogg;codecs=opus",
+    ];
+    for (const type of candidates) {
+        if (typeof MediaRecorder !== "undefined" && MediaRecorder.isTypeSupported(type)) {
+            return type;
+        }
     }
-    const rec = new Ctor();
-    rec.continuous = true;
-    rec.interimResults = true;
-    rec.maxAlternatives = 1;
-    rec.lang = langSelect?.value || "zh-CN";
-    rec.onstart = () => {
-        listening = true;
-        recordBtn?.setAttribute("aria-pressed", "true");
-        if (recordBtn)
-            recordBtn.textContent = t("speak.stop");
-        setStatus(t("speak.status.listening"));
+    return undefined;
+}
+async function startListening() {
+    if (listening)
+        return;
+    if (typeof MediaRecorder === "undefined" || !navigator.mediaDevices?.getUserMedia) {
+        setStatus(t("speak.status.noMic"));
+        return;
+    }
+    try {
+        mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    }
+    catch {
+        setStatus(t("speak.status.micDenied"));
+        return;
+    }
+    recordedChunks = [];
+    const mime = pickRecorderMime();
+    mediaRecorder = mime
+        ? new MediaRecorder(mediaStream, { mimeType: mime })
+        : new MediaRecorder(mediaStream);
+    mediaRecorder.ondataavailable = (ev) => {
+        if (ev.data.size > 0)
+            recordedChunks.push(ev.data);
     };
-    rec.onresult = (event) => {
-        let interim = "";
-        for (let i = event.resultIndex; i < event.results.length; i += 1) {
-            const result = event.results[i];
-            if (!result)
-                continue;
-            const piece = result[0]?.transcript ?? "";
-            if (result.isFinal) {
-                finalTranscript = `${finalTranscript} ${piece}`.replace(/\s+/g, " ").trim();
-            }
-            else {
-                interim += piece;
-            }
-        }
-        if (recognizedEl) {
-            recognizedEl.value = [finalTranscript, interim].filter(Boolean).join(" ").trim();
-        }
+    mediaRecorder.onerror = () => {
+        setStatus(tf("speak.status.recogError", { msg: "MediaRecorder" }));
     };
-    rec.onerror = (event) => {
-        if (event.error === "not-allowed") {
-            setStatus(t("speak.status.micDenied"));
-        }
-        else if (event.error !== "aborted") {
-            setStatus(tf("speak.status.recogError", { msg: event.error }));
-        }
-    };
-    rec.onend = () => {
+    mediaRecorder.onstop = () => {
         listening = false;
         recordBtn?.setAttribute("aria-pressed", "false");
         if (recordBtn)
             recordBtn.textContent = t("speak.start");
-        syncRecognizedBox();
-        if (finalTranscript.trim())
-            scheduleTranslate(finalTranscript);
-        else
+        mediaStream?.getTracks().forEach((tr) => tr.stop());
+        mediaStream = null;
+        const type = mediaRecorder?.mimeType || "audio/webm";
+        mediaRecorder = null;
+        if (!recordedChunks.length) {
             setStatus(t("speak.status.noCapture"));
+            return;
+        }
+        const blob = new Blob(recordedChunks, { type });
+        recordedChunks = [];
+        void recognizeBlob(blob, t("speak.recordingLabel"));
     };
-    recognition = rec;
-    return rec;
+    mediaRecorder.start(250);
+    listening = true;
+    recordBtn?.setAttribute("aria-pressed", "true");
+    if (recordBtn)
+        recordBtn.textContent = t("speak.stop");
+    setStatus(t("speak.status.listening"));
 }
-function startListening() {
-    const rec = ensureRecognition();
-    rec.lang = langSelect?.value || "zh-CN";
-    finalTranscript = finalTranscript.trim();
-    try {
-        rec.start();
+function stopListening(runRecognition = true) {
+    if (!mediaRecorder || mediaRecorder.state === "inactive") {
+        listening = false;
+        mediaStream?.getTracks().forEach((tr) => tr.stop());
+        mediaStream = null;
+        return;
     }
-    catch {
-        setStatus(t("speak.status.startFail"));
+    if (!runRecognition) {
+        mediaRecorder.onstop = null;
+        mediaRecorder.stop();
+        mediaStream?.getTracks().forEach((tr) => tr.stop());
+        mediaStream = null;
+        mediaRecorder = null;
+        listening = false;
+        recordedChunks = [];
+        recordBtn?.setAttribute("aria-pressed", "false");
+        if (recordBtn)
+            recordBtn.textContent = t("speak.start");
+        return;
     }
-}
-function stopListening() {
-    recognition?.stop();
+    mediaRecorder.stop();
 }
 function clearAll() {
     if (listening)
-        recognition?.abort();
+        stopListening(false);
     finalTranscript = "";
     if (recognizedEl)
         recognizedEl.value = "";
@@ -364,7 +433,7 @@ async function runSample(url, label) {
 function initSpeak() {
     if (!recognizedEl)
         return;
-    if (!getRecognitionCtor()) {
+    if (typeof MediaRecorder === "undefined" || !navigator.mediaDevices?.getUserMedia) {
         setStatus(t("speak.status.noMic"));
         if (recordBtn)
             recordBtn.disabled = true;
@@ -374,9 +443,9 @@ function initSpeak() {
     }
     recordBtn?.addEventListener("click", () => {
         if (listening)
-            stopListening();
+            stopListening(true);
         else
-            startListening();
+            void startListening();
     });
     clearBtn?.addEventListener("click", clearAll);
     fileInput?.addEventListener("change", () => {

@@ -111,6 +111,13 @@ asr-train-v2:
 		--lora-alpha 64 \
 		--no-text-normalizer
 
+# Merge LoRA → full checkpoint (for ONNX / Speak)
+asr-merge-v2:
+	@./.venv-asr/bin/python scripts/asr/merge_lora.py \
+		--adapter data/corpus/asr/runs/whisper-small-lora-v2 \
+		--base openai/whisper-small \
+		--out data/corpus/asr/runs/whisper-small-merged-v2
+
 status:
 	@git status -sb
 	@git remote -v 2>/dev/null || true
