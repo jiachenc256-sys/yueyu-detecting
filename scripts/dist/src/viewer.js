@@ -270,6 +270,23 @@ async function init() {
     renderTranscript();
     setDisplayMode(displayModeForSiteLocale(getLocale()));
     onLocaleChange((locale) => setDisplayMode(displayModeForSiteLocale(locale)));
+    const cueHash = location.hash.match(/^#cue-(.+)$/);
+    if (cueHash?.[1] && transcript) {
+        const raw = decodeURIComponent(cueHash[1]);
+        const asNum = Number(raw);
+        const cue = transcript.cues.find((c) => String(c.id) === raw) ??
+            (Number.isFinite(asNum) ? transcript.cues.find((c) => c.id === asNum) : undefined);
+        if (cue) {
+            const cueId = typeof cue.id === "number" ? cue.id : Number(cue.id);
+            if (Number.isFinite(cueId)) {
+                setActiveCue(cueId, true);
+                const audioEl = audio;
+                if (audioEl && !textOnly) {
+                    void seekAndPlay(audioEl, cue.start);
+                }
+            }
+        }
+    }
     if (!textOnly) {
         const audioEl = requireEl(audio, "audio");
         audioEl.addEventListener("timeupdate", onTimeUpdate);

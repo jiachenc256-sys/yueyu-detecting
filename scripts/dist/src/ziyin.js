@@ -69,6 +69,7 @@ async function initZiyin() {
     const knowBtn = document.getElementById("ziyin-know");
     const unknownBtn = document.getElementById("ziyin-unknown");
     const reviewWrongBtn = document.getElementById("ziyin-review-wrong");
+    const reviewDueBtn = document.getElementById("ziyin-review-due");
     const clearProgressBtn = document.getElementById("ziyin-clear-progress");
     const statusEl = requireEl(document.getElementById("ziyin-status"), "ziyin-status");
     const audioStatusEl = document.getElementById("ziyin-audio-status");
@@ -93,19 +94,24 @@ async function initZiyin() {
         throw new Error("ziyin list empty");
     const PROGRESS_KEY = "yueyu-ziyin-flash-progress-v1";
     let reviewWrongOnly = false;
+    let reviewDueOnly = false;
+    const DAY_MS = 24 * 60 * 60 * 1000;
+    const BOX_DAYS = [1, 3, 7, 14];
     function loadProgress() {
         try {
             const raw = localStorage.getItem(PROGRESS_KEY);
             if (!raw)
-                return { known: [], unknown: [] };
+                return { known: [], unknown: [], due: {}, box: {} };
             const parsed = JSON.parse(raw);
             return {
                 known: Array.isArray(parsed.known) ? parsed.known.map(String) : [],
                 unknown: Array.isArray(parsed.unknown) ? parsed.unknown.map(String) : [],
+                due: parsed.due && typeof parsed.due === "object" ? parsed.due : {},
+                box: parsed.box && typeof parsed.box === "object" ? parsed.box : {},
             };
         }
         catch {
-            return { known: [], unknown: [] };
+            return { known: [], unknown: [], due: {}, box: {} };
         }
     }
     function saveProgress(state) {
@@ -118,20 +124,41 @@ async function initZiyin() {
             return lv >= 1 && lv <= 4;
         });
     }
+    function dueHans(now = Date.now()) {
+        return Object.entries(progress.due)
+            .filter(([, ts]) => typeof ts === "number" && ts <= now)
+            .map(([han]) => han);
+    }
+    function scheduleKnown(han) {
+        const prev = progress.box[han] ?? 0;
+        const nextBox = Math.min(prev + 1, BOX_DAYS.length - 1);
+        progress.box[han] = nextBox;
+        progress.due[han] = Date.now() + (BOX_DAYS[nextBox] ?? 1) * DAY_MS;
+    }
+    function scheduleUnknown(han) {
+        progress.box[han] = 0;
+        progress.due[han] = Date.now();
+    }
     function updateProgressUi() {
         const total = reviewBaseItems().length;
         const knownCount = progress.known.filter((han) => reviewBaseItems().some((it) => it.han === han)).length;
         const unknownCount = progress.unknown.filter((han) => reviewBaseItems().some((it) => it.han === han)).length;
+        const dueCount = dueHans().filter((han) => reviewBaseItems().some((it) => it.han === han)).length;
         if (flashProgressEl) {
             flashProgressEl.textContent = tf("learn.ziyin.progress", {
                 known: knownCount,
                 total,
                 wrong: unknownCount,
+                due: dueCount,
             });
         }
         if (reviewWrongBtn) {
             reviewWrongBtn.hidden = unknownCount === 0;
             reviewWrongBtn.setAttribute("aria-pressed", reviewWrongOnly ? "true" : "false");
+        }
+        if (reviewDueBtn) {
+            reviewDueBtn.hidden = dueCount === 0;
+            reviewDueBtn.setAttribute("aria-pressed", reviewDueOnly ? "true" : "false");
         }
         if (flashGradeEl)
             flashGradeEl.hidden = !isFlashMode();
@@ -143,16 +170,21 @@ async function initZiyin() {
         const han = item.han;
         progress.known = progress.known.filter((h) => h !== han);
         progress.unknown = progress.unknown.filter((h) => h !== han);
-        if (kind === "known")
+        if (kind === "known") {
             progress.known.push(han);
-        else
+            scheduleKnown(han);
+        }
+        else {
             progress.unknown.push(han);
+            scheduleUnknown(han);
+        }
         saveProgress(progress);
         updateProgressUi();
-        if (reviewWrongOnly) {
+        if (reviewWrongOnly || reviewDueOnly) {
             pool = pool.filter((it) => it.han !== han);
             if (!pool.length) {
                 reviewWrongOnly = false;
+                reviewDueOnly = false;
                 setLevel(5, true);
                 return;
             }
@@ -379,6 +411,14 @@ async function initZiyin() {
                     pool = base.slice();
                 }
             }
+            else if (reviewDueOnly) {
+                const due = new Set(dueHans());
+                pool = base.filter((it) => due.has(it.han));
+                if (!pool.length) {
+                    reviewDueOnly = false;
+                    pool = base.slice();
+                }
+            }
             else {
                 pool = base.slice();
             }
@@ -476,12 +516,21 @@ async function initZiyin() {
     unknownBtn?.addEventListener("click", () => markCard("unknown"));
     reviewWrongBtn?.addEventListener("click", () => {
         reviewWrongOnly = !reviewWrongOnly;
+        if (reviewWrongOnly)
+            reviewDueOnly = false;
+        setLevel(5, true);
+    });
+    reviewDueBtn?.addEventListener("click", () => {
+        reviewDueOnly = !reviewDueOnly;
+        if (reviewDueOnly)
+            reviewWrongOnly = false;
         setLevel(5, true);
     });
     clearProgressBtn?.addEventListener("click", () => {
-        progress = { known: [], unknown: [] };
+        progress = { known: [], unknown: [], due: {}, box: {} };
         saveProgress(progress);
         reviewWrongOnly = false;
+        reviewDueOnly = false;
         updateProgressUi();
         if (isFlashMode())
             setLevel(5, true);
