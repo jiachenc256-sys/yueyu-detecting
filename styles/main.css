@@ -801,6 +801,107 @@ body {
   margin-top: var(--space-4);
 }
 
+.about-apply-note {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.contact-form {
+  margin-top: var(--space-6);
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-form__label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  padding: 0.75rem 1rem;
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.contact-form__submit {
+  appearance: none;
+  align-self: flex-start;
+  border: 1px solid var(--color-ink-muted);
+  background: transparent;
+  color: var(--color-ink);
+  border-radius: var(--radius-md);
+  padding: 0.7rem 1.5rem;
+  font: inherit;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-form__submit:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.contact-form__alt {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.site-footer {
+  margin-top: var(--space-10);
+  padding: var(--space-6) var(--space-6) var(--space-10);
+  border-top: 1px solid var(--color-border);
+}
+
+.site-footer__line {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  font-size: var(--text-sm);
+  color: var(--color-ink-faint);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer a {
+  color: var(--color-ink-muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.site-footer__sep {
+  opacity: 0.7;
+}
+
 /* ── Home landing (sparse + clear) ── */
 
 .panel[data-panel="home"] {

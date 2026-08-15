@@ -1708,7 +1708,7 @@
                 <p>你可能是个资深票友、退休艺人、方言研究者，或者只是一个对越语和越剧有深厚感情、愿意花时间做长期工作的普通人。你对发音的细微差别很敏感，对唱腔的传统讲究有自己的判断，你手里可能还存着一些外面找不到的老资料、老唱本。更重要的是，你愿意把你知道的东西拿出来，让更多人看到。</p>
                 <h4>你可以从这里贡献</h4>
                 <p>完整的语料后台与开放标注权限仍在建设中。现在你已经可以通过故事页了解采集—转写—母语者验证—回流的闭环，并在关于页查看我们提供的研究与工程路径。</p>
-                <p>若你愿意合作校对、提供手抄本或老录音线索，欢迎通过项目仓库维护渠道联系开发者 Alice Chen。</p>
+                <p>若你愿意合作校对、提供手抄本或老录音线索，欢迎通过「联系」邮件联系开发者 Alice Chen。</p>
                 <h4>你可以试着做这些</h4>
                 <ul class="plan-try">
                   <li>按故事页中的验证思路，审听档案转写是否说得通，记下方言变体。</li>
@@ -2200,14 +2200,15 @@
       <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="about.title">关于</h2>
-          <p data-i18n="about.lead">研究摘要、技术资源、技术流程、路线图、开发者、隐私与版权。</p>
+          <p data-i18n="about.lead">研究摘要、联系、技术资源申请、技术流程、路线图、开发者、隐私与版权。</p>
         </header>
 
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
             <button class="plan-nav__link" data-about-target="provide" aria-current="true" data-i18n="about.nav.provide">我们提供什么</button>
             <button class="plan-nav__link" data-about-target="research" aria-current="false" data-i18n="about.nav.research">研究摘要</button>
-            <button class="plan-nav__link" data-about-target="resources" aria-current="false" data-i18n="about.nav.resources">技术资源</button>
+            <button class="plan-nav__link" data-about-target="contact" aria-current="false" data-i18n="about.nav.contact">联系</button>
+            <button class="plan-nav__link" data-about-target="apply" aria-current="false" data-i18n="about.nav.apply">技术资源申请</button>
             <button class="plan-nav__link" data-about-target="pipeline" aria-current="false" data-i18n="about.nav.pipeline">技术流程</button>
             <button class="plan-nav__link" data-about-target="findings" aria-current="false" data-i18n="about.nav.findings">初步观察</button>
             <button class="plan-nav__link" data-about-target="roadmap" aria-current="false" data-i18n="about.nav.roadmap">路线图</button>
@@ -2339,13 +2340,7 @@
                   <p class="cer-chart__caption">原始 CER 均值（越低越好）· n=27 · v2b 加长 LoRA</p>
                 </div>
                 <p><strong>意义与局限。</strong>验证了一条可复现的低资源优化路径（金标约 18.4 分钟；基线与适配模型规模不完全对等；测试集 exact match 仍约 0%）。当前「听说」仍使用通用基线模型。</p>
-                <div class="tech-resources tech-resources--inline">
-                  <h4>技术资源</h4>
-                  <ul>
-                    <li>优化模型权重：已公开发布于 <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>。</li>
-                    <li>完整报告与操作说明：实验报告、训练与评估脚本，请参阅 <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">GitHub 仓库</a>。</li>
-                  </ul>
-                </div>
+                <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系 / 技术资源申请」说明用途与身份，确认后提供访问指引。</p>
               </div>
               <div data-visible-lang="en">
                 <p><strong>Question.</strong> With scarce labels, can a small high-quality aligned set improve open ASR on Yueyu / Yue-opera-related speech?</p>
@@ -2370,38 +2365,57 @@
                   <p class="cer-chart__caption">Raw mean CER (lower better) · n=27 · v2b longer LoRA</p>
                 </div>
                 <p><strong>Significance &amp; limits.</strong> Shows a reproducible low-resource path (gold ≈ 18.4 min; baseline and adapted sizes not fully matched; exact match still ~0% on the holdout). Speak still uses a generic baseline model.</p>
-                <div class="tech-resources tech-resources--inline">
-                  <h4>Technical resources</h4>
-                  <ul>
-                    <li>Adapted model weights: public on <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>.</li>
-                    <li>Full report and ops notes: experimental write-up, training and evaluation scripts — see the <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">GitHub repository</a>.</li>
-                  </ul>
-                </div>
+                <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact / Apply for code</strong> with your role and purpose. Access guidance is shared after confirmation.</p>
               </div>
             </div>
 
-            <div class="plan-section" data-about-section="resources" aria-hidden="true">
-              <h3 data-i18n="about.resources.title">技术资源</h3>
+            <div class="plan-section" data-about-section="contact" aria-hidden="true" id="about-contact">
+              <h3 data-i18n="about.contact.title">联系</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>面向开发者与复现实验的入口。日常学习、听说与档案使用无需阅读此处。</p>
-                <div class="tech-resources">
-                  <ul>
-                    <li><strong>GitHub 仓库</strong>：源代码、实验报告、训练与评估脚本 — <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">打开仓库</a></li>
-                    <li><strong>模型权重</strong>：LoRA 适配器公开页 — <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a></li>
-                    <li><strong>引用本站</strong>：学术引用信息见仓库中的引用文件，或通过站点「版权」页联系开发者。</li>
-                  </ul>
-                </div>
+                <p>欢迎就学习使用、材料贡献、授权与下架等事项联系项目负责人 <strong>Alice Chen</strong>。</p>
+                <p>邮箱：<a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a></p>
+                <p>若你需要代码、实验脚本或模型权重，请改走「技术资源申请」并简要说明用途。</p>
               </div>
               <div data-visible-lang="en">
-                <p>Developer-facing entry points for reproduction. Everyday Speak / Archive / Learn use does not require this section.</p>
-                <div class="tech-resources">
-                  <ul>
-                    <li><strong>GitHub repository</strong>: source, experimental report, training and evaluation scripts — <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">open the repo</a></li>
-                    <li><strong>Model weights</strong>: public LoRA adapter page — <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a></li>
-                    <li><strong>Citation</strong>: see the repository citation file, or contact the developer via the Copyright section.</li>
-                  </ul>
-                </div>
+                <p>For learning use, material contributions, permissions, or takedown requests, contact project lead <strong>Alice Chen</strong>.</p>
+                <p>Email: <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a></p>
+                <p>If you need code, experiment scripts, or model weights, use <strong>Apply for code</strong> and briefly describe your purpose.</p>
               </div>
+            </div>
+
+            <div class="plan-section" data-about-section="apply" aria-hidden="true" id="about-apply">
+              <h3 data-i18n="about.apply.title">技术资源申请</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p>如需获取本项目完整代码、实验脚本或模型权重，请发送邮件至 <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a>，或填写下方申请表，简要说明你的用途和身份（如研究者、开发者、学生等）。我们会在确认后提供访问指引。</p>
+              </div>
+              <div data-visible-lang="en">
+                <p>To request full project code, experiment scripts, or model weights, email <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a> or use the form below. Briefly state your purpose and role (researcher, developer, student, etc.). Access guidance is shared after confirmation.</p>
+              </div>
+              <form
+                class="contact-form"
+                action="https://formsubmit.co/yueyudetecting@proton.me"
+                method="POST"
+              >
+                <input type="hidden" name="_subject" value="Yueyu Detecting — technical access / contact" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://yueyudetecting.com/#about-apply" />
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+                <label class="contact-form__field">
+                  <span class="contact-form__label" data-i18n="about.apply.nameLabel">姓名 · NAME</span>
+                  <input type="text" name="name" required autocomplete="name" />
+                </label>
+                <label class="contact-form__field">
+                  <span class="contact-form__label" data-i18n="about.apply.emailLabel">邮箱 · EMAIL</span>
+                  <input type="email" name="email" required autocomplete="email" />
+                </label>
+                <label class="contact-form__field">
+                  <span class="contact-form__label" data-i18n="about.apply.messageLabel">留言 · MESSAGE（用途与身份）</span>
+                  <textarea name="message" rows="6" required></textarea>
+                </label>
+                <button type="submit" class="contact-form__submit" data-i18n="about.apply.submit">发送</button>
+              </form>
+              <p class="contact-form__alt" data-visible-lang="zh-Hans,zh-Hant">也可以直接写邮件：<a href="mailto:yueyudetecting@proton.me?subject=Yueyu%20Detecting%20access%20request">打开邮件客户端</a>。</p>
+              <p class="contact-form__alt" data-visible-lang="en">Or email directly: <a href="mailto:yueyudetecting@proton.me?subject=Yueyu%20Detecting%20access%20request">open your mail app</a>.</p>
             </div>
 
             <div class="plan-section" data-about-section="pipeline" aria-hidden="true">
@@ -2414,7 +2428,7 @@
                   <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
                   <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
                 </ol>
-                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见「研究摘要」；完整实验报告、脚本与权重入口见「技术资源」。</p>
+                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见「研究摘要」。如需代码、脚本或权重，请走「技术资源申请」。</p>
                 <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
               </div>
               <div data-visible-lang="en">
@@ -2425,7 +2439,7 @@
                   <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
                   <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
                 </ol>
-                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. Full report, scripts, and weights: see <strong>Technical resources</strong>.</p>
+                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. For code, scripts, or weights, use <strong>Apply for code</strong>.</p>
                 <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
               </div>
               <div class="about-flow" aria-hidden="true">
@@ -2466,8 +2480,8 @@
                 <li class="roadmap__item roadmap__item--done">
                   <h4 data-visible-lang="zh-Hans,zh-Hant">短期 · 已完成</h4>
                   <h4 data-visible-lang="en">Short term · done</h4>
-                  <p data-visible-lang="zh-Hans,zh-Hant">公共工具站上线；金标导出；Whisper-small + LoRA 试点；CER 对比；权重发布至 Hugging Face；研究摘要与技术报告可引用。</p>
-                  <p data-visible-lang="en">Public toolkit live; gold export; Whisper-small + LoRA pilot; CER comparison; weights on Hugging Face; citable research brief / technical report.</p>
+                  <p data-visible-lang="zh-Hans,zh-Hant">公共工具站上线；金标导出；Whisper-small + LoRA 试点；CER 对比；研究摘要可 skim；代码与权重经申请获取。</p>
+                  <p data-visible-lang="en">Public toolkit live; gold export; Whisper-small + LoRA pilot; CER comparison; research brief for skim; code and weights available on request.</p>
                 </li>
                 <li class="roadmap__item">
                   <h4 data-visible-lang="zh-Hans,zh-Hant">中期 · 规划中</h4>
@@ -2496,7 +2510,7 @@
                   <li>档案转写校对意见（时间轴、说话人、错字）</li>
                   <li>词典短语的方言措辞修正</li>
                 </ul>
-                <p>请通过开发者联系渠道说明材料来源与授权范围。本站不会公开未获同意的私人录音。</p>
+                <p>请通过「联系」说明材料来源与授权范围。本站不会公开未获同意的私人录音。</p>
               </div>
               <div data-visible-lang="en">
                 <p>Contribution is welcome when rights and consent are clear:</p>
@@ -2506,7 +2520,7 @@
                   <li>Archive transcript corrections (timing, speakers, typos)</li>
                   <li>Dialect wording fixes for dictionary phrases</li>
                 </ul>
-                <p>Contact the developer with source and permission notes. Private recordings without consent are not published.</p>
+                <p>Use <strong>Contact</strong> with source and permission notes. Private recordings without consent are not published.</p>
               </div>
             </div>
 
@@ -2516,7 +2530,7 @@
                 <p><strong>Alice Chen (Jiachen Chen)</strong></p>
               </div>
               <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。开源仓库与模型入口见「技术资源」。</p>
+                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。如需代码或模型，请使用「技术资源申请」。</p>
                 <ul>
                   <li>重点：听说翻译 + 精选对话档案</li>
                   <li>技术：TypeScript 静态站、浏览器麦克风识别、上传音频的设备端 Whisper</li>
@@ -2524,7 +2538,7 @@
                 </ul>
               </div>
               <div data-visible-lang="en">
-                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. Open-source repo and model entry points: see <strong>Technical resources</strong>.</p>
+                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. For code or model access, use <strong>Apply for code</strong>.</p>
                 <ul>
                   <li>Focus: speak → recognize → translate, plus a curated dialogue archive</li>
                   <li>Stack: TypeScript static site, browser mic ASR, on-device Whisper for uploads</li>
@@ -2617,7 +2631,7 @@
                   <li><strong>第三方工具：</strong>浏览器语音引擎、Whisper、字体与翻译接口遵循各自许可与条款。</li>
                   <li><strong>名称：</strong>「越语侦听」「Yueyu Detecting」标识本项目，请勿暗示未经同意的官方背书。</li>
                 </ul>
-                <p>授权、引用或下架请求，请通过项目仓库维护渠道联系开发者 <strong>Alice Chen (Jiachen Chen)</strong>。</p>
+                <p>授权、引用或下架请求，请通过「联系」邮件 <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a> 联系开发者 <strong>Alice Chen (Jiachen Chen)</strong>。</p>
               </div>
               <div data-visible-lang="en">
                 <div class="callout">
@@ -2629,7 +2643,7 @@
                   <li><strong>Third-party tools:</strong> speech engines, Whisper, fonts, and translation APIs keep their own terms.</li>
                   <li><strong>Name:</strong> “Yueyu Detecting” identifies this project; do not imply official endorsement without consent.</li>
                 </ul>
-                <p>For permissions or takedown notices, contact <strong>Alice Chen (Jiachen Chen)</strong> via the project repository maintainer channel.</p>
+                <p>For permissions or takedown notices, contact <strong>Alice Chen (Jiachen Chen)</strong> via <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a>.</p>
               </div>
             </div>
           </div>
@@ -2637,13 +2651,25 @@
       </section>
 
     </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__line">
+        <span data-i18n="footer.copy">© 2026 越语侦听</span>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="#about" data-panel-target="about" data-i18n="footer.about">关于</a>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="#about-contact" data-footer-about="contact" data-i18n="footer.contact">联系</a>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="#about-apply" data-footer-about="apply" data-i18n="footer.apply">申请代码</a>
+      </p>
+    </footer>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260815a"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260815a"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260815a"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260815a"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260815a"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260815a"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260815b"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260815b"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260815b"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260815b"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260815b"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260815b"></script>
 </body>
 </html>
