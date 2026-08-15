@@ -331,14 +331,48 @@ body[data-text-only="true"] .viewer-player__text-only {
 @media (max-width: 800px) {
   .viewer-body {
     grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 
   .viewer-player {
-    position: static;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    margin: 0 calc(-1 * var(--space-2));
+    padding: var(--space-3) var(--space-2) var(--space-4);
+    background: var(--color-paper);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
   }
 
   .viewer-transcript {
-    max-height: none;
+    max-height: min(70vh, 36rem);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .transcript-line {
+    grid-template-columns: 3rem 1fr;
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+
+  .transcript-line__time {
+    font-size: 0.7rem;
+    padding-top: 0.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .viewer-intro {
+    padding: var(--space-4);
+  }
+
+  .transcript-line {
+    grid-template-columns: 1fr;
+  }
+
+  .transcript-line__time {
+    order: -1;
   }
 }
 

@@ -272,9 +272,45 @@ html[data-theme="light"] #speak-recognized {
 
   .speak-output-tabs {
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: var(--space-2) 0;
+    background: linear-gradient(to bottom, var(--color-paper) 70%, transparent);
+  }
+
+  .speak-output-tab {
+    flex: 1 1 0;
+    text-align: center;
+    min-height: 2.75rem;
   }
 
   .speak-output:not(.speak-output--active) {
     display: none;
+  }
+
+  .speak-output {
+    min-height: 8rem;
+    padding: var(--space-4);
+  }
+
+  .speak-output p {
+    font-size: var(--text-base);
+    word-break: break-word;
+  }
+
+  #speak-recognized {
+    min-height: 5.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .speak-output-tabs {
+    gap: var(--space-1);
+  }
+
+  .speak-output-tab {
+    padding: 0.4rem 0.5rem;
+    font-size: var(--text-xs);
   }
 }

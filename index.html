@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260814g" />
-  <link rel="stylesheet" href="styles/main.css?v=20260814g" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260814g" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260814g" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260814g" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260814g" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260814g" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260815a" />
+  <link rel="stylesheet" href="styles/main.css?v=20260815a" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260815a" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260815a" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260815a" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260815a" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260815a" />
 </head>
 <body>
   <div class="app-shell">
@@ -2141,6 +2141,7 @@
                     <button type="button" class="home-cta__btn home-cta__btn--primary" id="ziyin-know" data-i18n="learn.ziyin.know">认识</button>
                     <button type="button" class="home-cta__btn" id="ziyin-unknown" data-i18n="learn.ziyin.unknown">不认识</button>
                     <button type="button" class="home-cta__btn" id="ziyin-review-wrong" data-i18n="learn.ziyin.reviewWrong" hidden>复习错题</button>
+                    <button type="button" class="home-cta__btn" id="ziyin-review-due" data-i18n="learn.ziyin.reviewDue" hidden>到期复习</button>
                     <button type="button" class="home-cta__btn home-cta__btn--ghost" id="ziyin-clear-progress" data-i18n="learn.ziyin.clearProgress">清空进度</button>
                   </div>
                 </div>
@@ -2199,13 +2200,14 @@
       <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="about.title">关于</h2>
-          <p data-i18n="about.lead">我们提供什么、开发者、网站介绍、隐私与版权。</p>
+          <p data-i18n="about.lead">研究摘要、技术资源、技术流程、路线图、开发者、隐私与版权。</p>
         </header>
 
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
             <button class="plan-nav__link" data-about-target="provide" aria-current="true" data-i18n="about.nav.provide">我们提供什么</button>
             <button class="plan-nav__link" data-about-target="research" aria-current="false" data-i18n="about.nav.research">研究摘要</button>
+            <button class="plan-nav__link" data-about-target="resources" aria-current="false" data-i18n="about.nav.resources">技术资源</button>
             <button class="plan-nav__link" data-about-target="pipeline" aria-current="false" data-i18n="about.nav.pipeline">技术流程</button>
             <button class="plan-nav__link" data-about-target="findings" aria-current="false" data-i18n="about.nav.findings">初步观察</button>
             <button class="plan-nav__link" data-about-target="roadmap" aria-current="false" data-i18n="about.nav.roadmap">路线图</button>
@@ -2336,7 +2338,14 @@
                   </div>
                   <p class="cer-chart__caption">原始 CER 均值（越低越好）· n=27 · v2b 加长 LoRA</p>
                 </div>
-                <p><strong>意义与局限。</strong>同尺寸下 LoRA 降低了复读型错误；当前测试集 exact match 仍约 0%，金标仅约 18.4 分钟——这是可复现试点，不是生产级越语 ASR。「听说」页仍用通用基线。完整报告：<a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>；权重：<a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>。</p>
+                <p><strong>意义与局限。</strong>验证了一条可复现的低资源优化路径（金标约 18.4 分钟；基线与适配模型规模不完全对等；测试集 exact match 仍约 0%）。当前「听说」仍使用通用基线模型。</p>
+                <div class="tech-resources tech-resources--inline">
+                  <h4>技术资源</h4>
+                  <ul>
+                    <li>优化模型权重：已公开发布于 <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>。</li>
+                    <li>完整报告与操作说明：实验报告、训练与评估脚本，请参阅 <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">GitHub 仓库</a>。</li>
+                  </ul>
+                </div>
               </div>
               <div data-visible-lang="en">
                 <p><strong>Question.</strong> With scarce labels, can a small high-quality aligned set improve open ASR on Yueyu / Yue-opera-related speech?</p>
@@ -2360,7 +2369,38 @@
                   </div>
                   <p class="cer-chart__caption">Raw mean CER (lower better) · n=27 · v2b longer LoRA</p>
                 </div>
-                <p><strong>Significance &amp; limits.</strong> LoRA reduces repetition-style errors vs size-matched small; exact match is still ~0% on this holdout; gold ≈ 18.4 min — a reproducible pilot, not production ASR. Speak still uses the generic baseline. Full report: <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>; weights: <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>.</p>
+                <p><strong>Significance &amp; limits.</strong> Shows a reproducible low-resource path (gold ≈ 18.4 min; baseline and adapted sizes not fully matched; exact match still ~0% on the holdout). Speak still uses a generic baseline model.</p>
+                <div class="tech-resources tech-resources--inline">
+                  <h4>Technical resources</h4>
+                  <ul>
+                    <li>Adapted model weights: public on <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>.</li>
+                    <li>Full report and ops notes: experimental write-up, training and evaluation scripts — see the <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">GitHub repository</a>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="plan-section" data-about-section="resources" aria-hidden="true">
+              <h3 data-i18n="about.resources.title">技术资源</h3>
+              <div data-visible-lang="zh-Hans,zh-Hant">
+                <p>面向开发者与复现实验的入口。日常学习、听说与档案使用无需阅读此处。</p>
+                <div class="tech-resources">
+                  <ul>
+                    <li><strong>GitHub 仓库</strong>：源代码、实验报告、训练与评估脚本 — <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">打开仓库</a></li>
+                    <li><strong>模型权重</strong>：LoRA 适配器公开页 — <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a></li>
+                    <li><strong>引用本站</strong>：学术引用信息见仓库中的引用文件，或通过站点「版权」页联系开发者。</li>
+                  </ul>
+                </div>
+              </div>
+              <div data-visible-lang="en">
+                <p>Developer-facing entry points for reproduction. Everyday Speak / Archive / Learn use does not require this section.</p>
+                <div class="tech-resources">
+                  <ul>
+                    <li><strong>GitHub repository</strong>: source, experimental report, training and evaluation scripts — <a href="https://github.com/jiachenc256-sys/yueyu-detecting" rel="noopener" target="_blank">open the repo</a></li>
+                    <li><strong>Model weights</strong>: public LoRA adapter page — <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a></li>
+                    <li><strong>Citation</strong>: see the repository citation file, or contact the developer via the Copyright section.</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -2374,7 +2414,7 @@
                   <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
                   <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
                 </ol>
-                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见左侧「研究摘要」；完整技术报告：<a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>。适配权重：<a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>。</p>
+                <p>当前「听说」仍加载<strong>通用基线</strong> Whisper。试点 CER 与柱状对比见「研究摘要」；完整实验报告、脚本与权重入口见「技术资源」。</p>
                 <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
               </div>
               <div data-visible-lang="en">
@@ -2385,7 +2425,7 @@
                   <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
                   <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
                 </ol>
-                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. Full report: <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>. Weights: <a href="https://huggingface.co/ArikaisAllie/yueyu-whisper-small-lora-v1" rel="noopener" target="_blank">Hugging Face</a>.</p>
+                <p>Speak still loads a <strong>generic baseline</strong> Whisper. Pilot CER and chart: see <strong>Research brief</strong>. Full report, scripts, and weights: see <strong>Technical resources</strong>.</p>
                 <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
               </div>
               <div class="about-flow" aria-hidden="true">
@@ -2476,7 +2516,7 @@
                 <p><strong>Alice Chen (Jiachen Chen)</strong></p>
               </div>
               <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。研究摘要与技术报告：<a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>。</p>
+                <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。开源仓库与模型入口见「技术资源」。</p>
                 <ul>
                   <li>重点：听说翻译 + 精选对话档案</li>
                   <li>技术：TypeScript 静态站、浏览器麦克风识别、上传音频的设备端 Whisper</li>
@@ -2484,7 +2524,7 @@
                 </ul>
               </div>
               <div data-visible-lang="en">
-                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. Research abstract / technical report: <a href="https://github.com/jiachenc256-sys/yueyu-detecting/blob/main/docs/TECHNICAL_REPORT.md" rel="noopener" target="_blank">TECHNICAL_REPORT.md</a>.</p>
+                <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. Open-source repo and model entry points: see <strong>Technical resources</strong>.</p>
                 <ul>
                   <li>Focus: speak → recognize → translate, plus a curated dialogue archive</li>
                   <li>Stack: TypeScript static site, browser mic ASR, on-device Whisper for uploads</li>
@@ -2599,11 +2639,11 @@
     </main>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260814g"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260814g"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260814g"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260814g"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260814g"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260814g"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260815a"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260815a"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260815a"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260815a"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260815a"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260815a"></script>
 </body>
 </html>

@@ -111,6 +111,7 @@ async function initZiyin(): Promise<void> {
   const knowBtn = document.getElementById("ziyin-know") as HTMLButtonElement | null;
   const unknownBtn = document.getElementById("ziyin-unknown") as HTMLButtonElement | null;
   const reviewWrongBtn = document.getElementById("ziyin-review-wrong") as HTMLButtonElement | null;
+  const reviewDueBtn = document.getElementById("ziyin-review-due") as HTMLButtonElement | null;
   const clearProgressBtn = document.getElementById("ziyin-clear-progress") as HTMLButtonElement | null;
 
   const statusEl = requireEl(document.getElementById("ziyin-status"), "ziyin-status");
@@ -135,20 +136,30 @@ async function initZiyin(): Promise<void> {
   if (!allItems.length) throw new Error("ziyin list empty");
 
   const PROGRESS_KEY = "yueyu-ziyin-flash-progress-v1";
-  type ProgressState = { known: string[]; unknown: string[] };
+  type ProgressState = {
+    known: string[];
+    unknown: string[];
+    due: Record<string, number>;
+    box: Record<string, number>;
+  };
   let reviewWrongOnly = false;
+  let reviewDueOnly = false;
+  const DAY_MS = 24 * 60 * 60 * 1000;
+  const BOX_DAYS = [1, 3, 7, 14];
 
   function loadProgress(): ProgressState {
     try {
       const raw = localStorage.getItem(PROGRESS_KEY);
-      if (!raw) return { known: [], unknown: [] };
-      const parsed = JSON.parse(raw) as ProgressState;
+      if (!raw) return { known: [], unknown: [], due: {}, box: {} };
+      const parsed = JSON.parse(raw) as ProgressState & { due?: Record<string, number>; box?: Record<string, number> };
       return {
         known: Array.isArray(parsed.known) ? parsed.known.map(String) : [],
         unknown: Array.isArray(parsed.unknown) ? parsed.unknown.map(String) : [],
+        due: parsed.due && typeof parsed.due === "object" ? parsed.due : {},
+        box: parsed.box && typeof parsed.box === "object" ? parsed.box : {},
       };
     } catch {
-      return { known: [], unknown: [] };
+      return { known: [], unknown: [], due: {}, box: {} };
     }
   }
 
@@ -165,6 +176,24 @@ async function initZiyin(): Promise<void> {
     });
   }
 
+  function dueHans(now = Date.now()): string[] {
+    return Object.entries(progress.due)
+      .filter(([, ts]) => typeof ts === "number" && ts <= now)
+      .map(([han]) => han);
+  }
+
+  function scheduleKnown(han: string): void {
+    const prev = progress.box[han] ?? 0;
+    const nextBox = Math.min(prev + 1, BOX_DAYS.length - 1);
+    progress.box[han] = nextBox;
+    progress.due[han] = Date.now() + (BOX_DAYS[nextBox] ?? 1) * DAY_MS;
+  }
+
+  function scheduleUnknown(han: string): void {
+    progress.box[han] = 0;
+    progress.due[han] = Date.now();
+  }
+
   function updateProgressUi(): void {
     const total = reviewBaseItems().length;
     const knownCount = progress.known.filter((han) =>
@@ -173,16 +202,24 @@ async function initZiyin(): Promise<void> {
     const unknownCount = progress.unknown.filter((han) =>
       reviewBaseItems().some((it) => it.han === han),
     ).length;
+    const dueCount = dueHans().filter((han) =>
+      reviewBaseItems().some((it) => it.han === han),
+    ).length;
     if (flashProgressEl) {
       flashProgressEl.textContent = tf("learn.ziyin.progress", {
         known: knownCount,
         total,
         wrong: unknownCount,
+        due: dueCount,
       });
     }
     if (reviewWrongBtn) {
       reviewWrongBtn.hidden = unknownCount === 0;
       reviewWrongBtn.setAttribute("aria-pressed", reviewWrongOnly ? "true" : "false");
+    }
+    if (reviewDueBtn) {
+      reviewDueBtn.hidden = dueCount === 0;
+      reviewDueBtn.setAttribute("aria-pressed", reviewDueOnly ? "true" : "false");
     }
     if (flashGradeEl) flashGradeEl.hidden = !isFlashMode();
   }
@@ -193,14 +230,20 @@ async function initZiyin(): Promise<void> {
     const han = item.han;
     progress.known = progress.known.filter((h) => h !== han);
     progress.unknown = progress.unknown.filter((h) => h !== han);
-    if (kind === "known") progress.known.push(han);
-    else progress.unknown.push(han);
+    if (kind === "known") {
+      progress.known.push(han);
+      scheduleKnown(han);
+    } else {
+      progress.unknown.push(han);
+      scheduleUnknown(han);
+    }
     saveProgress(progress);
     updateProgressUi();
-    if (reviewWrongOnly) {
+    if (reviewWrongOnly || reviewDueOnly) {
       pool = pool.filter((it) => it.han !== han);
       if (!pool.length) {
         reviewWrongOnly = false;
+        reviewDueOnly = false;
         setLevel(5, true);
         return;
       }
@@ -208,6 +251,7 @@ async function initZiyin(): Promise<void> {
       paint();
       return;
     }
+
     index = (index + 1) % pool.length;
     paint();
   }
@@ -433,6 +477,13 @@ async function initZiyin(): Promise<void> {
           reviewWrongOnly = false;
           pool = base.slice();
         }
+      } else if (reviewDueOnly) {
+        const due = new Set(dueHans());
+        pool = base.filter((it) => due.has(it.han));
+        if (!pool.length) {
+          reviewDueOnly = false;
+          pool = base.slice();
+        }
       } else {
         pool = base.slice();
       }
@@ -518,12 +569,19 @@ async function initZiyin(): Promise<void> {
   unknownBtn?.addEventListener("click", () => markCard("unknown"));
   reviewWrongBtn?.addEventListener("click", () => {
     reviewWrongOnly = !reviewWrongOnly;
+    if (reviewWrongOnly) reviewDueOnly = false;
+    setLevel(5, true);
+  });
+  reviewDueBtn?.addEventListener("click", () => {
+    reviewDueOnly = !reviewDueOnly;
+    if (reviewDueOnly) reviewWrongOnly = false;
     setLevel(5, true);
   });
   clearProgressBtn?.addEventListener("click", () => {
-    progress = { known: [], unknown: [] };
+    progress = { known: [], unknown: [], due: {}, box: {} };
     saveProgress(progress);
     reviewWrongOnly = false;
+    reviewDueOnly = false;
     updateProgressUi();
     if (isFlashMode()) setLevel(5, true);
   });
