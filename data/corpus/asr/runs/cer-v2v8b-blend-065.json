@@ -1,0 +1,17 @@
+{
+  "checkpoint": "data/corpus/asr/runs/whisper-small-merged-v2-v8b-w0.65",
+  "recipe": "W = 0.35·merged(v2) + 0.65·merged(v8b)",
+  "oldHoldout": {
+    "n": 27,
+    "meanCer": 1.1693
+  },
+  "baituSample": {
+    "n": 67,
+    "meanCer": 1.0017
+  },
+  "dualPass": true,
+  "targets": {
+    "oldHoldoutMax": 1.2,
+    "baituSampleMax": 1.1
+  }
+}

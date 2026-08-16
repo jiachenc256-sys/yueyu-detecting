@@ -1,0 +1,42 @@
+{
+  "source": "https://huggingface.co/kaiwang0574/whisper-wu",
+  "note": "Zero-shot on Yueju holdouts. Live Speak ONNX untouched.",
+  "systems": {
+    "whisper-wu": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 4.0115,
+        "meanCerClipped": 0.9841
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 7.2015,
+        "meanCerClipped": 0.984
+      }
+    },
+    "blend-v10": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.1739,
+        "meanCerClipped": 0.9788
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9917,
+        "meanCerClipped": 0.9654
+      }
+    },
+    "whisper-small": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 10.7018,
+        "meanCerClipped": 0.9894
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 6.7277,
+        "meanCerClipped": 0.9892
+      }
+    }
+  }
+}

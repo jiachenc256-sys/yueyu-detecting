@@ -1,0 +1,36 @@
+{
+  "protocol": "v11: hongloumeng-1..5 capped+4x on blend-v10 base",
+  "systems": {
+    "blend_v10_a0.5": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.1739,
+        "meanCerClipped": 0.9788,
+        "cerGe1": 24
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9917,
+        "meanCerClipped": 0.9654,
+        "cerGe1": 49
+      },
+      "dualPass": true
+    },
+    "v11": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.2697,
+        "meanCerClipped": 0.9788,
+        "cerGe1": 24
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9898,
+        "meanCerClipped": 0.9578,
+        "cerGe1": 45
+      },
+      "dualPass": false
+    }
+  },
+  "note": "skipped hongloumeng-6 overlap with 5"
+}
