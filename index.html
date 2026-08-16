@@ -1160,9 +1160,9 @@
             <aside class="research-abstract" aria-label="研究摘要">
               <p class="research-abstract__eyebrow">研究摘要 · 问题—方法—结果</p>
               <p><strong>背景。</strong>越语作为濒危吴语方言，语音识别面临语料稀缺与发音／语域变体（散白、韵白、唱词）复杂的双重挑战。</p>
-              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建小型高质量金标切片，按整剧留出测试集，对 Whisper-small 做 LoRA 微调，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
-              <p><strong>结果（v2 同尺寸，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA（加长训练）<strong>1.1</strong>（相对同尺寸基线约 −9.6）。内容级 exact match 仍约 0%。详见「关于 → 研究摘要」与仓库技术报告。</p>
-              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径；听说页已接入适配模型（试点）。exact match 仍有限，扩金标是下一步。</p>
+              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建金标切片，按整剧留出测试集，对 Whisper-small 做 LoRA 微调与权重混合，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER；验收同时看旧留出与未见全剧（白兔记抽样）。</p>
+              <p><strong>结果（线上 blend-v10）。</strong>旧留出 n=27：tiny 7.3 · plain small 10.7 · 适配 <strong>1.17</strong>（相对同尺寸基线约 −9.5）。白兔抽样约 <strong>0.99</strong>（双指标均达标）。详见「关于 → 研究摘要」。</p>
+              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径；听说页已加载 blend-v10 适配模型（试点）。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
@@ -1251,9 +1251,9 @@
             <aside class="research-abstract" aria-label="研究摘要">
               <p class="research-abstract__eyebrow">研究摘要 · 問題—方法—結果</p>
               <p><strong>背景。</strong>越語作為瀕危吳語方言，語音識別面臨語料稀缺與發音／語域變體（散白、韻白、唱詞）複雜的雙重挑戰。</p>
-              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建小型高質量金標切片，按整劇留出測試集，對 Whisper-small 做 LoRA 微調，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER。</p>
-              <p><strong>結果（v2 同尺寸，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA（加長訓練）<strong>1.1</strong>（相對同尺寸基線約 −9.6）。內容級 exact match 仍約 0%。詳見「關於 → 研究摘要」與倉庫技術報告。</p>
-              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑；聽說頁已接入適配模型（試點）。exact match 仍有限，擴金標是下一步。</p>
+              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建金標切片，按整劇留出測試集，對 Whisper-small 做 LoRA 微調與權重混合，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER；驗收同時看舊留出與未見全劇（白兔記抽樣）。</p>
+              <p><strong>結果（線上 blend-v10）。</strong>舊留出 n=27：tiny 7.3 · plain small 10.7 · 適配 <strong>1.17</strong>（相對同尺寸基線約 −9.5）。白兔抽樣約 <strong>0.99</strong>（雙指標均達標）。詳見「關於 → 研究摘要」。</p>
+              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑；聽說頁已載入 blend-v10 適配模型（試點）。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
@@ -1342,9 +1342,9 @@
             <aside class="research-abstract" aria-label="Research abstract">
               <p class="research-abstract__eyebrow">Research abstract · problem–method–result</p>
               <p><strong>Background.</strong> Yueyu, a threatened Wu variety, poses a dual ASR challenge: scarce aligned data and complex pronunciation / register variation (sanbai, yunbai, sung lines).</p>
-              <p><strong>Method.</strong> I built a small high-quality gold set from this site’s corrected timed archive, held out whole plays for testing, fine-tuned Whisper-small with LoRA, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
-              <p><strong>Result (v2 size-matched, n=27).</strong> Raw mean CER: tiny 7.3 · plain small 10.7 · LoRA (longer train) <strong>1.1</strong> (about −9.6 vs size-matched baseline). Exact match still ~0%. See About → Research brief.</p>
-              <p><strong>Significance.</strong> This supports a reproducible low-resource adaptation path; Speak now loads the adapted model (pilot). Exact match is still limited — growing gold is next.</p>
+              <p><strong>Method.</strong> I built gold clips from this site’s corrected timed archive, held out whole plays for testing, fine-tuned Whisper-small with LoRA and weight blending, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>—scoring both an old holdout and an unseen-play sample (Baitu Ji).</p>
+              <p><strong>Result (live blend-v10).</strong> Old holdout n=27: tiny 7.3 · plain small 10.7 · adapted <strong>1.17</strong> (about −9.5 vs size-matched baseline). Baitu sample ≈ <strong>0.99</strong> (dual target met). See About → Research brief.</p>
+              <p><strong>Significance.</strong> This supports a reproducible low-resource path; Speak now loads blend-v10 (pilot).</p>
             </aside>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
@@ -2317,10 +2317,10 @@
             <div class="plan-section" data-about-section="research" aria-hidden="true">
               <h3 data-i18n="about.research.title">研究摘要</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
-                <p><strong>问题。</strong>在标注稀缺时，少量高质量音文对齐语料能否提升开源 ASR 对越语／越剧相关语音的识别准确率？</p>
-                <p><strong>方法。</strong>从本站校对档案导出金标切片 → 整剧留出测试集 → <code>whisper-small</code> + LoRA 微调 → 与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
-                <p><strong>结果（v2 同尺寸消融，n=27）。</strong>原始 CER 均值：tiny 7.3 · plain small 10.7 · LoRA v2（加长训练）<strong>1.1</strong>（相对同尺寸基线约 −9.6）。内容级 exact match 仍约 0%——继续降错主要靠扩金标。</p>
-                <div class="cer-chart" role="img" aria-label="同尺寸 CER：tiny 7.3，small 10.7，LoRA 1.1">
+                <p><strong>问题。</strong>在标注稀缺时，高质量音文对齐语料与适配训练，能否同时稳住旧戏留出、并改善未见全剧上的识别？</p>
+                <p><strong>方法。</strong>从本站校对档案导出金标切片 → 整剧留出（旧：祥林嫂／何文秀；生戏：白兔记不进训练）→ <code>whisper-small</code> + LoRA 与权重混合 → 与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
+                <p><strong>结果（线上 blend-v10；双指标）。</strong>旧留出 n=27 原始 CER：tiny 7.3 · plain small 10.7 · 适配 <strong>1.17</strong>（相对同尺寸基线约 −9.5）。白兔记抽样约 <strong>0.99</strong>。早期 v2 同尺寸消融约为 1.1（旧留出单指标）。</p>
+                <div class="cer-chart" role="img" aria-label="旧留出 CER：tiny 7.3，small 10.7，blend-v10 1.17">
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">tiny</span>
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:68"></span></div>
@@ -2332,20 +2332,20 @@
                     <span class="cer-chart__val">10.7</span>
                   </div>
                   <div class="cer-chart__row">
-                    <span class="cer-chart__label">LoRA</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:10"></span></div>
-                    <span class="cer-chart__val">1.1</span>
+                    <span class="cer-chart__label">adapt</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:11"></span></div>
+                    <span class="cer-chart__val">1.17</span>
                   </div>
-                  <p class="cer-chart__caption">原始 CER 均值（越低越好）· n=27 · v2b 加长 LoRA</p>
+                  <p class="cer-chart__caption">旧留出原始 CER（越低越好）· n=27 · Speak 线上 blend-v10；白兔抽样 ≈ 0.99</p>
                 </div>
-                <p><strong>意义与局限。</strong>验证了一条可复现的低资源优化路径（金标约 18.4 分钟；测试集 exact match 仍约 0%）。「听说」已加载越语适配 Whisper（合并 LoRA v2 的 INT8 ONNX）；口语/电台金标是后续域扩展。</p>
+                <p><strong>意义。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。「听说」现加载 blend-v10（INT8 ONNX）。口语／电台另属后续域扩展。</p>
                 <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。</p>
               </div>
               <div data-visible-lang="en">
-                <p><strong>Question.</strong> With scarce labels, can a small high-quality aligned set improve open ASR on Yueyu / Yue-opera-related speech?</p>
-                <p><strong>Method.</strong> Gold clips from corrected archive transcripts → whole-piece holdout → <code>whisper-small</code> + LoRA → CER vs <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
-                <p><strong>Result (v2 size-matched, n=27).</strong> Raw mean CER: tiny 7.3 · plain small 10.7 · LoRA v2 (longer train) <strong>1.1</strong> (about −9.6 vs size-matched baseline). Exact match still ~0% — further gains need more gold.</p>
-                <div class="cer-chart" role="img" aria-label="Size-matched CER: tiny 7.3, small 10.7, LoRA 1.1">
+                <p><strong>Question.</strong> With scarce labels, can high-quality aligned gold plus adaptation hold an older-play holdout while improving on an unseen full play?</p>
+                <p><strong>Method.</strong> Gold clips from corrected archive transcripts → whole-piece holdouts (old: Xianglin Sao / He Wenxiu; unseen: Baitu Ji kept out of training) → <code>whisper-small</code> + LoRA and weight blending → CER vs <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
+                <p><strong>Result (live blend-v10; dual target).</strong> Old holdout n=27 raw CER: tiny 7.3 · plain small 10.7 · adapted <strong>1.17</strong> (about −9.5 vs size-matched baseline). Baitu sample ≈ <strong>0.99</strong>. Earlier v2 size-matched ablation was ~1.1 on the old holdout alone.</p>
+                <div class="cer-chart" role="img" aria-label="Old-holdout CER: tiny 7.3, small 10.7, blend-v10 1.17">
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">tiny</span>
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:68"></span></div>
@@ -2357,13 +2357,13 @@
                     <span class="cer-chart__val">10.7</span>
                   </div>
                   <div class="cer-chart__row">
-                    <span class="cer-chart__label">LoRA</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:10"></span></div>
-                    <span class="cer-chart__val">1.1</span>
+                    <span class="cer-chart__label">adapt</span>
+                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:11"></span></div>
+                    <span class="cer-chart__val">1.17</span>
                   </div>
-                  <p class="cer-chart__caption">Raw mean CER (lower better) · n=27 · v2b longer LoRA</p>
+                  <p class="cer-chart__caption">Old-holdout raw CER (lower better) · n=27 · live Speak blend-v10; Baitu sample ≈ 0.99</p>
                 </div>
-                <p><strong>Significance &amp; limits.</strong> Shows a reproducible low-resource path (gold ≈ 18.4 min; exact match still ~0% on the holdout). Speak now loads the Yueyu-adapted Whisper (merged LoRA v2, INT8 ONNX). Spoken/radio gold is a later domain extension.</p>
+                <p><strong>Significance.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). Speak loads blend-v10 (INT8 ONNX). Spoken/radio gold is a later domain extension.</p>
                 <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose. Access guidance is shared after confirmation.</p>
               </div>
             </div>
