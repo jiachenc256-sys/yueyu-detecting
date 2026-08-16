@@ -1,0 +1,40 @@
+{
+  "protocol": "v9: LoRA on dual-pass blend base + cleaned classic-heavy v9 manifest; lr=5e-5 steps=400",
+  "targets": {
+    "oldHoldoutMax": 1.2,
+    "baituSampleMax": 1.1
+  },
+  "systems": {
+    "blend_v2v8b": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.1693,
+        "meanCerClipped": 0.9788,
+        "cerGe1": 24
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 1.0017,
+        "meanCerClipped": 0.9687,
+        "cerGe1": 50
+      },
+      "dualPass": true
+    },
+    "v9": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.2156,
+        "meanCerClipped": 0.9788,
+        "cerGe1": 24
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9735,
+        "meanCerClipped": 0.9515,
+        "cerGe1": 42
+      },
+      "dualPass": false
+    }
+  },
+  "note": "Dropped 194 suspicious train clips (density/timing). Oversampled zanghua/classics 4x."
+}

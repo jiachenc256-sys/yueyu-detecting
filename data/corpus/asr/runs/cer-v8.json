@@ -1,0 +1,54 @@
+{
+  "protocol": "v8 dual: old holdout (祥林嫂+何文秀) + ~10min 白兔记 sample; train balanced-v8",
+  "targets": {
+    "oldHoldoutMax": 1.2,
+    "baituSampleMax": 1.1
+  },
+  "systems": {
+    "v2": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.0983
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 1.7875
+      },
+      "dualPass": false
+    },
+    "v5": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.5219
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9915
+      },
+      "dualPass": false
+    },
+    "v7": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.425
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 1.3877
+      },
+      "dualPass": false
+    },
+    "v8": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.405
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9753
+      },
+      "dualPass": false
+    }
+  },
+  "note": "v8: v5 warm-start + 葬花吟 3x + 五女拜寿 capped + classics oversample; bubuxinjing capped 8m"
+}

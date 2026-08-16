@@ -45,3 +45,6 @@ scripts/dist/scripts/
 scripts/dist/tests/
 
 .tmp-fangyan/
+
+# Local Speak ONNX rollback copy (do not ship)
+assets/asr/yueyu-whisper-small-onnx-v2-backup/

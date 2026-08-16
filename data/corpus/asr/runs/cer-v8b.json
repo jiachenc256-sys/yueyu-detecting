@@ -1,0 +1,43 @@
+{
+  "protocol": "v8b dual: same eval as v8; train=balanced-v8 warm from v2",
+  "targets": {
+    "oldHoldoutMax": 1.2,
+    "baituSampleMax": 1.1
+  },
+  "systems": {
+    "v2": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.0983
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 1.7875
+      },
+      "dualPass": false
+    },
+    "v8": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.405
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9753
+      },
+      "dualPass": false
+    },
+    "v8b": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.1887
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 1.3909
+      },
+      "dualPass": false
+    }
+  },
+  "note": "v8b: v2 warm-start + balanced-v8 data (葬花吟 3x, 五女/全剧 capped); max_steps=600"
+}

@@ -1,9 +1,11 @@
 {
   "modelId": "yueyu-whisper-small-onnx",
+  "checkpoint": "whisper-small-merged-blend-v10-a0.5",
+  "recipe": "0.5·(0.35·v2+0.65·v8b) + 0.5·v10",
   "decoderParts": [
     "decoder_model_quantized.onnx.part00",
     "decoder_model_quantized.onnx.part01"
   ],
   "encoder": "encoder_model_quantized.onnx",
-  "note": "Browser joins decoder parts into transformers-cache before pipeline load."
+  "note": "Browser joins decoder parts into transformers-cache before pipeline load. Dual-pass blend-v10."
 }

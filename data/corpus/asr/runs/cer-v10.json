@@ -1,0 +1,52 @@
+{
+  "protocol": "v10: LoRA on blend + mudanting capped + para2/3 heavy",
+  "systems": {
+    "blend": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.1693,
+        "meanCerClipped": 0.9788,
+        "cerGe1": 24
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 1.0017,
+        "meanCerClipped": 0.9687,
+        "cerGe1": 50
+      },
+      "dualPass": true
+    },
+    "v10": {
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 2.414,
+        "meanCerClipped": 0.9788,
+        "cerGe1": 24
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.991,
+        "meanCerClipped": 0.9552,
+        "cerGe1": 47
+      },
+      "dualPass": false
+    },
+    "blend_v10": {
+      "alphaV10": 0.5,
+      "oldHoldout": {
+        "n": 27,
+        "meanCer": 1.1739,
+        "meanCerClipped": 0.9788,
+        "cerGe1": 24
+      },
+      "baituSample": {
+        "n": 67,
+        "meanCer": 0.9917,
+        "meanCerClipped": 0.9654,
+        "cerGe1": 49
+      },
+      "dualPass": true
+    }
+  },
+  "note": "para7 skipped (video-only, no audio). para1 skipped (overlap with para3)."
+}

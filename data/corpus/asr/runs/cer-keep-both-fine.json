@@ -1,0 +1,159 @@
+{
+  "blends": [
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.35,
+      "weightRight": 0.65,
+      "oldHoldout": 1.1693,
+      "baituSample": 1.0017,
+      "dualPass": true
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.33,
+      "weightRight": 0.67,
+      "oldHoldout": 1.224,
+      "baituSample": 0.9979,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.32,
+      "weightRight": 0.68,
+      "oldHoldout": 1.2116,
+      "baituSample": 0.9979,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.31,
+      "weightRight": 0.69,
+      "oldHoldout": 1.2116,
+      "baituSample": 0.9987,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.3,
+      "weightRight": 0.7,
+      "oldHoldout": 1.2116,
+      "baituSample": 0.9937,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.29,
+      "weightRight": 0.71,
+      "oldHoldout": 1.2116,
+      "baituSample": 0.9972,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.28,
+      "weightRight": 0.72,
+      "oldHoldout": 1.2275,
+      "baituSample": 0.9993,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.27,
+      "weightRight": 0.73,
+      "oldHoldout": 1.2275,
+      "baituSample": 0.9945,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.25,
+      "weightRight": 0.75,
+      "oldHoldout": 1.2275,
+      "baituSample": 0.9997,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8",
+      "weightLeft": 0.67,
+      "weightRight": 0.33,
+      "oldHoldout": 1.2298,
+      "baituSample": 1.2893,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8",
+      "weightLeft": 0.665,
+      "weightRight": 0.335,
+      "oldHoldout": 1.2174,
+      "baituSample": 1.2839,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8",
+      "weightLeft": 0.66,
+      "weightRight": 0.34,
+      "oldHoldout": 1.2174,
+      "baituSample": 1.0026,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8",
+      "weightLeft": 0.655,
+      "weightRight": 0.345,
+      "oldHoldout": 1.2174,
+      "baituSample": 1.2148,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8",
+      "weightLeft": 0.65,
+      "weightRight": 0.35,
+      "oldHoldout": 1.2168,
+      "baituSample": 1.2168,
+      "dualPass": false
+    },
+    {
+      "left": "v2",
+      "right": "v8",
+      "weightLeft": 0.645,
+      "weightRight": 0.355,
+      "oldHoldout": 2.4073,
+      "baituSample": 1.2189,
+      "dualPass": false
+    }
+  ],
+  "dualPassers": [
+    {
+      "left": "v2",
+      "right": "v8b",
+      "weightLeft": 0.35,
+      "weightRight": 0.65,
+      "oldHoldout": 1.1693,
+      "baituSample": 1.0017,
+      "dualPass": true
+    }
+  ],
+  "bestNear": {
+    "left": "v2",
+    "right": "v8b",
+    "weightLeft": 0.35,
+    "weightRight": 0.65,
+    "oldHoldout": 1.1693,
+    "baituSample": 1.0017,
+    "dualPass": true
+  }
+}
