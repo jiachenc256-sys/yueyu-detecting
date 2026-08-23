@@ -1,0 +1,123 @@
+{
+  "schema": "yueyu-scene-cards/v1",
+  "cards": {
+    "jingchai-ji": [
+      {
+        "start": 480,
+        "end": 620,
+        "zh": "江边送别：十朋将赴京城，玉莲难舍难分。",
+        "en": "River farewell: Shipeng leaves for the capital; Yulian can hardly let go."
+      },
+      {
+        "start": 620,
+        "end": 720,
+        "zh": "叮嘱深情：玉莲诉说恩义，荆钗为聘记在心。",
+        "en": "Parting counsel: Yulian speaks of devotion; the thorn hairpin seals their bond."
+      },
+      {
+        "start": 720,
+        "end": 820,
+        "zh": "赴考之志：盼蟾宫折桂，又愁仕途风波。",
+        "en": "Exam ambitions: hope for success, fear of the official world’s storms."
+      },
+      {
+        "start": 950,
+        "end": 1030,
+        "zh": "遥望青云：情系荆钗，未别先问归期。",
+        "en": "Eyes on the clouds: love tied to the pin; asking when he will return."
+      },
+      {
+        "start": 1380,
+        "end": 1420,
+        "zh": "双喜临门：才子佳人、金榜题名的喜庆场面。",
+        "en": "Double joy: scholar and beauty, exam success celebrated."
+      },
+      {
+        "start": 1500,
+        "end": 1540,
+        "zh": "回望贫贱：钱氏女与荆钗聘礼的前尘旧事。",
+        "en": "Looking back on hard days: the Qian daughter and the thorn-pin betrothal."
+      }
+    ],
+    "baitu-ji": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "寒夜凄清：风月萧索，身世飘零的开场氛围。",
+        "en": "Cold night opening: bleak wind and moon, a life adrift."
+      },
+      {
+        "start": 400,
+        "end": 900,
+        "zh": "患难奔波：白兔记中的流离与求生。",
+        "en": "Hardship on the road: exile and survival in Baitu Ji."
+      },
+      {
+        "start": 900,
+        "end": 2000,
+        "zh": "团聚与辨认：亲情线逐步收束。",
+        "en": "Recognition and reunion: family threads draw together."
+      }
+    ],
+    "liangzhu-shibaxiangsong": [
+      {
+        "start": 0,
+        "end": 180,
+        "zh": "十八相送起程：梁山伯送祝英台上路，依依不舍。",
+        "en": "Eighteen-li farewell begins: Liang escorts Zhu; reluctance to part."
+      },
+      {
+        "start": 180,
+        "end": 420,
+        "zh": "一路托物：借景、借物暗示深情，不便直说。",
+        "en": "Coded affection on the road: scenery and objects stand in for what cannot be said aloud."
+      },
+      {
+        "start": 420,
+        "end": 99999,
+        "zh": "惜别将尽：相送将近终点，情意更浓、归期未卜。",
+        "en": "Near the end of the send-off: feeling deepens; return still uncertain."
+      }
+    ],
+    "liangzhu-shibaxiangsong-full": [
+      {
+        "start": 0,
+        "end": 200,
+        "zh": "十八相送起程：梁祝惜别，刚上路。",
+        "en": "Eighteen-li farewell begins: Liang and Zhu set out."
+      },
+      {
+        "start": 200,
+        "end": 500,
+        "zh": "托景言情：沿途景物暗藏心意。",
+        "en": "Feeling through landscape: roadside scenes carry coded affection."
+      },
+      {
+        "start": 500,
+        "end": 99999,
+        "zh": "相送将尽：离别在即，余情未了。",
+        "en": "Send-off nearly done: parting near, feeling unfinished."
+      }
+    ],
+    "xianglin-sao-xinsuanhua": [
+      {
+        "start": 0,
+        "end": 120,
+        "zh": "心酸开场：祥林嫂缓缓开口，身世苦难将倾诉。",
+        "en": "Bitter opening: Xianglin Sao begins; suffering is about to be told."
+      },
+      {
+        "start": 120,
+        "end": 360,
+        "zh": "诉苦中段：丧子、冷遇与命运不公层层叠加。",
+        "en": "Mid account: loss, cold treatment, and unjust fate pile up."
+      },
+      {
+        "start": 360,
+        "end": 99999,
+        "zh": "悲愤收束：控诉与叹息交织，情绪更沉。",
+        "en": "Grief closes in: accusation and sighing; the tone grows heavier."
+      }
+    ]
+  }
+}
