@@ -132,6 +132,7 @@ const zhHans = {
     "speak.path.archiveUnavailable": "档案索引暂不可用，跳过检索。",
     "speak.path.radarIdle": "档案主题信号弱",
     "speak.path.prosodyRunning": "档案未命中，正在分析腔调与语调…",
+    "speak.path.prosodyNeedAudio": "档案未命中。上传或录一段音频后，才能做腔调·语调情绪粗估。",
     "speak.path.emotionFocus": "情绪聚焦：{themes}",
     "speak.path.emotionEmpty": "情绪信号较弱",
     "speak.path.openArchive": "在档案中打开",

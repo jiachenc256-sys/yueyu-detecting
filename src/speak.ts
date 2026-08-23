@@ -204,6 +204,9 @@ function followTimeSec(): number | null {
   if (!audioPreview || !Number.isFinite(audioPreview.currentTime)) return null;
   // Need a piece scope for time anchoring to be meaningful
   if (!selectedPieceId()) return null;
+  // No media yet → do not pretend the playhead is at 0s
+  const hasMedia = Boolean(previewObjectUrl) || Boolean(audioPreview.currentSrc || audioPreview.src);
+  if (!hasMedia) return null;
   return audioPreview.currentTime;
 }
 
@@ -517,6 +520,12 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
       scheduleTranslate(prosody.summaryZh);
       return result;
     }
+  } else if (!hit) {
+    if (prosodyCard) {
+      prosodyCard.hidden = false;
+      if (prosodyText) prosodyText.textContent = t("speak.path.prosodyNeedAudio");
+    }
+    setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
   } else {
     setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
   }
@@ -951,8 +960,8 @@ function initSpeak(): void {
   void loadFingerprintIndex();
 
   pieceSelect?.addEventListener("change", () => {
-    if (selectedPieceId() && followTimeEl && !followTimeEl.checked) {
-      // Suggest follow mode when a piece is chosen
+    // Only suggest follow-along when audio is already loaded
+    if (selectedPieceId() && followTimeEl && !followTimeEl.checked && previewObjectUrl) {
       followTimeEl.checked = true;
     }
     if (finalTranscript.trim()) void runPostAsrPaths(finalTranscript);
