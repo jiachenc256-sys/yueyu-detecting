@@ -1,0 +1,982 @@
+{
+  "schema": "cer-v2",
+  "nTest": 39,
+  "device": "mps",
+  "split": "whole-piece holdout test",
+  "decode": {
+    "max_new_tokens": 128,
+    "cap_ratio": 2.5
+  },
+  "tiny": {
+    "model": "openai/whisper-tiny",
+    "n": 39,
+    "meanCer": 2.160705960705961,
+    "meanCerCapped": 1.2295704295704297,
+    "meanCerClipped": 0.9766483516483516,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "jingchai-ji-1",
+        "ref": "留连忘返哪",
+        "hyp": "留了王花",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-10",
+        "ref": "我家徒四壁无长物",
+        "hyp": "伍青啊 伍青",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-11",
+        "ref": "唯有那木头荆钗作礼聘",
+        "hyp": "你也拿 摩托青茶醋我離一杯",
+        "cer": 1.3,
+        "cerCapped": 1.3,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-12",
+        "ref": "玉 莲 啊",
+        "hyp": "我們 也不怕",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-13",
+        "ref": "今朝十朋赴试去",
+        "hyp": "今早才冒 早才去呀",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-14",
+        "ref": "満 腹 经 纶 颇 自 信",
+        "hyp": "我會否盡難破死了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-15",
+        "ref": "蟾宫折桂报捷时",
+        "hyp": "三分之一 包心裡 苦",
+        "cer": 1.4285714285714286,
+        "cerCapped": 1.4285714285714286,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-16",
+        "ref": "先谢贤妻知遇恩",
+        "hyp": "祖父 祖父",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-17",
+        "ref": "相么临别诉衷情",
+        "hyp": "好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好",
+        "cer": 18.285714285714285,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "jingchai-ji-18",
+        "ref": "我学是欢喜学担心",
+        "hyp": "我不會思喚時 萬大人",
+        "cer": 1.125,
+        "cerCapped": 1.125,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-19",
+        "ref": "喜的是",
+        "hyp": "謝謝",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-2",
+        "ref": "江边送君上帝京",
+        "hyp": "生去 生去",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-20",
+        "ref": "壮志得遂已有时",
+        "hyp": "當時大聲",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-21",
+        "ref": "尕枉我慧眼早识人",
+        "hyp": "多話我為你 告訴你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-22",
+        "ref": "愁 的 是",
+        "hyp": "好",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-23",
+        "ref": "荆辣横生仕途险",
+        "hyp": "聽清王三恩 自動是",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-24",
+        "ref": "风波难测官海深",
+        "hyp": "不忘了 韓克 韓克",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-25",
+        "ref": "江畔今弾兮飞曲",
+        "hyp": "你不要忘了我",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-26",
+        "ref": "未 知 晓",
+        "hyp": "謝謝",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-27",
+        "ref": "何时重唱比翼吟",
+        "hyp": "我的方法",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-28",
+        "ref": "心随轻舟去",
+        "hyp": "祝你一切",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-29",
+        "ref": "情伴荆钗在",
+        "hyp": "不然你也不怕",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-3",
+        "ref": "笑脸强 裝泪眼盈",
+        "hyp": "天啊 来",
+        "cer": 0.875,
+        "cerCapped": 0.875,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-30",
+        "ref": "遥望青云路",
+        "hyp": "我怕你 我怕你",
+        "cer": 1.4,
+        "cerCapped": 1.4,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-31",
+        "ref": "未别先问归",
+        "hyp": "你明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明天看過你 明",
+        "cer": 25.6,
+        "cerCapped": 4.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "jingchai-ji-32",
+        "ref": "待字闯中心气高",
+        "hyp": "對 祝你一個人心願意擺擺",
+        "cer": 1.5714285714285714,
+        "cerCapped": 1.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-33",
+        "ref": "偏爱琴棋昇书画",
+        "hyp": "这一层的名字是吧",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-34",
+        "ref": "更羨金榜独占鳌",
+        "hyp": "你也進房 多久了",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-35",
+        "ref": "今日里佳人欲将才子掐",
+        "hyp": "小姐,小姐,小姐,小姐,小姐",
+        "cer": 1.4,
+        "cerCapped": 1.4,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-36",
+        "ref": "状元公你双喜愮门多荣耀",
+        "hyp": "三人共你三十年共人共人共",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-37",
+        "ref": "忆往昔家贫必洗度时光",
+        "hyp": "往事家裡無心痛",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-38",
+        "ref": "钱氏女不择门墙自远郞",
+        "hyp": "你多生命 多生命 多生命",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-39",
+        "ref": "一只木荆钗 为聘结城双",
+        "hyp": "保情太太,我也平靜於在一起",
+        "cer": 1.1818181818181819,
+        "cerCapped": 1.1818181818181819,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-4",
+        "ref": "心有叮咛千万句",
+        "hyp": "誰要的路 看馬上",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-5",
+        "ref": "话到嘴边却无声",
+        "hyp": "好 嘴嘴 嘴啊 嘴嘴",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-6",
+        "ref": "虽无声 早知情",
+        "hyp": "在路上 早就起",
+        "cer": 0.7142857142857143,
+        "cerCapped": 0.7142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-7",
+        "ref": "你待我情深义长永铭心",
+        "hyp": "你被露天生一岩有落",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-8",
+        "ref": "想当初你慧眼青睐读书郎",
+        "hyp": "甜蕩醋你為煙清蠟 都熟冷",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-9",
+        "ref": "全不顾继母拦阻自拝人",
+        "hyp": "今不僱 今無辣族 此作阿嬤",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "small": {
+    "model": "openai/whisper-small",
+    "n": 39,
+    "meanCer": 1.5048735452581603,
+    "meanCerCapped": 1.127584167968783,
+    "meanCerClipped": 0.967275032659648,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "jingchai-ji-1",
+        "ref": "留连忘返哪",
+        "hyp": "流烈忘法",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-10",
+        "ref": "我家徒四壁无长物",
+        "hyp": "五千度是比五常粉",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-11",
+        "ref": "唯有那木头荆钗作礼聘",
+        "hyp": "子余那莫德晶他做我离一平",
+        "cer": 1.1,
+        "cerCapped": 1.1,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-12",
+        "ref": "玉 莲 啊",
+        "hyp": "你會不會",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-13",
+        "ref": "今朝十朋赴试去",
+        "hyp": "今早三逢 否則去呀",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-14",
+        "ref": "満 腹 经 纶 颇 自 信",
+        "hyp": "莫否精靈 何思那思",
+        "cer": 0.9230769230769231,
+        "cerCapped": 0.9230769230769231,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-15",
+        "ref": "蟾宫折桂报捷时",
+        "hyp": "在同色的包裹",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-16",
+        "ref": "先谢贤妻知遇恩",
+        "hyp": "你念叽头",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-17",
+        "ref": "相么临别诉衷情",
+        "hyp": "兩種靈體 所謂紅情",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-18",
+        "ref": "我学是欢喜学担心",
+        "hyp": "我不好意思 歡喜 放大喉嚨",
+        "cer": 1.375,
+        "cerCapped": 1.375,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-19",
+        "ref": "喜的是",
+        "hyp": "C D C",
+        "cer": 1.6666666666666667,
+        "cerCapped": 1.6666666666666667,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-2",
+        "ref": "江边送君上帝京",
+        "hyp": "天松君 上地景",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-20",
+        "ref": "壮志得遂已有时",
+        "hyp": "上次大聲一語",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-21",
+        "ref": "尕枉我慧眼早识人",
+        "hyp": "我愛你",
+        "cer": 0.875,
+        "cerCapped": 0.875,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-22",
+        "ref": "愁 的 是",
+        "hyp": "對",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-23",
+        "ref": "荆辣横生仕途险",
+        "hyp": "请起王三恩自多谢",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-24",
+        "ref": "风波难测官海深",
+        "hyp": "風光彈著 外黑色",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-25",
+        "ref": "江畔今弾兮飞曲",
+        "hyp": "将关青苔奋斃缺",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-26",
+        "ref": "未 知 晓",
+        "hyp": "你自己啊",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-27",
+        "ref": "何时重唱比翼吟",
+        "hyp": "我再碰它 只你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-28",
+        "ref": "心随轻舟去",
+        "hyp": "多謝多謝",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-29",
+        "ref": "情伴荆钗在",
+        "hyp": "日本精彩天",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-3",
+        "ref": "笑脸强 裝泪眼盈",
+        "hyp": "天長長 雷",
+        "cer": 0.875,
+        "cerCapped": 0.875,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-30",
+        "ref": "遥望青云路",
+        "hyp": "我忘記",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-31",
+        "ref": "未别先问归",
+        "hyp": "你別嫌疼我了",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-32",
+        "ref": "待字闯中心气高",
+        "hyp": "大自貴真心情依家",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-33",
+        "ref": "偏爱琴棋昇书画",
+        "hyp": "爹 請 請 平 時 華",
+        "cer": 1.5714285714285714,
+        "cerCapped": 1.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-34",
+        "ref": "更羨金榜独占鳌",
+        "hyp": "等一句放鬆的兒子",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-35",
+        "ref": "今日里佳人欲将才子掐",
+        "hyp": "你真是有情人之所",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-36",
+        "ref": "状元公你双喜愮门多荣耀",
+        "hyp": "三樣共二三次靈能 都用浪流",
+        "cer": 1.1818181818181819,
+        "cerCapped": 1.1818181818181819,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-37",
+        "ref": "忆往昔家贫必洗度时光",
+        "hyp": "希望是嘉宾日系不曾過",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-38",
+        "ref": "钱氏女不择门墙自远郞",
+        "hyp": "你日日不大門將 可惜了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-39",
+        "ref": "一只木荆钗 为聘结城双",
+        "hyp": "這麼精彩 為品氣正所",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-4",
+        "ref": "心有叮咛千万句",
+        "hyp": "心有给你 天盘剧",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-5",
+        "ref": "话到嘴边却无声",
+        "hyp": "啊 最貼 恰 無 三 二",
+        "cer": 1.7142857142857142,
+        "cerCapped": 1.7142857142857142,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-6",
+        "ref": "虽无声 早知情",
+        "hyp": "生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生生",
+        "cer": 18.285714285714285,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "jingchai-ji-7",
+        "ref": "你待我情深义长永铭心",
+        "hyp": "你でも人生意大有名字",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-8",
+        "ref": "想当初你慧眼青睐读书郎",
+        "hyp": "想當祝你為年青來多送浪",
+        "cer": 0.7272727272727273,
+        "cerCapped": 0.7272727272727273,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-9",
+        "ref": "全不顾继母拦阻自拝人",
+        "hyp": "千波古 千波蘭蘇 四沙阿山",
+        "cer": 1.3,
+        "cerCapped": 1.3,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "adapted": {
+    "model": "data/corpus/asr/runs/whisper-small-lora-v12",
+    "n": 39,
+    "meanCer": 0.8340798090798092,
+    "meanCerCapped": 0.8340798090798092,
+    "meanCerClipped": 0.8263875013875016,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "jingchai-ji-1",
+        "ref": "留连忘返哪",
+        "hyp": "留留王范哪",
+        "cer": 0.6,
+        "cerCapped": 0.6,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-10",
+        "ref": "我家徒四壁无长物",
+        "hyp": "我家都是比付长辈",
+        "cer": 0.625,
+        "cerCapped": 0.625,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-11",
+        "ref": "唯有那木头荆钗作礼聘",
+        "hyp": "你与那莫德金茶做我离平",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-12",
+        "ref": "玉 莲 啊",
+        "hyp": "有灵啊",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-13",
+        "ref": "今朝十朋赴试去",
+        "hyp": "今朝三孟夫人去",
+        "cer": 0.5714285714285714,
+        "cerCapped": 0.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-14",
+        "ref": "満 腹 经 纶 颇 自 信",
+        "hyp": "莫否尽来一颗思义心",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-15",
+        "ref": "蟾宫折桂报捷时",
+        "hyp": "三风之阔报其词",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-16",
+        "ref": "先谢贤妻知遇恩",
+        "hyp": "今夜年纪不云",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-17",
+        "ref": "相么临别诉衷情",
+        "hyp": "向宗明替祖宗红情",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-18",
+        "ref": "我学是欢喜学担心",
+        "hyp": "我再是欢喜 算大压心",
+        "cer": 0.625,
+        "cerCapped": 0.625,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-19",
+        "ref": "喜的是",
+        "hyp": "喜地是",
+        "cer": 0.3333333333333333,
+        "cerCapped": 0.3333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-2",
+        "ref": "江边送君上帝京",
+        "hyp": "天中君上帝京",
+        "cer": 0.42857142857142855,
+        "cerCapped": 0.42857142857142855,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-20",
+        "ref": "壮志得遂已有时",
+        "hyp": "上次到这一日",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-21",
+        "ref": "尕枉我慧眼早识人",
+        "hyp": "不枉我为人道声声",
+        "cer": 0.75,
+        "cerCapped": 0.75,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-22",
+        "ref": "愁 的 是",
+        "hyp": "才的事",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-23",
+        "ref": "荆辣横生仕途险",
+        "hyp": "惊启王生恩知多谢",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-24",
+        "ref": "风波难测官海深",
+        "hyp": "风波难出外黑灯",
+        "cer": 0.5714285714285714,
+        "cerCapped": 0.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-25",
+        "ref": "江畔今弾兮飞曲",
+        "hyp": "将关青台奉陪全",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-26",
+        "ref": "未 知 晓",
+        "hyp": "你知晓",
+        "cer": 0.6,
+        "cerCapped": 0.6,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-27",
+        "ref": "何时重唱比翼吟",
+        "hyp": "何再同堂 今日",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-28",
+        "ref": "心随轻舟去",
+        "hyp": "君再君再去",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-29",
+        "ref": "情伴荆钗在",
+        "hyp": "你关心才见",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-3",
+        "ref": "笑脸强 裝泪眼盈",
+        "hyp": "你却将脏泪",
+        "cer": 0.875,
+        "cerCapped": 0.875,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-30",
+        "ref": "遥望青云路",
+        "hyp": "若梦情",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-31",
+        "ref": "未别先问归",
+        "hyp": "一片仙丹过来",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-32",
+        "ref": "待字闯中心气高",
+        "hyp": "这日归日清清高",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-33",
+        "ref": "偏爱琴棋昇书画",
+        "hyp": "借亲戚平师王",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-34",
+        "ref": "更羨金榜独占鳌",
+        "hyp": "等也请放出尊娅",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-35",
+        "ref": "今日里佳人欲将才子掐",
+        "hyp": "雄生的驾人又驾在自上",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-36",
+        "ref": "状元公你双喜愮门多荣耀",
+        "hyp": "张远公你三十年人都拥有",
+        "cer": 0.8181818181818182,
+        "cerCapped": 0.8181818181818182,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-37",
+        "ref": "忆往昔家贫必洗度时光",
+        "hyp": "望西家庭日曦不散光",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-38",
+        "ref": "钱氏女不择门墙自远郞",
+        "hyp": "今日不大门将何谢了",
+        "cer": 0.8,
+        "cerCapped": 0.8,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-39",
+        "ref": "一只木荆钗 为聘结城双",
+        "hyp": "这么精彩为平皆人杀",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-4",
+        "ref": "心有叮咛千万句",
+        "hyp": "心有低你天半君",
+        "cer": 0.7142857142857143,
+        "cerCapped": 0.7142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-5",
+        "ref": "话到嘴边却无声",
+        "hyp": "我到最低 瞧我身",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-6",
+        "ref": "虽无声 早知情",
+        "hyp": "这路上照这心",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-7",
+        "ref": "你待我情深义长永铭心",
+        "hyp": "你的我平身一道永远",
+        "cer": 0.7,
+        "cerCapped": 0.7,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-8",
+        "ref": "想当初你慧眼青睐读书郎",
+        "hyp": "想当主你为眼睛来多说了",
+        "cer": 0.6363636363636364,
+        "cerCapped": 0.6363636363636364,
+        "hypTruncated": false
+      },
+      {
+        "id": "jingchai-ji-9",
+        "ref": "全不顾继母拦阻自拝人",
+        "hyp": "千波古 寂寞难处思杂生",
+        "cer": 1.1,
+        "cerCapped": 1.1,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "deltaCerSmallMinusTiny": -0.6558324154478008,
+  "deltaCerAdaptedMinusSmall": -0.6707937361783511,
+  "note": "deltaCerSmallMinusTiny: capacity effect (small − tiny). deltaCerAdaptedMinusSmall: adaptation effect (LoRA − plain small); this is the size-matched claim. Negative deltas mean lower error."
+}

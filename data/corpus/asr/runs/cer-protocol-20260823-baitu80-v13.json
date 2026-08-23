@@ -1,0 +1,1966 @@
+{
+  "schema": "cer-v2",
+  "nTest": 80,
+  "device": "mps",
+  "split": "whole-piece holdout test",
+  "decode": {
+    "max_new_tokens": 128,
+    "cap_ratio": 2.5
+  },
+  "tiny": {
+    "model": "openai/whisper-tiny",
+    "n": 80,
+    "meanCer": 3.54671378968254,
+    "meanCerCapped": 1.5544020562770562,
+    "meanCerClipped": 0.9887540584415586,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "baitu-ji-100",
+        "ref": "奉懿旨承父命快马追风",
+        "hyp": "寄寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄 寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄寄",
+        "cer": 7.3,
+        "cerCapped": 3.2,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-101",
+        "ref": "旌旗奋战马嘶雪满雕弓",
+        "hyp": "你聽太太 走到我身上 跳到我",
+        "cer": 1.4,
+        "cerCapped": 1.4,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-102",
+        "ref": "我父帅刘知远接旨颁令",
+        "hyp": "你不错",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-106",
+        "ref": "日担水夜挨磨一十六年",
+        "hyp": "太好了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-110",
+        "ref": "十六年，玉桂树老叶飘零一",
+        "hyp": "我以為你數到一千萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬萬",
+        "cer": 10.666666666666666,
+        "cerCapped": 3.1666666666666665,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-117",
+        "ref": "好似那，娇儿回到娘身边",
+        "hyp": "我会看着你 为你 为你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-126",
+        "ref": "为什么，心发颤热泪盈眶",
+        "hyp": "你不想我 死你 怕我 死你 你不想我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我 怕我",
+        "cer": 11.727272727272727,
+        "cerCapped": 3.1818181818181817,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-128",
+        "ref": "请问妇",
+        "hyp": "小姐",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-13",
+        "ref": "欲报刘郎莫中计 心急如焚步似飞",
+        "hyp": "好",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-131",
+        "ref": "这幼免离娘怀遍体鳞伤",
+        "hyp": "好",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-134",
+        "ref": "就像我那失散的爱子咬脐郎",
+        "hyp": "你明天還不忘了什麼人呢?你還不忘了什麼人呢?",
+        "cer": 1.8333333333333333,
+        "cerCapped": 1.8333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-150",
+        "ref": "思念我那失散的孩儿咬脐郎",
+        "hyp": "我去找你 我要找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她去找她",
+        "cer": 10.666666666666666,
+        "cerCapped": 3.0833333333333335,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-155",
+        "ref": "咬脐郎啊咬脐郎，你如今流落在何方？",
+        "hyp": "謝謝",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-159",
+        "ref": "从不知民间苦令人惨伤",
+        "hyp": "我",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-169",
+        "ref": "十六年忘却生身母",
+        "hyp": "我",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-17",
+        "ref": "为知远强忍泪泪落胸膛",
+        "hyp": "同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻 同一隻",
+        "cer": 12.7,
+        "cerCapped": 3.3,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-170",
+        "ref": "十六年不传家书到村庄",
+        "hyp": "你不懂我",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-172",
+        "ref": "劝妇人，休悲伤，我狩猎归去细查访",
+        "hyp": "超的 能不能打到心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心里的心",
+        "cer": 8.0625,
+        "cerCapped": 3.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-176",
+        "ref": "松筠带雪研，寒侵指尖",
+        "hyp": "我會 卻會 卻會 卻會 黏著 往前 輕鬆 流的口氣",
+        "cer": 2.5,
+        "cerCapped": 2.5,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-191",
+        "ref": "十六年后容颜变，八千里外客心安",
+        "hyp": "我會不會被你哭",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-197",
+        "ref": "书去一月如一秋，书去三月泪已千",
+        "hyp": "你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-21",
+        "ref": "嫁一个腰缠万贯如意郎",
+        "hyp": "祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭祭",
+        "cer": 6.4,
+        "cerCapped": 3.3,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-214",
+        "ref": "玉兔信物挂胸前，襁褓血写咬脐郎",
+        "hyp": "我都不想你 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否去到我 能否",
+        "cer": 8.533333333333333,
+        "cerCapped": 3.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-220",
+        "ref": "宽慰我，半世坎坷心头伤",
+        "hyp": "心的心",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-232",
+        "ref": "送玉兔，归还信物了旧情",
+        "hyp": "你不敢死我了",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-233",
+        "ref": "时过境迁十六年，想不到",
+        "hyp": "祝福祝你 祝你 祝你 祝你",
+        "cer": 1.1818181818181819,
+        "cerCapped": 1.1818181818181819,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-241",
+        "ref": "儿为你牵马坠蹬回家来",
+        "hyp": "好運一切馬上也不為人之外",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-244",
+        "ref": "爹爹呀，你自幼教我识礼仪",
+        "hyp": "你 你 你 想要你 你 想要你",
+        "cer": 1.1666666666666667,
+        "cerCapped": 1.1666666666666667,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-25",
+        "ref": "我不是 朝秦暮楚的青楼女",
+        "hyp": "我把所有的小姐和我一起累",
+        "cer": 0.9166666666666666,
+        "cerCapped": 0.9166666666666666,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-254",
+        "ref": "我何尝不哀伤泪湿战袍",
+        "hyp": "你不要走 走 走",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-259",
+        "ref": "可怜她，未做夫人先做娘",
+        "hyp": "是",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-260",
+        "ref": "日夜贴你在怀抱",
+        "hyp": "我好想跟你跟你一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起一起",
+        "cer": 36.0,
+        "cerCapped": 3.4285714285714284,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-27",
+        "ref": "成了杀人犯",
+        "hyp": "我叫做小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小",
+        "cer": 25.6,
+        "cerCapped": 4.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-270",
+        "ref": "善恶不分、是非颠倒岂能饶",
+        "hyp": "我看你一天都晴",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-271",
+        "ref": "我气上心头将你打",
+        "hyp": "我只能去你 只能去你",
+        "cer": 1.125,
+        "cerCapped": 1.125,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-277",
+        "ref": "孩儿不知本无辜",
+        "hyp": "好",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-280",
+        "ref": "遥想咬脐生身母",
+        "hyp": "你也忘了你 也忘了你 也忘了你",
+        "cer": 2.142857142857143,
+        "cerCapped": 2.142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-284",
+        "ref": "十六年盼夫苦等待",
+        "hyp": "生破了你,不愿意,不愿意,不愿意",
+        "cer": 2.0,
+        "cerCapped": 2.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-289",
+        "ref": "原来坚贞属蛾眉",
+        "hyp": "你不敢去",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-290",
+        "ref": "将心比心双泪垂",
+        "hyp": "太好了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-296",
+        "ref": "承佑儿啊…",
+        "hyp": "我以為成為海",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-301",
+        "ref": "呈上凤冠并霞帔，妾愿侍奉伴妆台",
+        "hyp": "你不敢打我",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-303",
+        "ref": "论什么府中名和位",
+        "hyp": "你明明",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-316",
+        "ref": "雪夜快马接妻来",
+        "hyp": "寂寞寂寞",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-323",
+        "ref": "君合难言心有愧",
+        "hyp": "去",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-327",
+        "ref": "你苦尽甘来",
+        "hyp": "你不知我能夠看你我能夠看你我能夠看你我能夠看你我能夠看你我能夠看你",
+        "cer": 6.4,
+        "cerCapped": 3.8,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-329",
+        "ref": "十六年 三尺磨坊可作证",
+        "hyp": "謝謝",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-334",
+        "ref": "磨灭了多少晨与昏",
+        "hyp": "我以為我能夠看",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-335",
+        "ref": "十六年 风雪井台可做作证",
+        "hyp": "我",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-340",
+        "ref": "闯过了多少死与生郵",
+        "hyp": "我 想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想",
+        "cer": 14.222222222222221,
+        "cerCapped": 3.3333333333333335,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-341",
+        "ref": "曾记得十六年前离别言",
+        "hyp": "在山里 去海的山 山的海的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山的山",
+        "cer": 12.8,
+        "cerCapped": 3.3,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-344",
+        "ref": "磨坊苦等叹伶仃",
+        "hyp": "我看不見太太",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-35",
+        "ref": "雷声隆隆震我心",
+        "hyp": "你自然不可思念",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-351",
+        "ref": "你成了身在咫尺 心在天涯的陌路人",
+        "hyp": "孫子 孫子 靠近 亂 亂 亂 亂 孫子 亂",
+        "cer": 1.25,
+        "cerCapped": 1.25,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-354",
+        "ref": "三娘啊",
+        "hyp": "什麼人都沒有",
+        "cer": 2.0,
+        "cerCapped": 2.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-359",
+        "ref": "三娘啊 不念为夫念孩儿",
+        "hyp": "你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-364",
+        "ref": "请三娘凤冠霞帔做夫人",
+        "hyp": "你能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能夠看我 妳能",
+        "cer": 12.8,
+        "cerCapped": 3.3,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-366",
+        "ref": "怎消我十六年离愁十六年恨",
+        "hyp": "信息啊 殺到人的依然殺到人的依然",
+        "cer": 1.3333333333333333,
+        "cerCapped": 1.3333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-373",
+        "ref": "我的好娘亲 母亲",
+        "hyp": "我已 和你勇氣",
+        "cer": 0.875,
+        "cerCapped": 0.875,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-374",
+        "ref": "那一天井台见娘未认娘",
+        "hyp": "你不想我 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万 千万",
+        "cer": 12.7,
+        "cerCapped": 3.3,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-39",
+        "ref": "人已去，情已绝，话似冰，心如铁",
+        "hyp": "是誰誰誰我和你心脫",
+        "cer": 0.9333333333333333,
+        "cerCapped": 0.9333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-390",
+        "ref": "儿只有撞死在门前血晒地",
+        "hyp": "你不想想",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-395",
+        "ref": "热泪早已湿透衣",
+        "hyp": "你也都不回憶了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-40",
+        "ref": "看娇儿，哭声咽，气难接",
+        "hyp": "看見我,看見我,看見你,看見我",
+        "cer": 1.2727272727272727,
+        "cerCapped": 1.2727272727272727,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-400",
+        "ref": "日思夜想的我儿咬脐",
+        "hyp": "我做清楚了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-403",
+        "ref": "日思夜想的我儿咬脐",
+        "hyp": "好",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-42",
+        "ref": "求天哭地都无用响",
+        "hyp": "你知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知不知",
+        "cer": 16.0,
+        "cerCapped": 3.5,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-48",
+        "ref": "千里送子我承当",
+        "hyp": "我看你",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-5",
+        "ref": "好三娘不嫌贫穷钟我情",
+        "hyp": "好好生氣啊",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-50",
+        "ref": "山高不能把路挡",
+        "hyp": "好",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-51",
+        "ref": "小姐啊，苦笋总有出头日",
+        "hyp": "是吧",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-53",
+        "ref": "待等秋来桂子黄",
+        "hyp": "你都很久了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-61",
+        "ref": "那天鱼塘溺子",
+        "hyp": "我把你送給你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-64",
+        "ref": "被我一言回报",
+        "hyp": "我以為你會不會",
+        "cer": 1.1666666666666667,
+        "cerCapped": 1.1666666666666667,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-7",
+        "ref": "谁知道岳丈一死兄嫂欺",
+        "hyp": "水土荡烈 水水水水水",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-75",
+        "ref": "有一个，珠宝客商赵官人",
+        "hyp": "你以為我什麼時候",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-77",
+        "ref": "你看那，一柄翡翠玉如意",
+        "hyp": "我還沒看過他",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-8",
+        "ref": "逼我半年守花园",
+        "hyp": "今後的外星是否有趣",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-84",
+        "ref": "恭喜妹妹时运转，阿哥敬你酒一樽",
+        "hyp": "你不要忘了我",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-90",
+        "ref": "玉兔传情月照星",
+        "hyp": "你又不忘了你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "small": {
+    "model": "openai/whisper-small",
+    "n": 80,
+    "meanCer": 3.344949680629829,
+    "meanCerCapped": 1.6299309667048636,
+    "meanCerClipped": 0.988294061942959,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "baitu-ji-100",
+        "ref": "奉懿旨承父命快马追风",
+        "hyp": "我平常都不怕快快 最終會有你",
+        "cer": 1.3,
+        "cerCapped": 1.3,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-101",
+        "ref": "旌旗奋战马嘶雪满雕弓",
+        "hyp": "今今的 轉頭發絲 斜頭跳舞",
+        "cer": 1.3,
+        "cerCapped": 1.3,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-102",
+        "ref": "我父帅刘知远接旨颁令",
+        "hyp": "我愛你",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-106",
+        "ref": "日担水夜挨磨一十六年",
+        "hyp": "拜拜",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-110",
+        "ref": "十六年，玉桂树老叶飘零一",
+        "hyp": "我以為是你一切都沒有",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-117",
+        "ref": "好似那，娇儿回到娘身边",
+        "hyp": "讓我思考 想不到 秒殺你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-126",
+        "ref": "为什么，心发颤热泪盈眶",
+        "hyp": "只能在你身邊 讓我能夠看到你",
+        "cer": 1.2727272727272727,
+        "cerCapped": 1.2727272727272727,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-128",
+        "ref": "请问妇",
+        "hyp": "是情何都非几次",
+        "cer": 2.3333333333333335,
+        "cerCapped": 2.3333333333333335,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-13",
+        "ref": "欲报刘郎莫中计 心急如焚步似飞",
+        "hyp": "我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-131",
+        "ref": "这幼免离娘怀遍体鳞伤",
+        "hyp": "所以說",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-134",
+        "ref": "就像我那失散的爱子咬脐郎",
+        "hyp": "我只想要你愛我",
+        "cer": 0.9166666666666666,
+        "cerCapped": 0.9166666666666666,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-150",
+        "ref": "思念我那失散的孩儿咬脐郎",
+        "hyp": "我現在是給我們所有的妖精啦",
+        "cer": 1.0833333333333333,
+        "cerCapped": 1.0833333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-155",
+        "ref": "咬脐郎啊咬脐郎，你如今流落在何方？",
+        "hyp": "天啊",
+        "cer": 0.9411764705882353,
+        "cerCapped": 0.9411764705882353,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-159",
+        "ref": "从不知民间苦令人惨伤",
+        "hyp": "好",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-169",
+        "ref": "十六年忘却生身母",
+        "hyp": "嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨",
+        "cer": 8.0,
+        "cerCapped": 3.5,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-17",
+        "ref": "为知远强忍泪泪落胸膛",
+        "hyp": "所以你自有狀態的情揚聲 多配多心目",
+        "cer": 1.7,
+        "cerCapped": 1.7,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-170",
+        "ref": "十六年不传家书到村庄",
+        "hyp": "我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-172",
+        "ref": "劝妇人，休悲伤，我狩猎归去细查访",
+        "hyp": "初音音的歌曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首歌詞曲是一首",
+        "cer": 6.9375,
+        "cerCapped": 3.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-176",
+        "ref": "松筠带雪研，寒侵指尖",
+        "hyp": "所以 心裡的 季節 完全 從不見",
+        "cer": 1.6,
+        "cerCapped": 1.6,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-191",
+        "ref": "十六年后容颜变，八千里外客心安",
+        "hyp": "我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-197",
+        "ref": "书去一月如一秋，书去三月泪已千",
+        "hyp": "我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-21",
+        "ref": "嫁一个腰缠万贯如意郎",
+        "hyp": "吃一口就太餘了 吃一口",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-214",
+        "ref": "玉兔信物挂胸前，襁褓血写咬脐郎",
+        "hyp": "你懂我心啊 愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我心心也會有你愛我",
+        "cer": 8.533333333333333,
+        "cerCapped": 3.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-220",
+        "ref": "宽慰我，半世坎坷心头伤",
+        "hyp": "那你會多出聲 心悲傷",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-232",
+        "ref": "送玉兔，归还信物了旧情",
+        "hyp": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "cer": 11.636363636363637,
+        "cerCapped": 3.1818181818181817,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-233",
+        "ref": "时过境迁十六年，想不到",
+        "hyp": "思不及解 所落的 需要 所 所",
+        "cer": 1.3636363636363635,
+        "cerCapped": 1.3636363636363635,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-241",
+        "ref": "儿为你牵马坠蹬回家来",
+        "hyp": "要好為你一切都會很愛情",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-244",
+        "ref": "爹爹呀，你自幼教我识礼仪",
+        "hyp": "是滴滴的海水 水中 酸 淋",
+        "cer": 1.0833333333333333,
+        "cerCapped": 1.0833333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-25",
+        "ref": "我不是 朝秦暮楚的青楼女",
+        "hyp": "無法似的 早晴過附地情侶",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-254",
+        "ref": "我何尝不哀伤泪湿战袍",
+        "hyp": "我未来的手都没伤了",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-259",
+        "ref": "可怜她，未做夫人先做娘",
+        "hyp": "心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛的風啊 心痛",
+        "cer": 11.636363636363637,
+        "cerCapped": 3.1818181818181817,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-260",
+        "ref": "日夜贴你在怀抱",
+        "hyp": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "cer": 18.285714285714285,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-27",
+        "ref": "成了杀人犯",
+        "hyp": "就這樣 要上個班",
+        "cer": 1.6,
+        "cerCapped": 1.6,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-270",
+        "ref": "善恶不分、是非颠倒岂能饶",
+        "hyp": "大嫂的小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小小",
+        "cer": 10.583333333333334,
+        "cerCapped": 3.1666666666666665,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-271",
+        "ref": "我气上心头将你打",
+        "hyp": "我只要你",
+        "cer": 0.75,
+        "cerCapped": 0.75,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-277",
+        "ref": "孩儿不知本无辜",
+        "hyp": "啊啊啊啊",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-280",
+        "ref": "遥想咬脐生身母",
+        "hyp": "你把我寫好一條記憶 寫完 寫完",
+        "cer": 2.142857142857143,
+        "cerCapped": 2.142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-284",
+        "ref": "十六年盼夫苦等待",
+        "hyp": "森林的海空 空的海",
+        "cer": 1.125,
+        "cerCapped": 1.125,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-289",
+        "ref": "原来坚贞属蛾眉",
+        "hyp": "有愛的一切 送給我",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-290",
+        "ref": "将心比心双泪垂",
+        "hyp": "I'm so crazy crazy crazy crazy",
+        "cer": 4.285714285714286,
+        "cerCapped": 3.4285714285714284,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-296",
+        "ref": "承佑儿啊…",
+        "hyp": "終於成為女孩",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-301",
+        "ref": "呈上凤冠并霞帔，妾愿侍奉伴妆台",
+        "hyp": "我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-303",
+        "ref": "论什么府中名和位",
+        "hyp": "你會認識我多久 因為我愛你",
+        "cer": 1.625,
+        "cerCapped": 1.625,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-316",
+        "ref": "雪夜快马接妻来",
+        "hyp": "天花呀 天气呀",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-323",
+        "ref": "君合难言心有愧",
+        "hyp": "我愛你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-327",
+        "ref": "你苦尽甘来",
+        "hyp": "是因為我愛你 從今以來我愛你哭了一輪 成了我愛你",
+        "cer": 4.6,
+        "cerCapped": 3.8,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-329",
+        "ref": "十六年 三尺磨坊可作证",
+        "hyp": "謝謝",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-334",
+        "ref": "磨灭了多少晨与昏",
+        "hyp": "我心中的一切都在你身上",
+        "cer": 1.375,
+        "cerCapped": 1.375,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-335",
+        "ref": "十六年 风雪井台可做作证",
+        "hyp": "那你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-340",
+        "ref": "闯过了多少死与生郵",
+        "hyp": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "cer": 14.222222222222221,
+        "cerCapped": 3.3333333333333335,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-341",
+        "ref": "曾记得十六年前离别言",
+        "hyp": "天上的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命的一切 生命",
+        "cer": 12.8,
+        "cerCapped": 3.3,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-344",
+        "ref": "磨坊苦等叹伶仃",
+        "hyp": "我擦舞的 彈彈",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-35",
+        "ref": "雷声隆隆震我心",
+        "hyp": "Lady's time of all time all of the city",
+        "cer": 5.571428571428571,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-351",
+        "ref": "你成了身在咫尺 心在天涯的陌路人",
+        "hyp": "生存自殺 心甲心悲憐我愛你生生",
+        "cer": 0.9375,
+        "cerCapped": 0.9375,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-354",
+        "ref": "三娘啊",
+        "hyp": "三百年了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-359",
+        "ref": "三娘啊 不念为夫念孩儿",
+        "hyp": "一 三 四 五 六 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七 八 六 七",
+        "cer": 11.363636363636363,
+        "cerCapped": 3.0,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-364",
+        "ref": "请三娘凤冠霞帔做夫人",
+        "hyp": "天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊 天啊",
+        "cer": 12.8,
+        "cerCapped": 3.2,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-366",
+        "ref": "怎消我十六年离愁十六年恨",
+        "hyp": "生息永无 生生的理解 生生的理解",
+        "cer": 1.3333333333333333,
+        "cerCapped": 1.3333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-373",
+        "ref": "我的好娘亲 母亲",
+        "hyp": "我已 紅有 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青 上 紅 青",
+        "cer": 15.625,
+        "cerCapped": 3.125,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-374",
+        "ref": "那一天井台见娘未认娘",
+        "hyp": "我一切都在你身上",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-39",
+        "ref": "人已去，情已绝，话似冰，心如铁",
+        "hyp": "三一去 心一去 人一去 人一去 人一去 人一去 人一去 人一去 人一去 心一去 人一去 心一去 人一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去 心一去",
+        "cer": 8.266666666666667,
+        "cerCapped": 2.8,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-390",
+        "ref": "儿只有撞死在门前血晒地",
+        "hyp": "好可愛喔",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-395",
+        "ref": "热泪早已湿透衣",
+        "hyp": "你會不會想 想愛你",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-40",
+        "ref": "看娇儿，哭声咽，气难接",
+        "hyp": "快跳吧 高飛 心安靜",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-400",
+        "ref": "日思夜想的我儿咬脐",
+        "hyp": "不說今生則死一日相遇無害",
+        "cer": 1.3333333333333333,
+        "cerCapped": 1.3333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-403",
+        "ref": "日思夜想的我儿咬脐",
+        "hyp": "啊",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-42",
+        "ref": "求天哭地都无用响",
+        "hyp": "不去前途去所有",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-48",
+        "ref": "千里送子我承当",
+        "hyp": "唱的比我一首歌",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-5",
+        "ref": "好三娘不嫌贫穷钟我情",
+        "hyp": "我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會在你身邊的我會",
+        "cer": 12.7,
+        "cerCapped": 3.2,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-50",
+        "ref": "山高不能把路挡",
+        "hyp": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+        "cer": 18.285714285714285,
+        "cerCapped": 3.5714285714285716,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-51",
+        "ref": "小姐啊，苦笋总有出头日",
+        "hyp": "需要你啊 做你的愛 做你的愛 做你的愛",
+        "cer": 1.6363636363636365,
+        "cerCapped": 1.6363636363636365,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-53",
+        "ref": "待等秋来桂子黄",
+        "hyp": "你很喜歡的我",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-61",
+        "ref": "那天鱼塘溺子",
+        "hyp": "好酷喔",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-64",
+        "ref": "被我一言回报",
+        "hyp": "不如你贏",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-7",
+        "ref": "谁知道岳丈一死兄嫂欺",
+        "hyp": "隨自逃也逃亡 雙方去",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-75",
+        "ref": "有一个，珠宝客商赵官人",
+        "hyp": "又一味把雞肉燒燙了我的",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-77",
+        "ref": "你看那，一柄翡翠玉如意",
+        "hyp": "欸 以後我還拿著 以後是天國星",
+        "cer": 1.3636363636363635,
+        "cerCapped": 1.3636363636363635,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-8",
+        "ref": "逼我半年守花园",
+        "hyp": "飛舞過夜 順暴躍",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-84",
+        "ref": "恭喜妹妹时运转，阿哥敬你酒一樽",
+        "hyp": "不知不覺的暴露之力不知憂恨的暴露之力",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-90",
+        "ref": "玉兔传情月照星",
+        "hyp": "有空不足在心裡 也做好心",
+        "cer": 1.7142857142857142,
+        "cerCapped": 1.7142857142857142,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "adapted": {
+    "model": "data/corpus/asr/runs/whisper-small-lora-v13",
+    "n": 80,
+    "meanCer": 1.0428350468975471,
+    "meanCerCapped": 1.0157517135642136,
+    "meanCerClipped": 0.951962031024531,
+    "exactMatchRate": 0.0,
+    "capNote": "meanCer is raw jiwer CER (can exceed 1.0 with insertions). meanCerCapped truncates long hyps; meanCerClipped = mean(min(cer,1)). Primary academic claim for adaptation should cite size-matched deltas on the same metric.",
+    "items": [
+      {
+        "id": "baitu-ji-100",
+        "ref": "奉懿旨承父命快马追风",
+        "hyp": "我听诗诗无名快逃 这天无人",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-101",
+        "ref": "旌旗奋战马嘶雪满雕弓",
+        "hyp": "今今从何思绪斜亡",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-102",
+        "ref": "我父帅刘知远接旨颁令",
+        "hyp": "你再次有门见了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-106",
+        "ref": "日担水夜挨磨一十六年",
+        "hyp": "大大",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-110",
+        "ref": "十六年，玉桂树老叶飘零一",
+        "hyp": "我已有为所一切合理",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-117",
+        "ref": "好似那，娇儿回到娘身边",
+        "hyp": "若是小女为高妖生命",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-126",
+        "ref": "为什么，心发颤热泪盈眶",
+        "hyp": "人生情发出一回忆狂",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-128",
+        "ref": "请问妇",
+        "hyp": "去前走",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-13",
+        "ref": "欲报刘郎莫中计 心急如焚步似飞",
+        "hyp": "我对你同情 同情不断不断",
+        "cer": 0.9333333333333333,
+        "cerCapped": 0.9333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-131",
+        "ref": "这幼免离娘怀遍体鳞伤",
+        "hyp": "此人同调",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-134",
+        "ref": "就像我那失散的爱子咬脐郎",
+        "hyp": "去向皇后说是要去看",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-150",
+        "ref": "思念我那失散的孩儿咬脐郎",
+        "hyp": "我今生今无能生生人",
+        "cer": 0.9166666666666666,
+        "cerCapped": 0.9166666666666666,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-155",
+        "ref": "咬脐郎啊咬脐郎，你如今流落在何方？",
+        "hyp": "再后",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-159",
+        "ref": "从不知民间苦令人惨伤",
+        "hyp": "皇上",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-169",
+        "ref": "十六年忘却生身母",
+        "hyp": "若有人受到昂诚",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-17",
+        "ref": "为知远强忍泪泪落胸膛",
+        "hyp": "对你只用转强手夺陪我寻常",
+        "cer": 1.1,
+        "cerCapped": 1.1,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-170",
+        "ref": "十六年不传家书到村庄",
+        "hyp": "你受了你不加",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-172",
+        "ref": "劝妇人，休悲伤，我狩猎归去细查访",
+        "hyp": "却无声声去寻寻寻心",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-176",
+        "ref": "松筠带雪研，寒侵指尖",
+        "hyp": "苏云 若是一切梦情 此不见",
+        "cer": 1.3,
+        "cerCapped": 1.3,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-191",
+        "ref": "十六年后容颜变，八千里外客心安",
+        "hyp": "人生是平坏",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-197",
+        "ref": "书去一月如一秋，书去三月泪已千",
+        "hyp": "你还以为",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-21",
+        "ref": "嫁一个腰缠万贯如意郎",
+        "hyp": "家属有太后之后",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-214",
+        "ref": "玉兔信物挂胸前，襁褓血写咬脐郎",
+        "hyp": "天上有团形大出天将宣仙天天",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-220",
+        "ref": "宽慰我，半世坎坷心头伤",
+        "hyp": "当你过去 心疼伤",
+        "cer": 0.8181818181818182,
+        "cerCapped": 0.8181818181818182,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-232",
+        "ref": "送玉兔，归还信物了旧情",
+        "hyp": "这人说有土有泳池有花",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-233",
+        "ref": "时过境迁十六年，想不到",
+        "hyp": "出不去接受落地人",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-241",
+        "ref": "儿为你牵马坠蹬回家来",
+        "hyp": "要好为你亲妈最愤怒之",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-244",
+        "ref": "爹爹呀，你自幼教我识礼仪",
+        "hyp": "弟弟有好事就说明",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-25",
+        "ref": "我不是 朝秦暮楚的青楼女",
+        "hyp": "不怕是召见我出的轻鸟",
+        "cer": 0.8333333333333334,
+        "cerCapped": 0.8333333333333334,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-254",
+        "ref": "我何尝不哀伤泪湿战袍",
+        "hyp": "若草风雨手银山阔",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-259",
+        "ref": "可怜她，未做夫人先做娘",
+        "hyp": "你昨天到宫中见",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-260",
+        "ref": "日夜贴你在怀抱",
+        "hyp": "若若是一人为主 才敢上",
+        "cer": 1.5714285714285714,
+        "cerCapped": 1.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-27",
+        "ref": "成了杀人犯",
+        "hyp": "就只要三人",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-270",
+        "ref": "善恶不分、是非颠倒岂能饶",
+        "hyp": "到手后 手已结盗",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-271",
+        "ref": "我气上心头将你打",
+        "hyp": "我去当心无疆平",
+        "cer": 0.75,
+        "cerCapped": 0.75,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-277",
+        "ref": "孩儿不知本无辜",
+        "hyp": "小姐",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-280",
+        "ref": "遥想咬脐生身母",
+        "hyp": "年华水河鸟进水河",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-284",
+        "ref": "十六年盼夫苦等待",
+        "hyp": "身我一脸排骨苦得日",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-289",
+        "ref": "原来坚贞属蛾眉",
+        "hyp": "我今后有你亲子说明",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-290",
+        "ref": "将心比心双泪垂",
+        "hyp": "将心地心上",
+        "cer": 0.5714285714285714,
+        "cerCapped": 0.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-296",
+        "ref": "承佑儿啊…",
+        "hyp": "终会成为女孩",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-301",
+        "ref": "呈上凤冠并霞帔，妾愿侍奉伴妆台",
+        "hyp": "你这一朝到中亚美",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-303",
+        "ref": "论什么府中名和位",
+        "hyp": "你却被人生不成",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-316",
+        "ref": "雪夜快马接妻来",
+        "hyp": "天花药接起来",
+        "cer": 0.7142857142857143,
+        "cerCapped": 0.7142857142857143,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-323",
+        "ref": "君合难言心有愧",
+        "hyp": "君后万一心有苦",
+        "cer": 0.5714285714285714,
+        "cerCapped": 0.5714285714285714,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-327",
+        "ref": "你苦尽甘来",
+        "hyp": "你却有自己的爱",
+        "cer": 1.2,
+        "cerCapped": 1.2,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-329",
+        "ref": "十六年 三尺磨坊可作证",
+        "hyp": "小姐",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-334",
+        "ref": "磨灭了多少晨与昏",
+        "hyp": "我一流都不杀",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-335",
+        "ref": "十六年 风雪井台可做作证",
+        "hyp": "是你",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-340",
+        "ref": "闯过了多少死与生郵",
+        "hyp": "孙子你孙子",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-341",
+        "ref": "曾记得十六年前离别言",
+        "hyp": "寻常情感 身无别人",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-344",
+        "ref": "磨坊苦等叹伶仃",
+        "hyp": "如我常不得太在意",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-35",
+        "ref": "雷声隆隆震我心",
+        "hyp": "泪山河 山河水渡",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-351",
+        "ref": "你成了身在咫尺 心在天涯的陌路人",
+        "hyp": "身在四川心甲天飄来",
+        "cer": 0.75,
+        "cerCapped": 0.75,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-354",
+        "ref": "三娘啊",
+        "hyp": "是谁要",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-359",
+        "ref": "三娘啊 不念为夫念孩儿",
+        "hyp": "一手三脚 三脚",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-364",
+        "ref": "请三娘凤冠霞帔做夫人",
+        "hyp": "千里千里有风光天中",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-366",
+        "ref": "怎消我十六年离愁十六年恨",
+        "hyp": "与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与与",
+        "cer": 5.333333333333333,
+        "cerCapped": 3.1666666666666665,
+        "hypTruncated": true
+      },
+      {
+        "id": "baitu-ji-373",
+        "ref": "我的好娘亲 母亲",
+        "hyp": "我的好友情想",
+        "cer": 0.625,
+        "cerCapped": 0.625,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-374",
+        "ref": "那一天井台见娘未认娘",
+        "hyp": "若有天情和情",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-39",
+        "ref": "人已去，情已绝，话似冰，心如铁",
+        "hyp": "身一群心一群人我是病心出",
+        "cer": 0.9333333333333333,
+        "cerCapped": 0.9333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-390",
+        "ref": "儿只有撞死在门前血晒地",
+        "hyp": "红烟 何当其所欺",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-395",
+        "ref": "热泪早已湿透衣",
+        "hyp": "年回年来说 说可情",
+        "cer": 1.2857142857142858,
+        "cerCapped": 1.2857142857142858,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-40",
+        "ref": "看娇儿，哭声咽，气难接",
+        "hyp": "可叫二徒心难解",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-400",
+        "ref": "日思夜想的我儿咬脐",
+        "hyp": "不说今生这是眼相的无害",
+        "cer": 1.2222222222222223,
+        "cerCapped": 1.2222222222222223,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-403",
+        "ref": "日思夜想的我儿咬脐",
+        "hyp": "我心中的心",
+        "cer": 0.8888888888888888,
+        "cerCapped": 0.8888888888888888,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-42",
+        "ref": "求天哭地都无用响",
+        "hyp": "不知前头去所有",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-48",
+        "ref": "千里送子我承当",
+        "hyp": "我去给你送去",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-5",
+        "ref": "好三娘不嫌贫穷钟我情",
+        "hyp": "好生要我一人就中",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-50",
+        "ref": "山高不能把路挡",
+        "hyp": "我心上有何用",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-51",
+        "ref": "小姐啊，苦笋总有出头日",
+        "hyp": "许高清 何从作为",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-53",
+        "ref": "待等秋来桂子黄",
+        "hyp": "天上却有对子皇",
+        "cer": 0.8571428571428571,
+        "cerCapped": 0.8571428571428571,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-61",
+        "ref": "那天鱼塘溺子",
+        "hyp": "我怕天地一肥",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-64",
+        "ref": "被我一言回报",
+        "hyp": "我一目一眼回头",
+        "cer": 0.8333333333333334,
+        "cerCapped": 0.8333333333333334,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-7",
+        "ref": "谁知道岳丈一死兄嫂欺",
+        "hyp": "谁自讨越长 自去双方",
+        "cer": 0.9,
+        "cerCapped": 0.9,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-75",
+        "ref": "有一个，珠宝客商赵官人",
+        "hyp": "又一会儿把鸡包放上",
+        "cer": 0.9090909090909091,
+        "cerCapped": 0.9090909090909091,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-77",
+        "ref": "你看那，一柄翡翠玉如意",
+        "hyp": "一口喝了 又一口吃了",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-8",
+        "ref": "逼我半年守花园",
+        "hyp": "别多管一手寡人",
+        "cer": 1.0,
+        "cerCapped": 1.0,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-84",
+        "ref": "恭喜妹妹时运转，阿哥敬你酒一樽",
+        "hyp": "不知人有情你",
+        "cer": 0.9333333333333333,
+        "cerCapped": 0.9333333333333333,
+        "hypTruncated": false
+      },
+      {
+        "id": "baitu-ji-90",
+        "ref": "玉兔传情月照星",
+        "hyp": "有错误传心 只做心",
+        "cer": 1.1428571428571428,
+        "cerCapped": 1.1428571428571428,
+        "hypTruncated": false
+      }
+    ]
+  },
+  "deltaCerSmallMinusTiny": -0.2017641090527107,
+  "deltaCerAdaptedMinusSmall": -2.302114633732282,
+  "note": "deltaCerSmallMinusTiny: capacity effect (small − tiny). deltaCerAdaptedMinusSmall: adaptation effect (LoRA − plain small); this is the size-matched claim. Negative deltas mean lower error."
+}

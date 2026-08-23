@@ -18,9 +18,12 @@ OUT_DIR = ROOT / "data" / "corpus" / "asr"
 OUT_JSONL = OUT_DIR / "gold-clips.jsonl"
 OUT_SUMMARY = OUT_DIR / "gold-summary.json"
 
+# Whole-piece defaults for *new* exports. jingchai-ji uses per-clip splits in
+# gold-clips.jsonl (early ~5 min test; rest train) — preserved via load_existing().
+# he-wenxiu-suanming + xianglin-sao-xinsuanhua removed 2026-08-23 (bad alignment /
+# lyrics mismatch).
 DEFAULT_TEST_PIECES = {
-    "xianglin-sao-xinsuanhua",
-    "he-wenxiu-suanming",
+    "baitu-ji",
 }
 MAX_DUR_SEC = 30.0
 MIN_DUR_SEC = 0.4

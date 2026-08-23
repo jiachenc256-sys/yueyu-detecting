@@ -1,75 +1,266 @@
 {
-  "generatedAt": "2026-08-14T11:59:20.248885+00:00",
-  "clipCount": 124,
-  "goldOkCount": 124,
-  "pendingReviewCount": 0,
+  "generatedAt": "2026-08-23T08:19:14.837602+00:00",
+  "clipCount": 7836,
+  "goldOkCount": 7809,
+  "pendingReviewCount": 27,
   "durationSec": {
-    "all": 1104.6799999999992,
-    "train": 820.846,
-    "test": 283.834,
-    "goldOk": 1104.6799999999992,
-    "pending": 0.0
+    "all": 40338.55400000005,
+    "train": 36303.21100000001,
+    "test": 4035.3429999999985,
+    "goldOk": 40054.72000000005,
+    "pending": 283.834
   },
   "durationMin": {
-    "all": 18.4,
-    "train": 13.7,
-    "test": 4.7,
-    "goldOk": 18.4
+    "all": 672.3,
+    "train": 605.1,
+    "test": 67.3,
+    "goldOk": 667.6,
+    "pending": 4.7
   },
   "testPieces": [
-    "he-wenxiu-suanming",
-    "xianglin-sao-xinsuanhua"
+    "baitu-ji",
+    "jingchai-ji"
   ],
+  "protocolNote": "2026-08-23: removed he-wenxiu-suanming (lyrics/audio mismatch) and xianglin-sao-xinsuanhua (grid fake timestamps) from hard gold. Test = jingchai-ji early ~5min + baitu-ji full play. Train = remaining goldOk.",
   "byPiece": {
+    "baitu-ji": {
+      "n": 384,
+      "sec": 3448.3459999999977,
+      "split": "test",
+      "goldOk": 384,
+      "test": 384
+    },
     "biyu-zan-xinfang": {
       "n": 10,
       "sec": 168.16600000000003,
-      "split": "train"
+      "split": "train",
+      "goldOk": 10,
+      "train": 10
+    },
+    "bubuxinjing-1": {
+      "n": 159,
+      "sec": 615.6,
+      "split": "train",
+      "goldOk": 159,
+      "train": 159
+    },
+    "bubuxinjing-2": {
+      "n": 205,
+      "sec": 689.51,
+      "split": "train",
+      "goldOk": 205,
+      "train": 205
+    },
+    "bubuxinjing-3": {
+      "n": 220,
+      "sec": 726.3870000000003,
+      "split": "train",
+      "goldOk": 220,
+      "train": 220
+    },
+    "bubuxinjing-4a": {
+      "n": 169,
+      "sec": 708.2200000000001,
+      "split": "train",
+      "goldOk": 169,
+      "train": 169
+    },
+    "bubuxinjing-4b5a": {
+      "n": 157,
+      "sec": 611.5299999999997,
+      "split": "train",
+      "goldOk": 157,
+      "train": 157
+    },
+    "chai-tou-feng": {
+      "n": 50,
+      "sec": 169.58900000000003,
+      "split": "train",
+      "goldOk": 50,
+      "train": 50
+    },
+    "chen-sanliang": {
+      "n": 279,
+      "sec": 2242.6889999999994,
+      "split": "train",
+      "goldOk": 279,
+      "train": 279
     },
     "he-wenxiu-suanming": {
       "n": 10,
       "sec": 149.834,
-      "split": "test"
+      "split": "test",
+      "goldOk": 0,
+      "test": 10
+    },
+    "hongloumeng-1": {
+      "n": 332,
+      "sec": 1103.987,
+      "split": "train",
+      "goldOk": 332,
+      "train": 332
+    },
+    "hongloumeng-2": {
+      "n": 334,
+      "sec": 1365.2689999999989,
+      "split": "train",
+      "goldOk": 334,
+      "train": 334
+    },
+    "hongloumeng-3": {
+      "n": 282,
+      "sec": 1621.903999999998,
+      "split": "train",
+      "goldOk": 282,
+      "train": 282
+    },
+    "hongloumeng-4": {
+      "n": 289,
+      "sec": 1512.782999999999,
+      "split": "train",
+      "goldOk": 289,
+      "train": 289
+    },
+    "hongloumeng-5": {
+      "n": 350,
+      "sec": 2451.4869999999987,
+      "split": "train",
+      "goldOk": 350,
+      "train": 350
     },
     "hongloumeng-tianxia": {
       "n": 16,
       "sec": 99.5,
-      "split": "train"
+      "split": "train",
+      "goldOk": 16,
+      "train": 16
+    },
+    "jingchai-ji": {
+      "n": 364,
+      "sec": 2774.7850000000003,
+      "split": "test",
+      "goldOk": 364,
+      "test": 39,
+      "train": 325
     },
     "liangzhu-shibaxiangsong": {
       "n": 27,
       "sec": 141.0,
-      "split": "train"
+      "split": "train",
+      "goldOk": 27,
+      "train": 27
+    },
+    "liangzhu-shibaxiangsong-full": {
+      "n": 68,
+      "sec": 464.883,
+      "split": "train",
+      "goldOk": 68,
+      "train": 68
+    },
+    "liangzhu-xia": {
+      "n": 90,
+      "sec": 563.6939999999998,
+      "split": "train",
+      "goldOk": 90,
+      "train": 90
+    },
+    "limaohuan-taizi": {
+      "n": 1427,
+      "sec": 5040.255000000003,
+      "split": "train",
+      "goldOk": 1427,
+      "train": 1427
     },
     "longmen-kezhai": {
       "n": 17,
       "sec": 66.244,
-      "split": "train"
+      "split": "train",
+      "goldOk": 17,
+      "train": 17
+    },
+    "mudanting-huanhunji": {
+      "n": 737,
+      "sec": 4656.398000000002,
+      "split": "train",
+      "goldOk": 737,
+      "train": 737
+    },
+    "para-2": {
+      "n": 270,
+      "sec": 1324.1280000000006,
+      "split": "train",
+      "goldOk": 270,
+      "train": 270
+    },
+    "para-3": {
+      "n": 257,
+      "sec": 1096.136000000001,
+      "split": "train",
+      "goldOk": 257,
+      "train": 257
+    },
+    "wunv-baishou-1": {
+      "n": 323,
+      "sec": 1238.6919999999993,
+      "split": "train",
+      "goldOk": 323,
+      "train": 323
+    },
+    "wunv-baishou-2": {
+      "n": 305,
+      "sec": 1075.9920000000002,
+      "split": "train",
+      "goldOk": 305,
+      "train": 305
+    },
+    "wunv-baishou-3": {
+      "n": 282,
+      "sec": 1253.6910000000005,
+      "split": "train",
+      "goldOk": 282,
+      "train": 282
+    },
+    "wunv-baishou-4": {
+      "n": 204,
+      "sec": 1102.7959999999998,
+      "split": "train",
+      "goldOk": 204,
+      "train": 204
     },
     "wunv-baishou-huashu": {
       "n": 8,
       "sec": 96.15999999999998,
-      "split": "train"
+      "split": "train",
+      "goldOk": 8,
+      "train": 8
     },
     "xianglin-sao-xinsuanhua": {
       "n": 17,
       "sec": 134.0,
-      "split": "test"
+      "split": "test",
+      "goldOk": 0,
+      "test": 17
     },
     "xixiangji-kaohong": {
       "n": 11,
       "sec": 168.976,
-      "split": "train"
+      "split": "train",
+      "goldOk": 11,
+      "train": 11
+    },
+    "zanghua-yin": {
+      "n": 175,
+      "sec": 1375.1229999999998,
+      "split": "train",
+      "goldOk": 175,
+      "train": 175
     },
     "zhuiyu-guandeng": {
       "n": 8,
       "sec": 80.8,
-      "split": "train"
+      "split": "train",
+      "goldOk": 8,
+      "train": 8
     }
-  },
-  "nextSteps": [
-    "听校每条，设置 goldOk=true 并填写 register（sanbai/yunbai/changci）",
-    "npm run asr:export-gold 会保留你已填的 register / goldOk / notes",
-    "见 docs/YUEYU_ASR.md"
-  ]
+  }
 }
