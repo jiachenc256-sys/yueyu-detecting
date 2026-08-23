@@ -222,10 +222,40 @@ function updateFollowClock(): void {
   followClock.textContent = `${m}:${String(s).padStart(2, "0")}`;
 }
 
-function cueHref(pieceId: string, entryId: string): string {
+/** Piece HTML pages that exist under pieces/ (Speak “open archive”). */
+const PIECE_PAGE_ALIASES: Record<string, string> = {
+  "liangzhu-shibaxiangsong-full": "liangzhu-shibaxiangsong",
+};
+
+const PIECE_PAGES = new Set([
+  "baitu-ji",
+  "biyu-zan-xinfang",
+  "he-wenxiu-suanming",
+  "hongloumeng-tianxia",
+  "jingchai-ji",
+  "liangzhu-shibaxiangsong",
+  "longmen-kezhai",
+  "pearl-tower-gift",
+  "wunv-baishou-huashu",
+  "xianglin-sao-xinsuanhua",
+  "xixiangji-kaohong",
+  "zhuiyu-guandeng",
+]);
+
+function resolvePiecePageId(pieceId: string): string | null {
+  const id = PIECE_PAGE_ALIASES[pieceId] ?? pieceId;
+  return PIECE_PAGES.has(id) ? id : null;
+}
+
+function cueHref(pieceId: string, entryId: string): string | null {
+  const pageId = resolvePiecePageId(pieceId);
+  if (!pageId) return null;
   const prefix = `${pieceId}-`;
-  const cue = entryId.startsWith(prefix) ? entryId.slice(prefix.length) : entryId;
-  return `pieces/${encodeURIComponent(pieceId)}.html#cue-${encodeURIComponent(cue)}`;
+  const altPrefix = `${pageId}-`;
+  let cue = entryId;
+  if (entryId.startsWith(prefix)) cue = entryId.slice(prefix.length);
+  else if (entryId.startsWith(altPrefix)) cue = entryId.slice(altPrefix.length);
+  return `pieces/${encodeURIComponent(pageId)}.html#cue-${encodeURIComponent(cue)}`;
 }
 
 function populatePieceSelect(index: Awaited<ReturnType<typeof loadLyricIndex>>): void {
@@ -477,9 +507,10 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
   }
   if (archiveOpen) {
     const top = result?.matches[0]?.entry;
-    if (hit && top) {
+    const href = hit && top ? cueHref(top.pieceId, top.id) : null;
+    if (href) {
       archiveOpen.hidden = false;
-      archiveOpen.href = cueHref(top.pieceId, top.id);
+      archiveOpen.href = href;
       archiveOpen.target = "_blank";
       archiveOpen.rel = "noopener";
     } else {
@@ -488,14 +519,17 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
     }
   }
 
-  // Part ② only when archive miss
-  if (!hit && previewObjectUrl) {
-    setStatus(t("speak.path.prosodyRunning"));
+  // Part ② — delivery / emotion (always shown; needs audio for scores)
+  if (previewObjectUrl) {
+    if (!hit) setStatus(t("speak.path.prosodyRunning"));
     const prosody = await analyzeProsodyFromUrl(previewObjectUrl, pieceId);
     lastProsody = prosody;
     if (prosody && prosodyCard) {
       prosodyCard.hidden = false;
-      if (prosodyText) prosodyText.textContent = prosody.summaryZh;
+      const summary = hit
+        ? prosody.summaryZh.replace(/^档案未命中。/, "档案已有候选句；同时从腔调看，")
+        : prosody.summaryZh;
+      if (prosodyText) prosodyText.textContent = summary;
       const topScore = Math.max(...Object.values(prosody.scores), 0);
       setMeter(
         prosodyMeter,
@@ -516,17 +550,20 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
         focus ? tf("speak.path.emotionFocus", { themes: focus }) : t("speak.path.emotionEmpty"),
         t("speak.path.emotionEmpty"),
       );
-      // Prefer emotion summary for translation when lyrics are unknown
-      scheduleTranslate(prosody.summaryZh);
-      return result;
+      if (!hit) {
+        scheduleTranslate(summary);
+        return result;
+      }
     }
-  } else if (!hit) {
+  } else {
     if (prosodyCard) {
       prosodyCard.hidden = false;
-      if (prosodyText) prosodyText.textContent = t("speak.path.prosodyNeedAudio");
+      if (prosodyText) {
+        prosodyText.textContent = hit
+          ? t("speak.path.prosodyOptionalAudio")
+          : t("speak.path.prosodyNeedAudio");
+      }
     }
-    setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
-  } else {
     setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
   }
 

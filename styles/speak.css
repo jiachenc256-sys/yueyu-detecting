@@ -410,17 +410,30 @@ a.speak-btn {
   gap: var(--space-4);
 }
 
+@media (min-width: 900px) {
+  .speak-path {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
 .speak-path__card {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   background: var(--color-paper-raised);
   box-shadow: var(--shadow-sm);
+  min-width: 0;
 }
 
 .speak-path__card--prosody {
-  border-color: #e0c4b4;
-  background: #fffaf6;
+  border-color: color-mix(in srgb, var(--color-accent, #c45c26) 35%, var(--color-border));
+  background: color-mix(in srgb, var(--color-paper-raised) 88%, #f3e6dc);
+}
+
+html[data-theme="dark"] .speak-path__card--prosody {
+  background: color-mix(in srgb, var(--color-paper-raised) 92%, #5a4030);
+  border-color: color-mix(in srgb, #e0c4b4 40%, var(--color-border));
 }
 
 /* Archive gist + theme radar */

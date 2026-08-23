@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="styles/tokens.css?v=20260815a" />
   <link rel="stylesheet" href="styles/main.css?v=20260815e" />
   <link rel="stylesheet" href="styles/a11y.css?v=20260815a" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260823qa1" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260823fix1" />
   <link rel="stylesheet" href="styles/tanci.css?v=20260815a" />
   <link rel="stylesheet" href="styles/learn.css?v=20260815a" />
   <link rel="stylesheet" href="styles/dictionary.css?v=20260815a" />
@@ -188,7 +188,7 @@
 
         <div class="speak-layout">
           <p class="speak-note" data-i18n="speak.note">
-            识别后分两步：① 是否在本站档案；② 若不在，则从腔调/语调粗估情绪（悲·急·怒·柔·亢·叹）。
+            识别后并行两路：① 档案检索（是否已收录唱词）；② 腔调·语调（能量/起伏/音色粗估悲·急·怒·柔·亢·叹）。有音频时两路都会显示。
           </p>
 
           <label class="speak-piece">
@@ -284,9 +284,9 @@
             <section class="speak-path__card speak-path__card--prosody" id="speak-prosody-card" hidden>
               <div class="speak-gist__head">
                 <h3 data-i18n="speak.path.prosodyTitle">② 腔调 · 语调情绪</h3>
-                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">非档案路径</span>
+                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">腔调路径</span>
               </div>
-              <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">档案未命中时，改从说话人的能量、起伏与音色推断想表达的情绪（粗估，非字级听写）。</p>
+              <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">用能量、起伏与音色粗估情绪雷达（悲急怒柔亢叹）。与①档案检索并列；有录音/上传时计算，不是字级听写。</p>
               <div class="speak-meter" aria-label="Emotion confidence">
                 <div class="speak-meter__track"><span id="speak-prosody-meter" class="speak-meter__fill speak-meter__fill--warm" style="width:0%"></span></div>
                 <span id="speak-prosody-meter-label" class="speak-meter__label">—</span>
@@ -2731,11 +2731,11 @@
     </footer>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260823qa1"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260823qa1"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260823qa1"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260823qa1"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260823qa1"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260823qa1"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260823fix1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260823fix1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260823fix1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260823fix1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260823fix1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260823fix1"></script>
 </body>
 </html>

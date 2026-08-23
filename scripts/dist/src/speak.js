@@ -191,10 +191,40 @@ function updateFollowClock() {
     const s = Math.floor(tsec % 60);
     followClock.textContent = `${m}:${String(s).padStart(2, "0")}`;
 }
+/** Piece HTML pages that exist under pieces/ (Speak “open archive”). */
+const PIECE_PAGE_ALIASES = {
+    "liangzhu-shibaxiangsong-full": "liangzhu-shibaxiangsong",
+};
+const PIECE_PAGES = new Set([
+    "baitu-ji",
+    "biyu-zan-xinfang",
+    "he-wenxiu-suanming",
+    "hongloumeng-tianxia",
+    "jingchai-ji",
+    "liangzhu-shibaxiangsong",
+    "longmen-kezhai",
+    "pearl-tower-gift",
+    "wunv-baishou-huashu",
+    "xianglin-sao-xinsuanhua",
+    "xixiangji-kaohong",
+    "zhuiyu-guandeng",
+]);
+function resolvePiecePageId(pieceId) {
+    const id = PIECE_PAGE_ALIASES[pieceId] ?? pieceId;
+    return PIECE_PAGES.has(id) ? id : null;
+}
 function cueHref(pieceId, entryId) {
+    const pageId = resolvePiecePageId(pieceId);
+    if (!pageId)
+        return null;
     const prefix = `${pieceId}-`;
-    const cue = entryId.startsWith(prefix) ? entryId.slice(prefix.length) : entryId;
-    return `pieces/${encodeURIComponent(pieceId)}.html#cue-${encodeURIComponent(cue)}`;
+    const altPrefix = `${pageId}-`;
+    let cue = entryId;
+    if (entryId.startsWith(prefix))
+        cue = entryId.slice(prefix.length);
+    else if (entryId.startsWith(altPrefix))
+        cue = entryId.slice(altPrefix.length);
+    return `pieces/${encodeURIComponent(pageId)}.html#cue-${encodeURIComponent(cue)}`;
 }
 function populatePieceSelect(index) {
     if (!pieceSelect || !index)
@@ -424,9 +454,10 @@ async function runPostAsrPaths(hyp) {
     }
     if (archiveOpen) {
         const top = result?.matches[0]?.entry;
-        if (hit && top) {
+        const href = hit && top ? cueHref(top.pieceId, top.id) : null;
+        if (href) {
             archiveOpen.hidden = false;
-            archiveOpen.href = cueHref(top.pieceId, top.id);
+            archiveOpen.href = href;
             archiveOpen.target = "_blank";
             archiveOpen.rel = "noopener";
         }
@@ -435,15 +466,19 @@ async function runPostAsrPaths(hyp) {
             archiveOpen.removeAttribute("href");
         }
     }
-    // Part ② only when archive miss
-    if (!hit && previewObjectUrl) {
-        setStatus(t("speak.path.prosodyRunning"));
+    // Part ② — delivery / emotion (always shown; needs audio for scores)
+    if (previewObjectUrl) {
+        if (!hit)
+            setStatus(t("speak.path.prosodyRunning"));
         const prosody = await analyzeProsodyFromUrl(previewObjectUrl, pieceId);
         lastProsody = prosody;
         if (prosody && prosodyCard) {
             prosodyCard.hidden = false;
+            const summary = hit
+                ? prosody.summaryZh.replace(/^档案未命中。/, "档案已有候选句；同时从腔调看，")
+                : prosody.summaryZh;
             if (prosodyText)
-                prosodyText.textContent = prosody.summaryZh;
+                prosodyText.textContent = summary;
             const topScore = Math.max(...Object.values(prosody.scores), 0);
             setMeter(prosodyMeter, prosodyMeterLabel, topScore, tf("speak.path.emotionConf", { pct: String(Math.round(topScore * 100)) }));
             const labels = EMOTION_AXES.map((a) => ({ id: a.id, label: a.labelZh }));
@@ -452,20 +487,21 @@ async function runPostAsrPaths(hyp) {
                 .filter(Boolean)
                 .join(" · ");
             renderThemeRadar(prosodyRadar, prosodyRadarCaption, prosody.scores, labels, focus ? tf("speak.path.emotionFocus", { themes: focus }) : t("speak.path.emotionEmpty"), t("speak.path.emotionEmpty"));
-            // Prefer emotion summary for translation when lyrics are unknown
-            scheduleTranslate(prosody.summaryZh);
-            return result;
+            if (!hit) {
+                scheduleTranslate(summary);
+                return result;
+            }
         }
-    }
-    else if (!hit) {
-        if (prosodyCard) {
-            prosodyCard.hidden = false;
-            if (prosodyText)
-                prosodyText.textContent = t("speak.path.prosodyNeedAudio");
-        }
-        setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
     }
     else {
+        if (prosodyCard) {
+            prosodyCard.hidden = false;
+            if (prosodyText) {
+                prosodyText.textContent = hit
+                    ? t("speak.path.prosodyOptionalAudio")
+                    : t("speak.path.prosodyNeedAudio");
+            }
+        }
         setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
     }
     if (hit && result?.archiveLine && result.mode !== "direct") {

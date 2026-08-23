@@ -1,0 +1,4447 @@
+{
+  "id": "jingchai-ji",
+  "title": "荆钗记",
+  "titleEn": "The Thorn Hairpin",
+  "audio": "assets/audio/jingchai-ji.m4a",
+  "sourceSrt": "1-【高清越剧】《荆钗记》汤丽芳 贾小萍（温州市越剧团）-480P 清晰-AVC.srt",
+  "category": "yueju",
+  "schemaVersion": "1.0.0",
+  "cueCount": 369,
+  "correctedCount": 369,
+  "coverage": {
+    "zh": 369,
+    "enCurated": 0,
+    "enMt": 0,
+    "enAny": 0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 484.41,
+      "end": 489.515,
+      "rawAsr": "留连忘返哪",
+      "layers": {
+        "zh": {
+          "text": "留连忘返哪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 585.822,
+      "end": 594.851,
+      "rawAsr": "江边送君上帝京",
+      "layers": {
+        "zh": {
+          "text": "江边送君上帝京",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 599.906,
+      "end": 613.204,
+      "rawAsr": "笑脸强 裝泪眼盈",
+      "layers": {
+        "zh": {
+          "text": "笑脸强 裝泪眼盈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 616.642,
+      "end": 623.246,
+      "rawAsr": "心有叮咛千万句",
+      "layers": {
+        "zh": {
+          "text": "心有叮咛千万句",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 624.353,
+      "end": 637.832,
+      "rawAsr": "话到嘴边却无声",
+      "layers": {
+        "zh": {
+          "text": "话到嘴边却无声",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 643.471,
+      "end": 649.396,
+      "rawAsr": "虽无声 早知情",
+      "layers": {
+        "zh": {
+          "text": "虽无声 早知情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 649.375,
+      "end": 658.783,
+      "rawAsr": "你待我情深义长永铭心",
+      "layers": {
+        "zh": {
+          "text": "你待我情深义长永铭心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 658.784,
+      "end": 667.091,
+      "rawAsr": "想当初你慧眼青睐读书郎",
+      "layers": {
+        "zh": {
+          "text": "想当初你慧眼青睐读书郎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 667.711,
+      "end": 676.997,
+      "rawAsr": "全不顾继母拦阻自拝人",
+      "layers": {
+        "zh": {
+          "text": "全不顾继母拦阻自拝人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 676.702,
+      "end": 684.609,
+      "rawAsr": "我家徒四壁无长物",
+      "layers": {
+        "zh": {
+          "text": "我家徒四壁无长物",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 685.348,
+      "end": 695.59,
+      "rawAsr": "唯有那木头荆钗作礼聘",
+      "layers": {
+        "zh": {
+          "text": "唯有那木头荆钗作礼聘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 697.122,
+      "end": 700.825,
+      "rawAsr": "玉 莲 啊",
+      "layers": {
+        "zh": {
+          "text": "玉 莲 啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 700.826,
+      "end": 707.632,
+      "rawAsr": "今朝十朋赴试去",
+      "layers": {
+        "zh": {
+          "text": "今朝十朋赴试去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 707.633,
+      "end": 716.764,
+      "rawAsr": "満 腹 经 纶 颇 自 信",
+      "layers": {
+        "zh": {
+          "text": "満 腹 经 纶 颇 自 信",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 717.743,
+      "end": 727.452,
+      "rawAsr": "蟾宫折桂报捷时",
+      "layers": {
+        "zh": {
+          "text": "蟾宫折桂报捷时",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 728.033,
+      "end": 739.018,
+      "rawAsr": "先谢贤妻知遇恩",
+      "layers": {
+        "zh": {
+          "text": "先谢贤妻知遇恩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 743.369,
+      "end": 752.432,
+      "rawAsr": "相么临别诉衷情",
+      "layers": {
+        "zh": {
+          "text": "相么临别诉衷情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 752.778,
+      "end": 759.684,
+      "rawAsr": "我学是欢喜学担心",
+      "layers": {
+        "zh": {
+          "text": "我学是欢喜学担心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 759.685,
+      "end": 761.386,
+      "rawAsr": "喜的是",
+      "layers": {
+        "zh": {
+          "text": "喜的是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 761.387,
+      "end": 766.67,
+      "rawAsr": "壮志得遂已有时",
+      "layers": {
+        "zh": {
+          "text": "壮志得遂已有时",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 766.692,
+      "end": 774.098,
+      "rawAsr": "尕枉我慧眼早识人",
+      "layers": {
+        "zh": {
+          "text": "尕枉我慧眼早识人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 774.099,
+      "end": 779.805,
+      "rawAsr": "愁 的 是",
+      "layers": {
+        "zh": {
+          "text": "愁 的 是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 781.407,
+      "end": 788.127,
+      "rawAsr": "荆辣横生仕途险",
+      "layers": {
+        "zh": {
+          "text": "荆辣横生仕途险",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 787.813,
+      "end": 794.118,
+      "rawAsr": "风波难测官海深",
+      "layers": {
+        "zh": {
+          "text": "风波难测官海深",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 794.682,
+      "end": 802.078,
+      "rawAsr": "江畔今弾兮飞曲",
+      "layers": {
+        "zh": {
+          "text": "江畔今弾兮飞曲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 803.629,
+      "end": 805.73,
+      "rawAsr": "未 知 晓",
+      "layers": {
+        "zh": {
+          "text": "未 知 晓",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 805.731,
+      "end": 818.644,
+      "rawAsr": "何时重唱比翼吟",
+      "layers": {
+        "zh": {
+          "text": "何时重唱比翼吟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 957.182,
+      "end": 965.991,
+      "rawAsr": "心随轻舟去",
+      "layers": {
+        "zh": {
+          "text": "心随轻舟去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 972.598,
+      "end": 981.821,
+      "rawAsr": "情伴荆钗在",
+      "layers": {
+        "zh": {
+          "text": "情伴荆钗在",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "start": 987.313,
+      "end": 999.296,
+      "rawAsr": "遥望青云路",
+      "layers": {
+        "zh": {
+          "text": "遥望青云路",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "start": 1006.904,
+      "end": 1010.929,
+      "rawAsr": "未别先问归",
+      "layers": {
+        "zh": {
+          "text": "未别先问归",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "start": 1386.412,
+      "end": 1392.518,
+      "rawAsr": "待字闯中心气高",
+      "layers": {
+        "zh": {
+          "text": "待字闯中心气高",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "start": 1394.32,
+      "end": 1398.133,
+      "rawAsr": "偏爱琴棋昇书画",
+      "layers": {
+        "zh": {
+          "text": "偏爱琴棋昇书画",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "start": 1398.023,
+      "end": 1401.927,
+      "rawAsr": "更羨金榜独占鳌",
+      "layers": {
+        "zh": {
+          "text": "更羨金榜独占鳌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "start": 1402.127,
+      "end": 1405.73,
+      "rawAsr": "今日里佳人欲将才子掐",
+      "layers": {
+        "zh": {
+          "text": "今日里佳人欲将才子掐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "start": 1405.731,
+      "end": 1413.739,
+      "rawAsr": "状元公你双喜愮门多荣耀",
+      "layers": {
+        "zh": {
+          "text": "状元公你双喜愮门多荣耀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "start": 1511.057,
+      "end": 1515.662,
+      "rawAsr": "忆往昔家贫必洗度时光",
+      "layers": {
+        "zh": {
+          "text": "忆往昔家贫必洗度时光",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "start": 1515.762,
+      "end": 1524.971,
+      "rawAsr": "钱氏女不择门墙自远郞",
+      "layers": {
+        "zh": {
+          "text": "钱氏女不择门墙自远郞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "start": 1525.372,
+      "end": 1529.875,
+      "rawAsr": "一只木荆钗 为聘结城双",
+      "layers": {
+        "zh": {
+          "text": "一只木荆钗 为聘结城双",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "start": 1529.876,
+      "end": 1537.584,
+      "rawAsr": "立下生死盟 但愿恩爱长",
+      "layers": {
+        "zh": {
+          "text": "立下生死盟 但愿恩爱长",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "start": 1538.785,
+      "end": 1544.089,
+      "rawAsr": "今日我微名初登龙虎榜",
+      "layers": {
+        "zh": {
+          "text": "今日我微名初登龙虎榜",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "start": 1544.09,
+      "end": 1549.295,
+      "rawAsr": "旦旦信誓岂能忘",
+      "layers": {
+        "zh": {
+          "text": "旦旦信誓岂能忘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "start": 1549.396,
+      "end": 1557.704,
+      "rawAsr": "相爷你激浊扬清朝纲掌",
+      "layers": {
+        "zh": {
+          "text": "相爷你激浊扬清朝纲掌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "start": 1558.204,
+      "end": 1568.415,
+      "rawAsr": "晚生苦心定见谅",
+      "layers": {
+        "zh": {
+          "text": "晚生苦心定见谅",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "start": 1610.156,
+      "end": 1613.86,
+      "rawAsr": "入赘相府高枝攀",
+      "layers": {
+        "zh": {
+          "text": "入赘相府高枝攀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "start": 1613.96,
+      "end": 1619.365,
+      "rawAsr": "你千推万阻作何想",
+      "layers": {
+        "zh": {
+          "text": "你千推万阻作何想",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "start": 1619.366,
+      "end": 1622.768,
+      "rawAsr": "平生 颇读书几行",
+      "layers": {
+        "zh": {
+          "text": "平生 颇读书几行",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "start": 1622.769,
+      "end": 1627.673,
+      "rawAsr": "只记得糟辣之妻刃下堂",
+      "layers": {
+        "zh": {
+          "text": "只记得糟辣之妻刃下堂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "start": 1627.674,
+      "end": 1630.777,
+      "rawAsr": "若是难舍痴情妻",
+      "layers": {
+        "zh": {
+          "text": "若是难舍痴情妻",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "start": 1630.877,
+      "end": 1635.781,
+      "rawAsr": "禀相爷赠金千两能补偿",
+      "layers": {
+        "zh": {
+          "text": "禀相爷赠金千两能补偿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "start": 1635.782,
+      "end": 1639.485,
+      "rawAsr": "千金有价情无价",
+      "layers": {
+        "zh": {
+          "text": "千金有价情无价",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "start": 1639.486,
+      "end": 1644.19,
+      "rawAsr": "忠信二字怎计量",
+      "layers": {
+        "zh": {
+          "text": "忠信二字怎计量",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "start": 1644.29,
+      "end": 1648.094,
+      "rawAsr": "你孓见相爷变脸去后堂",
+      "layers": {
+        "zh": {
+          "text": "你孓见相爷变脸去后堂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "start": 1648.194,
+      "end": 1653.5,
+      "rawAsr": "怎奈是愚钝难改旧行藏",
+      "layers": {
+        "zh": {
+          "text": "怎奈是愚钝难改旧行藏",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "start": 1655.001,
+      "end": 1657.903,
+      "rawAsr": "火胆抗睧太无状",
+      "layers": {
+        "zh": {
+          "text": "火胆抗睧太无状",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "start": 1657.904,
+      "end": 1660.506,
+      "rawAsr": "事出有因 非顶撞",
+      "layers": {
+        "zh": {
+          "text": "事出有因 非顶撞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "start": 1660.507,
+      "end": 1663.909,
+      "rawAsr": "岂不怕来日方长反受殃",
+      "layers": {
+        "zh": {
+          "text": "岂不怕来日方长反受殃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "start": 1663.91,
+      "end": 1669.715,
+      "rawAsr": "也只得听天由命祸福住之",
+      "layers": {
+        "zh": {
+          "text": "也只得听天由命祸福住之",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "start": 1669.716,
+      "end": 1675.822,
+      "rawAsr": "求一个问心无愧自坦荡",
+      "layers": {
+        "zh": {
+          "text": "求一个问心无愧自坦荡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "start": 1830.276,
+      "end": 1835.181,
+      "rawAsr": "叶飘零 叹伶仃",
+      "layers": {
+        "zh": {
+          "text": "叶飘零 叹伶仃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "start": 1835.782,
+      "end": 1843.49,
+      "rawAsr": "叶飘零 叹伶仃",
+      "layers": {
+        "zh": {
+          "text": "叶飘零 叹伶仃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "start": 1846.292,
+      "end": 1859.406,
+      "rawAsr": "遥望江天数狐云",
+      "layers": {
+        "zh": {
+          "text": "遥望江天数狐云",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "start": 1862.509,
+      "end": 1868.714,
+      "rawAsr": "长空不见鸿雁影",
+      "layers": {
+        "zh": {
+          "text": "长空不见鸿雁影",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "start": 1868.715,
+      "end": 1882.328,
+      "rawAsr": "难寄相思到帝京",
+      "layers": {
+        "zh": {
+          "text": "难寄相思到帝京",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "start": 1887.033,
+      "end": 1897.042,
+      "rawAsr": "数来已是开榜时",
+      "layers": {
+        "zh": {
+          "text": "数来已是开榜时",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "start": 1897.043,
+      "end": 1911.958,
+      "rawAsr": "却为何未见狂梅早报春",
+      "layers": {
+        "zh": {
+          "text": "却为何未见狂梅早报春",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "start": 1924.371,
+      "end": 1933.58,
+      "rawAsr": "你去后我与婆婆硠家住",
+      "layers": {
+        "zh": {
+          "text": "你去后我与婆婆硠家住",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "start": 1933.68,
+      "end": 1941.687,
+      "rawAsr": "后母欺凌实可恨",
+      "layers": {
+        "zh": {
+          "text": "后母欺凌实可恨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "start": 1941.688,
+      "end": 1956.902,
+      "rawAsr": "牠骂我荆钗为聘穷一世",
+      "layers": {
+        "zh": {
+          "text": "牠骂我荆钗为聘穷一世",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "start": 1956.903,
+      "end": 1976.122,
+      "rawAsr": "我忍气吞声盻归人",
+      "layers": {
+        "zh": {
+          "text": "我忍气吞声盻归人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "start": 2054.315,
+      "end": 2058.819,
+      "rawAsr": "不是我吹牛乱放炮",
+      "layers": {
+        "zh": {
+          "text": "不是我吹牛乱放炮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "start": 2058.82,
+      "end": 2063.524,
+      "rawAsr": "这双眼早识密和草",
+      "layers": {
+        "zh": {
+          "text": "这双眼早识密和草",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "start": 2063.525,
+      "end": 2065.325,
+      "rawAsr": "王十朋",
+      "layers": {
+        "zh": {
+          "text": "王十朋",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "start": 2065.326,
+      "end": 2067.829,
+      "rawAsr": "手短掌不得黃金印",
+      "layers": {
+        "zh": {
+          "text": "手短掌不得黃金印",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "start": 2067.929,
+      "end": 2072.132,
+      "rawAsr": "头小戴不住乌纱帽",
+      "layers": {
+        "zh": {
+          "text": "头小戴不住乌纱帽",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 76,
+      "start": 2072.133,
+      "end": 2073.534,
+      "rawAsr": "那老 太婆",
+      "layers": {
+        "zh": {
+          "text": "那老 太婆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 77,
+      "start": 2073.535,
+      "end": 2077.938,
+      "rawAsr": "面上无福相",
+      "layers": {
+        "zh": {
+          "text": "面上无福相",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 78,
+      "start": 2077.939,
+      "end": 2082.443,
+      "rawAsr": "命里注定难封诰",
+      "layers": {
+        "zh": {
+          "text": "命里注定难封诰",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 79,
+      "start": 2082.444,
+      "end": 2085.547,
+      "rawAsr": "必莲的八字我排过",
+      "layers": {
+        "zh": {
+          "text": "必莲的八字我排过",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 80,
+      "start": 2085.647,
+      "end": 2091.352,
+      "rawAsr": "木头荆钗要戴到老",
+      "layers": {
+        "zh": {
+          "text": "木头荆钗要戴到老",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "start": 2092.654,
+      "end": 2093.554,
+      "rawAsr": "还有侬",
+      "layers": {
+        "zh": {
+          "text": "还有侬",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 82,
+      "start": 2093.555,
+      "end": 2096.658,
+      "rawAsr": "有眼无珠的老糊涂",
+      "layers": {
+        "zh": {
+          "text": "有眼无珠的老糊涂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 83,
+      "start": 2096.758,
+      "end": 2101.262,
+      "rawAsr": "错把煙泥当珍崈",
+      "layers": {
+        "zh": {
+          "text": "错把煙泥当珍崈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 84,
+      "start": 2101.863,
+      "end": 2107.369,
+      "rawAsr": "错把煙泥当珍密",
+      "layers": {
+        "zh": {
+          "text": "错把煙泥当珍密",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 85,
+      "start": 2233.495,
+      "end": 2245.006,
+      "rawAsr": "牵衣捏道苦相求",
+      "layers": {
+        "zh": {
+          "text": "牵衣捏道苦相求",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 86,
+      "start": 2246.508,
+      "end": 2255.617,
+      "rawAsr": "辛酸的话儿和泪流",
+      "layers": {
+        "zh": {
+          "text": "辛酸的话儿和泪流",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 87,
+      "start": 2256.918,
+      "end": 2259.52,
+      "rawAsr": "婆婆呀",
+      "layers": {
+        "zh": {
+          "text": "婆婆呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "start": 2259.521,
+      "end": 2267.127,
+      "rawAsr": "必莲虽非你桌 生女",
+      "layers": {
+        "zh": {
+          "text": "必莲虽非你桌 生女",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "start": 2267.128,
+      "end": 2281.943,
+      "rawAsr": "你待我更比骨肉情意厚",
+      "layers": {
+        "zh": {
+          "text": "你待我更比骨肉情意厚",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "start": 2288.149,
+      "end": 2297.559,
+      "rawAsr": "在夫家窏碗热粥两人兮",
+      "layers": {
+        "zh": {
+          "text": "在夫家窏碗热粥两人兮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "start": 2297.659,
+      "end": 2310.171,
+      "rawAsr": "到眼家一句冷言两人受",
+      "layers": {
+        "zh": {
+          "text": "到眼家一句冷言两人受",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "start": 2312.674,
+      "end": 2322.983,
+      "rawAsr": "千错万错胞归错",
+      "layers": {
+        "zh": {
+          "text": "千错万错胞归错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "start": 2322.984,
+      "end": 2332.693,
+      "rawAsr": "错带你眼家把桌投",
+      "layers": {
+        "zh": {
+          "text": "错带你眼家把桌投",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "start": 2332.694,
+      "end": 2341.202,
+      "rawAsr": "人说是女儿有苦眼家来",
+      "layers": {
+        "zh": {
+          "text": "人说是女儿有苦眼家来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "start": 2341.302,
+      "end": 2352.113,
+      "rawAsr": "谁知道不是桌生难聚首",
+      "layers": {
+        "zh": {
+          "text": "谁知道不是桌生难聚首",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "start": 2356.518,
+      "end": 2360.621,
+      "rawAsr": "婆婆啊",
+      "layers": {
+        "zh": {
+          "text": "婆婆啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "start": 2360.622,
+      "end": 2365.626,
+      "rawAsr": "你若执意回家去",
+      "layers": {
+        "zh": {
+          "text": "你若执意回家去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "start": 2365.627,
+      "end": 2369.029,
+      "rawAsr": "骢归情愿随你走",
+      "layers": {
+        "zh": {
+          "text": "骢归情愿随你走",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "start": 2369.03,
+      "end": 2372.232,
+      "rawAsr": "只可叹家徒四塵无粒米",
+      "layers": {
+        "zh": {
+          "text": "只可叹家徒四塵无粒米",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "start": 2372.233,
+      "end": 2381.342,
+      "rawAsr": "饿死玉莲倒也罢",
+      "layers": {
+        "zh": {
+          "text": "饿死玉莲倒也罢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 101,
+      "start": 2390.051,
+      "end": 2408.77,
+      "rawAsr": "这天塌的火祸谁能救",
+      "layers": {
+        "zh": {
+          "text": "这天塌的火祸谁能救",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 102,
+      "start": 2582.544,
+      "end": 2586.947,
+      "rawAsr": "不是我吹牛乱放炮",
+      "layers": {
+        "zh": {
+          "text": "不是我吹牛乱放炮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "start": 2586.948,
+      "end": 2591.153,
+      "rawAsr": "这双眼早识宣和草",
+      "layers": {
+        "zh": {
+          "text": "这双眼早识宣和草",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 104,
+      "start": 2593.155,
+      "end": 2597.858,
+      "rawAsr": "十朋他两耳垂肩定做官",
+      "layers": {
+        "zh": {
+          "text": "十朋他两耳垂肩定做官",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 105,
+      "start": 2597.859,
+      "end": 2603.665,
+      "rawAsr": "八字双脚步步高",
+      "layers": {
+        "zh": {
+          "text": "八字双脚步步高",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 106,
+      "start": 2605.267,
+      "end": 2609.871,
+      "rawAsr": "桌家母慈眉善目有吉相",
+      "layers": {
+        "zh": {
+          "text": "桌家母慈眉善目有吉相",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 107,
+      "start": 2609.971,
+      "end": 2613.074,
+      "rawAsr": "诰命夫人福气好",
+      "layers": {
+        "zh": {
+          "text": "诰命夫人福气好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 108,
+      "start": 2613.175,
+      "end": 2619.18,
+      "rawAsr": "必莲的八字我排过",
+      "layers": {
+        "zh": {
+          "text": "必莲的八字我排过",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 109,
+      "start": 2619.181,
+      "end": 2623.784,
+      "rawAsr": "荆钗能把凤冠调",
+      "layers": {
+        "zh": {
+          "text": "荆钗能把凤冠调",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 110,
+      "start": 2623.785,
+      "end": 2626.787,
+      "rawAsr": "逐有傢老老眼力弱",
+      "layers": {
+        "zh": {
+          "text": "逐有傢老老眼力弱",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "start": 2626.788,
+      "end": 2631.293,
+      "rawAsr": "才把这称心必意的女情招",
+      "layers": {
+        "zh": {
+          "text": "才把这称心必意的女情招",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 112,
+      "start": 2632.894,
+      "end": 2637.199,
+      "rawAsr": "来来来堂上快摆贺喜酒",
+      "layers": {
+        "zh": {
+          "text": "来来来堂上快摆贺喜酒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 113,
+      "start": 2637.299,
+      "end": 2640.202,
+      "rawAsr": "桌朋 羽 友都请到",
+      "layers": {
+        "zh": {
+          "text": "桌朋 羽 友都请到",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "start": 2640.302,
+      "end": 2645.907,
+      "rawAsr": "首位端坐你桌家母",
+      "layers": {
+        "zh": {
+          "text": "首位端坐你桌家母",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 115,
+      "start": 2646.007,
+      "end": 2659.821,
+      "rawAsr": "看我连敬三权把心意表",
+      "layers": {
+        "zh": {
+          "text": "看我连敬三权把心意表",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 116,
+      "start": 3213.175,
+      "end": 3217.579,
+      "rawAsr": "小冬梅暗报信天谓地崩",
+      "layers": {
+        "zh": {
+          "text": "小冬梅暗报信天谓地崩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 117,
+      "start": 3217.679,
+      "end": 3237.299,
+      "rawAsr": "仓惶中逃睧出家门",
+      "layers": {
+        "zh": {
+          "text": "仓惶中逃睧出家门",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 118,
+      "start": 3265.427,
+      "end": 3271.633,
+      "rawAsr": "风兩中回望 怨恨深",
+      "layers": {
+        "zh": {
+          "text": "风兩中回望 怨恨深",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 119,
+      "start": 3273.735,
+      "end": 3273.934,
+      "rawAsr": "骂一声后眼你忒狠毒",
+      "layers": {
+        "zh": {
+          "text": "骂一声后眼你忒狠毒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 120,
+      "start": 3273.935,
+      "end": 3279.44,
+      "rawAsr": "骂一声后眼你忒狠毒",
+      "layers": {
+        "zh": {
+          "text": "骂一声后眼你忒狠毒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 121,
+      "start": 3279.441,
+      "end": 3291.753,
+      "rawAsr": "淫 威逼我绝路行",
+      "layers": {
+        "zh": {
+          "text": "淫 威逼我绝路行",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 122,
+      "start": 3295.457,
+      "end": 3301.962,
+      "rawAsr": "喚一声我那年迈的爹",
+      "layers": {
+        "zh": {
+          "text": "喚一声我那年迈的爹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 123,
+      "start": 3301.963,
+      "end": 3307.068,
+      "rawAsr": "我魂牽心挂你梦中身",
+      "layers": {
+        "zh": {
+          "text": "我魂牽心挂你梦中身",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 124,
+      "start": 3308.97,
+      "end": 3315.877,
+      "rawAsr": "再把那可怜的婆婆连声喚",
+      "layers": {
+        "zh": {
+          "text": "再把那可怜的婆婆连声喚",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 125,
+      "start": 3317.479,
+      "end": 3325.387,
+      "rawAsr": "风雨中何处価身谁照应",
+      "layers": {
+        "zh": {
+          "text": "风雨中何处価身谁照应",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 126,
+      "start": 3325.987,
+      "end": 3328.689,
+      "rawAsr": "可叹你素重家教胜孟母",
+      "layers": {
+        "zh": {
+          "text": "可叹你素重家教胜孟母",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 127,
+      "start": 3328.69,
+      "end": 3356.017,
+      "rawAsr": "却不料儿违母训变了心",
+      "layers": {
+        "zh": {
+          "text": "却不料儿违母训变了心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 128,
+      "start": 3390.552,
+      "end": 3411.873,
+      "rawAsr": "昏沉沉鬼使神差把略引",
+      "layers": {
+        "zh": {
+          "text": "昏沉沉鬼使神差把略引",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 129,
+      "start": 3416.178,
+      "end": 3430.792,
+      "rawAsr": "驀抬头旧地重游望江亭",
+      "layers": {
+        "zh": {
+          "text": "驀抬头旧地重游望江亭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 130,
+      "start": 3435.197,
+      "end": 3448.21,
+      "rawAsr": "想儿时亭下与郞同喜游",
+      "layers": {
+        "zh": {
+          "text": "想儿时亭下与郞同喜游",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 131,
+      "start": 3448.31,
+      "end": 3459.821,
+      "rawAsr": "江边昇肩看戏文",
+      "layers": {
+        "zh": {
+          "text": "江边昇肩看戏文",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 132,
+      "start": 3459.921,
+      "end": 3465.826,
+      "rawAsr": "台上痴情女",
+      "layers": {
+        "zh": {
+          "text": "台上痴情女",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 133,
+      "start": 3465.827,
+      "end": 3470.931,
+      "rawAsr": "引我泪 満 襟",
+      "layers": {
+        "zh": {
+          "text": "引我泪 満 襟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 134,
+      "start": 3470.932,
+      "end": 3476.337,
+      "rawAsr": "戏中负心郎",
+      "layers": {
+        "zh": {
+          "text": "戏中负心郎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 135,
+      "start": 3476.338,
+      "end": 3485.547,
+      "rawAsr": "惹你切齿恨",
+      "layers": {
+        "zh": {
+          "text": "惹你切齿恨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 136,
+      "start": 3527.189,
+      "end": 3539.701,
+      "rawAsr": "誓言犹在心已变",
+      "layers": {
+        "zh": {
+          "text": "誓言犹在心已变",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 137,
+      "start": 3542.804,
+      "end": 3571.333,
+      "rawAsr": "可叹我看戏人变成戏中人",
+      "layers": {
+        "zh": {
+          "text": "可叹我看戏人变成戏中人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 138,
+      "start": 3586.348,
+      "end": 3589.55,
+      "rawAsr": "只道你雪压霜欺竹节劲",
+      "layers": {
+        "zh": {
+          "text": "只道你雪压霜欺竹节劲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 139,
+      "start": 3589.551,
+      "end": 3592.254,
+      "rawAsr": "谁知你随波逐流柳絜轻",
+      "layers": {
+        "zh": {
+          "text": "谁知你随波逐流柳絜轻",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 140,
+      "start": 3592.354,
+      "end": 3594.755,
+      "rawAsr": "只道是紫蕋恋旧拓故巢",
+      "layers": {
+        "zh": {
+          "text": "只道是紫蕋恋旧拓故巢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 141,
+      "start": 3594.756,
+      "end": 3601.163,
+      "rawAsr": "谁知你黄鴯叉拣新枝鸣",
+      "layers": {
+        "zh": {
+          "text": "谁知你黄鴯叉拣新枝鸣",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 142,
+      "start": 3602.964,
+      "end": 3604.965,
+      "rawAsr": "你枉读诗名可知羞",
+      "layers": {
+        "zh": {
+          "text": "你枉读诗名可知羞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 143,
+      "start": 3604.966,
+      "end": 3607.168,
+      "rawAsr": "你朝泰暮楚为何因",
+      "layers": {
+        "zh": {
+          "text": "你朝泰暮楚为何因",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 144,
+      "start": 3607.169,
+      "end": 3609.07,
+      "rawAsr": "你口问心来心问口",
+      "layers": {
+        "zh": {
+          "text": "你口问心来心问口",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 145,
+      "start": 3609.171,
+      "end": 3610.571,
+      "rawAsr": "这天理公道",
+      "layers": {
+        "zh": {
+          "text": "这天理公道",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 146,
+      "start": 3610.572,
+      "end": 3615.777,
+      "rawAsr": "天理么道何处存",
+      "layers": {
+        "zh": {
+          "text": "天理么道何处存",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 147,
+      "start": 3624.386,
+      "end": 3642.804,
+      "rawAsr": "雷电为我鸣孓平",
+      "layers": {
+        "zh": {
+          "text": "雷电为我鸣孓平",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 148,
+      "start": 3647.709,
+      "end": 3659.521,
+      "rawAsr": "狂雨 难洗心头恨",
+      "layers": {
+        "zh": {
+          "text": "狂雨 难洗心头恨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 149,
+      "start": 3664.326,
+      "end": 3666.827,
+      "rawAsr": "北今是",
+      "layers": {
+        "zh": {
+          "text": "北今是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 150,
+      "start": 3666.828,
+      "end": 3679.341,
+      "rawAsr": "断了柔肠 灭了心灯",
+      "layers": {
+        "zh": {
+          "text": "断了柔肠 灭了心灯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 151,
+      "start": 3684.246,
+      "end": 3701.763,
+      "rawAsr": "碎了瑶琴 绝了知音",
+      "layers": {
+        "zh": {
+          "text": "碎了瑶琴 绝了知音",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 152,
+      "start": 3718.58,
+      "end": 3732.993,
+      "rawAsr": "千休万休今全休",
+      "layers": {
+        "zh": {
+          "text": "千休万休今全休",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 153,
+      "start": 3732.994,
+      "end": 3749.211,
+      "rawAsr": "无垠江波寄此身",
+      "layers": {
+        "zh": {
+          "text": "无垠江波寄此身",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 154,
+      "start": 3786.548,
+      "end": 3798.86,
+      "rawAsr": "滔滔血泪八百里",
+      "layers": {
+        "zh": {
+          "text": "滔滔血泪八百里",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 155,
+      "start": 3803.064,
+      "end": 3814.376,
+      "rawAsr": "弱女抗争唯一命",
+      "layers": {
+        "zh": {
+          "text": "弱女抗争唯一命",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 156,
+      "start": 3833.695,
+      "end": 3838.499,
+      "rawAsr": "几多波涛葬冤魂",
+      "layers": {
+        "zh": {
+          "text": "几多波涛葬冤魂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 157,
+      "start": 3838.5,
+      "end": 3847.809,
+      "rawAsr": "四山风兩天地惊",
+      "layers": {
+        "zh": {
+          "text": "四山风兩天地惊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 158,
+      "start": 3858.42,
+      "end": 3869.631,
+      "rawAsr": "冤 冤 冤",
+      "layers": {
+        "zh": {
+          "text": "冤 冤 冤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 159,
+      "start": 4027.589,
+      "end": 4040.502,
+      "rawAsr": "天陷地沉入梦境",
+      "layers": {
+        "zh": {
+          "text": "天陷地沉入梦境",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 160,
+      "start": 4042.404,
+      "end": 4054.516,
+      "rawAsr": "汗 湿青 衫有余惊",
+      "layers": {
+        "zh": {
+          "text": "汗 湿青 衫有余惊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 161,
+      "start": 4062.324,
+      "end": 4072.634,
+      "rawAsr": "一月前曾遣家书接桌人",
+      "layers": {
+        "zh": {
+          "text": "一月前曾遣家书接桌人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 162,
+      "start": 4072.734,
+      "end": 4086.047,
+      "rawAsr": "却为何杏必黄鸻无回音",
+      "layers": {
+        "zh": {
+          "text": "却为何杏必黄鸻无回音",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 163,
+      "start": 4093.555,
+      "end": 4105.467,
+      "rawAsr": "自从参啦风波生",
+      "layers": {
+        "zh": {
+          "text": "自从参啦风波生",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 164,
+      "start": 4107.669,
+      "end": 4116.278,
+      "rawAsr": "饶州改调潮阳任",
+      "layers": {
+        "zh": {
+          "text": "饶州改调潮阳任",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 165,
+      "start": 4117.178,
+      "end": 4126.688,
+      "rawAsr": "寓所周遭多鹰火",
+      "layers": {
+        "zh": {
+          "text": "寓所周遭多鹰火",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 166,
+      "start": 4127.188,
+      "end": 4138.7,
+      "rawAsr": "名为待命实幽禁",
+      "layers": {
+        "zh": {
+          "text": "名为待命实幽禁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 167,
+      "start": 4143.905,
+      "end": 4153.915,
+      "rawAsr": "考什么状元做什么官",
+      "layers": {
+        "zh": {
+          "text": "考什么状元做什么官",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 168,
+      "start": 4156.418,
+      "end": 4181.243,
+      "rawAsr": "只兹得夜夜残月伴狐灯",
+      "layers": {
+        "zh": {
+          "text": "只兹得夜夜残月伴狐灯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 169,
+      "start": 4314.476,
+      "end": 4327.088,
+      "rawAsr": "一见小畜生恣満腔",
+      "layers": {
+        "zh": {
+          "text": "一见小畜生恣満腔",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 170,
+      "start": 4327.889,
+      "end": 4333.795,
+      "rawAsr": "你背信弃又丧天良",
+      "layers": {
+        "zh": {
+          "text": "你背信弃又丧天良",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 171,
+      "start": 4336.598,
+      "end": 4346.408,
+      "rawAsr": "高举拐杖将你打",
+      "layers": {
+        "zh": {
+          "text": "高举拐杖将你打",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 172,
+      "start": 4350.111,
+      "end": 4352.113,
+      "rawAsr": "打你个不忠不考",
+      "layers": {
+        "zh": {
+          "text": "打你个不忠不考",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 173,
+      "start": 4352.213,
+      "end": 4355.617,
+      "rawAsr": "无情无义负心郎",
+      "layers": {
+        "zh": {
+          "text": "无情无义负心郎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 174,
+      "start": 4731.693,
+      "end": 4743.405,
+      "rawAsr": "闻恶耗 心惊怖",
+      "layers": {
+        "zh": {
+          "text": "闻恶耗 心惊怖",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 175,
+      "start": 4743.505,
+      "end": 4756.617,
+      "rawAsr": "同巷天 何作此过",
+      "layers": {
+        "zh": {
+          "text": "同巷天 何作此过",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 176,
+      "start": 4756.618,
+      "end": 4757.519,
+      "rawAsr": "朖子呀",
+      "layers": {
+        "zh": {
+          "text": "朖子呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 177,
+      "start": 4760.522,
+      "end": 4768.73,
+      "rawAsr": "只道夫妻聚京都",
+      "layers": {
+        "zh": {
+          "text": "只道夫妻聚京都",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 178,
+      "start": 4768.83,
+      "end": 4783.545,
+      "rawAsr": "谁知你先做河伯归’",
+      "layers": {
+        "zh": {
+          "text": "谁知你先做河伯归’",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 179,
+      "start": 4787.549,
+      "end": 4798.66,
+      "rawAsr": "堪叹我何麺残生度",
+      "layers": {
+        "zh": {
+          "text": "堪叹我何麺残生度",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 180,
+      "start": 4800.862,
+      "end": 4820.482,
+      "rawAsr": "拼一死与你同赴黄泉路",
+      "layers": {
+        "zh": {
+          "text": "拼一死与你同赴黄泉路",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 181,
+      "start": 4854.116,
+      "end": 4857.919,
+      "rawAsr": "眼啊蜋",
+      "layers": {
+        "zh": {
+          "text": "眼啊蜋",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 182,
+      "start": 4857.92,
+      "end": 4866.628,
+      "rawAsr": "贤妻可有绝命名",
+      "layers": {
+        "zh": {
+          "text": "贤妻可有绝命名",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 183,
+      "start": 4866.728,
+      "end": 4874.435,
+      "rawAsr": "只字片纸踪影无",
+      "layers": {
+        "zh": {
+          "text": "只字片纸踪影无",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 184,
+      "start": 4874.436,
+      "end": 4884.145,
+      "rawAsr": "贤妻灵枢停何处",
+      "layers": {
+        "zh": {
+          "text": "贤妻灵枢停何处",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 185,
+      "start": 4884.146,
+      "end": 4884.345,
+      "rawAsr": "可怜峤躯葬鱼朡",
+      "layers": {
+        "zh": {
+          "text": "可怜峤躯葬鱼朡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 186,
+      "start": 4884.346,
+      "end": 4891.452,
+      "rawAsr": "可怜峤躯葬鱼腹",
+      "layers": {
+        "zh": {
+          "text": "可怜峤躯葬鱼腹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 187,
+      "start": 4891.453,
+      "end": 4898.559,
+      "rawAsr": "订盟信物可有存 ，",
+      "layers": {
+        "zh": {
+          "text": "订盟信物可有存 ，",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 188,
+      "start": 4898.56,
+      "end": 4906.368,
+      "rawAsr": "荆钗随水任漂浮",
+      "layers": {
+        "zh": {
+          "text": "荆钗随水任漂浮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 189,
+      "start": 4906.468,
+      "end": 4912.773,
+      "rawAsr": "难道说再无一物留与我",
+      "layers": {
+        "zh": {
+          "text": "难道说再无一物留与我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 190,
+      "start": 4912.774,
+      "end": 4937.199,
+      "rawAsr": "只有那一只绣鞋兹江坡",
+      "layers": {
+        "zh": {
+          "text": "只有那一只绣鞋兹江坡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 191,
+      "start": 4978.64,
+      "end": 4990.552,
+      "rawAsr": "遥拜南天倍伤神",
+      "layers": {
+        "zh": {
+          "text": "遥拜南天倍伤神",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 192,
+      "start": 4993.055,
+      "end": 5002.764,
+      "rawAsr": "撮土为香祭亡灵",
+      "layers": {
+        "zh": {
+          "text": "撮土为香祭亡灵",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 193,
+      "start": 5005.767,
+      "end": 5015.477,
+      "rawAsr": "你魂灵儿应是系去远",
+      "layers": {
+        "zh": {
+          "text": "你魂灵儿应是系去远",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 194,
+      "start": 5019.481,
+      "end": 5039.601,
+      "rawAsr": "暂且为我驻足听",
+      "layers": {
+        "zh": {
+          "text": "暂且为我驻足听",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 195,
+      "start": 5047.509,
+      "end": 5067.129,
+      "rawAsr": "悔不该误尽平生览封候",
+      "layers": {
+        "zh": {
+          "text": "悔不该误尽平生览封候",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 196,
+      "start": 5069.431,
+      "end": 5083.245,
+      "rawAsr": "求什么功名宴琼林",
+      "layers": {
+        "zh": {
+          "text": "求什么功名宴琼林",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 197,
+      "start": 5085.948,
+      "end": 5096.758,
+      "rawAsr": "若无生离千里远",
+      "layers": {
+        "zh": {
+          "text": "若无生离千里远",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 198,
+      "start": 5097.559,
+      "end": 5111.073,
+      "rawAsr": "何来死别万年恨",
+      "layers": {
+        "zh": {
+          "text": "何来死别万年恨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 199,
+      "start": 5114.876,
+      "end": 5126.488,
+      "rawAsr": "恨尕能身插双翅到幽冥",
+      "layers": {
+        "zh": {
+          "text": "恨尕能身插双翅到幽冥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 200,
+      "start": 5126.588,
+      "end": 5140.702,
+      "rawAsr": "剖朡掏心诉衷情",
+      "layers": {
+        "zh": {
+          "text": "剖朡掏心诉衷情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 201,
+      "start": 5143.605,
+      "end": 5156.718,
+      "rawAsr": "他见你手执荆钗眼含泪",
+      "layers": {
+        "zh": {
+          "text": "他见你手执荆钗眼含泪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 202,
+      "start": 5158.02,
+      "end": 5165.527,
+      "rawAsr": "怨我薄情目难瞑",
+      "layers": {
+        "zh": {
+          "text": "怨我薄情目难瞑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 203,
+      "start": 5166.928,
+      "end": 5185.146,
+      "rawAsr": "苦只苦荆钗订下白头盟",
+      "layers": {
+        "zh": {
+          "text": "苦只苦荆钗订下白头盟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 204,
+      "start": 5185.147,
+      "end": 5200.662,
+      "rawAsr": "谁知道无缘偕老先离兮",
+      "layers": {
+        "zh": {
+          "text": "谁知道无缘偕老先离兮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 205,
+      "start": 5202.664,
+      "end": 5222.397,
+      "rawAsr": "渡口一别成永快",
+      "layers": {
+        "zh": {
+          "text": "渡口一别成永快",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 206,
+      "start": 5222.797,
+      "end": 5223.198,
+      "rawAsr": "骤然间",
+      "layers": {
+        "zh": {
+          "text": "骤然间",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 207,
+      "start": 5225.8,
+      "end": 5231.706,
+      "rawAsr": "天地倾 羌残春尽",
+      "layers": {
+        "zh": {
+          "text": "天地倾 羌残春尽",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 208,
+      "start": 5231.806,
+      "end": 5234.908,
+      "rawAsr": "弦断酒冷 人去接空",
+      "layers": {
+        "zh": {
+          "text": "弦断酒冷 人去接空",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 209,
+      "start": 5234.909,
+      "end": 5249.324,
+      "rawAsr": "烟波无情莽冤魂",
+      "layers": {
+        "zh": {
+          "text": "烟波无情莽冤魂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 210,
+      "start": 5251.926,
+      "end": 5258.633,
+      "rawAsr": "北今是大劫过后催发白",
+      "layers": {
+        "zh": {
+          "text": "北今是大劫过后催发白",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 211,
+      "start": 5258.733,
+      "end": 5262.237,
+      "rawAsr": "万念俱灰老了心",
+      "layers": {
+        "zh": {
+          "text": "万念俱灰老了心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 212,
+      "start": 5262.737,
+      "end": 5263.238,
+      "rawAsr": "母桌啊",
+      "layers": {
+        "zh": {
+          "text": "母桌啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 213,
+      "start": 5263.438,
+      "end": 5265.74,
+      "rawAsr": "你望儿芝兰茂门庭",
+      "layers": {
+        "zh": {
+          "text": "你望儿芝兰茂门庭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 214,
+      "start": 5265.84,
+      "end": 5269.343,
+      "rawAsr": "我有心无力负眼恩",
+      "layers": {
+        "zh": {
+          "text": "我有心无力负眼恩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 215,
+      "start": 5269.344,
+      "end": 5274.048,
+      "rawAsr": "尐莲坚守荆钗志",
+      "layers": {
+        "zh": {
+          "text": "尐莲坚守荆钗志",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 216,
+      "start": 5274.049,
+      "end": 5277.152,
+      "rawAsr": "十朋 尕改岁寒心",
+      "layers": {
+        "zh": {
+          "text": "十朋 尕改岁寒心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 217,
+      "start": 5277.252,
+      "end": 5280.855,
+      "rawAsr": "牠寂窴幽冥形影狐",
+      "layers": {
+        "zh": {
+          "text": "牠寂窴幽冥形影狐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 218,
+      "start": 5280.956,
+      "end": 5296.071,
+      "rawAsr": "我凄凉日月永独身",
+      "layers": {
+        "zh": {
+          "text": "我凄凉日月永独身",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 219,
+      "start": 5301.676,
+      "end": 5319.995,
+      "rawAsr": "从此王家香烟断",
+      "layers": {
+        "zh": {
+          "text": "从此王家香烟断",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 220,
+      "start": 5324.699,
+      "end": 5352.127,
+      "rawAsr": "求眼桌成全孩儿一片心",
+      "layers": {
+        "zh": {
+          "text": "求眼桌成全孩儿一片心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 221,
+      "start": 5596.871,
+      "end": 5604.578,
+      "rawAsr": "老头子原在温州为太守",
+      "layers": {
+        "zh": {
+          "text": "老头子原在温州为太守",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 222,
+      "start": 5604.579,
+      "end": 5611.886,
+      "rawAsr": "月箭計迁到福州",
+      "layers": {
+        "zh": {
+          "text": "月箭計迁到福州",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 223,
+      "start": 5615.29,
+      "end": 5618.492,
+      "rawAsr": "愮行江中救弱女",
+      "layers": {
+        "zh": {
+          "text": "愮行江中救弱女",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 224,
+      "start": 5618.493,
+      "end": 5625.5,
+      "rawAsr": "听身世我心肠软来热泪流",
+      "layers": {
+        "zh": {
+          "text": "听身世我心肠软来热泪流",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 225,
+      "start": 5636.611,
+      "end": 5640.915,
+      "rawAsr": "一笔难写两个钱",
+      "layers": {
+        "zh": {
+          "text": "一笔难写两个钱",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 226,
+      "start": 5641.016,
+      "end": 5645.919,
+      "rawAsr": "又疼又怜义女收",
+      "layers": {
+        "zh": {
+          "text": "又疼又怜义女收",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 227,
+      "start": 5645.92,
+      "end": 5651.726,
+      "rawAsr": "怎奈牠郁闷成疾身虚弱",
+      "layers": {
+        "zh": {
+          "text": "怎奈牠郁闷成疾身虚弱",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 228,
+      "start": 5652.427,
+      "end": 5658.633,
+      "rawAsr": "这驱病何处神药求",
+      "layers": {
+        "zh": {
+          "text": "这驱病何处神药求",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 229,
+      "start": 5709.484,
+      "end": 5715.991,
+      "rawAsr": "适才京城来故人",
+      "layers": {
+        "zh": {
+          "text": "适才京城来故人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 230,
+      "start": 5716.091,
+      "end": 5720.495,
+      "rawAsr": "驿站敘谈闻喜讯",
+      "layers": {
+        "zh": {
+          "text": "驿站敘谈闻喜讯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 231,
+      "start": 5720.795,
+      "end": 5724.399,
+      "rawAsr": "王十朋相府入赘事",
+      "layers": {
+        "zh": {
+          "text": "王十朋相府入赘事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 232,
+      "start": 5724.499,
+      "end": 5727.302,
+      "rawAsr": "却原来",
+      "layers": {
+        "zh": {
+          "text": "却原来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 233,
+      "start": 5727.402,
+      "end": 5733.808,
+      "rawAsr": "却原来冤枉好人非实情",
+      "layers": {
+        "zh": {
+          "text": "却原来冤枉好人非实情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 234,
+      "start": 5733.908,
+      "end": 5738.512,
+      "rawAsr": "將一个状元骨头硬",
+      "layers": {
+        "zh": {
+          "text": "將一个状元骨头硬",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 235,
+      "start": 5738.513,
+      "end": 5744.619,
+      "rawAsr": "守志抗睧留盖名",
+      "layers": {
+        "zh": {
+          "text": "守志抗睧留盖名",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 236,
+      "start": 5774.349,
+      "end": 5780.954,
+      "rawAsr": "重阴去尽兹士埃",
+      "layers": {
+        "zh": {
+          "text": "重阴去尽兹士埃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 237,
+      "start": 5780.955,
+      "end": 5788.063,
+      "rawAsr": "狂树花迎晓霑开",
+      "layers": {
+        "zh": {
+          "text": "狂树花迎晓霑开",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 238,
+      "start": 5788.163,
+      "end": 5790.064,
+      "rawAsr": "解开心头千千结 ，",
+      "layers": {
+        "zh": {
+          "text": "解开心头千千结 ，",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 239,
+      "start": 5790.065,
+      "end": 5796.471,
+      "rawAsr": "喜极悲来泪満肥",
+      "layers": {
+        "zh": {
+          "text": "喜极悲来泪満肥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 240,
+      "start": 5798.273,
+      "end": 5798.873,
+      "rawAsr": "爹爹啊",
+      "layers": {
+        "zh": {
+          "text": "爹爹啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 241,
+      "start": 5798.973,
+      "end": 5803.277,
+      "rawAsr": "恨尕即刻江西去",
+      "layers": {
+        "zh": {
+          "text": "恨尕即刻江西去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 242,
+      "start": 5803.278,
+      "end": 5809.584,
+      "rawAsr": "夫妻重会诉情怀",
+      "layers": {
+        "zh": {
+          "text": "夫妻重会诉情怀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 243,
+      "start": 5810.385,
+      "end": 5812.687,
+      "rawAsr": "夫妻重会诉情怀",
+      "layers": {
+        "zh": {
+          "text": "夫妻重会诉情怀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 244,
+      "start": 5925.6,
+      "end": 5928.503,
+      "rawAsr": "小人奉命饶州行",
+      "layers": {
+        "zh": {
+          "text": "小人奉命饶州行",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 245,
+      "start": 5928.603,
+      "end": 5931.405,
+      "rawAsr": "只见孝 幛 挂 満 城",
+      "layers": {
+        "zh": {
+          "text": "只见孝 幛 挂 満 城",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 246,
+      "start": 5931.406,
+      "end": 5934.308,
+      "rawAsr": "怎奈小人采识字",
+      "layers": {
+        "zh": {
+          "text": "怎奈小人采识字",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 247,
+      "start": 5934.309,
+      "end": 5937.211,
+      "rawAsr": "问过旁人才知情",
+      "layers": {
+        "zh": {
+          "text": "问过旁人才知情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 248,
+      "start": 5937.212,
+      "end": 5941.216,
+      "rawAsr": "铭旌上写着王签判",
+      "layers": {
+        "zh": {
+          "text": "铭旌上写着王签判",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 249,
+      "start": 5943.318,
+      "end": 5948.223,
+      "rawAsr": "一场重病已送命",
+      "layers": {
+        "zh": {
+          "text": "一场重病已送命",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 250,
+      "start": 5977.052,
+      "end": 5985.16,
+      "rawAsr": "只说是否极泰来又逢春",
+      "layers": {
+        "zh": {
+          "text": "只说是否极泰来又逢春",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 251,
+      "start": 5986.461,
+      "end": 5994.669,
+      "rawAsr": "谁知道新生变故更心惊",
+      "layers": {
+        "zh": {
+          "text": "谁知道新生变故更心惊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 252,
+      "start": 5996.871,
+      "end": 6001.375,
+      "rawAsr": "想女儿泪痕初拭病辖轻",
+      "layers": {
+        "zh": {
+          "text": "想女儿泪痕初拭病辖轻",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 253,
+      "start": 6001.376,
+      "end": 6007.082,
+      "rawAsr": "怎能教囹閤叉响断肠声",
+      "layers": {
+        "zh": {
+          "text": "怎能教囹閤叉响断肠声",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 254,
+      "start": 6007.182,
+      "end": 6015.389,
+      "rawAsr": "口难启 心何忍",
+      "layers": {
+        "zh": {
+          "text": "口难启 心何忍",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 255,
+      "start": 6015.39,
+      "end": 6016.79,
+      "rawAsr": "瞒 噩耗",
+      "layers": {
+        "zh": {
+          "text": "瞒 噩耗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 256,
+      "start": 6016.791,
+      "end": 6023.298,
+      "rawAsr": "且寻夫人主意定",
+      "layers": {
+        "zh": {
+          "text": "且寻夫人主意定",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 257,
+      "start": 6200.275,
+      "end": 6211.786,
+      "rawAsr": "几番风雨几番愁",
+      "layers": {
+        "zh": {
+          "text": "几番风雨几番愁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 258,
+      "start": 6215.09,
+      "end": 6230.605,
+      "rawAsr": "伤心早已无泪流",
+      "layers": {
+        "zh": {
+          "text": "伤心早已无泪流",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 259,
+      "start": 6233.308,
+      "end": 6244.837,
+      "rawAsr": "心中有意盻聚首",
+      "layers": {
+        "zh": {
+          "text": "心中有意盻聚首",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 260,
+      "start": 6244.838,
+      "end": 6263.157,
+      "rawAsr": "命里无緣也难求",
+      "layers": {
+        "zh": {
+          "text": "命里无緣也难求",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 261,
+      "start": 6276.47,
+      "end": 6285.679,
+      "rawAsr": "王郞主将誓盟负",
+      "layers": {
+        "zh": {
+          "text": "王郞主将誓盟负",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 262,
+      "start": 6285.779,
+      "end": 6295.788,
+      "rawAsr": "两心已是长厮守",
+      "layers": {
+        "zh": {
+          "text": "两心已是长厮守",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 263,
+      "start": 6295.789,
+      "end": 6311.404,
+      "rawAsr": "回眸今生已无憾",
+      "layers": {
+        "zh": {
+          "text": "回眸今生已无憾",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 264,
+      "start": 6311.405,
+      "end": 6325.719,
+      "rawAsr": "从今后二老膝嵛度春秋",
+      "layers": {
+        "zh": {
+          "text": "从今后二老膝嵛度春秋",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 265,
+      "start": 6348.942,
+      "end": 6351.145,
+      "rawAsr": "毎逢王 郞 忌 辰 日",
+      "layers": {
+        "zh": {
+          "text": "毎逢王 郞 忌 辰 日",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 266,
+      "start": 6354.148,
+      "end": 6356.65,
+      "rawAsr": "毎 逢王郞 忌 辰 日",
+      "layers": {
+        "zh": {
+          "text": "毎 逢王郞 忌 辰 日",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 267,
+      "start": 6357.251,
+      "end": 6359.053,
+      "rawAsr": "毎 逢王郞 忌辰日",
+      "layers": {
+        "zh": {
+          "text": "毎 逢王郞 忌辰日",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 268,
+      "start": 6359.453,
+      "end": 6361.255,
+      "rawAsr": "千卷心经返温州",
+      "layers": {
+        "zh": {
+          "text": "千卷心经返温州",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 269,
+      "start": 6362.556,
+      "end": 6368.862,
+      "rawAsr": "千卷心经返温州",
+      "layers": {
+        "zh": {
+          "text": "千卷心经返温州",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 270,
+      "start": 6368.962,
+      "end": 6386.88,
+      "rawAsr": "江心寺里荐亡灵",
+      "layers": {
+        "zh": {
+          "text": "江心寺里荐亡灵",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 271,
+      "start": 6388.582,
+      "end": 6415.109,
+      "rawAsr": "三炬清香一权酒",
+      "layers": {
+        "zh": {
+          "text": "三炬清香一权酒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 272,
+      "start": 6419.613,
+      "end": 6419.813,
+      "rawAsr": "ll",
+      "layers": {
+        "zh": {
+          "text": "ll",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 273,
+      "start": 6603.597,
+      "end": 6607.901,
+      "rawAsr": "广 东为 官五年多",
+      "layers": {
+        "zh": {
+          "text": "广 东为 官五年多",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 274,
+      "start": 6608.001,
+      "end": 6615.508,
+      "rawAsr": "清正廉明人赞慕",
+      "layers": {
+        "zh": {
+          "text": "清正廉明人赞慕",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 275,
+      "start": 6615.509,
+      "end": 6620.012,
+      "rawAsr": "幸喜得万俟权相命鸣呼",
+      "layers": {
+        "zh": {
+          "text": "幸喜得万俟权相命鸣呼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 276,
+      "start": 6620.013,
+      "end": 6624.517,
+      "rawAsr": "他擢計江西吉安府",
+      "layers": {
+        "zh": {
+          "text": "他擢計江西吉安府",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 277,
+      "start": 6624.518,
+      "end": 6631.125,
+      "rawAsr": "今日上任路过此",
+      "layers": {
+        "zh": {
+          "text": "今日上任路过此",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 278,
+      "start": 6631.325,
+      "end": 6637.731,
+      "rawAsr": "我陪他江心荐亡拜弥陀",
+      "layers": {
+        "zh": {
+          "text": "我陪他江心荐亡拜弥陀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 279,
+      "start": 6639.032,
+      "end": 6646.44,
+      "rawAsr": "和令暖千里有缘喜相会",
+      "layers": {
+        "zh": {
+          "text": "和令暖千里有缘喜相会",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 280,
+      "start": 6646.54,
+      "end": 6653.947,
+      "rawAsr": "这现成的媒翁我来做",
+      "layers": {
+        "zh": {
+          "text": "这现成的媒翁我来做",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 281,
+      "start": 6814.708,
+      "end": 6824.418,
+      "rawAsr": "你的喜事来了",
+      "layers": {
+        "zh": {
+          "text": "你的喜事来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 282,
+      "start": 6828.622,
+      "end": 6832.925,
+      "rawAsr": "太守印堂亮晶晶",
+      "layers": {
+        "zh": {
+          "text": "太守印堂亮晶晶",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 283,
+      "start": 6832.926,
+      "end": 6837.23,
+      "rawAsr": "运変挑花喜临门",
+      "layers": {
+        "zh": {
+          "text": "运変挑花喜临门",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 284,
+      "start": 6837.231,
+      "end": 6840.134,
+      "rawAsr": "福建安抚有一女",
+      "layers": {
+        "zh": {
+          "text": "福建安抚有一女",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 285,
+      "start": 6840.234,
+      "end": 6843.937,
+      "rawAsr": "守零多年盖绝伦",
+      "layers": {
+        "zh": {
+          "text": "守零多年盖绝伦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 286,
+      "start": 6844.438,
+      "end": 6845.037,
+      "rawAsr": "牠八两 你学斤",
+      "layers": {
+        "zh": {
+          "text": "牠八两 你学斤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 287,
+      "start": 6845.038,
+      "end": 6845.539,
+      "rawAsr": "牠八两",
+      "layers": {
+        "zh": {
+          "text": "牠八两",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 288,
+      "start": 6845.639,
+      "end": 6846.639,
+      "rawAsr": "牠八两 你学斤",
+      "layers": {
+        "zh": {
+          "text": "牠八两 你学斤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 289,
+      "start": 6846.64,
+      "end": 6851.044,
+      "rawAsr": "人相当 门相称",
+      "layers": {
+        "zh": {
+          "text": "人相当 门相称",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 290,
+      "start": 6851.345,
+      "end": 6853.646,
+      "rawAsr": "天赐一对美睧睏",
+      "layers": {
+        "zh": {
+          "text": "天赐一对美睧睏",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 291,
+      "start": 6853.647,
+      "end": 6859.853,
+      "rawAsr": "月下老人我担承",
+      "layers": {
+        "zh": {
+          "text": "月下老人我担承",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 292,
+      "start": 6956.15,
+      "end": 6963.857,
+      "rawAsr": "上元节 又来殿庭",
+      "layers": {
+        "zh": {
+          "text": "上元节 又来殿庭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 293,
+      "start": 6964.558,
+      "end": 6965.159,
+      "rawAsr": "上元节 又来殿庭",
+      "layers": {
+        "zh": {
+          "text": "上元节 又来殿庭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 294,
+      "start": 6965.859,
+      "end": 6971.565,
+      "rawAsr": "上元节 又来殿庭",
+      "layers": {
+        "zh": {
+          "text": "上元节 又来殿庭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 295,
+      "start": 6975.469,
+      "end": 6987.281,
+      "rawAsr": "仗名香 折告天灵",
+      "layers": {
+        "zh": {
+          "text": "仗名香 折告天灵",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 296,
+      "start": 6994.188,
+      "end": 7011.604,
+      "rawAsr": "亡夫暴病杏然去",
+      "layers": {
+        "zh": {
+          "text": "亡夫暴病杏然去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 297,
+      "start": 7011.605,
+      "end": 7033.627,
+      "rawAsr": "愿趋亡灵上仙境",
+      "layers": {
+        "zh": {
+          "text": "愿趋亡灵上仙境",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 298,
+      "start": 7040.033,
+      "end": 7047.541,
+      "rawAsr": "玉莲啊",
+      "layers": {
+        "zh": {
+          "text": "玉莲啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 299,
+      "start": 7054.248,
+      "end": 7065.759,
+      "rawAsr": "未知你幽冥中可安將",
+      "layers": {
+        "zh": {
+          "text": "未知你幽冥中可安將",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 300,
+      "start": 7068.262,
+      "end": 7078.972,
+      "rawAsr": "谁伴夜话到天明",
+      "layers": {
+        "zh": {
+          "text": "谁伴夜话到天明",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 301,
+      "start": 7081.375,
+      "end": 7087.481,
+      "rawAsr": "王郞啊",
+      "layers": {
+        "zh": {
+          "text": "王郞啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 302,
+      "start": 7089.583,
+      "end": 7097.791,
+      "rawAsr": "我玉珮无声画屏冷",
+      "layers": {
+        "zh": {
+          "text": "我玉珮无声画屏冷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 303,
+      "start": 7098.592,
+      "end": 7109.903,
+      "rawAsr": "夜夜苦雨独自听",
+      "layers": {
+        "zh": {
+          "text": "夜夜苦雨独自听",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 304,
+      "start": 7116.51,
+      "end": 7118.512,
+      "rawAsr": "我念你",
+      "layers": {
+        "zh": {
+          "text": "我念你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 305,
+      "start": 7118.612,
+      "end": 7125.319,
+      "rawAsr": "伤心不敢江边走",
+      "layers": {
+        "zh": {
+          "text": "伤心不敢江边走",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 306,
+      "start": 7125.419,
+      "end": 7134.928,
+      "rawAsr": "唯恐忽见你波中影",
+      "layers": {
+        "zh": {
+          "text": "唯恐忽见你波中影",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 307,
+      "start": 7135.028,
+      "end": 7136.029,
+      "rawAsr": "我念你",
+      "layers": {
+        "zh": {
+          "text": "我念你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 308,
+      "start": 7138.332,
+      "end": 7141.134,
+      "rawAsr": "我念你",
+      "layers": {
+        "zh": {
+          "text": "我念你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 309,
+      "start": 7141.135,
+      "end": 7149.942,
+      "rawAsr": "毎載荆钗泪双垂",
+      "layers": {
+        "zh": {
+          "text": "毎載荆钗泪双垂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 310,
+      "start": 7149.943,
+      "end": 7161.955,
+      "rawAsr": "懒理容妆镜生尘",
+      "layers": {
+        "zh": {
+          "text": "懒理容妆镜生尘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 311,
+      "start": 7163.857,
+      "end": 7175.169,
+      "rawAsr": "几番梦里喜逢君一",
+      "layers": {
+        "zh": {
+          "text": "几番梦里喜逢君一",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 312,
+      "start": 7177.571,
+      "end": 7194.488,
+      "rawAsr": "醒 来惆怅寻无痕",
+      "layers": {
+        "zh": {
+          "text": "醒 来惆怅寻无痕",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 313,
+      "start": 7226.52,
+      "end": 7235.429,
+      "rawAsr": "幕然见俊英",
+      "layers": {
+        "zh": {
+          "text": "幕然见俊英",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 314,
+      "start": 7240.835,
+      "end": 7250.344,
+      "rawAsr": "恍若 又入梦",
+      "layers": {
+        "zh": {
+          "text": "恍若 又入梦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 315,
+      "start": 7258.052,
+      "end": 7269.663,
+      "rawAsr": "形容毕育神相似",
+      "layers": {
+        "zh": {
+          "text": "形容毕育神相似",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 316,
+      "start": 7275.87,
+      "end": 7295.389,
+      "rawAsr": "惊骇起疑云",
+      "layers": {
+        "zh": {
+          "text": "惊骇起疑云",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 317,
+      "start": 7723.717,
+      "end": 7732.926,
+      "rawAsr": "灯映江亭华宴开",
+      "layers": {
+        "zh": {
+          "text": "灯映江亭华宴开",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 318,
+      "start": 7732.927,
+      "end": 7739.133,
+      "rawAsr": "各有心事频举杯，",
+      "layers": {
+        "zh": {
+          "text": "各有心事频举杯，",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 319,
+      "start": 7745.239,
+      "end": 7749.742,
+      "rawAsr": "我借酒解谜邀客来",
+      "layers": {
+        "zh": {
+          "text": "我借酒解谜邀客来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 320,
+      "start": 7749.743,
+      "end": 7754.348,
+      "rawAsr": "犹恐詹突费安桃",
+      "layers": {
+        "zh": {
+          "text": "犹恐詹突费安桃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 321,
+      "start": 7754.448,
+      "end": 7757.45,
+      "rawAsr": "我单刀直入欲启齿",
+      "layers": {
+        "zh": {
+          "text": "我单刀直入欲启齿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 322,
+      "start": 7757.451,
+      "end": 7762.056,
+      "rawAsr": "犹恐鲁荞人见怪",
+      "layers": {
+        "zh": {
+          "text": "犹恐鲁荞人见怪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 323,
+      "start": 7762.156,
+      "end": 7768.161,
+      "rawAsr": "我声色又动装糊涂",
+      "layers": {
+        "zh": {
+          "text": "我声色又动装糊涂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 324,
+      "start": 7768.162,
+      "end": 7774.268,
+      "rawAsr": "反客为主催干抔",
+      "layers": {
+        "zh": {
+          "text": "反客为主催干抔",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 325,
+      "start": 7810.104,
+      "end": 7812.706,
+      "rawAsr": "适才请他后厅来",
+      "layers": {
+        "zh": {
+          "text": "适才请他后厅来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 326,
+      "start": 7812.806,
+      "end": 7815.909,
+      "rawAsr": "暗告原由细变代",
+      "layers": {
+        "zh": {
+          "text": "暗告原由细变代",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 327,
+      "start": 7815.91,
+      "end": 7818.611,
+      "rawAsr": "托他穿针来引线",
+      "layers": {
+        "zh": {
+          "text": "托他穿针来引线",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 328,
+      "start": 7818.612,
+      "end": 7830.741,
+      "rawAsr": "却为何装耷作哑假痴呆",
+      "layers": {
+        "zh": {
+          "text": "却为何装耷作哑假痴呆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 329,
+      "start": 7830.742,
+      "end": 7832.543,
+      "rawAsr": "适才他谷应直精探",
+      "layers": {
+        "zh": {
+          "text": "适才他谷应直精探",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 330,
+      "start": 7832.544,
+      "end": 7835.646,
+      "rawAsr": "凡事由他来安排",
+      "layers": {
+        "zh": {
+          "text": "凡事由他来安排",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 331,
+      "start": 7835.647,
+      "end": 7839.35,
+      "rawAsr": "只怕他未唱先醉把事误",
+      "layers": {
+        "zh": {
+          "text": "只怕他未唱先醉把事误",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 332,
+      "start": 7839.351,
+      "end": 7845.057,
+      "rawAsr": "不着边际乱干权",
+      "layers": {
+        "zh": {
+          "text": "不着边际乱干权",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 333,
+      "start": 7893.705,
+      "end": 7898.911,
+      "rawAsr": "可恼他 傲慢性",
+      "layers": {
+        "zh": {
+          "text": "可恼他 傲慢性",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 334,
+      "start": 7899.011,
+      "end": 7904.316,
+      "rawAsr": "，对天发誓拒睧胭",
+      "layers": {
+        "zh": {
+          "text": "，对天发誓拒睧胭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 335,
+      "start": 7904.416,
+      "end": 7908.819,
+      "rawAsr": "说什么除非日从西方出",
+      "layers": {
+        "zh": {
+          "text": "说什么除非日从西方出",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 336,
+      "start": 7908.82,
+      "end": 7913.025,
+      "rawAsr": "要他再娶万禾能",
+      "layers": {
+        "zh": {
+          "text": "要他再娶万禾能",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 337,
+      "start": 7918.13,
+      "end": 7922.433,
+      "rawAsr": "谛 睏痒 是双方事",
+      "layers": {
+        "zh": {
+          "text": "谛 睏痒 是双方事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 338,
+      "start": 7922.434,
+      "end": 7927.038,
+      "rawAsr": "你情我愿两称心",
+      "layers": {
+        "zh": {
+          "text": "你情我愿两称心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 339,
+      "start": 7927.039,
+      "end": 7930.341,
+      "rawAsr": "既然你对天友誓愿",
+      "layers": {
+        "zh": {
+          "text": "既然你对天友誓愿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 340,
+      "start": 7930.342,
+      "end": 7934.446,
+      "rawAsr": "我不敢高攀作罢论",
+      "layers": {
+        "zh": {
+          "text": "我不敢高攀作罢论",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 341,
+      "start": 7949.561,
+      "end": 7953.966,
+      "rawAsr": "昨日你手拍胸膛做媒么",
+      "layers": {
+        "zh": {
+          "text": "昨日你手拍胸膛做媒么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 342,
+      "start": 7954.066,
+      "end": 7958.57,
+      "rawAsr": "今日里假装糊涂撒酒疯",
+      "layers": {
+        "zh": {
+          "text": "今日里假装糊涂撒酒疯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 343,
+      "start": 7958.67,
+      "end": 7961.773,
+      "rawAsr": "若 不将真情说明白",
+      "layers": {
+        "zh": {
+          "text": "若 不将真情说明白",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 344,
+      "start": 7961.874,
+      "end": 7965.978,
+      "rawAsr": "休怪为搜出手重",
+      "layers": {
+        "zh": {
+          "text": "休怪为搜出手重",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 345,
+      "start": 7982.694,
+      "end": 7985.696,
+      "rawAsr": "看来为人奠做媒",
+      "layers": {
+        "zh": {
+          "text": "看来为人奠做媒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 346,
+      "start": 7985.697,
+      "end": 7988.7,
+      "rawAsr": "丈母眼要来夺酒打",
+      "layers": {
+        "zh": {
+          "text": "丈母眼要来夺酒打",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 347,
+      "start": 7988.8,
+      "end": 7994.906,
+      "rawAsr": "辖身喚一声王太守",
+      "layers": {
+        "zh": {
+          "text": "辖身喚一声王太守",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 348,
+      "start": 7994.907,
+      "end": 8002.214,
+      "rawAsr": "你且上前说明白",
+      "layers": {
+        "zh": {
+          "text": "你且上前说明白",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 349,
+      "start": 8026.838,
+      "end": 8032.743,
+      "rawAsr": "恕我冒昧来相问",
+      "layers": {
+        "zh": {
+          "text": "恕我冒昧来相问",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 350,
+      "start": 8032.744,
+      "end": 8066.278,
+      "rawAsr": "太守牵是何方人",
+      "layers": {
+        "zh": {
+          "text": "太守牵是何方人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 351,
+      "start": 8066.478,
+      "end": 8070.594,
+      "rawAsr": "太守少年泌箭程",
+      "layers": {
+        "zh": {
+          "text": "太守少年泌箭程",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 352,
+      "start": 8070.595,
+      "end": 8076.8,
+      "rawAsr": "为何至今犹独身",
+      "layers": {
+        "zh": {
+          "text": "为何至今犹独身",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 353,
+      "start": 8076.801,
+      "end": 8080.304,
+      "rawAsr": "可叹贤妻遭禾测",
+      "layers": {
+        "zh": {
+          "text": "可叹贤妻遭禾测",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 354,
+      "start": 8080.305,
+      "end": 8086.511,
+      "rawAsr": "滾滾江涛葬牠身",
+      "layers": {
+        "zh": {
+          "text": "滾滾江涛葬牠身",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 355,
+      "start": 8105.73,
+      "end": 8108.432,
+      "rawAsr": "你少年夫妻应恩爱",
+      "layers": {
+        "zh": {
+          "text": "你少年夫妻应恩爱",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 356,
+      "start": 8108.433,
+      "end": 8112.336,
+      "rawAsr": "牠因何变故投江心",
+      "layers": {
+        "zh": {
+          "text": "牠因何变故投江心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 357,
+      "start": 8112.337,
+      "end": 8116.24,
+      "rawAsr": "孙汝权呈皯改书信",
+      "layers": {
+        "zh": {
+          "text": "孙汝权呈皯改书信",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 358,
+      "start": 8116.241,
+      "end": 8120.045,
+      "rawAsr": "呈报上司已严惩",
+      "layers": {
+        "zh": {
+          "text": "呈报上司已严惩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 359,
+      "start": 8135.16,
+      "end": 8139.863,
+      "rawAsr": "非是金 非是银",
+      "layers": {
+        "zh": {
+          "text": "非是金 非是银",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 360,
+      "start": 8139.864,
+      "end": 8144.369,
+      "rawAsr": "这聘物",
+      "layers": {
+        "zh": {
+          "text": "这聘物",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 361,
+      "start": 8147.572,
+      "end": 8160.986,
+      "rawAsr": "一枚荆钗结同心",
+      "layers": {
+        "zh": {
+          "text": "一枚荆钗结同心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 362,
+      "start": 8207.933,
+      "end": 8214.839,
+      "rawAsr": "荆钗作证",
+      "layers": {
+        "zh": {
+          "text": "荆钗作证",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 363,
+      "start": 8232.557,
+      "end": 8236.261,
+      "rawAsr": "荆钗作证 荆钗作证",
+      "layers": {
+        "zh": {
+          "text": "荆钗作证 荆钗作证",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 364,
+      "start": 8236.361,
+      "end": 8242.167,
+      "rawAsr": "若梦若醒 他幻似直",
+      "layers": {
+        "zh": {
+          "text": "若梦若醒 他幻似直",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 365,
+      "start": 8242.267,
+      "end": 8246.971,
+      "rawAsr": "荆钗作证 荆钗作证",
+      "layers": {
+        "zh": {
+          "text": "荆钗作证 荆钗作证",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 366,
+      "start": 8246.972,
+      "end": 8249.373,
+      "rawAsr": "别时 正 青 春",
+      "layers": {
+        "zh": {
+          "text": "别时 正 青 春",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 367,
+      "start": 8249.374,
+      "end": 8259.084,
+      "rawAsr": "归 时 白 发 生",
+      "layers": {
+        "zh": {
+          "text": "归 时 白 发 生",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 368,
+      "start": 8264.789,
+      "end": 8276.6,
+      "rawAsr": "漫道人生跋渉苦",
+      "layers": {
+        "zh": {
+          "text": "漫道人生跋渉苦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 369,
+      "start": 8276.601,
+      "end": 8311.236,
+      "rawAsr": "天道终酬信",
+      "layers": {
+        "zh": {
+          "text": "天道终酬信",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}
