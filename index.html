@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="styles/tokens.css?v=20260815a" />
   <link rel="stylesheet" href="styles/main.css?v=20260815e" />
   <link rel="stylesheet" href="styles/a11y.css?v=20260815a" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260823fix2" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260823brief1" />
   <link rel="stylesheet" href="styles/tanci.css?v=20260815a" />
   <link rel="stylesheet" href="styles/learn.css?v=20260815a" />
   <link rel="stylesheet" href="styles/dictionary.css?v=20260815a" />
@@ -1227,9 +1227,9 @@
             <aside class="research-abstract" aria-label="研究摘要">
               <p class="research-abstract__eyebrow">研究摘要 · 问题—方法—结果</p>
               <p><strong>背景。</strong>越语作为濒危吴语方言，语音识别面临语料稀缺与发音／语域变体（散白、韵白、唱词）复杂的双重挑战。</p>
-              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建金标切片，按短域旧戏 + 未见全剧双留出，对 Whisper-small 做 LoRA 微调与权重混合，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
-              <p><strong>结果（实验室 v13；Speak 线上仍为 blend-v10）。</strong>荆钗短域留出 n=39：tiny 1.54 · plain small 1.48 · 适配 <strong>0.81</strong>。白兔未见抽样 n=80 约 <strong>1.04</strong>。详见「关于 → 研究摘要」。</p>
-              <p><strong>意义。</strong>这验证了针对低资源越语的可复现适应路径；听说页加载 blend-v10（试点），实验室续训见 v13。</p>
+              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建金标切片，按短域旧戏 + 未见全剧双留出，对 Whisper-small 做 LoRA 微调与权重混合，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。评测协议排除唱词与时间轴不可靠的条目，硬指标用双集合报告。</p>
+              <p><strong>结果（实验室 v13；Speak 线上仍为 blend-v10）。</strong>荆钗短域留出 n=39：tiny 1.54 · plain small 1.48 · 适配 <strong>0.81</strong>。白兔未见抽样 n=80：tiny 3.55 · small 3.35 · 适配 <strong>1.04</strong>。相对同尺寸基线明显下降，但距「好看的 0.5」仍远——听校确认金标正确后，瓶颈主要在唱腔域能力，不靠剔难句刷分。</p>
+              <p><strong>意义与产品。</strong>这验证了可复现的低资源适应路径；字级见顶后，「听说」并行两路：① 档案检索／白话锚定；② 腔调·语调粗估情绪（浏览器音频特征）。线上仍加载 blend-v10（试点），v13 留在实验室。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
@@ -1318,9 +1318,9 @@
             <aside class="research-abstract" aria-label="研究摘要">
               <p class="research-abstract__eyebrow">研究摘要 · 問題—方法—結果</p>
               <p><strong>背景。</strong>越語作為瀕危吳語方言，語音識別面臨語料稀缺與發音／語域變體（散白、韻白、唱詞）複雜的雙重挑戰。</p>
-              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建金標切片，按短域舊戲 + 未見全劇雙留出，對 Whisper-small 做 LoRA 微調與權重混合，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER。</p>
-              <p><strong>結果（實驗室 v13；Speak 線上仍為 blend-v10）。</strong>荊釵短域留出 n=39：tiny 1.54 · plain small 1.48 · 適配 <strong>0.81</strong>。白兔未見抽樣 n=80 約 <strong>1.04</strong>。詳見「關於 → 研究摘要」。</p>
-              <p><strong>意義。</strong>這驗證了針對低資源越語的可復現適應路徑；聽說頁載入 blend-v10（試點），實驗室續訓見 v13。</p>
+              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建金標切片，按短域舊戲 + 未見全劇雙留出，對 Whisper-small 做 LoRA 微調與權重混合，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER。評測協議排除唱詞與時間軸不可靠的條目，硬指標用雙集合報告。</p>
+              <p><strong>結果（實驗室 v13；Speak 線上仍為 blend-v10）。</strong>荊釵短域留出 n=39：tiny 1.54 · plain small 1.48 · 適配 <strong>0.81</strong>。白兔未見抽樣 n=80：tiny 3.55 · small 3.35 · 適配 <strong>1.04</strong>。相對同尺寸基線明顯下降，但距「好看的 0.5」仍遠——聽校確認金標正確後，瓶頸主要在唱腔域能力，不靠剔難句刷分。</p>
+              <p><strong>意義與產品。</strong>這驗證了可復現的低資源適應路徑；字級見頂後，「聽說」並行兩路：① 檔案檢索／白話錨定；② 腔調·語調粗估情緒（瀏覽器音訊特徵）。線上仍載入 blend-v10（試點），v13 留在實驗室。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
@@ -1409,9 +1409,9 @@
             <aside class="research-abstract" aria-label="Research abstract">
               <p class="research-abstract__eyebrow">Research abstract · problem–method–result</p>
               <p><strong>Background.</strong> Yueyu, a threatened Wu variety, poses a dual ASR challenge: scarce aligned data and complex pronunciation / register variation (sanbai, yunbai, sung lines).</p>
-              <p><strong>Method.</strong> I built gold clips from this site’s corrected timed archive, used a short-domain classic holdout plus an unseen full-play sample, fine-tuned Whisper-small with LoRA and weight blending, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
-              <p><strong>Result (lab v13; Speak still live blend-v10).</strong> Jingchai short-domain n=39: tiny 1.54 · plain small 1.48 · adapted <strong>0.81</strong>. Baitu unseen sample n=80 ≈ <strong>1.04</strong>. See About → Research brief.</p>
-              <p><strong>Significance.</strong> This supports a reproducible low-resource path; Speak loads blend-v10 (pilot), with lab continue-training at v13.</p>
+              <p><strong>Method.</strong> I built gold clips from this site’s corrected timed archive, used a short-domain classic holdout plus an unseen full-play sample, fine-tuned Whisper-small with LoRA and weight blending, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>. The evaluation protocol drops unreliable lyric/timing items and reports two hard sets.</p>
+              <p><strong>Result (lab v13; Speak still live blend-v10).</strong> Jingchai short-domain n=39: tiny 1.54 · plain small 1.48 · adapted <strong>0.81</strong>. Baitu unseen sample n=80: tiny 3.55 · small 3.35 · adapted <strong>1.04</strong>. Clear gains vs size-matched baselines, but far from a vanity 0.5 mean—after listening QA confirmed labels, the ceiling is mainly sung-domain capacity, not scrubbing hard lines.</p>
+              <p><strong>Significance &amp; product.</strong> Supports a reproducible low-resource path. When verbatim CER plateaus, Speak runs two parallel paths: ① archive check / vernacular anchoring; ② delivery emotion from browser audio features. Live Speak still loads blend-v10 (pilot); v13 stays in the lab.</p>
             </aside>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
@@ -2384,10 +2384,11 @@
             <div class="plan-section" data-about-section="research" aria-hidden="true">
               <h3 data-i18n="about.research.title">研究摘要</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
-                <p><strong>问题。</strong>在标注稀缺时，高质量音文对齐语料与适配训练，能否同时稳住短域旧戏留出、并改善未见全剧上的识别？</p>
-                <p><strong>方法。</strong>从本站校对档案导出金标切片 → 短域旧戏留出（荆钗记前段）+ 未见全剧（白兔记不进训练）→ <code>whisper-small</code> + LoRA 与权重混合 → 与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。</p>
-                <p><strong>结果（实验室 v13；Speak 线上 blend-v10）。</strong>荆钗短域 n=39 原始 CER：tiny 1.54 · plain small 1.48 · 适配 <strong>0.81</strong>。白兔未见抽样 n=80 约 <strong>1.04</strong>。</p>
-                <div class="cer-chart" role="img" aria-label="荆钗短域 CER：tiny 1.54，small 1.48，v13 0.81">
+                <p><strong>作者。</strong>Alice Chen（sole author）。</p>
+                <p><strong>问题。</strong>在标注稀缺时，高质量音文对齐语料与适配训练，能否同时稳住短域旧戏留出、并改善未见全剧上的识别？字级 CER 见顶后，产品如何仍「能用」？</p>
+                <p><strong>方法。</strong>从本站校对档案导出金标切片 → 短域旧戏留出（荆钗记前段）+ 未见全剧（白兔记不进训练）→ <code>whisper-small</code> + LoRA 与权重混合 → 与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。硬协议排除唱词／时间轴不可靠条目；主叙事用<strong>双指标</strong>诚实报告，不以剔难句刷到 0.5。</p>
+                <p><strong>结果（实验室 v13；Speak 线上 blend-v10）。</strong>荆钗短域 n=39 原始 CER：tiny 1.54 · plain small 1.48 · 适配 <strong>0.81</strong>。白兔未见抽样 n=80：tiny 3.55 · small 3.35 · 适配 <strong>1.04</strong>。文案听校：最差一批金标保持正确 → 剩余误差主要在唱腔域能力。</p>
+                <div class="cer-chart" role="img" aria-label="荆钗短域 CER：tiny 1.54，small 1.48，v13 0.81；白兔未见约 1.04">
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">tiny</span>
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:100"></span></div>
@@ -2403,16 +2404,17 @@
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:53"></span></div>
                     <span class="cer-chart__val">0.81</span>
                   </div>
-                  <p class="cer-chart__caption">荆钗短域原始 CER（越低越好）· n=39 · 实验室 v13；白兔抽样 ≈ 1.04 · Speak 仍为 blend-v10</p>
+                  <p class="cer-chart__caption">荆钗短域原始 CER（越低越好）· n=39 · 实验室 v13；白兔未见 n=80 适配 ≈ 1.04 · Speak 仍为 blend-v10 · 不宣称 mean CER 0.5</p>
                 </div>
-                <p><strong>意义。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。「听说」现加载 blend-v10（INT8 ONNX）。口语／电台另属后续域扩展。</p>
-                <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。</p>
+                <p><strong>意义与产品。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。字级见顶后，「听说」识别后并行：① <strong>档案检索</strong>（唱词／声纹是否在库，白话锚定）；② <strong>腔调·语调</strong>（能量／起伏／音色粗估悲急怒柔亢叹，浏览器音频特征，非另外部署情绪权重）。线上 Whisper 仍为 blend-v10（INT8 ONNX）；v13 为实验室适配器。口语／电台另属后续域扩展。</p>
+                <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。决策备忘：<code>docs/ASR_CEILING_DECISION_20260823.md</code>。</p>
               </div>
               <div data-visible-lang="en">
-                <p><strong>Question.</strong> With scarce labels, can high-quality aligned gold plus adaptation hold a short-domain classic holdout while improving on an unseen full play?</p>
-                <p><strong>Method.</strong> Gold clips from corrected archive transcripts → short-domain classic holdout (early Jingchai Ji) + unseen full play (Baitu Ji kept out of training) → <code>whisper-small</code> + LoRA and weight blending → CER vs <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>.</p>
-                <p><strong>Result (lab v13; Speak live blend-v10).</strong> Jingchai short-domain n=39 raw CER: tiny 1.54 · plain small 1.48 · adapted <strong>0.81</strong>. Baitu unseen sample n=80 ≈ <strong>1.04</strong>.</p>
-                <div class="cer-chart" role="img" aria-label="Jingchai short-domain CER: tiny 1.54, small 1.48, v13 0.81">
+                <p><strong>Author.</strong> Alice Chen (sole author).</p>
+                <p><strong>Question.</strong> With scarce labels, can high-quality aligned gold plus adaptation hold a short-domain classic holdout while improving on an unseen full play? And when verbatim CER plateaus, how can Speak stay usable?</p>
+                <p><strong>Method.</strong> Gold clips from corrected archive transcripts → short-domain classic holdout (early Jingchai Ji) + unseen full play (Baitu Ji kept out of training) → <code>whisper-small</code> + LoRA and weight blending → CER vs <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>. The hard protocol drops unreliable lyric/timing items and reports <strong>two metrics</strong> honestly—no scrubbing hard lines to a vanity 0.5.</p>
+                <p><strong>Result (lab v13; Speak live blend-v10).</strong> Jingchai short-domain n=39 raw CER: tiny 1.54 · plain small 1.48 · adapted <strong>0.81</strong>. Baitu unseen sample n=80: tiny 3.55 · small 3.35 · adapted <strong>1.04</strong>. Listening QA kept the worst-label gold as correct → remaining errors are mainly sung-domain capacity.</p>
+                <div class="cer-chart" role="img" aria-label="Jingchai short-domain CER: tiny 1.54, small 1.48, v13 0.81; Baitu unseen ≈ 1.04">
                   <div class="cer-chart__row">
                     <span class="cer-chart__label">tiny</span>
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:100"></span></div>
@@ -2428,10 +2430,10 @@
                     <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:53"></span></div>
                     <span class="cer-chart__val">0.81</span>
                   </div>
-                  <p class="cer-chart__caption">Jingchai short-domain raw CER (lower better) · n=39 · lab v13; Baitu sample ≈ 1.04 · Speak still blend-v10</p>
+                  <p class="cer-chart__caption">Jingchai short-domain raw CER (lower better) · n=39 · lab v13; Baitu unseen n=80 adapted ≈ 1.04 · Speak still blend-v10 · no claim of mean CER 0.5</p>
                 </div>
-                <p><strong>Significance.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). Speak loads blend-v10 (INT8 ONNX). Spoken/radio gold is a later domain extension.</p>
-                <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose. Access guidance is shared after confirmation.</p>
+                <p><strong>Significance &amp; product.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). After the verbatim ceiling, Speak runs two parallel paths: ① <strong>archive check</strong> (lyrics / light fingerprints + vernacular anchoring); ② <strong>delivery emotion</strong> from browser audio features (energy / contour / timbre → grief–urgency–anger–tender–heroic–sigh)—not a separate emotion weight package. Live Whisper remains blend-v10 (INT8 ONNX); v13 stays in the lab. Spoken/radio gold is a later domain extension.</p>
+                <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose. Decision note: <code>docs/ASR_CEILING_DECISION_20260823.md</code>.</p>
               </div>
             </div>
 
@@ -2493,10 +2495,11 @@
                 <ol class="about-pipeline">
                   <li><strong>输入</strong>：麦克风、上传音频，或「试试示例」短选段</li>
                   <li><strong>识别</strong>：设备端 Whisper（首次下载小模型）或浏览器语音引擎</li>
+                  <li><strong>两路径</strong>：① 档案检索／白话锚定；② 腔调·语调情绪粗估（有音频时并列显示）</li>
                   <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
                   <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
                 </ol>
-                <p>当前「听说」已加载<strong>越语适配</strong> Whisper（设备端）。试点 CER 见「研究摘要」。口语/电台另需金标。如需代码或权重，请走「联系与申请」。</p>
+                <p>当前「听说」已加载<strong>越语适配</strong> Whisper blend-v10（设备端）。实验室 CER 与诚实上限见「研究摘要」。口语/电台另需金标。如需代码或权重，请走「联系与申请」。</p>
                 <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
               </div>
               <div data-visible-lang="en">
@@ -2504,10 +2507,11 @@
                 <ol class="about-pipeline">
                   <li><strong>Input</strong>: mic, upload, or Try-sample clips</li>
                   <li><strong>ASR</strong>: on-device Whisper (first-run model download) or browser speech API</li>
+                  <li><strong>Two paths</strong>: ① archive check / vernacular anchoring; ② delivery emotion (shown beside ① when audio is present)</li>
                   <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
                   <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
                 </ol>
-                <p>Speak now loads the <strong>Yueyu-adapted</strong> on-device Whisper. Pilot CER: see <strong>Research brief</strong>. Spoken/radio needs separate gold. For code or weights, use <strong>Contact &amp; apply</strong>.</p>
+                <p>Speak loads Yueyu-adapted Whisper <strong>blend-v10</strong> on-device. Lab CER and the honest ceiling: see <strong>Research brief</strong>. Spoken/radio needs separate gold. For code or weights, use <strong>Contact &amp; apply</strong>.</p>
                 <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
               </div>
               <div class="about-flow" aria-hidden="true">
@@ -2731,11 +2735,11 @@
     </footer>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260823fix2"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260823fix2"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260823fix2"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260823fix2"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260823fix2"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260823fix2"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260823brief1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260823brief1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260823brief1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260823brief1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260823brief1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260823brief1"></script>
 </body>
 </html>
