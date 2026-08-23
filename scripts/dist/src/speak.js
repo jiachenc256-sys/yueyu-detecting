@@ -161,6 +161,12 @@ function setMeter(fill, label, value01, text) {
     if (label)
         label.textContent = text;
 }
+function audioUrlForAnalysis() {
+    if (previewObjectUrl)
+        return previewObjectUrl;
+    const src = audioPreview?.currentSrc || audioPreview?.src || "";
+    return src.trim() ? src : null;
+}
 function selectedPieceId() {
     const v = pieceSelect?.value?.trim();
     return v || null;
@@ -359,8 +365,9 @@ async function runPostAsrPaths(hyp) {
     }
     // Audio fingerprint (independent of ASR text quality)
     let fpHits = [];
-    if (previewObjectUrl && fpIndex) {
-        const q = await fingerprintFromAudioUrl(previewObjectUrl);
+    const audioUrl = audioUrlForAnalysis();
+    if (audioUrl && fpIndex) {
+        const q = await fingerprintFromAudioUrl(audioUrl);
         if (q)
             fpHits = matchFingerprint(q, fpIndex, pieceId, 3);
     }
@@ -466,11 +473,12 @@ async function runPostAsrPaths(hyp) {
             archiveOpen.removeAttribute("href");
         }
     }
-    // Part ② — delivery / emotion (always shown; needs audio for scores)
-    if (previewObjectUrl) {
+    // Part ② — delivery / emotion (always show panel; radar needs audio)
+    const mediaUrl = audioUrlForAnalysis();
+    if (mediaUrl) {
         if (!hit)
             setStatus(t("speak.path.prosodyRunning"));
-        const prosody = await analyzeProsodyFromUrl(previewObjectUrl, pieceId);
+        const prosody = await analyzeProsodyFromUrl(mediaUrl, pieceId);
         lastProsody = prosody;
         if (prosody && prosodyCard) {
             prosodyCard.hidden = false;
@@ -503,6 +511,8 @@ async function runPostAsrPaths(hyp) {
             }
         }
         setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
+        if (prosodyRadar)
+            prosodyRadar.innerHTML = "";
     }
     if (hit && result?.archiveLine && result.mode !== "direct") {
         scheduleTranslate(result.archiveLine);
