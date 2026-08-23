@@ -1,10 +1,30 @@
 import { onLocaleChange, t, tf } from "./i18n.js";
+import {
+  analyzeGist,
+  getPieceRadarAxes,
+  loadLyricIndex,
+  loadPinyinMap,
+  loadPieceRadar,
+  loadSceneCards,
+  type GistResult,
+} from "./speak-gist.js";
+import {
+  analyzeProsodyFromUrl,
+  EMOTION_AXES,
+  type ProsodyResult,
+} from "./speak-prosody.js";
+import {
+  fingerprintFromAudioUrl,
+  loadFingerprintIndex,
+  matchFingerprint,
+  type FpHit,
+} from "./speak-fingerprint.js";
 
 /**
  * Speak → recognize → translate (简体 / 繁體 / English).
- * Mic: MediaRecorder → on-device Yueyu-adapted Whisper (same path as upload).
- * Upload / samples: local INT8 ONNX whisper-small + LoRA merge via @xenova/transformers.
- * Translation: MyMemory (no API key).
+ * Two post-ASR paths:
+ *   ① Archive check — is this radio/clip already in the corpus?
+ *   ② If not — prosody / 腔调·语调 emotion radar (no lyric claim).
  */
 
 type TargetLang = "zh-Hans" | "zh-Hant" | "en";
@@ -18,6 +38,8 @@ const TRANSFORMERS_CDN =
   "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
+/** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
+const ARCHIVE_HIT_MIN = 0.22;
 
 const recordBtn = document.getElementById("speak-record") as HTMLButtonElement | null;
 const clearBtn = document.getElementById("speak-clear") as HTMLButtonElement | null;
@@ -30,6 +52,28 @@ const zhHantEl = document.getElementById("speak-zh-hant");
 const enEl = document.getElementById("speak-en");
 const langSelect = document.getElementById("speak-input-lang") as HTMLSelectElement | null;
 
+const pathRoot = document.getElementById("speak-path");
+const archiveBadge = document.getElementById("speak-archive-badge");
+const archiveText = document.getElementById("speak-archive-text");
+const archiveMatches = document.getElementById("speak-archive-matches");
+const archiveRadar = document.getElementById("speak-archive-radar");
+const archiveRadarCaption = document.getElementById("speak-archive-radar-caption");
+const archiveMeter = document.getElementById("speak-archive-meter");
+const archiveMeterLabel = document.getElementById("speak-archive-meter-label");
+const archiveOpen = document.getElementById("speak-archive-open") as HTMLAnchorElement | null;
+const gistUseBtn = document.getElementById("speak-gist-use") as HTMLButtonElement | null;
+const pieceSelect = document.getElementById("speak-piece") as HTMLSelectElement | null;
+const followTimeEl = document.getElementById("speak-follow-time") as HTMLInputElement | null;
+const followClock = document.getElementById("speak-follow-clock");
+const sceneCardEl = document.getElementById("speak-scene-card");
+const fpNoteEl = document.getElementById("speak-fp-note");
+const prosodyCard = document.getElementById("speak-prosody-card");
+const prosodyText = document.getElementById("speak-prosody-text");
+const prosodyRadar = document.getElementById("speak-prosody-radar");
+const prosodyRadarCaption = document.getElementById("speak-prosody-radar-caption");
+const prosodyMeter = document.getElementById("speak-prosody-meter");
+const prosodyMeterLabel = document.getElementById("speak-prosody-meter-label");
+
 let listening = false;
 let finalTranscript = "";
 let translateTimer: number | null = null;
@@ -37,6 +81,8 @@ let whisperPipeline: AsrPipeline | null = null;
 let whisperLoading: Promise<AsrPipeline> | null = null;
 let modelPrep: Promise<void> | null = null;
 let previewObjectUrl: string | null = null;
+let lastGist: GistResult | null = null;
+let lastProsody: ProsodyResult | null = null;
 
 let mediaStream: MediaStream | null = null;
 let mediaRecorder: MediaRecorder | null = null;
@@ -137,10 +183,362 @@ function syncRecognizedBox(): void {
   if (recognizedEl) recognizedEl.value = finalTranscript.trim();
 }
 
+function setMeter(
+  fill: HTMLElement | null,
+  label: HTMLElement | null,
+  value01: number,
+  text: string,
+): void {
+  const pct = Math.round(Math.max(0, Math.min(1, value01)) * 100);
+  if (fill) fill.style.width = `${pct}%`;
+  if (label) label.textContent = text;
+}
+
+function selectedPieceId(): string | null {
+  const v = pieceSelect?.value?.trim();
+  return v || null;
+}
+
+function followTimeSec(): number | null {
+  if (!followTimeEl?.checked) return null;
+  if (!audioPreview || !Number.isFinite(audioPreview.currentTime)) return null;
+  // Need a piece scope for time anchoring to be meaningful
+  if (!selectedPieceId()) return null;
+  return audioPreview.currentTime;
+}
+
+function updateFollowClock(): void {
+  if (!followClock) return;
+  if (!audioPreview || audioPreview.hidden || !Number.isFinite(audioPreview.currentTime)) {
+    followClock.textContent = "—";
+    return;
+  }
+  const tsec = audioPreview.currentTime;
+  const m = Math.floor(tsec / 60);
+  const s = Math.floor(tsec % 60);
+  followClock.textContent = `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function cueHref(pieceId: string, entryId: string): string {
+  const prefix = `${pieceId}-`;
+  const cue = entryId.startsWith(prefix) ? entryId.slice(prefix.length) : entryId;
+  return `pieces/${encodeURIComponent(pieceId)}.html#cue-${encodeURIComponent(cue)}`;
+}
+
+function populatePieceSelect(index: Awaited<ReturnType<typeof loadLyricIndex>>): void {
+  if (!pieceSelect || !index) return;
+  const prev = pieceSelect.value;
+  const byPiece = new Map<string, string>();
+  for (const e of index.entries) {
+    if (!byPiece.has(e.pieceId)) byPiece.set(e.pieceId, e.title);
+  }
+  const preferred = ["jingchai-ji", "baitu-ji", "liangzhu", "xianglin-sao-xinsuanhua"];
+  const ids = [...byPiece.keys()].sort((a, b) => {
+    const pa = preferred.indexOf(a);
+    const pb = preferred.indexOf(b);
+    if (pa >= 0 || pb >= 0) return (pa < 0 ? 999 : pa) - (pb < 0 ? 999 : pb);
+    return (byPiece.get(a) || a).localeCompare(byPiece.get(b) || b, "zh");
+  });
+  // Keep first "any" option
+  while (pieceSelect.options.length > 1) pieceSelect.remove(1);
+  for (const id of ids) {
+    const opt = document.createElement("option");
+    opt.value = id;
+    opt.textContent = byPiece.get(id) || id;
+    pieceSelect.appendChild(opt);
+  }
+  if (Array.from(pieceSelect.options).some((o) => o.value === prev)) pieceSelect.value = prev;
+}
+
+function hidePathPanels(): void {
+  lastGist = null;
+  lastProsody = null;
+  if (pathRoot) pathRoot.hidden = true;
+  if (prosodyCard) prosodyCard.hidden = true;
+  if (gistUseBtn) gistUseBtn.hidden = true;
+  if (archiveOpen) {
+    archiveOpen.hidden = true;
+    archiveOpen.removeAttribute("href");
+  }
+  setMeter(archiveMeter, archiveMeterLabel, 0, "—");
+  setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
+}
+
+function renderThemeRadar(
+  svg: HTMLElement | null,
+  caption: HTMLElement | null,
+  scores: Record<string, number>,
+  labels: Array<{ id: string; label: string }>,
+  focusText: string,
+  emptyText: string,
+): void {
+  if (!svg) return;
+  const size = 180;
+  const cx = size / 2;
+  const cy = size / 2;
+  const r = 58;
+  const n = labels.length || 1;
+  const ring = (rr: number) => {
+    const pts: string[] = [];
+    for (let i = 0; i < n; i++) {
+      const ang = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+      pts.push(`${(cx + rr * Math.cos(ang)).toFixed(1)},${(cy + rr * Math.sin(ang)).toFixed(1)}`);
+    }
+    return pts.join(" ");
+  };
+  const valuePts: string[] = [];
+  const labelsSvg: string[] = [];
+  labels.forEach((lab, i) => {
+    const ang = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+    const v = Math.max(0, Math.min(1, scores[lab.id] ?? 0));
+    const rr = r * (0.12 + 0.88 * v);
+    valuePts.push(`${(cx + rr * Math.cos(ang)).toFixed(1)},${(cy + rr * Math.sin(ang)).toFixed(1)}`);
+    const lx = cx + (r + 22) * Math.cos(ang);
+    const ly = cy + (r + 22) * Math.sin(ang);
+    labelsSvg.push(
+      `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" text-anchor="middle" dominant-baseline="middle" font-size="9" fill="currentColor">${lab.label}</text>`,
+    );
+  });
+  svg.innerHTML = `
+    <polygon points="${ring(r)}" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="1"/>
+    <polygon points="${ring(r * 0.66)}" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="1"/>
+    <polygon points="${ring(r * 0.33)}" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
+    ${labels
+      .map((_, i) => {
+        const ang = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+        return `<line x1="${cx}" y1="${cy}" x2="${(cx + r * Math.cos(ang)).toFixed(1)}" y2="${(cy + r * Math.sin(ang)).toFixed(1)}" stroke="rgba(0,0,0,.1)" stroke-width="1"/>`;
+      })
+      .join("")}
+    <polygon points="${valuePts.join(" ")}" fill="rgba(44,95,74,.28)" stroke="#2c5f4a" stroke-width="2"/>
+    ${labelsSvg.join("")}
+  `;
+  if (caption) caption.textContent = focusText || emptyText;
+}
+
+function archiveHit(result: GistResult, fpBest: number): boolean {
+  if (fpBest >= 0.88) return true;
+  if (result.confidence >= ARCHIVE_HIT_MIN) return true;
+  return result.mode === "direct" || result.mode === "anchored";
+}
+
+async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
+  const [index, scenes, fpIndex, pinyinMap] = await Promise.all([
+    loadLyricIndex(),
+    loadSceneCards(),
+    loadFingerprintIndex(),
+    loadPinyinMap(),
+    loadPieceRadar(),
+  ]);
+  if (!hyp.trim()) {
+    hidePathPanels();
+    return null;
+  }
+
+  if (pathRoot) pathRoot.hidden = false;
+  if (prosodyCard) prosodyCard.hidden = true;
+  if (sceneCardEl) {
+    sceneCardEl.hidden = true;
+    sceneCardEl.textContent = "";
+  }
+  if (fpNoteEl) {
+    fpNoteEl.hidden = true;
+    fpNoteEl.textContent = "";
+  }
+
+  const pieceId = selectedPieceId();
+  const timeSec = followTimeSec();
+
+  let result: GistResult | null = null;
+  if (index) {
+    result = analyzeGist(hyp, index, {
+      pieceId,
+      timeSec,
+      sceneCards: scenes,
+      pinyinMap,
+    });
+    lastGist = result;
+  }
+
+  // Audio fingerprint (independent of ASR text quality)
+  let fpHits: FpHit[] = [];
+  if (previewObjectUrl && fpIndex) {
+    const q = await fingerprintFromAudioUrl(previewObjectUrl);
+    if (q) fpHits = matchFingerprint(q, fpIndex, pieceId, 3);
+  }
+  const fpBest = fpHits[0]?.score ?? 0;
+
+  // If fingerprint finds a strong clip but text match is weak, promote archive line from FP cue
+  if (result && fpHits[0] && fpBest >= 0.88 && result.confidence < 0.35) {
+    const hit = fpHits[0].item;
+    const entry = index?.entries.find((e) => e.id === hit.id || e.id === `${hit.pieceId}-${hit.cueId}`);
+    if (entry) {
+      result = {
+        ...result,
+        mode: "anchored",
+        confidence: Math.max(result.confidence, fpBest * 0.95),
+        archiveLine: entry.text,
+        archiveTitle: entry.title,
+        matches: [{ entry, score: fpBest }, ...result.matches].slice(0, 5),
+        gistZh: `声纹接近档案切片「${entry.text}」（《${entry.title}》）。${result.sceneZh ? `场景：${result.sceneZh}` : ""}`,
+        gistEn: `Audio fingerprint close to archive clip “${entry.text}” (${entry.title}).`,
+      };
+      lastGist = result;
+    }
+  }
+
+  const hit = result ? archiveHit(result, fpBest) : fpBest >= 0.88;
+  const conf = Math.max(result?.confidence ?? 0, fpBest >= 0.88 ? fpBest : 0);
+  setMeter(
+    archiveMeter,
+    archiveMeterLabel,
+    conf,
+    tf("speak.path.archiveConf", { pct: String(Math.round(conf * 100)) }),
+  );
+
+  if (archiveBadge) {
+    archiveBadge.classList.remove("speak-gist__badge--gist", "speak-gist__badge--anchored");
+    if (hit) {
+      archiveBadge.textContent = t("speak.path.badgeHit");
+      archiveBadge.classList.add("speak-gist__badge--anchored");
+    } else {
+      archiveBadge.textContent = t("speak.path.badgeMiss");
+      archiveBadge.classList.add("speak-gist__badge--gist");
+    }
+  }
+
+  if (archiveText) {
+    if (!result) {
+      archiveText.textContent = t("speak.path.archiveUnavailable");
+    } else if (hit) {
+      archiveText.textContent = result.gistZh;
+    } else {
+      archiveText.textContent = t("speak.path.missBody");
+    }
+  }
+
+  if (sceneCardEl) {
+    // Show vernacular scene when we know the piece/time, even if lyric text missed
+    if (result?.sceneZh && (hit || (pieceId && timeSec != null))) {
+      sceneCardEl.hidden = false;
+      sceneCardEl.textContent = result.sceneZh;
+    } else {
+      sceneCardEl.hidden = true;
+      sceneCardEl.textContent = "";
+    }
+  }
+
+  if (fpNoteEl) {
+    if (fpHits[0]) {
+      fpNoteEl.hidden = false;
+      const best = fpHits[0];
+      fpNoteEl.textContent = tf("speak.path.fpNote", {
+        pct: String(Math.round(best.score * 100)),
+        id: best.item.id,
+      });
+    } else {
+      fpNoteEl.hidden = true;
+      fpNoteEl.textContent = "";
+    }
+  }
+
+  if (archiveMatches) {
+    archiveMatches.innerHTML = hit && result
+      ? result.matches
+          .slice(0, 3)
+          .map(
+            (m) =>
+              `<li><strong>《${m.entry.title}》</strong> ${m.entry.text} <span style="opacity:.65">(${(m.score * 100).toFixed(0)}%)</span></li>`,
+          )
+          .join("")
+      : "";
+  }
+
+  if (result && index) {
+    const radarAxes = getPieceRadarAxes(pieceId, index.themes);
+    const top = result.topThemes
+      .map((id) => radarAxes.find((x) => x.id === id)?.label ?? index.themes.find((x) => x.id === id)?.label)
+      .filter(Boolean)
+      .join(" · ");
+    renderThemeRadar(
+      archiveRadar,
+      archiveRadarCaption,
+      result.themeScores,
+      radarAxes,
+      hit && top ? tf("speak.gist.radarFocus", { themes: top }) : t("speak.path.radarIdle"),
+      t("speak.gist.radarEmpty"),
+    );
+  }
+
+  if (gistUseBtn) {
+    gistUseBtn.hidden = !(hit && result?.archiveLine);
+  }
+  if (archiveOpen) {
+    const top = result?.matches[0]?.entry;
+    if (hit && top) {
+      archiveOpen.hidden = false;
+      archiveOpen.href = cueHref(top.pieceId, top.id);
+      archiveOpen.target = "_blank";
+      archiveOpen.rel = "noopener";
+    } else {
+      archiveOpen.hidden = true;
+      archiveOpen.removeAttribute("href");
+    }
+  }
+
+  // Part ② only when archive miss
+  if (!hit && previewObjectUrl) {
+    setStatus(t("speak.path.prosodyRunning"));
+    const prosody = await analyzeProsodyFromUrl(previewObjectUrl, pieceId);
+    lastProsody = prosody;
+    if (prosody && prosodyCard) {
+      prosodyCard.hidden = false;
+      if (prosodyText) prosodyText.textContent = prosody.summaryZh;
+      const topScore = Math.max(...Object.values(prosody.scores), 0);
+      setMeter(
+        prosodyMeter,
+        prosodyMeterLabel,
+        topScore,
+        tf("speak.path.emotionConf", { pct: String(Math.round(topScore * 100)) }),
+      );
+      const labels = EMOTION_AXES.map((a) => ({ id: a.id, label: a.labelZh }));
+      const focus = prosody.top
+        .map((id) => EMOTION_AXES.find((a) => a.id === id)?.labelZh)
+        .filter(Boolean)
+        .join(" · ");
+      renderThemeRadar(
+        prosodyRadar,
+        prosodyRadarCaption,
+        prosody.scores,
+        labels,
+        focus ? tf("speak.path.emotionFocus", { themes: focus }) : t("speak.path.emotionEmpty"),
+        t("speak.path.emotionEmpty"),
+      );
+      // Prefer emotion summary for translation when lyrics are unknown
+      scheduleTranslate(prosody.summaryZh);
+      return result;
+    }
+  } else {
+    setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
+  }
+
+  if (hit && result?.archiveLine && result.mode !== "direct") {
+    scheduleTranslate(result.archiveLine);
+  } else if (hit && result?.mode === "direct") {
+    scheduleTranslate(hyp);
+  } else {
+    scheduleTranslate(hyp);
+  }
+  return result;
+}
+
 function applyRecognizedText(text: string, translateSoon = true): void {
   finalTranscript = text.trim();
   syncRecognizedBox();
-  if (translateSoon && finalTranscript) scheduleTranslate(finalTranscript);
+  if (translateSoon && finalTranscript) {
+    void runPostAsrPaths(finalTranscript);
+  } else {
+    hidePathPanels();
+  }
 }
 
 interface SpeakManifest {
@@ -442,6 +840,7 @@ function clearAll(): void {
     audioPreview.removeAttribute("src");
     audioPreview.hidden = true;
   }
+  hidePathPanels();
   setStatus(t("speak.status.cleared"));
 }
 
@@ -536,7 +935,39 @@ function initSpeak(): void {
 
   recognizedEl.addEventListener("input", () => {
     finalTranscript = recognizedEl.value;
-    scheduleTranslate(finalTranscript);
+    void runPostAsrPaths(finalTranscript);
+  });
+
+  gistUseBtn?.addEventListener("click", () => {
+    if (!lastGist?.archiveLine) return;
+    applyRecognizedText(lastGist.archiveLine, true);
+    setStatus(t("speak.gist.applied"));
+  });
+
+  void loadLyricIndex().then((index) => {
+    populatePieceSelect(index);
+  });
+  void loadSceneCards();
+  void loadFingerprintIndex();
+
+  pieceSelect?.addEventListener("change", () => {
+    if (selectedPieceId() && followTimeEl && !followTimeEl.checked) {
+      // Suggest follow mode when a piece is chosen
+      followTimeEl.checked = true;
+    }
+    if (finalTranscript.trim()) void runPostAsrPaths(finalTranscript);
+  });
+
+  followTimeEl?.addEventListener("change", () => {
+    if (finalTranscript.trim()) void runPostAsrPaths(finalTranscript);
+  });
+
+  audioPreview?.addEventListener("timeupdate", () => {
+    updateFollowClock();
+  });
+  audioPreview?.addEventListener("seeked", () => {
+    updateFollowClock();
+    if (followTimeEl?.checked && finalTranscript.trim()) void runPostAsrPaths(finalTranscript);
   });
 
   document.querySelectorAll<HTMLButtonElement>("[data-translate-target]").forEach((btn) => {

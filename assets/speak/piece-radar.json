@@ -1,0 +1,135 @@
+{
+  "schema": "yueyu-piece-radar/v1",
+  "axes": {
+    "jingchai-ji": [
+      {
+        "id": "farewell",
+        "label": "送别"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "exam",
+        "label": "赴考"
+      },
+      {
+        "id": "marriage",
+        "label": "荆钗聘"
+      },
+      {
+        "id": "grief",
+        "label": "忧阻"
+      },
+      {
+        "id": "longing",
+        "label": "盼归"
+      }
+    ],
+    "baitu-ji": [
+      {
+        "id": "grief",
+        "label": "流离"
+      },
+      {
+        "id": "longing",
+        "label": "思亲"
+      },
+      {
+        "id": "farewell",
+        "label": "离散"
+      },
+      {
+        "id": "oath",
+        "label": "誓约"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "exam",
+        "label": "转机"
+      }
+    ],
+    "liangzhu-shibaxiangsong": [
+      {
+        "id": "farewell",
+        "label": "相送"
+      },
+      {
+        "id": "oath",
+        "label": "托情"
+      },
+      {
+        "id": "longing",
+        "label": "恋慕"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "grief",
+        "label": "惜别"
+      },
+      {
+        "id": "exam",
+        "label": "前程"
+      }
+    ],
+    "liangzhu-shibaxiangsong-full": [
+      {
+        "id": "farewell",
+        "label": "相送"
+      },
+      {
+        "id": "oath",
+        "label": "托情"
+      },
+      {
+        "id": "longing",
+        "label": "恋慕"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "grief",
+        "label": "惜别"
+      },
+      {
+        "id": "exam",
+        "label": "前程"
+      }
+    ],
+    "xianglin-sao-xinsuanhua": [
+      {
+        "id": "grief",
+        "label": "悲苦"
+      },
+      {
+        "id": "longing",
+        "label": "思念"
+      },
+      {
+        "id": "oath",
+        "label": "诉说"
+      },
+      {
+        "id": "farewell",
+        "label": "生离"
+      },
+      {
+        "id": "marriage",
+        "label": "身世"
+      },
+      {
+        "id": "exam",
+        "label": "世情"
+      }
+    ]
+  }
+}
