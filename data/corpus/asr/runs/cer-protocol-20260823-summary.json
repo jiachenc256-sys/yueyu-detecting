@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-23",
+  "purpose": "Measure size-matched CER on cleaned protocol after removing bad holdouts",
+  "protocol": "test = jingchai early ~5min + baitu sample80; train excludes he-wenxiu & xianglin hard gold",
+  "checkpoint": "whisper-small-merged-blend-v10-a0.5",
+  "jingchaiHoldout": {
+    "n": 39,
+    "tiny": 2.161,
+    "small": 1.505,
+    "blendV10": 0.845,
+    "deltaAdaptedMinusSmall": -0.66
+  },
+  "baituSample80": {
+    "n": 80,
+    "tiny": 3.547,
+    "small": 3.345,
+    "blendV10": 1.179,
+    "deltaAdaptedMinusSmall": -2.166
+  }
+}

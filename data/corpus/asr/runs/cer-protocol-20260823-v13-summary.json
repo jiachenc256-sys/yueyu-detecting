@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-23",
+  "decision": "ceiling_plus_dual_metrics",
+  "keepAdapter": "v13",
+  "speakLive": "blend-v10",
+  "reject": "dropping hard test clips to claim CER 0.5",
+  "textQa": {
+    "file": "jingchai-test39-text-qa.csv",
+    "n": 31,
+    "allOk": true,
+    "note": "Gold labels confirmed; failures are model/domain"
+  },
+  "jingchai39_afterTimingQa": {
+    "tiny": 1.537,
+    "small": 1.484,
+    "adapted_v13": 0.813
+  },
+  "baitu80": {
+    "tiny": 3.547,
+    "small": 3.345,
+    "adapted_v13": 1.043
+  },
+  "note": "Primary story: large gain vs size-matched small on hard Yueju holdout; unseen play still ~1.0. Do not chase vanity 0.5."
+}
