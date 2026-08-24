@@ -343,6 +343,7 @@ async function initZiyin(): Promise<void> {
   function renderQuestMap(): void {
     if (!questGatesEl) return;
     questGatesEl.replaceChildren();
+    questGatesEl.classList.add("ziyin-quest__path");
     if (questMasterEl) questMasterEl.hidden = !allGatesCleared();
     updateDailyUi();
 
@@ -350,56 +351,65 @@ async function initZiyin(): Promise<void> {
       const unlocked = isGateUnlocked(gate);
       const cleared = isGateCleared(gate);
       const stats = gateStats(gate);
+      const state = !unlocked ? "locked" : cleared ? "cleared" : "open";
       const li = document.createElement("li");
       li.className = "ziyin-quest__gate";
       li.dataset.gate = String(gate);
+      li.dataset.state = state;
 
-      const head = document.createElement("div");
-      head.className = "ziyin-quest__gate-head";
-      const title = document.createElement("h4");
-      title.className = "ziyin-quest__gate-title";
-      title.textContent = `${GATE_EMOJI[gate - 1] ?? ""} ${tf("learn.quest.gateTitle", {
-        n: gate,
-        name: levelLabel(gate),
-      })}`;
-      const status = document.createElement("span");
-      status.className = "ziyin-quest__gate-status";
-      if (!unlocked) {
-        status.dataset.state = "locked";
-        status.textContent = `🔒 ${t("learn.quest.locked")}`;
-      } else if (cleared) {
-        status.dataset.state = "cleared";
-        status.textContent = `✅ ${t("learn.quest.cleared")}`;
-      } else {
-        status.dataset.state = "open";
-        status.textContent = `🟡 ${t("learn.quest.inProgress")}`;
+      const node = document.createElement(unlocked ? "button" : "div");
+      node.className = "ziyin-quest__node";
+      if (unlocked) {
+        (node as HTMLButtonElement).type = "button";
+        node.addEventListener("click", () => enterQuestGate(gate));
       }
-      head.append(title, status);
+      node.setAttribute(
+        "aria-label",
+        tf("learn.quest.gateTitle", { n: gate, name: levelLabel(gate) }),
+      );
+      const mark = document.createElement("span");
+      mark.className = "ziyin-quest__node-mark";
+      mark.setAttribute("aria-hidden", "true");
+      if (!unlocked) mark.textContent = "🔒";
+      else if (cleared) mark.textContent = "✓";
+      else mark.textContent = String(gate);
+      node.append(mark);
 
-      const task = document.createElement("p");
-      task.className = "ziyin-quest__gate-task";
-      task.textContent = t(`learn.quest.gate${gate}.task`);
+      const name = document.createElement("p");
+      name.className = "ziyin-quest__gate-name";
+      name.textContent = tf("learn.quest.gateTitle", { n: gate, name: levelLabel(gate) });
+
+      const emoji = document.createElement("p");
+      emoji.className = "ziyin-quest__gate-emoji";
+      emoji.setAttribute("aria-hidden", "true");
+      emoji.textContent = GATE_EMOJI[gate - 1] ?? "";
+
+      const status = document.createElement("p");
+      status.className = "ziyin-quest__gate-status";
+      status.dataset.state = state;
+      status.textContent = !unlocked
+        ? t("learn.quest.locked")
+        : cleared
+          ? t("learn.quest.cleared")
+          : t("learn.quest.inProgress");
 
       const meta = document.createElement("p");
       meta.className = "ziyin-quest__gate-meta";
-      meta.textContent = tf("learn.quest.gateProgress", {
-        known: stats.known,
-        total: stats.total,
-        pct: stats.pct,
-      });
+      meta.textContent = `${stats.known}/${stats.total} · ${stats.pct}%`;
 
       const bar = document.createElement("div");
       bar.className = "ziyin-quest__gate-bar";
+      bar.setAttribute("aria-hidden", "true");
       const fill = document.createElement("span");
       fill.style.width = `${Math.min(100, stats.pct)}%`;
       bar.append(fill);
 
-      li.append(head, task, meta, bar);
+      li.append(node, emoji, name, status, meta, bar);
 
       if (unlocked) {
         const enter = document.createElement("button");
         enter.type = "button";
-        enter.className = "home-cta__btn home-cta__btn--primary";
+        enter.className = "ziyin-quest__enter";
         enter.textContent = t("learn.quest.enter");
         enter.addEventListener("click", () => enterQuestGate(gate));
         li.append(enter);
@@ -657,6 +667,8 @@ async function initZiyin(): Promise<void> {
     modeButtons.forEach((btn) => {
       btn.setAttribute("aria-pressed", btn.dataset.learnMode === learnMode ? "true" : "false");
     });
+    const classicStageHint = document.getElementById("ziyin-classic-stage-hint");
+    if (classicStageHint) classicStageHint.hidden = learnMode !== "classic" || inQuestMap;
     updateProgressUi();
   }
 
@@ -861,6 +873,12 @@ async function initZiyin(): Promise<void> {
   });
 
   switchToQuestBtn?.addEventListener("click", () => setLearnMode("quest"));
+  document.getElementById("ziyin-switch-to-quest-stage")?.addEventListener("click", () => setLearnMode("quest"));
+  document.getElementById("learn-open-quest")?.addEventListener("click", () => {
+    openLearnSection("fayin");
+    setLearnMode("quest");
+    questMapEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 
   questBackBtn?.addEventListener("click", () => leaveQuestGate());
 

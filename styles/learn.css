@@ -668,18 +668,40 @@
   color: var(--color-accent);
 }
 
+
 .ziyin-quest {
-  max-width: 36rem;
+  max-width: min(100%, 52rem);
   margin: 0 0 var(--space-8);
-  padding: var(--space-5) var(--space-5) var(--space-6);
+  padding: var(--space-6) var(--space-5) var(--space-6);
+  border: 1px solid var(--color-border);
   border-left: 3px solid var(--color-accent);
   background:
     linear-gradient(
-      160deg,
-      color-mix(in srgb, var(--color-accent) 10%, transparent) 0%,
-      color-mix(in srgb, var(--color-paper-raised) 88%, transparent) 42%,
-      transparent 100%
+      165deg,
+      color-mix(in srgb, var(--color-accent) 12%, transparent) 0%,
+      color-mix(in srgb, var(--color-paper-raised) 92%, transparent) 38%,
+      var(--color-paper-raised) 100%
     );
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--color-ink) 4%, transparent);
+}
+
+html[data-theme="light"] .ziyin-quest {
+  background:
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, #c4a574 18%, transparent) 0%,
+      #f7f1e8 42%,
+      #f3ebe0 100%
+    );
+  border-color: color-mix(in srgb, #c4a574 35%, var(--color-border));
+}
+
+.ziyin-quest__kicker {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
 }
 
 .ziyin-quest__title {
@@ -705,43 +727,122 @@
   font-weight: 600;
 }
 
+.ziyin-quest__path,
 .ziyin-quest__gates {
   list-style: none;
-  margin: 0 0 var(--space-5);
-  padding: 0;
-  display: grid;
-  gap: var(--space-3);
+  margin: var(--space-5) 0 var(--space-5);
+  padding: 0.35rem 0 0;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
 }
 
 .ziyin-quest__gate {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 8.75rem;
+  max-width: 11rem;
   display: grid;
+  justify-items: center;
+  align-content: start;
   gap: var(--space-2);
-  padding: var(--space-4) 0;
-  border-top: 1px solid var(--color-border);
+  padding: var(--space-2) var(--space-2) var(--space-3);
+  text-align: center;
+  scroll-snap-align: start;
 }
 
-.ziyin-quest__gate:first-child {
-  border-top: 0;
-  padding-top: 0;
+.ziyin-quest__gate:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 1.55rem;
+  left: calc(50% + 1.35rem);
+  width: calc(100% - 2.7rem);
+  height: 2px;
+  background: var(--color-border-strong);
+  pointer-events: none;
 }
 
-.ziyin-quest__gate-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: var(--space-2) var(--space-3);
+.ziyin-quest__gate[data-state="cleared"]:not(:last-child)::after {
+  background: color-mix(in srgb, var(--color-status-ready) 70%, var(--color-border));
 }
 
-.ziyin-quest__gate-title {
+.ziyin-quest__gate[data-state="open"]:not(:last-child)::after {
+  background: color-mix(in srgb, var(--color-accent) 55%, var(--color-border));
+}
+
+.ziyin-quest__node {
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: 2px solid var(--color-border-strong);
+  background: var(--color-paper);
+  color: var(--color-ink-muted);
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font: inherit;
+  cursor: default;
+}
+
+button.ziyin-quest__node {
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+button.ziyin-quest__node:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.ziyin-quest__gate[data-state="locked"] .ziyin-quest__node {
+  opacity: 0.72;
+  border-style: dashed;
+}
+
+.ziyin-quest__gate[data-state="open"] .ziyin-quest__node {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+
+.ziyin-quest__gate[data-state="cleared"] .ziyin-quest__node {
+  border-color: var(--color-status-ready);
+  background: var(--color-status-ready-bg);
+  color: var(--color-status-ready);
+}
+
+.ziyin-quest__node-mark {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.ziyin-quest__gate-emoji {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.ziyin-quest__gate-name {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: var(--text-lg);
+  font-size: var(--text-sm);
   font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-ink);
 }
 
 .ziyin-quest__gate-status {
-  font-size: var(--text-xs);
-  letter-spacing: 0.06em;
+  margin: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-ink-faint);
 }
@@ -754,24 +855,14 @@
   color: var(--color-status-progress);
 }
 
-.ziyin-quest__gate-status[data-state="locked"] {
-  color: var(--color-ink-faint);
-}
-
-.ziyin-quest__gate-task {
-  margin: 0;
-  color: var(--color-ink-muted);
-  font-size: var(--text-sm);
-  line-height: var(--leading-relaxed);
-}
-
 .ziyin-quest__gate-meta {
   margin: 0;
-  font-size: var(--text-sm);
-  color: var(--color-ink);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
 }
 
 .ziyin-quest__gate-bar {
+  width: 100%;
   height: 3px;
   background: var(--color-border);
   overflow: hidden;
@@ -785,10 +876,36 @@
   transition: width 0.2s ease;
 }
 
+.ziyin-quest__enter {
+  appearance: none;
+  margin-top: var(--space-1);
+  border: 1px solid var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border-radius: 0;
+  padding: 0.4rem 0.7rem;
+  font: inherit;
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.ziyin-quest__enter:hover {
+  background: transparent;
+  color: var(--color-ink);
+}
+
 .ziyin-quest__tools {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
+}
+
+@media (max-width: 720px) {
+  .ziyin-quest__gate {
+    min-width: 9.5rem;
+    flex: 0 0 auto;
+  }
 }
 
 .ziyin-quest-session {
