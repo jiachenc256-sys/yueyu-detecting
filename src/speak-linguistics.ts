@@ -38,6 +38,8 @@ export interface LinguisticNote {
   en: string;
   speakerZh: string | null;
   speakerEn: string | null;
+  rowsZh: Array<{ label: string; body: string }>;
+  rowsEn: Array<{ label: string; body: string }>;
 }
 
 let lingCached: LinguisticsFile | null = null;
@@ -95,38 +97,55 @@ export async function loadCueSpeakers(): Promise<Map<string, CueSpeaker> | null>
   return speakersPromise;
 }
 
+function genericCard(pieceId: string, title?: string | null): PieceLinguistics {
+  const label = title || pieceId.replace(/-/g, " ");
+  return {
+    genreZh: `戏曲档案 · ${label}`,
+    genreEn: `Archive piece · ${label}`,
+    registerZh: "唱念语体随场次变化；先跟档案句，再听字。",
+    registerEn: "Register varies by scene; follow the archive line before chasing characters.",
+    rolesZh: "行当随本出而定",
+    rolesEn: "Role line depends on this piece",
+    listenZh: "命中后用候选句与场景卡跟读；字级不稳属唱腔域常态。",
+    listenEn: "After a hit, follow the candidate line and scene card; rough CER is normal in sung domain.",
+  };
+}
+
 export function composeLinguisticNote(args: {
   pieceId: string | null | undefined;
   entryId?: string | null;
+  title?: string | null;
   linguistics: LinguisticsFile | null;
   speakers: Map<string, CueSpeaker> | null;
 }): LinguisticNote | null {
-  const { pieceId, entryId, linguistics, speakers } = args;
-  if (!pieceId || !linguistics?.pieces?.[pieceId]) return null;
-  const card = linguistics.pieces[pieceId]!;
+  const { pieceId, entryId, title, linguistics, speakers } = args;
+  if (!pieceId) return null;
+  const card = linguistics?.pieces?.[pieceId] ?? genericCard(pieceId, title);
   const sp = entryId ? speakers?.get(entryId) ?? null : null;
 
-  const zhParts = [
-    `【语言学说明】${card.genreZh}`,
-    `语体：${card.registerZh}`,
-    `行当 / 角色：${card.rolesZh}`,
+  const rowsZh: Array<{ label: string; body: string }> = [
+    { label: "体裁", body: card.genreZh },
+    { label: "语体", body: card.registerZh },
+    { label: "行当 / 角色", body: card.rolesZh },
   ];
-  const enParts = [
-    `Linguistic note: ${card.genreEn}`,
-    `Register: ${card.registerEn}`,
-    `Role line: ${card.rolesEn}`,
+  const rowsEn: Array<{ label: string; body: string }> = [
+    { label: "Genre", body: card.genreEn },
+    { label: "Register", body: card.registerEn },
+    { label: "Role line", body: card.rolesEn },
   ];
   if (sp) {
-    zhParts.push(`本句说话人：${sp.speakerZh}`);
-    enParts.push(`Speaker on this cue: ${sp.speakerEn}`);
+    rowsZh.push({ label: "本句说话人", body: sp.speakerZh });
+    rowsEn.push({ label: "Speaker", body: sp.speakerEn });
   }
-  zhParts.push(`听辨提示：${card.listenZh}`);
-  enParts.push(`Listening tip: ${card.listenEn}`);
+  rowsZh.push({ label: "听辨提示", body: card.listenZh });
+  rowsEn.push({ label: "Listening tip", body: card.listenEn });
 
   return {
-    zh: zhParts.join(" · "),
-    en: enParts.join(" · "),
+    zh: rowsZh.map((r) => `${r.label}：${r.body}`).join(" · "),
+    en: rowsEn.map((r) => `${r.label}: ${r.body}`).join(" · "),
     speakerZh: sp?.speakerZh ?? null,
     speakerEn: sp?.speakerEn ?? null,
+    rowsZh,
+    rowsEn,
   };
 }
