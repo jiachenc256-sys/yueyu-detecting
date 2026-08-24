@@ -23,9 +23,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/tokens.css?v=20260815a" />
-  <link rel="stylesheet" href="styles/main.css?v=20260815e" />
+  <link rel="stylesheet" href="styles/main.css?v=20260824evid1" />
   <link rel="stylesheet" href="styles/a11y.css?v=20260815a" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260824rich3" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260824evid1" />
   <link rel="stylesheet" href="styles/tanci.css?v=20260815a" />
   <link rel="stylesheet" href="styles/learn.css?v=20260815a" />
   <link rel="stylesheet" href="styles/dictionary.css?v=20260815a" />
@@ -2360,6 +2360,7 @@
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
             <button class="plan-nav__link" data-about-target="provide" aria-current="true" data-i18n="about.nav.provide">我们提供什么</button>
+            <button class="plan-nav__link" data-about-target="evidence" aria-current="false" data-i18n="about.nav.evidence">证据一页</button>
             <button class="plan-nav__link" data-about-target="research" aria-current="false" data-i18n="about.nav.research">研究摘要</button>
             <button class="plan-nav__link" data-about-target="contact" aria-current="false" data-i18n="about.nav.contact">联系与申请</button>
             <button class="plan-nav__link" data-about-target="pipeline" aria-current="false" data-i18n="about.nav.pipeline">技术流程</button>
@@ -2468,6 +2469,109 @@
               </article>
             </div>
 
+            <div class="plan-section" data-about-section="evidence" aria-hidden="true" id="about-evidence">
+              <h3 data-i18n="about.evidence.title">证据一页</h3>
+              <div data-visible-lang="zh-Hans">
+                <p class="evidence-lead">给申请材料截图用：一张页看清<strong>覆盖了什么</strong>、<strong>没吹什么</strong>。作者 Alice Chen（sole author）。快照日期 2026-08-24。</p>
+                <dl class="evidence-grid" aria-label="产品覆盖快照">
+                  <div><dt>Speak 语言学卡片</dt><dd>35 出</dd></div>
+                  <div><dt>场景卡 / 主题雷达</dt><dd>35 出</dd></div>
+                  <div><dt>本句说话人</dt><dd>7 出 · 114 cues</dd></div>
+                  <div><dt>轻量音频指纹</dt><dd>855</dd></div>
+                  <div><dt>词典字（L1–4）</dt><dd>862</dd></div>
+                  <div><dt>词典短语</dt><dd>~50 草稿 · 待纸质书校正</dd></div>
+                  <div><dt>线上 ASR</dt><dd>blend-v10</dd></div>
+                  <div><dt>实验室适配</dt><dd>v13（未自动上线）</dd></div>
+                </dl>
+                <h4>产品怎么「能用」</h4>
+                <ol class="evidence-list">
+                  <li><strong>① 档案检索</strong>：唱词 / 轻指纹是否在库；命中后场景白话、语言学注记、说话人（有标注时）。</li>
+                  <li><strong>② 腔调·语调</strong>：浏览器音频特征粗估情绪——不是情绪大模型，也不伪装成「听清了唱词」。</li>
+                  <li><strong>语言学 note</strong>：档案链接的体裁 / 语体 / 行当提示，不是 LLM 摘要。</li>
+                </ol>
+                <h4>诚实边界</h4>
+                <ul class="evidence-list">
+                  <li>不宣称 mean CER 0.5；字级用双指标诚实报告（实验室荆钗短域适配 ≈ 0.81，白兔未见 ≈ 1.04）。</li>
+                  <li>词典短语目前为练习草稿；纸质书录入后替换，不假装已是母语定稿。</li>
+                  <li>指纹 / 说话人覆盖仍在扩；弱命中会标成参考候选，不伪装成高置信。</li>
+                </ul>
+                <h4>一分钟演示脚本</h4>
+                <ol class="evidence-demo" id="evidence-demo-zh">
+                  <li>打开 <a href="#speak">听说</a> → 点「试试示例 · 梁祝」→ 等识别完成。</li>
+                  <li>看路径 ①：档案命中、「在档案中打开」、语言学 note；有说话人则出现「本句说话人」。</li>
+                  <li>切到 <strong>EN</strong>：确认 Genre / Register / Speaker 等为英文，无中文串台。</li>
+                  <li>（可选）再点「试试示例 · 祥林嫂」，或上传非库短音频看弱命中 / ② 情绪雷达。</li>
+                </ol>
+                <p class="evidence-foot">详细 CER 协议见「研究摘要」。待办总表：<code>docs/APPLICATION_TODO.md</code>。</p>
+              </div>
+              <div data-visible-lang="zh-Hant">
+                <p class="evidence-lead">給申請材料截圖用：一張頁看清<strong>覆蓋了什麼</strong>、<strong>沒吹什麼</strong>。作者 Alice Chen（sole author）。快照日期 2026-08-24。</p>
+                <dl class="evidence-grid" aria-label="產品覆蓋快照">
+                  <div><dt>Speak 語言學卡片</dt><dd>35 齣</dd></div>
+                  <div><dt>場景卡 / 主題雷達</dt><dd>35 齣</dd></div>
+                  <div><dt>本句說話人</dt><dd>7 齣 · 114 cues</dd></div>
+                  <div><dt>輕量音訊指紋</dt><dd>855</dd></div>
+                  <div><dt>詞典字（L1–4）</dt><dd>862</dd></div>
+                  <div><dt>詞典短語</dt><dd>~50 草稿 · 待紙質書校正</dd></div>
+                  <div><dt>線上 ASR</dt><dd>blend-v10</dd></div>
+                  <div><dt>實驗室適配</dt><dd>v13（未自動上線）</dd></div>
+                </dl>
+                <h4>產品怎麼「能用」</h4>
+                <ol class="evidence-list">
+                  <li><strong>① 檔案檢索</strong>：唱詞 / 輕指紋是否在庫；命中後場景白話、語言學注記、說話人（有標註時）。</li>
+                  <li><strong>② 腔調·語調</strong>：瀏覽器音訊特徵粗估情緒——不是情緒大模型，也不偽裝成「聽清了唱詞」。</li>
+                  <li><strong>語言學 note</strong>：檔案連結的體裁 / 語體 / 行當提示，不是 LLM 摘要。</li>
+                </ol>
+                <h4>誠實邊界</h4>
+                <ul class="evidence-list">
+                  <li>不宣稱 mean CER 0.5；字級用雙指標誠實報告。</li>
+                  <li>詞典短語目前為練習草稿；紙質書錄入後替換。</li>
+                  <li>指紋 / 說話人覆蓋仍在擴；弱命中標成參考候選。</li>
+                </ul>
+                <h4>一分鐘演示腳本</h4>
+                <ol class="evidence-demo">
+                  <li>打開 <a href="#speak">聽說</a> → 點「試試示例 · 梁祝」→ 等識別完成。</li>
+                  <li>看路徑 ①：檔案命中、語言學 note；有說話人則出現「本句說話人」。</li>
+                  <li>切到 <strong>EN</strong>：確認英文化、無中文串台。</li>
+                  <li>（可選）再試祥林嫂，或上傳非庫短音訊看弱命中 / ② 情緒雷達。</li>
+                </ol>
+                <p class="evidence-foot">詳細 CER 見「研究摘要」。待辦：<code>docs/APPLICATION_TODO.md</code>。</p>
+              </div>
+              <div data-visible-lang="en">
+                <p class="evidence-lead">One screenshot page for applications: what is covered, and what is <strong>not</strong> claimed. Author Alice Chen (sole author). Snapshot 2026-08-24.</p>
+                <dl class="evidence-grid" aria-label="Product coverage snapshot">
+                  <div><dt>Speak linguistic cards</dt><dd>35 pieces</dd></div>
+                  <div><dt>Scene cards / theme radar</dt><dd>35 pieces</dd></div>
+                  <div><dt>Cue speakers</dt><dd>7 pieces · 114 cues</dd></div>
+                  <div><dt>Light audio fingerprints</dt><dd>855</dd></div>
+                  <div><dt>Dictionary chars (L1–4)</dt><dd>862</dd></div>
+                  <div><dt>Dictionary phrases</dt><dd>~50 drafts · awaiting paper lexicon</dd></div>
+                  <div><dt>Live ASR</dt><dd>blend-v10</dd></div>
+                  <div><dt>Lab adapter</dt><dd>v13 (not auto-shipped)</dd></div>
+                </dl>
+                <h4>How Speak stays usable</h4>
+                <ol class="evidence-list">
+                  <li><strong>① Archive check</strong>: lyrics / light fingerprints in-corpus; on hit — scene vernacular, linguistic note, speaker when labeled.</li>
+                  <li><strong>② Delivery / prosody</strong>: browser audio features for coarse emotion — not an emotion LLM, and not a claim that lyrics were heard clearly.</li>
+                  <li><strong>Linguistic notes</strong>: archive-linked genre / register / role tips — not an LLM summary.</li>
+                </ol>
+                <h4>Honest limits</h4>
+                <ul class="evidence-list">
+                  <li>No claim of mean CER 0.5; dual-metric reporting (lab Jingchai adapted ≈ 0.81; Baitu unseen ≈ 1.04).</li>
+                  <li>Phrase dictionary is draft practice text until paper-book entry replaces it.</li>
+                  <li>Fingerprint / speaker coverage is still growing; weak matches stay labeled as candidates.</li>
+                </ul>
+                <h4>One-minute demo script</h4>
+                <ol class="evidence-demo" id="evidence-demo-en">
+                  <li>Open <a href="#speak">Speak</a> → <strong>Try sample · Liang Zhu</strong> → wait for recognition.</li>
+                  <li>Check path ①: archive hit, Open in archive, linguistic note; <strong>Speaker</strong> when labeled.</li>
+                  <li>Switch to <strong>EN</strong>: Genre / Register / Speaker in English — no Chinese leftover in those rows.</li>
+                  <li>(Optional) Try sample · Xianglin Sao, or upload an out-of-corpus clip for weak-match / path ② radar.</li>
+                </ol>
+                <p class="evidence-foot">Full CER protocol: Research brief. Checklist: <code>docs/APPLICATION_TODO.md</code>.</p>
+              </div>
+            </div>
+
             <div class="plan-section" data-about-section="research" aria-hidden="true">
               <h3 data-i18n="about.research.title">研究摘要</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
@@ -2493,7 +2597,7 @@
                   </div>
                   <p class="cer-chart__caption">荆钗短域原始 CER（越低越好）· n=39 · 实验室 v13；白兔未见 n=80 适配 ≈ 1.04 · Speak 仍为 blend-v10 · 不宣称 mean CER 0.5</p>
                 </div>
-                <p><strong>意义与产品。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。字级见顶后，「听说」识别后并行：① <strong>档案检索</strong>（唱词／声纹是否在库，白话锚定）；② <strong>腔调·语调</strong>（能量／起伏／音色粗估悲急怒柔亢叹，浏览器音频特征，非另外部署情绪权重）。线上 Whisper 仍为 blend-v10（INT8 ONNX）；v13 为实验室适配器。口语／电台另属后续域扩展。</p>
+                <p><strong>意义与产品。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。字级见顶后，「听说」识别后并行：① <strong>档案检索</strong>（唱词／声纹是否在库，白话锚定；命中可附语言学注记与说话人——档案链接，非 LLM）；② <strong>腔调·语调</strong>（能量／起伏／音色粗估悲急怒柔亢叹，浏览器音频特征，非情绪大模型）。线上 Whisper 仍为 blend-v10（INT8 ONNX）；v13 为实验室适配器。口语／电台另属后续域扩展。申请截图见「证据一页」。</p>
                 <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。</p>
               </div>
               <div data-visible-lang="en">
@@ -2519,7 +2623,7 @@
                   </div>
                   <p class="cer-chart__caption">Jingchai short-domain raw CER (lower better) · n=39 · lab v13; Baitu unseen n=80 adapted ≈ 1.04 · Speak still blend-v10 · no claim of mean CER 0.5</p>
                 </div>
-                <p><strong>Significance &amp; product.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). After the verbatim ceiling, Speak runs two parallel paths: ① <strong>archive check</strong> (lyrics / light fingerprints + vernacular anchoring); ② <strong>delivery emotion</strong> from browser audio features (energy / contour / timbre → grief–urgency–anger–tender–heroic–sigh)—not a separate emotion weight package. Live Whisper remains blend-v10 (INT8 ONNX); v13 stays in the lab. Spoken/radio gold is a later domain extension.</p>
+                <p><strong>Significance &amp; product.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). After the verbatim ceiling, Speak runs two parallel paths: ① <strong>archive check</strong> (lyrics / light fingerprints + vernacular anchoring; linguistic notes and speakers are archive-linked, not an LLM); ② <strong>delivery emotion</strong> from browser audio features (energy / contour / timbre → grief–urgency–anger–tender–heroic–sigh)—not an emotion LLM. Live Whisper remains blend-v10 (INT8 ONNX); v13 stays in the lab. Spoken/radio gold is a later domain extension. For a screenshot sheet, see <strong>Evidence</strong>.</p>
                 <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose.</p>
               </div>
             </div>
@@ -2826,24 +2930,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824rich3",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824rich3",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824rich3",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824rich3",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824rich3",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824rich3",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824rich3",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824rich3",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824rich3",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824rich3"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824evid1",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824evid1",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824evid1",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824evid1",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824evid1",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824evid1",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824evid1",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824evid1",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824evid1",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824evid1"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260824rich3"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260824rich3"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260824rich3"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824rich3"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260824rich3"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824rich3"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260824evid1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260824evid1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260824evid1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824evid1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260824evid1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824evid1"></script>
 </body>
 </html>

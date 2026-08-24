@@ -201,6 +201,12 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
+    else if (hash === "about-evidence" || hash.startsWith("about-")) {
+        const section = hash === "about-evidence" ? "evidence" : hash.slice("about-".length);
+        document.querySelector(`.site-nav [data-panel-target="about"]`)?.click();
+        showAboutSection(section || "provide");
+        history.replaceState(null, "", `#${hash}`);
+    }
     else if (hash.startsWith("archive")) {
         const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
         const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
