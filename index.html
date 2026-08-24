@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260824fb1" />
-  <link rel="stylesheet" href="styles/main.css?v=20260824fb1" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260824fb1" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260824fb1" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260824fb1" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260824fb1" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260824fb1" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260824fb2" />
+  <link rel="stylesheet" href="styles/main.css?v=20260824fb2" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260824fb2" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260824fb2" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260824fb2" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260824fb2" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260824fb2" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -2749,41 +2749,41 @@
                 <input type="hidden" name="category" id="feedback-category" value="feature" />
                 <input type="text" name="_honey" class="contact-form__honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
-                <div class="feedback-kinds" role="group" aria-label="Feedback type" data-i18n-attr="aria-label" data-i18n="feedback.kindsLabel">
-                  <button type="button" class="feedback-kind" data-feedback-kind="feature" aria-pressed="true" data-i18n="feedback.kind.feature">功能</button>
-                  <button type="button" class="feedback-kind" data-feedback-kind="bug" aria-pressed="false" data-i18n="feedback.kind.bug">问题</button>
-                  <button type="button" class="feedback-kind" data-feedback-kind="thoughts" aria-pressed="false" data-i18n="feedback.kind.thoughts">随想</button>
+                <div class="feedback-field">
+                  <p class="feedback-field__label" id="feedback-kinds-label" data-i18n="feedback.kindsLabel">反馈类型</p>
+                  <div class="feedback-kinds" role="group" aria-labelledby="feedback-kinds-label">
+                    <button type="button" class="feedback-kind" data-feedback-kind="feature" aria-pressed="true" data-i18n="feedback.kind.feature">功能</button>
+                    <button type="button" class="feedback-kind" data-feedback-kind="bug" aria-pressed="false" data-i18n="feedback.kind.bug">问题</button>
+                    <button type="button" class="feedback-kind" data-feedback-kind="thoughts" aria-pressed="false" data-i18n="feedback.kind.thoughts">随想</button>
+                  </div>
                 </div>
 
-                <label class="contact-form__field">
-                  <span class="visually-hidden" data-i18n="feedback.messageLabel">反馈内容</span>
+                <label class="feedback-field">
+                  <span class="feedback-field__label" data-i18n="feedback.messageLabel">反馈内容</span>
                   <textarea
                     id="feedback-message"
                     name="message"
-                    rows="6"
+                    rows="5"
                     required
                     data-i18n-placeholder="feedback.messagePlaceholder"
                     placeholder="说说转写问题、功能想法，或语料线索。"
                   ></textarea>
                 </label>
 
-                <div class="feedback-contact">
-                  <p class="feedback-contact__label" data-i18n="feedback.contactLabel">联系方式（选填）</p>
-                  <label class="contact-form__field">
-                    <span class="visually-hidden" data-i18n="feedback.emailLabel">邮箱</span>
-                    <input
-                      id="feedback-email"
-                      type="email"
-                      name="_replyto"
-                      autocomplete="email"
-                      data-i18n-placeholder="feedback.emailPlaceholder"
-                      placeholder="留下邮箱，方便我们联系你（可不填）"
-                    />
-                    <input type="hidden" name="reply_email_note" id="feedback-reply-note" value="(optional)" />
-                  </label>
-                </div>
+                <label class="feedback-field">
+                  <span class="feedback-field__label" data-i18n="feedback.contactLabel">联系方式（选填）</span>
+                  <input
+                    id="feedback-email"
+                    type="email"
+                    name="_replyto"
+                    autocomplete="email"
+                    data-i18n-placeholder="feedback.emailPlaceholder"
+                    placeholder="留下邮箱，方便我们联系你（可不填）"
+                  />
+                  <input type="hidden" name="reply_email_note" id="feedback-reply-note" value="(optional)" />
+                </label>
 
-                <button type="submit" id="feedback-submit" class="contact-form__submit" disabled data-i18n="feedback.submit">发送</button>
+                <button type="submit" id="feedback-submit" class="feedback-submit" disabled data-i18n="feedback.submit">发送</button>
                 <p id="feedback-status" class="feedback-status" aria-live="polite" hidden></p>
               </form>
             </div>
@@ -3040,24 +3040,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824fb1",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824fb1",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824fb1",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824fb1",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824fb1",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824fb1",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824fb1",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824fb1",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824fb1",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824fb1"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824fb2",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824fb2",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824fb2",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824fb2",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824fb2",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824fb2",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824fb2",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824fb2",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824fb2",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824fb2"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260824fb1"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260824fb1"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260824fb1"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824fb1"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260824fb1"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824fb1"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260824fb2"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260824fb2"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260824fb2"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824fb2"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260824fb2"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824fb2"></script>
 </body>
 </html>
