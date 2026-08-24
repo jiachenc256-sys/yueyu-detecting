@@ -32,12 +32,12 @@
       "q": {
         "zh": "「听说」页如何工作？首次加载 Whisper 要多久？",
         "en": "How does Speak work, and what about the first Whisper download?",
-        "zhHant": "「聽說」頁如何工作？首次加載 Whisper 要多久？"
+        "zhHant": "「聽說」頁如何工作？首次載入 Whisper 要多久？"
       },
       "a": {
-        "zh": "实时麦克风走浏览器语音引擎（推荐 Chrome / Edge）。上传音频则在设备端运行 Whisper：首次会下载约 75MB 的小模型，之后可离线复用缓存。识别完成后，译文经 MyMemory 接口生成（无需本站 API 密钥）。当前对越语 / 舞台方言仍是基线演示，准确度会随档案语料积累而提升；请用清晰、较短的片段试听。",
-        "en": "Live microphone input uses the browser speech engine (Chrome/Edge recommended). Uploaded files run Whisper on-device: the first visit downloads a small model (~75MB), then the cache can be reused. After recognition, translations come from MyMemory (no API key on this site). Yueyu / stage-dialect accuracy is still a baseline demo and should improve as the archive corpus grows; prefer clear, short clips.",
-        "zhHant": "實時麥克風走瀏覽器語音引擎（推薦 Chrome / Edge）。上傳音頻則在設備端運行 Whisper：首次會下載約 75MB 的小模型，之後可離線復用緩存。識別完成後，譯文經 MyMemory 接口生成（無需本站 API 密鑰）。當前對越語 / 舞臺方言仍是基線演示，準確度會隨檔案語料積累而提升；請用清晰、較短的片段試聽。"
+        "zh": "麦克风与上传统一走设备端 Whisper（越语适配 blend-v10；首次需加载约 250MB 本地权重，之后可复用缓存）。识别完成后，译文经 MyMemory 接口生成（无需本站 API 密钥）。当前对越语 / 舞台方言仍是基线演示，准确度会随档案语料积累而提升；请用清晰、较短的片段或「试试示例」。",
+        "en": "Mic and uploads both use on-device Whisper (Yueyu-adapted blend-v10; first visit loads ~250MB local weights, then the cache can be reused). After recognition, translations come from MyMemory (no API key on this site). Yueyu / stage-dialect accuracy is still a baseline demo and should improve as the archive corpus grows; prefer clear, short clips or Try sample.",
+        "zhHant": "麥克風與上傳統一走設備端 Whisper（越語適配 blend-v10；首次需載入約 250MB 本地權重，之後可復用快取）。識別完成後，譯文經 MyMemory 接口生成（無需本站 API 密鑰）。當前對越語 / 舞臺方言仍是基線演示，準確度會隨檔案語料積累而提升；請用清晰、較短的片段或「試試示例」。"
       }
     },
     {

@@ -30,6 +30,42 @@
   font: inherit;
 }
 
+.dict-scene-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  max-width: min(100%, 40rem);
+}
+
+.dict-scene-chip {
+  appearance: none;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-paper);
+  color: var(--color-ink-muted);
+  border-radius: var(--radius-md);
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+.dict-scene-chip:hover {
+  color: var(--color-ink);
+  border-color: var(--color-ink-muted);
+}
+
+.dict-scene-chip[aria-pressed="true"] {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.dict-card__play:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .dict-status,
 .dict-empty {
   margin: 0;
