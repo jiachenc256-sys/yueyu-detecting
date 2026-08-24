@@ -5,7 +5,7 @@
   "description": "Yueyu Detecting (越语侦听): speak/upload recognition + linguistic dialogue archive.",
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node scripts/bust-speak-imports.mjs",
     "build:transcript": "tsx scripts/build-transcript.ts",
     "seed:mt": "tsx scripts/seed-mt.ts",
     "seed:zh-hant": "tsx scripts/seed-zh-hant.ts",
