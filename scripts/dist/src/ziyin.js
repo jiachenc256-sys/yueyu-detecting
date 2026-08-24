@@ -124,7 +124,15 @@ async function initZiyin() {
     const questFocusTaskEl = document.getElementById("ziyin-quest-focus-task");
     const questFocusEnterBtn = document.getElementById("ziyin-quest-focus-enter");
     const questFocusNextBtn = document.getElementById("ziyin-quest-focus-next");
+    const questFocusProgressEl = document.getElementById("ziyin-quest-focus-progress");
     const questSessionNextBtn = document.getElementById("ziyin-quest-session-next");
+    const questDailyFill = document.getElementById("ziyin-quest-daily-fill");
+    const celebrateEl = document.getElementById("ziyin-quest-celebrate");
+    const celebrateKickerEl = document.getElementById("ziyin-quest-celebrate-kicker");
+    const celebrateTitleEl = document.getElementById("ziyin-quest-celebrate-title");
+    const celebrateBodyEl = document.getElementById("ziyin-quest-celebrate-body");
+    const celebrateNextBtn = document.getElementById("ziyin-quest-celebrate-next");
+    const celebrateCloseBtn = document.getElementById("ziyin-quest-celebrate-close");
     const modeButtons = Array.from(document.querySelectorAll("[data-learn-mode]"));
     let celebrateTimer = null;
     let questFocusGate = null;
@@ -234,16 +242,54 @@ async function initZiyin() {
         progress.due[han] = Date.now();
     }
     function updateDailyUi() {
+        daily = loadDaily();
         if (!questDailyEl)
             return;
-        if (daily.newKnown >= DAILY_SOFT_CAP) {
-            questDailyEl.hidden = false;
-            questDailyEl.textContent = tf("learn.quest.dailySoft", { n: daily.newKnown });
+        const over = daily.newKnown >= DAILY_SOFT_CAP;
+        questDailyEl.hidden = false;
+        questDailyEl.textContent = over
+            ? tf("learn.quest.dailySoft", { n: daily.newKnown, cap: DAILY_SOFT_CAP })
+            : tf("learn.quest.dailyGoal", { n: daily.newKnown, cap: DAILY_SOFT_CAP });
+        if (questDailyFill) {
+            const pct = Math.min(100, Math.round((daily.newKnown / DAILY_SOFT_CAP) * 100));
+            questDailyFill.style.width = `${pct}%`;
         }
-        else {
-            questDailyEl.hidden = true;
-            questDailyEl.textContent = "";
+    }
+    function hideQuestCelebrate() {
+        if (celebrateEl)
+            celebrateEl.hidden = true;
+        if (celebrateNextBtn) {
+            celebrateNextBtn.hidden = true;
+            delete celebrateNextBtn.dataset.nextGate;
         }
+    }
+    function showQuestCelebrate(kind, gate, next) {
+        if (!celebrateEl)
+            return;
+        if (celebrateKickerEl) {
+            celebrateKickerEl.textContent =
+                kind === "master" ? t("learn.quest.celebrateMasterKicker") : t("learn.quest.celebrateGateKicker");
+        }
+        if (celebrateTitleEl) {
+            celebrateTitleEl.textContent =
+                kind === "master"
+                    ? t("learn.quest.masterTitle")
+                    : tf("learn.quest.gateTitle", { n: gate, name: levelLabel(gate) });
+        }
+        if (celebrateBodyEl) {
+            celebrateBodyEl.textContent =
+                kind === "master"
+                    ? t("learn.quest.celebrateMasterBody")
+                    : tf("learn.quest.passToast", { badge: t(`learn.quest.badge${gate}`) });
+        }
+        if (celebrateNextBtn) {
+            const showNext = kind === "gate" && next != null;
+            celebrateNextBtn.hidden = !showNext;
+            if (showNext)
+                celebrateNextBtn.dataset.nextGate = String(next);
+        }
+        celebrateEl.hidden = false;
+        celebrateCloseBtn?.focus();
     }
     function nextPlayableGate(after = 0) {
         for (let g = Math.max(1, after + 1); g <= 5; g += 1) {
@@ -277,6 +323,15 @@ async function initZiyin() {
         }
         if (questFocusTaskEl)
             questFocusTaskEl.textContent = t(`learn.quest.gate${gate}.task`);
+        const stats = gateStats(gate);
+        if (questFocusProgressEl) {
+            questFocusProgressEl.textContent = tf("learn.quest.gateProgress", {
+                n: gate,
+                known: stats.known,
+                total: stats.total,
+                pct: stats.pct,
+            });
+        }
         if (questFocusEnterBtn) {
             questFocusEnterBtn.hidden = !unlocked;
             questFocusEnterBtn.disabled = !unlocked;
@@ -307,6 +362,7 @@ async function initZiyin() {
             questTaskEl.textContent = t(`learn.quest.gate${questGate}.task`);
         if (questGateProgressEl) {
             questGateProgressEl.textContent = tf("learn.quest.gateProgress", {
+                n: questGate,
                 known: stats.known,
                 total: stats.total,
                 pct: stats.pct,
@@ -383,9 +439,9 @@ async function initZiyin() {
             if (!unlocked)
                 mark.textContent = "🔒";
             else if (cleared)
-                mark.textContent = "✓";
+                mark.textContent = "✅";
             else
-                mark.textContent = String(gate);
+                mark.textContent = "🟡";
             node.append(mark);
             const name = document.createElement("p");
             name.className = "ziyin-quest__gate-name";
@@ -425,6 +481,7 @@ async function initZiyin() {
             if (learnMode === "quest" && questGate != null) {
                 const stats = gateStats(questGate);
                 flashProgressEl.textContent = tf("learn.quest.gateProgress", {
+                    n: questGate,
                     known: stats.known,
                     total: stats.total,
                     pct: stats.pct,
@@ -487,6 +544,13 @@ async function initZiyin() {
         if (learnMode === "quest" && questGate != null) {
             const nowCleared = isGateCleared(questGate);
             updateQuestSessionUi(!wasCleared && nowCleared);
+            if (!wasCleared && nowCleared) {
+                const next = nextPlayableGate(questGate);
+                if (questGate === 5 && allGatesCleared())
+                    showQuestCelebrate("master", questGate, null);
+                else
+                    showQuestCelebrate("gate", questGate, next);
+            }
         }
         if (reviewWrongOnly || reviewDueOnly) {
             pool = pool.filter((it) => it.han !== han);
@@ -894,8 +958,21 @@ async function initZiyin() {
     });
     questSessionNextBtn?.addEventListener("click", () => {
         const next = Number(questSessionNextBtn.dataset.nextGate);
+        if (Number.isFinite(next)) {
+            hideQuestCelebrate();
+            enterQuestGate(next);
+        }
+    });
+    celebrateCloseBtn?.addEventListener("click", () => hideQuestCelebrate());
+    celebrateNextBtn?.addEventListener("click", () => {
+        const next = Number(celebrateNextBtn.dataset.nextGate);
+        hideQuestCelebrate();
         if (Number.isFinite(next))
             enterQuestGate(next);
+    });
+    celebrateEl?.addEventListener("click", (event) => {
+        if (event.target === celebrateEl)
+            hideQuestCelebrate();
     });
     questBackBtn?.addEventListener("click", () => leaveQuestGate());
     questExportBtn?.addEventListener("click", () => {

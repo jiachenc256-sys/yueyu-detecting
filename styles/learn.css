@@ -926,11 +926,99 @@ button.ziyin-quest__node:hover {
   border-top: 1px solid var(--color-border);
 }
 
-.ziyin-quest__focus-title {
+.ziyin-quest__daily-wrap {
+  margin: 0 0 var(--space-4);
+}
+
+.ziyin-quest__daily {
   margin: 0 0 var(--space-2);
-  font-family: var(--font-serif);
-  font-size: var(--text-lg);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-quest__daily-bar {
+  height: 3px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.ziyin-quest__daily-bar > span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--color-status-progress);
+  transition: width 0.2s ease;
+}
+
+.ziyin-quest__focus-progress {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-ink);
   font-weight: 600;
+}
+
+.ziyin-quest-celebrate {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: var(--space-6);
+  background: color-mix(in srgb, var(--color-paper) 55%, transparent);
+  backdrop-filter: blur(2px);
+}
+
+.ziyin-quest-celebrate[hidden] {
+  display: none !important;
+}
+
+.ziyin-quest-celebrate__card {
+  width: min(100%, 24rem);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-strong);
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-paper-raised);
+  box-shadow: var(--shadow-md);
+  animation: ziyin-quest-celebrate 0.7s ease;
+}
+
+.ziyin-quest-celebrate__kicker {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.ziyin-quest-celebrate__title {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+.ziyin-quest-celebrate__body {
+  margin: 0 0 var(--space-5);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-quest-celebrate__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.ziyin-quest__gate {
+  background: color-mix(in srgb, var(--color-paper) 55%, transparent);
+  border: 1px solid transparent;
+}
+
+.ziyin-quest__gate.is-focused,
+.ziyin-quest__gate[data-recommended="true"] {
+  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
 }
 
 .ziyin-quest__focus-task {
