@@ -34,6 +34,14 @@ DEFAULT_PIECES = [
     ("hongloumeng-1", 60),
     ("zanghua-yin", 60),
     ("chai-tou-feng", 40),
+    # 2026-08-24 rich pack (short demos + longmen sample)
+    ("biyu-zan-xinfang", 20),
+    ("he-wenxiu-suanming", 20),
+    ("xixiangji-kaohong", 20),
+    ("hongloumeng-tianxia", 20),
+    ("wunv-baishou-huashu", 20),
+    ("zhuiyu-guandeng", 20),
+    ("longmen-kezhai", 80),
 ]
 
 
