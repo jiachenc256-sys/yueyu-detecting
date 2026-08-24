@@ -118,7 +118,9 @@ async function initZiyin() {
     const questExportBtn = document.getElementById("ziyin-quest-export");
     const questImportBtn = document.getElementById("ziyin-quest-import");
     const questImportFile = document.getElementById("ziyin-quest-import-file");
+    const switchToQuestBtn = document.getElementById("ziyin-switch-to-quest");
     const modeButtons = Array.from(document.querySelectorAll("[data-learn-mode]"));
+    let celebrateTimer = null;
     function loadProgress() {
         try {
             const raw = localStorage.getItem(PROGRESS_KEY);
@@ -236,7 +238,7 @@ async function initZiyin() {
             questDailyEl.textContent = "";
         }
     }
-    function updateQuestSessionUi() {
+    function updateQuestSessionUi(celebrate = false) {
         if (questGate == null)
             return;
         const stats = gateStats(questGate);
@@ -258,10 +260,23 @@ async function initZiyin() {
                     questGate === 5 && allGatesCleared()
                         ? t("learn.quest.passFinal")
                         : tf("learn.quest.passToast", { badge: t(`learn.quest.badge${questGate}`) });
+                if (celebrate) {
+                    questPassEl.classList.remove("is-celebrating");
+                    // Restart CSS animation
+                    void questPassEl.offsetWidth;
+                    questPassEl.classList.add("is-celebrating");
+                    if (celebrateTimer != null)
+                        window.clearTimeout(celebrateTimer);
+                    celebrateTimer = window.setTimeout(() => {
+                        questPassEl?.classList.remove("is-celebrating");
+                        celebrateTimer = null;
+                    }, 1600);
+                }
             }
             else {
                 questPassEl.hidden = true;
                 questPassEl.textContent = "";
+                questPassEl.classList.remove("is-celebrating");
             }
         }
     }
@@ -283,7 +298,10 @@ async function initZiyin() {
             head.className = "ziyin-quest__gate-head";
             const title = document.createElement("h4");
             title.className = "ziyin-quest__gate-title";
-            title.textContent = `${GATE_EMOJI[gate - 1] ?? ""} ${gate}. ${levelLabel(gate)}`;
+            title.textContent = `${GATE_EMOJI[gate - 1] ?? ""} ${tf("learn.quest.gateTitle", {
+                n: gate,
+                name: levelLabel(gate),
+            })}`;
             const status = document.createElement("span");
             status.className = "ziyin-quest__gate-status";
             if (!unlocked) {
@@ -375,6 +393,7 @@ async function initZiyin() {
             return;
         const han = item.han;
         const wasKnown = progress.known.includes(han);
+        const wasCleared = learnMode === "quest" && questGate != null && isGateCleared(questGate);
         progress.known = progress.known.filter((h) => h !== han);
         progress.unknown = progress.unknown.filter((h) => h !== han);
         if (kind === "known") {
@@ -393,8 +412,10 @@ async function initZiyin() {
         }
         saveProgress(progress);
         updateProgressUi();
-        if (learnMode === "quest" && questGate != null)
-            updateQuestSessionUi();
+        if (learnMode === "quest" && questGate != null) {
+            const nowCleared = isGateCleared(questGate);
+            updateQuestSessionUi(!wasCleared && nowCleared);
+        }
         if (reviewWrongOnly || reviewDueOnly) {
             pool = pool.filter((it) => it.han !== han);
             if (!pool.length) {
@@ -778,6 +799,7 @@ async function initZiyin() {
             setLearnMode(mode);
         });
     });
+    switchToQuestBtn?.addEventListener("click", () => setLearnMode("quest"));
     questBackBtn?.addEventListener("click", () => leaveQuestGate());
     questExportBtn?.addEventListener("click", () => {
         const payload = {
