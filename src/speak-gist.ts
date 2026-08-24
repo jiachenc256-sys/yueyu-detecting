@@ -217,6 +217,24 @@ export function getPieceRadarAxes(
   return cachedPieceRadar.axes[pieceId];
 }
 
+/** English labels for theme radar when UI locale is EN (assets store Chinese labels). */
+export const THEME_LABEL_EN: Record<ThemeId, string> = {
+  farewell: "Farewell",
+  longing: "Longing",
+  exam: "Exam / career",
+  marriage: "Marriage bond",
+  oath: "Vow / coded love",
+  grief: "Grief",
+};
+
+export function localizeThemeAxes(
+  axes: Array<{ id: ThemeId; label: string }>,
+  preferEn: boolean,
+): Array<{ id: ThemeId; label: string }> {
+  if (!preferEn) return axes;
+  return axes.map((a) => ({ id: a.id, label: THEME_LABEL_EN[a.id] ?? a.label }));
+}
+
 function toPinyinSyllables(text: string, map: PinyinMapFile | null): string[] {
   const out: string[] = [];
   for (const ch of normChars(text)) {
@@ -456,6 +474,7 @@ export function analyzeGist(hyp: string, index: LyricIndex, opts: AnalyzeOpts = 
 
   if (timeAnchored) {
     gistZh = `〔播放头 ${timeSec!.toFixed(0)}s 附近〕` + gistZh;
+    gistEn = `[Near playhead ${timeSec!.toFixed(0)}s] ` + gistEn;
   }
 
   return {

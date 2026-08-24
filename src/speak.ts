@@ -1,4 +1,4 @@
-import { onLocaleChange, t, tf } from "./i18n.js";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js";
 import {
   analyzeGist,
   getPieceRadarAxes,
@@ -6,6 +6,7 @@ import {
   loadPinyinMap,
   loadPieceRadar,
   loadSceneCards,
+  localizeThemeAxes,
   type GistResult,
 } from "./speak-gist.js";
 import {
@@ -72,6 +73,7 @@ const sceneCardEl = document.getElementById("speak-scene-card");
 const fpNoteEl = document.getElementById("speak-fp-note");
 const prosodyCard = document.getElementById("speak-prosody-card");
 const prosodyText = document.getElementById("speak-prosody-text");
+const prosodyMetrics = document.getElementById("speak-prosody-metrics");
 const prosodyRadar = document.getElementById("speak-prosody-radar");
 const prosodyRadarCaption = document.getElementById("speak-prosody-radar-caption");
 const prosodyMeter = document.getElementById("speak-prosody-meter");
@@ -314,6 +316,21 @@ function populatePieceSelect(index: Awaited<ReturnType<typeof loadLyricIndex>>):
   if (Array.from(pieceSelect.options).some((o) => o.value === prev)) pieceSelect.value = prev;
 }
 
+function preferEnUi(): boolean {
+  return getLocale() === "en";
+}
+
+function emotionLabelsForUi(): Array<{ id: string; label: string }> {
+  const en = preferEnUi();
+  return EMOTION_AXES.map((a) => ({ id: a.id, label: en ? a.labelEn : a.labelZh }));
+}
+
+function emotionName(id: string): string {
+  const axis = EMOTION_AXES.find((a) => a.id === id);
+  if (!axis) return id;
+  return preferEnUi() ? axis.labelEn : axis.labelZh;
+}
+
 function hidePathPanels(): void {
   lastGist = null;
   lastProsody = null;
@@ -326,6 +343,10 @@ function hidePathPanels(): void {
   }
   setMeter(archiveMeter, archiveMeterLabel, 0, "—");
   setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
+  if (prosodyMetrics) {
+    prosodyMetrics.hidden = true;
+    prosodyMetrics.textContent = "";
+  }
 }
 
 function renderThemeRadar(
@@ -445,7 +466,7 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
         archiveTitle: entry.title,
         matches: [{ entry, score: fpBest }, ...result.matches].slice(0, 5),
         gistZh: `声纹接近档案切片「${entry.text}」（《${entry.title}》）。${result.sceneZh ? `场景：${result.sceneZh}` : ""}`,
-        gistEn: `Audio fingerprint close to archive clip “${entry.text}” (${entry.title}).`,
+        gistEn: `Audio fingerprint close to archive clip “${entry.text}” (${entry.title}).${result.sceneEn ? ` Scene: ${result.sceneEn}` : ""}`,
       };
       lastGist = result;
     }
@@ -475,7 +496,7 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
     if (!result) {
       archiveText.textContent = t("speak.path.archiveUnavailable");
     } else if (hit) {
-      archiveText.textContent = result.gistZh;
+      archiveText.textContent = preferEnUi() ? result.gistEn : result.gistZh;
     } else if ((result.confidence ?? 0) >= ARCHIVE_NEAR_MIN || fpBest >= 0.72) {
       archiveText.textContent = t("speak.path.weakBody");
     } else {
@@ -484,10 +505,10 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
   }
 
   if (sceneCardEl) {
-    // Show vernacular scene when we know the piece/time, even if lyric text missed
-    if (result?.sceneZh && (hit || (pieceId && timeSec != null))) {
+    const sceneLine = preferEnUi() ? result?.sceneEn : result?.sceneZh;
+    if (sceneLine && (hit || (pieceId && timeSec != null))) {
       sceneCardEl.hidden = false;
-      sceneCardEl.textContent = result.sceneZh;
+      sceneCardEl.textContent = sceneLine;
     } else {
       sceneCardEl.hidden = true;
       sceneCardEl.textContent = "";
@@ -533,7 +554,7 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
   }
 
   if (result && index) {
-    const radarAxes = getPieceRadarAxes(pieceId, index.themes);
+    const radarAxes = localizeThemeAxes(getPieceRadarAxes(pieceId, index.themes), preferEnUi());
     const top = result.topThemes
       .map((id) => radarAxes.find((x) => x.id === id)?.label ?? index.themes.find((x) => x.id === id)?.label)
       .filter(Boolean)
@@ -573,10 +594,18 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
     lastProsody = prosody;
     if (prosody && prosodyCard) {
       prosodyCard.hidden = false;
-      const summary = hit
-        ? prosody.summaryZh.replace(/^档案未命中。/, "档案已有候选句；同时从腔调看，")
-        : prosody.summaryZh;
+      const en = preferEnUi();
+      let summary = en ? prosody.summaryEn : prosody.summaryZh;
+      if (hit) {
+        summary = en
+          ? summary.replace(/^Not in archive\.\s*/i, "Archive candidate ready; from delivery, ")
+          : summary.replace(/^档案未命中。/, "档案已有候选句；同时从腔调看，");
+      }
       if (prosodyText) prosodyText.textContent = summary;
+      if (prosodyMetrics) {
+        prosodyMetrics.hidden = false;
+        prosodyMetrics.textContent = en ? prosody.metricsEn : prosody.metricsZh;
+      }
       const topScore = Math.max(...Object.values(prosody.scores), 0);
       setMeter(
         prosodyMeter,
@@ -584,11 +613,8 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
         topScore,
         tf("speak.path.emotionConf", { pct: String(Math.round(topScore * 100)) }),
       );
-      const labels = EMOTION_AXES.map((a) => ({ id: a.id, label: a.labelZh }));
-      const focus = prosody.top
-        .map((id) => EMOTION_AXES.find((a) => a.id === id)?.labelZh)
-        .filter(Boolean)
-        .join(" · ");
+      const labels = emotionLabelsForUi();
+      const focus = prosody.top.map(emotionName).filter(Boolean).join(" · ");
       renderThemeRadar(
         prosodyRadar,
         prosodyRadarCaption,
@@ -598,7 +624,8 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
         t("speak.path.emotionEmpty"),
       );
       if (!hit) {
-        scheduleTranslate(summary);
+        // Don't force-translate Chinese prosody into EN when UI is already EN.
+        if (!en) scheduleTranslate(summary);
         return result;
       }
     }
@@ -609,6 +636,10 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
         prosodyText.textContent = hit
           ? t("speak.path.prosodyOptionalAudio")
           : t("speak.path.prosodyNeedAudio");
+      }
+      if (prosodyMetrics) {
+        prosodyMetrics.hidden = true;
+        prosodyMetrics.textContent = "";
       }
     }
     setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
@@ -1103,5 +1134,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (statusEl && !listening && !(recognizedEl?.value || "").trim()) {
       setStatus(t("speak.status.ready"));
     }
+    // Re-render ①/② path copy + radar labels in the new UI language.
+    const hyp = (recognizedEl?.value || "").trim();
+    if (hyp) void runPostAsrPaths(hyp);
   });
 });

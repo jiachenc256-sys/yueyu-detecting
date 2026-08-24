@@ -38,6 +38,9 @@ export interface ProsodyResult {
   top: EmotionId[];
   summaryZh: string;
   summaryEn: string;
+  /** Concrete delivery metrics (not a full linguistic analysis). */
+  metricsZh: string;
+  metricsEn: string;
 }
 
 function clamp01(n: number): number {
@@ -163,6 +166,8 @@ export function featuresToEmotions(
   const labelEn = (id: EmotionId) => EMOTION_AXES.find((a) => a.id === id)?.labelEn ?? id;
 
   const cryHint = pitchVar > 0.5 && energyDyn > 0.4 ? "，起伏大，略似哭腔/激动" : "";
+  const cryHintEn =
+    pitchVar > 0.5 && energyDyn > 0.4 ? " Contour is wide — may resemble sob-like or agitated delivery." : "";
   const summaryZh =
     top.length > 0
       ? `档案未命中。腔调粗估偏「${top.map(label).join(" / ")}」——能量${energy > 0.55 ? "偏强" : "偏弱"}，音色${bright > 0.55 ? "偏亮" : "偏沉"}，声线活动${voiced > 0.45 ? "较密" : "较疏"}${cryHint}。`
@@ -170,10 +175,16 @@ export function featuresToEmotions(
 
   const summaryEn =
     top.length > 0
-      ? `Not in archive. Delivery leans ${top.map(labelEn).join(" / ")} — energy ${energy > 0.55 ? "strong" : "soft"}, timbre ${bright > 0.55 ? "bright" : "dark"}, voicing ${voiced > 0.45 ? "dense" : "sparse"}.`
+      ? `Not in archive. Delivery leans ${top.map(labelEn).join(" / ")} — energy ${energy > 0.55 ? "strong" : "soft"}, timbre ${bright > 0.55 ? "bright" : "dark"}, voicing ${voiced > 0.45 ? "dense" : "sparse"}.${cryHintEn}`
       : "Prosody signal is weak; try a clearer, shorter clip.";
 
-  return { features: f, scores, top, summaryZh, summaryEn };
+  const pct = (x: number) => `${Math.round(clamp01(x) * 100)}%`;
+  const metricsZh =
+    `声学粗指标（非字级语言学分析）：能量 ${pct(energy)} · 动态 ${pct(energyDyn)} · 亮度 ${pct(bright)} · 声线密 ${pct(voiced)} · 起伏 ${pct(pitchVar)} · 起势 ${pct(attack)} · 时长 ${f.durationSec.toFixed(1)}s。`;
+  const metricsEn =
+    `Acoustic cues (not full linguistic analysis): energy ${pct(energy)} · dynamics ${pct(energyDyn)} · brightness ${pct(bright)} · voicing density ${pct(voiced)} · pitch motion ${pct(pitchVar)} · attack ${pct(attack)} · length ${f.durationSec.toFixed(1)}s.`;
+
+  return { features: f, scores, top, summaryZh, summaryEn, metricsZh, metricsEn };
 }
 
 export async function analyzeProsodyFromUrl(
