@@ -3,8 +3,9 @@ import { initI18n, onLocaleChange, t } from "./i18n.js";
 
 declare global {
   interface Window {
-    __yueyuOpenZiyinLevel?: (lv: number) => void;
-  }
+  __yueyuOpenZiyinLevel?: (lv: number) => void;
+  __yueyuOpenQuest?: (gate?: number) => void;
+}
 }
 
 function initNavigation(): void {
@@ -241,6 +242,21 @@ function openLearnFayinLevel(level: number): void {
   requestAnimationFrame(() => tryOpen(0));
 }
 
+function openLearnQuest(gate?: number): void {
+  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
+  history.replaceState(null, "", gate != null ? `#learn-quest-l${gate}` : "#learn-quest");
+  const tryOpen = (attempt: number): void => {
+    if (typeof window.__yueyuOpenQuest === "function") {
+      window.__yueyuOpenQuest(gate);
+      return;
+    }
+    document.querySelector<HTMLButtonElement>(`.learn-nav__link[data-learn-target="fayin"]`)?.click();
+    document.querySelector<HTMLButtonElement>(`[data-learn-mode="quest"]`)?.click();
+    if (attempt < 40) window.setTimeout(() => tryOpen(attempt + 1), 50);
+  };
+  requestAnimationFrame(() => tryOpen(0));
+}
+
 function openSpeakSample(sampleId: string): void {
   document.querySelector<HTMLElement>(`.site-nav [data-panel-target="speak"]`)?.click();
   history.replaceState(null, "", `#speak-sample-${sampleId}`);
@@ -352,6 +368,16 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
   const learnMatch = /^learn-fayin-l(\d+)$/.exec(hash);
   if (learnMatch) {
     openLearnFayinLevel(Number(learnMatch[1]));
+    return;
+  }
+
+  if (hash === "learn-quest") {
+    openLearnQuest();
+    return;
+  }
+  const questMatch = /^learn-quest-l(\d+)$/.exec(hash);
+  if (questMatch) {
+    openLearnQuest(Number(questMatch[1]));
     return;
   }
 
