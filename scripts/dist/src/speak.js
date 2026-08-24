@@ -5,7 +5,10 @@ import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
-const ARCHIVE_HIT_MIN = 0.22;
+/** Minimum text/FP confidence to treat as a confident archive hit (not a shaky guess). */
+const ARCHIVE_HIT_MIN = 0.28;
+/** Show near-miss candidates only above this floor (still labeled as weak). */
+const ARCHIVE_NEAR_MIN = 0.08;
 const recordBtn = document.getElementById("speak-record");
 const clearBtn = document.getElementById("speak-clear");
 const fileInput = document.getElementById("speak-file");
@@ -204,15 +207,37 @@ const PIECE_PAGE_ALIASES = {
 const PIECE_PAGES = new Set([
     "baitu-ji",
     "biyu-zan-xinfang",
+    "bubuxinjing-1",
+    "bubuxinjing-2",
+    "bubuxinjing-3",
+    "bubuxinjing-4a",
+    "bubuxinjing-4b5a",
+    "chai-tou-feng",
+    "chen-sanliang",
     "he-wenxiu-suanming",
+    "hongloumeng-1",
+    "hongloumeng-2",
+    "hongloumeng-3",
+    "hongloumeng-4",
+    "hongloumeng-5",
     "hongloumeng-tianxia",
     "jingchai-ji",
     "liangzhu-shibaxiangsong",
+    "liangzhu-xia",
+    "limaohuan-taizi",
     "longmen-kezhai",
+    "mudanting-huanhunji",
+    "para-2",
+    "para-3",
     "pearl-tower-gift",
+    "wunv-baishou-1",
+    "wunv-baishou-2",
+    "wunv-baishou-3",
+    "wunv-baishou-4",
     "wunv-baishou-huashu",
     "xianglin-sao-xinsuanhua",
     "xixiangji-kaohong",
+    "zanghua-yin",
     "zhuiyu-guandeng",
 ]);
 function resolvePiecePageId(pieceId) {
@@ -323,9 +348,8 @@ function renderThemeRadar(svg, caption, scores, labels, focusText, emptyText) {
 function archiveHit(result, fpBest) {
     if (fpBest >= 0.88)
         return true;
-    if (result.confidence >= ARCHIVE_HIT_MIN)
-        return true;
-    return result.mode === "direct" || result.mode === "anchored";
+    // Require score — do not promote weak “anchored/direct” mode alone as a confident hit.
+    return result.confidence >= ARCHIVE_HIT_MIN;
 }
 async function runPostAsrPaths(hyp) {
     const [index, scenes, fpIndex, pinyinMap] = await Promise.all([
@@ -411,6 +435,9 @@ async function runPostAsrPaths(hyp) {
         else if (hit) {
             archiveText.textContent = result.gistZh;
         }
+        else if ((result.confidence ?? 0) >= ARCHIVE_NEAR_MIN || fpBest >= 0.72) {
+            archiveText.textContent = t("speak.path.weakBody");
+        }
         else {
             archiveText.textContent = t("speak.path.missBody");
         }
@@ -441,12 +468,20 @@ async function runPostAsrPaths(hyp) {
         }
     }
     if (archiveMatches) {
-        archiveMatches.innerHTML = hit && result
-            ? result.matches
-                .slice(0, 3)
-                .map((m) => `<li><strong>《${m.entry.title}》</strong> ${m.entry.text} <span style="opacity:.65">(${(m.score * 100).toFixed(0)}%)</span></li>`)
-                .join("")
-            : "";
+        const showWeak = !hit && result && ((result.confidence ?? 0) >= ARCHIVE_NEAR_MIN || fpBest >= 0.72);
+        archiveMatches.innerHTML =
+            hit && result
+                ? result.matches
+                    .slice(0, 3)
+                    .map((m) => `<li><strong>《${m.entry.title}》</strong> ${m.entry.text} <span style="opacity:.65">(${(m.score * 100).toFixed(0)}%)</span></li>`)
+                    .join("")
+                : showWeak && result
+                    ? `<li class="speak-match-weak-label">${t("speak.path.weakLabel")}</li>` +
+                        result.matches
+                            .slice(0, 2)
+                            .map((m) => `<li class="speak-match-weak"><strong>《${m.entry.title}》</strong> ${m.entry.text} <span style="opacity:.65">(${(m.score * 100).toFixed(0)}%)</span></li>`)
+                            .join("")
+                    : "";
     }
     if (result && index) {
         const radarAxes = getPieceRadarAxes(pieceId, index.themes);
@@ -887,6 +922,15 @@ function initSpeak() {
             const url = btn.dataset.speakSample;
             if (!url)
                 return;
+            const piece = btn.dataset.speakPiece;
+            if (piece && pieceSelect) {
+                // Prefer scoping archive check to the demo piece for a clearer ① hit.
+                const opt = Array.from(pieceSelect.options).find((o) => o.value === piece);
+                if (opt)
+                    pieceSelect.value = piece;
+            }
+            if (followTimeEl)
+                followTimeEl.checked = false;
             const label = btn.textContent?.trim() || url;
             void runSample(url, label);
         });

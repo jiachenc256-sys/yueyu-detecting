@@ -118,6 +118,362 @@
         "zh": "悲愤收束：控诉与叹息交织，情绪更沉。",
         "en": "Grief closes in: accusation and sighing; the tone grows heavier."
       }
+    ],
+    "liangzhu-xia": [
+      {
+        "start": 0,
+        "end": 300,
+        "zh": "梁祝下卷：情事急转，悲剧气氛渐浓。",
+        "en": "Later Butterfly Lovers: the story turns; tragedy gathers."
+      },
+      {
+        "start": 300,
+        "end": 900,
+        "zh": "化蝶前夕：诀别与不舍层层叠加。",
+        "en": "Before metamorphosis: farewell and reluctance pile up."
+      },
+      {
+        "start": 900,
+        "end": 99999,
+        "zh": "收束：传说收尾，余韵未尽。",
+        "en": "Close: legend ends; aftertaste remains."
+      }
+    ],
+    "mudanting-huanhunji": [
+      {
+        "start": 0,
+        "end": 600,
+        "zh": "还魂起：丽娘情思萌动，梦境与花园交织。",
+        "en": "Return begins: Liniang’s longing; dream and garden intertwine."
+      },
+      {
+        "start": 600,
+        "end": 1800,
+        "zh": "寻梦与伤逝：生死相隔，情未断。",
+        "en": "Dream-seeking and mourning: life and death apart; love unbroken."
+      },
+      {
+        "start": 1800,
+        "end": 99999,
+        "zh": "还魂团圆线：梦梅与丽娘终得相认。",
+        "en": "Return and reunion: Mengmei and Liniang find each other."
+      }
+    ],
+    "chen-sanliang": [
+      {
+        "start": 0,
+        "end": 800,
+        "zh": "陈三两开场：沉冤未雪，性情刚烈。",
+        "en": "Chen Sanliang opens: injustice unmet; fierce temperament."
+      },
+      {
+        "start": 800,
+        "end": 2000,
+        "zh": "辩诬中段：据理力争，声情俱烈。",
+        "en": "Mid defense: arguing with heat and clarity."
+      },
+      {
+        "start": 2000,
+        "end": 99999,
+        "zh": "收束：是非渐明，余怒未平。",
+        "en": "Close: truth clears; anger not fully spent."
+      }
+    ],
+    "zanghua-yin": [
+      {
+        "start": 0,
+        "end": 200,
+        "zh": "葬花起：落花流水，伤春自怜。",
+        "en": "Burial begins: fallen blossoms; spring grief."
+      },
+      {
+        "start": 200,
+        "end": 500,
+        "zh": "吟花中段：花与人同命，愁绪更深。",
+        "en": "Mid lament: flower and self share one fate."
+      },
+      {
+        "start": 500,
+        "end": 99999,
+        "zh": "收束：葬花已尽，余悲未消。",
+        "en": "Close: burial done; sorrow lingers."
+      }
+    ],
+    "chai-tou-feng": [
+      {
+        "start": 0,
+        "end": 180,
+        "zh": "钗头凤：旧情重逢，满腹酸楚。",
+        "en": "Chai Tou Feng: old love meets again; bitterness fills the air."
+      },
+      {
+        "start": 180,
+        "end": 99999,
+        "zh": "诀别之痛：错负与无奈交织。",
+        "en": "Parting pain: regret and helplessness intertwine."
+      }
+    ],
+    "limaohuan-taizi": [
+      {
+        "start": 0,
+        "end": 1200,
+        "zh": "狸猫换太子：宫廷阴谋与母子失散。",
+        "en": "Civet-cat swap: court intrigue; mother and child parted."
+      },
+      {
+        "start": 1200,
+        "end": 3000,
+        "zh": "辨认与奔波：真相一线，风险未除。",
+        "en": "Recognition on the road: truth near; danger remains."
+      },
+      {
+        "start": 3000,
+        "end": 99999,
+        "zh": "收束：冤案将雪，团圆可期。",
+        "en": "Close: injustice clears; reunion nears."
+      }
+    ],
+    "hongloumeng-1": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "红楼梦第1部分：宝黛情与贾府人事。",
+        "en": "Red Chamber part 1: Bao-Dai and Jia-house affairs."
+      },
+      {
+        "start": 400,
+        "end": 1200,
+        "zh": "中段唱词：人情冷暖与心事暗涌。",
+        "en": "Mid lyrics: warmth, chill, and hidden feeling."
+      },
+      {
+        "start": 1200,
+        "end": 99999,
+        "zh": "本段收束：情绪与人物关系再推进。",
+        "en": "Part closes: emotion and relations advance."
+      }
+    ],
+    "hongloumeng-2": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "红楼梦第2部分：宝黛情与贾府人事。",
+        "en": "Red Chamber part 2: Bao-Dai and Jia-house affairs."
+      },
+      {
+        "start": 400,
+        "end": 1200,
+        "zh": "中段唱词：人情冷暖与心事暗涌。",
+        "en": "Mid lyrics: warmth, chill, and hidden feeling."
+      },
+      {
+        "start": 1200,
+        "end": 99999,
+        "zh": "本段收束：情绪与人物关系再推进。",
+        "en": "Part closes: emotion and relations advance."
+      }
+    ],
+    "hongloumeng-3": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "红楼梦第3部分：宝黛情与贾府人事。",
+        "en": "Red Chamber part 3: Bao-Dai and Jia-house affairs."
+      },
+      {
+        "start": 400,
+        "end": 1200,
+        "zh": "中段唱词：人情冷暖与心事暗涌。",
+        "en": "Mid lyrics: warmth, chill, and hidden feeling."
+      },
+      {
+        "start": 1200,
+        "end": 99999,
+        "zh": "本段收束：情绪与人物关系再推进。",
+        "en": "Part closes: emotion and relations advance."
+      }
+    ],
+    "hongloumeng-4": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "红楼梦第4部分：宝黛情与贾府人事。",
+        "en": "Red Chamber part 4: Bao-Dai and Jia-house affairs."
+      },
+      {
+        "start": 400,
+        "end": 1200,
+        "zh": "中段唱词：人情冷暖与心事暗涌。",
+        "en": "Mid lyrics: warmth, chill, and hidden feeling."
+      },
+      {
+        "start": 1200,
+        "end": 99999,
+        "zh": "本段收束：情绪与人物关系再推进。",
+        "en": "Part closes: emotion and relations advance."
+      }
+    ],
+    "hongloumeng-5": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "红楼梦第5部分：宝黛情与贾府人事。",
+        "en": "Red Chamber part 5: Bao-Dai and Jia-house affairs."
+      },
+      {
+        "start": 400,
+        "end": 1200,
+        "zh": "中段唱词：人情冷暖与心事暗涌。",
+        "en": "Mid lyrics: warmth, chill, and hidden feeling."
+      },
+      {
+        "start": 1200,
+        "end": 99999,
+        "zh": "本段收束：情绪与人物关系再推进。",
+        "en": "Part closes: emotion and relations advance."
+      }
+    ],
+    "wunv-baishou-1": [
+      {
+        "start": 0,
+        "end": 500,
+        "zh": "五女拜寿第1部分：家庭伦理场面。",
+        "en": "Five Daughters part 1: family ethics scenes."
+      },
+      {
+        "start": 500,
+        "end": 99999,
+        "zh": "拜寿与人情往来继续展开。",
+        "en": "Birthday tribute and social ties continue."
+      }
+    ],
+    "wunv-baishou-2": [
+      {
+        "start": 0,
+        "end": 500,
+        "zh": "五女拜寿第2部分：家庭伦理场面。",
+        "en": "Five Daughters part 2: family ethics scenes."
+      },
+      {
+        "start": 500,
+        "end": 99999,
+        "zh": "拜寿与人情往来继续展开。",
+        "en": "Birthday tribute and social ties continue."
+      }
+    ],
+    "wunv-baishou-3": [
+      {
+        "start": 0,
+        "end": 500,
+        "zh": "五女拜寿第3部分：家庭伦理场面。",
+        "en": "Five Daughters part 3: family ethics scenes."
+      },
+      {
+        "start": 500,
+        "end": 99999,
+        "zh": "拜寿与人情往来继续展开。",
+        "en": "Birthday tribute and social ties continue."
+      }
+    ],
+    "wunv-baishou-4": [
+      {
+        "start": 0,
+        "end": 500,
+        "zh": "五女拜寿第4部分：家庭伦理场面。",
+        "en": "Five Daughters part 4: family ethics scenes."
+      },
+      {
+        "start": 500,
+        "end": 99999,
+        "zh": "拜寿与人情往来继续展开。",
+        "en": "Birthday tribute and social ties continue."
+      }
+    ],
+    "bubuxinjing-1": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "步步惊心本场：宫中情思与风险并存。",
+        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+      },
+      {
+        "start": 400,
+        "end": 99999,
+        "zh": "本场推进：人物关系更紧，语气更沉。",
+        "en": "Scene advances: ties tighten; tone grows heavier."
+      }
+    ],
+    "bubuxinjing-2": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "步步惊心本场：宫中情思与风险并存。",
+        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+      },
+      {
+        "start": 400,
+        "end": 99999,
+        "zh": "本场推进：人物关系更紧，语气更沉。",
+        "en": "Scene advances: ties tighten; tone grows heavier."
+      }
+    ],
+    "bubuxinjing-3": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "步步惊心本场：宫中情思与风险并存。",
+        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+      },
+      {
+        "start": 400,
+        "end": 99999,
+        "zh": "本场推进：人物关系更紧，语气更沉。",
+        "en": "Scene advances: ties tighten; tone grows heavier."
+      }
+    ],
+    "bubuxinjing-4a": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "步步惊心本场：宫中情思与风险并存。",
+        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+      },
+      {
+        "start": 400,
+        "end": 99999,
+        "zh": "本场推进：人物关系更紧，语气更沉。",
+        "en": "Scene advances: ties tighten; tone grows heavier."
+      }
+    ],
+    "bubuxinjing-4b5a": [
+      {
+        "start": 0,
+        "end": 400,
+        "zh": "步步惊心本场：宫中情思与风险并存。",
+        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+      },
+      {
+        "start": 400,
+        "end": 99999,
+        "zh": "本场推进：人物关系更紧，语气更沉。",
+        "en": "Scene advances: ties tighten; tone grows heavier."
+      }
+    ],
+    "para-2": [
+      {
+        "start": 0,
+        "end": 99999,
+        "zh": "经典折子对照材料（para 2）。",
+        "en": "Classic excerpt pack (para 2)."
+      }
+    ],
+    "para-3": [
+      {
+        "start": 0,
+        "end": 99999,
+        "zh": "经典折子对照材料（para 3）。",
+        "en": "Classic excerpt pack (para 3)."
+      }
     ]
   }
 }

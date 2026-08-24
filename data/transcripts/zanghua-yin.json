@@ -1,0 +1,2203 @@
+{
+  "id": "zanghua-yin",
+  "title": "葬花吟",
+  "titleEn": "Elegy on Flowers (Burial of Flowers)",
+  "audio": "assets/audio/zanghua-yin.m4a",
+  "sourceSrt": "27-【高清｜完整｜君霄】越剧《葬花吟》“都道是金玉良姻，俺只念木石前盟”（陈丽君｜李云霄｜郑晓）.srt",
+  "category": "yueju",
+  "schemaVersion": "1.0.0",
+  "cueCount": 182,
+  "correctedCount": 182,
+  "coverage": {
+    "zh": 182,
+    "enCurated": 0,
+    "enMt": 0,
+    "enAny": 0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 18.1,
+      "end": 25.499,
+      "rawAsr": "花谢花飞",
+      "layers": {
+        "zh": {
+          "text": "花谢花飞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 25.5,
+      "end": 31.299,
+      "rawAsr": "飞满天",
+      "layers": {
+        "zh": {
+          "text": "飞满天",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 31.3,
+      "end": 43.7,
+      "rawAsr": "红消香断有谁怜",
+      "layers": {
+        "zh": {
+          "text": "红消香断有谁怜",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 43.8,
+      "end": 45.2,
+      "rawAsr": "侬今葬花人笑痴",
+      "layers": {
+        "zh": {
+          "text": "侬今葬花人笑痴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 52.3,
+      "end": 52.9,
+      "rawAsr": "侬今葬花人笑痴",
+      "layers": {
+        "zh": {
+          "text": "侬今葬花人笑痴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 56.6,
+      "end": 57.5,
+      "rawAsr": "他年葬侬知是谁",
+      "layers": {
+        "zh": {
+          "text": "他年葬侬知是谁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 75.7,
+      "end": 81.099,
+      "rawAsr": "一朝春尽红颜老",
+      "layers": {
+        "zh": {
+          "text": "一朝春尽红颜老",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 81.1,
+      "end": 92.5,
+      "rawAsr": "花落人亡两不知",
+      "layers": {
+        "zh": {
+          "text": "花落人亡两不知",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 161.7,
+      "end": 166.6,
+      "rawAsr": "我就是那多愁多病身",
+      "layers": {
+        "zh": {
+          "text": "我就是那多愁多病身",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 167.5,
+      "end": 173.1,
+      "rawAsr": "你就是那倾国倾城貌",
+      "layers": {
+        "zh": {
+          "text": "你就是那倾国倾城貌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 185.7,
+      "end": 197.3,
+      "rawAsr": "林妹妹 弱水三千我只取一瓢饮",
+      "layers": {
+        "zh": {
+          "text": "林妹妹 弱水三千我只取一瓢饮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 350.5,
+      "end": 356.299,
+      "rawAsr": "人生南北真如梦",
+      "layers": {
+        "zh": {
+          "text": "人生南北真如梦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 356.3,
+      "end": 362.999,
+      "rawAsr": "卿自沉醉侬自醒",
+      "layers": {
+        "zh": {
+          "text": "卿自沉醉侬自醒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 363.0,
+      "end": 370.599,
+      "rawAsr": "血泪焚尽犹有恨",
+      "layers": {
+        "zh": {
+          "text": "血泪焚尽犹有恨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 370.6,
+      "end": 382.099,
+      "rawAsr": "一轮冷月葬花魂",
+      "layers": {
+        "zh": {
+          "text": "一轮冷月葬花魂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 382.1,
+      "end": 388.7,
+      "rawAsr": "宝玉 你 你好",
+      "layers": {
+        "zh": {
+          "text": "宝玉 你 你好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 425.2,
+      "end": 444.4,
+      "rawAsr": "恨 恨 恨",
+      "layers": {
+        "zh": {
+          "text": "恨 恨 恨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 445.6,
+      "end": 455.4,
+      "rawAsr": "恨宝玉薄幸人",
+      "layers": {
+        "zh": {
+          "text": "恨宝玉薄幸人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 456.0,
+      "end": 473.7,
+      "rawAsr": "把木石前盟全拋闪",
+      "layers": {
+        "zh": {
+          "text": "把木石前盟全拋闪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 478.9,
+      "end": 490.799,
+      "rawAsr": "怨 怨 怨 怨宝玉负心汉",
+      "layers": {
+        "zh": {
+          "text": "怨 怨 怨 怨宝玉负心汉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 490.8,
+      "end": 515.3,
+      "rawAsr": "金玉姻缘结新欢",
+      "layers": {
+        "zh": {
+          "text": "金玉姻缘结新欢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 524.9,
+      "end": 534.899,
+      "rawAsr": "一根红绳 你我手相牵",
+      "layers": {
+        "zh": {
+          "text": "一根红绳 你我手相牵",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 534.9,
+      "end": 543.0,
+      "rawAsr": "多年相思 今日心相连",
+      "layers": {
+        "zh": {
+          "text": "多年相思 今日心相连",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 543.3,
+      "end": 548.099,
+      "rawAsr": "从今后 我和你 是莲并蒂",
+      "layers": {
+        "zh": {
+          "text": "从今后 我和你 是莲并蒂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 548.1,
+      "end": 554.299,
+      "rawAsr": "水中藕 风中并肩",
+      "layers": {
+        "zh": {
+          "text": "水中藕 风中并肩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 554.3,
+      "end": 562.899,
+      "rawAsr": "从今后 我和你 是枝连理",
+      "layers": {
+        "zh": {
+          "text": "从今后 我和你 是枝连理",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 562.9,
+      "end": 579.9,
+      "rawAsr": "藤蔓缠 相依相牵",
+      "layers": {
+        "zh": {
+          "text": "藤蔓缠 相依相牵",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 585.7,
+      "end": 600.2,
+      "rawAsr": "声声锣鼓 敲得我情迷神乱",
+      "layers": {
+        "zh": {
+          "text": "声声锣鼓 敲得我情迷神乱",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 600.9,
+      "end": 616.1,
+      "rawAsr": "句句誓言 听得我心甜意暖",
+      "layers": {
+        "zh": {
+          "text": "句句誓言 听得我心甜意暖",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "start": 616.8,
+      "end": 625.199,
+      "rawAsr": "但愿得我与他温柔乡中暮暮朝朝",
+      "layers": {
+        "zh": {
+          "text": "但愿得我与他温柔乡中暮暮朝朝",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "start": 625.2,
+      "end": 649.7,
+      "rawAsr": "但愿得我与他金玉堂上白头偕老",
+      "layers": {
+        "zh": {
+          "text": "但愿得我与他金玉堂上白头偕老",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "start": 653.6,
+      "end": 666.099,
+      "rawAsr": "他们是并蒂莲",
+      "layers": {
+        "zh": {
+          "text": "他们是并蒂莲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "start": 666.1,
+      "end": 682.7,
+      "rawAsr": "我却是残荷听雨心碎了",
+      "layers": {
+        "zh": {
+          "text": "我却是残荷听雨心碎了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "start": 683.5,
+      "end": 686.599,
+      "rawAsr": "他们是连理枝",
+      "layers": {
+        "zh": {
+          "text": "他们是连理枝",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "start": 686.6,
+      "end": 711.5,
+      "rawAsr": "我却是枯木经冬根断了",
+      "layers": {
+        "zh": {
+          "text": "我却是枯木经冬根断了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "start": 712.6,
+      "end": 718.699,
+      "rawAsr": "今天是从古到今天上人间",
+      "layers": {
+        "zh": {
+          "text": "今天是从古到今天上人间",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "start": 718.7,
+      "end": 724.1,
+      "rawAsr": "第一件称心满意的事啊",
+      "layers": {
+        "zh": {
+          "text": "第一件称心满意的事啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "start": 727.9,
+      "end": 732.0,
+      "rawAsr": "天上人间第一事",
+      "layers": {
+        "zh": {
+          "text": "天上人间第一事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "start": 734.3,
+      "end": 740.9,
+      "rawAsr": "自是怡红滿湘成一家",
+      "layers": {
+        "zh": {
+          "text": "自是怡红滿湘成一家",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "start": 743.3,
+      "end": 749.299,
+      "rawAsr": "天上人间第一事",
+      "layers": {
+        "zh": {
+          "text": "天上人间第一事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "start": 749.3,
+      "end": 755.499,
+      "rawAsr": "却是李代桃僵真亦假",
+      "layers": {
+        "zh": {
+          "text": "却是李代桃僵真亦假",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "start": 755.5,
+      "end": 764.199,
+      "rawAsr": "天上人间第一事",
+      "layers": {
+        "zh": {
+          "text": "天上人间第一事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "start": 764.2,
+      "end": 772.5,
+      "rawAsr": "总是镜花水月终虚化",
+      "layers": {
+        "zh": {
+          "text": "总是镜花水月终虚化",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "start": 774.0,
+      "end": 780.699,
+      "rawAsr": "红绳牵手亦连心",
+      "layers": {
+        "zh": {
+          "text": "红绳牵手亦连心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "start": 780.7,
+      "end": 787.7,
+      "rawAsr": "相爱相亲谱佳话",
+      "layers": {
+        "zh": {
+          "text": "相爱相亲谱佳话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "start": 789.7,
+      "end": 792.899,
+      "rawAsr": "红绳牵手不连心",
+      "layers": {
+        "zh": {
+          "text": "红绳牵手不连心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "start": 792.9,
+      "end": 796.299,
+      "rawAsr": "是进是退乱如麻",
+      "layers": {
+        "zh": {
+          "text": "是进是退乱如麻",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "start": 796.3,
+      "end": 805.499,
+      "rawAsr": "红绳牵手痛我心",
+      "layers": {
+        "zh": {
+          "text": "红绳牵手痛我心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "start": 805.5,
+      "end": 817.7,
+      "rawAsr": "欲爱欲恨泪飞洒",
+      "layers": {
+        "zh": {
+          "text": "欲爱欲恨泪飞洒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "start": 818.3,
+      "end": 820.499,
+      "rawAsr": "林妹妹",
+      "layers": {
+        "zh": {
+          "text": "林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "start": 820.5,
+      "end": 823.8,
+      "rawAsr": "好妹妹",
+      "layers": {
+        "zh": {
+          "text": "好妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "start": 825.1,
+      "end": 834.499,
+      "rawAsr": "声唤 动魄惊心（千转百回）",
+      "layers": {
+        "zh": {
+          "text": "声唤 动魄惊心（千转百回）",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "start": 834.5,
+      "end": 835.7,
+      "rawAsr": "一声妹妹冷(暖)我心扉",
+      "layers": {
+        "zh": {
+          "text": "一声妹妹冷(暖)我心扉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "start": 836.9,
+      "end": 845.1,
+      "rawAsr": "声妹妹冷(暖)我心扉",
+      "layers": {
+        "zh": {
+          "text": "声妹妹冷(暖)我心扉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "start": 845.4,
+      "end": 846.0,
+      "rawAsr": "他心中从来无姐姐（还是有妹妹）",
+      "layers": {
+        "zh": {
+          "text": "他心中从来无姐姐（还是有妹妹）",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "start": 847.2,
+      "end": 867.599,
+      "rawAsr": "他心中从来无姐姐（还是有妹妹）",
+      "layers": {
+        "zh": {
+          "text": "他心中从来无姐姐（还是有妹妹）",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "start": 867.6,
+      "end": 876.7,
+      "rawAsr": "还他真相（一片真心）不做假",
+      "layers": {
+        "zh": {
+          "text": "还他真相（一片真心）不做假",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "start": 917.4,
+      "end": 919.499,
+      "rawAsr": "宝姐姐",
+      "layers": {
+        "zh": {
+          "text": "宝姐姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "start": 919.5,
+      "end": 923.199,
+      "rawAsr": "你怎么会在这里",
+      "layers": {
+        "zh": {
+          "text": "你怎么会在这里",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "start": 923.2,
+      "end": 929.599,
+      "rawAsr": "我是你新婚的娘子",
+      "layers": {
+        "zh": {
+          "text": "我是你新婚的娘子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "start": 929.6,
+      "end": 931.999,
+      "rawAsr": "不 我娶的是林妹妹",
+      "layers": {
+        "zh": {
+          "text": "不 我娶的是林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "start": 932.0,
+      "end": 938.2,
+      "rawAsr": "叩拜天地的是我宝钗",
+      "layers": {
+        "zh": {
+          "text": "叩拜天地的是我宝钗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "start": 941.6,
+      "end": 942.8,
+      "rawAsr": "宝姐姐",
+      "layers": {
+        "zh": {
+          "text": "宝姐姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "start": 942.9,
+      "end": 946.199,
+      "rawAsr": "你定是与我闹着玩的",
+      "layers": {
+        "zh": {
+          "text": "你定是与我闹着玩的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "start": 946.2,
+      "end": 949.3,
+      "rawAsr": "终身大事 怎能戏耍",
+      "layers": {
+        "zh": {
+          "text": "终身大事 怎能戏耍",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "start": 952.4,
+      "end": 955.699,
+      "rawAsr": "骗人 骗人",
+      "layers": {
+        "zh": {
+          "text": "骗人 骗人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "start": 955.7,
+      "end": 956.899,
+      "rawAsr": "林妹妹",
+      "layers": {
+        "zh": {
+          "text": "林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "start": 956.9,
+      "end": 958.9,
+      "rawAsr": "我找林妹妹去",
+      "layers": {
+        "zh": {
+          "text": "我找林妹妹去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "start": 959.0,
+      "end": 961.7,
+      "rawAsr": "宝玉 林妹妹她",
+      "layers": {
+        "zh": {
+          "text": "宝玉 林妹妹她",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "start": 963.8,
+      "end": 965.699,
+      "rawAsr": "回家去了",
+      "layers": {
+        "zh": {
+          "text": "回家去了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "start": 965.7,
+      "end": 967.099,
+      "rawAsr": "回家 回家作甚",
+      "layers": {
+        "zh": {
+          "text": "回家 回家作甚",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "start": 967.1,
+      "end": 974.0,
+      "rawAsr": "回家 与她爹娘团聚去了",
+      "layers": {
+        "zh": {
+          "text": "回家 与她爹娘团聚去了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "start": 975.0,
+      "end": 977.1,
+      "rawAsr": "姑爹姑母早已仙逝",
+      "layers": {
+        "zh": {
+          "text": "姑爹姑母早已仙逝",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "start": 981.0,
+      "end": 981.3,
+      "rawAsr": "你说什么",
+      "layers": {
+        "zh": {
+          "text": "你说什么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "start": 982.2,
+      "end": 983.2,
+      "rawAsr": "你说什么",
+      "layers": {
+        "zh": {
+          "text": "你说什么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 76,
+      "start": 983.3,
+      "end": 984.899,
+      "rawAsr": "你说什么",
+      "layers": {
+        "zh": {
+          "text": "你说什么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 77,
+      "start": 984.9,
+      "end": 989.899,
+      "rawAsr": "林妹妹她",
+      "layers": {
+        "zh": {
+          "text": "林妹妹她",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 78,
+      "start": 989.9,
+      "end": 992.199,
+      "rawAsr": "死了",
+      "layers": {
+        "zh": {
+          "text": "死了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 79,
+      "start": 992.2,
+      "end": 993.1,
+      "rawAsr": "不",
+      "layers": {
+        "zh": {
+          "text": "不",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 80,
+      "start": 995.9,
+      "end": 997.9,
+      "rawAsr": "不",
+      "layers": {
+        "zh": {
+          "text": "不",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "start": 999.8,
+      "end": 1005.4,
+      "rawAsr": "妹妹刚才还与我拜堂呢",
+      "layers": {
+        "zh": {
+          "text": "妹妹刚才还与我拜堂呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 82,
+      "start": 1005.7,
+      "end": 1011.1,
+      "rawAsr": "林妹妹",
+      "layers": {
+        "zh": {
+          "text": "林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 83,
+      "start": 1012.2,
+      "end": 1018.899,
+      "rawAsr": "你在哪里",
+      "layers": {
+        "zh": {
+          "text": "你在哪里",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 84,
+      "start": 1018.9,
+      "end": 1020.199,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 85,
+      "start": 1020.2,
+      "end": 1021.599,
+      "rawAsr": "林妹妹死了",
+      "layers": {
+        "zh": {
+          "text": "林妹妹死了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 86,
+      "start": 1021.6,
+      "end": 1023.5,
+      "rawAsr": "她真的死了",
+      "layers": {
+        "zh": {
+          "text": "她真的死了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 87,
+      "start": 1024.1,
+      "end": 1026.699,
+      "rawAsr": "与你叩拜天地的是我",
+      "layers": {
+        "zh": {
+          "text": "与你叩拜天地的是我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "start": 1026.7,
+      "end": 1029.2,
+      "rawAsr": "与你叩拜高堂的是我",
+      "layers": {
+        "zh": {
+          "text": "与你叩拜高堂的是我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "start": 1030.0,
+      "end": 1038.6,
+      "rawAsr": "与你夫妻对拜的也是我",
+      "layers": {
+        "zh": {
+          "text": "与你夫妻对拜的也是我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "start": 1072.5,
+      "end": 1073.0,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "start": 1073.2,
+      "end": 1073.6,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "start": 1087.4,
+      "end": 1088.5,
+      "rawAsr": "姐姐",
+      "layers": {
+        "zh": {
+          "text": "姐姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "start": 1090.1,
+      "end": 1102.199,
+      "rawAsr": "宝姐姐你真爱说笑话",
+      "layers": {
+        "zh": {
+          "text": "宝姐姐你真爱说笑话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "start": 1102.2,
+      "end": 1112.999,
+      "rawAsr": "扮作林妹妹把我戏耍",
+      "layers": {
+        "zh": {
+          "text": "扮作林妹妹把我戏耍",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "start": 1113.0,
+      "end": 1120.699,
+      "rawAsr": "你一身喜服富贵荣华",
+      "layers": {
+        "zh": {
+          "text": "你一身喜服富贵荣华",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "start": 1120.7,
+      "end": 1134.0,
+      "rawAsr": "怎及我林妹妹清淡风雅",
+      "layers": {
+        "zh": {
+          "text": "怎及我林妹妹清淡风雅",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "start": 1142.9,
+      "end": 1151.199,
+      "rawAsr": "你这里热热闹闹谎来撒",
+      "layers": {
+        "zh": {
+          "text": "你这里热热闹闹谎来撒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "start": 1151.2,
+      "end": 1168.4,
+      "rawAsr": "她那里冷冷清清珠泪抛酒",
+      "layers": {
+        "zh": {
+          "text": "她那里冷冷清清珠泪抛酒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "start": 1168.6,
+      "end": 1173.599,
+      "rawAsr": "宝姐姐 我这里吹吹打打",
+      "layers": {
+        "zh": {
+          "text": "宝姐姐 我这里吹吹打打",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "start": 1173.6,
+      "end": 1183.1,
+      "rawAsr": "是为了给林妹妹安个家",
+      "layers": {
+        "zh": {
+          "text": "是为了给林妹妹安个家",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 101,
+      "start": 1183.2,
+      "end": 1188.8,
+      "rawAsr": "你莫要再把怡红占",
+      "layers": {
+        "zh": {
+          "text": "你莫要再把怡红占",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 102,
+      "start": 1190.4,
+      "end": 1216.1,
+      "rawAsr": "妹妹她 孤零零在潇湘会害怕",
+      "layers": {
+        "zh": {
+          "text": "妹妹她 孤零零在潇湘会害怕",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "start": 1232.8,
+      "end": 1234.1,
+      "rawAsr": "我找林妹妹去",
+      "layers": {
+        "zh": {
+          "text": "我找林妹妹去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 104,
+      "start": 1234.4,
+      "end": 1236.5,
+      "rawAsr": "我找林妹妹去",
+      "layers": {
+        "zh": {
+          "text": "我找林妹妹去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 105,
+      "start": 1237.2,
+      "end": 1238.2,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 106,
+      "start": 1240.1,
+      "end": 1243.4,
+      "rawAsr": "我找林妹妹去",
+      "layers": {
+        "zh": {
+          "text": "我找林妹妹去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 107,
+      "start": 1243.8,
+      "end": 1244.9,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 108,
+      "start": 1248.2,
+      "end": 1251.6,
+      "rawAsr": "我找林妹妹去",
+      "layers": {
+        "zh": {
+          "text": "我找林妹妹去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 109,
+      "start": 1254.5,
+      "end": 1259.0,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 110,
+      "start": 1267.8,
+      "end": 1274.0,
+      "rawAsr": "—番颠颠倒倒的话",
+      "layers": {
+        "zh": {
+          "text": "—番颠颠倒倒的话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "start": 1274.9,
+      "end": 1275.1,
+      "rawAsr": "听得我心如针扎",
+      "layers": {
+        "zh": {
+          "text": "听得我心如针扎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 112,
+      "start": 1275.9,
+      "end": 1285.099,
+      "rawAsr": "听得我心如针扎",
+      "layers": {
+        "zh": {
+          "text": "听得我心如针扎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 113,
+      "start": 1285.1,
+      "end": 1289.699,
+      "rawAsr": "他疯傻看似糊涂",
+      "layers": {
+        "zh": {
+          "text": "他疯傻看似糊涂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "start": 1289.7,
+      "end": 1298.699,
+      "rawAsr": "句句言语却不假",
+      "layers": {
+        "zh": {
+          "text": "句句言语却不假",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 115,
+      "start": 1298.7,
+      "end": 1302.999,
+      "rawAsr": "我鹊巢鸠占虽有愧",
+      "layers": {
+        "zh": {
+          "text": "我鹊巢鸠占虽有愧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 116,
+      "start": 1303.0,
+      "end": 1312.599,
+      "rawAsr": "却怎奈情根深种也为他",
+      "layers": {
+        "zh": {
+          "text": "却怎奈情根深种也为他",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 117,
+      "start": 1312.6,
+      "end": 1320.899,
+      "rawAsr": "多年心思今婚嫁",
+      "layers": {
+        "zh": {
+          "text": "多年心思今婚嫁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 118,
+      "start": 1320.9,
+      "end": 1334.2,
+      "rawAsr": "谁料想枉费心机空对镜中花",
+      "layers": {
+        "zh": {
+          "text": "谁料想枉费心机空对镜中花",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 119,
+      "start": 1335.0,
+      "end": 1344.8,
+      "rawAsr": "谁料想枉费心机空对镜中花",
+      "layers": {
+        "zh": {
+          "text": "谁料想枉费心机空对镜中花",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 120,
+      "start": 1349.4,
+      "end": 1352.4,
+      "rawAsr": "我找林妹妹去",
+      "layers": {
+        "zh": {
+          "text": "我找林妹妹去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 121,
+      "start": 1352.6,
+      "end": 1353.7,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 122,
+      "start": 1354.0,
+      "end": 1357.499,
+      "rawAsr": "我找林妹妹去",
+      "layers": {
+        "zh": {
+          "text": "我找林妹妹去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 123,
+      "start": 1357.5,
+      "end": 1358.5,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 124,
+      "start": 1359.0,
+      "end": 1361.899,
+      "rawAsr": "林妹妹",
+      "layers": {
+        "zh": {
+          "text": "林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 125,
+      "start": 1361.9,
+      "end": 1364.6,
+      "rawAsr": "宝玉",
+      "layers": {
+        "zh": {
+          "text": "宝玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 126,
+      "start": 1366.8,
+      "end": 1377.599,
+      "rawAsr": "林妹妹神销魂已散",
+      "layers": {
+        "zh": {
+          "text": "林妹妹神销魂已散",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 127,
+      "start": 1377.6,
+      "end": 1381.599,
+      "rawAsr": "天上人间难成家",
+      "layers": {
+        "zh": {
+          "text": "天上人间难成家",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 128,
+      "start": 1381.6,
+      "end": 1386.1,
+      "rawAsr": "你把这新房红烛换白蜡",
+      "layers": {
+        "zh": {
+          "text": "你把这新房红烛换白蜡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 129,
+      "start": 1386.2,
+      "end": 1411.9,
+      "rawAsr": "哭一声妹妹 了一番牵挂",
+      "layers": {
+        "zh": {
+          "text": "哭一声妹妹 了一番牵挂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 130,
+      "start": 1481.4,
+      "end": 1484.6,
+      "rawAsr": "林妹妹",
+      "layers": {
+        "zh": {
+          "text": "林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 131,
+      "start": 1490.3,
+      "end": 1508.599,
+      "rawAsr": "林妹妹",
+      "layers": {
+        "zh": {
+          "text": "林妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 132,
+      "start": 1508.6,
+      "end": 1522.7,
+      "rawAsr": "一声声喜乐 是夺命刀",
+      "layers": {
+        "zh": {
+          "text": "一声声喜乐 是夺命刀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 133,
+      "start": 1522.8,
+      "end": 1537.999,
+      "rawAsr": "夺走了妹妹魂魄音容杳",
+      "layers": {
+        "zh": {
+          "text": "夺走了妹妹魂魄音容杳",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 134,
+      "start": 1538.0,
+      "end": 1548.3,
+      "rawAsr": "句句话儿 是那剜心的剑",
+      "layers": {
+        "zh": {
+          "text": "句句话儿 是那剜心的剑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 135,
+      "start": 1550.6,
+      "end": 1569.1,
+      "rawAsr": "剜的我宝玉肺腑痛如绞",
+      "layers": {
+        "zh": {
+          "text": "剜的我宝玉肺腑痛如绞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 136,
+      "start": 1570.8,
+      "end": 1585.1,
+      "rawAsr": "是宝玉没心没肺",
+      "layers": {
+        "zh": {
+          "text": "是宝玉没心没肺",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 137,
+      "start": 1586.1,
+      "end": 1604.6,
+      "rawAsr": "害妹妹孤身飘零一命销",
+      "layers": {
+        "zh": {
+          "text": "害妹妹孤身飘零一命销",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 138,
+      "start": 1606.1,
+      "end": 1614.6,
+      "rawAsr": "是宝玉瞎眼聋耳缺心眼",
+      "layers": {
+        "zh": {
+          "text": "是宝玉瞎眼聋耳缺心眼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 139,
+      "start": 1615.0,
+      "end": 1650.0,
+      "rawAsr": "害妹妹凄风苦雨寒冬凋",
+      "layers": {
+        "zh": {
+          "text": "害妹妹凄风苦雨寒冬凋",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 140,
+      "start": 1658.6,
+      "end": 1672.0,
+      "rawAsr": "妹妹啊 宝玉心有愧 恨如涛",
+      "layers": {
+        "zh": {
+          "text": "妹妹啊 宝玉心有愧 恨如涛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 141,
+      "start": 1673.0,
+      "end": 1704.2,
+      "rawAsr": "你魂魄未远把我恼",
+      "layers": {
+        "zh": {
+          "text": "你魂魄未远把我恼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 142,
+      "start": 1716.4,
+      "end": 1720.9,
+      "rawAsr": "宝哥哥",
+      "layers": {
+        "zh": {
+          "text": "宝哥哥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 143,
+      "start": 1728.8,
+      "end": 1740.6,
+      "rawAsr": "你我相识正年少",
+      "layers": {
+        "zh": {
+          "text": "你我相识正年少",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 144,
+      "start": 1743.6,
+      "end": 1756.7,
+      "rawAsr": "两小无猜共把心事聊",
+      "layers": {
+        "zh": {
+          "text": "两小无猜共把心事聊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 145,
+      "start": 1758.9,
+      "end": 1768.299,
+      "rawAsr": "萧湘馆内弥汤药",
+      "layers": {
+        "zh": {
+          "text": "萧湘馆内弥汤药",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 146,
+      "start": 1768.3,
+      "end": 1779.099,
+      "rawAsr": "你是园中的香竹药中熬",
+      "layers": {
+        "zh": {
+          "text": "你是园中的香竹药中熬",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 147,
+      "start": 1779.1,
+      "end": 1788.199,
+      "rawAsr": "花锄下把青春悼",
+      "layers": {
+        "zh": {
+          "text": "花锄下把青春悼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 148,
+      "start": 1788.2,
+      "end": 1806.5,
+      "rawAsr": "你是飘落花蕊把珠泪拋",
+      "layers": {
+        "zh": {
+          "text": "你是飘落花蕊把珠泪拋",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 149,
+      "start": 1813.2,
+      "end": 1821.4,
+      "rawAsr": "平日里我寂寞多忧恼",
+      "layers": {
+        "zh": {
+          "text": "平日里我寂寞多忧恼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 150,
+      "start": 1822.3,
+      "end": 1835.199,
+      "rawAsr": "你盈盈泪眼浪翻心潮",
+      "layers": {
+        "zh": {
+          "text": "你盈盈泪眼浪翻心潮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 151,
+      "start": 1835.2,
+      "end": 1845.399,
+      "rawAsr": "读西厢愿效莺莺与张珙",
+      "layers": {
+        "zh": {
+          "text": "读西厢愿效莺莺与张珙",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 152,
+      "start": 1845.4,
+      "end": 1862.499,
+      "rawAsr": "与古人同伤怀泪酒鲛绡",
+      "layers": {
+        "zh": {
+          "text": "与古人同伤怀泪酒鲛绡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 153,
+      "start": 1862.5,
+      "end": 1881.299,
+      "rawAsr": "夜雨潇湘几多诗稿",
+      "layers": {
+        "zh": {
+          "text": "夜雨潇湘几多诗稿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 154,
+      "start": 1881.3,
+      "end": 1911.1,
+      "rawAsr": "只待相守暮暮朝朝",
+      "layers": {
+        "zh": {
+          "text": "只待相守暮暮朝朝",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 155,
+      "start": 1922.7,
+      "end": 1935.5,
+      "rawAsr": "如今是阴阳相隔各一方",
+      "layers": {
+        "zh": {
+          "text": "如今是阴阳相隔各一方",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 156,
+      "start": 1935.7,
+      "end": 1949.499,
+      "rawAsr": "宝哥哥啊",
+      "layers": {
+        "zh": {
+          "text": "宝哥哥啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 157,
+      "start": 1949.5,
+      "end": 1987.4,
+      "rawAsr": "原谅妹妹一缕孤魂天外飘",
+      "layers": {
+        "zh": {
+          "text": "原谅妹妹一缕孤魂天外飘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 158,
+      "start": 2051.8,
+      "end": 2057.8,
+      "rawAsr": "昔日我曾与妹妹戏言",
+      "layers": {
+        "zh": {
+          "text": "昔日我曾与妹妹戏言",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 159,
+      "start": 2058.0,
+      "end": 2061.5,
+      "rawAsr": "妹妹若去",
+      "layers": {
+        "zh": {
+          "text": "妹妹若去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 160,
+      "start": 2067.4,
+      "end": 2071.0,
+      "rawAsr": "今日我该归去了",
+      "layers": {
+        "zh": {
+          "text": "今日我该归去了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 161,
+      "start": 2072.4,
+      "end": 2073.3,
+      "rawAsr": "今日我该归去了",
+      "layers": {
+        "zh": {
+          "text": "今日我该归去了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 162,
+      "start": 2075.9,
+      "end": 2084.3,
+      "rawAsr": "你逃出了这情天恨海天罗地网",
+      "layers": {
+        "zh": {
+          "text": "你逃出了这情天恨海天罗地网",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 163,
+      "start": 2084.9,
+      "end": 2087.099,
+      "rawAsr": "可就这么狠心",
+      "layers": {
+        "zh": {
+          "text": "可就这么狠心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 164,
+      "start": 2087.1,
+      "end": 2087.299,
+      "rawAsr": "将我宝钗",
+      "layers": {
+        "zh": {
+          "text": "将我宝钗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 165,
+      "start": 2087.3,
+      "end": 2089.899,
+      "rawAsr": "将我宝钗",
+      "layers": {
+        "zh": {
+          "text": "将我宝钗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 166,
+      "start": 2089.9,
+      "end": 2096.1,
+      "rawAsr": "留在这大观园中吗",
+      "layers": {
+        "zh": {
+          "text": "留在这大观园中吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 167,
+      "start": 2097.1,
+      "end": 2098.9,
+      "rawAsr": "妹妹既去",
+      "layers": {
+        "zh": {
+          "text": "妹妹既去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 168,
+      "start": 2100.1,
+      "end": 2104.7,
+      "rawAsr": "我心便死",
+      "layers": {
+        "zh": {
+          "text": "我心便死",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 169,
+      "start": 2107.5,
+      "end": 2109.1,
+      "rawAsr": "宝姐姐",
+      "layers": {
+        "zh": {
+          "text": "宝姐姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 170,
+      "start": 2110.4,
+      "end": 2115.1,
+      "rawAsr": "今后这大观园",
+      "layers": {
+        "zh": {
+          "text": "今后这大观园",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 171,
+      "start": 2116.8,
+      "end": 2118.099,
+      "rawAsr": "全杖你了",
+      "layers": {
+        "zh": {
+          "text": "全杖你了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 172,
+      "start": 2119.4,
+      "end": 2119.9,
+      "rawAsr": "全杖你了",
+      "layers": {
+        "zh": {
+          "text": "全杖你了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 173,
+      "start": 2120.7,
+      "end": 2121.4,
+      "rawAsr": "全杖你了",
+      "layers": {
+        "zh": {
+          "text": "全杖你了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 174,
+      "start": 2121.6,
+      "end": 2122.2,
+      "rawAsr": "全杖你了",
+      "layers": {
+        "zh": {
+          "text": "全杖你了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 175,
+      "start": 2122.6,
+      "end": 2137.599,
+      "rawAsr": "花谢花飞飞满天",
+      "layers": {
+        "zh": {
+          "text": "花谢花飞飞满天",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 176,
+      "start": 2137.6,
+      "end": 2151.199,
+      "rawAsr": "红消香断有谁怜",
+      "layers": {
+        "zh": {
+          "text": "红消香断有谁怜",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 177,
+      "start": 2151.2,
+      "end": 2162.199,
+      "rawAsr": "依今葬花人笑痴",
+      "layers": {
+        "zh": {
+          "text": "依今葬花人笑痴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 178,
+      "start": 2162.2,
+      "end": 2174.499,
+      "rawAsr": "他年葬依知是谁",
+      "layers": {
+        "zh": {
+          "text": "他年葬依知是谁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 179,
+      "start": 2174.5,
+      "end": 2184.799,
+      "rawAsr": "一朝春尽红颜老",
+      "layers": {
+        "zh": {
+          "text": "一朝春尽红颜老",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 180,
+      "start": 2184.8,
+      "end": 2205.799,
+      "rawAsr": "花落人亡两不知",
+      "layers": {
+        "zh": {
+          "text": "花落人亡两不知",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 181,
+      "start": 2205.8,
+      "end": 2216.799,
+      "rawAsr": "朝春尽红颜老",
+      "layers": {
+        "zh": {
+          "text": "朝春尽红颜老",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 182,
+      "start": 2216.8,
+      "end": 2237.4,
+      "rawAsr": "花落人亡两不知",
+      "layers": {
+        "zh": {
+          "text": "花落人亡两不知",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

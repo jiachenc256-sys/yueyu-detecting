@@ -1,0 +1,907 @@
+{
+  "id": "chai-tou-feng",
+  "title": "陆游与唐琬 · 钗头凤",
+  "titleEn": "Lu You & Tang Wan · Chai Tou Feng",
+  "audio": "assets/audio/chai-tou-feng.m4a",
+  "sourceSrt": "11《陆游与唐琬·钗头凤》李云霄 陈丽君.srt",
+  "category": "yueju",
+  "schemaVersion": "1.0.0",
+  "cueCount": 74,
+  "correctedCount": 74,
+  "coverage": {
+    "zh": 74,
+    "enCurated": 0,
+    "enMt": 0,
+    "enAny": 0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 24.7,
+      "end": 27.499,
+      "rawAsr": "红酥手",
+      "layers": {
+        "zh": {
+          "text": "红酥手",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 27.5,
+      "end": 28.299,
+      "rawAsr": "红酥手",
+      "layers": {
+        "zh": {
+          "text": "红酥手",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 28.3,
+      "end": 28.6,
+      "rawAsr": "红酥手",
+      "layers": {
+        "zh": {
+          "text": "红酥手",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 28.7,
+      "end": 29.4,
+      "rawAsr": "红酥手",
+      "layers": {
+        "zh": {
+          "text": "红酥手",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 29.5,
+      "end": 34.8,
+      "rawAsr": "红酥手 黄藤酒",
+      "layers": {
+        "zh": {
+          "text": "红酥手 黄藤酒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 35.3,
+      "end": 35.5,
+      "rawAsr": "满",
+      "layers": {
+        "zh": {
+          "text": "满",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 35.9,
+      "end": 36.099,
+      "rawAsr": "満城舂",
+      "layers": {
+        "zh": {
+          "text": "満城舂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 36.1,
+      "end": 50.5,
+      "rawAsr": "满城春色宫墙柳",
+      "layers": {
+        "zh": {
+          "text": "满城春色宫墙柳",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 58.6,
+      "end": 59.099,
+      "rawAsr": "东风恶",
+      "layers": {
+        "zh": {
+          "text": "东风恶",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 59.1,
+      "end": 62.999,
+      "rawAsr": "东风恶",
+      "layers": {
+        "zh": {
+          "text": "东风恶",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 63.0,
+      "end": 63.199,
+      "rawAsr": "东风恶",
+      "layers": {
+        "zh": {
+          "text": "东风恶",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 63.2,
+      "end": 68.6,
+      "rawAsr": "东风恶欢情薄",
+      "layers": {
+        "zh": {
+          "text": "东风恶欢情薄",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 69.6,
+      "end": 69.9,
+      "rawAsr": "一杯",
+      "layers": {
+        "zh": {
+          "text": "一杯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 70.0,
+      "end": 75.0,
+      "rawAsr": "一怀愁绪",
+      "layers": {
+        "zh": {
+          "text": "一怀愁绪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 75.1,
+      "end": 75.399,
+      "rawAsr": "一怀愁绪 几年",
+      "layers": {
+        "zh": {
+          "text": "一怀愁绪 几年",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 75.4,
+      "end": 83.0,
+      "rawAsr": "一怀愁诸 几年离索",
+      "layers": {
+        "zh": {
+          "text": "一怀愁诸 几年离索",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 84.1,
+      "end": 86.5,
+      "rawAsr": "错",
+      "layers": {
+        "zh": {
+          "text": "错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 87.6,
+      "end": 88.5,
+      "rawAsr": "错",
+      "layers": {
+        "zh": {
+          "text": "错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 88.6,
+      "end": 88.9,
+      "rawAsr": "错 错",
+      "layers": {
+        "zh": {
+          "text": "错 错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 89.1,
+      "end": 95.3,
+      "rawAsr": "错 错 错",
+      "layers": {
+        "zh": {
+          "text": "错 错 错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 115.0,
+      "end": 115.199,
+      "rawAsr": "世",
+      "layers": {
+        "zh": {
+          "text": "世",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 115.2,
+      "end": 115.4,
+      "rawAsr": "世情",
+      "layers": {
+        "zh": {
+          "text": "世情",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 115.6,
+      "end": 120.199,
+      "rawAsr": "世情薄",
+      "layers": {
+        "zh": {
+          "text": "世情薄",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 120.2,
+      "end": 125.8,
+      "rawAsr": "世情薄 人情恶",
+      "layers": {
+        "zh": {
+          "text": "世情薄 人情恶",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 127.4,
+      "end": 141.6,
+      "rawAsr": "雨送黄昏香花易落",
+      "layers": {
+        "zh": {
+          "text": "雨送黄昏香花易落",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 152.8,
+      "end": 162.5,
+      "rawAsr": "晓风干",
+      "layers": {
+        "zh": {
+          "text": "晓风干",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 167.3,
+      "end": 168.799,
+      "rawAsr": "欲笺心事",
+      "layers": {
+        "zh": {
+          "text": "欲笺心事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 168.8,
+      "end": 169.4,
+      "rawAsr": "欲笺心事 独",
+      "layers": {
+        "zh": {
+          "text": "欲笺心事 独",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 169.5,
+      "end": 171.4,
+      "rawAsr": "欲笺心事 独语斜",
+      "layers": {
+        "zh": {
+          "text": "欲笺心事 独语斜",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "start": 171.5,
+      "end": 174.2,
+      "rawAsr": "欲笺心事 独语斜栏",
+      "layers": {
+        "zh": {
+          "text": "欲笺心事 独语斜栏",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "start": 175.0,
+      "end": 176.5,
+      "rawAsr": "难",
+      "layers": {
+        "zh": {
+          "text": "难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "start": 176.6,
+      "end": 178.0,
+      "rawAsr": "难 难",
+      "layers": {
+        "zh": {
+          "text": "难 难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "start": 178.1,
+      "end": 180.7,
+      "rawAsr": "难 难 难",
+      "layers": {
+        "zh": {
+          "text": "难 难 难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "start": 211.1,
+      "end": 211.5,
+      "rawAsr": "错",
+      "layers": {
+        "zh": {
+          "text": "错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "start": 211.6,
+      "end": 213.0,
+      "rawAsr": "错 错 错",
+      "layers": {
+        "zh": {
+          "text": "错 错 错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "start": 213.6,
+      "end": 213.9,
+      "rawAsr": "难",
+      "layers": {
+        "zh": {
+          "text": "难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "start": 214.4,
+      "end": 214.599,
+      "rawAsr": "难 难",
+      "layers": {
+        "zh": {
+          "text": "难 难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "start": 214.6,
+      "end": 214.799,
+      "rawAsr": "难 难 难",
+      "layers": {
+        "zh": {
+          "text": "难 难 难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "start": 214.8,
+      "end": 216.6,
+      "rawAsr": "难 难 难",
+      "layers": {
+        "zh": {
+          "text": "难 难 难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "start": 217.1,
+      "end": 217.3,
+      "rawAsr": "错",
+      "layers": {
+        "zh": {
+          "text": "错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "start": 217.5,
+      "end": 218.2,
+      "rawAsr": "错",
+      "layers": {
+        "zh": {
+          "text": "错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "start": 218.3,
+      "end": 220.3,
+      "rawAsr": "错 错",
+      "layers": {
+        "zh": {
+          "text": "错 错",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "start": 220.8,
+      "end": 221.2,
+      "rawAsr": "难",
+      "layers": {
+        "zh": {
+          "text": "难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "start": 221.3,
+      "end": 221.6,
+      "rawAsr": "难 难",
+      "layers": {
+        "zh": {
+          "text": "难 难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "start": 221.7,
+      "end": 222.9,
+      "rawAsr": "难 难 难",
+      "layers": {
+        "zh": {
+          "text": "难 难 难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "start": 224.0,
+      "end": 226.1,
+      "rawAsr": "春如旧",
+      "layers": {
+        "zh": {
+          "text": "春如旧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "start": 226.3,
+      "end": 228.7,
+      "rawAsr": "春如旧 人成各",
+      "layers": {
+        "zh": {
+          "text": "春如旧 人成各",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "start": 229.8,
+      "end": 234.5,
+      "rawAsr": "人空痩",
+      "layers": {
+        "zh": {
+          "text": "人空痩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "start": 235.3,
+      "end": 235.6,
+      "rawAsr": "泪痕",
+      "layers": {
+        "zh": {
+          "text": "泪痕",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "start": 235.8,
+      "end": 236.4,
+      "rawAsr": "泪痕红浥",
+      "layers": {
+        "zh": {
+          "text": "泪痕红浥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "start": 236.7,
+      "end": 237.999,
+      "rawAsr": "泪痕红浥鲛绡透",
+      "layers": {
+        "zh": {
+          "text": "泪痕红浥鲛绡透",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "start": 238.0,
+      "end": 238.5,
+      "rawAsr": "泪痕红浥鲛绡透",
+      "layers": {
+        "zh": {
+          "text": "泪痕红浥鲛绡透",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "start": 239.4,
+      "end": 241.8,
+      "rawAsr": "病魂长似干秋索",
+      "layers": {
+        "zh": {
+          "text": "病魂长似干秋索",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "start": 242.3,
+      "end": 242.5,
+      "rawAsr": "桃",
+      "layers": {
+        "zh": {
+          "text": "桃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "start": 242.6,
+      "end": 242.799,
+      "rawAsr": "桃花",
+      "layers": {
+        "zh": {
+          "text": "桃花",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "start": 242.8,
+      "end": 245.799,
+      "rawAsr": "桃花落",
+      "layers": {
+        "zh": {
+          "text": "桃花落",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "start": 245.8,
+      "end": 249.6,
+      "rawAsr": "桃花落 角声寒",
+      "layers": {
+        "zh": {
+          "text": "桃花落 角声寒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "start": 250.4,
+      "end": 256.9,
+      "rawAsr": "闭池阁",
+      "layers": {
+        "zh": {
+          "text": "闭池阁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "start": 259.7,
+      "end": 259.899,
+      "rawAsr": "山盟虽",
+      "layers": {
+        "zh": {
+          "text": "山盟虽",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "start": 259.9,
+      "end": 263.0,
+      "rawAsr": "山盟虽在 锦书难托",
+      "layers": {
+        "zh": {
+          "text": "山盟虽在 锦书难托",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "start": 263.9,
+      "end": 264.5,
+      "rawAsr": "怕人寻问",
+      "layers": {
+        "zh": {
+          "text": "怕人寻问",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "start": 264.6,
+      "end": 265.1,
+      "rawAsr": "怕人寻问 咽泪装欢",
+      "layers": {
+        "zh": {
+          "text": "怕人寻问 咽泪装欢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "start": 265.5,
+      "end": 265.9,
+      "rawAsr": "怕人寻问 咽泪装欢",
+      "layers": {
+        "zh": {
+          "text": "怕人寻问 咽泪装欢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "start": 268.9,
+      "end": 273.2,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "start": 274.0,
+      "end": 278.4,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "start": 279.2,
+      "end": 280.199,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "start": 280.2,
+      "end": 280.6,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "start": 281.0,
+      "end": 282.399,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "start": 282.4,
+      "end": 282.699,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "start": 282.7,
+      "end": 282.9,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "start": 283.0,
+      "end": 289.9,
+      "rawAsr": "莫莫莫 瞒瞒瞒",
+      "layers": {
+        "zh": {
+          "text": "莫莫莫 瞒瞒瞒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "start": 296.3,
+      "end": 296.6,
+      "rawAsr": "琬妹",
+      "layers": {
+        "zh": {
+          "text": "琬妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "start": 297.0,
+      "end": 306.999,
+      "rawAsr": "琬妹 游哥",
+      "layers": {
+        "zh": {
+          "text": "琬妹 游哥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "start": 307.0,
+      "end": 307.2,
+      "rawAsr": "游哥",
+      "layers": {
+        "zh": {
+          "text": "游哥",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

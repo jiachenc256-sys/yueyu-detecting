@@ -52,3 +52,19 @@
 - 不靠继续猛训硬冲 CER 0.5 作为主线  
 - 不把情绪路径伪装成「听清了唱词」  
 - 不把摘要或情绪判断外包给第三方在线接口
+
+## 2026-08-24 · Speak 十一项补强（不含 portfolio packet）
+
+| # | 项 | 状态 |
+|---|----|------|
+| 1 | Open-archive：22 出补 `pieces/*.html` + `PIECE_PAGES` | ✅ |
+| 2 | Scene cards 扩至 27 戏 | ✅ |
+| 3 | Piece radar 扩至 27 戏 | ✅ |
+| 4 | Fingerprints 扩至 712（含梁祝/牡丹亭等）；`scripts/asr/build_audio_fingerprints.py` | ✅ |
+| 5 | Demo path 文案 + 示例自动选戏 | ✅ |
+| 6 | Limits 文案（启发式 / blend-v10 / 非 0.5） | ✅ |
+| 7 | Weak-match：无高置信命中 + 参考候选 | ✅ |
+| 8 | Gold coverage 笔记 + 待提交 transcripts | ✅ 见 `docs/SPEAK_GOLD_COVERAGE_20260824.md` |
+| 9 | 保持 v10 上线（决策笔记） | ✅ |
+| 10 | `.gitignore`：`.cursor/`、`_incoming_audio/`、zip/bak | ✅ |
+| 11 | Mobile Speak：触控、全宽筛选、sticky status | ✅ |
