@@ -286,6 +286,13 @@ html[data-theme="light"] #speak-recognized {
   opacity: 0.72;
 }
 
+.speak-prosody-metrics {
+  margin: 0.35rem 0 0;
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+  line-height: 1.45;
+}
+
 @keyframes speak-in {
   from {
     opacity: 0;
