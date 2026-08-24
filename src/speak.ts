@@ -823,6 +823,10 @@ async function ensureWhisper(): Promise<AsrPipeline> {
     return await whisperLoading;
   } catch (localError) {
     whisperLoading = null;
+    const msg = localError instanceof Error ? localError.message : String(localError);
+    if (/Failed to fetch|NetworkError|CDN|import/i.test(msg)) {
+      setStatus(t("speak.status.whisperCdnFail"));
+    }
     // Fallback if local ONNX assets are missing (e.g. not yet deployed).
     setStatus(t("speak.status.whisperFallback"));
     whisperLoading = (async () => {
@@ -858,6 +862,7 @@ async function ensureWhisper(): Promise<AsrPipeline> {
       return await whisperLoading;
     } catch (error) {
       whisperLoading = null;
+      setStatus(t("speak.status.whisperCdnFail"));
       throw localError instanceof Error ? localError : error;
     }
   }

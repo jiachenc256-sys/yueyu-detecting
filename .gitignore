@@ -28,6 +28,7 @@ assets/learn/ziyin-audio/batches/
 
 # Speak demo clips (short cuts for “try sample”).
 !assets/speak/samples/**/*.m4a
+!assets/speak/samples/**/*.wav
 
 # Local agent / IDE noise
 .cursor/

@@ -2,8 +2,8 @@ import { getLocale, onLocaleChange } from "./i18n.js";
 
 interface FaqItem {
   id: string;
-  q: { zh: string; en: string };
-  a: { zh: string; en: string };
+  q: { zh: string; en: string; zhHant?: string };
+  a: { zh: string; en: string; zhHant?: string };
 }
 
 interface FaqDoc {
@@ -13,6 +13,7 @@ interface FaqDoc {
 function pick(item: FaqItem, field: "q" | "a"): string {
   const locale = getLocale();
   if (locale === "en") return item[field].en;
+  if (locale === "zh-Hant") return item[field].zhHant || item[field].zh;
   return item[field].zh;
 }
 

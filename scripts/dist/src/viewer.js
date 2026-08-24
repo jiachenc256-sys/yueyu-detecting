@@ -1,6 +1,6 @@
 import { cueMatchesQuery, enBadgeLabel, primaryDisplayText, secondaryDisplayLines, speakerDisplayLabel, } from "./display.js";
 import { initA11y } from "./a11y.js";
-import { getLocale, initI18n, onLocaleChange } from "./i18n.js";
+import { getLocale, initI18n, onLocaleChange, t } from "./i18n.js";
 import { formatTime } from "./time.js";
 let transcript = null;
 let activeId = null;
@@ -11,6 +11,49 @@ function isTextOnlyPiece(piece) {
     if (document.body.dataset.textOnly === "true")
         return true;
     return !piece.audio?.trim();
+}
+/** When media is gitignored / 404 on Pages, show an honest note instead of a silent player. */
+function setupAudioHonesty(audioEl) {
+    const noteId = "viewer-audio-missing";
+    const showMissing = () => {
+        document.body.dataset.audioMissing = "true";
+        let note = document.getElementById(noteId);
+        if (!note) {
+            note = document.createElement("p");
+            note.id = noteId;
+            note.className = "viewer-player__missing";
+            note.setAttribute("role", "status");
+            audioEl.insertAdjacentElement("afterend", note);
+        }
+        note.textContent = t("viewer.audioNotShipped");
+        const hint = document.querySelector(".viewer-player__hint");
+        if (hint)
+            hint.hidden = true;
+    };
+    const refreshNoteLocale = () => {
+        const note = document.getElementById(noteId);
+        if (note)
+            note.textContent = t("viewer.audioNotShipped");
+    };
+    onLocaleChange(refreshNoteLocale);
+    audioEl.addEventListener("error", showMissing);
+    if (audioEl.error) {
+        showMissing();
+        return;
+    }
+    const src = audioEl.getAttribute("src");
+    if (!src) {
+        showMissing();
+        return;
+    }
+    void fetch(src, { method: "GET", headers: { Range: "bytes=0-0" } })
+        .then((res) => {
+        if (!res.ok)
+            showMissing();
+    })
+        .catch(() => {
+        /* network/CORS — rely on media error event */
+    });
 }
 function displayModeForSiteLocale(locale) {
     if (locale === "en")
@@ -290,6 +333,7 @@ async function init() {
     if (!textOnly) {
         const audioEl = requireEl(audio, "audio");
         audioEl.addEventListener("timeupdate", onTimeUpdate);
+        setupAudioHonesty(audioEl);
     }
     else if (audio) {
         audio.removeAttribute("src");
