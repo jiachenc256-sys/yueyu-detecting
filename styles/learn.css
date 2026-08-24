@@ -1021,6 +1021,13 @@ button.ziyin-quest__node:hover {
   border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
 }
 
+.ziyin-quest__focus-title {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
 .ziyin-quest__focus-task {
   margin: 0 0 var(--space-3);
   color: var(--color-ink-muted);
