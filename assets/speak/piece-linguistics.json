@@ -2,6 +2,176 @@
   "schema": "yueyu-piece-linguistics/v1",
   "builtFor": "speak-archive-linguistic-notes",
   "pieces": {
+    "baitu-ji": {
+      "genreZh": "越剧 / 南戏传统 · 白兔记",
+      "genreEn": "Yueju / nanxi tradition · White Rabbit",
+      "registerZh": "流离求生与认亲：叙事跨度大，悲喜并陈。",
+      "registerEn": "Exile, survival, recognition: wide narrative span, grief beside reunion.",
+      "rolesZh": "刘知远一线 · 李三娘一线",
+      "rolesEn": "Liu Zhiyuan line · Li Sanniang line",
+      "listenZh": "先定场景（寒夜 / 奔波 / 团聚），再对唱词；未见全剧时 CER 会偏高属预期。",
+      "listenEn": "Anchor scene (cold night / road / reunion) first; higher CER on unseen stretches is expected."
+    },
+    "biyu-zan-xinfang": {
+      "genreZh": "越剧 · 碧玉簪 · 新房",
+      "genreEn": "Yueju · Jade Hairpin · bridal chamber",
+      "registerZh": "闺房冷清：旦角抒情，怨与忍交织，文白夹杂。",
+      "registerEn": "Cold bridal chamber: dan lyricism; resentment and endurance; literary–vernacular mix.",
+      "rolesZh": "李秀英（旦）一线",
+      "rolesEn": "Li Xiuying (dan) line",
+      "listenZh": "听冷清、怨悔套语；字不稳时用档案句锚定场景。",
+      "listenEn": "Listen for cold-chamber and regret formulas; archive-anchor when ASR slips."
+    },
+    "bubuxinjing-1": {
+      "genreZh": "清宫传奇 · 步步惊心 · 第一场",
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第一场",
+      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
+      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
+      "rolesZh": "宫中男女主与配角线",
+      "rolesEn": "Court leads and supporting roles",
+      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
+      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+    },
+    "bubuxinjing-2": {
+      "genreZh": "清宫传奇 · 步步惊心 · 第二场",
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第二场",
+      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
+      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
+      "rolesZh": "宫中男女主与配角线",
+      "rolesEn": "Court leads and supporting roles",
+      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
+      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+    },
+    "bubuxinjing-3": {
+      "genreZh": "清宫传奇 · 步步惊心 · 第三场",
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第三场",
+      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
+      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
+      "rolesZh": "宫中男女主与配角线",
+      "rolesEn": "Court leads and supporting roles",
+      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
+      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+    },
+    "bubuxinjing-4a": {
+      "genreZh": "清宫传奇 · 步步惊心 · 第四场上",
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第四场上",
+      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
+      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
+      "rolesZh": "宫中男女主与配角线",
+      "rolesEn": "Court leads and supporting roles",
+      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
+      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+    },
+    "bubuxinjing-4b5a": {
+      "genreZh": "清宫传奇 · 步步惊心 · 第四场下+第五场上",
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第四场下+第五场上",
+      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
+      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
+      "rolesZh": "宫中男女主与配角线",
+      "rolesEn": "Court leads and supporting roles",
+      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
+      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+    },
+    "chai-tou-feng": {
+      "genreZh": "越剧 · 钗头凤（陆游·唐琬）",
+      "genreEn": "Yueju · Chai Tou Feng (Lu You · Tang Wan)",
+      "registerZh": "旧情重逢：酸楚、错负，唱词典雅。",
+      "registerEn": "Old love meets again: bitterness and regret; literary diction.",
+      "rolesZh": "陆游 · 唐琬",
+      "rolesEn": "Lu You · Tang Wan",
+      "listenZh": "抓诀别与悔恨套语；短选段适合听「错、莫、难」等语气词。",
+      "listenEn": "Listen for parting/regret formulas and modal particles of denial and hardship."
+    },
+    "chen-sanliang": {
+      "genreZh": "越剧 · 公案 / 辩诬",
+      "genreEn": "Yueju · courtroom / defense narrative",
+      "registerZh": "据理力争：念白与唱夹杂，语气刚烈。",
+      "registerEn": "Argument and defense: speech and song mixed; fierce tone.",
+      "rolesZh": "陈三两",
+      "rolesEn": "Chen Sanliang",
+      "listenZh": "听辩诬关键词与情绪冲高，不必句句对齐。",
+      "listenEn": "Track defense keywords and rising affect more than every line."
+    },
+    "he-wenxiu-suanming": {
+      "genreZh": "越剧 · 何文秀 · 算命",
+      "genreEn": "Yueju · He Wenxiu · fortune-telling scene",
+      "registerZh": "算命对唱：念白问答与唱夹杂，机锋多。",
+      "registerEn": "Fortune-telling duet: Q&A speech mixed with song; quick repartee.",
+      "rolesZh": "何文秀 · 对方角色",
+      "rolesEn": "He Wenxiu · counterpart",
+      "listenZh": "先跟问答节奏，再抠字；算命术语易误识。",
+      "listenEn": "Follow Q&A rhythm first; fortune-telling jargon often fools ASR."
+    },
+    "hongloumeng-1": {
+      "genreZh": "越剧 · 红楼梦选段",
+      "genreEn": "Yueju · Dream of the Red Chamber excerpt",
+      "registerZh": "宝黛情与贾府人事：雅俗并用。",
+      "registerEn": "Bao–Dai feeling and Jia-house affairs; literary beside vernacular.",
+      "rolesZh": "贾宝玉 · 林黛玉等",
+      "rolesEn": "Jia Baoyu · Lin Daiyu and others",
+      "listenZh": "先定人物关系，再听唱词；分段档案便于对照。",
+      "listenEn": "Fix character relations first, then lyrics; segmented archive helps."
+    },
+    "hongloumeng-2": {
+      "genreZh": "越剧 · 红楼梦 · 第2部分",
+      "genreEn": "Yueju · Dream of the Red Chamber · part 2",
+      "registerZh": "宝黛情与贾府人事：雅俗并用，人物关系密。",
+      "registerEn": "Bao–Dai feeling and Jia-house affairs; literary beside vernacular; dense relations.",
+      "rolesZh": "贾宝玉 · 林黛玉等",
+      "rolesEn": "Jia Baoyu · Lin Daiyu and others",
+      "listenZh": "先定本段人物关系，再听唱词；可与第1部分对照。",
+      "listenEn": "Fix this part’s character relations first; compare with part 1 if needed."
+    },
+    "hongloumeng-3": {
+      "genreZh": "越剧 · 红楼梦 · 第3部分",
+      "genreEn": "Yueju · Dream of the Red Chamber · part 3",
+      "registerZh": "宝黛情与贾府人事：雅俗并用，人物关系密。",
+      "registerEn": "Bao–Dai feeling and Jia-house affairs; literary beside vernacular; dense relations.",
+      "rolesZh": "贾宝玉 · 林黛玉等",
+      "rolesEn": "Jia Baoyu · Lin Daiyu and others",
+      "listenZh": "先定本段人物关系，再听唱词；可与第1部分对照。",
+      "listenEn": "Fix this part’s character relations first; compare with part 1 if needed."
+    },
+    "hongloumeng-4": {
+      "genreZh": "越剧 · 红楼梦 · 第4部分",
+      "genreEn": "Yueju · Dream of the Red Chamber · part 4",
+      "registerZh": "宝黛情与贾府人事：雅俗并用，人物关系密。",
+      "registerEn": "Bao–Dai feeling and Jia-house affairs; literary beside vernacular; dense relations.",
+      "rolesZh": "贾宝玉 · 林黛玉等",
+      "rolesEn": "Jia Baoyu · Lin Daiyu and others",
+      "listenZh": "先定本段人物关系，再听唱词；可与第1部分对照。",
+      "listenEn": "Fix this part’s character relations first; compare with part 1 if needed."
+    },
+    "hongloumeng-5": {
+      "genreZh": "越剧 · 红楼梦 · 第5部分",
+      "genreEn": "Yueju · Dream of the Red Chamber · part 5",
+      "registerZh": "宝黛情与贾府人事：雅俗并用，人物关系密。",
+      "registerEn": "Bao–Dai feeling and Jia-house affairs; literary beside vernacular; dense relations.",
+      "rolesZh": "贾宝玉 · 林黛玉等",
+      "rolesEn": "Jia Baoyu · Lin Daiyu and others",
+      "listenZh": "先定本段人物关系，再听唱词；可与第1部分对照。",
+      "listenEn": "Fix this part’s character relations first; compare with part 1 if needed."
+    },
+    "hongloumeng-tianxia": {
+      "genreZh": "越剧 · 天上掉下个林妹妹",
+      "genreEn": "Yueju · Lin Daiyu Arrives",
+      "registerZh": "初见倾心：短选段，人物称呼清晰。",
+      "registerEn": "First meeting; short clip with clear address terms.",
+      "rolesZh": "贾宝玉 · 林黛玉",
+      "rolesEn": "Jia Baoyu · Lin Daiyu",
+      "listenZh": "听初见称呼与惊喜语气。",
+      "listenEn": "Listen for first-meeting address and surprise contour."
+    },
+    "jingchai-ji": {
+      "genreZh": "越剧 / 南戏传统 · 荆钗记",
+      "genreEn": "Yueju / nanxi tradition · Thorn Hairpin",
+      "registerZh": "江边送别与嘱托：情义、赴考、荆钗信物并置。",
+      "registerEn": "River farewell and counsel: devotion, exam journey, thorn-pin token.",
+      "rolesZh": "王十朋（生）· 钱玉莲（旦）",
+      "rolesEn": "Wang Shipeng (sheng) · Qian Yulian (dan)",
+      "listenZh": "听「荆钗」信物与送别嘱托套语；对齐档案句比硬听字更有效。",
+      "listenEn": "Listen for the hairpin token and parting counsel formulas; archive align beats raw ASR."
+    },
     "liangzhu-shibaxiangsong": {
       "genreZh": "越剧 · 生旦对唱（十八相送）",
       "genreEn": "Yueju · sheng–dan duet (Eighteen Farewells)",
@@ -32,45 +202,25 @@
       "listenZh": "听情绪下沉与诀别句群，不必强求每个字。",
       "listenEn": "Listen for falling affect and farewell clusters, not every syllable."
     },
-    "xianglin-sao-xinsuanhua": {
-      "genreZh": "越剧 · 叙事唱段（祥林嫂）",
-      "genreEn": "Yueju · narrative aria (Xianglin Sao)",
-      "registerZh": "诉苦叙事：口语化强，重复、叹息与控诉交织。",
-      "registerEn": "Suffering narrative: more speech-like, with repetition, sighs, and accusation.",
-      "rolesZh": "祥林嫂（青衣 / 悲旦一路）",
-      "rolesEn": "Xianglin Sao (qingyi / tragic-dan line)",
-      "listenZh": "抓「丧子—冷遇—不公」关键词与哭腔起伏，比盯单字更稳。",
-      "listenEn": "Track loss → cold treatment → injustice, plus sob-like contour, more than single characters."
+    "limaohuan-taizi": {
+      "genreZh": "戏曲传统 · 狸猫换太子",
+      "genreEn": "Theatre tradition · Civet-cat Prince Swap",
+      "registerZh": "宫廷冤案：辨认、寻亲、公案语气，篇幅长。",
+      "registerEn": "Court injustice: recognition, search, case tone; long form.",
+      "rolesZh": "宫廷与民间多线人物",
+      "rolesEn": "Court and commoner multi-line cast",
+      "listenZh": "先定「阴谋—失散—辨认」大段，再听字。",
+      "listenEn": "Anchor intrigue → separation → recognition before chasing characters."
     },
-    "jingchai-ji": {
-      "genreZh": "越剧 / 南戏传统 · 荆钗记",
-      "genreEn": "Yueju / nanxi tradition · Thorn Hairpin",
-      "registerZh": "江边送别与嘱托：情义、赴考、荆钗信物并置。",
-      "registerEn": "River farewell and counsel: devotion, exam journey, thorn-pin token.",
-      "rolesZh": "王十朋（生）· 钱玉莲（旦）",
-      "rolesEn": "Wang Shipeng (sheng) · Qian Yulian (dan)",
-      "listenZh": "听「荆钗」信物与送别嘱托套语；对齐档案句比硬听字更有效。",
-      "listenEn": "Listen for the hairpin token and parting counsel formulas; archive align beats raw ASR."
-    },
-    "baitu-ji": {
-      "genreZh": "越剧 / 南戏传统 · 白兔记",
-      "genreEn": "Yueju / nanxi tradition · White Rabbit",
-      "registerZh": "流离求生与认亲：叙事跨度大，悲喜并陈。",
-      "registerEn": "Exile, survival, recognition: wide narrative span, grief beside reunion.",
-      "rolesZh": "刘知远一线 · 李三娘一线",
-      "rolesEn": "Liu Zhiyuan line · Li Sanniang line",
-      "listenZh": "先定场景（寒夜 / 奔波 / 团聚），再对唱词；未见全剧时 CER 会偏高属预期。",
-      "listenEn": "Anchor scene (cold night / road / reunion) first; higher CER on unseen stretches is expected."
-    },
-    "zanghua-yin": {
-      "genreZh": "越剧 · 葬花吟（红楼）",
-      "genreEn": "Yueju · Burial of Flowers (Red Chamber)",
-      "registerZh": "抒情长段：花与人同命，文辞偏雅。",
-      "registerEn": "Lyrical lament: flower and self share one fate; more literary diction.",
-      "rolesZh": "林黛玉（旦）",
-      "rolesEn": "Lin Daiyu (dan)",
-      "listenZh": "抓落花、葬花、伤春意象链；雅词听不清时用档案句回填。",
-      "listenEn": "Follow fallen blossoms → burial → spring grief; use archive line when literary diction fails ASR."
+    "longmen-kezhai": {
+      "genreZh": "越剧改编 · 新龙门客栈",
+      "genreEn": "Yueju adaptation · New Dragon Inn",
+      "registerZh": "武侠客栈：忠奸对照，念白与唱并进，口语感更强。",
+      "registerEn": "Wuxia inn: loyalty vs intrigue; speech and song; more colloquial.",
+      "rolesZh": "多角色江湖线",
+      "rolesEn": "Multi-role jianghu cast",
+      "listenZh": "抓忠奸称呼与冲突句；长篇更适合跟读档案。",
+      "listenEn": "Track loyalty/villain address and conflict lines; long form favors archive follow-along."
     },
     "mudanting-huanhunji": {
       "genreZh": "昆曲 / 戏曲传统 · 牡丹亭·还魂",
@@ -82,45 +232,125 @@
       "listenZh": "先跟「梦—伤—还魂」大意，再抠字；华辞易导致字级识别不稳。",
       "listenEn": "Follow dream → mourning → return first; ornate lines often destabilize character ASR."
     },
-    "chen-sanliang": {
-      "genreZh": "越剧 · 公案 / 辩诬",
-      "genreEn": "Yueju · courtroom / defense narrative",
-      "registerZh": "据理力争：念白与唱夹杂，语气刚烈。",
-      "registerEn": "Argument and defense: speech and song mixed; fierce tone.",
-      "rolesZh": "陈三两",
-      "rolesEn": "Chen Sanliang",
-      "listenZh": "听辩诬关键词与情绪冲高，不必句句对齐。",
-      "listenEn": "Track defense keywords and rising affect more than every line."
+    "para-2": {
+      "genreZh": "经典折子对照材料",
+      "genreEn": "Classic excerpt reference pack",
+      "registerZh": "折子选段：便于听说与档案对读，语体随出目变化。",
+      "registerEn": "Excerpt pack for Speak ↔ archive check; register varies by scene.",
+      "rolesZh": "随选段而定",
+      "rolesEn": "Depends on the excerpt",
+      "listenZh": "用档案命中句回填情节，勿把折子当全剧。",
+      "listenEn": "Use archive hits to recover plot; treat as excerpts, not full plays."
     },
-    "chai-tou-feng": {
-      "genreZh": "越剧 · 钗头凤（陆游·唐琬）",
-      "genreEn": "Yueju · Chai Tou Feng (Lu You · Tang Wan)",
-      "registerZh": "旧情重逢：酸楚、错负，唱词典雅。",
-      "registerEn": "Old love meets again: bitterness and regret; literary diction.",
-      "rolesZh": "陆游 · 唐琬",
-      "rolesEn": "Lu You · Tang Wan",
-      "listenZh": "抓诀别与悔恨套语；短选段适合听「错、莫、难」等语气词。",
-      "listenEn": "Listen for parting/regret formulas and modal particles of denial and hardship."
+    "para-3": {
+      "genreZh": "经典折子对照材料（含重叠段）",
+      "genreEn": "Classic excerpt pack (with overlap)",
+      "registerZh": "折子选段，部分与其他包重叠；适合检索对齐测试。",
+      "registerEn": "Excerpt pack with overlap; good for alignment tests.",
+      "rolesZh": "随选段而定",
+      "rolesEn": "Depends on the excerpt",
+      "listenZh": "命中后看邻近句与场景卡，避免把重叠段当新情节。",
+      "listenEn": "After a hit, check neighbors/scene cards; overlap is not a new plot."
     },
-    "hongloumeng-1": {
-      "genreZh": "越剧 · 红楼梦选段",
-      "genreEn": "Yueju · Dream of the Red Chamber excerpt",
-      "registerZh": "宝黛情与贾府人事：雅俗并用。",
-      "registerEn": "Bao–Dai feeling and Jia-house affairs; literary beside vernacular.",
-      "rolesZh": "贾宝玉 · 林黛玉等",
-      "rolesEn": "Jia Baoyu · Lin Daiyu and others",
-      "listenZh": "先定人物关系，再听唱词；分段档案便于对照。",
-      "listenEn": "Fix character relations first, then lyrics; segmented archive helps."
+    "pearl-tower-gift": {
+      "genreZh": "弹词 / 戏曲交叉 · 珍珠塔 · 赠塔",
+      "genreEn": "Tanci / theatre crossover · Pearl Tower · gift scene",
+      "registerZh": "赠塔嘱托：信物叙事，情义与功名并提。",
+      "registerEn": "Gift counsel: token narrative; devotion beside career ambitions.",
+      "rolesZh": "方卿 · 陈翠娥一线",
+      "rolesEn": "Fang Qing · Chen Cui’e line",
+      "listenZh": "听「珍珠塔」信物与嘱咐套语；有说话人标注可对角色。",
+      "listenEn": "Listen for pearl-tower token and counsel formulas; use speaker labels when present."
     },
-    "hongloumeng-tianxia": {
-      "genreZh": "越剧 · 天上掉下个林妹妹",
-      "genreEn": "Yueju · Lin Daiyu Arrives",
-      "registerZh": "初见倾心：短选段，人物称呼清晰。",
-      "registerEn": "First meeting; short clip with clear address terms.",
-      "rolesZh": "贾宝玉 · 林黛玉",
-      "rolesEn": "Jia Baoyu · Lin Daiyu",
-      "listenZh": "听初见称呼与惊喜语气。",
-      "listenEn": "Listen for first-meeting address and surprise contour."
+    "wunv-baishou-1": {
+      "genreZh": "越剧 · 五女拜寿 · 第1部分",
+      "genreEn": "Yueju · Five Daughters’ Birthday · part 1",
+      "registerZh": "家庭伦理与拜寿场面：人情往来，唱念交错。",
+      "registerEn": "Family ethics and birthday scenes; social exchange; song and speech.",
+      "rolesZh": "五女与家门长辈",
+      "rolesEn": "Daughters and household elders",
+      "listenZh": "跟「拜寿 / 冷暖」线索；分段档案便于跳读。",
+      "listenEn": "Follow birthday / warmth–chill threads; segmented archive helps jump reading."
+    },
+    "wunv-baishou-2": {
+      "genreZh": "越剧 · 五女拜寿 · 第2部分",
+      "genreEn": "Yueju · Five Daughters’ Birthday · part 2",
+      "registerZh": "家庭伦理与拜寿场面：人情往来，唱念交错。",
+      "registerEn": "Family ethics and birthday scenes; social exchange; song and speech.",
+      "rolesZh": "五女与家门长辈",
+      "rolesEn": "Daughters and household elders",
+      "listenZh": "跟「拜寿 / 冷暖」线索；分段档案便于跳读。",
+      "listenEn": "Follow birthday / warmth–chill threads; segmented archive helps jump reading."
+    },
+    "wunv-baishou-3": {
+      "genreZh": "越剧 · 五女拜寿 · 第3部分",
+      "genreEn": "Yueju · Five Daughters’ Birthday · part 3",
+      "registerZh": "家庭伦理与拜寿场面：人情往来，唱念交错。",
+      "registerEn": "Family ethics and birthday scenes; social exchange; song and speech.",
+      "rolesZh": "五女与家门长辈",
+      "rolesEn": "Daughters and household elders",
+      "listenZh": "跟「拜寿 / 冷暖」线索；分段档案便于跳读。",
+      "listenEn": "Follow birthday / warmth–chill threads; segmented archive helps jump reading."
+    },
+    "wunv-baishou-4": {
+      "genreZh": "越剧 · 五女拜寿 · 第4部分",
+      "genreEn": "Yueju · Five Daughters’ Birthday · part 4",
+      "registerZh": "家庭伦理与拜寿场面：人情往来，唱念交错。",
+      "registerEn": "Family ethics and birthday scenes; social exchange; song and speech.",
+      "rolesZh": "五女与家门长辈",
+      "rolesEn": "Daughters and household elders",
+      "listenZh": "跟「拜寿 / 冷暖」线索；分段档案便于跳读。",
+      "listenEn": "Follow birthday / warmth–chill threads; segmented archive helps jump reading."
+    },
+    "wunv-baishou-huashu": {
+      "genreZh": "越剧 · 五女拜寿 · 花树选段",
+      "genreEn": "Yueju · Five Daughters · flower-tree excerpt",
+      "registerZh": "家庭伦理：拜寿、人情冷暖，唱念并重。",
+      "registerEn": "Family ethics: birthday tribute, warmth and chill; song and speech.",
+      "rolesZh": "五女与父母一线",
+      "rolesEn": "Daughters and parents line",
+      "listenZh": "先定「拜寿/人情」场景，再对档案句。",
+      "listenEn": "Fix birthday/social scene first, then archive lines."
+    },
+    "xianglin-sao-xinsuanhua": {
+      "genreZh": "越剧 · 叙事唱段（祥林嫂）",
+      "genreEn": "Yueju · narrative aria (Xianglin Sao)",
+      "registerZh": "诉苦叙事：口语化强，重复、叹息与控诉交织。",
+      "registerEn": "Suffering narrative: more speech-like, with repetition, sighs, and accusation.",
+      "rolesZh": "祥林嫂（青衣 / 悲旦一路）",
+      "rolesEn": "Xianglin Sao (qingyi / tragic-dan line)",
+      "listenZh": "抓「丧子—冷遇—不公」关键词与哭腔起伏，比盯单字更稳。",
+      "listenEn": "Track loss → cold treatment → injustice, plus sob-like contour, more than single characters."
+    },
+    "xixiangji-kaohong": {
+      "genreZh": "越剧 · 西厢记 · 拷红",
+      "genreEn": "Yueju · Western Chamber · Interrogating Hongniang",
+      "registerZh": "公堂式盘问：念白机智，花旦应对为主。",
+      "registerEn": "Interrogation tone: witty speech; huadan replies dominate.",
+      "rolesZh": "红娘（花旦）· 老夫人",
+      "rolesEn": "Hongniang (huadan) · Madame",
+      "listenZh": "听盘问—辩解回合；称呼与语气比单字更稳。",
+      "listenEn": "Track question–defense turns; address and tone beat single characters."
+    },
+    "zanghua-yin": {
+      "genreZh": "越剧 · 葬花吟（红楼）",
+      "genreEn": "Yueju · Burial of Flowers (Red Chamber)",
+      "registerZh": "抒情长段：花与人同命，文辞偏雅。",
+      "registerEn": "Lyrical lament: flower and self share one fate; more literary diction.",
+      "rolesZh": "林黛玉（旦）",
+      "rolesEn": "Lin Daiyu (dan)",
+      "listenZh": "抓落花、葬花、伤春意象链；雅词听不清时用档案句回填。",
+      "listenEn": "Follow fallen blossoms → burial → spring grief; use archive line when literary diction fails ASR."
+    },
+    "zhuiyu-guandeng": {
+      "genreZh": "越剧 · 追鱼 · 观灯",
+      "genreEn": "Yueju · Chase the Fish · lantern viewing",
+      "registerZh": "观灯抒情：景物与人情并写，唱段偏美。",
+      "registerEn": "Lantern viewing lyric: scenery and feeling together; more melodic.",
+      "rolesZh": "男女主角对唱一线",
+      "rolesEn": "Lead sheng–dan line",
+      "listenZh": "跟灯景意象与对唱呼应；不必句句听清。",
+      "listenEn": "Follow lantern imagery and duet call–response; not every syllable."
     }
   }
 }

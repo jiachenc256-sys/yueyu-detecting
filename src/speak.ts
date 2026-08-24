@@ -327,6 +327,31 @@ function populatePieceSelect(index: Awaited<ReturnType<typeof loadLyricIndex>>):
   if (Array.from(pieceSelect.options).some((o) => o.value === prev)) pieceSelect.value = prev;
 }
 
+function renderLinguisticNote(note: LinguisticNote | null, preferEn: boolean): void {
+  if (!lingWrapEl || !lingNoteEl) return;
+  if (!note) {
+    lingWrapEl.hidden = true;
+    lingNoteEl.textContent = "";
+    return;
+  }
+  const rows = preferEn ? note.rowsEn : note.rowsZh;
+  lingWrapEl.hidden = false;
+  lingNoteEl.innerHTML = rows
+    .map(
+      (r) =>
+        `<span class="speak-ling-row"><strong class="speak-ling-row__lab">${escapeHtml(r.label)}</strong> ${escapeHtml(r.body)}</span>`,
+    )
+    .join("");
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function preferEnUi(): boolean {
   return getLocale() === "en";
 }
@@ -554,17 +579,14 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
     lastLingNote = composeLinguisticNote({
       pieceId: top.pieceId,
       entryId: top.id,
+      title: top.title,
       linguistics,
       speakers: cueSpeakers,
     });
-    if (lingNoteEl && lastLingNote) {
-      if (lingWrapEl) lingWrapEl.hidden = false;
-      lingNoteEl.textContent = preferEnUi() ? lastLingNote.en : lastLingNote.zh;
-    }
+    renderLinguisticNote(lastLingNote, preferEnUi());
   } else {
     lastLingNote = null;
-    if (lingWrapEl) lingWrapEl.hidden = true;
-    if (lingNoteEl) lingNoteEl.textContent = "";
+    renderLinguisticNote(null, preferEnUi());
   }
 
   if (archiveMatches) {
@@ -1219,11 +1241,10 @@ async function refreshPathLocaleOnly(): Promise<void> {
       sceneCardEl.textContent = line;
     }
   }
-  if (lingWrapEl && lingNoteEl && lastLingNote && isHit) {
-    lingWrapEl.hidden = false;
-    lingNoteEl.textContent = en ? lastLingNote.en : lastLingNote.zh;
-  } else if (lingWrapEl && !isHit) {
-    lingWrapEl.hidden = true;
+  if (lastLingNote && isHit) {
+    renderLinguisticNote(lastLingNote, en);
+  } else {
+    renderLinguisticNote(null, en);
   }
   if (lastProsody && prosodyText) {
     let summary = en ? lastProsody.summaryEn : lastProsody.summaryZh;

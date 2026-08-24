@@ -310,9 +310,21 @@ html[data-theme="light"] #speak-recognized {
   line-height: 1.55;
   color: #2a241c;
   font-weight: 550;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.speak-ling-row__lab {
+  font-weight: 700;
+  color: #6b5a3e;
+  margin-right: 0.25rem;
 }
 
 html[data-theme="dark"] .speak-ling-wrap__label {
+  color: #c4b094;
+}
+
+html[data-theme="dark"] .speak-ling-row__lab {
   color: #c4b094;
 }
 
