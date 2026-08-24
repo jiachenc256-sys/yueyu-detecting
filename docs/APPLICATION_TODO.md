@@ -3,7 +3,7 @@
 **Sole author:** Alice Chen  
 **Horizon:** ~2 months before applications  
 **Live:** https://yueyudetecting.com  
-**Evidence page:** About → 证据一页 / Evidence (`#about-evidence`)
+**Private notes (not on public UI):** `docs/APPLICATION_NOTES.md`
 
 ## Done
 
@@ -13,14 +13,13 @@
 - [x] Cue speakers · 7 pieces / 114 cues; fingerprints · 855
 - [x] Try sample / EN / weak-match smoke check
 - [x] Dictionary shell: L1–4 chars + ~50 draft phrases + archive links (**paper book pending**)
-- [x] About **Evidence snapshot** + one-minute demo script (2026-08-24)
+- [x] Application snapshot + demo script kept in **docs only** (removed from public About)
 
 ## A · Application narrative
 
-- [x] Evidence one-pager (coverage + honest limits + demo script)
-- [x] Research brief product line: linguistic notes = archive-linked, not LLM
-- [ ] Optional: home CTA → Evidence (only if demos need faster jump)
-- [ ] Personal statement / CV wording aligned with intensive sprint + ongoing public iteration (no fake timeline)
+- [x] Private evidence notes for screenshots / talking points (`APPLICATION_NOTES.md`)
+- [x] Research brief (public): linguistic notes = archive-linked, not LLM
+- [ ] Personal statement / CV: intensive sprint + ongoing public iteration (no fake timeline)
 
 ## B · Speak depth (when free)
 
@@ -46,3 +45,4 @@
 - [ ] Large UI redesign
 - [ ] Portfolio recording packet (separate schedule)
 - [ ] Fabricated git history or project dates
+- [ ] Public “evidence / application packet” page on the service site
