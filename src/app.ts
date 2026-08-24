@@ -1,6 +1,12 @@
 import { initA11y } from "./a11y.js";
 import { initI18n, onLocaleChange, t } from "./i18n.js";
 
+declare global {
+  interface Window {
+    __yueyuOpenZiyinLevel?: (lv: number) => void;
+  }
+}
+
 function initNavigation(): void {
   const triggers = document.querySelectorAll<HTMLElement>("[data-panel-target]");
   const navButtons = document.querySelectorAll<HTMLElement>(".site-nav [data-panel-target]");
@@ -21,8 +27,13 @@ function initNavigation(): void {
     const currentHash = window.location.hash.replace(/^#/, "");
     const keepArchiveSubhash =
       target === "archive" && /^archive-(tanci|yueju|speakers|broadcast)$/.test(currentHash);
+    const keepDeepSubhash =
+      (target === "learn" && /^learn-/.test(currentHash)) ||
+      (target === "speak" && /^speak-sample-/.test(currentHash)) ||
+      (target === "plan" && /^plan-/.test(currentHash));
     if (
       !keepArchiveSubhash &&
+      !keepDeepSubhash &&
       (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`)
     ) {
       history.replaceState(null, "", `#${target}`);
@@ -62,6 +73,10 @@ function initSideNavigation(linkAttr: string, sectionAttr: string, linkSelector?
           section.getAttribute(sectionAttr) === target ? "false" : "true",
         );
       });
+
+      if (linkAttr === "data-plan-target" && target) {
+        history.replaceState(null, "", `#plan-${target}`);
+      }
     });
   });
 }
@@ -192,6 +207,38 @@ function openAboutSection(target: string): void {
   history.replaceState(null, "", `#about-${target}`);
 }
 
+function showPlanSection(target: string): void {
+  const link = document.querySelector<HTMLButtonElement>(
+    `.plan-nav__link[data-plan-target="${target}"]`,
+  );
+  link?.click();
+}
+
+function openLearnFayinLevel(level: number): void {
+  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
+  history.replaceState(null, "", `#learn-fayin-l${level}`);
+  const tryOpen = (attempt: number): void => {
+    if (typeof window.__yueyuOpenZiyinLevel === "function") {
+      window.__yueyuOpenZiyinLevel(level);
+      return;
+    }
+    document.querySelector<HTMLButtonElement>(`.learn-nav__link[data-learn-target="fayin"]`)?.click();
+    document.querySelector<HTMLButtonElement>(`[data-ziyin-level="${level}"]`)?.click();
+    if (attempt < 20) window.setTimeout(() => tryOpen(attempt + 1), 50);
+  };
+  requestAnimationFrame(() => tryOpen(0));
+}
+
+function openSpeakSample(sampleId: string): void {
+  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="speak"]`)?.click();
+  history.replaceState(null, "", `#speak-sample-${sampleId}`);
+  requestAnimationFrame(() => {
+    const btn = document.getElementById(`speak-sample-${sampleId}`) as HTMLButtonElement | null;
+    btn?.click();
+    btn?.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+}
+
 function initAboutDeepLinks(): void {
   document.querySelectorAll<HTMLAnchorElement>("[data-footer-about]").forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -201,6 +248,53 @@ function initAboutDeepLinks(): void {
       openAboutSection(target);
     });
   });
+}
+
+function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?: boolean }) => void): void {
+  const hash = window.location.hash.replace(/^#/, "");
+  if (!hash) return;
+
+  if (hash === "about-contact" || hash === "about-apply") {
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="about"]`)?.click();
+    showAboutSection("contact");
+    history.replaceState(null, "", `#${hash}`);
+    if (hash === "about-apply") {
+      requestAnimationFrame(() => {
+        document.getElementById("about-apply")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+    return;
+  }
+
+  if (hash.startsWith("archive")) {
+    const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
+    const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
+    if (catMatch) history.replaceState(null, "", `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`);
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="archive"]`)?.click();
+    applyArchiveFilter(filterCat, { scroll: true });
+    return;
+  }
+
+  const planMatch = /^plan-([a-z]+)$/.exec(hash);
+  if (planMatch) {
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="plan"]`)?.click();
+    showPlanSection(planMatch[1]!);
+    return;
+  }
+
+  const learnMatch = /^learn-fayin-l(\d+)$/.exec(hash);
+  if (learnMatch) {
+    openLearnFayinLevel(Number(learnMatch[1]));
+    return;
+  }
+
+  const sampleMatch = /^speak-sample-([a-z0-9-]+)$/.exec(hash);
+  if (sampleMatch) {
+    openSpeakSample(sampleMatch[1]!);
+    return;
+  }
+
+  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="${hash}"]`)?.click();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -214,23 +308,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initAboutDeepLinks();
   const applyArchiveFilter = initArchiveFilters();
 
-  const hash = window.location.hash.replace(/^#/, "");
-  if (hash === "about-contact" || hash === "about-apply") {
-    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="about"]`)?.click();
-    showAboutSection("contact");
-    history.replaceState(null, "", `#${hash}`);
-    if (hash === "about-apply") {
-      requestAnimationFrame(() => {
-        document.getElementById("about-apply")?.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
-  } else if (hash.startsWith("archive")) {
-    const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
-    const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
-    if (catMatch) history.replaceState(null, "", `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`);
-    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="archive"]`)?.click();
-    applyArchiveFilter(filterCat, { scroll: true });
-  } else if (hash) {
-    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="${hash}"]`)?.click();
-  }
+  applyHashRoute(applyArchiveFilter);
+  window.addEventListener("hashchange", () => applyHashRoute(applyArchiveFilter));
 });

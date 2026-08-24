@@ -1,4 +1,32 @@
-/* Accessibility: theme, color-vision modes, font scale */
+/* Accessibility: theme, color-vision modes, font scale, skip link, focus */
+
+.skip-link {
+  position: absolute;
+  left: var(--space-4);
+  top: var(--space-4);
+  z-index: 1000;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-md);
+  background: var(--color-ink);
+  color: var(--color-paper);
+  text-decoration: none;
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+:where(a, button, input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
 
 html[data-font-scale="100"] {
   font-size: 100%;

@@ -435,7 +435,13 @@ function renderThemeRadar(
     <polygon points="${valuePts.join(" ")}" fill="rgba(44,95,74,.28)" stroke="#2c5f4a" stroke-width="2"/>
     ${labelsSvg.join("")}
   `;
-  if (caption) caption.textContent = focusText || emptyText;
+  if (caption) {
+    caption.textContent = focusText || emptyText;
+    const summary = (caption.textContent || "").trim();
+    svg.setAttribute("role", "img");
+    if (summary) svg.setAttribute("aria-label", summary);
+    else svg.removeAttribute("aria-label");
+  }
 }
 
 function archiveHit(result: GistResult, fpBest: number): boolean {

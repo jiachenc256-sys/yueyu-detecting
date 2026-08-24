@@ -1,160 +1,142 @@
 import { onLocaleChange, t, tf } from "./i18n.js";
-
 const SCENES = ["", "greet", "buy", "ask", "family", "weather", "theatre", "daily"];
-
 let chars = [];
 let phrases = [];
 let archiveByChar = {};
 let tradToHans = {};
 let audioHans = new Set();
 let activeScene = "";
-
 function audioUrlFor(han) {
-  return `assets/learn/ziyin-audio/shengzhou/${encodeURIComponent(han)}.m4a`;
+    return `assets/learn/ziyin-audio/shengzhou/${encodeURIComponent(han)}.m4a`;
 }
-
 function normalize(s) {
-  return s.trim().toLowerCase();
+    return s.trim().toLowerCase();
 }
-
 /** Tone-insensitive pinyin: strip marks + trailing 1–5. */
 function stripPinyin(s) {
-  return normalize(s)
-    .normalize("NFD")
-    .replace(/\p{M}/gu, "")
-    .replace(/ü/g, "v")
-    .replace(/[1-5]/g, "");
+    return normalize(s)
+        .normalize("NFD")
+        .replace(/\p{M}/gu, "")
+        .replace(/ü/g, "v")
+        .replace(/[1-5]/g, "");
 }
-
 function queryVariants(q) {
-  const raw = q.trim();
-  if (!raw) return [];
-  const out = new Set([raw, normalize(raw), stripPinyin(raw)]);
-  let hans = "";
-  for (const ch of raw) {
-    hans += tradToHans[ch] ?? ch;
-  }
-  if (hans !== raw) {
-    out.add(hans);
-    out.add(normalize(hans));
-    out.add(stripPinyin(hans));
-  }
-  return [...out].filter(Boolean);
+    const raw = q.trim();
+    if (!raw)
+        return [];
+    const out = new Set([raw, normalize(raw), stripPinyin(raw)]);
+    let hans = "";
+    for (const ch of raw) {
+        hans += tradToHans[ch] ?? ch;
+    }
+    if (hans !== raw) {
+        out.add(hans);
+        out.add(normalize(hans));
+        out.add(stripPinyin(hans));
+    }
+    return [...out].filter(Boolean);
 }
-
 function matchChar(item, q) {
-  if (!q) return item.level !== undefined && item.level <= 4;
-  const variants = queryVariants(q);
-  const pin = stripPinyin(item.pinyin ?? "");
-  return variants.some(
-    (v) =>
-      item.han.includes(v) ||
-      pin.includes(stripPinyin(v)) ||
-      normalize(item.tag ?? "").includes(normalize(v)) ||
-      normalize(item.shangyu ?? "").includes(normalize(v)) ||
-      normalize(item.zhuji ?? "").includes(normalize(v)) ||
-      normalize(item.shengzhou ?? "").includes(normalize(v)),
-  );
+    if (!q)
+        return item.level !== undefined && item.level <= 4;
+    const variants = queryVariants(q);
+    const pin = stripPinyin(item.pinyin ?? "");
+    return variants.some((v) => item.han.includes(v) ||
+        pin.includes(stripPinyin(v)) ||
+        normalize(item.tag ?? "").includes(normalize(v)) ||
+        normalize(item.shangyu ?? "").includes(normalize(v)) ||
+        normalize(item.zhuji ?? "").includes(normalize(v)) ||
+        normalize(item.shengzhou ?? "").includes(normalize(v)));
 }
-
 function matchPhrase(item, q) {
-  if (!q) return true;
-  const variants = queryVariants(q);
-  return variants.some(
-    (v) =>
-      item.zh.includes(v) ||
-      normalize(item.en).includes(normalize(v)) ||
-      normalize(item.scene ?? "").includes(normalize(v)) ||
-      normalize(item.note ?? "").includes(normalize(v)) ||
-      (item.chars ?? []).some((c) => c.includes(v) || (tradToHans[v] && c.includes(tradToHans[v]))),
-  );
+    if (!q)
+        return true;
+    const variants = queryVariants(q);
+    return variants.some((v) => item.zh.includes(v) ||
+        normalize(item.en).includes(normalize(v)) ||
+        normalize(item.scene ?? "").includes(normalize(v)) ||
+        normalize(item.note ?? "").includes(normalize(v)) ||
+        (item.chars ?? []).some((c) => c.includes(v) || (tradToHans[v] && c.includes(tradToHans[v]))));
 }
-
 function relatedPhrases(han) {
-  return phrases.filter((p) => (p.chars ?? []).includes(han) || p.zh.includes(han)).slice(0, 3);
+    return phrases.filter((p) => (p.chars ?? []).includes(han) || p.zh.includes(han)).slice(0, 3);
 }
-
 function archiveHits(han) {
-  return (archiveByChar[han] ?? []).slice(0, 5);
+    return (archiveByChar[han] ?? []).slice(0, 5);
 }
-
 function escapeHtml(s) {
-  return s
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
+    return s
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
 }
-
 function sceneLabel(scene) {
-  const key = `dict.scene.${scene}`;
-  const labeled = t(key);
-  return labeled === key ? scene : labeled;
+    const key = `dict.scene.${scene}`;
+    const labeled = t(key);
+    return labeled === key ? scene : labeled;
 }
-
 function renderSceneChips() {
-  const root = document.getElementById("dict-scene-filters");
-  if (!root) return;
-  root.innerHTML = "";
-  for (const scene of SCENES) {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "dict-scene-chip";
-    btn.dataset.dictScene = scene;
-    btn.setAttribute("aria-pressed", scene === activeScene ? "true" : "false");
-    btn.textContent = scene ? sceneLabel(scene) : t("dict.sceneAll");
-    btn.addEventListener("click", () => {
-      activeScene = scene;
-      renderSceneChips();
-      applyQuery();
-    });
-    root.append(btn);
-  }
+    const root = document.getElementById("dict-scene-filters");
+    if (!root)
+        return;
+    root.innerHTML = "";
+    for (const scene of SCENES) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "dict-scene-chip";
+        btn.dataset.dictScene = scene;
+        btn.setAttribute("aria-pressed", scene === activeScene ? "true" : "false");
+        btn.textContent = scene ? sceneLabel(scene) : t("dict.sceneAll");
+        btn.addEventListener("click", () => {
+            activeScene = scene;
+            renderSceneChips();
+            applyQuery();
+        });
+        root.append(btn);
+    }
 }
-
 function renderChars(list) {
-  const root = document.getElementById("dict-chars");
-  if (!root) return;
-  root.innerHTML = "";
-  const limited = list.slice(0, 40);
-  if (!limited.length) {
-    root.innerHTML = `<p class="dict-empty">${t("dict.emptyChars")}</p>`;
-    return;
-  }
-  for (const item of limited) {
-    const card = document.createElement("article");
-    card.className = "dict-card";
-    const related = relatedPhrases(item.han);
-    const hits = archiveHits(item.han);
-    const hasAudio = audioHans.has(item.han);
-    const relatedHtml = related.length
-      ? `<div class="dict-card__related">
+    const root = document.getElementById("dict-chars");
+    if (!root)
+        return;
+    root.innerHTML = "";
+    const limited = list.slice(0, 40);
+    if (!limited.length) {
+        root.innerHTML = `<p class="dict-empty">${t("dict.emptyChars")}</p>`;
+        return;
+    }
+    for (const item of limited) {
+        const card = document.createElement("article");
+        card.className = "dict-card";
+        const related = relatedPhrases(item.han);
+        const hits = archiveHits(item.han);
+        const hasAudio = audioHans.has(item.han);
+        const relatedHtml = related.length
+            ? `<div class="dict-card__related">
           <p class="dict-card__related-label">${t("dict.relatedPhrases")} · ${tf("dict.phraseCount", { n: related.length })}</p>
           <ul>${related
-            .map(
-              (p) =>
-                `<li><button type="button" class="dict-link" data-dict-fill="${escapeHtml(p.zh)}">${escapeHtml(p.zh)}</button> <span class="dict-card__en-inline">${escapeHtml(p.en)}</span></li>`,
-            )
-            .join("")}</ul>
+                .map((p) => `<li><button type="button" class="dict-link" data-dict-fill="${escapeHtml(p.zh)}">${escapeHtml(p.zh)}</button> <span class="dict-card__en-inline">${escapeHtml(p.en)}</span></li>`)
+                .join("")}</ul>
         </div>`
-      : "";
-    const archiveHtml = hits.length
-      ? `<div class="dict-card__archive">
+            : "";
+        const archiveHtml = hits.length
+            ? `<div class="dict-card__archive">
           <p class="dict-card__related-label">${t("dict.archiveExamples")} · ${tf("dict.archiveCount", { n: hits.length })}</p>
           <ul>${hits
-            .map((h) => {
-              const href = `pieces/${encodeURIComponent(h.pieceId)}.html#cue-${encodeURIComponent(String(h.cueId))}`;
-              const label = escapeHtml(h.title || h.pieceId);
-              const snip = escapeHtml(h.snippet || "");
-              return `<li><a class="dict-link" href="${href}">${label}</a>${snip ? `<span class="dict-card__snip">「${snip}」</span>` : ""}</li>`;
+                .map((h) => {
+                const href = `pieces/${encodeURIComponent(h.pieceId)}.html#cue-${encodeURIComponent(String(h.cueId))}`;
+                const label = escapeHtml(h.title || h.pieceId);
+                const snip = escapeHtml(h.snippet || "");
+                return `<li><a class="dict-link" href="${href}">${label}</a>${snip ? `<span class="dict-card__snip">「${snip}」</span>` : ""}</li>`;
             })
-            .join("")}</ul>
+                .join("")}</ul>
         </div>`
-      : "";
-    const playBtn = hasAudio
-      ? `<button type="button" class="speak-btn dict-card__play" data-dict-audio="${audioUrlFor(item.han)}">${t("dict.playShengzhou")}</button>`
-      : `<button type="button" class="speak-btn dict-card__play" disabled title="${escapeHtml(t("dict.audioMissing"))}">${t("dict.audioMissing")}</button>`;
-    card.innerHTML = `
+            : "";
+        const playBtn = hasAudio
+            ? `<button type="button" class="speak-btn dict-card__play" data-dict-audio="${audioUrlFor(item.han)}">${t("dict.playShengzhou")}</button>`
+            : `<button type="button" class="speak-btn dict-card__play" disabled title="${escapeHtml(t("dict.audioMissing"))}">${t("dict.audioMissing")}</button>`;
+        card.innerHTML = `
       <div class="dict-card__head">
         <span class="dict-card__han">${escapeHtml(item.han)}</span>
         <span class="dict-card__meta">${escapeHtml(item.pinyin ?? "")} · L${item.level ?? "—"}</span>
@@ -168,43 +150,45 @@ function renderChars(list) {
       ${relatedHtml}
       ${archiveHtml}
     `;
-    root.append(card);
-  }
-  root.querySelectorAll("[data-dict-audio]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const url = btn.dataset.dictAudio;
-      if (!url) return;
-      const audio = new Audio(url);
-      void audio.play().catch(() => {
-        const status = document.getElementById("dict-status");
-        if (status) status.textContent = t("dict.audioFail");
-      });
+        root.append(card);
+    }
+    root.querySelectorAll("[data-dict-audio]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const url = btn.dataset.dictAudio;
+            if (!url)
+                return;
+            const audio = new Audio(url);
+            void audio.play().catch(() => {
+                const status = document.getElementById("dict-status");
+                if (status)
+                    status.textContent = t("dict.audioFail");
+            });
+        });
     });
-  });
-  bindFillLinks(root);
+    bindFillLinks(root);
 }
-
 function renderPhrases(list) {
-  const root = document.getElementById("dict-phrases");
-  if (!root) return;
-  root.innerHTML = "";
-  const limited = list.slice(0, 40);
-  if (!limited.length) {
-    root.innerHTML = `<p class="dict-empty">${t("dict.emptyPhrases")}</p>`;
-    return;
-  }
-  for (const item of limited) {
-    const card = document.createElement("article");
-    card.className = "dict-card dict-card--phrase";
-    const scene = item.scene
-      ? `<span class="dict-card__scene">${escapeHtml(sceneLabel(item.scene))}</span>`
-      : "";
-    const note = item.note ? `<p class="dict-card__note">${escapeHtml(item.note)}</p>` : "";
-    const charLinks = (item.chars ?? [])
-      .slice(0, 8)
-      .map((c) => `<button type="button" class="dict-link dict-link--char" data-dict-fill="${escapeHtml(c)}">${escapeHtml(c)}</button>`)
-      .join(" ");
-    card.innerHTML = `
+    const root = document.getElementById("dict-phrases");
+    if (!root)
+        return;
+    root.innerHTML = "";
+    const limited = list.slice(0, 40);
+    if (!limited.length) {
+        root.innerHTML = `<p class="dict-empty">${t("dict.emptyPhrases")}</p>`;
+        return;
+    }
+    for (const item of limited) {
+        const card = document.createElement("article");
+        card.className = "dict-card dict-card--phrase";
+        const scene = item.scene
+            ? `<span class="dict-card__scene">${escapeHtml(sceneLabel(item.scene))}</span>`
+            : "";
+        const note = item.note ? `<p class="dict-card__note">${escapeHtml(item.note)}</p>` : "";
+        const charLinks = (item.chars ?? [])
+            .slice(0, 8)
+            .map((c) => `<button type="button" class="dict-link dict-link--char" data-dict-fill="${escapeHtml(c)}">${escapeHtml(c)}</button>`)
+            .join(" ");
+        card.innerHTML = `
       <div class="dict-card__head">
         <span class="dict-card__han dict-card__han--phrase">${escapeHtml(item.zh)}</span>
         <span class="dict-card__draft">${t("dict.phraseDraft")}</span>
@@ -214,78 +198,80 @@ function renderPhrases(list) {
       ${note}
       ${charLinks ? `<p class="dict-card__chars">${charLinks}</p>` : ""}
     `;
-    root.append(card);
-  }
-  bindFillLinks(root);
+        root.append(card);
+    }
+    bindFillLinks(root);
 }
-
 function bindFillLinks(root) {
-  root.querySelectorAll("[data-dict-fill]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const input = document.getElementById("dict-query");
-      if (!input) return;
-      input.value = btn.dataset.dictFill ?? "";
-      applyQuery();
-      input.focus();
+    root.querySelectorAll("[data-dict-fill]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const input = document.getElementById("dict-query");
+            if (!input)
+                return;
+            input.value = btn.dataset.dictFill ?? "";
+            applyQuery();
+            input.focus();
+        });
     });
-  });
 }
-
 function applyQuery() {
-  const input = document.getElementById("dict-query");
-  const q = input?.value ?? "";
-  const status = document.getElementById("dict-status");
-  const charHits = chars.filter((c) => (c.level ?? 99) <= 4 && matchChar(c, q));
-  const phraseHits = phrases.filter((p) => {
-    if (activeScene && p.scene !== activeScene) return false;
-    return matchPhrase(p, q);
-  });
-  renderChars(charHits);
-  renderPhrases(phraseHits);
-  if (status) {
-    status.textContent = tf("dict.status", { chars: charHits.length, phrases: phraseHits.length });
-  }
+    const input = document.getElementById("dict-query");
+    const q = input?.value ?? "";
+    const status = document.getElementById("dict-status");
+    const charHits = chars.filter((c) => (c.level ?? 99) <= 4 && matchChar(c, q));
+    const phraseHits = phrases.filter((p) => {
+        if (activeScene && p.scene !== activeScene)
+            return false;
+        return matchPhrase(p, q);
+    });
+    renderChars(charHits);
+    renderPhrases(phraseHits);
+    if (status) {
+        status.textContent = tf("dict.status", { chars: charHits.length, phrases: phraseHits.length });
+    }
 }
-
 async function boot() {
-  const [ziyinRes, phraseRes, archiveRes, tradRes, audioRes] = await Promise.all([
-    fetch("data/learn/ziyin.json"),
-    fetch("data/dictionary/phrases.json"),
-    fetch("data/dictionary/char-archive-index.json"),
-    fetch("data/dictionary/trad-to-hans.json"),
-    fetch("data/dictionary/shengzhou-audio-hans.json"),
-  ]);
-  if (!ziyinRes.ok) throw new Error(`ziyin HTTP ${ziyinRes.status}`);
-  if (!phraseRes.ok) throw new Error(`phrases HTTP ${phraseRes.status}`);
-  const ziyin = await ziyinRes.json();
-  const phraseDoc = await phraseRes.json();
-  chars = ziyin.items ?? [];
-  phrases = phraseDoc.items ?? [];
-  if (archiveRes.ok) {
-    const archiveDoc = await archiveRes.json();
-    archiveByChar = archiveDoc.chars ?? {};
-  }
-  if (tradRes.ok) {
-    const tradDoc = await tradRes.json();
-    tradToHans = tradDoc.map ?? {};
-  }
-  if (audioRes.ok) {
-    const audioDoc = await audioRes.json();
-    audioHans = new Set(audioDoc.hans ?? []);
-  }
-  renderSceneChips();
-  applyQuery();
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("dict-query");
-  input?.addEventListener("input", () => applyQuery());
-  onLocaleChange(() => {
+    const [ziyinRes, phraseRes, archiveRes, tradRes, audioRes] = await Promise.all([
+        fetch("data/learn/ziyin.json"),
+        fetch("data/dictionary/phrases.json"),
+        fetch("data/dictionary/char-archive-index.json"),
+        fetch("data/dictionary/trad-to-hans.json"),
+        fetch("data/dictionary/shengzhou-audio-hans.json"),
+    ]);
+    if (!ziyinRes.ok)
+        throw new Error(`ziyin HTTP ${ziyinRes.status}`);
+    if (!phraseRes.ok)
+        throw new Error(`phrases HTTP ${phraseRes.status}`);
+    const ziyin = (await ziyinRes.json());
+    const phraseDoc = (await phraseRes.json());
+    chars = ziyin.items ?? [];
+    phrases = phraseDoc.items ?? [];
+    if (archiveRes.ok) {
+        const archiveDoc = (await archiveRes.json());
+        archiveByChar = archiveDoc.chars ?? {};
+    }
+    if (tradRes.ok) {
+        const tradDoc = (await tradRes.json());
+        tradToHans = tradDoc.map ?? {};
+    }
+    if (audioRes.ok) {
+        const audioDoc = (await audioRes.json());
+        audioHans = new Set(audioDoc.hans ?? []);
+    }
     renderSceneChips();
     applyQuery();
-  });
-  void boot().catch((error) => {
-    const status = document.getElementById("dict-status");
-    if (status) status.textContent = error instanceof Error ? error.message : String(error);
-  });
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("dict-query");
+    input?.addEventListener("input", () => applyQuery());
+    onLocaleChange(() => {
+        renderSceneChips();
+        applyQuery();
+    });
+    void boot().catch((error) => {
+        const status = document.getElementById("dict-status");
+        if (status)
+            status.textContent = error instanceof Error ? error.message : String(error);
+    });
 });
+//# sourceMappingURL=dictionary.js.map

@@ -1219,6 +1219,10 @@ body {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.95rem 1.35rem;
   border-radius: var(--radius-sm);
   cursor: pointer;

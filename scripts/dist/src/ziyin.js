@@ -118,6 +118,7 @@ async function initZiyin() {
         localStorage.setItem(PROGRESS_KEY, JSON.stringify(state));
     }
     let progress = loadProgress();
+    /** L5 UI = flash of L1–4 (Shengzhou audio). Orphan JSON `level:5` rows are ignored until recorded. */
     function reviewBaseItems() {
         return allItems.filter((it) => {
             const lv = it.level ?? 1;
@@ -348,7 +349,7 @@ async function initZiyin() {
         }
         const url = resolveAudioUrl(item, "shengzhou");
         if (!url) {
-            setAudioHint(isFlashMode() ? "flashHint" : "hint");
+            setAudioHint("missing");
             return;
         }
         const ok = await audioExists(url);
@@ -359,6 +360,8 @@ async function initZiyin() {
             btn.dataset.audioUrl = ok ? url : "";
         }
         if (!ok)
+            setAudioHint("missing");
+        else
             setAudioHint(isFlashMode() ? "flashHint" : "hint");
     }
     function paint() {
@@ -383,10 +386,10 @@ async function initZiyin() {
             glossEl.textContent = gloss || "—";
         if (glossRow)
             glossRow.hidden = !gloss;
-        const credit = item.audio?.speaker?.trim();
+        // No on-site speaker credit (product choice).
         if (speakerEl) {
-            speakerEl.textContent = credit || "";
-            speakerEl.hidden = !credit;
+            speakerEl.textContent = "";
+            speakerEl.hidden = true;
         }
         tagEl.textContent = item.tag?.trim() || levelLabel(level);
         tagEl.hidden = false;
@@ -397,7 +400,6 @@ async function initZiyin() {
         if (shuffleBtn)
             shuffleBtn.disabled = pool.length <= 1;
         void refreshListenButtons(item);
-        setAudioHint(isFlashMode() ? "flashHint" : "hint");
     }
     function setLevel(next, resetIndex = true) {
         level = next;
@@ -445,6 +447,13 @@ async function initZiyin() {
         syncModeUi();
         paint();
     }
+    /** Deep-link / Pathways helper. */
+    function openZiyinLevel(lv) {
+        openLearnSection("fayin");
+        setLevel(lv, true);
+        stage.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    window.__yueyuOpenZiyinLevel = openZiyinLevel;
     async function playShengzhou(fromBtn) {
         const item = pool[index];
         if (!item)

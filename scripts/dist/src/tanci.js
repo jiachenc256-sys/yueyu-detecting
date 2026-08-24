@@ -18,6 +18,10 @@ const recognizeBtn = document.getElementById("tanci-recognize");
 const exportBtn = document.getElementById("tanci-export");
 const clearBtn = document.getElementById("tanci-clear");
 const statusEl = document.getElementById("tanci-status");
+const errorEl = document.getElementById("tanci-error");
+const errorBodyEl = document.getElementById("tanci-error-body");
+const errorRetryBtn = document.getElementById("tanci-error-retry");
+const errorDismissBtn = document.getElementById("tanci-error-dismiss");
 const textEl = document.getElementById("tanci-text");
 const previewList = document.getElementById("tanci-preview-list");
 const zhHansEl = document.getElementById("tanci-zh-hans");
@@ -31,6 +35,36 @@ let translateTimer = null;
 function setStatus(text) {
     if (statusEl)
         statusEl.textContent = text;
+}
+function hideError() {
+    if (errorEl)
+        errorEl.hidden = true;
+    if (errorBodyEl)
+        errorBodyEl.textContent = "";
+}
+function showError(kind, detail = "") {
+    if (!errorEl)
+        return;
+    errorEl.hidden = false;
+    const titleEl = document.getElementById("tanci-error-title");
+    if (titleEl) {
+        titleEl.dataset.i18n = kind === "offline" ? "tanci.error.offlineTitle" : kind === "network" ? "tanci.error.networkTitle" : "tanci.error.title";
+        titleEl.textContent = t(titleEl.dataset.i18n);
+    }
+    const bodyKey = kind === "offline" ? "tanci.error.offlineBody" : kind === "network" ? "tanci.error.networkBody" : "tanci.error.failBody";
+    if (errorBodyEl) {
+        errorBodyEl.textContent = detail ? `${t(bodyKey)} ${detail}` : t(bodyKey);
+    }
+}
+function classifyOcrError(err) {
+    const message = err instanceof Error ? err.message : String(err);
+    if (typeof navigator !== "undefined" && navigator.onLine === false) {
+        return { kind: "offline", detail: "" };
+    }
+    if (/Failed to fetch|NetworkError|Load failed|fetch/i.test(message)) {
+        return { kind: "network", detail: message };
+    }
+    return { kind: "fail", detail: message };
 }
 function normalizeApiBase(raw) {
     return raw.trim().replace(/\/+$/, "");
@@ -217,10 +251,14 @@ async function recognizeImages() {
         return;
     busy = true;
     refreshActionState();
+    hideError();
     lastPages = [];
     const textParts = [];
     const multi = selectedFiles.length > 1;
     try {
+        if (typeof navigator !== "undefined" && navigator.onLine === false) {
+            throw new Error("offline");
+        }
         for (let i = 0; i < selectedFiles.length; i++) {
             const file = selectedFiles[i];
             if (!file)
@@ -250,13 +288,19 @@ async function recognizeImages() {
         await fillTranslations(joined);
     }
     catch (err) {
+        const classified = messageIsOffline(err) ? { kind: "offline", detail: "" } : classifyOcrError(err);
         const message = err instanceof Error ? err.message : String(err);
-        setStatus(`${t("tanci.status.fail")}: ${message}`);
+        setStatus(`${t("tanci.status.fail")}: ${classified.kind === "offline" ? t("tanci.error.offlineTitle") : message}`);
+        showError(classified.kind, classified.detail);
     }
     finally {
         busy = false;
         refreshActionState();
     }
+}
+function messageIsOffline(err) {
+    const message = err instanceof Error ? err.message : String(err);
+    return message === "offline" || (typeof navigator !== "undefined" && navigator.onLine === false);
 }
 function buildYueyuExportPayload() {
     const fullText = textEl?.value.trim() ?? "";
@@ -330,6 +374,7 @@ function clearAll() {
     clearTranslations();
     revokePreviews();
     renderPreviews();
+    hideError();
     setStatus(t("tanci.ready"));
     refreshActionState();
 }
@@ -348,6 +393,11 @@ async function initTanciPanel() {
     recognizeBtn.addEventListener("click", () => {
         void recognizeImages();
     });
+    errorRetryBtn?.addEventListener("click", () => {
+        hideError();
+        void recognizeImages();
+    });
+    errorDismissBtn?.addEventListener("click", () => hideError());
     exportBtn?.addEventListener("click", exportYueyuJson);
     clearBtn?.addEventListener("click", clearAll);
     textEl.addEventListener("input", () => {

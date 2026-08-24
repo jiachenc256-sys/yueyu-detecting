@@ -169,6 +169,7 @@ async function initZiyin(): Promise<void> {
 
   let progress = loadProgress();
 
+  /** L5 UI = flash of L1–4 (Shengzhou audio). Orphan JSON `level:5` rows are ignored until recorded. */
   function reviewBaseItems(): ZiyinItem[] {
     return allItems.filter((it) => {
       const lv = it.level ?? 1;
@@ -415,7 +416,7 @@ async function initZiyin(): Promise<void> {
     }
     const url = resolveAudioUrl(item, "shengzhou");
     if (!url) {
-      setAudioHint(isFlashMode() ? "flashHint" : "hint");
+      setAudioHint("missing");
       return;
     }
     const ok = await audioExists(url);
@@ -424,7 +425,8 @@ async function initZiyin(): Promise<void> {
       btn.disabled = !ok;
       btn.dataset.audioUrl = ok ? url : "";
     }
-    if (!ok) setAudioHint(isFlashMode() ? "flashHint" : "hint");
+    if (!ok) setAudioHint("missing");
+    else setAudioHint(isFlashMode() ? "flashHint" : "hint");
   }
 
   function paint(): void {
@@ -450,10 +452,10 @@ async function initZiyin(): Promise<void> {
     const gloss = item.gloss?.trim();
     if (glossEl) glossEl.textContent = gloss || "—";
     if (glossRow) glossRow.hidden = !gloss;
-    const credit = item.audio?.speaker?.trim();
+    // No on-site speaker credit (product choice).
     if (speakerEl) {
-      speakerEl.textContent = credit || "";
-      speakerEl.hidden = !credit;
+      speakerEl.textContent = "";
+      speakerEl.hidden = true;
     }
     tagEl.textContent = item.tag?.trim() || levelLabel(level);
     tagEl.hidden = false;
@@ -463,7 +465,6 @@ async function initZiyin(): Promise<void> {
     randomBtn.disabled = pool.length <= 1;
     if (shuffleBtn) shuffleBtn.disabled = pool.length <= 1;
     void refreshListenButtons(item);
-    setAudioHint(isFlashMode() ? "flashHint" : "hint");
   }
 
   function setLevel(next: number, resetIndex = true): void {
@@ -503,6 +504,14 @@ async function initZiyin(): Promise<void> {
     syncModeUi();
     paint();
   }
+
+  /** Deep-link / Pathways helper. */
+  function openZiyinLevel(lv: number): void {
+    openLearnSection("fayin");
+    setLevel(lv, true);
+    stage!.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  (window as Window & { __yueyuOpenZiyinLevel?: (lv: number) => void }).__yueyuOpenZiyinLevel = openZiyinLevel;
 
   async function playShengzhou(fromBtn?: HTMLButtonElement): Promise<void> {
     const item = pool[index];
