@@ -251,6 +251,53 @@ function openSpeakSample(sampleId: string): void {
   });
 }
 
+function initFeedbackForm(): void {
+  const form = document.getElementById("feedback-form") as HTMLFormElement | null;
+  const message = document.getElementById("feedback-message") as HTMLTextAreaElement | null;
+  const submit = document.getElementById("feedback-submit") as HTMLButtonElement | null;
+  const categoryInput = document.getElementById("feedback-category") as HTMLInputElement | null;
+  const subjectInput = document.getElementById("feedback-subject") as HTMLInputElement | null;
+  const status = document.getElementById("feedback-status");
+  if (!form || !message || !submit) return;
+
+  const kindButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-feedback-kind]"));
+
+  const syncSubmit = (): void => {
+    submit.disabled = message.value.trim().length === 0;
+  };
+
+  const setKind = (kind: string): void => {
+    kindButtons.forEach((btn) => {
+      btn.setAttribute("aria-pressed", btn.dataset.feedbackKind === kind ? "true" : "false");
+    });
+    if (categoryInput) categoryInput.value = kind;
+    if (subjectInput) subjectInput.value = `Yueyu Detecting — feedback (${kind})`;
+  };
+
+  kindButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const kind = btn.dataset.feedbackKind;
+      if (!kind) return;
+      setKind(kind);
+    });
+  });
+
+  message.addEventListener("input", syncSubmit);
+  syncSubmit();
+
+  form.addEventListener("submit", () => {
+    if (status) {
+      status.hidden = false;
+      status.textContent = t("feedback.sending");
+    }
+  });
+
+  onLocaleChange(() => {
+    const active = kindButtons.find((b) => b.getAttribute("aria-pressed") === "true");
+    if (active?.dataset.feedbackKind) setKind(active.dataset.feedbackKind);
+  });
+}
+
 function initAboutDeepLinks(): void {
   document.querySelectorAll<HTMLAnchorElement>("[data-footer-about]").forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -266,13 +313,14 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
   const hash = window.location.hash.replace(/^#/, "");
   if (!hash) return;
 
-  if (hash === "about-contact" || hash === "about-apply") {
+  if (hash === "about-contact" || hash === "about-apply" || hash === "about-feedback") {
     document.querySelector<HTMLElement>(`.site-nav [data-panel-target="about"]`)?.click();
-    showAboutSection("contact");
+    const section = hash === "about-feedback" ? "feedback" : "contact";
+    showAboutSection(section);
     history.replaceState(null, "", `#${hash}`);
-    if (hash === "about-apply") {
+    if (hash === "about-apply" || hash === "about-feedback") {
       requestAnimationFrame(() => {
-        document.getElementById("about-apply")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
       });
     }
     return;
@@ -325,6 +373,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSideNavigation("data-about-target", "data-about-section", ".plan-nav__link[data-about-target]");
   initSideNavigation("data-learn-target", "data-learn-section", ".learn-nav__link[data-learn-target]");
   initAboutDeepLinks();
+  initFeedbackForm();
   const applyArchiveFilter = initArchiveFilters();
 
   applyHashRoute(applyArchiveFilter);
