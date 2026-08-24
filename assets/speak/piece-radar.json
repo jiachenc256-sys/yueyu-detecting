@@ -702,6 +702,214 @@
         "id": "exam",
         "label": "转机"
       }
+    ],
+    "biyu-zan-xinfang": [
+      {
+        "id": "grief",
+        "label": "冷清"
+      },
+      {
+        "id": "longing",
+        "label": "怨悔"
+      },
+      {
+        "id": "marriage",
+        "label": "空房"
+      },
+      {
+        "id": "oath",
+        "label": "痴情"
+      },
+      {
+        "id": "farewell",
+        "label": "孤守"
+      },
+      {
+        "id": "exam",
+        "label": "夜思"
+      }
+    ],
+    "he-wenxiu-suanming": [
+      {
+        "id": "exam",
+        "label": "算命"
+      },
+      {
+        "id": "oath",
+        "label": "机锋"
+      },
+      {
+        "id": "longing",
+        "label": "疑难"
+      },
+      {
+        "id": "grief",
+        "label": "家事"
+      },
+      {
+        "id": "marriage",
+        "label": "八字"
+      },
+      {
+        "id": "farewell",
+        "label": "走方"
+      }
+    ],
+    "hongloumeng-tianxia": [
+      {
+        "id": "longing",
+        "label": "初见"
+      },
+      {
+        "id": "oath",
+        "label": "倾心"
+      },
+      {
+        "id": "marriage",
+        "label": "林妹妹"
+      },
+      {
+        "id": "grief",
+        "label": "怕冲撞"
+      },
+      {
+        "id": "farewell",
+        "label": "请教"
+      },
+      {
+        "id": "exam",
+        "label": "灵芝草"
+      }
+    ],
+    "longmen-kezhai": [
+      {
+        "id": "oath",
+        "label": "忠义"
+      },
+      {
+        "id": "grief",
+        "label": "危机"
+      },
+      {
+        "id": "exam",
+        "label": "布阵"
+      },
+      {
+        "id": "farewell",
+        "label": "逃亡"
+      },
+      {
+        "id": "marriage",
+        "label": "人情"
+      },
+      {
+        "id": "longing",
+        "label": "暗线"
+      }
+    ],
+    "pearl-tower-gift": [
+      {
+        "id": "oath",
+        "label": "赠塔"
+      },
+      {
+        "id": "farewell",
+        "label": "嘱别"
+      },
+      {
+        "id": "exam",
+        "label": "功名"
+      },
+      {
+        "id": "marriage",
+        "label": "情义"
+      },
+      {
+        "id": "longing",
+        "label": "珍重"
+      },
+      {
+        "id": "grief",
+        "label": "离愁"
+      }
+    ],
+    "wunv-baishou-huashu": [
+      {
+        "id": "marriage",
+        "label": "同门"
+      },
+      {
+        "id": "grief",
+        "label": "冷暖"
+      },
+      {
+        "id": "oath",
+        "label": "人情"
+      },
+      {
+        "id": "longing",
+        "label": "姐妹"
+      },
+      {
+        "id": "farewell",
+        "label": "不同心"
+      },
+      {
+        "id": "exam",
+        "label": "拜寿"
+      }
+    ],
+    "xixiangji-kaohong": [
+      {
+        "id": "grief",
+        "label": "拷问"
+      },
+      {
+        "id": "oath",
+        "label": "机智"
+      },
+      {
+        "id": "longing",
+        "label": "相思"
+      },
+      {
+        "id": "marriage",
+        "label": "传书"
+      },
+      {
+        "id": "farewell",
+        "label": "从长计"
+      },
+      {
+        "id": "exam",
+        "label": "辩解"
+      }
+    ],
+    "zhuiyu-guandeng": [
+      {
+        "id": "longing",
+        "label": "观灯"
+      },
+      {
+        "id": "marriage",
+        "label": "夫妻"
+      },
+      {
+        "id": "oath",
+        "label": "双双"
+      },
+      {
+        "id": "farewell",
+        "label": "灯景"
+      },
+      {
+        "id": "grief",
+        "label": "人情"
+      },
+      {
+        "id": "exam",
+        "label": "抒情"
+      }
     ]
   }
 }

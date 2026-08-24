@@ -24,53 +24,53 @@
     },
     "bubuxinjing-1": {
       "genreZh": "清宫传奇 · 步步惊心 · 第一场",
-      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第一场",
-      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
-      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
-      "rolesZh": "宫中男女主与配角线",
-      "rolesEn": "Court leads and supporting roles",
-      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
-      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · Act 1",
+      "registerZh": "入宫开局：名分未稳，试探多过直说，称呼小心。",
+      "registerEn": "Palace entry: status unsettled; probing more than saying; careful address.",
+      "rolesZh": "穿越女主 · 皇子线初遇",
+      "rolesEn": "Time-cross heroine · early prince line",
+      "listenZh": "抓初见称呼与试探句；场景未稳时 CER 偏高正常。",
+      "listenEn": "Track first-meeting address and probing lines; high CER before scene lock is normal."
     },
     "bubuxinjing-2": {
       "genreZh": "清宫传奇 · 步步惊心 · 第二场",
-      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第二场",
-      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
-      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
-      "rolesZh": "宫中男女主与配角线",
-      "rolesEn": "Court leads and supporting roles",
-      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
-      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · Act 2",
+      "registerZh": "人情升温：私语增多，情思与规矩并行。",
+      "registerEn": "Warming ties: more private speech; feeling runs beside court rules.",
+      "rolesZh": "女主 · 四爷一线",
+      "rolesEn": "Heroine · Fourth Prince line",
+      "listenZh": "听私语节奏与忌讳词；字滑时靠场景卡。",
+      "listenEn": "Follow private-speech rhythm and taboo words; lean on scene cards when ASR slips."
     },
     "bubuxinjing-3": {
       "genreZh": "清宫传奇 · 步步惊心 · 第三场",
-      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第三场",
-      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
-      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
-      "rolesZh": "宫中男女主与配角线",
-      "rolesEn": "Court leads and supporting roles",
-      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
-      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · Act 3",
+      "registerZh": "风险抬头：旁听与传话变多，机锋加重。",
+      "registerEn": "Risk rises: more eavesdropping and relayed speech; sharper repartee.",
+      "rolesZh": "女主 · 宫人 · 皇子对照",
+      "rolesEn": "Heroine · palace staff · princes in contrast",
+      "listenZh": "跟传话回合与等级称呼；勿被念白速度带偏。",
+      "listenEn": "Track relayed turns and ranked address; don’t chase speech speed alone."
     },
     "bubuxinjing-4a": {
       "genreZh": "清宫传奇 · 步步惊心 · 第四场上",
-      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第四场上",
-      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
-      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
-      "rolesZh": "宫中男女主与配角线",
-      "rolesEn": "Court leads and supporting roles",
-      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
-      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · Act 4a",
+      "registerZh": "抉择前奏：情义与自保拉扯，唱念交替更密。",
+      "registerEn": "Before the choice: devotion vs self-preservation; denser song–speech alternation.",
+      "rolesZh": "女主与关键皇子线",
+      "rolesEn": "Heroine and key prince lines",
+      "listenZh": "先定「谁在劝、谁在压」，再对档案句。",
+      "listenEn": "Fix who urges vs who pressures first, then archive lines."
     },
     "bubuxinjing-4b5a": {
       "genreZh": "清宫传奇 · 步步惊心 · 第四场下+第五场上",
-      "genreEn": "Qing-court romance · Bu Bu Jing Xin · 第四场下+第五场上",
-      "registerZh": "宫斗与情思：念白机锋与唱段抒情并置，称呼等级分明。",
-      "registerEn": "Court intrigue and longing: witty speech beside lyric song; ranked address terms.",
-      "rolesZh": "宫中男女主与配角线",
-      "rolesEn": "Court leads and supporting roles",
-      "listenZh": "听名分称呼与风险暗示；字级不稳时靠场景卡。",
-      "listenEn": "Track ranked address and risk hints; lean on scene cards when ASR wobbles."
+      "genreEn": "Qing-court romance · Bu Bu Jing Xin · Act 4b–5a",
+      "registerZh": "冲突加压：后果临近，语气更决断，套语减少。",
+      "registerEn": "Pressure peaks: consequences near; tone firmer; fewer stock formulas.",
+      "rolesZh": "多方对峙线",
+      "rolesEn": "Multi-party confrontation line",
+      "listenZh": "听决断句与称呼突变；长窗更适合跟读。",
+      "listenEn": "Listen for decisive lines and sudden address shifts; long windows favor follow-along."
     },
     "chai-tou-feng": {
       "genreZh": "越剧 · 钗头凤（陆游·唐琬）",
