@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260824q5c" />
-  <link rel="stylesheet" href="styles/main.css?v=20260824q5c" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260824q5c" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260824q5c" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260824q5c" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260824q5c" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260824q5c" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260824q6" />
+  <link rel="stylesheet" href="styles/main.css?v=20260824q6" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260824q6" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260824q6" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260824q6" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260824q6" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260824q6" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -1910,6 +1910,7 @@
                 </ul>
                 <div class="plan-cta-row">
                   <button type="button" class="home-cta__btn" data-panel-target="archive">继续档案</button>
+                  <a class="home-cta__btn" href="#learn-quest">越语村闯关</a>
                   <button type="button" class="home-cta__btn" data-panel-target="tanci">打开弹词识别</button>
                 </div>
               </div>
@@ -1929,6 +1930,7 @@
                 </ul>
                 <div class="plan-cta-row">
                   <button type="button" class="home-cta__btn" data-panel-target="archive">繼續檔案</button>
+                  <a class="home-cta__btn" href="#learn-quest">越語村闖關</a>
                   <button type="button" class="home-cta__btn" data-panel-target="tanci">打開彈詞識別</button>
                 </div>
               </div>
@@ -1948,6 +1950,7 @@
                 </ul>
                 <div class="plan-cta-row">
                   <button type="button" class="home-cta__btn" data-panel-target="archive">Keep reading Archive</button>
+                  <a class="home-cta__btn" href="#learn-quest">Yueyu Village quest</a>
                   <button type="button" class="home-cta__btn" data-panel-target="tanci">Open Tanci OCR</button>
                 </div>
               </div>
@@ -2452,6 +2455,13 @@
                     <div id="ziyin-quest-bar-fill" class="ziyin-quest-bar__fill"></div>
                   </div>
                   <p id="ziyin-quest-gate-progress" class="ziyin-quest-session__progress" aria-live="polite"></p>
+                  <div id="ziyin-chunk-chrome" class="ziyin-chunk" hidden>
+                    <p id="ziyin-chunk-status" class="ziyin-chunk__status" aria-live="polite"></p>
+                    <div class="ziyin-chunk__nav">
+                      <button type="button" class="ziyin-quest__enter" id="ziyin-chunk-prev" data-i18n="learn.quest.chunkPrev">上一会话</button>
+                      <button type="button" class="ziyin-quest__enter" id="ziyin-chunk-next" data-i18n="learn.quest.chunkNext">下一会话</button>
+                    </div>
+                  </div>
                   <p id="ziyin-quest-pass" class="ziyin-quest-session__pass" hidden role="status"></p>
                   <button type="button" class="ziyin-quest__enter ziyin-quest__enter--next" id="ziyin-quest-session-next" hidden data-i18n="learn.quest.enterNext">进入下一关 →</button>
                 </div>
@@ -2492,6 +2502,13 @@
 
                 <div id="ziyin-flash" class="ziyin-flash" hidden>
                   <p id="ziyin-flash-progress" class="ziyin-flash__progress" aria-live="polite">已掌握 0 / 862</p>
+                  <div id="ziyin-chunk-chrome-classic" class="ziyin-chunk" hidden>
+                    <p id="ziyin-chunk-status-classic" class="ziyin-chunk__status" aria-live="polite"></p>
+                    <div class="ziyin-chunk__nav">
+                      <button type="button" class="ziyin-quest__enter" id="ziyin-chunk-prev-classic" data-i18n="learn.quest.chunkPrev">上一会话</button>
+                      <button type="button" class="ziyin-quest__enter" id="ziyin-chunk-next-classic" data-i18n="learn.quest.chunkNext">下一会话</button>
+                    </div>
+                  </div>
                   <div
                     id="ziyin-flash-card"
                     class="ziyin-flash__card"
@@ -3112,24 +3129,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824q5c",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824q5c",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824q5c",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824q5c",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824q5c",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824q5c",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824q5c",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824q5c",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824q5c",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824q5c"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824q6",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824q6",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824q6",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824q6",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824q6",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824q6",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824q6",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824q6",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824q6",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824q6"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260824q5c"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260824q5c"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260824q5c"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824q5c"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260824q5c"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824q5c"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260824q6"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260824q6"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260824q6"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824q6"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260824q6"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824q6"></script>
 </body>
 </html>
