@@ -613,8 +613,227 @@
   justify-content: center;
 }
 
+/* Classic / Quest mode */
+
+.ziyin-learn-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-5);
+}
+
+.ziyin-learn-mode {
+  appearance: none;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-ink-muted);
+  border-radius: 0;
+  padding: 0.45rem 1rem;
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.ziyin-learn-mode:hover {
+  border-color: var(--color-border-strong);
+  color: var(--color-ink);
+}
+
+.ziyin-learn-mode[aria-pressed="true"] {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.ziyin-quest {
+  max-width: 36rem;
+  margin: 0 0 var(--space-8);
+}
+
+.ziyin-quest__title {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+}
+
+.ziyin-quest__lead,
+.ziyin-quest__local,
+.ziyin-quest__daily {
+  margin: 0 0 var(--space-3);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-quest__master {
+  margin: 0 0 var(--space-4);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.ziyin-quest__gates {
+  list-style: none;
+  margin: 0 0 var(--space-5);
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.ziyin-quest__gate {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.ziyin-quest__gate:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.ziyin-quest__gate-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-3);
+}
+
+.ziyin-quest__gate-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.ziyin-quest__gate-status {
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+.ziyin-quest__gate-status[data-state="cleared"] {
+  color: var(--color-status-ready);
+}
+
+.ziyin-quest__gate-status[data-state="open"] {
+  color: var(--color-status-progress);
+}
+
+.ziyin-quest__gate-status[data-state="locked"] {
+  color: var(--color-ink-faint);
+}
+
+.ziyin-quest__gate-task {
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-quest__gate-meta {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.ziyin-quest__gate-bar {
+  height: 3px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.ziyin-quest__gate-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--color-accent);
+  width: 0;
+  transition: width 0.2s ease;
+}
+
+.ziyin-quest__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.ziyin-quest-session {
+  margin: 0 0 var(--space-4);
+  max-width: 28rem;
+}
+
+.ziyin-quest-back {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--color-ink-muted);
+  font: inherit;
+  font-size: var(--text-sm);
+  padding: 0;
+  margin: 0 0 var(--space-3);
+  cursor: pointer;
+  text-align: left;
+}
+
+.ziyin-quest-back:hover {
+  color: var(--color-accent);
+}
+
+.ziyin-quest-session__task {
+  margin: 0 0 var(--space-2);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-quest-bar {
+  height: 4px;
+  background: var(--color-border);
+  margin: 0 0 var(--space-2);
+  overflow: hidden;
+}
+
+.ziyin-quest-bar__fill {
+  height: 100%;
+  width: 0;
+  background: var(--color-accent);
+  transition: width 0.2s ease;
+}
+
+.ziyin-quest-session__progress {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.ziyin-quest-session__pass {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-stage--quest .ziyin-controls #ziyin-prev,
+.ziyin-stage--quest .ziyin-controls #ziyin-next,
+.ziyin-stage--quest .ziyin-controls #ziyin-random {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .ziyin-flash__inner {
+    transition: none;
+  }
+
+  .ziyin-quest__gate-bar > span,
+  .ziyin-quest-bar__fill {
     transition: none;
   }
 }

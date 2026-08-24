@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260824fb2" />
-  <link rel="stylesheet" href="styles/main.css?v=20260824fb2" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260824fb2" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260824fb2" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260824fb2" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260824fb2" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260824fb2" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260824q1" />
+  <link rel="stylesheet" href="styles/main.css?v=20260824q1" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260824q1" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260824q1" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260824q1" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260824q1" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260824q1" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -2376,16 +2376,48 @@
                 真人录音只提供嵊州话：它更贴近越剧念白，也更通行。上虞、诸暨读音仍以音标对照，仅供参考。
               </p>
 
-              <div class="ziyin-levels" role="group" aria-label="Levels" data-i18n-attr="aria-label" data-i18n="learn.ziyin.levelsLabel">
-                <button type="button" class="ziyin-level" data-ziyin-level="1" aria-pressed="true">1</button>
-                <button type="button" class="ziyin-level" data-ziyin-level="2" aria-pressed="false">2</button>
-                <button type="button" class="ziyin-level" data-ziyin-level="3" aria-pressed="false">3</button>
-                <button type="button" class="ziyin-level" data-ziyin-level="4" aria-pressed="false">4</button>
-                <button type="button" class="ziyin-level" data-ziyin-level="5" aria-pressed="false">5</button>
-                <span id="ziyin-level-name" class="ziyin-level-name">开音节入门</span>
+              <div class="ziyin-learn-modes" role="group" aria-label="Learn mode" data-i18n-attr="aria-label" data-i18n="learn.modeLabel">
+                <button type="button" class="ziyin-learn-mode" data-learn-mode="classic" aria-pressed="true" data-i18n="learn.mode.classic">经典模式</button>
+                <button type="button" class="ziyin-learn-mode" data-learn-mode="quest" aria-pressed="false" data-i18n="learn.mode.quest">闯关模式</button>
+              </div>
+
+              <div id="ziyin-classic-chrome">
+                <div class="ziyin-levels" role="group" aria-label="Levels" data-i18n-attr="aria-label" data-i18n="learn.ziyin.levelsLabel">
+                  <button type="button" class="ziyin-level" data-ziyin-level="1" aria-pressed="true">1</button>
+                  <button type="button" class="ziyin-level" data-ziyin-level="2" aria-pressed="false">2</button>
+                  <button type="button" class="ziyin-level" data-ziyin-level="3" aria-pressed="false">3</button>
+                  <button type="button" class="ziyin-level" data-ziyin-level="4" aria-pressed="false">4</button>
+                  <button type="button" class="ziyin-level" data-ziyin-level="5" aria-pressed="false">5</button>
+                  <span id="ziyin-level-name" class="ziyin-level-name">开音节入门</span>
+                </div>
+              </div>
+
+              <div id="ziyin-quest-map" class="ziyin-quest" hidden>
+                <header class="ziyin-quest__header">
+                  <h3 class="ziyin-quest__title" data-i18n="learn.quest.title">越语村 · 闯关</h3>
+                  <p class="ziyin-quest__lead" data-i18n="learn.quest.lead">你是一名越语学徒。按关翻卡自评，通关 80% 解锁下一关；全部通关可获「越语传习者」。</p>
+                  <p class="ziyin-quest__local" data-i18n="learn.quest.localNote">进度保存在本机浏览器，无需注册；清站点数据会丢失。可导出备份。</p>
+                  <p id="ziyin-quest-master" class="ziyin-quest__master" hidden data-i18n="learn.quest.masterTitle">已获称号：越语传习者</p>
+                  <p id="ziyin-quest-daily" class="ziyin-quest__daily" hidden></p>
+                </header>
+                <ol id="ziyin-quest-gates" class="ziyin-quest__gates"></ol>
+                <div class="ziyin-quest__tools">
+                  <button type="button" class="home-cta__btn" id="ziyin-quest-export" data-i18n="learn.quest.export">导出进度</button>
+                  <button type="button" class="home-cta__btn" id="ziyin-quest-import" data-i18n="learn.quest.import">导入进度</button>
+                  <input type="file" id="ziyin-quest-import-file" accept="application/json,.json" hidden />
+                </div>
               </div>
 
               <div id="ziyin-stage" class="ziyin-stage" hidden>
+                <div id="ziyin-quest-session" class="ziyin-quest-session" hidden>
+                  <button type="button" class="ziyin-quest-back" id="ziyin-quest-back" data-i18n="learn.quest.backMap">← 返回关卡地图</button>
+                  <p id="ziyin-quest-task" class="ziyin-quest-session__task"></p>
+                  <div class="ziyin-quest-bar" aria-hidden="true">
+                    <div id="ziyin-quest-bar-fill" class="ziyin-quest-bar__fill"></div>
+                  </div>
+                  <p id="ziyin-quest-gate-progress" class="ziyin-quest-session__progress" aria-live="polite"></p>
+                  <p id="ziyin-quest-pass" class="ziyin-quest-session__pass" hidden role="status"></p>
+                </div>
                 <p id="ziyin-mode-note" class="ziyin-mode-note" hidden data-i18n="learn.ziyin.flashIntro">
                   第 5 阶翻卡复习第 1–4 阶的字与嵊州录音：正面汉字，点开看拼音并听音自检。
                 </p>
@@ -3040,24 +3072,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824fb2",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824fb2",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824fb2",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824fb2",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824fb2",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824fb2",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824fb2",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824fb2",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824fb2",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824fb2"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824q1",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824q1",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824q1",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824q1",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824q1",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824q1",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824q1",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824q1",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824q1",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824q1"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260824fb2"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260824fb2"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260824fb2"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824fb2"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260824fb2"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824fb2"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260824q1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260824q1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260824q1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824q1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260824q1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824q1"></script>
 </body>
 </html>
