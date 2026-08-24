@@ -1,7 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824try1";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824try1";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824try1";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824try1";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824ling1";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824ling1";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824ling1";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824ling1";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824ling1";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
@@ -33,6 +34,7 @@ const pieceSelect = document.getElementById("speak-piece");
 const followTimeEl = document.getElementById("speak-follow-time");
 const followClock = document.getElementById("speak-follow-clock");
 const sceneCardEl = document.getElementById("speak-scene-card");
+const lingNoteEl = document.getElementById("speak-ling-note");
 const fpNoteEl = document.getElementById("speak-fp-note");
 const prosodyCard = document.getElementById("speak-prosody-card");
 const prosodyText = document.getElementById("speak-prosody-text");
@@ -52,6 +54,7 @@ let modelPrep = null;
 let previewObjectUrl = null;
 let lastGist = null;
 let lastProsody = null;
+let lastLingNote = null;
 let mediaStream = null;
 let mediaRecorder = null;
 let recordedChunks = [];
@@ -305,6 +308,7 @@ function emotionName(id) {
 function hidePathPanels() {
     lastGist = null;
     lastProsody = null;
+    lastLingNote = null;
     if (pathRoot)
         pathRoot.hidden = true;
     if (prosodyCard)
@@ -314,6 +318,10 @@ function hidePathPanels() {
     if (archiveOpen) {
         archiveOpen.hidden = true;
         archiveOpen.removeAttribute("href");
+    }
+    if (lingNoteEl) {
+        lingNoteEl.hidden = true;
+        lingNoteEl.textContent = "";
     }
     setMeter(archiveMeter, archiveMeterLabel, 0, "—");
     setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
@@ -372,11 +380,13 @@ function archiveHit(result, fpBest) {
     return result.confidence >= ARCHIVE_HIT_MIN;
 }
 async function runPostAsrPaths(hyp) {
-    const [index, scenes, fpIndex, pinyinMap] = await Promise.all([
+    const [index, scenes, fpIndex, pinyinMap, linguistics, cueSpeakers] = await Promise.all([
         loadLyricIndex(),
         loadSceneCards(),
         loadFingerprintIndex(),
         loadPinyinMap(),
+        loadPieceLinguistics(),
+        loadCueSpeakers(),
         loadPieceRadar(),
     ]);
     if (!hyp.trim()) {
@@ -394,6 +404,11 @@ async function runPostAsrPaths(hyp) {
     if (fpNoteEl) {
         fpNoteEl.hidden = true;
         fpNoteEl.textContent = "";
+    }
+    lastLingNote = null;
+    if (lingNoteEl) {
+        lingNoteEl.hidden = true;
+        lingNoteEl.textContent = "";
     }
     const pieceId = selectedPieceId();
     const timeSec = followTimeSec();
@@ -485,6 +500,27 @@ async function runPostAsrPaths(hyp) {
         else {
             fpNoteEl.hidden = true;
             fpNoteEl.textContent = "";
+        }
+    }
+    // Archive-linked linguistic note (① hit only)
+    if (hit && result?.matches[0]) {
+        const top = result.matches[0].entry;
+        lastLingNote = composeLinguisticNote({
+            pieceId: top.pieceId,
+            entryId: top.id,
+            linguistics,
+            speakers: cueSpeakers,
+        });
+        if (lingNoteEl && lastLingNote) {
+            lingNoteEl.hidden = false;
+            lingNoteEl.textContent = preferEnUi() ? lastLingNote.en : lastLingNote.zh;
+        }
+    }
+    else {
+        lastLingNote = null;
+        if (lingNoteEl) {
+            lingNoteEl.hidden = true;
+            lingNoteEl.textContent = "";
         }
     }
     if (archiveMatches) {
@@ -1079,6 +1115,13 @@ async function refreshPathLocaleOnly() {
             sceneCardEl.hidden = false;
             sceneCardEl.textContent = line;
         }
+    }
+    if (lingNoteEl && lastLingNote && isHit) {
+        lingNoteEl.hidden = false;
+        lingNoteEl.textContent = en ? lastLingNote.en : lastLingNote.zh;
+    }
+    else if (lingNoteEl && !isHit) {
+        lingNoteEl.hidden = true;
     }
     if (lastProsody && prosodyText) {
         let summary = en ? lastProsody.summaryEn : lastProsody.summaryZh;

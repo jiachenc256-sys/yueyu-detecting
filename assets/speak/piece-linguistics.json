@@ -1,0 +1,126 @@
+{
+  "schema": "yueyu-piece-linguistics/v1",
+  "builtFor": "speak-archive-linguistic-notes",
+  "pieces": {
+    "liangzhu-shibaxiangsong": {
+      "genreZh": "越剧 · 生旦对唱（十八相送）",
+      "genreEn": "Yueju · sheng–dan duet (Eighteen Farewells)",
+      "registerZh": "唱词为主，文白夹杂；托物、借景暗示情意，少直说。",
+      "registerEn": "Mostly sung; literary–vernacular mix; affection coded through scenery and objects.",
+      "rolesZh": "梁山伯（小生）· 祝英台（闺门旦 / 花旦）",
+      "rolesEn": "Liang Shanbo (xiaosheng) · Zhu Yingtai (guimen dan / huadan)",
+      "listenZh": "听称呼（梁兄、贤弟）与沿途托喻；字听不清也可跟「相送—暗恋—惜别」线。",
+      "listenEn": "Track address terms and coded metaphors; follow farewell → coded love → parting even if ASR is rough."
+    },
+    "liangzhu-shibaxiangsong-full": {
+      "genreZh": "越剧 · 生旦对唱（十八相送全本）",
+      "genreEn": "Yueju · sheng–dan duet (full Eighteen Farewells)",
+      "registerZh": "唱词为主，文白夹杂；长段相送，暗语更密。",
+      "registerEn": "Sung farewell walk; denser coded metaphors across a longer stretch.",
+      "rolesZh": "梁山伯（小生）· 祝英台（闺门旦）",
+      "rolesEn": "Liang Shanbo (xiaosheng) · Zhu Yingtai (guimen dan)",
+      "listenZh": "分段听「起程—托景—将近终点」；注意英台旁敲侧击、山伯未悟。",
+      "listenEn": "Follow start → scenery codes → near parting; Zhu hints, Liang often misses the cue."
+    },
+    "liangzhu-xia": {
+      "genreZh": "越剧 · 梁祝下卷",
+      "genreEn": "Yueju · Butterfly Lovers, later act",
+      "registerZh": "悲剧收束，唱腔更沉；化蝶前的诀别语气。",
+      "registerEn": "Tragic close; heavier delivery before metamorphosis.",
+      "rolesZh": "梁山伯 · 祝英台",
+      "rolesEn": "Liang Shanbo · Zhu Yingtai",
+      "listenZh": "听情绪下沉与诀别句群，不必强求每个字。",
+      "listenEn": "Listen for falling affect and farewell clusters, not every syllable."
+    },
+    "xianglin-sao-xinsuanhua": {
+      "genreZh": "越剧 · 叙事唱段（祥林嫂）",
+      "genreEn": "Yueju · narrative aria (Xianglin Sao)",
+      "registerZh": "诉苦叙事：口语化强，重复、叹息与控诉交织。",
+      "registerEn": "Suffering narrative: more speech-like, with repetition, sighs, and accusation.",
+      "rolesZh": "祥林嫂（青衣 / 悲旦一路）",
+      "rolesEn": "Xianglin Sao (qingyi / tragic-dan line)",
+      "listenZh": "抓「丧子—冷遇—不公」关键词与哭腔起伏，比盯单字更稳。",
+      "listenEn": "Track loss → cold treatment → injustice, plus sob-like contour, more than single characters."
+    },
+    "jingchai-ji": {
+      "genreZh": "越剧 / 南戏传统 · 荆钗记",
+      "genreEn": "Yueju / nanxi tradition · Thorn Hairpin",
+      "registerZh": "江边送别与嘱托：情义、赴考、荆钗信物并置。",
+      "registerEn": "River farewell and counsel: devotion, exam journey, thorn-pin token.",
+      "rolesZh": "王十朋（生）· 钱玉莲（旦）",
+      "rolesEn": "Wang Shipeng (sheng) · Qian Yulian (dan)",
+      "listenZh": "听「荆钗」信物与送别嘱托套语；对齐档案句比硬听字更有效。",
+      "listenEn": "Listen for the hairpin token and parting counsel formulas; archive align beats raw ASR."
+    },
+    "baitu-ji": {
+      "genreZh": "越剧 / 南戏传统 · 白兔记",
+      "genreEn": "Yueju / nanxi tradition · White Rabbit",
+      "registerZh": "流离求生与认亲：叙事跨度大，悲喜并陈。",
+      "registerEn": "Exile, survival, recognition: wide narrative span, grief beside reunion.",
+      "rolesZh": "刘知远一线 · 李三娘一线",
+      "rolesEn": "Liu Zhiyuan line · Li Sanniang line",
+      "listenZh": "先定场景（寒夜 / 奔波 / 团聚），再对唱词；未见全剧时 CER 会偏高属预期。",
+      "listenEn": "Anchor scene (cold night / road / reunion) first; higher CER on unseen stretches is expected."
+    },
+    "zanghua-yin": {
+      "genreZh": "越剧 · 葬花吟（红楼）",
+      "genreEn": "Yueju · Burial of Flowers (Red Chamber)",
+      "registerZh": "抒情长段：花与人同命，文辞偏雅。",
+      "registerEn": "Lyrical lament: flower and self share one fate; more literary diction.",
+      "rolesZh": "林黛玉（旦）",
+      "rolesEn": "Lin Daiyu (dan)",
+      "listenZh": "抓落花、葬花、伤春意象链；雅词听不清时用档案句回填。",
+      "listenEn": "Follow fallen blossoms → burial → spring grief; use archive line when literary diction fails ASR."
+    },
+    "mudanting-huanhunji": {
+      "genreZh": "昆曲 / 戏曲传统 · 牡丹亭·还魂",
+      "genreEn": "Kunqu / theatre tradition · Peony Pavilion · Return",
+      "registerZh": "情思与生死：辞彩华美，梦境、花园、还魂交织。",
+      "registerEn": "Love across life and death; ornate diction; dream, garden, return intertwined.",
+      "rolesZh": "杜丽娘 · 柳梦梅",
+      "rolesEn": "Du Liniang · Liu Mengmei",
+      "listenZh": "先跟「梦—伤—还魂」大意，再抠字；华辞易导致字级识别不稳。",
+      "listenEn": "Follow dream → mourning → return first; ornate lines often destabilize character ASR."
+    },
+    "chen-sanliang": {
+      "genreZh": "越剧 · 公案 / 辩诬",
+      "genreEn": "Yueju · courtroom / defense narrative",
+      "registerZh": "据理力争：念白与唱夹杂，语气刚烈。",
+      "registerEn": "Argument and defense: speech and song mixed; fierce tone.",
+      "rolesZh": "陈三两",
+      "rolesEn": "Chen Sanliang",
+      "listenZh": "听辩诬关键词与情绪冲高，不必句句对齐。",
+      "listenEn": "Track defense keywords and rising affect more than every line."
+    },
+    "chai-tou-feng": {
+      "genreZh": "越剧 · 钗头凤（陆游·唐琬）",
+      "genreEn": "Yueju · Chai Tou Feng (Lu You · Tang Wan)",
+      "registerZh": "旧情重逢：酸楚、错负，唱词典雅。",
+      "registerEn": "Old love meets again: bitterness and regret; literary diction.",
+      "rolesZh": "陆游 · 唐琬",
+      "rolesEn": "Lu You · Tang Wan",
+      "listenZh": "抓诀别与悔恨套语；短选段适合听「错、莫、难」等语气词。",
+      "listenEn": "Listen for parting/regret formulas and modal particles of denial and hardship."
+    },
+    "hongloumeng-1": {
+      "genreZh": "越剧 · 红楼梦选段",
+      "genreEn": "Yueju · Dream of the Red Chamber excerpt",
+      "registerZh": "宝黛情与贾府人事：雅俗并用。",
+      "registerEn": "Bao–Dai feeling and Jia-house affairs; literary beside vernacular.",
+      "rolesZh": "贾宝玉 · 林黛玉等",
+      "rolesEn": "Jia Baoyu · Lin Daiyu and others",
+      "listenZh": "先定人物关系，再听唱词；分段档案便于对照。",
+      "listenEn": "Fix character relations first, then lyrics; segmented archive helps."
+    },
+    "hongloumeng-tianxia": {
+      "genreZh": "越剧 · 天上掉下个林妹妹",
+      "genreEn": "Yueju · Lin Daiyu Arrives",
+      "registerZh": "初见倾心：短选段，人物称呼清晰。",
+      "registerEn": "First meeting; short clip with clear address terms.",
+      "rolesZh": "贾宝玉 · 林黛玉",
+      "rolesEn": "Jia Baoyu · Lin Daiyu",
+      "listenZh": "听初见称呼与惊喜语气。",
+      "listenEn": "Listen for first-meeting address and surprise contour."
+    }
+  }
+}
