@@ -895,6 +895,71 @@ button.ziyin-quest__node:hover {
   color: var(--color-ink);
 }
 
+.ziyin-quest__enter--next {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.ziyin-quest__enter--next:hover {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.ziyin-quest__gate[data-recommended="true"] .ziyin-quest__node {
+  animation: ziyin-quest-pulse 1.8s ease-in-out infinite;
+}
+
+.ziyin-quest__gate.is-focused .ziyin-quest__node {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+.ziyin-quest__gate.is-focused .ziyin-quest__gate-name {
+  color: var(--color-accent);
+}
+
+.ziyin-quest__focus {
+  margin: 0 0 var(--space-5);
+  padding: var(--space-4) 0 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.ziyin-quest__focus-title {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.ziyin-quest__focus-task {
+  margin: 0 0 var(--space-3);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-quest__focus-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.ziyin-quest-session .ziyin-quest__enter--next {
+  margin-top: var(--space-2);
+}
+
+@keyframes ziyin-quest-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 16%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--color-accent) 28%, transparent);
+  }
+}
+
 .ziyin-quest__tools {
   display: flex;
   flex-wrap: wrap;
@@ -905,6 +970,12 @@ button.ziyin-quest__node:hover {
   .ziyin-quest__gate {
     min-width: 9.5rem;
     flex: 0 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ziyin-quest__gate[data-recommended="true"] .ziyin-quest__node {
+    animation: none;
   }
 }
 
