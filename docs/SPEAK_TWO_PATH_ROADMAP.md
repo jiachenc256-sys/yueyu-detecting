@@ -76,13 +76,19 @@
 | L1 | 语言学卡片覆盖全部 35 出 lyric-index | ✅ `piece-linguistics.json` |
 | L2 | 命中后结构化语言学 note（genre / register / roles / listen） | ✅ |
 | L3 | Scene cards + piece radar 对齐至 35 出（补 8 出缺口） | ✅ `?v=20260824rich2` |
+| L4 | 说话人：碧玉簪 / 西厢拷红 / 何文秀算命 → cue-speakers **114** | ✅ `build_cue_speakers.py` |
+| L5 | 短选段场景加密 + 龙门客栈 7 窗再校 | ✅ |
+| L6 | 指纹补薄戏（+143 → **855**；珍珠塔暂无本地 wav） | ✅ |
+| L7 | 保持 **blend-v10** 上线；不冲 CER 0.5 | ✅ 仍有效 |
 
 ### 申请前剩余富化（按性价比，不含 portfolio packet）
 
 | 周次（约） | 焦点 | 产物感觉 |
 |-----------|------|----------|
-| W1–2 | 说话人：从 4 出 / 77 cues 扩到更多有角色标注的转写 | 命中后能点名「谁在唱」 |
-| W3–4 | 短选段 scene 更密 + 长戏（龙门客栈）分段再校 | 白话大意更贴当前时间窗 |
-| W5–6 | 真机 QA：弱命中 / 指纹 / Try sample / EN 文案 | 演示不翻车 |
-| W7–8 | 首页 / About 诚实叙事 + 证据链（gold coverage） | 申请材料可截图 |
+| ✅ W1–2 | 说话人扩到 7 出 / 114 cues | 命中后能点名「谁在唱」 |
+| ✅ W3–4 | 短选段 scene 更密 + 龙门客栈分段再校 + 指纹补薄 | 白话/查重更贴 |
+| 接下来 | 真机 QA：弱命中 / 指纹 / Try sample / EN 文案 | 演示不翻车 |
+| 再后 | 首页 / About 诚实叙事 + 证据链（gold coverage） | 申请材料可截图 |
 | 之后 | Portfolio 录音包（单独排期） | 不挡产品主线 |
+
+**ASR：** 现场 Speak 继续 **blend-v10**；dual metrics / ceiling 决策不变（见 `docs/ASR_CEILING_DECISION_20260823.md`）。

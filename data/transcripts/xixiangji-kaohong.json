@@ -32,7 +32,9 @@
           "text": "[開場 · 器樂]",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "器乐",
+      "speakerEn": "Instrumental"
     },
     {
       "id": 2,
@@ -52,7 +54,9 @@
           "text": "紅娘啊",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "老夫人",
+      "speakerEn": "Madame"
     },
     {
       "id": 3,
@@ -72,7 +76,9 @@
           "text": "小姐有何吩咐",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "红娘",
+      "speakerEn": "Hongniang"
     },
     {
       "id": 4,
@@ -92,7 +98,9 @@
           "text": "這幾日張生神情恍惚",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "老夫人",
+      "speakerEn": "Madame"
     },
     {
       "id": 5,
@@ -112,7 +120,9 @@
           "text": "莫非為小姐相思成疾",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "老夫人",
+      "speakerEn": "Madame"
     },
     {
       "id": 6,
@@ -132,7 +142,9 @@
           "text": "你與小姐同窗",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "老夫人",
+      "speakerEn": "Madame"
     },
     {
       "id": 7,
@@ -152,7 +164,9 @@
           "text": "怎不知情",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "老夫人",
+      "speakerEn": "Madame"
     },
     {
       "id": 8,
@@ -172,7 +186,9 @@
           "text": "紅娘不敢欺瞞夫人",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "红娘",
+      "speakerEn": "Hongniang"
     },
     {
       "id": 9,
@@ -192,7 +208,9 @@
           "text": "小姐與張生",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "红娘",
+      "speakerEn": "Hongniang"
     },
     {
       "id": 10,
@@ -212,7 +230,9 @@
           "text": "月下傳書寄相思",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "红娘",
+      "speakerEn": "Hongniang"
     },
     {
       "id": 11,
@@ -232,7 +252,9 @@
           "text": "夫人息怒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "红娘",
+      "speakerEn": "Hongniang"
     },
     {
       "id": 12,
@@ -252,7 +274,9 @@
           "text": "此事還望從長計議",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "红娘",
+      "speakerEn": "Hongniang"
     },
     {
       "id": 13,
@@ -272,7 +296,9 @@
           "text": "[收尾]",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "器乐",
+      "speakerEn": "Instrumental"
     }
   ],
   "category": "yueju"

@@ -32,7 +32,9 @@
           "text": "[開場 · 器樂]",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "器乐",
+      "speakerEn": "Instrumental"
     },
     {
       "id": 2,
@@ -52,7 +54,9 @@
           "text": "尊一聲大娘聽端詳",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "何文秀",
+      "speakerEn": "He Wenxiu"
     },
     {
       "id": 3,
@@ -72,7 +76,9 @@
           "text": "小人算命走四方",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "何文秀",
+      "speakerEn": "He Wenxiu"
     },
     {
       "id": 4,
@@ -92,7 +98,9 @@
           "text": "不知大娘有何疑難事",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "何文秀",
+      "speakerEn": "He Wenxiu"
     },
     {
       "id": 5,
@@ -112,7 +120,9 @@
           "text": "說來與我細商量",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "何文秀",
+      "speakerEn": "He Wenxiu"
     },
     {
       "id": 6,
@@ -132,7 +142,9 @@
           "text": "尊一聲先生聽我言",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "大娘",
+      "speakerEn": "Dame"
     },
     {
       "id": 7,
@@ -152,7 +164,9 @@
           "text": "家中有事費疑難",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "大娘",
+      "speakerEn": "Dame"
     },
     {
       "id": 8,
@@ -172,7 +186,9 @@
           "text": "我把生辰八字報",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "大娘",
+      "speakerEn": "Dame"
     },
     {
       "id": 9,
@@ -192,7 +208,9 @@
           "text": "望求先生仔細看",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "大娘",
+      "speakerEn": "Dame"
     },
     {
       "id": 10,
@@ -212,7 +230,9 @@
           "text": "待我掐指細推算",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "何文秀",
+      "speakerEn": "He Wenxiu"
     },
     {
       "id": 11,
@@ -232,7 +252,9 @@
           "text": "其中奧妙不一般",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "何文秀",
+      "speakerEn": "He Wenxiu"
     },
     {
       "id": 12,
@@ -252,7 +274,9 @@
           "text": "[收尾]",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "器乐",
+      "speakerEn": "Instrumental"
     }
   ],
   "category": "yueju"

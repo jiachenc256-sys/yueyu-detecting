@@ -32,7 +32,9 @@
           "text": "[開場 · 器樂]",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "器乐",
+      "speakerEn": "Instrumental"
     },
     {
       "id": 2,
@@ -52,7 +54,9 @@
           "text": "新房之中冷清清",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 3,
@@ -72,7 +76,9 @@
           "text": "紅燭高燒照孤影",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 4,
@@ -92,7 +98,9 @@
           "text": "想我李秀英",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 5,
@@ -112,7 +120,9 @@
           "text": "滿腹委屈向誰傾",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 6,
@@ -132,7 +142,9 @@
           "text": "誤拿碧玉簪",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 7,
@@ -152,7 +164,9 @@
           "text": "招來無端閒是非",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 8,
@@ -172,7 +186,9 @@
           "text": "夫君他心存疑",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 9,
@@ -192,7 +208,9 @@
           "text": "冷落我一夜到天明",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 10,
@@ -212,7 +230,9 @@
           "text": "愁緒滿懷難入夢",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 11,
@@ -232,7 +252,9 @@
           "text": "淚溼鮫綃到五更",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "李秀英",
+      "speakerEn": "Li Xiuying"
     },
     {
       "id": 12,
@@ -252,7 +274,9 @@
           "text": "[收尾]",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "器乐",
+      "speakerEn": "Instrumental"
     }
   ],
   "category": "yueju"

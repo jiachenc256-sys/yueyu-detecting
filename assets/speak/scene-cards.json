@@ -478,125 +478,203 @@
     "biyu-zan-xinfang": [
       {
         "start": 0,
-        "end": 140,
-        "zh": "新房冷清：红烛独照，李秀英独守空房。",
-        "en": "Cold bridal chamber: candles alone; Li Xiuying keeps an empty room."
+        "end": 34,
+        "zh": "开场冷清：新房空寂，气氛先立住。",
+        "en": "Cold open: empty bridal chamber; the mood settles first."
       },
       {
-        "start": 140,
+        "start": 34,
+        "end": 68,
+        "zh": "孤影自叹：红烛照影，李秀英自道身世委屈。",
+        "en": "Lone shadow: candles on her face; Li Xiuying names her grievance."
+      },
+      {
+        "start": 68,
+        "end": 118,
+        "zh": "碧玉簪祸端：误拿玉簪，招来闲是非。",
+        "en": "Jade-pin trouble: a misplaced pin invites idle blame."
+      },
+      {
+        "start": 118,
+        "end": 152,
+        "zh": "夫君心疑：一夜冷落，难捱到天明。",
+        "en": "Husband’s doubt: cold neglect through a sleepless night."
+      },
+      {
+        "start": 152,
         "end": 99999,
-        "zh": "愁绪难眠：怨悔交织，泪湿到五更。",
-        "en": "Sleepless regret: bitterness and tears stretch toward dawn."
+        "zh": "泪湿五更：愁绪难眠，收束到哽咽。",
+        "en": "Tears toward dawn: sleepless sorrow closes the aria."
       }
     ],
     "he-wenxiu-suanming": [
       {
         "start": 0,
-        "end": 75,
-        "zh": "算命开场：何文秀自报身份，愿听疑难。",
-        "en": "Fortune-telling opens: He Wenxiu introduces himself and invites troubles."
+        "end": 30,
+        "zh": "算命上门：何文秀开场自报，请大娘听端详。",
+        "en": "Seer at the door: He Wenxiu introduces himself to the dame."
       },
       {
-        "start": 75,
+        "start": 30,
+        "end": 60,
+        "zh": "走方问疑：自称算命走四方，愿听疑难。",
+        "en": "Itinerant offer: he walks the roads and invites her trouble."
+      },
+      {
+        "start": 60,
+        "end": 90,
+        "zh": "细商量：先生邀对方把事说开。",
+        "en": "Talk it through: he asks her to lay the matter out."
+      },
+      {
+        "start": 90,
         "end": 135,
-        "zh": "报生辰：对方诉家事，报八字求看。",
-        "en": "Birth-hour report: household worries and the eight characters are told."
+        "zh": "大娘报八字：家中费疑难，求先生细看。",
+        "en": "Dame reports the eight characters: household worry needs a reading."
       },
       {
         "start": 135,
         "end": 99999,
-        "zh": "掐指推算：先生细算，奥妙不一般。",
-        "en": "Finger calculation: the seer works the numbers; mystery thickens."
+        "zh": "掐指推算：何文秀细算，奥妙不一般。",
+        "en": "Finger calculation: He Wenxiu works the numbers; mystery deepens."
       }
     ],
     "hongloumeng-tianxia": [
       {
         "start": 0,
-        "end": 80,
-        "zh": "初见请教：宝玉见黛玉，口称姐姐、求指教。",
-        "en": "First meeting: Baoyu greets Daiyu as sister and asks for guidance."
+        "end": 65,
+        "zh": "初见将至：宝黛见面前的气息。",
+        "en": "Before first sight: the air just ahead of Baoyu meeting Daiyu."
       },
       {
-        "start": 80,
+        "start": 65,
+        "end": 85,
+        "zh": "请教姐姐：宝玉口称姐姐，求多多指教。",
+        "en": "Asking sister: Baoyu greets Daiyu and seeks her guidance."
+      },
+      {
+        "start": 85,
         "end": 99999,
-        "zh": "天上灵芝：怕冲撞了「天上掉下」的林妹妹。",
-        "en": "Heavenly lingzhi: fear of startling the sister who seemed to drop from heaven."
+        "zh": "灵芝草：怕冲撞了天上掉下的林妹妹。",
+        "en": "Lingzhi grass: fear of startling the sister from heaven."
       }
     ],
     "longmen-kezhai": [
       {
         "start": 0,
-        "end": 1200,
-        "zh": "客栈风波起：江湖气息，忠奸未明。",
-        "en": "Inn intrigue begins: jianghu air; loyalty still unclear."
+        "end": 900,
+        "zh": "开场刀光：客栈腥风已起，忠奸未明。",
+        "en": "Blade-light open: inn danger starts; loyalty still unclear."
       },
       {
-        "start": 1200,
-        "end": 3200,
-        "zh": "暗线交锋：盘查、埋伏与身份试探。",
-        "en": "Hidden lines collide: questioning, ambush, and identity tests."
+        "start": 900,
+        "end": 2200,
+        "zh": "厂卫布迷阵：缉事运筹，暗线交错。",
+        "en": "Depot nets: Eastern Depot schemes; hidden lines cross."
       },
       {
-        "start": 3200,
-        "end": 5200,
-        "zh": "官道危机：东厂布阵，逃遁压力加大。",
-        "en": "Road crisis: Eastern Depot nets close; escape pressure rises."
+        "start": 2200,
+        "end": 3400,
+        "zh": "身份试探：盘查贼踪，寒暖话里藏锋。",
+        "en": "Identity probes: thief trails questioned; warmth hides edge."
       },
       {
-        "start": 5200,
-        "end": 7000,
-        "zh": "亲情与逃亡：人情冷暖夹在刀光里。",
-        "en": "Kinship and flight: warmth and chill amid blade-light."
+        "start": 3400,
+        "end": 4800,
+        "zh": "官道已封：东厂埋伏，逃亡压力陡升。",
+        "en": "Road sealed: ambush set; escape pressure spikes."
       },
       {
-        "start": 7000,
+        "start": 4800,
+        "end": 6200,
+        "zh": "亲情夹缝：婚嫁消息与逃命并置。",
+        "en": "Kinship under fire: marriage news beside flight."
+      },
+      {
+        "start": 6200,
+        "end": 7600,
+        "zh": "暗道脱身：淮安一线，跟走求生。",
+        "en": "Secret passage: Huai’an line; follow to survive."
+      },
+      {
+        "start": 7600,
         "end": 99999,
-        "zh": "收束对峙：忠奸摊牌，冲突到顶。",
-        "en": "Final confrontation: loyalty vs villainy comes to a head."
+        "zh": "对峙收束：有眼看不见——冲突顶到尽头。",
+        "en": "Final clash: ‘eyes that do not see’—conflict peaks."
       }
     ],
     "pearl-tower-gift": [
       {
         "start": 0,
+        "end": 20,
+        "zh": "赠塔之前：表兄落魄，翠娥将以信物相赠。",
+        "en": "Before the gift: cousin in hardship; Cui’e will offer the token."
+      },
+      {
+        "start": 20,
         "end": 99999,
-        "zh": "赠塔嘱别：翠娥以珍珠塔相赠，嘱方卿一路珍重。",
-        "en": "Gift farewell: Cui’e offers the pearl tower token; Fang Qing is told to take care."
+        "zh": "嘱别珍重：珍珠塔相赠，望兄长一路珍重。",
+        "en": "Farewell counsel: pearl tower gifted; take care on the road."
       }
     ],
     "wunv-baishou-huashu": [
       {
         "start": 0,
+        "end": 24,
+        "zh": "拜寿花树：同园氛围先立。",
+        "en": "Birthday garden: shared orchard mood settles."
+      },
+      {
+        "start": 24,
         "end": 99999,
-        "zh": "花树同园：姐妹同门不同心，人情冷暖对照。",
-        "en": "Same garden, different hearts: sisters under one roof; warmth and chill contrasted."
+        "zh": "同门不同心：姐妹对照，人情冷暖一句点破。",
+        "en": "Same gate, different hearts: one line exposes warmth and chill."
       }
     ],
     "xixiangji-kaohong": [
       {
         "start": 0,
-        "end": 120,
-        "zh": "拷红起问：老夫人追问小姐相思成疾之故。",
-        "en": "Interrogation opens: Madame presses why the young lady wastes away for love."
+        "end": 31,
+        "zh": "拷红起声：老夫人唤红娘，盘问将起。",
+        "en": "Interrogation starts: Madame calls Hongniang; questioning begins."
       },
       {
-        "start": 120,
-        "end": 165,
-        "zh": "红娘应对：月下传书、寄相思的机智辩解。",
-        "en": "Hongniang replies: witty defense of moonlight letters and longing."
+        "start": 31,
+        "end": 77,
+        "zh": "追问张生：神情恍惚，疑为小姐相思成疾。",
+        "en": "About Zhang Sheng: distracted looks; love-sickness suspected."
       },
       {
-        "start": 165,
+        "start": 77,
+        "end": 123,
+        "zh": "逼问知情：同窗岂不知情，红娘须实说。",
+        "en": "Pressed for truth: as companion she must know—and speak."
+      },
+      {
+        "start": 123,
+        "end": 169,
+        "zh": "红娘实告：小姐与张生月下传书寄相思。",
+        "en": "Hongniang confesses: moonlight letters between the lovers."
+      },
+      {
+        "start": 169,
         "end": 99999,
-        "zh": "从长计议：暂缓严惩，事还需商量。",
-        "en": "Defer judgment: punishment paused; the matter needs further counsel."
+        "zh": "息怒从长：暂缓严惩，此事还望计议。",
+        "en": "Ease the anger: defer punishment; counsel further."
       }
     ],
     "zhuiyu-guandeng": [
       {
         "start": 0,
+        "end": 50,
+        "zh": "观灯将起：灯景铺垫，人情未明说。",
+        "en": "Before lanterns: scenery laid; feeling not yet said."
+      },
+      {
+        "start": 50,
         "end": 99999,
-        "zh": "观灯抒情：夫妻双双把灯观，景物与人情并写。",
-        "en": "Lantern viewing: husband and wife watch the lights; scenery meets feeling."
+        "zh": "夫妻观灯：双双把灯观，景物与人情并写。",
+        "en": "Couple at the lanterns: scenery and feeling together."
       }
     ]
   }
