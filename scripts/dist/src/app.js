@@ -1,5 +1,5 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260824ux1";
+import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260824fb1";
 function initNavigation() {
     const triggers = document.querySelectorAll("[data-panel-target]");
     const navButtons = document.querySelectorAll(".site-nav [data-panel-target]");
@@ -215,6 +215,50 @@ function openSpeakSample(sampleId) {
         btn?.scrollIntoView({ behavior: "smooth", block: "center" });
     });
 }
+function initFeedbackForm() {
+    const form = document.getElementById("feedback-form");
+    const message = document.getElementById("feedback-message");
+    const submit = document.getElementById("feedback-submit");
+    const categoryInput = document.getElementById("feedback-category");
+    const subjectInput = document.getElementById("feedback-subject");
+    const status = document.getElementById("feedback-status");
+    if (!form || !message || !submit)
+        return;
+    const kindButtons = Array.from(document.querySelectorAll("[data-feedback-kind]"));
+    const syncSubmit = () => {
+        submit.disabled = message.value.trim().length === 0;
+    };
+    const setKind = (kind) => {
+        kindButtons.forEach((btn) => {
+            btn.setAttribute("aria-pressed", btn.dataset.feedbackKind === kind ? "true" : "false");
+        });
+        if (categoryInput)
+            categoryInput.value = kind;
+        if (subjectInput)
+            subjectInput.value = `Yueyu Detecting — feedback (${kind})`;
+    };
+    kindButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const kind = btn.dataset.feedbackKind;
+            if (!kind)
+                return;
+            setKind(kind);
+        });
+    });
+    message.addEventListener("input", syncSubmit);
+    syncSubmit();
+    form.addEventListener("submit", () => {
+        if (status) {
+            status.hidden = false;
+            status.textContent = t("feedback.sending");
+        }
+    });
+    onLocaleChange(() => {
+        const active = kindButtons.find((b) => b.getAttribute("aria-pressed") === "true");
+        if (active?.dataset.feedbackKind)
+            setKind(active.dataset.feedbackKind);
+    });
+}
 function initAboutDeepLinks() {
     document.querySelectorAll("[data-footer-about]").forEach((link) => {
         link.addEventListener("click", (event) => {
@@ -230,13 +274,14 @@ function applyHashRoute(applyArchiveFilter) {
     const hash = window.location.hash.replace(/^#/, "");
     if (!hash)
         return;
-    if (hash === "about-contact" || hash === "about-apply") {
+    if (hash === "about-contact" || hash === "about-apply" || hash === "about-feedback") {
         document.querySelector(`.site-nav [data-panel-target="about"]`)?.click();
-        showAboutSection("contact");
+        const section = hash === "about-feedback" ? "feedback" : "contact";
+        showAboutSection(section);
         history.replaceState(null, "", `#${hash}`);
-        if (hash === "about-apply") {
+        if (hash === "about-apply" || hash === "about-feedback") {
             requestAnimationFrame(() => {
-                document.getElementById("about-apply")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
             });
         }
         return;
@@ -278,6 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSideNavigation("data-about-target", "data-about-section", ".plan-nav__link[data-about-target]");
     initSideNavigation("data-learn-target", "data-learn-section", ".learn-nav__link[data-learn-target]");
     initAboutDeepLinks();
+    initFeedbackForm();
     const applyArchiveFilter = initArchiveFilters();
     applyHashRoute(applyArchiveFilter);
     window.addEventListener("hashchange", () => applyHashRoute(applyArchiveFilter));
