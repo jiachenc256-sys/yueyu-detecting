@@ -99,6 +99,16 @@
   font-size: 0.7rem;
 }
 
+.dict-card__draft {
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--color-ink-faint);
+  background: var(--color-paper);
+}
+
 .dict-card__ipa {
   margin: 0;
   display: grid;

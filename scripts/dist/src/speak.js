@@ -1,8 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824rich1";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824rich1";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824rich1";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824rich1";
-import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824rich1";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824w0a";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824w0a";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824w0a";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824w0a";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824w0a";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
@@ -727,6 +727,10 @@ async function ensureWhisper() {
     }
     catch (localError) {
         whisperLoading = null;
+        const msg = localError instanceof Error ? localError.message : String(localError);
+        if (/Failed to fetch|NetworkError|CDN|import/i.test(msg)) {
+            setStatus(t("speak.status.whisperCdnFail"));
+        }
         // Fallback if local ONNX assets are missing (e.g. not yet deployed).
         setStatus(t("speak.status.whisperFallback"));
         whisperLoading = (async () => {
@@ -750,6 +754,7 @@ async function ensureWhisper() {
         }
         catch (error) {
             whisperLoading = null;
+            setStatus(t("speak.status.whisperCdnFail"));
             throw localError instanceof Error ? localError : error;
         }
     }

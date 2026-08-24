@@ -393,86 +393,140 @@
       {
         "start": 0,
         "end": 400,
-        "zh": "步步惊心本场：宫中情思与风险并存。",
-        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+        "zh": "开场：宫中名分与试探起势。",
+        "en": "Open: ranked address and probing begin."
       },
       {
         "start": 400,
+        "end": 900,
+        "zh": "中场：情思与规矩拉扯。",
+        "en": "Mid: feeling pulled against court rules."
+      },
+      {
+        "start": 900,
         "end": 99999,
-        "zh": "本场推进：人物关系更紧，语气更沉。",
-        "en": "Scene advances: ties tighten; tone grows heavier."
+        "zh": "后场：风险或抉择加重。",
+        "en": "Late: risk or choice presses harder."
       }
     ],
     "bubuxinjing-2": [
       {
         "start": 0,
         "end": 400,
-        "zh": "步步惊心本场：宫中情思与风险并存。",
-        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+        "zh": "开场：宫中名分与试探起势。",
+        "en": "Open: ranked address and probing begin."
       },
       {
         "start": 400,
+        "end": 900,
+        "zh": "中场：情思与规矩拉扯。",
+        "en": "Mid: feeling pulled against court rules."
+      },
+      {
+        "start": 900,
         "end": 99999,
-        "zh": "本场推进：人物关系更紧，语气更沉。",
-        "en": "Scene advances: ties tighten; tone grows heavier."
+        "zh": "后场：风险或抉择加重。",
+        "en": "Late: risk or choice presses harder."
       }
     ],
     "bubuxinjing-3": [
       {
         "start": 0,
         "end": 400,
-        "zh": "步步惊心本场：宫中情思与风险并存。",
-        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+        "zh": "开场：宫中名分与试探起势。",
+        "en": "Open: ranked address and probing begin."
       },
       {
         "start": 400,
+        "end": 900,
+        "zh": "中场：情思与规矩拉扯。",
+        "en": "Mid: feeling pulled against court rules."
+      },
+      {
+        "start": 900,
         "end": 99999,
-        "zh": "本场推进：人物关系更紧，语气更沉。",
-        "en": "Scene advances: ties tighten; tone grows heavier."
+        "zh": "后场：风险或抉择加重。",
+        "en": "Late: risk or choice presses harder."
       }
     ],
     "bubuxinjing-4a": [
       {
         "start": 0,
         "end": 400,
-        "zh": "步步惊心本场：宫中情思与风险并存。",
-        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+        "zh": "开场：宫中名分与试探起势。",
+        "en": "Open: ranked address and probing begin."
       },
       {
         "start": 400,
+        "end": 900,
+        "zh": "中场：情思与规矩拉扯。",
+        "en": "Mid: feeling pulled against court rules."
+      },
+      {
+        "start": 900,
         "end": 99999,
-        "zh": "本场推进：人物关系更紧，语气更沉。",
-        "en": "Scene advances: ties tighten; tone grows heavier."
+        "zh": "后场：风险或抉择加重。",
+        "en": "Late: risk or choice presses harder."
       }
     ],
     "bubuxinjing-4b5a": [
       {
         "start": 0,
         "end": 400,
-        "zh": "步步惊心本场：宫中情思与风险并存。",
-        "en": "Bu Bu Jing Xin scene: court longing beside danger."
+        "zh": "开场：宫中名分与试探起势。",
+        "en": "Open: ranked address and probing begin."
       },
       {
         "start": 400,
+        "end": 900,
+        "zh": "中场：情思与规矩拉扯。",
+        "en": "Mid: feeling pulled against court rules."
+      },
+      {
+        "start": 900,
         "end": 99999,
-        "zh": "本场推进：人物关系更紧，语气更沉。",
-        "en": "Scene advances: ties tighten; tone grows heavier."
+        "zh": "后场：风险或抉择加重。",
+        "en": "Late: risk or choice presses harder."
       }
     ],
     "para-2": [
       {
         "start": 0,
+        "end": 600,
+        "zh": "开场铺垫：场景与人物关系尚未说破。",
+        "en": "Opening settle: scene and ties not yet spelled out."
+      },
+      {
+        "start": 600,
+        "end": 1800,
+        "zh": "中段推进：冲突或情思加重。",
+        "en": "Mid stretch: conflict or longing thickens."
+      },
+      {
+        "start": 1800,
         "end": 99999,
-        "zh": "经典折子对照材料（para 2）。",
-        "en": "Classic excerpt pack (para 2)."
+        "zh": "后段收束：情绪落到收尾。",
+        "en": "Closing stretch: feeling lands toward the end."
       }
     ],
     "para-3": [
       {
         "start": 0,
+        "end": 600,
+        "zh": "开场铺垫：场景先立住。",
+        "en": "Opening settle: the scene locks first."
+      },
+      {
+        "start": 600,
+        "end": 1800,
+        "zh": "中段推进：对白与唱夹杂。",
+        "en": "Mid stretch: speech and song interleave."
+      },
+      {
+        "start": 1800,
         "end": 99999,
-        "zh": "经典折子对照材料（para 3）。",
-        "en": "Classic excerpt pack (para 3)."
+        "zh": "后段收束：冲突或抒情到顶。",
+        "en": "Closing stretch: conflict or lyric peaks."
       }
     ],
     "biyu-zan-xinfang": [

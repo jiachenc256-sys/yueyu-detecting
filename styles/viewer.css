@@ -169,6 +169,21 @@ body[data-text-only="true"] .viewer-player__text-only {
   line-height: var(--leading-relaxed);
 }
 
+.viewer-player__missing {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-ink-muted);
+  background: var(--color-paper);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+body[data-audio-missing="true"] .viewer-player audio {
+  opacity: 0.45;
+}
+
 .viewer-now-playing {
   margin: 0;
   display: grid;

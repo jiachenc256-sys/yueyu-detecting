@@ -25,7 +25,9 @@
           "text": "红酥手",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 2,
@@ -37,7 +39,9 @@
           "text": "红酥手",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 3,
@@ -49,7 +53,9 @@
           "text": "红酥手",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 4,
@@ -61,7 +67,9 @@
           "text": "红酥手",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 5,
@@ -73,7 +81,9 @@
           "text": "红酥手 黄藤酒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 6,
@@ -85,7 +95,9 @@
           "text": "满",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 7,
@@ -97,7 +109,9 @@
           "text": "満城舂",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 8,
@@ -109,7 +123,9 @@
           "text": "满城春色宫墙柳",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 9,
@@ -121,7 +137,9 @@
           "text": "东风恶",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 10,
@@ -133,7 +151,9 @@
           "text": "东风恶",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 11,
@@ -145,7 +165,9 @@
           "text": "东风恶",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 12,
@@ -157,7 +179,9 @@
           "text": "东风恶欢情薄",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 13,
@@ -169,7 +193,9 @@
           "text": "一杯",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 14,
@@ -181,7 +207,9 @@
           "text": "一怀愁绪",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 15,
@@ -193,7 +221,9 @@
           "text": "一怀愁绪 几年",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 16,
@@ -205,7 +235,9 @@
           "text": "一怀愁诸 几年离索",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 17,
@@ -217,7 +249,9 @@
           "text": "错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 18,
@@ -229,7 +263,9 @@
           "text": "错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 19,
@@ -241,7 +277,9 @@
           "text": "错 错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 20,
@@ -253,7 +291,9 @@
           "text": "错 错 错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 21,
@@ -265,7 +305,9 @@
           "text": "世",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 22,
@@ -277,7 +319,9 @@
           "text": "世情",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 23,
@@ -289,7 +333,9 @@
           "text": "世情薄",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 24,
@@ -301,7 +347,9 @@
           "text": "世情薄 人情恶",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "唐琬",
+      "speakerEn": "Tang Wan"
     },
     {
       "id": 25,
@@ -313,7 +361,9 @@
           "text": "雨送黄昏香花易落",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 26,
@@ -325,7 +375,9 @@
           "text": "晓风干",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 27,
@@ -337,7 +389,9 @@
           "text": "欲笺心事",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 28,
@@ -349,7 +403,9 @@
           "text": "欲笺心事 独",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 29,
@@ -361,7 +417,9 @@
           "text": "欲笺心事 独语斜",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 30,
@@ -373,7 +431,9 @@
           "text": "欲笺心事 独语斜栏",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 31,
@@ -385,7 +445,9 @@
           "text": "难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 32,
@@ -397,7 +459,9 @@
           "text": "难 难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 33,
@@ -409,7 +473,9 @@
           "text": "难 难 难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 34,
@@ -421,7 +487,9 @@
           "text": "错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 35,
@@ -433,7 +501,9 @@
           "text": "错 错 错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 36,
@@ -445,7 +515,9 @@
           "text": "难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 37,
@@ -457,7 +529,9 @@
           "text": "难 难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 38,
@@ -469,7 +543,9 @@
           "text": "难 难 难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 39,
@@ -481,7 +557,9 @@
           "text": "难 难 难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 40,
@@ -493,7 +571,9 @@
           "text": "错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 41,
@@ -505,7 +585,9 @@
           "text": "错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 42,
@@ -517,7 +599,9 @@
           "text": "错 错",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 43,
@@ -529,7 +613,9 @@
           "text": "难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 44,
@@ -541,7 +627,9 @@
           "text": "难 难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 45,
@@ -553,7 +641,9 @@
           "text": "难 难 难",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 46,
@@ -565,7 +655,9 @@
           "text": "春如旧",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 47,
@@ -577,7 +669,9 @@
           "text": "春如旧 人成各",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 48,
@@ -589,7 +683,9 @@
           "text": "人空痩",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 49,
@@ -601,7 +697,9 @@
           "text": "泪痕",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 50,
@@ -613,7 +711,9 @@
           "text": "泪痕红浥",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 51,
@@ -625,7 +725,9 @@
           "text": "泪痕红浥鲛绡透",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 52,
@@ -637,7 +739,9 @@
           "text": "泪痕红浥鲛绡透",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 53,
@@ -649,7 +753,9 @@
           "text": "病魂长似干秋索",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 54,
@@ -661,7 +767,9 @@
           "text": "桃",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 55,
@@ -673,7 +781,9 @@
           "text": "桃花",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 56,
@@ -685,7 +795,9 @@
           "text": "桃花落",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 57,
@@ -697,7 +809,9 @@
           "text": "桃花落 角声寒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 58,
@@ -709,7 +823,9 @@
           "text": "闭池阁",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 59,
@@ -721,7 +837,9 @@
           "text": "山盟虽",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 60,
@@ -733,7 +851,9 @@
           "text": "山盟虽在 锦书难托",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 61,
@@ -745,7 +865,9 @@
           "text": "怕人寻问",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 62,
@@ -757,7 +879,9 @@
           "text": "怕人寻问 咽泪装欢",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 63,
@@ -769,7 +893,9 @@
           "text": "怕人寻问 咽泪装欢",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 64,
@@ -781,7 +907,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 65,
@@ -793,7 +921,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 66,
@@ -805,7 +935,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 67,
@@ -817,7 +949,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 68,
@@ -829,7 +963,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 69,
@@ -841,7 +977,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 70,
@@ -853,7 +991,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 71,
@@ -865,7 +1005,9 @@
           "text": "莫莫莫 瞒瞒瞒",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "陆游",
+      "speakerEn": "Lu You"
     },
     {
       "id": 72,
@@ -877,7 +1019,9 @@
           "text": "琬妹",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 73,
@@ -889,7 +1033,9 @@
           "text": "琬妹 游哥",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     },
     {
       "id": 74,
@@ -901,7 +1047,9 @@
           "text": "游哥",
           "status": "corrected"
         }
-      }
+      },
+      "speaker": "对唱",
+      "speakerEn": "Duet"
     }
   ]
 }

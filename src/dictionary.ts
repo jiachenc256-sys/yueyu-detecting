@@ -176,6 +176,7 @@ function renderPhrases(list: PhraseItem[]): void {
     card.innerHTML = `
       <div class="dict-card__head">
         <span class="dict-card__han dict-card__han--phrase">${escapeHtml(item.zh)}</span>
+        <span class="dict-card__draft">${t("dict.phraseDraft")}</span>
         ${scene}
       </div>
       <p class="dict-card__en">${escapeHtml(item.en)}</p>

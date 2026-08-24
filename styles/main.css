@@ -60,6 +60,15 @@ body {
   align-items: center;
   justify-content: flex-end;
   gap: var(--space-3) var(--space-5);
+  overflow: visible;
+  max-width: 100%;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  max-width: 100%;
 }
 
 .locale-switch {
@@ -118,7 +127,9 @@ body {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-1);
+  max-width: 100%;
 }
 
 .site-nav__btn {
@@ -383,6 +394,14 @@ body {
 .add-piece-card__label {
   font-size: var(--text-sm);
   font-weight: 500;
+}
+
+.archive-add-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: var(--space-3) 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-faint);
 }
 
 /* ── Plan sections ── */

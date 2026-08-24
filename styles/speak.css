@@ -447,6 +447,13 @@ html[data-theme="dark"] .speak-ling-note {
   margin-left: 0.25rem;
 }
 
+.speak-follow__hint {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--color-ink-faint);
+  line-height: 1.45;
+}
+
 .speak-scene {
   margin: 0 0 var(--space-3);
   padding: 0.65rem 0.75rem;
