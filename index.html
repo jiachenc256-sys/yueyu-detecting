@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260824w4a" />
-  <link rel="stylesheet" href="styles/main.css?v=20260824w4a" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260824w4a" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260824w4a" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260824w4a" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260824w4a" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260824w4a" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260824ux1" />
+  <link rel="stylesheet" href="styles/main.css?v=20260824ux1" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260824ux1" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260824ux1" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260824ux1" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260824ux1" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260824ux1" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -285,11 +285,14 @@
                   </div>
                   <p id="speak-fp-note" class="speak-fp-note" hidden></p>
                   <ul id="speak-archive-matches" class="speak-gist__matches"></ul>
+                  <p id="speak-archive-next" class="speak-path__next" hidden data-i18n="speak.path.openArchiveGuide">
+                    下一步：点下方按钮，在档案页对照该句时间轴与全文。
+                  </p>
                   <div class="speak-path__actions">
-                    <button type="button" id="speak-gist-use" class="speak-btn speak-btn--primary" hidden data-i18n="speak.gist.useArchive">
+                    <a id="speak-archive-open" class="speak-btn speak-btn--primary" hidden href="#" data-i18n="speak.path.openArchive">在档案中打开</a>
+                    <button type="button" id="speak-gist-use" class="speak-btn" hidden data-i18n="speak.gist.useArchive">
                       采用档案候选句作为识别结果
                     </button>
-                    <a id="speak-archive-open" class="speak-btn" hidden href="#" data-i18n="speak.path.openArchive">在档案中打开</a>
                   </div>
                 </div>
               </div>
@@ -310,6 +313,7 @@
                 <div class="speak-gist__radar-wrap">
                   <svg id="speak-prosody-radar" class="speak-gist__radar" viewBox="0 0 180 180" width="180" height="180" role="img" aria-labelledby="speak-prosody-radar-caption" focusable="false"></svg>
                   <p id="speak-prosody-radar-caption" class="speak-gist__radar-caption"></p>
+                  <p class="speak-prosody-example" data-i18n="speak.path.prosodyExample">例：若显示「急 · 亢」，可能对应剧中争执或激昂的段落。</p>
                 </div>
                 <div class="speak-gist__body">
                   <p id="speak-prosody-text" class="speak-gist__text"></p>
@@ -426,6 +430,7 @@
 
         <div class="archive-filters" role="group" aria-label="Archive categories" data-i18n-attr="aria-label" data-i18n="archive.filterLabel">
           <button type="button" class="archive-filter" data-archive-filter="all" aria-pressed="true" data-i18n="archive.filterAll">全部</button>
+          <button type="button" class="archive-filter" data-archive-filter="recent" aria-pressed="false" data-i18n="archive.filterRecent">最近添加</button>
           <button type="button" class="archive-filter" data-archive-filter="yueju" aria-pressed="false" data-i18n="archive.filterYueju">越剧</button>
           <button type="button" class="archive-filter" data-archive-filter="tanci" aria-pressed="false" data-i18n="archive.filterTanci">弹词</button>
           <button type="button" class="archive-filter" data-archive-filter="speakers" aria-pressed="false" data-i18n="archive.filterSpeakers">口语</button>
@@ -662,7 +667,8 @@
             </div>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/jingchai-ji.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/jingchai-ji.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">荆钗记</h3>
             <p class="piece-card__meta">The Thorn Hairpin · full piece archive</p>
@@ -673,7 +679,8 @@
             </p>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/baitu-ji.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/baitu-ji.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
             <h3 class="piece-card__title">白兔记</h3>
             <p class="piece-card__meta">The White Rabbit · full piece archive</p>
@@ -684,7 +691,8 @@
             </p>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/mudanting-huanhunji.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/mudanting-huanhunji.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready">Archive</span>
             <h3 class="piece-card__title">牡丹亭 · 还魂记</h3>
             <p class="piece-card__meta">Peony Pavilion · Return of the Soul</p>
@@ -695,7 +703,8 @@
             </p>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/zanghua-yin.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/zanghua-yin.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready">Archive</span>
             <h3 class="piece-card__title">葬花吟</h3>
             <p class="piece-card__meta">Burial of Flowers</p>
@@ -706,7 +715,8 @@
             </p>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/chen-sanliang.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/chen-sanliang.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready">Archive</span>
             <h3 class="piece-card__title">陈三两</h3>
             <p class="piece-card__meta">Chen Sanliang</p>
@@ -717,7 +727,8 @@
             </p>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/hongloumeng-1.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/hongloumeng-1.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready">Archive</span>
             <h3 class="piece-card__title">红楼梦 · 第1部分</h3>
             <p class="piece-card__meta">Dream of the Red Chamber · part 1</p>
@@ -728,7 +739,8 @@
             </p>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/chai-tou-feng.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/chai-tou-feng.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready">Archive</span>
             <h3 class="piece-card__title">钗头凤</h3>
             <p class="piece-card__meta">Chai Tou Feng</p>
@@ -1257,93 +1269,111 @@
             </div>
           </button>
 
-          <a class="piece-card" href="pieces/bubuxinjing-1.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/bubuxinjing-1.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">步步惊心 · 第一场</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/bubuxinjing-2.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/bubuxinjing-2.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">步步惊心 · 第二场</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/bubuxinjing-3.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/bubuxinjing-3.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">步步惊心 · 第三场</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/bubuxinjing-4a.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/bubuxinjing-4a.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">步步惊心 · 第四场上</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/bubuxinjing-4b5a.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/bubuxinjing-4b5a.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">步步惊心 · 第四场下+第五场上</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/hongloumeng-2.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/hongloumeng-2.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">红楼梦 · 第2部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/hongloumeng-3.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/hongloumeng-3.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">红楼梦 · 第3部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/hongloumeng-4.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/hongloumeng-4.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">红楼梦 · 第4部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/hongloumeng-5.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/hongloumeng-5.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">红楼梦 · 第5部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/liangzhu-xia.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/liangzhu-xia.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">梁祝 · 下</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/limaohuan-taizi.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/limaohuan-taizi.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">狸猫换太子</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/para-2.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/para-2.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">经典折子 · para 2</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/para-3.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/para-3.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">经典折子 · para 3（含与 para1 重叠段）</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/wunv-baishou-1.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/wunv-baishou-1.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">五女拜寿 · 第1部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/wunv-baishou-2.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/wunv-baishou-2.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">五女拜寿 · 第2部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/wunv-baishou-3.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/wunv-baishou-3.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">五女拜寿 · 第3部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
-          <a class="piece-card" href="pieces/wunv-baishou-4.html" data-archive-category="yueju">
+          <a class="piece-card" href="pieces/wunv-baishou-4.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge">越剧</span>
             <h3 class="piece-card__title">五女拜寿 · 第4部分</h3>
             <p class="piece-card__meta">完整音频可能仅本地；可先读时间轴文本</p>
           </a>
 
-          <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong-full.html" data-archive-category="yueju">
+          <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong-full.html" data-archive-recent="1" data-archive-category="yueju">
+            <span class="badge badge--new" data-i18n="archive.badgeNew">新</span>
             <span class="badge badge--ready">Archive</span>
             <h3 class="piece-card__title">梁祝 · 十八相送（完整版）</h3>
             <p class="piece-card__meta">Butterfly Lovers · Eighteen Farewells · full timeline</p>
@@ -1795,6 +1825,12 @@
                   <li>试着跟读一两句念白，感受越语与普通话不一样的地方。</li>
                   <li>听到有趣的词就记下来；完整词汇表仍在建设中，可先在档案文本与剧情简介里对照理解。</li>
                 </ul>
+                <h4 data-i18n="plan.quickStartTitle">快速开始</h4>
+                <a class="plan-quickstart" href="pieces/liangzhu-shibaxiangsong.html">
+                  <span class="plan-quickstart__kicker" data-i18n="plan.quickStartKicker">精选档案 · 有音有字幕</span>
+                  <span class="plan-quickstart__title" data-i18n="plan.quickStartLiangzhu">从「梁祝 · 十八相送」开始听</span>
+                  <span class="plan-quickstart__meta" data-i18n="plan.quickStartMeta">约 2.5 分钟 · 点时间戳即可跳转</span>
+                </a>
                 <div class="plan-cta-row">
                   <a class="home-cta__btn home-cta__btn--primary" href="#learn-fayin-l1">打开第1阶字音</a>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">打开档案</button>
@@ -1815,6 +1851,12 @@
                   <li>試着跟讀一兩句念白，感受越語與普通話不一樣的地方。</li>
                   <li>聽到有趣的詞就記下來；完整詞彙表仍在建設中，可先在檔案文本與劇情簡介裏對照理解。</li>
                 </ul>
+                <h4 data-i18n="plan.quickStartTitle">快速開始</h4>
+                <a class="plan-quickstart" href="pieces/liangzhu-shibaxiangsong.html">
+                  <span class="plan-quickstart__kicker" data-i18n="plan.quickStartKicker">精選檔案 · 有音有字幕</span>
+                  <span class="plan-quickstart__title" data-i18n="plan.quickStartLiangzhu">從「梁祝 · 十八相送」開始聽</span>
+                  <span class="plan-quickstart__meta" data-i18n="plan.quickStartMeta">約 2.5 分鐘 · 點時間戳即可跳轉</span>
+                </a>
                 <div class="plan-cta-row">
                   <a class="home-cta__btn home-cta__btn--primary" href="#learn-fayin-l1">打開第1階字音</a>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">打開檔案</button>
@@ -1835,6 +1877,12 @@
                   <li>Try reading one or two spoken lines aloud and notice how Yueyu differs from Mandarin.</li>
                   <li>Jot down interesting words; a full vocabulary list is still being built—use plot intros and transcripts for now.</li>
                 </ul>
+                <h4 data-i18n="plan.quickStartTitle">Quick start</h4>
+                <a class="plan-quickstart" href="pieces/liangzhu-shibaxiangsong.html">
+                  <span class="plan-quickstart__kicker" data-i18n="plan.quickStartKicker">Featured archive · audio + timed text</span>
+                  <span class="plan-quickstart__title" data-i18n="plan.quickStartLiangzhu">Start with Butterfly Lovers · Eighteen Farewells</span>
+                  <span class="plan-quickstart__meta" data-i18n="plan.quickStartMeta">~2.5 min · click a timestamp to jump</span>
+                </a>
                 <div class="plan-cta-row">
                   <a class="home-cta__btn home-cta__btn--primary" href="#learn-fayin-l1">Open Level 1 sounds</a>
                   <button type="button" class="home-cta__btn" data-panel-target="archive">Open Archive</button>
@@ -2936,24 +2984,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824w4a",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824w4a",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824w4a",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824w4a",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824w4a",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824w4a",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824w4a",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824w4a",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824w4a",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824w4a"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260824ux1",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260824ux1",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260824ux1",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260824ux1",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260824ux1",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260824ux1",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260824ux1",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260824ux1",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260824ux1",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260824ux1"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260824w4a"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260824w4a"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260824w4a"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824w4a"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260824w4a"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824w4a"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260824ux1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260824ux1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260824ux1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824ux1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260824ux1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824ux1"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@ function initNavigation(): void {
 
     const currentHash = window.location.hash.replace(/^#/, "");
     const keepArchiveSubhash =
-      target === "archive" && /^archive-(tanci|yueju|speakers|broadcast)$/.test(currentHash);
+      target === "archive" && /^archive-(tanci|yueju|speakers|broadcast|recent)$/.test(currentHash);
     const keepDeepSubhash =
       (target === "learn" && /^learn-/.test(currentHash)) ||
       (target === "speak" && /^speak-sample-/.test(currentHash)) ||
@@ -142,7 +142,10 @@ function initArchiveFilters(): (category: string, opts?: { scroll?: boolean }) =
     let firstVisible: HTMLElement | null = null;
     cards.forEach((card) => {
       const cat = card.dataset.archiveCategory ?? "yueju";
-      const catOk = category === "all" || cat === category;
+      const isRecent = card.dataset.archiveRecent === "1";
+      const catOk =
+        category === "all" ||
+        (category === "recent" ? isRecent : cat === category);
       const text = card.textContent?.toLowerCase() ?? "";
       const searchOk = !q || text.includes(q);
       const show = catOk && searchOk;
@@ -151,6 +154,14 @@ function initArchiveFilters(): (category: string, opts?: { scroll?: boolean }) =
       card.setAttribute("aria-hidden", show ? "false" : "true");
       if (show && !firstVisible) firstVisible = card;
     });
+    if (category === "recent" && grid) {
+      const ordered = Array.from(cards).sort((a, b) => {
+        const ar = a.dataset.archiveRecent === "1" ? 0 : 1;
+        const br = b.dataset.archiveRecent === "1" ? 0 : 1;
+        return ar - br;
+      });
+      for (const card of ordered) grid.append(card);
+    }
     if (opts?.scroll || opts?.flash) {
       requestAnimationFrame(() => {
         const target = firstVisible ?? grid;
@@ -169,7 +180,8 @@ function initArchiveFilters(): (category: string, opts?: { scroll?: boolean }) =
       event.stopPropagation();
       const category = btn.dataset.archiveFilter ?? "all";
       apply(category, { scroll: true, flash: category !== "all" });
-      const nextHash = category === "all" ? "archive" : `archive-${category}`;
+      const nextHash =
+        category === "all" ? "archive" : category === "recent" ? "archive-recent" : `archive-${category}`;
       history.replaceState(null, "", `#${nextHash}`);
     });
   });
@@ -267,9 +279,16 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
   }
 
   if (hash.startsWith("archive")) {
-    const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
-    const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
-    if (catMatch) history.replaceState(null, "", `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`);
+    const catMatch = /^archive-(tanci|yueju|speakers|broadcast|recent)$/.exec(hash);
+    const filterCat =
+      catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
+    if (catMatch) {
+      history.replaceState(
+        null,
+        "",
+        `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`,
+      );
+    }
     document.querySelector<HTMLElement>(`.site-nav [data-panel-target="archive"]`)?.click();
     applyArchiveFilter(filterCat, { scroll: true });
     return;

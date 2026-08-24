@@ -478,6 +478,28 @@ html[data-theme="dark"] .speak-ling-note {
   margin-top: var(--space-2);
 }
 
+.speak-path__next {
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  line-height: 1.45;
+}
+
+.speak-prosody-example {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-xs);
+  color: var(--color-ink-faint);
+  line-height: 1.45;
+  max-width: 16rem;
+}
+
+a.speak-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .speak-piece {
   display: flex;
   flex-wrap: wrap;

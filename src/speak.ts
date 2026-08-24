@@ -71,6 +71,7 @@ const archiveRadarCaption = document.getElementById("speak-archive-radar-caption
 const archiveMeter = document.getElementById("speak-archive-meter");
 const archiveMeterLabel = document.getElementById("speak-archive-meter-label");
 const archiveOpen = document.getElementById("speak-archive-open") as HTMLAnchorElement | null;
+const archiveNext = document.getElementById("speak-archive-next");
 const gistUseBtn = document.getElementById("speak-gist-use") as HTMLButtonElement | null;
 const pieceSelect = document.getElementById("speak-piece") as HTMLSelectElement | null;
 const followTimeEl = document.getElementById("speak-follow-time") as HTMLInputElement | null;
@@ -377,6 +378,7 @@ function hidePathPanels(): void {
     archiveOpen.hidden = true;
     archiveOpen.removeAttribute("href");
   }
+  if (archiveNext) archiveNext.hidden = true;
   if (lingWrapEl) lingWrapEl.hidden = true;
   if (lingNoteEl) lingNoteEl.textContent = "";
   setMeter(archiveMeter, archiveMeterLabel, 0, "—");
@@ -643,11 +645,14 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
     if (href) {
       archiveOpen.hidden = false;
       archiveOpen.href = href;
-      archiveOpen.target = "_blank";
+      archiveOpen.removeAttribute("target");
       archiveOpen.rel = "noopener";
+      archiveOpen.classList.add("speak-btn--primary");
+      if (archiveNext) archiveNext.hidden = false;
     } else {
       archiveOpen.hidden = true;
       archiveOpen.removeAttribute("href");
+      if (archiveNext) archiveNext.hidden = true;
     }
   }
 
