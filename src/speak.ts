@@ -84,6 +84,8 @@ let finalTranscript = "";
 let translateTimer: number | null = null;
 let whisperPipeline: AsrPipeline | null = null;
 let whisperLoading: Promise<AsrPipeline> | null = null;
+/** Prevent double-start when Try sample is clicked while ASR is already running. */
+let asrBusy = false;
 let modelPrep: Promise<void> | null = null;
 let previewObjectUrl: string | null = null;
 let lastGist: GistResult | null = null;
@@ -811,47 +813,64 @@ function whisperLanguageHint(): string | undefined {
 }
 
 async function recognizeBlob(blob: Blob, label: string): Promise<void> {
-  if (previewObjectUrl) {
-    URL.revokeObjectURL(previewObjectUrl);
-    previewObjectUrl = null;
+  if (asrBusy) {
+    setStatus(t("speak.status.busy"));
+    return;
   }
-  previewObjectUrl = URL.createObjectURL(blob);
-  if (audioPreview) {
-    audioPreview.src = previewObjectUrl;
-    audioPreview.hidden = false;
-  }
-
-  setStatus(tf("speak.status.recognizing", { name: label }));
-  if (recognizedEl) recognizedEl.value = "";
-  if (zhHansEl) zhHansEl.textContent = "…";
-  if (zhHantEl) zhHantEl.textContent = "…";
-  if (enEl) enEl.textContent = "…";
-
+  asrBusy = true;
+  setSampleButtonsDisabled(true);
   try {
-    const asr = await ensureWhisper();
-    const language = whisperLanguageHint();
-    const result = await asr(previewObjectUrl, {
-      chunk_length_s: 30,
-      stride_length_s: 5,
-      ...(language ? { language, task: "transcribe" } : {}),
-    });
-
-    const text = Array.isArray(result)
-      ? result.map((r) => r.text ?? "").join(" ").trim()
-      : (result.text ?? "").trim();
-
-    if (!text) {
-      applyRecognizedText("", false);
-      setStatus(t("speak.status.noSpeech"));
-      return;
+    if (previewObjectUrl) {
+      URL.revokeObjectURL(previewObjectUrl);
+      previewObjectUrl = null;
+    }
+    previewObjectUrl = URL.createObjectURL(blob);
+    if (audioPreview) {
+      audioPreview.src = previewObjectUrl;
+      audioPreview.hidden = false;
     }
 
-    applyRecognizedText(text, true);
-    setStatus(t("speak.status.recogDone"));
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    setStatus(tf("speak.status.uploadFail", { msg: message }));
+    setStatus(tf("speak.status.recognizing", { name: label }));
+    if (recognizedEl) recognizedEl.value = "";
+    if (zhHansEl) zhHansEl.textContent = "…";
+    if (zhHantEl) zhHantEl.textContent = "…";
+    if (enEl) enEl.textContent = "…";
+
+    try {
+      const asr = await ensureWhisper();
+      const language = whisperLanguageHint();
+      const result = await asr(previewObjectUrl, {
+        chunk_length_s: 30,
+        stride_length_s: 5,
+        ...(language ? { language, task: "transcribe" } : {}),
+      });
+
+      const text = Array.isArray(result)
+        ? result.map((r) => r.text ?? "").join(" ").trim()
+        : (result.text ?? "").trim();
+
+      if (!text) {
+        applyRecognizedText("", false);
+        setStatus(t("speak.status.noSpeech"));
+        return;
+      }
+
+      applyRecognizedText(text, true);
+      setStatus(t("speak.status.recogDone"));
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      setStatus(tf("speak.status.uploadFail", { msg: message }));
+    }
+  } finally {
+    asrBusy = false;
+    setSampleButtonsDisabled(false);
   }
+}
+
+function setSampleButtonsDisabled(disabled: boolean): void {
+  document.querySelectorAll<HTMLButtonElement>("[data-speak-sample]").forEach((btn) => {
+    btn.disabled = disabled;
+  });
 }
 
 async function recognizeUploadedFile(file: File): Promise<void> {
@@ -1012,9 +1031,11 @@ function initSpeakOutputTabs(): void {
 }
 
 async function runSample(url: string, label: string): Promise<void> {
+  // Resolve relative sample paths against the page URL (not the module URL).
+  const abs = new URL(url, window.location.href).href;
   setStatus(tf("speak.status.sampleLoading", { name: label }));
   try {
-    const res = await fetch(url);
+    const res = await fetch(abs);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const blob = await res.blob();
     const name = url.split("/").pop() ?? "sample.m4a";
@@ -1131,11 +1152,75 @@ document.addEventListener("DOMContentLoaded", () => {
   initSpeak();
   onLocaleChange(() => {
     syncSpeakChrome();
-    if (statusEl && !listening && !(recognizedEl?.value || "").trim()) {
+    if (statusEl && !listening && !(recognizedEl?.value || "").trim() && !asrBusy) {
       setStatus(t("speak.status.ready"));
     }
-    // Re-render ①/② path copy + radar labels in the new UI language.
+    // Re-label ①/② from cached results only — do not re-run Whisper / re-decode audio
+    // (that was racing Try-sample and could make the button look dead).
     const hyp = (recognizedEl?.value || "").trim();
-    if (hyp) void runPostAsrPaths(hyp);
+    if (hyp && lastGist && !asrBusy) {
+      void refreshPathLocaleOnly();
+    }
   });
 });
+
+/** Swap zh/en copy + radar axis labels without re-fetching audio features. */
+async function refreshPathLocaleOnly(): Promise<void> {
+  if (!lastGist || !pathRoot || pathRoot.hidden) return;
+  const en = preferEnUi();
+  const isHit = archiveBadge?.classList.contains("speak-gist__badge--anchored");
+  const conf = lastGist.confidence ?? 0;
+
+  if (archiveText) {
+    if (isHit) archiveText.textContent = en ? lastGist.gistEn : lastGist.gistZh;
+    else if (conf >= ARCHIVE_NEAR_MIN) archiveText.textContent = t("speak.path.weakBody");
+    else archiveText.textContent = t("speak.path.missBody");
+  }
+  if (sceneCardEl) {
+    const line = en ? lastGist.sceneEn : lastGist.sceneZh;
+    if (line && (isHit || line)) {
+      sceneCardEl.hidden = false;
+      sceneCardEl.textContent = line;
+    }
+  }
+  if (lastProsody && prosodyText) {
+    let summary = en ? lastProsody.summaryEn : lastProsody.summaryZh;
+    if (isHit) {
+      summary = en
+        ? summary.replace(/^Not in archive\.\s*/i, "Archive candidate ready; from delivery, ")
+        : summary.replace(/^档案未命中。/, "档案已有候选句；同时从腔调看，");
+    }
+    prosodyText.textContent = summary;
+    if (prosodyMetrics) {
+      prosodyMetrics.hidden = false;
+      prosodyMetrics.textContent = en ? lastProsody.metricsEn : lastProsody.metricsZh;
+    }
+    const labels = emotionLabelsForUi();
+    const focus = lastProsody.top.map(emotionName).filter(Boolean).join(" · ");
+    renderThemeRadar(
+      prosodyRadar,
+      prosodyRadarCaption,
+      lastProsody.scores,
+      labels,
+      focus ? tf("speak.path.emotionFocus", { themes: focus }) : t("speak.path.emotionEmpty"),
+      t("speak.path.emotionEmpty"),
+    );
+  }
+  const index = await loadLyricIndex();
+  if (index) {
+    const pieceId = selectedPieceId();
+    const radarAxes = localizeThemeAxes(getPieceRadarAxes(pieceId, index.themes), en);
+    const top = lastGist.topThemes
+      .map((id) => radarAxes.find((x) => x.id === id)?.label)
+      .filter(Boolean)
+      .join(" · ");
+    renderThemeRadar(
+      archiveRadar,
+      archiveRadarCaption,
+      lastGist.themeScores,
+      radarAxes,
+      isHit && top ? tf("speak.gist.radarFocus", { themes: top }) : t("speak.path.radarIdle"),
+      t("speak.gist.radarEmpty"),
+    );
+  }
+}
