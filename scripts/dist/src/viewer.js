@@ -41,6 +41,7 @@ function setupAudioHonesty(audioEl) {
         showMissing();
         return;
     }
+    // Probe availability without relying on HEAD (some hosts reject it).
     const src = audioEl.getAttribute("src");
     if (!src) {
         showMissing();

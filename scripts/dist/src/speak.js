@@ -1,8 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824w3b";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824w3b";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824w3b";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824w3b";
-import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824w3b";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824w4a";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824w4a";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824w4a";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824w4a";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824w4a";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
@@ -391,8 +391,15 @@ function renderThemeRadar(svg, caption, scores, labels, focusText, emptyText) {
     <polygon points="${valuePts.join(" ")}" fill="rgba(44,95,74,.28)" stroke="#2c5f4a" stroke-width="2"/>
     ${labelsSvg.join("")}
   `;
-    if (caption)
+    if (caption) {
         caption.textContent = focusText || emptyText;
+        const summary = (caption.textContent || "").trim();
+        svg.setAttribute("role", "img");
+        if (summary)
+            svg.setAttribute("aria-label", summary);
+        else
+            svg.removeAttribute("aria-label");
+    }
 }
 function archiveHit(result, fpBest) {
     if (fpBest >= 0.88)
@@ -735,7 +742,8 @@ async function ensureWhisper() {
     catch (localError) {
         whisperLoading = null;
         const msg = localError instanceof Error ? localError.message : String(localError);
-        if (/Failed to fetch|NetworkError|CDN|import|whisperCdnFail/i.test(msg) || msg.includes(t("speak.status.whisperCdnFail"))) {
+        if (/Failed to fetch|NetworkError|CDN|import|whisperCdnFail/i.test(msg) ||
+            msg.includes(t("speak.status.whisperCdnFail"))) {
             setStatus(t("speak.status.whisperCdnFail"));
             throw localError instanceof Error ? localError : new Error(msg);
         }
