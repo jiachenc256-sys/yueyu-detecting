@@ -340,12 +340,19 @@ async function initZiyin(): Promise<void> {
           ? t("learn.quest.masterTitle")
           : tf("learn.quest.gateTitle", { n: gate, name: levelLabel(gate) });
     }
-    if (celebrateBodyEl) {
-      celebrateBodyEl.textContent =
-        kind === "master"
-          ? t("learn.quest.celebrateMasterBody")
-          : tf("learn.quest.passToast", { badge: t(`learn.quest.badge${gate}`) });
+    let body =
+      kind === "master"
+        ? t("learn.quest.celebrateMasterBody")
+        : tf("learn.quest.passToast", { badge: t(`learn.quest.badge${gate}`) });
+    try {
+      if (!localStorage.getItem(EXPORT_NUDGE_KEY)) {
+        body = `${body}\n\n${t("learn.quest.exportNudge")}`;
+        localStorage.setItem(EXPORT_NUDGE_KEY, "1");
+      }
+    } catch {
+      /* ignore */
     }
+    if (celebrateBodyEl) celebrateBodyEl.textContent = body;
     if (celebrateNextBtn) {
       const showNext = kind === "gate" && next != null;
       celebrateNextBtn.hidden = !showNext;
@@ -582,6 +589,7 @@ async function initZiyin(): Promise<void> {
       updateQuestSessionUi();
       if (questGate == null) renderQuestMap();
     }
+    updateChunkUi();
   }
 
   function markCard(kind: "known" | "unknown"): void {
@@ -702,6 +710,137 @@ async function initZiyin(): Promise<void> {
     }
   }
 
+  const CHUNK_SIZE = 100;
+  const CHUNK_KEY = "yueyu-ziyin-gate5-chunk-v1";
+  const EXPORT_NUDGE_KEY = "yueyu-ziyin-export-nudge-v1";
+  let gate5Chunk = 0;
+
+  function loadGate5Chunk(): number {
+    try {
+      const n = Number(localStorage.getItem(CHUNK_KEY));
+      return Number.isFinite(n) && n >= 0 ? Math.floor(n) : 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  function saveGate5Chunk(n: number): void {
+    localStorage.setItem(CHUNK_KEY, String(n));
+  }
+
+  function gate5ChunkCount(): number {
+    return Math.max(1, Math.ceil(reviewBaseItems().length / CHUNK_SIZE));
+  }
+
+  function clampGate5Chunk(n: number): number {
+    return Math.max(0, Math.min(gate5ChunkCount() - 1, n));
+  }
+
+  function itemsForGate5Chunk(chunk: number): ZiyinItem[] {
+    const base = reviewBaseItems();
+    const start = chunk * CHUNK_SIZE;
+    return base.slice(start, start + CHUNK_SIZE);
+  }
+
+  function chunkStats(chunk: number): { known: number; size: number; pct: number } {
+    const items = itemsForGate5Chunk(chunk);
+    const knownSet = new Set(progress.known);
+    const known = items.filter((it) => knownSet.has(it.han)).length;
+    const size = items.length || 1;
+    return { known, size: items.length, pct: Math.floor((known / size) * 100) };
+  }
+
+  function preferredGate5Chunk(): number {
+    const total = gate5ChunkCount();
+    for (let i = 0; i < total; i += 1) {
+      if (chunkStats(i).pct < Math.floor(QUEST_PASS * 100)) return i;
+    }
+    return clampGate5Chunk(loadGate5Chunk());
+  }
+
+  function usesGate5Chunks(): boolean {
+    if (reviewWrongOnly || reviewDueOnly) return false;
+    if (learnMode === "quest") return questGate === 5;
+    return level === 5;
+  }
+
+  function buildFlashPool(): ZiyinItem[] {
+    if (learnMode === "quest" && questGate != null) {
+      if (questGate === 5) {
+        gate5Chunk = clampGate5Chunk(gate5Chunk);
+        return itemsForGate5Chunk(gate5Chunk).slice();
+      }
+      return gateItems(questGate).slice();
+    }
+    const base = reviewBaseItems();
+    if (reviewWrongOnly) {
+      const wrong = new Set(progress.unknown);
+      const filtered = base.filter((it) => wrong.has(it.han));
+      return filtered.length ? filtered : base.slice();
+    }
+    if (reviewDueOnly) {
+      const due = new Set(dueHans());
+      const filtered = base.filter((it) => due.has(it.han));
+      return filtered.length ? filtered : base.slice();
+    }
+    if (level === 5) {
+      gate5Chunk = clampGate5Chunk(gate5Chunk);
+      return itemsForGate5Chunk(gate5Chunk).slice();
+    }
+    return base.slice();
+  }
+
+  function updateChunkUi(): void {
+    const questChrome = document.getElementById("ziyin-chunk-chrome");
+    const classicChromeChunk = document.getElementById("ziyin-chunk-chrome-classic");
+    const questStatus = document.getElementById("ziyin-chunk-status");
+    const classicStatus = document.getElementById("ziyin-chunk-status-classic");
+    const show = usesGate5Chunks() && isFlashMode();
+    if (questChrome) questChrome.hidden = !(show && learnMode === "quest");
+    if (classicChromeChunk) classicChromeChunk.hidden = !(show && learnMode === "classic");
+    if (!show) return;
+    const stats = chunkStats(gate5Chunk);
+    const text = tf("learn.quest.chunkStatus", {
+      current: gate5Chunk + 1,
+      total: gate5ChunkCount(),
+      known: stats.known,
+      size: stats.size,
+    });
+    if (questStatus) questStatus.textContent = `${text} · ${t("learn.quest.chunkHint")}`;
+    if (classicStatus) classicStatus.textContent = text;
+    const atStart = gate5Chunk <= 0;
+    const atEnd = gate5Chunk >= gate5ChunkCount() - 1;
+    for (const id of ["ziyin-chunk-prev", "ziyin-chunk-prev-classic"]) {
+      const btn = document.getElementById(id) as HTMLButtonElement | null;
+      if (btn) btn.disabled = atStart;
+    }
+    for (const id of ["ziyin-chunk-next", "ziyin-chunk-next-classic"]) {
+      const btn = document.getElementById(id) as HTMLButtonElement | null;
+      if (btn) btn.disabled = atEnd;
+    }
+  }
+
+  function setGate5Chunk(next: number, reload = true): void {
+    gate5Chunk = clampGate5Chunk(next);
+    saveGate5Chunk(gate5Chunk);
+    if (!reload) {
+      updateChunkUi();
+      return;
+    }
+    if (learnMode === "quest" && questGate === 5) {
+      pool = itemsForGate5Chunk(gate5Chunk).slice();
+      shuffleInPlace(pool);
+      index = 0;
+      updateChunkUi();
+      updateProgressUi();
+      paint();
+      return;
+    }
+    if (learnMode === "classic" && level === 5) {
+      setLevel(5, true);
+    }
+  }
+
   let level = 1;
   let pool = allItems.filter((it) => (it.level ?? 1) === level);
   if (!pool.length) pool = allItems;
@@ -710,6 +849,7 @@ async function initZiyin(): Promise<void> {
   let paintToken = 0;
   const player = new Audio();
   player.preload = "none";
+  gate5Chunk = clampGate5Chunk(loadGate5Chunk());
 
   function isFlashMode(): boolean {
     if (learnMode === "quest") return questGate != null;
@@ -794,6 +934,7 @@ async function initZiyin(): Promise<void> {
     const classicStageHint = document.getElementById("ziyin-classic-stage-hint");
     if (classicStageHint) classicStageHint.hidden = learnMode !== "classic" || inQuestMap;
     updateProgressUi();
+    updateChunkUi();
   }
 
   function setLearnMode(mode: LearnMode): void {
@@ -816,12 +957,17 @@ async function initZiyin(): Promise<void> {
     level = gate;
     reviewWrongOnly = false;
     reviewDueOnly = false;
-    pool = gateItems(gate).slice();
+    if (gate === 5) {
+      gate5Chunk = preferredGate5Chunk();
+      saveGate5Chunk(gate5Chunk);
+    }
+    pool = buildFlashPool();
     if (!pool.length) pool = reviewBaseItems().slice();
     shuffleInPlace(pool);
     index = 0;
     if (levelNameEl) levelNameEl.textContent = levelLabel(gate);
     syncModeUi();
+    updateChunkUi();
     paint();
     stage!.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -905,28 +1051,14 @@ async function initZiyin(): Promise<void> {
     }
     level = next;
     if (isFlashMode()) {
-      if (learnMode === "quest" && questGate != null) {
-        pool = gateItems(questGate).slice();
-      } else {
-        const base = reviewBaseItems();
-        if (reviewWrongOnly) {
-          const wrong = new Set(progress.unknown);
-          pool = base.filter((it) => wrong.has(it.han));
-          if (!pool.length) {
-            reviewWrongOnly = false;
-            pool = base.slice();
-          }
-        } else if (reviewDueOnly) {
-          const due = new Set(dueHans());
-          pool = base.filter((it) => due.has(it.han));
-          if (!pool.length) {
-            reviewDueOnly = false;
-            pool = base.slice();
-          }
-        } else {
-          pool = base.slice();
-        }
+      if (learnMode === "classic" && next === 5 && !reviewWrongOnly && !reviewDueOnly) {
+        gate5Chunk = preferredGate5Chunk();
+        saveGate5Chunk(gate5Chunk);
       }
+      pool = buildFlashPool();
+      if (reviewWrongOnly && !pool.length) reviewWrongOnly = false;
+      if (reviewDueOnly && !pool.length) reviewDueOnly = false;
+      if (!pool.length) pool = reviewBaseItems().slice();
     } else {
       pool = allItems.filter((it) => (it.level ?? 1) === level);
     }
@@ -941,6 +1073,7 @@ async function initZiyin(): Promise<void> {
     });
     if (levelNameEl) levelNameEl.textContent = levelLabel(level);
     syncModeUi();
+    updateChunkUi();
     paint();
   }
 
@@ -1028,6 +1161,13 @@ async function initZiyin(): Promise<void> {
   celebrateEl?.addEventListener("click", (event) => {
     if (event.target === celebrateEl) hideQuestCelebrate();
   });
+
+  const bindChunkNav = (prevId: string, nextId: string): void => {
+    document.getElementById(prevId)?.addEventListener("click", () => setGate5Chunk(gate5Chunk - 1));
+    document.getElementById(nextId)?.addEventListener("click", () => setGate5Chunk(gate5Chunk + 1));
+  };
+  bindChunkNav("ziyin-chunk-prev", "ziyin-chunk-next");
+  bindChunkNav("ziyin-chunk-prev-classic", "ziyin-chunk-next-classic");
 
   questBackBtn?.addEventListener("click", () => leaveQuestGate());
 
@@ -1184,6 +1324,7 @@ async function initZiyin(): Promise<void> {
     if (learnMode === "quest" && questGate == null) renderQuestMap();
     else if (learnMode === "quest") updateQuestSessionUi();
     updateQuestFocusUi();
+    updateChunkUi();
   });
 
   renderSyllabus();

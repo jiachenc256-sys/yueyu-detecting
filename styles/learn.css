@@ -998,11 +998,29 @@ button.ziyin-quest__node:hover {
   font-weight: 600;
 }
 
+.ziyin-chunk {
+  margin: 0 0 var(--space-3);
+}
+
+.ziyin-chunk__status {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.ziyin-chunk__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
 .ziyin-quest-celebrate__body {
   margin: 0 0 var(--space-5);
   color: var(--color-ink-muted);
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
+  white-space: pre-line;
 }
 
 .ziyin-quest-celebrate__actions {
