@@ -286,15 +286,40 @@ html[data-theme="light"] #speak-recognized {
   opacity: 0.72;
 }
 
-.speak-ling-note {
-  margin: 0.35rem 0 0.55rem;
-  padding: 0.55rem 0.7rem;
-  border-left: 3px solid #6b5a3e;
-  background: color-mix(in srgb, #6b5a3e 10%, transparent);
-  border-radius: 0 8px 8px 0;
+.speak-ling-wrap {
+  margin: 0.5rem 0 0.65rem;
+}
+
+.speak-ling-wrap__label {
+  margin: 0 0 0.35rem;
   font-size: var(--text-xs);
-  line-height: 1.5;
-  color: var(--color-ink);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #6b5a3e;
+  text-transform: none;
+}
+
+.speak-ling-note {
+  margin: 0;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid color-mix(in srgb, #6b5a3e 35%, var(--color-border, #ccc));
+  border-left: 4px solid #6b5a3e;
+  background: #f7f1e8;
+  border-radius: 8px;
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: #2a241c;
+  font-weight: 550;
+}
+
+html[data-theme="dark"] .speak-ling-wrap__label {
+  color: #c4b094;
+}
+
+html[data-theme="dark"] .speak-ling-note {
+  background: color-mix(in srgb, #6b5a3e 22%, #1a1f29);
+  color: var(--color-ink, #f2ebe3);
+  border-color: color-mix(in srgb, #6b5a3e 50%, transparent);
 }
 
 @keyframes speak-in {
