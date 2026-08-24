@@ -26,9 +26,14 @@ interface ArchiveHit {
   snippet?: string;
 }
 
+const SCENES = ["", "greet", "buy", "ask", "family", "weather", "theatre", "daily"] as const;
+
 let chars: ZiyinItem[] = [];
 let phrases: PhraseItem[] = [];
 let archiveByChar: Record<string, ArchiveHit[]> = {};
+let tradToHans: Record<string, string> = {};
+let audioHans = new Set<string>();
+let activeScene = "";
 
 function audioUrlFor(han: string): string {
   return `assets/learn/ziyin-audio/shengzhou/${encodeURIComponent(han)}.m4a`;
@@ -38,28 +43,56 @@ function normalize(s: string): string {
   return s.trim().toLowerCase();
 }
 
+/** Tone-insensitive pinyin: strip marks + trailing 1–5. */
+function stripPinyin(s: string): string {
+  return normalize(s)
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .replace(/ü/g, "v")
+    .replace(/[1-5]/g, "");
+}
+
+function queryVariants(q: string): string[] {
+  const raw = q.trim();
+  if (!raw) return [];
+  const out = new Set<string>([raw, normalize(raw), stripPinyin(raw)]);
+  let hans = "";
+  for (const ch of raw) {
+    hans += tradToHans[ch] ?? ch;
+  }
+  if (hans !== raw) {
+    out.add(hans);
+    out.add(normalize(hans));
+    out.add(stripPinyin(hans));
+  }
+  return [...out].filter(Boolean);
+}
+
 function matchChar(item: ZiyinItem, q: string): boolean {
   if (!q) return item.level !== undefined && item.level <= 4;
-  const n = normalize(q);
-  return (
-    item.han.includes(q) ||
-    normalize(item.pinyin ?? "").includes(n) ||
-    normalize(item.tag ?? "").includes(n) ||
-    normalize(item.shangyu ?? "").includes(n) ||
-    normalize(item.zhuji ?? "").includes(n) ||
-    normalize(item.shengzhou ?? "").includes(n)
+  const variants = queryVariants(q);
+  const pin = stripPinyin(item.pinyin ?? "");
+  return variants.some(
+    (v) =>
+      item.han.includes(v) ||
+      pin.includes(stripPinyin(v)) ||
+      normalize(item.tag ?? "").includes(normalize(v)) ||
+      normalize(item.shangyu ?? "").includes(normalize(v)) ||
+      normalize(item.zhuji ?? "").includes(normalize(v)) ||
+      normalize(item.shengzhou ?? "").includes(normalize(v)),
   );
 }
 
 function matchPhrase(item: PhraseItem, q: string): boolean {
   if (!q) return true;
-  const n = normalize(q);
-  return (
-    item.zh.includes(q) ||
-    normalize(item.en).includes(n) ||
-    normalize(item.scene ?? "").includes(n) ||
-    normalize(item.note ?? "").includes(n) ||
-    (item.chars ?? []).some((c) => c.includes(q))
+  const variants = queryVariants(q);
+  return variants.some(
+    (v) =>
+      item.zh.includes(v) ||
+      normalize(item.en).includes(normalize(v)) ||
+      normalize(item.scene ?? "").includes(normalize(v)) ||
+      normalize(item.note ?? "").includes(normalize(v)) ||
+      (item.chars ?? []).some((c) => c.includes(v) || (tradToHans[v] && c.includes(tradToHans[v]!))),
   );
 }
 
@@ -68,7 +101,7 @@ function relatedPhrases(han: string): PhraseItem[] {
 }
 
 function archiveHits(han: string): ArchiveHit[] {
-  return (archiveByChar[han] ?? []).slice(0, 3);
+  return (archiveByChar[han] ?? []).slice(0, 5);
 }
 
 function escapeHtml(s: string): string {
@@ -77,6 +110,32 @@ function escapeHtml(s: string): string {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function sceneLabel(scene: string): string {
+  const key = `dict.scene.${scene}`;
+  const labeled = t(key);
+  return labeled === key ? scene : labeled;
+}
+
+function renderSceneChips(): void {
+  const root = document.getElementById("dict-scene-filters");
+  if (!root) return;
+  root.innerHTML = "";
+  for (const scene of SCENES) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "dict-scene-chip";
+    btn.dataset.dictScene = scene;
+    btn.setAttribute("aria-pressed", scene === activeScene ? "true" : "false");
+    btn.textContent = scene ? sceneLabel(scene) : t("dict.sceneAll");
+    btn.addEventListener("click", () => {
+      activeScene = scene;
+      renderSceneChips();
+      applyQuery();
+    });
+    root.append(btn);
+  }
 }
 
 function renderChars(list: ZiyinItem[]): void {
@@ -93,6 +152,7 @@ function renderChars(list: ZiyinItem[]): void {
     card.className = "dict-card";
     const related = relatedPhrases(item.han);
     const hits = archiveHits(item.han);
+    const hasAudio = audioHans.has(item.han);
     const relatedHtml = related.length
       ? `<div class="dict-card__related">
           <p class="dict-card__related-label">${t("dict.relatedPhrases")} · ${tf("dict.phraseCount", { n: related.length })}</p>
@@ -117,6 +177,9 @@ function renderChars(list: ZiyinItem[]): void {
             .join("")}</ul>
         </div>`
       : "";
+    const playBtn = hasAudio
+      ? `<button type="button" class="speak-btn dict-card__play" data-dict-audio="${audioUrlFor(item.han)}">${t("dict.playShengzhou")}</button>`
+      : `<button type="button" class="speak-btn dict-card__play" disabled title="${escapeHtml(t("dict.audioMissing"))}">${t("dict.audioMissing")}</button>`;
     card.innerHTML = `
       <div class="dict-card__head">
         <span class="dict-card__han">${escapeHtml(item.han)}</span>
@@ -127,7 +190,7 @@ function renderChars(list: ZiyinItem[]): void {
         <div><dt>${t("dict.placeZhuji")}</dt><dd>${escapeHtml(item.zhuji ?? "—")}</dd></div>
         <div><dt>${t("dict.placeShengzhou")}</dt><dd>${escapeHtml(item.shengzhou ?? "—")}</dd></div>
       </dl>
-      <button type="button" class="speak-btn dict-card__play" data-dict-audio="${audioUrlFor(item.han)}">${t("dict.playShengzhou")}</button>
+      ${playBtn}
       ${relatedHtml}
       ${archiveHtml}
     `;
@@ -144,15 +207,7 @@ function renderChars(list: ZiyinItem[]): void {
       });
     });
   });
-  root.querySelectorAll<HTMLButtonElement>("[data-dict-fill]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const input = document.getElementById("dict-query") as HTMLInputElement | null;
-      if (!input) return;
-      input.value = btn.dataset.dictFill ?? "";
-      applyQuery();
-      input.focus();
-    });
-  });
+  bindFillLinks(root);
 }
 
 function renderPhrases(list: PhraseItem[]): void {
@@ -167,7 +222,9 @@ function renderPhrases(list: PhraseItem[]): void {
   for (const item of limited) {
     const card = document.createElement("article");
     card.className = "dict-card dict-card--phrase";
-    const scene = item.scene ? `<span class="dict-card__scene">${escapeHtml(item.scene)}</span>` : "";
+    const scene = item.scene
+      ? `<span class="dict-card__scene">${escapeHtml(sceneLabel(item.scene))}</span>`
+      : "";
     const note = item.note ? `<p class="dict-card__note">${escapeHtml(item.note)}</p>` : "";
     const charLinks = (item.chars ?? [])
       .slice(0, 8)
@@ -185,6 +242,10 @@ function renderPhrases(list: PhraseItem[]): void {
     `;
     root.append(card);
   }
+  bindFillLinks(root);
+}
+
+function bindFillLinks(root: HTMLElement): void {
   root.querySelectorAll<HTMLButtonElement>("[data-dict-fill]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const input = document.getElementById("dict-query") as HTMLInputElement | null;
@@ -201,7 +262,10 @@ function applyQuery(): void {
   const q = input?.value ?? "";
   const status = document.getElementById("dict-status");
   const charHits = chars.filter((c) => (c.level ?? 99) <= 4 && matchChar(c, q));
-  const phraseHits = phrases.filter((p) => matchPhrase(p, q));
+  const phraseHits = phrases.filter((p) => {
+    if (activeScene && p.scene !== activeScene) return false;
+    return matchPhrase(p, q);
+  });
   renderChars(charHits);
   renderPhrases(phraseHits);
   if (status) {
@@ -210,10 +274,12 @@ function applyQuery(): void {
 }
 
 async function boot(): Promise<void> {
-  const [ziyinRes, phraseRes, archiveRes] = await Promise.all([
+  const [ziyinRes, phraseRes, archiveRes, tradRes, audioRes] = await Promise.all([
     fetch("data/learn/ziyin.json"),
     fetch("data/dictionary/phrases.json"),
     fetch("data/dictionary/char-archive-index.json"),
+    fetch("data/dictionary/trad-to-hans.json"),
+    fetch("data/dictionary/shengzhou-audio-hans.json"),
   ]);
   if (!ziyinRes.ok) throw new Error(`ziyin HTTP ${ziyinRes.status}`);
   if (!phraseRes.ok) throw new Error(`phrases HTTP ${phraseRes.status}`);
@@ -225,13 +291,25 @@ async function boot(): Promise<void> {
     const archiveDoc = (await archiveRes.json()) as { chars?: Record<string, ArchiveHit[]> };
     archiveByChar = archiveDoc.chars ?? {};
   }
+  if (tradRes.ok) {
+    const tradDoc = (await tradRes.json()) as { map?: Record<string, string> };
+    tradToHans = tradDoc.map ?? {};
+  }
+  if (audioRes.ok) {
+    const audioDoc = (await audioRes.json()) as { hans?: string[] };
+    audioHans = new Set(audioDoc.hans ?? []);
+  }
+  renderSceneChips();
   applyQuery();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("dict-query") as HTMLInputElement | null;
   input?.addEventListener("input", () => applyQuery());
-  onLocaleChange(() => applyQuery());
+  onLocaleChange(() => {
+    renderSceneChips();
+    applyQuery();
+  });
   void boot().catch((error) => {
     const status = document.getElementById("dict-status");
     if (status) status.textContent = error instanceof Error ? error.message : String(error);

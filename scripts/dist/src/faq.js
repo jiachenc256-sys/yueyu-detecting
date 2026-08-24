@@ -3,6 +3,8 @@ function pick(item, field) {
     const locale = getLocale();
     if (locale === "en")
         return item[field].en;
+    if (locale === "zh-Hant")
+        return item[field].zhHant || item[field].zh;
     return item[field].zh;
 }
 async function loadFaq() {

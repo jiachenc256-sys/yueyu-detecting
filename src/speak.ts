@@ -245,9 +245,7 @@ function updateFollowClock(): void {
 }
 
 /** Piece HTML pages that exist under pieces/ (Speak “open archive”). */
-const PIECE_PAGE_ALIASES: Record<string, string> = {
-  "liangzhu-shibaxiangsong-full": "liangzhu-shibaxiangsong",
-};
+const PIECE_PAGE_ALIASES: Record<string, string> = {};
 
 const PIECE_PAGES = new Set([
   "baitu-ji",
@@ -268,6 +266,7 @@ const PIECE_PAGES = new Set([
   "hongloumeng-tianxia",
   "jingchai-ji",
   "liangzhu-shibaxiangsong",
+  "liangzhu-shibaxiangsong-full",
   "liangzhu-xia",
   "limaohuan-taizi",
   "longmen-kezhai",
@@ -779,9 +778,10 @@ async function ensureWhisper(): Promise<AsrPipeline> {
   if (whisperLoading) return whisperLoading;
 
   whisperLoading = (async () => {
+    setStatus(t("speak.status.whisperLoad"));
     await prepareLocalModel();
     setStatus(t("speak.status.whisperLoad"));
-    const mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN)) as {
+    let mod: {
       pipeline: (
         task: string,
         model: string,
@@ -797,6 +797,12 @@ async function ensureWhisper(): Promise<AsrPipeline> {
         localModelPath: string;
       };
     };
+    try {
+      mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN)) as typeof mod;
+    } catch (cdnError) {
+      setStatus(t("speak.status.whisperCdnFail"));
+      throw cdnError instanceof Error ? cdnError : new Error(t("speak.status.whisperCdnFail"));
+    }
 
     const base = modelBaseHref();
     mod.env.allowLocalModels = true;
@@ -824,13 +830,17 @@ async function ensureWhisper(): Promise<AsrPipeline> {
   } catch (localError) {
     whisperLoading = null;
     const msg = localError instanceof Error ? localError.message : String(localError);
-    if (/Failed to fetch|NetworkError|CDN|import/i.test(msg)) {
+    if (
+      /Failed to fetch|NetworkError|CDN|import|whisperCdnFail/i.test(msg) ||
+      msg.includes(t("speak.status.whisperCdnFail"))
+    ) {
       setStatus(t("speak.status.whisperCdnFail"));
+      throw localError instanceof Error ? localError : new Error(msg);
     }
     // Fallback if local ONNX assets are missing (e.g. not yet deployed).
     setStatus(t("speak.status.whisperFallback"));
     whisperLoading = (async () => {
-      const mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN)) as {
+      let mod: {
         pipeline: (
           task: string,
           model: string,
@@ -844,6 +854,12 @@ async function ensureWhisper(): Promise<AsrPipeline> {
           useBrowserCache: boolean;
         };
       };
+      try {
+        mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN)) as typeof mod;
+      } catch (cdnError) {
+        setStatus(t("speak.status.whisperCdnFail"));
+        throw cdnError instanceof Error ? cdnError : new Error(t("speak.status.whisperCdnFail"));
+      }
       mod.env.allowLocalModels = false;
       mod.env.allowRemoteModels = true;
       mod.env.useBrowserCache = true;

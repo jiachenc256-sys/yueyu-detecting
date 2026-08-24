@@ -1,8 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824w0a";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824w0a";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824w0a";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824w0a";
-import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824w0a";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824w3a";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824w3a";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824w3a";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824w3a";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824w3a";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
@@ -208,9 +208,7 @@ function updateFollowClock() {
     followClock.textContent = `${m}:${String(s).padStart(2, "0")}`;
 }
 /** Piece HTML pages that exist under pieces/ (Speak “open archive”). */
-const PIECE_PAGE_ALIASES = {
-    "liangzhu-shibaxiangsong-full": "liangzhu-shibaxiangsong",
-};
+const PIECE_PAGE_ALIASES = {};
 const PIECE_PAGES = new Set([
     "baitu-ji",
     "biyu-zan-xinfang",
@@ -230,6 +228,7 @@ const PIECE_PAGES = new Set([
     "hongloumeng-tianxia",
     "jingchai-ji",
     "liangzhu-shibaxiangsong",
+    "liangzhu-shibaxiangsong-full",
     "liangzhu-xia",
     "limaohuan-taizi",
     "longmen-kezhai",
@@ -701,9 +700,17 @@ async function ensureWhisper() {
     if (whisperLoading)
         return whisperLoading;
     whisperLoading = (async () => {
+        setStatus(t("speak.status.whisperLoad"));
         await prepareLocalModel();
         setStatus(t("speak.status.whisperLoad"));
-        const mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN));
+        let mod;
+        try {
+            mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN));
+        }
+        catch (cdnError) {
+            setStatus(t("speak.status.whisperCdnFail"));
+            throw cdnError instanceof Error ? cdnError : new Error(t("speak.status.whisperCdnFail"));
+        }
         const base = modelBaseHref();
         mod.env.allowLocalModels = true;
         mod.env.allowRemoteModels = false;
@@ -728,13 +735,21 @@ async function ensureWhisper() {
     catch (localError) {
         whisperLoading = null;
         const msg = localError instanceof Error ? localError.message : String(localError);
-        if (/Failed to fetch|NetworkError|CDN|import/i.test(msg)) {
+        if (/Failed to fetch|NetworkError|CDN|import|whisperCdnFail/i.test(msg) || msg.includes(t("speak.status.whisperCdnFail"))) {
             setStatus(t("speak.status.whisperCdnFail"));
+            throw localError instanceof Error ? localError : new Error(msg);
         }
         // Fallback if local ONNX assets are missing (e.g. not yet deployed).
         setStatus(t("speak.status.whisperFallback"));
         whisperLoading = (async () => {
-            const mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN));
+            let mod;
+            try {
+                mod = (await import(/* @vite-ignore */ TRANSFORMERS_CDN));
+            }
+            catch (cdnError) {
+                setStatus(t("speak.status.whisperCdnFail"));
+                throw cdnError instanceof Error ? cdnError : new Error(t("speak.status.whisperCdnFail"));
+            }
             mod.env.allowLocalModels = false;
             mod.env.allowRemoteModels = true;
             mod.env.useBrowserCache = true;
