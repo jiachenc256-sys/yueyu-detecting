@@ -688,6 +688,66 @@ body {
   color: var(--color-ink-faint);
 }
 
+/* ── Evidence snapshot (About) ── */
+
+.evidence-lead {
+  margin-bottom: var(--space-5);
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+  margin: 0 0 var(--space-6);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.evidence-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.evidence-grid dt {
+  margin: 0;
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+  color: var(--color-ink-faint);
+}
+
+.evidence-grid dd {
+  margin: 0;
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--color-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.evidence-list,
+.evidence-demo {
+  margin: 0 0 var(--space-5);
+  padding-left: 1.25rem;
+}
+
+.evidence-list li,
+.evidence-demo li {
+  margin-bottom: var(--space-2);
+}
+
+.evidence-foot {
+  font-size: var(--text-sm);
+  color: var(--color-ink-faint);
+}
+
+@media (max-width: 640px) {
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Roadmap ── */
 
 .roadmap {
