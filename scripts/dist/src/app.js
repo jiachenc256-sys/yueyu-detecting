@@ -1,5 +1,5 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260824w4a";
+import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260824ux1";
 function initNavigation() {
     const triggers = document.querySelectorAll("[data-panel-target]");
     const navButtons = document.querySelectorAll(".site-nav [data-panel-target]");
@@ -17,7 +17,7 @@ function initNavigation() {
             panel.setAttribute("aria-hidden", panel.dataset.panel === target ? "false" : "true");
         });
         const currentHash = window.location.hash.replace(/^#/, "");
-        const keepArchiveSubhash = target === "archive" && /^archive-(tanci|yueju|speakers|broadcast)$/.test(currentHash);
+        const keepArchiveSubhash = target === "archive" && /^archive-(tanci|yueju|speakers|broadcast|recent)$/.test(currentHash);
         const keepDeepSubhash = (target === "learn" && /^learn-/.test(currentHash)) ||
             (target === "speak" && /^speak-sample-/.test(currentHash)) ||
             (target === "plan" && /^plan-/.test(currentHash));
@@ -118,7 +118,9 @@ function initArchiveFilters() {
         let firstVisible = null;
         cards.forEach((card) => {
             const cat = card.dataset.archiveCategory ?? "yueju";
-            const catOk = category === "all" || cat === category;
+            const isRecent = card.dataset.archiveRecent === "1";
+            const catOk = category === "all" ||
+                (category === "recent" ? isRecent : cat === category);
             const text = card.textContent?.toLowerCase() ?? "";
             const searchOk = !q || text.includes(q);
             const show = catOk && searchOk;
@@ -128,6 +130,15 @@ function initArchiveFilters() {
             if (show && !firstVisible)
                 firstVisible = card;
         });
+        if (category === "recent" && grid) {
+            const ordered = Array.from(cards).sort((a, b) => {
+                const ar = a.dataset.archiveRecent === "1" ? 0 : 1;
+                const br = b.dataset.archiveRecent === "1" ? 0 : 1;
+                return ar - br;
+            });
+            for (const card of ordered)
+                grid.append(card);
+        }
         if (opts?.scroll || opts?.flash) {
             requestAnimationFrame(() => {
                 const target = firstVisible ?? grid;
@@ -145,7 +156,7 @@ function initArchiveFilters() {
             event.stopPropagation();
             const category = btn.dataset.archiveFilter ?? "all";
             apply(category, { scroll: true, flash: category !== "all" });
-            const nextHash = category === "all" ? "archive" : `archive-${category}`;
+            const nextHash = category === "all" ? "archive" : category === "recent" ? "archive-recent" : `archive-${category}`;
             history.replaceState(null, "", `#${nextHash}`);
         });
     });
@@ -231,10 +242,11 @@ function applyHashRoute(applyArchiveFilter) {
         return;
     }
     if (hash.startsWith("archive")) {
-        const catMatch = /^archive-(tanci|yueju|speakers|broadcast)$/.exec(hash);
+        const catMatch = /^archive-(tanci|yueju|speakers|broadcast|recent)$/.exec(hash);
         const filterCat = catMatch?.[1] === "broadcast" ? "speakers" : (catMatch?.[1] ?? "all");
-        if (catMatch)
+        if (catMatch) {
             history.replaceState(null, "", `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`);
+        }
         document.querySelector(`.site-nav [data-panel-target="archive"]`)?.click();
         applyArchiveFilter(filterCat, { scroll: true });
         return;

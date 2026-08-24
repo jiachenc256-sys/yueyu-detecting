@@ -1,8 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824w4a";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824w4a";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824w4a";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824w4a";
-import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824w4a";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824ux1";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824ux1";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824ux1";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824ux1";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824ux1";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
@@ -29,6 +29,7 @@ const archiveRadarCaption = document.getElementById("speak-archive-radar-caption
 const archiveMeter = document.getElementById("speak-archive-meter");
 const archiveMeterLabel = document.getElementById("speak-archive-meter-label");
 const archiveOpen = document.getElementById("speak-archive-open");
+const archiveNext = document.getElementById("speak-archive-next");
 const gistUseBtn = document.getElementById("speak-gist-use");
 const pieceSelect = document.getElementById("speak-piece");
 const followTimeEl = document.getElementById("speak-follow-time");
@@ -340,6 +341,8 @@ function hidePathPanels() {
         archiveOpen.hidden = true;
         archiveOpen.removeAttribute("href");
     }
+    if (archiveNext)
+        archiveNext.hidden = true;
     if (lingWrapEl)
         lingWrapEl.hidden = true;
     if (lingNoteEl)
@@ -579,12 +582,17 @@ async function runPostAsrPaths(hyp) {
         if (href) {
             archiveOpen.hidden = false;
             archiveOpen.href = href;
-            archiveOpen.target = "_blank";
+            archiveOpen.removeAttribute("target");
             archiveOpen.rel = "noopener";
+            archiveOpen.classList.add("speak-btn--primary");
+            if (archiveNext)
+                archiveNext.hidden = false;
         }
         else {
             archiveOpen.hidden = true;
             archiveOpen.removeAttribute("href");
+            if (archiveNext)
+                archiveNext.hidden = true;
         }
     }
     // Part ② — delivery / emotion (always show panel; radar needs audio)
