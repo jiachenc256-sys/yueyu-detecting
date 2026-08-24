@@ -29,6 +29,17 @@ assets/learn/ziyin-audio/batches/
 # Speak demo clips (short cuts for “try sample”).
 !assets/speak/samples/**/*.m4a
 
+# Local agent / IDE noise
+.cursor/
+_incoming_audio/
+yueyu-detecting*.zip
+YueyuDetecting*.zip
+
+# Transcript backups / scratch
+data/transcripts/*.bak*
+data/transcripts/*.bak-*
+data/transcripts/*~
+
 # Private Baidu / purchase notes and huge local dumps never enter git
 .venv-asr/
 data/corpus/SOURCES.local.md

@@ -1,0 +1,1975 @@
+{
+  "id": "bubuxinjing-1",
+  "title": "步步惊心 · 第一场",
+  "titleEn": "Scarlet Heart · Scene 1",
+  "audio": "assets/audio/bubuxinjing-1.m4a",
+  "sourceSrt": "14-《步步惊心》第一场-.srt",
+  "category": "yueju",
+  "schemaVersion": "1.0.0",
+  "cueCount": 163,
+  "correctedCount": 163,
+  "coverage": {
+    "zh": 163,
+    "enCurated": 0,
+    "enMt": 0,
+    "enAny": 0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 0.199,
+      "rawAsr": "怎么不见十弟啊",
+      "layers": {
+        "zh": {
+          "text": "怎么不见十弟啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 0.2,
+      "end": 1.2,
+      "rawAsr": "哎哟",
+      "layers": {
+        "zh": {
+          "text": "哎哟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 13.7,
+      "end": 22.3,
+      "rawAsr": "穿越时空入王家",
+      "layers": {
+        "zh": {
+          "text": "穿越时空入王家",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 24.2,
+      "end": 32.9,
+      "rawAsr": "今昔何年休管他",
+      "layers": {
+        "zh": {
+          "text": "今昔何年休管他",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 34.7,
+      "end": 42.399,
+      "rawAsr": "无知无畏无所惧",
+      "layers": {
+        "zh": {
+          "text": "无知无畏无所惧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 42.4,
+      "end": 52.8,
+      "rawAsr": "无忧无虑无牵挂",
+      "layers": {
+        "zh": {
+          "text": "无忧无虑无牵挂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 55.4,
+      "end": 56.999,
+      "rawAsr": "十阿哥 你服不服",
+      "layers": {
+        "zh": {
+          "text": "十阿哥 你服不服",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 57.0,
+      "end": 58.9,
+      "rawAsr": "服",
+      "layers": {
+        "zh": {
+          "text": "服",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 60.4,
+      "end": 61.299,
+      "rawAsr": "我们兄弟里",
+      "layers": {
+        "zh": {
+          "text": "我们兄弟里",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 61.3,
+      "end": 63.699,
+      "rawAsr": "十三弟性子最刚烈豪放",
+      "layers": {
+        "zh": {
+          "text": "十三弟性子最刚烈豪放",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 63.7,
+      "end": 66.6,
+      "rawAsr": "我看你啊更甚一筹",
+      "layers": {
+        "zh": {
+          "text": "我看你啊更甚一筹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 68.0,
+      "end": 70.399,
+      "rawAsr": "索性叫你拼命十三妹",
+      "layers": {
+        "zh": {
+          "text": "索性叫你拼命十三妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 70.4,
+      "end": 74.1,
+      "rawAsr": "好 我就叫拼命十三妹",
+      "layers": {
+        "zh": {
+          "text": "好 我就叫拼命十三妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 74.3,
+      "end": 76.099,
+      "rawAsr": "这个丫头 性情特别",
+      "layers": {
+        "zh": {
+          "text": "这个丫头 性情特别",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 76.1,
+      "end": 78.799,
+      "rawAsr": "好不叫人心动",
+      "layers": {
+        "zh": {
+          "text": "好不叫人心动",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 78.8,
+      "end": 81.7,
+      "rawAsr": "若曦 姐 姐",
+      "layers": {
+        "zh": {
+          "text": "若曦 姐 姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 86.3,
+      "end": 89.399,
+      "rawAsr": "康熙朝",
+      "layers": {
+        "zh": {
+          "text": "康熙朝",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 89.4,
+      "end": 95.6,
+      "rawAsr": "一众皇子我偷偷看",
+      "layers": {
+        "zh": {
+          "text": "一众皇子我偷偷看",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 96.6,
+      "end": 99.399,
+      "rawAsr": "全明星",
+      "layers": {
+        "zh": {
+          "text": "全明星",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 99.4,
+      "end": 106.6,
+      "rawAsr": "黄金阵容气宇轩",
+      "layers": {
+        "zh": {
+          "text": "黄金阵容气宇轩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 108.2,
+      "end": 115.6,
+      "rawAsr": "骄横跋扈的太子爷",
+      "layers": {
+        "zh": {
+          "text": "骄横跋扈的太子爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 117.1,
+      "end": 118.799,
+      "rawAsr": "谁能想",
+      "layers": {
+        "zh": {
+          "text": "谁能想",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 118.8,
+      "end": 125.899,
+      "rawAsr": "两度被废命不堪",
+      "layers": {
+        "zh": {
+          "text": "两度被废命不堪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 125.9,
+      "end": 130.299,
+      "rawAsr": "人称草包的十阿哥",
+      "layers": {
+        "zh": {
+          "text": "人称草包的十阿哥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 130.3,
+      "end": 131.6,
+      "rawAsr": "却原来",
+      "layers": {
+        "zh": {
+          "text": "却原来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 131.8,
+      "end": 138.0,
+      "rawAsr": "亲切仁和甘平凡",
+      "layers": {
+        "zh": {
+          "text": "亲切仁和甘平凡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 139.0,
+      "end": 140.599,
+      "rawAsr": "十三爷",
+      "layers": {
+        "zh": {
+          "text": "十三爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 140.6,
+      "end": 148.999,
+      "rawAsr": "阳光酒脱志高远",
+      "layers": {
+        "zh": {
+          "text": "阳光酒脱志高远",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 149.0,
+      "end": 149.899,
+      "rawAsr": "却将遭",
+      "layers": {
+        "zh": {
+          "text": "却将遭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "start": 149.9,
+      "end": 157.6,
+      "rawAsr": "十年幽禁受霜寒",
+      "layers": {
+        "zh": {
+          "text": "十年幽禁受霜寒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "start": 158.0,
+      "end": 163.899,
+      "rawAsr": "青春单纯的十四爷",
+      "layers": {
+        "zh": {
+          "text": "青春单纯的十四爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "start": 163.9,
+      "end": 166.899,
+      "rawAsr": "抚远将军",
+      "layers": {
+        "zh": {
+          "text": "抚远将军",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "start": 166.9,
+      "end": 178.9,
+      "rawAsr": "青史留名代代传",
+      "layers": {
+        "zh": {
+          "text": "青史留名代代传",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "start": 180.6,
+      "end": 194.1,
+      "rawAsr": "温文娴雅的八贤王",
+      "layers": {
+        "zh": {
+          "text": "温文娴雅的八贤王",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "start": 195.2,
+      "end": 217.199,
+      "rawAsr": "他九子夺嫡输得惨",
+      "layers": {
+        "zh": {
+          "text": "他九子夺嫡输得惨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "start": 217.2,
+      "end": 219.699,
+      "rawAsr": "来 喝酒吧",
+      "layers": {
+        "zh": {
+          "text": "来 喝酒吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "start": 219.7,
+      "end": 219.999,
+      "rawAsr": "若曦",
+      "layers": {
+        "zh": {
+          "text": "若曦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "start": 220.0,
+      "end": 220.7,
+      "rawAsr": "若曦",
+      "layers": {
+        "zh": {
+          "text": "若曦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "start": 221.4,
+      "end": 226.899,
+      "rawAsr": "姐姐 你今天真漂亮",
+      "layers": {
+        "zh": {
+          "text": "姐姐 你今天真漂亮",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "start": 226.9,
+      "end": 229.699,
+      "rawAsr": "快向嫡福晋行礼请安",
+      "layers": {
+        "zh": {
+          "text": "快向嫡福晋行礼请安",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "start": 229.7,
+      "end": 231.299,
+      "rawAsr": "嫡福晋",
+      "layers": {
+        "zh": {
+          "text": "嫡福晋",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "start": 231.3,
+      "end": 232.899,
+      "rawAsr": "谁",
+      "layers": {
+        "zh": {
+          "text": "谁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "start": 232.9,
+      "end": 236.2,
+      "rawAsr": "谁是高高在上的嫡福晋啊",
+      "layers": {
+        "zh": {
+          "text": "谁是高高在上的嫡福晋啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "start": 246.6,
+      "end": 247.899,
+      "rawAsr": "我的头疼",
+      "layers": {
+        "zh": {
+          "text": "我的头疼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "start": 247.9,
+      "end": 250.099,
+      "rawAsr": "我的头摔坏了",
+      "layers": {
+        "zh": {
+          "text": "我的头摔坏了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "start": 250.1,
+      "end": 253.4,
+      "rawAsr": "想不起来 也认不得了",
+      "layers": {
+        "zh": {
+          "text": "想不起来 也认不得了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "start": 254.8,
+      "end": 258.8,
+      "rawAsr": "你 太过分了",
+      "layers": {
+        "zh": {
+          "text": "你 太过分了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "start": 259.3,
+      "end": 261.299,
+      "rawAsr": "这就是你调教出来的",
+      "layers": {
+        "zh": {
+          "text": "这就是你调教出来的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "start": 261.3,
+      "end": 262.599,
+      "rawAsr": "宫廷秀女",
+      "layers": {
+        "zh": {
+          "text": "宫廷秀女",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "start": 262.6,
+      "end": 264.799,
+      "rawAsr": "没有家教 不守规矩",
+      "layers": {
+        "zh": {
+          "text": "没有家教 不守规矩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "start": 264.8,
+      "end": 266.399,
+      "rawAsr": "我要请家法",
+      "layers": {
+        "zh": {
+          "text": "我要请家法",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "start": 266.4,
+      "end": 267.4,
+      "rawAsr": "明慧",
+      "layers": {
+        "zh": {
+          "text": "明慧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "start": 267.6,
+      "end": 268.899,
+      "rawAsr": "若曦她摔伤了头脑",
+      "layers": {
+        "zh": {
+          "text": "若曦她摔伤了头脑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "start": 268.9,
+      "end": 269.899,
+      "rawAsr": "记不得八嫂",
+      "layers": {
+        "zh": {
+          "text": "记不得八嫂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "start": 269.9,
+      "end": 271.5,
+      "rawAsr": "不是有意冒犯",
+      "layers": {
+        "zh": {
+          "text": "不是有意冒犯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "start": 272.1,
+      "end": 274.199,
+      "rawAsr": "刚才还闹得这样欢",
+      "layers": {
+        "zh": {
+          "text": "刚才还闹得这样欢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "start": 274.2,
+      "end": 275.899,
+      "rawAsr": "哪里有什么伤",
+      "layers": {
+        "zh": {
+          "text": "哪里有什么伤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "start": 275.9,
+      "end": 278.899,
+      "rawAsr": "我看是存心演戏",
+      "layers": {
+        "zh": {
+          "text": "我看是存心演戏",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "start": 278.9,
+      "end": 280.799,
+      "rawAsr": "为屈居侧福晋的姐姐",
+      "layers": {
+        "zh": {
+          "text": "为屈居侧福晋的姐姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "start": 280.8,
+      "end": 282.4,
+      "rawAsr": "出气吧",
+      "layers": {
+        "zh": {
+          "text": "出气吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "start": 282.5,
+      "end": 283.099,
+      "rawAsr": "贝勒爷",
+      "layers": {
+        "zh": {
+          "text": "贝勒爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "start": 283.1,
+      "end": 284.699,
+      "rawAsr": "若曦她还小 不懂事",
+      "layers": {
+        "zh": {
+          "text": "若曦她还小 不懂事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "start": 284.7,
+      "end": 284.899,
+      "rawAsr": "若曦她还小",
+      "layers": {
+        "zh": {
+          "text": "若曦她还小",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "start": 284.9,
+      "end": 286.999,
+      "rawAsr": "好了 都别再说",
+      "layers": {
+        "zh": {
+          "text": "好了 都别再说",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "start": 287.0,
+      "end": 288.599,
+      "rawAsr": "贝勒爷 您不能",
+      "layers": {
+        "zh": {
+          "text": "贝勒爷 您不能",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "start": 288.6,
+      "end": 290.6,
+      "rawAsr": "总是偏袒她们姐妹",
+      "layers": {
+        "zh": {
+          "text": "总是偏袒她们姐妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "start": 294.5,
+      "end": 298.099,
+      "rawAsr": "若曦 你摔伤了",
+      "layers": {
+        "zh": {
+          "text": "若曦 你摔伤了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "start": 298.1,
+      "end": 302.4,
+      "rawAsr": "那还记得我吗",
+      "layers": {
+        "zh": {
+          "text": "那还记得我吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "start": 309.5,
+      "end": 316.399,
+      "rawAsr": "盈盈双眸清如水",
+      "layers": {
+        "zh": {
+          "text": "盈盈双眸清如水",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "start": 316.4,
+      "end": 326.299,
+      "rawAsr": "脉脉梨涡添妩媚",
+      "layers": {
+        "zh": {
+          "text": "脉脉梨涡添妩媚",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "start": 326.3,
+      "end": 332.999,
+      "rawAsr": "面如冠玉眉似剑",
+      "layers": {
+        "zh": {
+          "text": "面如冠玉眉似剑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "start": 333.0,
+      "end": 343.099,
+      "rawAsr": "目若朗星露深邃",
+      "layers": {
+        "zh": {
+          "text": "目若朗星露深邃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "start": 343.1,
+      "end": 348.3,
+      "rawAsr": "浅笑是深顰",
+      "layers": {
+        "zh": {
+          "text": "浅笑是深顰",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "start": 348.6,
+      "end": 358.4,
+      "rawAsr": "沉默转百回",
+      "layers": {
+        "zh": {
+          "text": "沉默转百回",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "start": 359.6,
+      "end": 361.199,
+      "rawAsr": "为何有",
+      "layers": {
+        "zh": {
+          "text": "为何有",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 76,
+      "start": 361.2,
+      "end": 366.099,
+      "rawAsr": "不可言语新滋味",
+      "layers": {
+        "zh": {
+          "text": "不可言语新滋味",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 77,
+      "start": 366.1,
+      "end": 367.699,
+      "rawAsr": "重伤后",
+      "layers": {
+        "zh": {
+          "text": "重伤后",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 78,
+      "start": 367.7,
+      "end": 372.499,
+      "rawAsr": "脱胎换骨添智慧",
+      "layers": {
+        "zh": {
+          "text": "脱胎换骨添智慧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 79,
+      "start": 372.5,
+      "end": 375.899,
+      "rawAsr": "看今朝",
+      "layers": {
+        "zh": {
+          "text": "看今朝",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 80,
+      "start": 375.9,
+      "end": 381.099,
+      "rawAsr": "意气风发人倜傥",
+      "layers": {
+        "zh": {
+          "text": "意气风发人倜傥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "start": 381.1,
+      "end": 385.8,
+      "rawAsr": "叹来日",
+      "layers": {
+        "zh": {
+          "text": "叹来日",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 82,
+      "start": 386.0,
+      "end": 399.9,
+      "rawAsr": "命运多舛成罪魁",
+      "layers": {
+        "zh": {
+          "text": "命运多舛成罪魁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 83,
+      "start": 405.6,
+      "end": 407.8,
+      "rawAsr": "四爷到",
+      "layers": {
+        "zh": {
+          "text": "四爷到",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 84,
+      "start": 413.1,
+      "end": 421.299,
+      "rawAsr": "参禅礼佛",
+      "layers": {
+        "zh": {
+          "text": "参禅礼佛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 85,
+      "start": 421.3,
+      "end": 428.699,
+      "rawAsr": "独善潜修",
+      "layers": {
+        "zh": {
+          "text": "独善潜修",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 86,
+      "start": 428.7,
+      "end": 435.499,
+      "rawAsr": "未雨绸缪",
+      "layers": {
+        "zh": {
+          "text": "未雨绸缪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 87,
+      "start": 435.5,
+      "end": 444.999,
+      "rawAsr": "壮志未酬",
+      "layers": {
+        "zh": {
+          "text": "壮志未酬",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "start": 445.0,
+      "end": 450.3,
+      "rawAsr": "且平息这兄弟战火",
+      "layers": {
+        "zh": {
+          "text": "且平息这兄弟战火",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "start": 452.1,
+      "end": 458.5,
+      "rawAsr": "细水长流",
+      "layers": {
+        "zh": {
+          "text": "细水长流",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "start": 462.4,
+      "end": 463.299,
+      "rawAsr": "细水长流",
+      "layers": {
+        "zh": {
+          "text": "细水长流",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "start": 463.3,
+      "end": 465.099,
+      "rawAsr": "四阿哥吉祥",
+      "layers": {
+        "zh": {
+          "text": "四阿哥吉祥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "start": 465.1,
+      "end": 466.699,
+      "rawAsr": "免礼",
+      "layers": {
+        "zh": {
+          "text": "免礼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "start": 466.7,
+      "end": 468.799,
+      "rawAsr": "太子爷吉祥",
+      "layers": {
+        "zh": {
+          "text": "太子爷吉祥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "start": 468.8,
+      "end": 471.099,
+      "rawAsr": "今日八弟做寿",
+      "layers": {
+        "zh": {
+          "text": "今日八弟做寿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "start": 471.1,
+      "end": 474.099,
+      "rawAsr": "你带来什么寿礼啊",
+      "layers": {
+        "zh": {
+          "text": "你带来什么寿礼啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "start": 474.1,
+      "end": 475.999,
+      "rawAsr": "八弟做寿",
+      "layers": {
+        "zh": {
+          "text": "八弟做寿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "start": 476.0,
+      "end": 479.6,
+      "rawAsr": "四哥我就赋诗为礼",
+      "layers": {
+        "zh": {
+          "text": "四哥我就赋诗为礼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "start": 481.0,
+      "end": 484.3,
+      "rawAsr": "诸位见笑了",
+      "layers": {
+        "zh": {
+          "text": "诸位见笑了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "start": 487.9,
+      "end": 491.799,
+      "rawAsr": "万物纵横在目前",
+      "layers": {
+        "zh": {
+          "text": "万物纵横在目前",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "start": 491.8,
+      "end": 496.699,
+      "rawAsr": "看他动静任他权",
+      "layers": {
+        "zh": {
+          "text": "看他动静任他权",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 101,
+      "start": 496.7,
+      "end": 500.299,
+      "rawAsr": "圆明定慧终无染",
+      "layers": {
+        "zh": {
+          "text": "圆明定慧终无染",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 102,
+      "start": 500.3,
+      "end": 503.4,
+      "rawAsr": "似水生莲莲自莲",
+      "layers": {
+        "zh": {
+          "text": "似水生莲莲自莲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "start": 503.9,
+      "end": 504.399,
+      "rawAsr": "若曦",
+      "layers": {
+        "zh": {
+          "text": "若曦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 104,
+      "start": 504.4,
+      "end": 506.899,
+      "rawAsr": "你对的是什么意思啊",
+      "layers": {
+        "zh": {
+          "text": "你对的是什么意思啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 105,
+      "start": 506.9,
+      "end": 507.599,
+      "rawAsr": "看不出来",
+      "layers": {
+        "zh": {
+          "text": "看不出来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 106,
+      "start": 507.6,
+      "end": 510.1,
+      "rawAsr": "小丫头还有这诗情呢",
+      "layers": {
+        "zh": {
+          "text": "小丫头还有这诗情呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 107,
+      "start": 518.6,
+      "end": 523.699,
+      "rawAsr": "这绝句",
+      "layers": {
+        "zh": {
+          "text": "这绝句",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 108,
+      "start": 523.7,
+      "end": 529.5,
+      "rawAsr": "不曾外流记心间",
+      "layers": {
+        "zh": {
+          "text": "不曾外流记心间",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 109,
+      "start": 530.4,
+      "end": 531.899,
+      "rawAsr": "她竟然",
+      "layers": {
+        "zh": {
+          "text": "她竟然",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 110,
+      "start": 531.9,
+      "end": 538.599,
+      "rawAsr": "一字不差诵人前",
+      "layers": {
+        "zh": {
+          "text": "一字不差诵人前",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "start": 538.6,
+      "end": 542.899,
+      "rawAsr": "这本是雍正诗作",
+      "layers": {
+        "zh": {
+          "text": "这本是雍正诗作",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 112,
+      "start": 542.9,
+      "end": 546.299,
+      "rawAsr": "我书中见",
+      "layers": {
+        "zh": {
+          "text": "我书中见",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 113,
+      "start": 546.3,
+      "end": 547.899,
+      "rawAsr": "疏忽间",
+      "layers": {
+        "zh": {
+          "text": "疏忽间",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "start": 547.9,
+      "end": 552.599,
+      "rawAsr": "脱口成章惹祸端",
+      "layers": {
+        "zh": {
+          "text": "脱口成章惹祸端",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 115,
+      "start": 552.6,
+      "end": 554.099,
+      "rawAsr": "难道是",
+      "layers": {
+        "zh": {
+          "text": "难道是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 116,
+      "start": 554.1,
+      "end": 560.2,
+      "rawAsr": "心有灵犀遇奇缘",
+      "layers": {
+        "zh": {
+          "text": "心有灵犀遇奇缘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 117,
+      "start": 560.7,
+      "end": 562.399,
+      "rawAsr": "我定要",
+      "layers": {
+        "zh": {
+          "text": "我定要",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 118,
+      "start": 562.4,
+      "end": 572.2,
+      "rawAsr": "小心行事谨慎言",
+      "layers": {
+        "zh": {
+          "text": "小心行事谨慎言",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 119,
+      "start": 578.1,
+      "end": 580.8,
+      "rawAsr": "圣旨到",
+      "layers": {
+        "zh": {
+          "text": "圣旨到",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 120,
+      "start": 593.6,
+      "end": 596.399,
+      "rawAsr": "今朕第十子",
+      "layers": {
+        "zh": {
+          "text": "今朕第十子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 121,
+      "start": 596.4,
+      "end": 598.499,
+      "rawAsr": "爱新觉罗，胤識",
+      "layers": {
+        "zh": {
+          "text": "爱新觉罗，胤識",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 122,
+      "start": 598.5,
+      "end": 600.999,
+      "rawAsr": "明贤颖达 深具孝悌",
+      "layers": {
+        "zh": {
+          "text": "明贤颖达 深具孝悌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 123,
+      "start": 601.0,
+      "end": 603.899,
+      "rawAsr": "另郭络罗氏女明玉",
+      "layers": {
+        "zh": {
+          "text": "另郭络罗氏女明玉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 124,
+      "start": 603.9,
+      "end": 607.099,
+      "rawAsr": "性行温良 淑德含章",
+      "layers": {
+        "zh": {
+          "text": "性行温良 淑德含章",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 125,
+      "start": 607.1,
+      "end": 609.999,
+      "rawAsr": "为其志趣相通也",
+      "layers": {
+        "zh": {
+          "text": "为其志趣相通也",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 126,
+      "start": 610.0,
+      "end": 611.999,
+      "rawAsr": "即赐婚",
+      "layers": {
+        "zh": {
+          "text": "即赐婚",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 127,
+      "start": 612.0,
+      "end": 612.299,
+      "rawAsr": "钦此",
+      "layers": {
+        "zh": {
+          "text": "钦此",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 128,
+      "start": 612.3,
+      "end": 615.199,
+      "rawAsr": "钦此",
+      "layers": {
+        "zh": {
+          "text": "钦此",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 129,
+      "start": 615.2,
+      "end": 619.0,
+      "rawAsr": "皇上万岁万岁万万岁",
+      "layers": {
+        "zh": {
+          "text": "皇上万岁万岁万万岁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 130,
+      "start": 621.6,
+      "end": 624.3,
+      "rawAsr": "十阿哥 接旨吧",
+      "layers": {
+        "zh": {
+          "text": "十阿哥 接旨吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 131,
+      "start": 639.9,
+      "end": 655.3,
+      "rawAsr": "圣旨恰似睛天霹雳",
+      "layers": {
+        "zh": {
+          "text": "圣旨恰似睛天霹雳",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 132,
+      "start": 658.4,
+      "end": 667.8,
+      "rawAsr": "朝向心头重重一击",
+      "layers": {
+        "zh": {
+          "text": "朝向心头重重一击",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 133,
+      "start": 669.3,
+      "end": 670.599,
+      "rawAsr": "霎那间",
+      "layers": {
+        "zh": {
+          "text": "霎那间",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 134,
+      "start": 670.6,
+      "end": 677.9,
+      "rawAsr": "心灰意冷人无力",
+      "layers": {
+        "zh": {
+          "text": "心灰意冷人无力",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 135,
+      "start": 680.0,
+      "end": 681.099,
+      "rawAsr": "从来是",
+      "layers": {
+        "zh": {
+          "text": "从来是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 136,
+      "start": 681.1,
+      "end": 689.9,
+      "rawAsr": "王子命运不由已",
+      "layers": {
+        "zh": {
+          "text": "王子命运不由已",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 137,
+      "start": 691.1,
+      "end": 694.6,
+      "rawAsr": "胤識 接旨",
+      "layers": {
+        "zh": {
+          "text": "胤識 接旨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 138,
+      "start": 695.4,
+      "end": 698.899,
+      "rawAsr": "谢皇阿玛",
+      "layers": {
+        "zh": {
+          "text": "谢皇阿玛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 139,
+      "start": 698.9,
+      "end": 702.0,
+      "rawAsr": "贺喜十阿哥",
+      "layers": {
+        "zh": {
+          "text": "贺喜十阿哥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 140,
+      "start": 704.0,
+      "end": 705.1,
+      "rawAsr": "十阿哥",
+      "layers": {
+        "zh": {
+          "text": "十阿哥",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 141,
+      "start": 706.8,
+      "end": 709.099,
+      "rawAsr": "莫非你不愿意娶她",
+      "layers": {
+        "zh": {
+          "text": "莫非你不愿意娶她",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 142,
+      "start": 709.1,
+      "end": 710.3,
+      "rawAsr": "若曦",
+      "layers": {
+        "zh": {
+          "text": "若曦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 143,
+      "start": 711.2,
+      "end": 712.799,
+      "rawAsr": "为什么你不抗争",
+      "layers": {
+        "zh": {
+          "text": "为什么你不抗争",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 144,
+      "start": 712.8,
+      "end": 713.7,
+      "rawAsr": "若曦",
+      "layers": {
+        "zh": {
+          "text": "若曦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 145,
+      "start": 716.5,
+      "end": 718.299,
+      "rawAsr": "为什么要让别人",
+      "layers": {
+        "zh": {
+          "text": "为什么要让别人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 146,
+      "start": 718.3,
+      "end": 720.099,
+      "rawAsr": "来决定自己的命运",
+      "layers": {
+        "zh": {
+          "text": "来决定自己的命运",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 147,
+      "start": 720.1,
+      "end": 721.3,
+      "rawAsr": "大胆",
+      "layers": {
+        "zh": {
+          "text": "大胆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 148,
+      "start": 722.7,
+      "end": 724.6,
+      "rawAsr": "如此大逆不道",
+      "layers": {
+        "zh": {
+          "text": "如此大逆不道",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 149,
+      "start": 725.1,
+      "end": 726.1,
+      "rawAsr": "不要命了",
+      "layers": {
+        "zh": {
+          "text": "不要命了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 150,
+      "start": 726.6,
+      "end": 728.299,
+      "rawAsr": "如此不懂规矩",
+      "layers": {
+        "zh": {
+          "text": "如此不懂规矩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 151,
+      "start": 728.3,
+      "end": 730.4,
+      "rawAsr": "怎能甄选秀女",
+      "layers": {
+        "zh": {
+          "text": "怎能甄选秀女",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 152,
+      "start": 731.4,
+      "end": 734.199,
+      "rawAsr": "看来有人不但是失了忆",
+      "layers": {
+        "zh": {
+          "text": "看来有人不但是失了忆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 153,
+      "start": 734.2,
+      "end": 736.499,
+      "rawAsr": "还发了疯",
+      "layers": {
+        "zh": {
+          "text": "还发了疯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 154,
+      "start": 736.5,
+      "end": 738.399,
+      "rawAsr": "若曦 记住",
+      "layers": {
+        "zh": {
+          "text": "若曦 记住",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 155,
+      "start": 738.4,
+      "end": 740.399,
+      "rawAsr": "我们只能臣服于命运",
+      "layers": {
+        "zh": {
+          "text": "我们只能臣服于命运",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 156,
+      "start": 740.4,
+      "end": 745.3,
+      "rawAsr": "无法选择 无能为力",
+      "layers": {
+        "zh": {
+          "text": "无法选择 无能为力",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 157,
+      "start": 746.4,
+      "end": 751.9,
+      "rawAsr": "若曦 你不要忘了",
+      "layers": {
+        "zh": {
+          "text": "若曦 你不要忘了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 158,
+      "start": 752.1,
+      "end": 753.099,
+      "rawAsr": "这可是",
+      "layers": {
+        "zh": {
+          "text": "这可是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 159,
+      "start": 753.1,
+      "end": 758.9,
+      "rawAsr": "三百年前的大清朝啊",
+      "layers": {
+        "zh": {
+          "text": "三百年前的大清朝啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 160,
+      "start": 762.1,
+      "end": 764.699,
+      "rawAsr": "看来已经有人先醉了",
+      "layers": {
+        "zh": {
+          "text": "看来已经有人先醉了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 161,
+      "start": 764.7,
+      "end": 766.399,
+      "rawAsr": "今日是双喜同庆",
+      "layers": {
+        "zh": {
+          "text": "今日是双喜同庆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 162,
+      "start": 766.4,
+      "end": 768.199,
+      "rawAsr": "是该一醉方休啊",
+      "layers": {
+        "zh": {
+          "text": "是该一醉方休啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 163,
+      "start": 768.2,
+      "end": 771.3,
+      "rawAsr": "来 奏乐 上酒",
+      "layers": {
+        "zh": {
+          "text": "来 奏乐 上酒",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

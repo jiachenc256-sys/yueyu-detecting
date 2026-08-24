@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="styles/tokens.css?v=20260815a" />
   <link rel="stylesheet" href="styles/main.css?v=20260815e" />
   <link rel="stylesheet" href="styles/a11y.css?v=20260815a" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260823brief2" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260824fix11" />
   <link rel="stylesheet" href="styles/tanci.css?v=20260815a" />
   <link rel="stylesheet" href="styles/learn.css?v=20260815a" />
   <link rel="stylesheet" href="styles/dictionary.css?v=20260815a" />
@@ -190,6 +190,12 @@
           <p class="speak-note" data-i18n="speak.note">
             识别后并行两路：① 档案检索（是否已收录唱词）；② 腔调·语调（能量/起伏/音色粗估悲·急·怒·柔·亢·叹）。有音频时两路都会显示。
           </p>
+          <p class="speak-demo-path" data-i18n="speak.demoPath">
+            演示路径：点「试试示例 · 梁祝」→ 等识别 → 看①档案命中并「在档案中打开」→ 有音频时看②情绪雷达。
+          </p>
+          <p class="speak-limits" data-i18n="speak.limits">
+            说明：②是浏览器音频特征启发式，不是情绪大模型；线上识别为 blend-v10。字级 CER 用双指标诚实展示，不宣称 mean 0.5。
+          </p>
 
           <label class="speak-piece">
             <span data-i18n="speak.pieceLabel">档案范围</span>
@@ -227,10 +233,10 @@
                   <span data-i18n="speak.chooseFile">选择音频文件</span>
                   <input id="speak-file" type="file" accept="audio/*,.mp3,.wav,.m4a,.ogg" hidden />
                 </label>
-                <button type="button" id="speak-sample-liangzhu" class="speak-btn speak-btn--primary" data-speak-sample="assets/speak/samples/liangzhu-demo.m4a" data-i18n="speak.trySample1">
+                <button type="button" id="speak-sample-liangzhu" class="speak-btn speak-btn--primary" data-speak-sample="assets/speak/samples/liangzhu-demo.m4a" data-speak-piece="liangzhu-shibaxiangsong" data-i18n="speak.trySample1">
                   试试示例 · 梁祝
                 </button>
-                <button type="button" id="speak-sample-xianglin" class="speak-btn" data-speak-sample="assets/speak/samples/xianglin-demo.m4a" data-i18n="speak.trySample2">
+                <button type="button" id="speak-sample-xianglin" class="speak-btn" data-speak-sample="assets/speak/samples/xianglin-demo.m4a" data-speak-piece="xianglin-sao-xinsuanhua" data-i18n="speak.trySample2">
                   试试示例 · 祥林嫂
                 </button>
                 <button type="button" id="speak-clear" class="speak-btn" data-i18n="speak.clear">清除</button>
@@ -637,6 +643,82 @@
             </div>
           </a>
 
+          <a class="piece-card piece-card--link" href="pieces/jingchai-ji.html" data-archive-category="yueju">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">荆钗记</h3>
+            <p class="piece-card__meta">The Thorn Hairpin · full piece archive</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">钱玉莲与王十朋以荆钗为聘；江边送别与赴考嘱托等核心唱段。</span>
+              <span data-visible-lang="zh-Hant">錢玉蓮與王十朋以荊釵為聘；江邊送別與赴考囑託等核心唱段。</span>
+              <span data-visible-lang="en">Qian Yulian and Wang Shipeng pledge with a thorn hairpin; river farewell and exam-bound counsel.</span>
+            </p>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/baitu-ji.html" data-archive-category="yueju">
+            <span class="badge badge--ready" data-i18n="archive.badgeStarter">精选</span>
+            <h3 class="piece-card__title">白兔记</h3>
+            <p class="piece-card__meta">The White Rabbit · full piece archive</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">流离与团聚：白兔记中的求生与辨认。</span>
+              <span data-visible-lang="zh-Hant">流離與團聚：白兔記中的求生與辨認。</span>
+              <span data-visible-lang="en">Exile and reunion: survival and recognition in Baitu Ji.</span>
+            </p>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/mudanting-huanhunji.html" data-archive-category="yueju">
+            <span class="badge badge--ready">Archive</span>
+            <h3 class="piece-card__title">牡丹亭 · 还魂记</h3>
+            <p class="piece-card__meta">Peony Pavilion · Return of the Soul</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">杜丽娘与柳梦梅的生死情；还魂记长段档案。</span>
+              <span data-visible-lang="zh-Hant">杜麗娘與柳夢梅的生死情；還魂記長段檔案。</span>
+              <span data-visible-lang="en">Du Liniang and Liu Mengmei across life and death; long-form Return archive.</span>
+            </p>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/zanghua-yin.html" data-archive-category="yueju">
+            <span class="badge badge--ready">Archive</span>
+            <h3 class="piece-card__title">葬花吟</h3>
+            <p class="piece-card__meta">Burial of Flowers</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">黛玉伤春葬花的经典唱段。</span>
+              <span data-visible-lang="zh-Hant">黛玉傷春葬花的經典唱段。</span>
+              <span data-visible-lang="en">Daiyu’s classic flower-burial lament.</span>
+            </p>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/chen-sanliang.html" data-archive-category="yueju">
+            <span class="badge badge--ready">Archive</span>
+            <h3 class="piece-card__title">陈三两</h3>
+            <p class="piece-card__meta">Chen Sanliang</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">沉冤、辩诬与刚烈性情。</span>
+              <span data-visible-lang="zh-Hant">沉冤、辯誣與剛烈性情。</span>
+              <span data-visible-lang="en">Injustice, defense, and fierce resolve.</span>
+            </p>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/hongloumeng-1.html" data-archive-category="yueju">
+            <span class="badge badge--ready">Archive</span>
+            <h3 class="piece-card__title">红楼梦 · 第1部分</h3>
+            <p class="piece-card__meta">Dream of the Red Chamber · part 1</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">宝黛情与贾府人事的分段档案（第1部分；另有 2–5）。</span>
+              <span data-visible-lang="zh-Hant">寶黛情與賈府人事的分段檔案（第1部分；另有 2–5）。</span>
+              <span data-visible-lang="en">Segmented Red Chamber archive (part 1; also parts 2–5).</span>
+            </p>
+          </a>
+
+          <a class="piece-card piece-card--link" href="pieces/chai-tou-feng.html" data-archive-category="yueju">
+            <span class="badge badge--ready">Archive</span>
+            <h3 class="piece-card__title">钗头凤</h3>
+            <p class="piece-card__meta">Chai Tou Feng</p>
+            <p class="piece-card__note">
+              <span data-visible-lang="zh-Hans">陆游与唐琬的离别情思。</span>
+              <span data-visible-lang="zh-Hant">陸游與唐琬的離別情思。</span>
+              <span data-visible-lang="en">Lu You and Tang Wan’s parting.</span>
+            </p>
+          </a>
 
           <a class="piece-card piece-card--link" href="pieces/pearl-tower-gift.html" data-archive-category="tanci">
             <span class="badge badge--ready" data-i18n="archive.badgeTanci">弹词</span>
@@ -2736,11 +2818,11 @@
     </footer>
   </div>
 
-  <script type="module" src="scripts/dist/src/app.js?v=20260823brief2"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260823brief2"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260823brief2"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260823brief2"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260823brief2"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260823brief2"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260824fix11"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260824fix11"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260824fix11"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260824fix11"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260824fix11"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260824fix11"></script>
 </body>
 </html>

@@ -1,0 +1,847 @@
+{
+  "id": "liangzhu-shibaxiangsong-full",
+  "title": "梁祝 · 十八相送（完整版）",
+  "titleEn": "Butterfly Lovers · Eighteen Farewells (full)",
+  "audio": "assets/audio/liangzhu-shibaxiangsong-full.m4a",
+  "sourceSrt": "28陈丽君 李云霄 《梁祝-十八相送》完整版- 高清-.srt",
+  "category": "yueju",
+  "schemaVersion": "1.0.0",
+  "cueCount": 69,
+  "correctedCount": 69,
+  "coverage": {
+    "zh": 69,
+    "enCurated": 0,
+    "enMt": 0,
+    "enAny": 0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 27.5,
+      "end": 29.0,
+      "rawAsr": "梁兄",
+      "layers": {
+        "zh": {
+          "text": "梁兄",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 30.7,
+      "end": 36.5,
+      "rawAsr": "书房门前一枝梅",
+      "layers": {
+        "zh": {
+          "text": "书房门前一枝梅",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 36.7,
+      "end": 42.3,
+      "rawAsr": "树上鸟儿对打对",
+      "layers": {
+        "zh": {
+          "text": "树上鸟儿对打对",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 42.5,
+      "end": 48.4,
+      "rawAsr": "喜鹊满枝喳喳叫",
+      "layers": {
+        "zh": {
+          "text": "喜鹊满枝喳喳叫",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 48.5,
+      "end": 59.3,
+      "rawAsr": "向你梁兄报喜来",
+      "layers": {
+        "zh": {
+          "text": "向你梁兄报喜来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 60.3,
+      "end": 61.8,
+      "rawAsr": "贤弟",
+      "layers": {
+        "zh": {
+          "text": "贤弟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 63.8,
+      "end": 69.7,
+      "rawAsr": "弟兄二人出门来",
+      "layers": {
+        "zh": {
+          "text": "弟兄二人出门来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 70.4,
+      "end": 71.5,
+      "rawAsr": "弟兄二人出门来",
+      "layers": {
+        "zh": {
+          "text": "弟兄二人出门来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 73.1,
+      "end": 79.399,
+      "rawAsr": "门前喜鹊成双对",
+      "layers": {
+        "zh": {
+          "text": "门前喜鹊成双对",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 79.4,
+      "end": 85.5,
+      "rawAsr": "从来喜鹊报喜讯",
+      "layers": {
+        "zh": {
+          "text": "从来喜鹊报喜讯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 86.0,
+      "end": 88.9,
+      "rawAsr": "恭喜贤弟一路平安",
+      "layers": {
+        "zh": {
+          "text": "恭喜贤弟一路平安",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 89.1,
+      "end": 99.5,
+      "rawAsr": "一路平安把家归",
+      "layers": {
+        "zh": {
+          "text": "一路平安把家归",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 112.4,
+      "end": 120.0,
+      "rawAsr": "出了城，过了关",
+      "layers": {
+        "zh": {
+          "text": "出了城，过了关",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 121.7,
+      "end": 128.6,
+      "rawAsr": "但只见山上樵夫把柴担",
+      "layers": {
+        "zh": {
+          "text": "但只见山上樵夫把柴担",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 130.3,
+      "end": 136.799,
+      "rawAsr": "起早落夜多辛苦",
+      "layers": {
+        "zh": {
+          "text": "起早落夜多辛苦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 136.8,
+      "end": 145.0,
+      "rawAsr": "打柴度日也艰难",
+      "layers": {
+        "zh": {
+          "text": "打柴度日也艰难",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 146.3,
+      "end": 147.999,
+      "rawAsr": "梁兄啊",
+      "layers": {
+        "zh": {
+          "text": "梁兄啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 148.0,
+      "end": 152.699,
+      "rawAsr": "他为何人把柴担？",
+      "layers": {
+        "zh": {
+          "text": "他为何人把柴担？",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 152.7,
+      "end": 161.8,
+      "rawAsr": "你为哪个送下山？",
+      "layers": {
+        "zh": {
+          "text": "你为哪个送下山？",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 162.1,
+      "end": 168.0,
+      "rawAsr": "他为妻儿把柴担",
+      "layers": {
+        "zh": {
+          "text": "他为妻儿把柴担",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 168.4,
+      "end": 179.7,
+      "rawAsr": "我为你贤弟送下山",
+      "layers": {
+        "zh": {
+          "text": "我为你贤弟送下山",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 190.4,
+      "end": 196.799,
+      "rawAsr": "青青荷叶清水塘",
+      "layers": {
+        "zh": {
+          "text": "青青荷叶清水塘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 196.8,
+      "end": 203.099,
+      "rawAsr": "驾鸯成对又成双",
+      "layers": {
+        "zh": {
+          "text": "驾鸯成对又成双",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 203.1,
+      "end": 204.899,
+      "rawAsr": "梁兄啊",
+      "layers": {
+        "zh": {
+          "text": "梁兄啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 204.9,
+      "end": 209.2,
+      "rawAsr": "英台若是女红妆",
+      "layers": {
+        "zh": {
+          "text": "英台若是女红妆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 209.7,
+      "end": 214.9,
+      "rawAsr": "梁兄你愿不愿",
+      "layers": {
+        "zh": {
+          "text": "梁兄你愿不愿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 216.0,
+      "end": 222.2,
+      "rawAsr": "配驾鸯",
+      "layers": {
+        "zh": {
+          "text": "配驾鸯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 223.7,
+      "end": 228.9,
+      "rawAsr": "配驾鸯 配驾鸯",
+      "layers": {
+        "zh": {
+          "text": "配驾鸯 配驾鸯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 229.1,
+      "end": 230.799,
+      "rawAsr": "可惜你",
+      "layers": {
+        "zh": {
+          "text": "可惜你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "start": 230.8,
+      "end": 239.0,
+      "rawAsr": "英台不是 不是女红妆",
+      "layers": {
+        "zh": {
+          "text": "英台不是 不是女红妆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "start": 242.9,
+      "end": 248.8,
+      "rawAsr": "眼前还有一口井",
+      "layers": {
+        "zh": {
+          "text": "眼前还有一口井",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "start": 248.9,
+      "end": 257.3,
+      "rawAsr": "不知道井水有多深",
+      "layers": {
+        "zh": {
+          "text": "不知道井水有多深",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "start": 257.6,
+      "end": 263.499,
+      "rawAsr": "你看这井底两个影",
+      "layers": {
+        "zh": {
+          "text": "你看这井底两个影",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "start": 263.5,
+      "end": 271.3,
+      "rawAsr": "一男一女笑盈盈",
+      "layers": {
+        "zh": {
+          "text": "一男一女笑盈盈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "start": 272.5,
+      "end": 278.0,
+      "rawAsr": "愚兄明明是男子汉",
+      "layers": {
+        "zh": {
+          "text": "愚兄明明是男子汉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "start": 278.5,
+      "end": 288.0,
+      "rawAsr": "你不该将我比女人",
+      "layers": {
+        "zh": {
+          "text": "你不该将我比女人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "start": 293.2,
+      "end": 294.7,
+      "rawAsr": "走吧",
+      "layers": {
+        "zh": {
+          "text": "走吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "start": 307.0,
+      "end": 313.1,
+      "rawAsr": "穿竹林 过池塘",
+      "layers": {
+        "zh": {
+          "text": "穿竹林 过池塘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "start": 313.2,
+      "end": 321.4,
+      "rawAsr": "前面到了观音堂",
+      "layers": {
+        "zh": {
+          "text": "前面到了观音堂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "start": 322.4,
+      "end": 328.3,
+      "rawAsr": "观音大士媒来做",
+      "layers": {
+        "zh": {
+          "text": "观音大士媒来做",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "start": 328.6,
+      "end": 339.7,
+      "rawAsr": "我与你梁兄来拜堂",
+      "layers": {
+        "zh": {
+          "text": "我与你梁兄来拜堂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "start": 341.0,
+      "end": 343.899,
+      "rawAsr": "贤弟越说越荒唐",
+      "layers": {
+        "zh": {
+          "text": "贤弟越说越荒唐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "start": 343.9,
+      "end": 352.0,
+      "rawAsr": "两个男儿怎拜堂",
+      "layers": {
+        "zh": {
+          "text": "两个男儿怎拜堂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "start": 355.6,
+      "end": 356.9,
+      "rawAsr": "走吧",
+      "layers": {
+        "zh": {
+          "text": "走吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "start": 374.0,
+      "end": 375.0,
+      "rawAsr": "梁兄",
+      "layers": {
+        "zh": {
+          "text": "梁兄",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "start": 379.4,
+      "end": 387.4,
+      "rawAsr": "多承你梁兄情义深",
+      "layers": {
+        "zh": {
+          "text": "多承你梁兄情义深",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "start": 387.5,
+      "end": 395.999,
+      "rawAsr": "登山涉水送我行",
+      "layers": {
+        "zh": {
+          "text": "登山涉水送我行",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "start": 396.0,
+      "end": 406.899,
+      "rawAsr": "常言道“送君千里终须别”",
+      "layers": {
+        "zh": {
+          "text": "常言道“送君千里终须别”",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "start": 406.9,
+      "end": 420.6,
+      "rawAsr": "请梁兄就此留步转回程",
+      "layers": {
+        "zh": {
+          "text": "请梁兄就此留步转回程",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "start": 421.8,
+      "end": 430.199,
+      "rawAsr": "与贤弟草桥结拜情义深",
+      "layers": {
+        "zh": {
+          "text": "与贤弟草桥结拜情义深",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "start": 430.2,
+      "end": 445.0,
+      "rawAsr": "让愚兄再送你到长亭",
+      "layers": {
+        "zh": {
+          "text": "让愚兄再送你到长亭",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "start": 453.7,
+      "end": 454.6,
+      "rawAsr": "梁兄",
+      "layers": {
+        "zh": {
+          "text": "梁兄",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "start": 461.8,
+      "end": 473.2,
+      "rawAsr": "你我鸿雁两分开",
+      "layers": {
+        "zh": {
+          "text": "你我鸿雁两分开",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "start": 475.0,
+      "end": 483.6,
+      "rawAsr": "问梁兄你家中可有妻房配？",
+      "layers": {
+        "zh": {
+          "text": "问梁兄你家中可有妻房配？",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "start": 483.8,
+      "end": 492.3,
+      "rawAsr": "你早知愚兄未婚配",
+      "layers": {
+        "zh": {
+          "text": "你早知愚兄未婚配",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "start": 492.8,
+      "end": 500.7,
+      "rawAsr": "今日相问为何来？",
+      "layers": {
+        "zh": {
+          "text": "今日相问为何来？",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "start": 501.5,
+      "end": 507.8,
+      "rawAsr": "要是你梁兄亲未定",
+      "layers": {
+        "zh": {
+          "text": "要是你梁兄亲未定",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "start": 508.0,
+      "end": 514.699,
+      "rawAsr": "小弟替你来做大媒",
+      "layers": {
+        "zh": {
+          "text": "小弟替你来做大媒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "start": 514.7,
+      "end": 517.7,
+      "rawAsr": "贤弟替我来做媒",
+      "layers": {
+        "zh": {
+          "text": "贤弟替我来做媒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "start": 518.0,
+      "end": 527.7,
+      "rawAsr": "但未知千金是哪一位？",
+      "layers": {
+        "zh": {
+          "text": "但未知千金是哪一位？",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "start": 530.2,
+      "end": 535.1,
+      "rawAsr": "就. .. 是. . . 我.",
+      "layers": {
+        "zh": {
+          "text": "就. .. 是. . . 我.",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "start": 535.3,
+      "end": 540.999,
+      "rawAsr": "就. .. 是. . .我..",
+      "layers": {
+        "zh": {
+          "text": "就. .. 是. . .我..",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "start": 541.0,
+      "end": 541.2,
+      "rawAsr": "啊？",
+      "layers": {
+        "zh": {
+          "text": "啊？",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "start": 542.6,
+      "end": 547.499,
+      "rawAsr": "啊呀就是我家小九妹",
+      "layers": {
+        "zh": {
+          "text": "啊呀就是我家小九妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "start": 547.5,
+      "end": 553.799,
+      "rawAsr": "未知你梁兄可喜爱",
+      "layers": {
+        "zh": {
+          "text": "未知你梁兄可喜爱",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "start": 553.8,
+      "end": 559.8,
+      "rawAsr": "九妹与你可相像",
+      "layers": {
+        "zh": {
+          "text": "九妹与你可相像",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "start": 560.1,
+      "end": 570.9,
+      "rawAsr": "她品貌就像我英台",
+      "layers": {
+        "zh": {
+          "text": "她品貌就像我英台",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "start": 571.7,
+      "end": 587.0,
+      "rawAsr": "如此多谢贤弟来玉成",
+      "layers": {
+        "zh": {
+          "text": "如此多谢贤弟来玉成",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "start": 590.8,
+      "end": 614.4,
+      "rawAsr": "梁兄你花轿早来抬",
+      "layers": {
+        "zh": {
+          "text": "梁兄你花轿早来抬",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

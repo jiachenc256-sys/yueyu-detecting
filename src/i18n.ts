@@ -110,6 +110,10 @@ const zhHans: Dict = {
   "speak.lead": "使用麦克风或上传音频。稍候即可看到简体中文、繁體中文与 English。",
   "speak.note":
     "识别后并行两路：① 档案检索（是否已收录唱词）；② 腔调·语调（能量/起伏/音色粗估悲·急·怒·柔·亢·叹）。有音频时两路都会显示。",
+  "speak.demoPath":
+    "演示路径：点「试试示例 · 梁祝」→ 等识别 → 看①档案命中并「在档案中打开」→ 有音频时看②情绪雷达。",
+  "speak.limits":
+    "说明：②是浏览器音频特征启发式，不是情绪大模型；线上识别为 blend-v10。字级 CER 用双指标诚实展示，不宣称 mean 0.5。",
   "speak.mic": "麦克风",
   "speak.upload": "上传音频",
   "speak.start": "开始听写",
@@ -137,8 +141,10 @@ const zhHans: Dict = {
   "speak.path.prosodyHint": "用能量、起伏与音色粗估情绪雷达（悲急怒柔亢叹）。与①档案检索并列；有录音/上传时计算，不是字级听写。",
   "speak.path.prosodyBadge": "腔调路径",
   "speak.path.badgeHit": "档案命中",
-  "speak.path.badgeMiss": "档案未命中",
-  "speak.path.missBody": "这段不太像本站已收录唱词。下面改用腔调与语势做情绪粗估。",
+  "speak.path.badgeMiss": "无高置信命中",
+  "speak.path.missBody": "没有足够把握的档案命中。可改用②腔调与语势做情绪粗估，或换一段更接近收录唱词的音频。",
+  "speak.path.weakBody": "有相近候选，但置信不足，不当作命中。可点示例或换戏再试；②仍可从音频粗估情绪。",
+  "speak.path.weakLabel": "参考（置信不足）",
   "speak.path.archiveUnavailable": "档案索引暂不可用，跳过检索。",
   "speak.path.radarIdle": "档案主题信号弱",
   "speak.path.prosodyRunning": "档案未命中，正在分析腔调与语调…",
@@ -447,6 +453,10 @@ const zhHant: Dict = {
   "speak.lead": "使用麥克風或上傳音訊。稍候即可看到簡體中文、繁體中文與 English。",
   "speak.note":
     "識別後並行兩路：① 檔案檢索（是否已收錄唱詞）；② 腔調·語調（能量/起伏/音色粗估悲·急·怒·柔·亢·嘆）。有音訊時兩路都會顯示。",
+  "speak.demoPath":
+    "演示路徑：點「試試示例 · 梁祝」→ 等識別 → 看①檔案命中並「在檔案中打開」→ 有音訊時看②情緒雷達。",
+  "speak.limits":
+    "說明：②是瀏覽器音訊特徵啟發式，不是情緒大模型；線上識別為 blend-v10。字級 CER 用雙指標誠實展示，不宣稱 mean 0.5。",
   "speak.mic": "麥克風",
   "speak.upload": "上傳音訊",
   "speak.start": "開始聽寫",
@@ -475,8 +485,10 @@ const zhHant: Dict = {
   "speak.path.prosodyHint": "用能量、起伏與音色粗估情緒雷達（悲急怒柔亢嘆）。與①檔案檢索並列；有錄音/上傳時計算，不是字級聽寫。",
   "speak.path.prosodyBadge": "腔調路徑",
   "speak.path.badgeHit": "檔案命中",
-  "speak.path.badgeMiss": "檔案未命中",
-  "speak.path.missBody": "這段不太像本站已收錄唱詞。下面改用腔調與語勢做情緒粗估。",
+  "speak.path.badgeMiss": "無高置信命中",
+  "speak.path.missBody": "沒有足夠把握的檔案命中。可改用②腔調與語勢做情緒粗估，或換一段更接近收錄唱詞的音訊。",
+  "speak.path.weakBody": "有相近候選，但置信不足，不當作命中。可點示例或換戲再試；②仍可從音訊粗估情緒。",
+  "speak.path.weakLabel": "參考（置信不足）",
   "speak.path.archiveUnavailable": "檔案索引暫不可用，跳過檢索。",
   "speak.path.radarIdle": "檔案主題信號弱",
   "speak.path.prosodyRunning": "檔案未命中，正在分析腔調與語調…",
@@ -781,6 +793,10 @@ const en: Dict = {
   "speak.lead": "Use the microphone or upload audio. After a short pause, see Simplified Chinese, Traditional Chinese, and English.",
   "speak.note":
     "After recognition, two parallel paths: ① archive check (is this in our lyrics?); ② delivery emotion from energy / contour / timbre. Both panels show when audio is present.",
+  "speak.demoPath":
+    "Demo path: Try sample · Liang Zhu → wait for ASR → see ① archive hit and Open in Archive → with audio, check ② emotion radar.",
+  "speak.limits":
+    "Limits: ② is browser audio heuristics, not an emotion LLM; live ASR is blend-v10. CER is dual-metric and honest — we do not claim mean 0.5.",
   "speak.mic": "Microphone",
   "speak.upload": "Upload audio",
   "speak.start": "Start listening",
@@ -809,8 +825,10 @@ const en: Dict = {
   "speak.path.prosodyHint": "Estimate an emotion radar from energy, contour, and timbre. Shown beside ① archive check whenever you record or upload — not verbatim ASR.",
   "speak.path.prosodyBadge": "Delivery path",
   "speak.path.badgeHit": "Archive hit",
-  "speak.path.badgeMiss": "Not in archive",
-  "speak.path.missBody": "This doesn’t look like archived lyrics. Below we estimate emotion from delivery.",
+  "speak.path.badgeMiss": "No confident hit",
+  "speak.path.missBody": "No confident archive match. Use ② delivery emotion, or try audio closer to archived lyrics.",
+  "speak.path.weakBody": "Near matches found, but confidence is too low to count as a hit. Try a sample or another piece; ② can still estimate emotion from audio.",
+  "speak.path.weakLabel": "Reference only (low confidence)",
   "speak.path.archiveUnavailable": "Archive index unavailable — skipping check.",
   "speak.path.radarIdle": "Weak archive theme signal",
   "speak.path.prosodyRunning": "Not in archive — analyzing delivery…",

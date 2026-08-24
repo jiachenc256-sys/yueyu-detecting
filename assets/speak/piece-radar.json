@@ -130,6 +130,578 @@
         "id": "exam",
         "label": "世情"
       }
+    ],
+    "liangzhu-xia": [
+      {
+        "id": "farewell",
+        "label": "相送"
+      },
+      {
+        "id": "grief",
+        "label": "悲剧"
+      },
+      {
+        "id": "oath",
+        "label": "誓约"
+      },
+      {
+        "id": "longing",
+        "label": "恋慕"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "exam",
+        "label": "传说"
+      }
+    ],
+    "mudanting-huanhunji": [
+      {
+        "id": "longing",
+        "label": "情思"
+      },
+      {
+        "id": "oath",
+        "label": "生死约"
+      },
+      {
+        "id": "grief",
+        "label": "伤逝"
+      },
+      {
+        "id": "marriage",
+        "label": "还魂"
+      },
+      {
+        "id": "farewell",
+        "label": "离魂"
+      },
+      {
+        "id": "exam",
+        "label": "梦境"
+      }
+    ],
+    "chen-sanliang": [
+      {
+        "id": "grief",
+        "label": "沉冤"
+      },
+      {
+        "id": "oath",
+        "label": "辩诬"
+      },
+      {
+        "id": "exam",
+        "label": "公堂"
+      },
+      {
+        "id": "longing",
+        "label": "盼雪"
+      },
+      {
+        "id": "farewell",
+        "label": "离乱"
+      },
+      {
+        "id": "marriage",
+        "label": "身世"
+      }
+    ],
+    "zanghua-yin": [
+      {
+        "id": "grief",
+        "label": "葬花"
+      },
+      {
+        "id": "longing",
+        "label": "伤春"
+      },
+      {
+        "id": "farewell",
+        "label": "落花"
+      },
+      {
+        "id": "oath",
+        "label": "自怜"
+      },
+      {
+        "id": "marriage",
+        "label": "寄情"
+      },
+      {
+        "id": "exam",
+        "label": "世情"
+      }
+    ],
+    "chai-tou-feng": [
+      {
+        "id": "farewell",
+        "label": "诀别"
+      },
+      {
+        "id": "grief",
+        "label": "酸楚"
+      },
+      {
+        "id": "longing",
+        "label": "旧情"
+      },
+      {
+        "id": "oath",
+        "label": "错负"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "exam",
+        "label": "命运"
+      }
+    ],
+    "limaohuan-taizi": [
+      {
+        "id": "grief",
+        "label": "冤案"
+      },
+      {
+        "id": "oath",
+        "label": "母子"
+      },
+      {
+        "id": "exam",
+        "label": "辨认"
+      },
+      {
+        "id": "farewell",
+        "label": "失散"
+      },
+      {
+        "id": "longing",
+        "label": "寻亲"
+      },
+      {
+        "id": "marriage",
+        "label": "宫廷"
+      }
+    ],
+    "hongloumeng-1": [
+      {
+        "id": "longing",
+        "label": "宝黛"
+      },
+      {
+        "id": "grief",
+        "label": "悲金"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "farewell",
+        "label": "离散"
+      },
+      {
+        "id": "exam",
+        "label": "贾府"
+      }
+    ],
+    "hongloumeng-2": [
+      {
+        "id": "longing",
+        "label": "宝黛"
+      },
+      {
+        "id": "grief",
+        "label": "悲金"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "farewell",
+        "label": "离散"
+      },
+      {
+        "id": "exam",
+        "label": "贾府"
+      }
+    ],
+    "hongloumeng-3": [
+      {
+        "id": "longing",
+        "label": "宝黛"
+      },
+      {
+        "id": "grief",
+        "label": "悲金"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "farewell",
+        "label": "离散"
+      },
+      {
+        "id": "exam",
+        "label": "贾府"
+      }
+    ],
+    "hongloumeng-4": [
+      {
+        "id": "longing",
+        "label": "宝黛"
+      },
+      {
+        "id": "grief",
+        "label": "悲金"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "farewell",
+        "label": "离散"
+      },
+      {
+        "id": "exam",
+        "label": "贾府"
+      }
+    ],
+    "hongloumeng-5": [
+      {
+        "id": "longing",
+        "label": "宝黛"
+      },
+      {
+        "id": "grief",
+        "label": "悲金"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "farewell",
+        "label": "离散"
+      },
+      {
+        "id": "exam",
+        "label": "贾府"
+      }
+    ],
+    "wunv-baishou-1": [
+      {
+        "id": "marriage",
+        "label": "家门"
+      },
+      {
+        "id": "oath",
+        "label": "孝义"
+      },
+      {
+        "id": "grief",
+        "label": "冷暖"
+      },
+      {
+        "id": "farewell",
+        "label": "离合"
+      },
+      {
+        "id": "longing",
+        "label": "亲情"
+      },
+      {
+        "id": "exam",
+        "label": "拜寿"
+      }
+    ],
+    "wunv-baishou-2": [
+      {
+        "id": "marriage",
+        "label": "家门"
+      },
+      {
+        "id": "oath",
+        "label": "孝义"
+      },
+      {
+        "id": "grief",
+        "label": "冷暖"
+      },
+      {
+        "id": "farewell",
+        "label": "离合"
+      },
+      {
+        "id": "longing",
+        "label": "亲情"
+      },
+      {
+        "id": "exam",
+        "label": "拜寿"
+      }
+    ],
+    "wunv-baishou-3": [
+      {
+        "id": "marriage",
+        "label": "家门"
+      },
+      {
+        "id": "oath",
+        "label": "孝义"
+      },
+      {
+        "id": "grief",
+        "label": "冷暖"
+      },
+      {
+        "id": "farewell",
+        "label": "离合"
+      },
+      {
+        "id": "longing",
+        "label": "亲情"
+      },
+      {
+        "id": "exam",
+        "label": "拜寿"
+      }
+    ],
+    "wunv-baishou-4": [
+      {
+        "id": "marriage",
+        "label": "家门"
+      },
+      {
+        "id": "oath",
+        "label": "孝义"
+      },
+      {
+        "id": "grief",
+        "label": "冷暖"
+      },
+      {
+        "id": "farewell",
+        "label": "离合"
+      },
+      {
+        "id": "longing",
+        "label": "亲情"
+      },
+      {
+        "id": "exam",
+        "label": "拜寿"
+      }
+    ],
+    "bubuxinjing-1": [
+      {
+        "id": "longing",
+        "label": "情思"
+      },
+      {
+        "id": "grief",
+        "label": "宫怨"
+      },
+      {
+        "id": "oath",
+        "label": "盟约"
+      },
+      {
+        "id": "farewell",
+        "label": "生离"
+      },
+      {
+        "id": "marriage",
+        "label": "名分"
+      },
+      {
+        "id": "exam",
+        "label": "宫斗"
+      }
+    ],
+    "bubuxinjing-2": [
+      {
+        "id": "longing",
+        "label": "情思"
+      },
+      {
+        "id": "grief",
+        "label": "宫怨"
+      },
+      {
+        "id": "oath",
+        "label": "盟约"
+      },
+      {
+        "id": "farewell",
+        "label": "生离"
+      },
+      {
+        "id": "marriage",
+        "label": "名分"
+      },
+      {
+        "id": "exam",
+        "label": "宫斗"
+      }
+    ],
+    "bubuxinjing-3": [
+      {
+        "id": "longing",
+        "label": "情思"
+      },
+      {
+        "id": "grief",
+        "label": "宫怨"
+      },
+      {
+        "id": "oath",
+        "label": "盟约"
+      },
+      {
+        "id": "farewell",
+        "label": "生离"
+      },
+      {
+        "id": "marriage",
+        "label": "名分"
+      },
+      {
+        "id": "exam",
+        "label": "宫斗"
+      }
+    ],
+    "bubuxinjing-4a": [
+      {
+        "id": "longing",
+        "label": "情思"
+      },
+      {
+        "id": "grief",
+        "label": "宫怨"
+      },
+      {
+        "id": "oath",
+        "label": "盟约"
+      },
+      {
+        "id": "farewell",
+        "label": "生离"
+      },
+      {
+        "id": "marriage",
+        "label": "名分"
+      },
+      {
+        "id": "exam",
+        "label": "宫斗"
+      }
+    ],
+    "bubuxinjing-4b5a": [
+      {
+        "id": "longing",
+        "label": "情思"
+      },
+      {
+        "id": "grief",
+        "label": "宫怨"
+      },
+      {
+        "id": "oath",
+        "label": "盟约"
+      },
+      {
+        "id": "farewell",
+        "label": "生离"
+      },
+      {
+        "id": "marriage",
+        "label": "名分"
+      },
+      {
+        "id": "exam",
+        "label": "宫斗"
+      }
+    ],
+    "para-2": [
+      {
+        "id": "farewell",
+        "label": "离别"
+      },
+      {
+        "id": "longing",
+        "label": "思念"
+      },
+      {
+        "id": "grief",
+        "label": "悲苦"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "exam",
+        "label": "转机"
+      }
+    ],
+    "para-3": [
+      {
+        "id": "farewell",
+        "label": "离别"
+      },
+      {
+        "id": "longing",
+        "label": "思念"
+      },
+      {
+        "id": "grief",
+        "label": "悲苦"
+      },
+      {
+        "id": "oath",
+        "label": "情义"
+      },
+      {
+        "id": "marriage",
+        "label": "姻缘"
+      },
+      {
+        "id": "exam",
+        "label": "转机"
+      }
     ]
   }
 }

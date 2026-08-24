@@ -1,0 +1,3415 @@
+{
+  "id": "hongloumeng-3",
+  "title": "红楼梦 · 第3部分",
+  "titleEn": "Dream of the Red Chamber · Part 3",
+  "audio": "assets/audio/hongloumeng-3.m4a",
+  "sourceSrt": "红楼梦3.srt",
+  "category": "yueju",
+  "schemaVersion": "1.0.0",
+  "cueCount": 283,
+  "correctedCount": 283,
+  "coverage": {
+    "zh": 283,
+    "enCurated": 0,
+    "enMt": 0,
+    "enAny": 0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 22.9,
+      "end": 25.9,
+      "rawAsr": "姑娘 夜深了",
+      "layers": {
+        "zh": {
+          "text": "姑娘 夜深了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 68.3,
+      "end": 84.199,
+      "rawAsr": "他是帕上情丝千万缕",
+      "layers": {
+        "zh": {
+          "text": "他是帕上情丝千万缕",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 84.2,
+      "end": 94.599,
+      "rawAsr": "我是笔尖心事一行行",
+      "layers": {
+        "zh": {
+          "text": "我是笔尖心事一行行",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 94.6,
+      "end": 102.199,
+      "rawAsr": "平日里两小无猜通心性",
+      "layers": {
+        "zh": {
+          "text": "平日里两小无猜通心性",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 102.2,
+      "end": 122.7,
+      "rawAsr": "又岂是水中明月镜中尘",
+      "layers": {
+        "zh": {
+          "text": "又岂是水中明月镜中尘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 136.0,
+      "end": 137.199,
+      "rawAsr": "宝姑娘来了",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 137.2,
+      "end": 139.599,
+      "rawAsr": "宝兄弟他怎么样了",
+      "layers": {
+        "zh": {
+          "text": "宝兄弟他怎么样了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 139.6,
+      "end": 141.699,
+      "rawAsr": "好一些了",
+      "layers": {
+        "zh": {
+          "text": "好一些了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 141.7,
+      "end": 144.799,
+      "rawAsr": "把这药丸用酒研开 涂在身上",
+      "layers": {
+        "zh": {
+          "text": "把这药丸用酒研开 涂在身上",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 144.8,
+      "end": 147.299,
+      "rawAsr": "把淤血化开就好了",
+      "layers": {
+        "zh": {
+          "text": "把淤血化开就好了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 147.3,
+      "end": 149.7,
+      "rawAsr": "宝姑娘真是想的周到",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘真是想的周到",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 161.0,
+      "end": 161.799,
+      "rawAsr": "宝姑娘",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 161.8,
+      "end": 165.199,
+      "rawAsr": "打成这个样子",
+      "layers": {
+        "zh": {
+          "text": "打成这个样子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 165.2,
+      "end": 168.6,
+      "rawAsr": "宝兄弟他呀",
+      "layers": {
+        "zh": {
+          "text": "宝兄弟他呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 180.5,
+      "end": 189.599,
+      "rawAsr": "良药苦口利于病",
+      "layers": {
+        "zh": {
+          "text": "良药苦口利于病",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 189.6,
+      "end": 199.099,
+      "rawAsr": "忠言逆耳利于行",
+      "layers": {
+        "zh": {
+          "text": "忠言逆耳利于行",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 199.1,
+      "end": 213.699,
+      "rawAsr": "若能听人一句话",
+      "layers": {
+        "zh": {
+          "text": "若能听人一句话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 213.7,
+      "end": 225.2,
+      "rawAsr": "他也不至今日受毒刑",
+      "layers": {
+        "zh": {
+          "text": "他也不至今日受毒刑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 228.1,
+      "end": 231.599,
+      "rawAsr": "宝姑娘你哪里知道",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘你哪里知道",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 231.6,
+      "end": 241.699,
+      "rawAsr": "老爷是毒打二爷家规严",
+      "layers": {
+        "zh": {
+          "text": "老爷是毒打二爷家规严",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 241.7,
+      "end": 248.599,
+      "rawAsr": "为的是望子成龙把名显",
+      "layers": {
+        "zh": {
+          "text": "为的是望子成龙把名显",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 248.6,
+      "end": 255.599,
+      "rawAsr": "谁知他好了伤疤忘了痛",
+      "layers": {
+        "zh": {
+          "text": "谁知他好了伤疤忘了痛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 255.6,
+      "end": 262.899,
+      "rawAsr": "未见他本性改半点",
+      "layers": {
+        "zh": {
+          "text": "未见他本性改半点",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 262.9,
+      "end": 281.199,
+      "rawAsr": "我叹的是燕子做窠空劳碌",
+      "layers": {
+        "zh": {
+          "text": "我叹的是燕子做窠空劳碌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 281.2,
+      "end": 296.4,
+      "rawAsr": "枉有这知寒送暖心一片",
+      "layers": {
+        "zh": {
+          "text": "枉有这知寒送暖心一片",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 297.4,
+      "end": 300.6,
+      "rawAsr": "你又何必这样灰心呢",
+      "layers": {
+        "zh": {
+          "text": "你又何必这样灰心呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 303.3,
+      "end": 310.699,
+      "rawAsr": "你是知心悉意将他待",
+      "layers": {
+        "zh": {
+          "text": "你是知心悉意将他待",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 310.7,
+      "end": 322.099,
+      "rawAsr": "忠肝义胆人共见",
+      "layers": {
+        "zh": {
+          "text": "忠肝义胆人共见",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 322.1,
+      "end": 329.399,
+      "rawAsr": "非是我当面夸你好",
+      "layers": {
+        "zh": {
+          "text": "非是我当面夸你好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "start": 329.4,
+      "end": 337.299,
+      "rawAsr": "也常听太太说你贤",
+      "layers": {
+        "zh": {
+          "text": "也常听太太说你贤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "start": 337.3,
+      "end": 344.999,
+      "rawAsr": "常言道急水总有回头浪",
+      "layers": {
+        "zh": {
+          "text": "常言道急水总有回头浪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "start": 345.0,
+      "end": 356.999,
+      "rawAsr": "宝兄弟他总有一日性情变",
+      "layers": {
+        "zh": {
+          "text": "宝兄弟他总有一日性情变",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "start": 357.0,
+      "end": 368.099,
+      "rawAsr": "青云有路终须到",
+      "layers": {
+        "zh": {
+          "text": "青云有路终须到",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "start": 368.1,
+      "end": 391.999,
+      "rawAsr": "飞黄腾达待来年",
+      "layers": {
+        "zh": {
+          "text": "飞黄腾达待来年",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "start": 392.0,
+      "end": 393.299,
+      "rawAsr": "宝姑娘说的是",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘说的是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "start": 393.3,
+      "end": 395.8,
+      "rawAsr": "你再帮我们劝劝他吧",
+      "layers": {
+        "zh": {
+          "text": "你再帮我们劝劝他吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "start": 397.2,
+      "end": 398.1,
+      "rawAsr": "听人说你去了一个戒指是不是啊",
+      "layers": {
+        "zh": {
+          "text": "听人说你去了一个戒指是不是啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "start": 400.3,
+      "end": 401.4,
+      "rawAsr": "听人说你丢了一个戒指 是不是啊",
+      "layers": {
+        "zh": {
+          "text": "听人说你丢了一个戒指 是不是啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "start": 401.5,
+      "end": 403.899,
+      "rawAsr": "是啊都怪我粗心",
+      "layers": {
+        "zh": {
+          "text": "是啊都怪我粗心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "start": 403.9,
+      "end": 407.399,
+      "rawAsr": "竟把太太赏给我的戒指弄丢了",
+      "layers": {
+        "zh": {
+          "text": "竟把太太赏给我的戒指弄丢了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "start": 407.4,
+      "end": 410.499,
+      "rawAsr": "我这个倒用不着 宝姑娘",
+      "layers": {
+        "zh": {
+          "text": "我这个倒用不着 宝姑娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "start": 410.5,
+      "end": 414.699,
+      "rawAsr": "只是恐怕不及太太送给你那个好",
+      "layers": {
+        "zh": {
+          "text": "只是恐怕不及太太送给你那个好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "start": 414.7,
+      "end": 418.699,
+      "rawAsr": "宝姑娘 这 宝姑娘来了半天",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘 这 宝姑娘来了半天",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "start": 418.7,
+      "end": 420.099,
+      "rawAsr": "我连杯茶都没有倒",
+      "layers": {
+        "zh": {
+          "text": "我连杯茶都没有倒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "start": 420.1,
+      "end": 422.9,
+      "rawAsr": "宝姑娘你坐一会 我去倒杯茶来",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘你坐一会 我去倒杯茶来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "start": 453.8,
+      "end": 458.599,
+      "rawAsr": "什么话和尚道士的话如何信得",
+      "layers": {
+        "zh": {
+          "text": "什么话和尚道士的话如何信得",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "start": 458.6,
+      "end": 462.399,
+      "rawAsr": "什么金玉良缘",
+      "layers": {
+        "zh": {
+          "text": "什么金玉良缘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "start": 462.4,
+      "end": 465.7,
+      "rawAsr": "我偏要说木石姻缘",
+      "layers": {
+        "zh": {
+          "text": "我偏要说木石姻缘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "start": 480.6,
+      "end": 488.499,
+      "rawAsr": "宝玉被咎身负伤",
+      "layers": {
+        "zh": {
+          "text": "宝玉被咎身负伤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "start": 488.5,
+      "end": 496.599,
+      "rawAsr": "荣国府多的是无情棒",
+      "layers": {
+        "zh": {
+          "text": "荣国府多的是无情棒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "start": 496.6,
+      "end": 503.399,
+      "rawAsr": "他是皮肉伤愈心未愈",
+      "layers": {
+        "zh": {
+          "text": "他是皮肉伤愈心未愈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "start": 503.4,
+      "end": 515.5,
+      "rawAsr": "我是三朝两夊勤探望",
+      "layers": {
+        "zh": {
+          "text": "我是三朝两夊勤探望",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "start": 525.0,
+      "end": 530.199,
+      "rawAsr": "宝姐姐 是你啊",
+      "layers": {
+        "zh": {
+          "text": "宝姐姐 是你啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "start": 530.2,
+      "end": 530.6,
+      "rawAsr": "刚坐了一会就听见你在梦中骂人",
+      "layers": {
+        "zh": {
+          "text": "刚坐了一会就听见你在梦中骂人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "start": 531.6,
+      "end": 532.5,
+      "rawAsr": "刚坐了一会就听见你在梦中骂人",
+      "layers": {
+        "zh": {
+          "text": "刚坐了一会就听见你在梦中骂人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "start": 533.2,
+      "end": 534.1,
+      "rawAsr": "刚坐了一会就听见你在梦中骂人",
+      "layers": {
+        "zh": {
+          "text": "刚坐了一会就听见你在梦中骂人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "start": 535.5,
+      "end": 538.799,
+      "rawAsr": "想不到我是听你来骂人的",
+      "layers": {
+        "zh": {
+          "text": "想不到我是听你来骂人的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "start": 538.8,
+      "end": 540.199,
+      "rawAsr": "是真的吗",
+      "layers": {
+        "zh": {
+          "text": "是真的吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "start": 540.2,
+      "end": 542.799,
+      "rawAsr": "我怎么自己一点都不知道呢",
+      "layers": {
+        "zh": {
+          "text": "我怎么自己一点都不知道呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "start": 542.8,
+      "end": 545.899,
+      "rawAsr": "梦中之言不足为信",
+      "layers": {
+        "zh": {
+          "text": "梦中之言不足为信",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "start": 545.9,
+      "end": 548.399,
+      "rawAsr": "听说你又做了几首新诗",
+      "layers": {
+        "zh": {
+          "text": "听说你又做了几首新诗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "start": 548.4,
+      "end": 550.199,
+      "rawAsr": "想来拜读一番呢",
+      "layers": {
+        "zh": {
+          "text": "想来拜读一番呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "start": 550.2,
+      "end": 551.999,
+      "rawAsr": "诗倒是做了几首",
+      "layers": {
+        "zh": {
+          "text": "诗倒是做了几首",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "start": 552.0,
+      "end": 553.999,
+      "rawAsr": "总不及你和林妹妹啊",
+      "layers": {
+        "zh": {
+          "text": "总不及你和林妹妹啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "start": 554.0,
+      "end": 555.099,
+      "rawAsr": "今天你来了",
+      "layers": {
+        "zh": {
+          "text": "今天你来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "start": 555.1,
+      "end": 558.0,
+      "rawAsr": "正好让你评论一下呢 来",
+      "layers": {
+        "zh": {
+          "text": "正好让你评论一下呢 来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "start": 574.4,
+      "end": 575.999,
+      "rawAsr": "什么宝姑娘 贝姑娘",
+      "layers": {
+        "zh": {
+          "text": "什么宝姑娘 贝姑娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "start": 576.0,
+      "end": 578.199,
+      "rawAsr": "有事没事跑来就坐着",
+      "layers": {
+        "zh": {
+          "text": "有事没事跑来就坐着",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "start": 578.2,
+      "end": 580.7,
+      "rawAsr": "叫我们半夜三更不得好睡",
+      "layers": {
+        "zh": {
+          "text": "叫我们半夜三更不得好睡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "start": 583.7,
+      "end": 586.5,
+      "rawAsr": "谁呀 都睡着了有事明天再来吧",
+      "layers": {
+        "zh": {
+          "text": "谁呀 都睡着了有事明天再来吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "start": 587.4,
+      "end": 589.699,
+      "rawAsr": "是我呀 还不开门",
+      "layers": {
+        "zh": {
+          "text": "是我呀 还不开门",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "start": 589.7,
+      "end": 592.199,
+      "rawAsr": "凭你是谁 二爷吩咐的",
+      "layers": {
+        "zh": {
+          "text": "凭你是谁 二爷吩咐的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "start": 592.2,
+      "end": 594.6,
+      "rawAsr": "一概不许放进人来",
+      "layers": {
+        "zh": {
+          "text": "一概不许放进人来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "start": 597.0,
+      "end": 599.299,
+      "rawAsr": "宝兄弟 我走了",
+      "layers": {
+        "zh": {
+          "text": "宝兄弟 我走了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "start": 599.3,
+      "end": 603.2,
+      "rawAsr": "宝姑娘再坐一会吧 宝姐姐请",
+      "layers": {
+        "zh": {
+          "text": "宝姑娘再坐一会吧 宝姐姐请",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 76,
+      "start": 612.5,
+      "end": 620.499,
+      "rawAsr": "一声呼叱半身凉",
+      "layers": {
+        "zh": {
+          "text": "一声呼叱半身凉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 77,
+      "start": 620.5,
+      "end": 629.3,
+      "rawAsr": "独立花径心凄凉",
+      "layers": {
+        "zh": {
+          "text": "独立花径心凄凉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 78,
+      "start": 636.7,
+      "end": 641.1,
+      "rawAsr": "宝姐姐走好 宝姑娘走好",
+      "layers": {
+        "zh": {
+          "text": "宝姐姐走好 宝姑娘走好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 79,
+      "start": 643.6,
+      "end": 644.6,
+      "rawAsr": "二爷",
+      "layers": {
+        "zh": {
+          "text": "二爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 80,
+      "start": 650.7,
+      "end": 654.699,
+      "rawAsr": "站住 什么狗仗人势",
+      "layers": {
+        "zh": {
+          "text": "站住 什么狗仗人势",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "start": 654.7,
+      "end": 656.399,
+      "rawAsr": "老实说在这个园子里",
+      "layers": {
+        "zh": {
+          "text": "老实说在这个园子里",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 82,
+      "start": 656.4,
+      "end": 660.599,
+      "rawAsr": "除了主子都是狗狗不仗人势",
+      "layers": {
+        "zh": {
+          "text": "除了主子都是狗狗不仗人势",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 83,
+      "start": 660.6,
+      "end": 664.499,
+      "rawAsr": "休想在园子里站住脚跟",
+      "layers": {
+        "zh": {
+          "text": "休想在园子里站住脚跟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 84,
+      "start": 664.5,
+      "end": 666.199,
+      "rawAsr": "老天总有一天开眼",
+      "layers": {
+        "zh": {
+          "text": "老天总有一天开眼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 85,
+      "start": 666.2,
+      "end": 668.8,
+      "rawAsr": "将你们这些人一个个都赶出园子",
+      "layers": {
+        "zh": {
+          "text": "将你们这些人一个个都赶出园子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 86,
+      "start": 669.0,
+      "end": 673.2,
+      "rawAsr": "这才干净呢走",
+      "layers": {
+        "zh": {
+          "text": "这才干净呢走",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 87,
+      "start": 673.6,
+      "end": 680.0,
+      "rawAsr": "这园子住不得了",
+      "layers": {
+        "zh": {
+          "text": "这园子住不得了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "start": 699.0,
+      "end": 701.4,
+      "rawAsr": "老祖宗走好",
+      "layers": {
+        "zh": {
+          "text": "老祖宗走好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "start": 703.8,
+      "end": 705.9,
+      "rawAsr": "老太太走好",
+      "layers": {
+        "zh": {
+          "text": "老太太走好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "start": 715.7,
+      "end": 723.099,
+      "rawAsr": "四月天气雨乍晴",
+      "layers": {
+        "zh": {
+          "text": "四月天气雨乍晴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "start": 723.1,
+      "end": 730.5,
+      "rawAsr": "陪着老太太来游春",
+      "layers": {
+        "zh": {
+          "text": "陪着老太太来游春",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "start": 732.9,
+      "end": 734.299,
+      "rawAsr": "老太太",
+      "layers": {
+        "zh": {
+          "text": "老太太",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "start": 734.3,
+      "end": 736.199,
+      "rawAsr": "我的儿啊",
+      "layers": {
+        "zh": {
+          "text": "我的儿啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "start": 736.2,
+      "end": 740.299,
+      "rawAsr": "难为你陪着我们老一辈来游园",
+      "layers": {
+        "zh": {
+          "text": "难为你陪着我们老一辈来游园",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "start": 740.3,
+      "end": 744.9,
+      "rawAsr": "这才添了我们不少兴致呢",
+      "layers": {
+        "zh": {
+          "text": "这才添了我们不少兴致呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "start": 746.4,
+      "end": 751.599,
+      "rawAsr": "宝钗理该共作伴",
+      "layers": {
+        "zh": {
+          "text": "宝钗理该共作伴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "start": 751.6,
+      "end": 753.599,
+      "rawAsr": "是啊",
+      "layers": {
+        "zh": {
+          "text": "是啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "start": 753.6,
+      "end": 761.0,
+      "rawAsr": "龙女应当陪观音",
+      "layers": {
+        "zh": {
+          "text": "龙女应当陪观音",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "start": 764.5,
+      "end": 768.199,
+      "rawAsr": "人说四月春将去",
+      "layers": {
+        "zh": {
+          "text": "人说四月春将去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "start": 768.2,
+      "end": 775.6,
+      "rawAsr": "我看是正当美景和良辰",
+      "layers": {
+        "zh": {
+          "text": "我看是正当美景和良辰",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 101,
+      "start": 790.7,
+      "end": 792.099,
+      "rawAsr": "姨太太",
+      "layers": {
+        "zh": {
+          "text": "姨太太",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 102,
+      "start": 792.1,
+      "end": 795.299,
+      "rawAsr": "老太太请",
+      "layers": {
+        "zh": {
+          "text": "老太太请",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "start": 795.3,
+      "end": 800.999,
+      "rawAsr": "老年虽有惜春意",
+      "layers": {
+        "zh": {
+          "text": "老年虽有惜春意",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 104,
+      "start": 801.0,
+      "end": 811.999,
+      "rawAsr": "怎奈是白发已非赏花人",
+      "layers": {
+        "zh": {
+          "text": "怎奈是白发已非赏花人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 105,
+      "start": 812.0,
+      "end": 817.8,
+      "rawAsr": "说什么白发已非赏花人",
+      "layers": {
+        "zh": {
+          "text": "说什么白发已非赏花人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 106,
+      "start": 819.6,
+      "end": 825.999,
+      "rawAsr": "依我看老太太越活越年轻",
+      "layers": {
+        "zh": {
+          "text": "依我看老太太越活越年轻",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 107,
+      "start": 826.0,
+      "end": 828.599,
+      "rawAsr": "对啊 是啊",
+      "layers": {
+        "zh": {
+          "text": "对啊 是啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 108,
+      "start": 828.6,
+      "end": 832.399,
+      "rawAsr": "长生不老活下去",
+      "layers": {
+        "zh": {
+          "text": "长生不老活下去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 109,
+      "start": 832.4,
+      "end": 838.8,
+      "rawAsr": "赛过南极老寿星",
+      "layers": {
+        "zh": {
+          "text": "赛过南极老寿星",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 110,
+      "start": 841.4,
+      "end": 846.199,
+      "rawAsr": "凤丫头 就凭你这张巧嘴",
+      "layers": {
+        "zh": {
+          "text": "凤丫头 就凭你这张巧嘴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "start": 846.2,
+      "end": 847.099,
+      "rawAsr": "老祖宗",
+      "layers": {
+        "zh": {
+          "text": "老祖宗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 112,
+      "start": 847.1,
+      "end": 849.399,
+      "rawAsr": "这几年 我留心地看啊",
+      "layers": {
+        "zh": {
+          "text": "这几年 我留心地看啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 113,
+      "start": 849.4,
+      "end": 851.999,
+      "rawAsr": "任凭二嫂子怎样巧",
+      "layers": {
+        "zh": {
+          "text": "任凭二嫂子怎样巧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "start": 852.0,
+      "end": 854.8,
+      "rawAsr": "总巧不过老太太",
+      "layers": {
+        "zh": {
+          "text": "总巧不过老太太",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 115,
+      "start": 855.8,
+      "end": 858.299,
+      "rawAsr": "是啊",
+      "layers": {
+        "zh": {
+          "text": "是啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 116,
+      "start": 858.3,
+      "end": 859.999,
+      "rawAsr": "我的儿啊",
+      "layers": {
+        "zh": {
+          "text": "我的儿啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 117,
+      "start": 860.0,
+      "end": 862.099,
+      "rawAsr": "我如今老了",
+      "layers": {
+        "zh": {
+          "text": "我如今老了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 118,
+      "start": 862.1,
+      "end": 864.899,
+      "rawAsr": "还巧什么呢",
+      "layers": {
+        "zh": {
+          "text": "还巧什么呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 119,
+      "start": 864.9,
+      "end": 867.199,
+      "rawAsr": "想当年",
+      "layers": {
+        "zh": {
+          "text": "想当年",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 120,
+      "start": 867.2,
+      "end": 869.999,
+      "rawAsr": "我像凤丫头这般年纪",
+      "layers": {
+        "zh": {
+          "text": "我像凤丫头这般年纪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 121,
+      "start": 870.0,
+      "end": 873.399,
+      "rawAsr": "那倒是比她还强呢",
+      "layers": {
+        "zh": {
+          "text": "那倒是比她还强呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 122,
+      "start": 873.4,
+      "end": 876.399,
+      "rawAsr": "是啊 是这样的",
+      "layers": {
+        "zh": {
+          "text": "是啊 是这样的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 123,
+      "start": 876.4,
+      "end": 878.099,
+      "rawAsr": "姨太太",
+      "layers": {
+        "zh": {
+          "text": "姨太太",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 124,
+      "start": 878.1,
+      "end": 880.399,
+      "rawAsr": "不是我当面奉承",
+      "layers": {
+        "zh": {
+          "text": "不是我当面奉承",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 125,
+      "start": 880.4,
+      "end": 882.599,
+      "rawAsr": "千真万真",
+      "layers": {
+        "zh": {
+          "text": "千真万真",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 126,
+      "start": 882.6,
+      "end": 886.599,
+      "rawAsr": "从我们家里四个女孩儿算起",
+      "layers": {
+        "zh": {
+          "text": "从我们家里四个女孩儿算起",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 127,
+      "start": 886.6,
+      "end": 889.699,
+      "rawAsr": "要说好 要说巧",
+      "layers": {
+        "zh": {
+          "text": "要说好 要说巧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 128,
+      "start": 889.7,
+      "end": 894.399,
+      "rawAsr": "都不及宝丫头",
+      "layers": {
+        "zh": {
+          "text": "都不及宝丫头",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 129,
+      "start": 894.4,
+      "end": 896.899,
+      "rawAsr": "老太太这话倒是说偏了",
+      "layers": {
+        "zh": {
+          "text": "老太太这话倒是说偏了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 130,
+      "start": 896.9,
+      "end": 898.399,
+      "rawAsr": "这倒是真的啊",
+      "layers": {
+        "zh": {
+          "text": "这倒是真的啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 131,
+      "start": 898.4,
+      "end": 902.8,
+      "rawAsr": "我时常听老太太在背后说宝姑娘好呢",
+      "layers": {
+        "zh": {
+          "text": "我时常听老太太在背后说宝姑娘好呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 132,
+      "start": 905.2,
+      "end": 906.299,
+      "rawAsr": "凤丫头",
+      "layers": {
+        "zh": {
+          "text": "凤丫头",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 133,
+      "start": 906.3,
+      "end": 908.699,
+      "rawAsr": "等会准备一些好吃的",
+      "layers": {
+        "zh": {
+          "text": "等会准备一些好吃的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 134,
+      "start": 908.7,
+      "end": 912.1,
+      "rawAsr": "娘儿们今天索性就乐一乐",
+      "layers": {
+        "zh": {
+          "text": "娘儿们今天索性就乐一乐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 135,
+      "start": 913.7,
+      "end": 916.599,
+      "rawAsr": "姨太太 你想吃什么",
+      "layers": {
+        "zh": {
+          "text": "姨太太 你想吃什么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 136,
+      "start": 916.6,
+      "end": 918.799,
+      "rawAsr": "尽管告诉我",
+      "layers": {
+        "zh": {
+          "text": "尽管告诉我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 137,
+      "start": 918.8,
+      "end": 923.8,
+      "rawAsr": "我有本事叫凤（头办了来吃",
+      "layers": {
+        "zh": {
+          "text": "我有本事叫凤（头办了来吃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 138,
+      "start": 925.0,
+      "end": 927.299,
+      "rawAsr": "老太太总是给她出难题",
+      "layers": {
+        "zh": {
+          "text": "老太太总是给她出难题",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 139,
+      "start": 927.3,
+      "end": 930.199,
+      "rawAsr": "时常叫她弄了好吃的东西",
+      "layers": {
+        "zh": {
+          "text": "时常叫她弄了好吃的东西",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 140,
+      "start": 930.2,
+      "end": 931.799,
+      "rawAsr": "来孝敬我们",
+      "layers": {
+        "zh": {
+          "text": "来孝敬我们",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 141,
+      "start": 931.8,
+      "end": 933.399,
+      "rawAsr": "姑妈休说了",
+      "layers": {
+        "zh": {
+          "text": "姑妈休说了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 142,
+      "start": 933.4,
+      "end": 936.399,
+      "rawAsr": "我们老祖宗只是嫌人肉酸",
+      "layers": {
+        "zh": {
+          "text": "我们老祖宗只是嫌人肉酸",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 143,
+      "start": 936.4,
+      "end": 939.399,
+      "rawAsr": "要是不嫌人肉酸啊",
+      "layers": {
+        "zh": {
+          "text": "要是不嫌人肉酸啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 144,
+      "start": 939.4,
+      "end": 943.2,
+      "rawAsr": "早把我也吃了呢",
+      "layers": {
+        "zh": {
+          "text": "早把我也吃了呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 145,
+      "start": 950.2,
+      "end": 957.199,
+      "rawAsr": "看不尽满眼春色富贵花",
+      "layers": {
+        "zh": {
+          "text": "看不尽满眼春色富贵花",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 146,
+      "start": 957.2,
+      "end": 965.899,
+      "rawAsr": "说不完满嘴献媚奉承话",
+      "layers": {
+        "zh": {
+          "text": "说不完满嘴献媚奉承话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 147,
+      "start": 965.9,
+      "end": 977.299,
+      "rawAsr": "谁知园中另有人",
+      "layers": {
+        "zh": {
+          "text": "谁知园中另有人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 148,
+      "start": 977.3,
+      "end": 995.1,
+      "rawAsr": "偷洒珠泪葬落花",
+      "layers": {
+        "zh": {
+          "text": "偷洒珠泪葬落花",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 149,
+      "start": 1006.1,
+      "end": 1024.6,
+      "rawAsr": "绕绿堤 拂柳丝穿过花径",
+      "layers": {
+        "zh": {
+          "text": "绕绿堤 拂柳丝穿过花径",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 150,
+      "start": 1035.8,
+      "end": 1053.7,
+      "rawAsr": "听何处哀怨笛风送声声",
+      "layers": {
+        "zh": {
+          "text": "听何处哀怨笛风送声声",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 151,
+      "start": 1060.2,
+      "end": 1079.799,
+      "rawAsr": "人说道 大观园 四季如春",
+      "layers": {
+        "zh": {
+          "text": "人说道 大观园 四季如春",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 152,
+      "start": 1079.8,
+      "end": 1097.3,
+      "rawAsr": "我眼中 却只是一座愁城",
+      "layers": {
+        "zh": {
+          "text": "我眼中 却只是一座愁城",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 153,
+      "start": 1121.8,
+      "end": 1136.099,
+      "rawAsr": "看风过处 落红成阵",
+      "layers": {
+        "zh": {
+          "text": "看风过处 落红成阵",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 154,
+      "start": 1136.1,
+      "end": 1152.5,
+      "rawAsr": "牡丹谢芍药怕海棠惊",
+      "layers": {
+        "zh": {
+          "text": "牡丹谢芍药怕海棠惊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 155,
+      "start": 1159.2,
+      "end": 1172.699,
+      "rawAsr": "杨柳带愁桃花含恨",
+      "layers": {
+        "zh": {
+          "text": "杨柳带愁桃花含恨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 156,
+      "start": 1172.7,
+      "end": 1187.199,
+      "rawAsr": "这花朵儿与人一般受逼凌",
+      "layers": {
+        "zh": {
+          "text": "这花朵儿与人一般受逼凌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 157,
+      "start": 1187.2,
+      "end": 1196.399,
+      "rawAsr": "我一寸芳心谁共鸣",
+      "layers": {
+        "zh": {
+          "text": "我一寸芳心谁共鸣",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 158,
+      "start": 1196.4,
+      "end": 1205.499,
+      "rawAsr": "七条琴弦谁知音",
+      "layers": {
+        "zh": {
+          "text": "七条琴弦谁知音",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 159,
+      "start": 1205.5,
+      "end": 1214.199,
+      "rawAsr": "我只为 惜惺惺怜同命",
+      "layers": {
+        "zh": {
+          "text": "我只为 惜惺惺怜同命",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 160,
+      "start": 1214.2,
+      "end": 1222.899,
+      "rawAsr": "不叫你陷落污泥遭蹂躪",
+      "layers": {
+        "zh": {
+          "text": "不叫你陷落污泥遭蹂躪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 161,
+      "start": 1222.9,
+      "end": 1231.899,
+      "rawAsr": "且收拾起桃李魂",
+      "layers": {
+        "zh": {
+          "text": "且收拾起桃李魂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 162,
+      "start": 1231.9,
+      "end": 1248.0,
+      "rawAsr": "自筑香坟葬落英",
+      "layers": {
+        "zh": {
+          "text": "自筑香坟葬落英",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 163,
+      "start": 1269.4,
+      "end": 1283.6,
+      "rawAsr": "花落花飞飞满天",
+      "layers": {
+        "zh": {
+          "text": "花落花飞飞满天",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 164,
+      "start": 1287.6,
+      "end": 1302.2,
+      "rawAsr": "红消香断有谁怜",
+      "layers": {
+        "zh": {
+          "text": "红消香断有谁怜",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 165,
+      "start": 1305.7,
+      "end": 1317.3,
+      "rawAsr": "一年三百六十天",
+      "layers": {
+        "zh": {
+          "text": "一年三百六十天",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 166,
+      "start": 1319.3,
+      "end": 1331.4,
+      "rawAsr": "风刀霜剑严相逼",
+      "layers": {
+        "zh": {
+          "text": "风刀霜剑严相逼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 167,
+      "start": 1334.6,
+      "end": 1345.5,
+      "rawAsr": "明媚鲜妍能几时",
+      "layers": {
+        "zh": {
+          "text": "明媚鲜妍能几时",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 168,
+      "start": 1349.7,
+      "end": 1365.8,
+      "rawAsr": "一朝漂泊难寻觅",
+      "layers": {
+        "zh": {
+          "text": "一朝漂泊难寻觅",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 169,
+      "start": 1376.0,
+      "end": 1383.899,
+      "rawAsr": "花魂鸟魂总难留",
+      "layers": {
+        "zh": {
+          "text": "花魂鸟魂总难留",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 170,
+      "start": 1383.9,
+      "end": 1392.099,
+      "rawAsr": "鸟自无言花自羞",
+      "layers": {
+        "zh": {
+          "text": "鸟自无言花自羞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 171,
+      "start": 1392.1,
+      "end": 1400.099,
+      "rawAsr": "愿侬此日生双異",
+      "layers": {
+        "zh": {
+          "text": "愿侬此日生双異",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 172,
+      "start": 1400.1,
+      "end": 1421.8,
+      "rawAsr": "随花飞到天尽头",
+      "layers": {
+        "zh": {
+          "text": "随花飞到天尽头",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 173,
+      "start": 1437.8,
+      "end": 1445.699,
+      "rawAsr": "天尽头 何处有香丘",
+      "layers": {
+        "zh": {
+          "text": "天尽头 何处有香丘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 174,
+      "start": 1445.7,
+      "end": 1452.599,
+      "rawAsr": "未若锦震收艳骨",
+      "layers": {
+        "zh": {
+          "text": "未若锦震收艳骨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 175,
+      "start": 1452.6,
+      "end": 1465.699,
+      "rawAsr": "一抔净土掩风流",
+      "layers": {
+        "zh": {
+          "text": "一抔净土掩风流",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 176,
+      "start": 1465.7,
+      "end": 1473.799,
+      "rawAsr": "质本洁来还洁去",
+      "layers": {
+        "zh": {
+          "text": "质本洁来还洁去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 177,
+      "start": 1473.8,
+      "end": 1483.799,
+      "rawAsr": "不教污淖陷渠沟",
+      "layers": {
+        "zh": {
+          "text": "不教污淖陷渠沟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 178,
+      "start": 1483.8,
+      "end": 1492.699,
+      "rawAsr": "质本洁来还洁去",
+      "layers": {
+        "zh": {
+          "text": "质本洁来还洁去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 179,
+      "start": 1492.7,
+      "end": 1503.0,
+      "rawAsr": "不教污淖陷渠沟",
+      "layers": {
+        "zh": {
+          "text": "不教污淖陷渠沟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 180,
+      "start": 1515.2,
+      "end": 1524.799,
+      "rawAsr": "侬今葬花人笑痴",
+      "layers": {
+        "zh": {
+          "text": "侬今葬花人笑痴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 181,
+      "start": 1524.8,
+      "end": 1534.399,
+      "rawAsr": "他年葬侬知是谁",
+      "layers": {
+        "zh": {
+          "text": "他年葬侬知是谁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 182,
+      "start": 1534.4,
+      "end": 1544.6,
+      "rawAsr": "一朝春尽红颜老",
+      "layers": {
+        "zh": {
+          "text": "一朝春尽红颜老",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 183,
+      "start": 1548.3,
+      "end": 1565.3,
+      "rawAsr": "花落人亡两不知",
+      "layers": {
+        "zh": {
+          "text": "花落人亡两不知",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 184,
+      "start": 1574.4,
+      "end": 1575.599,
+      "rawAsr": "人说我痴",
+      "layers": {
+        "zh": {
+          "text": "人说我痴",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 185,
+      "start": 1575.6,
+      "end": 1582.2,
+      "rawAsr": "难道还有一个痴的不成吗",
+      "layers": {
+        "zh": {
+          "text": "难道还有一个痴的不成吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 186,
+      "start": 1582.5,
+      "end": 1588.7,
+      "rawAsr": "我当了是谁原来是这个狠心短命",
+      "layers": {
+        "zh": {
+          "text": "我当了是谁原来是这个狠心短命",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 187,
+      "start": 1588.8,
+      "end": 1590.8,
+      "rawAsr": "妹妹慢走",
+      "layers": {
+        "zh": {
+          "text": "妹妹慢走",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 188,
+      "start": 1591.9,
+      "end": 1596.499,
+      "rawAsr": "我知道你不理我看见我就避开",
+      "layers": {
+        "zh": {
+          "text": "我知道你不理我看见我就避开",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 189,
+      "start": 1596.5,
+      "end": 1599.399,
+      "rawAsr": "我今天只要和你说一句话",
+      "layers": {
+        "zh": {
+          "text": "我今天只要和你说一句话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 190,
+      "start": 1599.4,
+      "end": 1602.899,
+      "rawAsr": "从今之后就撂开手吧",
+      "layers": {
+        "zh": {
+          "text": "从今之后就撂开手吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 191,
+      "start": 1602.9,
+      "end": 1606.799,
+      "rawAsr": "说吧 说两句你听不听",
+      "layers": {
+        "zh": {
+          "text": "说吧 说两句你听不听",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 192,
+      "start": 1606.8,
+      "end": 1612.3,
+      "rawAsr": "嗳 既有今日 何必当初",
+      "layers": {
+        "zh": {
+          "text": "嗳 既有今日 何必当初",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 193,
+      "start": 1613.6,
+      "end": 1618.4,
+      "rawAsr": "当初怎么样今日又怎么样",
+      "layers": {
+        "zh": {
+          "text": "当初怎么样今日又怎么样",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 194,
+      "start": 1629.5,
+      "end": 1645.2,
+      "rawAsr": "想当初 妹妹从江南初来到",
+      "layers": {
+        "zh": {
+          "text": "想当初 妹妹从江南初来到",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 195,
+      "start": 1646.3,
+      "end": 1658.1,
+      "rawAsr": "宝玉是终日相伴共欢笑",
+      "layers": {
+        "zh": {
+          "text": "宝玉是终日相伴共欢笑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 196,
+      "start": 1658.7,
+      "end": 1667.099,
+      "rawAsr": "我把那心上的话儿对你讲",
+      "layers": {
+        "zh": {
+          "text": "我把那心上的话儿对你讲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 197,
+      "start": 1667.1,
+      "end": 1675.399,
+      "rawAsr": "心爱的东西凭你挑",
+      "layers": {
+        "zh": {
+          "text": "心爱的东西凭你挑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 198,
+      "start": 1675.4,
+      "end": 1684.399,
+      "rawAsr": "还怕那丫环服侍不周到",
+      "layers": {
+        "zh": {
+          "text": "还怕那丫环服侍不周到",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 199,
+      "start": 1684.4,
+      "end": 1696.999,
+      "rawAsr": "我亲自桩桩件件来照料",
+      "layers": {
+        "zh": {
+          "text": "我亲自桩桩件件来照料",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 200,
+      "start": 1697.0,
+      "end": 1705.099,
+      "rawAsr": "你若烦恼我担忧",
+      "layers": {
+        "zh": {
+          "text": "你若烦恼我担忧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 201,
+      "start": 1705.1,
+      "end": 1713.399,
+      "rawAsr": "你若开颜我先笑",
+      "layers": {
+        "zh": {
+          "text": "你若开颜我先笑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 202,
+      "start": 1713.4,
+      "end": 1721.699,
+      "rawAsr": "我和你同桌吃饭同床睡",
+      "layers": {
+        "zh": {
+          "text": "我和你同桌吃饭同床睡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 203,
+      "start": 1721.7,
+      "end": 1732.6,
+      "rawAsr": "像一母所生的亲同胞",
+      "layers": {
+        "zh": {
+          "text": "像一母所生的亲同胞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 204,
+      "start": 1738.3,
+      "end": 1745.599,
+      "rawAsr": "实指望亲亲热热直到底",
+      "layers": {
+        "zh": {
+          "text": "实指望亲亲热热直到底",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 205,
+      "start": 1745.6,
+      "end": 1752.999,
+      "rawAsr": "总见得我俩情谊比人好",
+      "layers": {
+        "zh": {
+          "text": "总见得我俩情谊比人好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 206,
+      "start": 1753.0,
+      "end": 1763.299,
+      "rawAsr": "谁知道 妹妹人大你心也大",
+      "layers": {
+        "zh": {
+          "text": "谁知道 妹妹人大你心也大",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 207,
+      "start": 1763.3,
+      "end": 1769.699,
+      "rawAsr": "如今是你斜着眼睛把我瞧",
+      "layers": {
+        "zh": {
+          "text": "如今是你斜着眼睛把我瞧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 208,
+      "start": 1769.7,
+      "end": 1776.799,
+      "rawAsr": "三朝四夕不理我",
+      "layers": {
+        "zh": {
+          "text": "三朝四夕不理我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 209,
+      "start": 1776.8,
+      "end": 1786.999,
+      "rawAsr": "使宝玉失魂落魄担烦恼",
+      "layers": {
+        "zh": {
+          "text": "使宝玉失魂落魄担烦恼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 210,
+      "start": 1787.0,
+      "end": 1793.199,
+      "rawAsr": "我有错你打也是骂也好",
+      "layers": {
+        "zh": {
+          "text": "我有错你打也是骂也好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 211,
+      "start": 1793.2,
+      "end": 1798.899,
+      "rawAsr": "为什么远而避之将我抛",
+      "layers": {
+        "zh": {
+          "text": "为什么远而避之将我抛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 212,
+      "start": 1798.9,
+      "end": 1805.099,
+      "rawAsr": "你有愁 诉也是说也好",
+      "layers": {
+        "zh": {
+          "text": "你有愁 诉也是说也好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 213,
+      "start": 1805.1,
+      "end": 1814.999,
+      "rawAsr": "为什么背人独自你常悲号",
+      "layers": {
+        "zh": {
+          "text": "为什么背人独自你常悲号",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 214,
+      "start": 1815.0,
+      "end": 1826.699,
+      "rawAsr": "你叫我不明不白鼓里蒙啊",
+      "layers": {
+        "zh": {
+          "text": "你叫我不明不白鼓里蒙啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 215,
+      "start": 1826.7,
+      "end": 1829.899,
+      "rawAsr": "我就是为你死了",
+      "layers": {
+        "zh": {
+          "text": "我就是为你死了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 216,
+      "start": 1829.9,
+      "end": 1851.4,
+      "rawAsr": "也是个屈死的鬼魂冤难告",
+      "layers": {
+        "zh": {
+          "text": "也是个屈死的鬼魂冤难告",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 217,
+      "start": 1861.5,
+      "end": 1865.5,
+      "rawAsr": "怎么 你在哭啦",
+      "layers": {
+        "zh": {
+          "text": "怎么 你在哭啦",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 218,
+      "start": 1866.7,
+      "end": 1869.4,
+      "rawAsr": "你要死了 动手动脚的",
+      "layers": {
+        "zh": {
+          "text": "你要死了 动手动脚的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 219,
+      "start": 1870.2,
+      "end": 1872.999,
+      "rawAsr": "说话忘了情不觉动了手",
+      "layers": {
+        "zh": {
+          "text": "说话忘了情不觉动了手",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 220,
+      "start": 1873.0,
+      "end": 1875.7,
+      "rawAsr": "也就顾不得死活了",
+      "layers": {
+        "zh": {
+          "text": "也就顾不得死活了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 221,
+      "start": 1878.0,
+      "end": 1880.399,
+      "rawAsr": "你既这么说 我来问你",
+      "layers": {
+        "zh": {
+          "text": "你既这么说 我来问你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 222,
+      "start": 1880.4,
+      "end": 1882.899,
+      "rawAsr": "那天我到台红院去",
+      "layers": {
+        "zh": {
+          "text": "那天我到台红院去",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 223,
+      "start": 1882.9,
+      "end": 1886.0,
+      "rawAsr": "你为什么不叫丫头开门呢",
+      "layers": {
+        "zh": {
+          "text": "你为什么不叫丫头开门呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 224,
+      "start": 1888.1,
+      "end": 1891.099,
+      "rawAsr": "你此话从哪里说起呀",
+      "layers": {
+        "zh": {
+          "text": "你此话从哪里说起呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 225,
+      "start": 1891.1,
+      "end": 1893.999,
+      "rawAsr": "怪不得你不理我",
+      "layers": {
+        "zh": {
+          "text": "怪不得你不理我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 226,
+      "start": 1894.0,
+      "end": 1896.399,
+      "rawAsr": "好 我若敢这样对待妹妹",
+      "layers": {
+        "zh": {
+          "text": "好 我若敢这样对待妹妹",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 227,
+      "start": 1896.4,
+      "end": 1898.599,
+      "rawAsr": "叫我立刻就死好了",
+      "layers": {
+        "zh": {
+          "text": "叫我立刻就死好了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 228,
+      "start": 1898.6,
+      "end": 1902.8,
+      "rawAsr": "啐 那一天啊",
+      "layers": {
+        "zh": {
+          "text": "啐 那一天啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 229,
+      "start": 1904.4,
+      "end": 1910.799,
+      "rawAsr": "我不顾苍苔滑天色昏",
+      "layers": {
+        "zh": {
+          "text": "我不顾苍苔滑天色昏",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 230,
+      "start": 1910.8,
+      "end": 1914.299,
+      "rawAsr": "来访你秉烛共谈心",
+      "layers": {
+        "zh": {
+          "text": "来访你秉烛共谈心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 231,
+      "start": 1914.3,
+      "end": 1917.699,
+      "rawAsr": "谁知道受了你丫头言欺凌",
+      "layers": {
+        "zh": {
+          "text": "谁知道受了你丫头言欺凌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 232,
+      "start": 1917.7,
+      "end": 1921.499,
+      "rawAsr": "尝了你怡红院里闭门獎",
+      "layers": {
+        "zh": {
+          "text": "尝了你怡红院里闭门獎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 233,
+      "start": 1921.5,
+      "end": 1924.899,
+      "rawAsr": "撇下我满目凄凉对院门",
+      "layers": {
+        "zh": {
+          "text": "撇下我满目凄凉对院门",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 234,
+      "start": 1924.9,
+      "end": 1930.399,
+      "rawAsr": "遍体生寒立花径",
+      "layers": {
+        "zh": {
+          "text": "遍体生寒立花径",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 235,
+      "start": 1930.4,
+      "end": 1933.999,
+      "rawAsr": "那一日你蒙着耳朵不理人",
+      "layers": {
+        "zh": {
+          "text": "那一日你蒙着耳朵不理人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 236,
+      "start": 1934.0,
+      "end": 1940.8,
+      "rawAsr": "今日你何必指着鼻子把誓盟",
+      "layers": {
+        "zh": {
+          "text": "今日你何必指着鼻子把誓盟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 237,
+      "start": 1944.1,
+      "end": 1947.1,
+      "rawAsr": "好妹妹 我实在不知道你来过呀",
+      "layers": {
+        "zh": {
+          "text": "好妹妹 我实在不知道你来过呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 238,
+      "start": 1947.2,
+      "end": 1952.399,
+      "rawAsr": "那天只有宝姐姐来坐过一回",
+      "layers": {
+        "zh": {
+          "text": "那天只有宝姐姐来坐过一回",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 239,
+      "start": 1952.4,
+      "end": 1954.699,
+      "rawAsr": "定是 头们干出来的好事",
+      "layers": {
+        "zh": {
+          "text": "定是 头们干出来的好事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 240,
+      "start": 1954.7,
+      "end": 1956.199,
+      "rawAsr": "待我回去问出是谁",
+      "layers": {
+        "zh": {
+          "text": "待我回去问出是谁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 241,
+      "start": 1956.2,
+      "end": 1958.499,
+      "rawAsr": "定要教训教训她们",
+      "layers": {
+        "zh": {
+          "text": "定要教训教训她们",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 242,
+      "start": 1958.5,
+      "end": 1963.099,
+      "rawAsr": "是要教训教训才好",
+      "layers": {
+        "zh": {
+          "text": "是要教训教训才好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 243,
+      "start": 1963.1,
+      "end": 1965.499,
+      "rawAsr": "得罪了我倒是小事",
+      "layers": {
+        "zh": {
+          "text": "得罪了我倒是小事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 244,
+      "start": 1965.5,
+      "end": 1967.199,
+      "rawAsr": "要是以后宝姑娘来了",
+      "layers": {
+        "zh": {
+          "text": "要是以后宝姑娘来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 245,
+      "start": 1967.2,
+      "end": 1968.999,
+      "rawAsr": "什么贝姑娘来了",
+      "layers": {
+        "zh": {
+          "text": "什么贝姑娘来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 246,
+      "start": 1969.0,
+      "end": 1973.099,
+      "rawAsr": "也把她们得罪了 事情可大了",
+      "layers": {
+        "zh": {
+          "text": "也把她们得罪了 事情可大了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 247,
+      "start": 1973.1,
+      "end": 1974.799,
+      "rawAsr": "你还说这些话",
+      "layers": {
+        "zh": {
+          "text": "你还说这些话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 248,
+      "start": 1974.8,
+      "end": 1979.1,
+      "rawAsr": "你到底还是气我呢你还是咒我啊",
+      "layers": {
+        "zh": {
+          "text": "你到底还是气我呢你还是咒我啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 249,
+      "start": 1986.6,
+      "end": 1988.1,
+      "rawAsr": "这有什么要紧呢",
+      "layers": {
+        "zh": {
+          "text": "这有什么要紧呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 250,
+      "start": 1989.6,
+      "end": 1992.999,
+      "rawAsr": "哎呀 筋都暴起来了",
+      "layers": {
+        "zh": {
+          "text": "哎呀 筋都暴起来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 251,
+      "start": 1993.0,
+      "end": 1996.6,
+      "rawAsr": "还急得一脸汗呢",
+      "layers": {
+        "zh": {
+          "text": "还急得一脸汗呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 252,
+      "start": 2006.4,
+      "end": 2007.3,
+      "rawAsr": "你放心",
+      "layers": {
+        "zh": {
+          "text": "你放心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 253,
+      "start": 2013.7,
+      "end": 2016.6,
+      "rawAsr": "我有什么不放心的",
+      "layers": {
+        "zh": {
+          "text": "我有什么不放心的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 254,
+      "start": 2017.8,
+      "end": 2021.499,
+      "rawAsr": "我真不明你的意思",
+      "layers": {
+        "zh": {
+          "text": "我真不明你的意思",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 255,
+      "start": 2021.5,
+      "end": 2027.6,
+      "rawAsr": "你倒说说看什么放心不放心的",
+      "layers": {
+        "zh": {
+          "text": "你倒说说看什么放心不放心的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 256,
+      "start": 2028.3,
+      "end": 2031.3,
+      "rawAsr": "你果然不明白这话么",
+      "layers": {
+        "zh": {
+          "text": "你果然不明白这话么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 257,
+      "start": 2031.4,
+      "end": 2036.4,
+      "rawAsr": "难道我平日在你身上的心都用错了助",
+      "layers": {
+        "zh": {
+          "text": "难道我平日在你身上的心都用错了助",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 258,
+      "start": 2036.5,
+      "end": 2039.599,
+      "rawAsr": "若连你的意思都体贴不着",
+      "layers": {
+        "zh": {
+          "text": "若连你的意思都体贴不着",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 259,
+      "start": 2039.6,
+      "end": 2044.999,
+      "rawAsr": "那就难怪你天天为我生气了",
+      "layers": {
+        "zh": {
+          "text": "那就难怪你天天为我生气了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 260,
+      "start": 2045.0,
+      "end": 2046.8,
+      "rawAsr": "我真不明白",
+      "layers": {
+        "zh": {
+          "text": "我真不明白",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 261,
+      "start": 2048.3,
+      "end": 2051.899,
+      "rawAsr": "好妹妹你不要骗我",
+      "layers": {
+        "zh": {
+          "text": "好妹妹你不要骗我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 262,
+      "start": 2051.9,
+      "end": 2054.499,
+      "rawAsr": "你若真的不明白这话",
+      "layers": {
+        "zh": {
+          "text": "你若真的不明白这话",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 263,
+      "start": 2054.5,
+      "end": 2056.299,
+      "rawAsr": "不但我平日白费了心",
+      "layers": {
+        "zh": {
+          "text": "不但我平日白费了心",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 264,
+      "start": 2056.3,
+      "end": 2063.799,
+      "rawAsr": "而且连你对待我的心都辜负了",
+      "layers": {
+        "zh": {
+          "text": "而且连你对待我的心都辜负了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 265,
+      "start": 2063.8,
+      "end": 2066.899,
+      "rawAsr": "你总是因为不放心的缘故",
+      "layers": {
+        "zh": {
+          "text": "你总是因为不放心的缘故",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 266,
+      "start": 2066.9,
+      "end": 2072.299,
+      "rawAsr": "才多了心才弄了这—身的病",
+      "layers": {
+        "zh": {
+          "text": "才多了心才弄了这—身的病",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 267,
+      "start": 2072.3,
+      "end": 2076.399,
+      "rawAsr": "好妹妹你若能宽慰一些",
+      "layers": {
+        "zh": {
+          "text": "好妹妹你若能宽慰一些",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 268,
+      "start": 2076.4,
+      "end": 2079.7,
+      "rawAsr": "病就会好呢",
+      "layers": {
+        "zh": {
+          "text": "病就会好呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 269,
+      "start": 2084.5,
+      "end": 2085.799,
+      "rawAsr": "妹妹慢走",
+      "layers": {
+        "zh": {
+          "text": "妹妹慢走",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 270,
+      "start": 2085.8,
+      "end": 2088.5,
+      "rawAsr": "你让我再说一句话再走好不好",
+      "layers": {
+        "zh": {
+          "text": "你让我再说一句话再走好不好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 271,
+      "start": 2091.3,
+      "end": 2095.699,
+      "rawAsr": "还有什么可以说的",
+      "layers": {
+        "zh": {
+          "text": "还有什么可以说的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 272,
+      "start": 2095.7,
+      "end": 2101.5,
+      "rawAsr": "你的话 我都明白了",
+      "layers": {
+        "zh": {
+          "text": "你的话 我都明白了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 273,
+      "start": 2102.8,
+      "end": 2104.0,
+      "rawAsr": "都明白了",
+      "layers": {
+        "zh": {
+          "text": "都明白了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 274,
+      "start": 2110.8,
+      "end": 2116.799,
+      "rawAsr": "好妹妹 我这颗心可从来也不敢说",
+      "layers": {
+        "zh": {
+          "text": "好妹妹 我这颗心可从来也不敢说",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 275,
+      "start": 2116.8,
+      "end": 2120.499,
+      "rawAsr": "今天大胆地说出来",
+      "layers": {
+        "zh": {
+          "text": "今天大胆地说出来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 276,
+      "start": 2120.5,
+      "end": 2125.799,
+      "rawAsr": "我就是死了也是情愿的",
+      "layers": {
+        "zh": {
+          "text": "我就是死了也是情愿的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 277,
+      "start": 2125.8,
+      "end": 2130.599,
+      "rawAsr": "我为你也弄了一身的病",
+      "layers": {
+        "zh": {
+          "text": "我为你也弄了一身的病",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 278,
+      "start": 2130.6,
+      "end": 2135.899,
+      "rawAsr": "又不敢告诉人 只好捱着",
+      "layers": {
+        "zh": {
+          "text": "又不敢告诉人 只好捱着",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 279,
+      "start": 2135.9,
+      "end": 2138.399,
+      "rawAsr": "只怕等你的病好了",
+      "layers": {
+        "zh": {
+          "text": "只怕等你的病好了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 280,
+      "start": 2138.4,
+      "end": 2142.099,
+      "rawAsr": "我的病才会好呢",
+      "layers": {
+        "zh": {
+          "text": "我的病才会好呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 281,
+      "start": 2142.1,
+      "end": 2145.999,
+      "rawAsr": "我睡里梦里也忘不了你",
+      "layers": {
+        "zh": {
+          "text": "我睡里梦里也忘不了你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 282,
+      "start": 2146.0,
+      "end": 2147.8,
+      "rawAsr": "好妹妹 二爷",
+      "layers": {
+        "zh": {
+          "text": "好妹妹 二爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 283,
+      "start": 2148.6,
+      "end": 2150.4,
+      "rawAsr": "袭人",
+      "layers": {
+        "zh": {
+          "text": "袭人",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}

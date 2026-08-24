@@ -1,0 +1,3307 @@
+{
+  "id": "para-2",
+  "title": "经典折子 · para 2",
+  "titleEn": "Classic excerpt · para 2",
+  "audio": "assets/audio/para-2.m4a",
+  "sourceSrt": "para 2.srt",
+  "category": "yueju",
+  "schemaVersion": "1.0.0",
+  "cueCount": 274,
+  "correctedCount": 274,
+  "coverage": {
+    "zh": 274,
+    "enCurated": 0,
+    "enMt": 0,
+    "enAny": 0
+  },
+  "cues": [
+    {
+      "id": 1,
+      "start": 4.6,
+      "end": 30.4,
+      "rawAsr": "怨气冲天三千丈",
+      "layers": {
+        "zh": {
+          "text": "怨气冲天三千丈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 35.5,
+      "end": 39.599,
+      "rawAsr": "恨奸贼 肆意狂妄丧尽天良",
+      "layers": {
+        "zh": {
+          "text": "恨奸贼 肆意狂妄丧尽天良",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 39.6,
+      "end": 41.099,
+      "rawAsr": "滥杀贤媛",
+      "layers": {
+        "zh": {
+          "text": "滥杀贤媛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 41.1,
+      "end": 67.1,
+      "rawAsr": "屈死的冤魂恨满腔",
+      "layers": {
+        "zh": {
+          "text": "屈死的冤魂恨满腔",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 70.7,
+      "end": 86.9,
+      "rawAsr": "为一言赴黄泉旷世奇冤",
+      "layers": {
+        "zh": {
+          "text": "为一言赴黄泉旷世奇冤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 87.5,
+      "end": 95.3,
+      "rawAsr": "旷世奇冤",
+      "layers": {
+        "zh": {
+          "text": "旷世奇冤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 96.5,
+      "end": 111.9,
+      "rawAsr": "更哪堪裴生他同遭祸殃",
+      "layers": {
+        "zh": {
+          "text": "更哪堪裴生他同遭祸殃",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 119.2,
+      "end": 124.6,
+      "rawAsr": "奋力向前人间闯",
+      "layers": {
+        "zh": {
+          "text": "奋力向前人间闯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 135.7,
+      "end": 153.4,
+      "rawAsr": "却谁知阴阳相隔万仞冈",
+      "layers": {
+        "zh": {
+          "text": "却谁知阴阳相隔万仞冈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 164.9,
+      "end": 168.7,
+      "rawAsr": "天哪",
+      "layers": {
+        "zh": {
+          "text": "天哪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 169.9,
+      "end": 177.5,
+      "rawAsr": "我李慧娘一语成灾无故被杀",
+      "layers": {
+        "zh": {
+          "text": "我李慧娘一语成灾无故被杀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 178.5,
+      "end": 192.5,
+      "rawAsr": "我这满腹冤仇何时得报啊",
+      "layers": {
+        "zh": {
+          "text": "我这满腹冤仇何时得报啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 197.6,
+      "end": 200.4,
+      "rawAsr": "前面孤魂女子",
+      "layers": {
+        "zh": {
+          "text": "前面孤魂女子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 200.6,
+      "end": 206.1,
+      "rawAsr": "有何冤枉一一诉来",
+      "layers": {
+        "zh": {
+          "text": "有何冤枉一一诉来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 206.7,
+      "end": 207.7,
+      "rawAsr": "判爷",
+      "layers": {
+        "zh": {
+          "text": "判爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 208.4,
+      "end": 216.7,
+      "rawAsr": "判爷容稟",
+      "layers": {
+        "zh": {
+          "text": "判爷容稟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 224.3,
+      "end": 241.0,
+      "rawAsr": "李慧娘家住在临安城内",
+      "layers": {
+        "zh": {
+          "text": "李慧娘家住在临安城内",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 243.0,
+      "end": 259.6,
+      "rawAsr": "三年前失双亲不胜伤悲",
+      "layers": {
+        "zh": {
+          "text": "三年前失双亲不胜伤悲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 261.9,
+      "end": 274.3,
+      "rawAsr": "尽孝道葬双亲负债累累",
+      "layers": {
+        "zh": {
+          "text": "尽孝道葬双亲负债累累",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 276.1,
+      "end": 298.9,
+      "rawAsr": "为抵债入贾府以身偿赔",
+      "layers": {
+        "zh": {
+          "text": "为抵债入贾府以身偿赔",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 303.9,
+      "end": 311.1,
+      "rawAsr": "贾似道人面兽狼心狗肺",
+      "layers": {
+        "zh": {
+          "text": "贾似道人面兽狼心狗肺",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 311.8,
+      "end": 325.7,
+      "rawAsr": "李慧娘受尽凌辱肝肠摧",
+      "layers": {
+        "zh": {
+          "text": "李慧娘受尽凌辱肝肠摧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 334.8,
+      "end": 338.299,
+      "rawAsr": "游西湖",
+      "layers": {
+        "zh": {
+          "text": "游西湖",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 338.3,
+      "end": 346.299,
+      "rawAsr": "见少年英勇无畏",
+      "layers": {
+        "zh": {
+          "text": "见少年英勇无畏",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 346.3,
+      "end": 349.699,
+      "rawAsr": "气昂昂义凛凛",
+      "layers": {
+        "zh": {
+          "text": "气昂昂义凛凛",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 349.7,
+      "end": 355.4,
+      "rawAsr": "痛斥奸贼",
+      "layers": {
+        "zh": {
+          "text": "痛斥奸贼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 357.4,
+      "end": 367.1,
+      "rawAsr": "慧娘我如沐霞晖生敬佩",
+      "layers": {
+        "zh": {
+          "text": "慧娘我如沐霞晖生敬佩",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 367.4,
+      "end": 392.4,
+      "rawAsr": "赞言脱口出心扉",
+      "layers": {
+        "zh": {
+          "text": "赞言脱口出心扉",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 392.7,
+      "end": 395.9,
+      "rawAsr": "你赞他什么",
+      "layers": {
+        "zh": {
+          "text": "你赞他什么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "start": 397.4,
+      "end": 398.9,
+      "rawAsr": "我赞他",
+      "layers": {
+        "zh": {
+          "text": "我赞他",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "start": 399.0,
+      "end": 403.7,
+      "rawAsr": "美哉呀少年",
+      "layers": {
+        "zh": {
+          "text": "美哉呀少年",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "start": 404.9,
+      "end": 409.3,
+      "rawAsr": "美哉呀少年",
+      "layers": {
+        "zh": {
+          "text": "美哉呀少年",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "start": 412.7,
+      "end": 416.2,
+      "rawAsr": "那后来呢",
+      "layers": {
+        "zh": {
+          "text": "那后来呢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "start": 420.5,
+      "end": 430.3,
+      "rawAsr": "一句话 惹下祸端获了罪",
+      "layers": {
+        "zh": {
+          "text": "一句话 惹下祸端获了罪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "start": 431.5,
+      "end": 436.1,
+      "rawAsr": "贼子妄为",
+      "layers": {
+        "zh": {
+          "text": "贼子妄为",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "start": 436.3,
+      "end": 457.3,
+      "rawAsr": "无辜慧娘成冤鬼",
+      "layers": {
+        "zh": {
+          "text": "无辜慧娘成冤鬼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "start": 467.9,
+      "end": 468.799,
+      "rawAsr": "更哪堪",
+      "layers": {
+        "zh": {
+          "text": "更哪堪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "start": 468.8,
+      "end": 470.699,
+      "rawAsr": "无辜书生遭囚禁",
+      "layers": {
+        "zh": {
+          "text": "无辜书生遭囚禁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "start": 470.7,
+      "end": 475.5,
+      "rawAsr": "命悬一线旦夕危",
+      "layers": {
+        "zh": {
+          "text": "命悬一线旦夕危",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "start": 476.0,
+      "end": 479.5,
+      "rawAsr": "求判爷",
+      "layers": {
+        "zh": {
+          "text": "求判爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "start": 480.2,
+      "end": 482.899,
+      "rawAsr": "求判爷助慧娘 力挽狂澜",
+      "layers": {
+        "zh": {
+          "text": "求判爷助慧娘 力挽狂澜",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "start": 482.9,
+      "end": 486.5,
+      "rawAsr": "持正义搭救裴生",
+      "layers": {
+        "zh": {
+          "text": "持正义搭救裴生",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "start": 488.1,
+      "end": 499.2,
+      "rawAsr": "脱苦海",
+      "layers": {
+        "zh": {
+          "text": "脱苦海",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "start": 501.2,
+      "end": 505.099,
+      "rawAsr": "好一个刚烈的李慧娘",
+      "layers": {
+        "zh": {
+          "text": "好一个刚烈的李慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "start": 505.1,
+      "end": 507.599,
+      "rawAsr": "我赐你阴阳宝扇",
+      "layers": {
+        "zh": {
+          "text": "我赐你阴阳宝扇",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "start": 507.6,
+      "end": 511.6,
+      "rawAsr": "助你救出裴生",
+      "layers": {
+        "zh": {
+          "text": "助你救出裴生",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "start": 513.0,
+      "end": 515.0,
+      "rawAsr": "谢判爷",
+      "layers": {
+        "zh": {
+          "text": "谢判爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "start": 515.3,
+      "end": 516.4,
+      "rawAsr": "且慢",
+      "layers": {
+        "zh": {
+          "text": "且慢",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "start": 517.2,
+      "end": 519.499,
+      "rawAsr": "你乃黄泉之客",
+      "layers": {
+        "zh": {
+          "text": "你乃黄泉之客",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "start": 519.5,
+      "end": 523.899,
+      "rawAsr": "救裴之事 务必在天明之前了断",
+      "layers": {
+        "zh": {
+          "text": "救裴之事 务必在天明之前了断",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "start": 523.9,
+      "end": 526.3,
+      "rawAsr": "如若不然",
+      "layers": {
+        "zh": {
+          "text": "如若不然",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "start": 526.8,
+      "end": 528.5,
+      "rawAsr": "又便怎样",
+      "layers": {
+        "zh": {
+          "text": "又便怎样",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "start": 528.7,
+      "end": 530.099,
+      "rawAsr": "鸡鸣之后",
+      "layers": {
+        "zh": {
+          "text": "鸡鸣之后",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "start": 530.1,
+      "end": 531.999,
+      "rawAsr": "宝扇就会失去法力",
+      "layers": {
+        "zh": {
+          "text": "宝扇就会失去法力",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "start": 532.0,
+      "end": 533.799,
+      "rawAsr": "难以助你",
+      "layers": {
+        "zh": {
+          "text": "难以助你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "start": 533.8,
+      "end": 537.7,
+      "rawAsr": "你要记下了",
+      "layers": {
+        "zh": {
+          "text": "你要记下了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "start": 541.3,
+      "end": 545.1,
+      "rawAsr": "慧娘记下了",
+      "layers": {
+        "zh": {
+          "text": "慧娘记下了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "start": 546.4,
+      "end": 554.3,
+      "rawAsr": "谢判爷",
+      "layers": {
+        "zh": {
+          "text": "谢判爷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "start": 571.9,
+      "end": 577.9,
+      "rawAsr": "裴舜卿进府以来外面可有动静",
+      "layers": {
+        "zh": {
+          "text": "裴舜卿进府以来外面可有动静",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "start": 578.2,
+      "end": 581.2,
+      "rawAsr": "风平浪静",
+      "layers": {
+        "zh": {
+          "text": "风平浪静",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "start": 584.5,
+      "end": 587.8,
+      "rawAsr": "如此我们可以",
+      "layers": {
+        "zh": {
+          "text": "如此我们可以",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "start": 590.1,
+      "end": 597.7,
+      "rawAsr": "今晚三更在红梅阁内将裴舜卿除了",
+      "layers": {
+        "zh": {
+          "text": "今晚三更在红梅阁内将裴舜卿除了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "start": 612.4,
+      "end": 628.9,
+      "rawAsr": "月冷光寒心力瘁",
+      "layers": {
+        "zh": {
+          "text": "月冷光寒心力瘁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "start": 632.1,
+      "end": 647.1,
+      "rawAsr": "身遭幽禁不胜悲",
+      "layers": {
+        "zh": {
+          "text": "身遭幽禁不胜悲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "start": 649.7,
+      "end": 651.699,
+      "rawAsr": "原以为",
+      "layers": {
+        "zh": {
+          "text": "原以为",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "start": 651.7,
+      "end": 657.3,
+      "rawAsr": "邀我入府商国事",
+      "layers": {
+        "zh": {
+          "text": "邀我入府商国事",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "start": 657.6,
+      "end": 659.599,
+      "rawAsr": "却谁知",
+      "layers": {
+        "zh": {
+          "text": "却谁知",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "start": 659.6,
+      "end": 664.3,
+      "rawAsr": "正中奸计悔难追",
+      "layers": {
+        "zh": {
+          "text": "正中奸计悔难追",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "start": 665.8,
+      "end": 673.0,
+      "rawAsr": "陷身图圖不足畏",
+      "layers": {
+        "zh": {
+          "text": "陷身图圖不足畏",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "start": 673.7,
+      "end": 680.9,
+      "rawAsr": "志向依旧意不灰",
+      "layers": {
+        "zh": {
+          "text": "志向依旧意不灰",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "start": 681.9,
+      "end": 685.899,
+      "rawAsr": "待等冲破樊笼日",
+      "layers": {
+        "zh": {
+          "text": "待等冲破樊笼日",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "start": 685.9,
+      "end": 696.7,
+      "rawAsr": "参倒强梁明是非",
+      "layers": {
+        "zh": {
+          "text": "参倒强梁明是非",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "start": 705.9,
+      "end": 722.4,
+      "rawAsr": "幽魂一缕无阻挡",
+      "layers": {
+        "zh": {
+          "text": "幽魂一缕无阻挡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "start": 749.1,
+      "end": 761.2,
+      "rawAsr": "红梅阁外隔窗望",
+      "layers": {
+        "zh": {
+          "text": "红梅阁外隔窗望",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "start": 775.1,
+      "end": 778.599,
+      "rawAsr": "免得书生受惊吓",
+      "layers": {
+        "zh": {
+          "text": "免得书生受惊吓",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 76,
+      "start": 778.6,
+      "end": 789.5,
+      "rawAsr": "且用宝扇叩棂窗",
+      "layers": {
+        "zh": {
+          "text": "且用宝扇叩棂窗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 77,
+      "start": 791.9,
+      "end": 793.9,
+      "rawAsr": "窗外是谁",
+      "layers": {
+        "zh": {
+          "text": "窗外是谁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 78,
+      "start": 795.9,
+      "end": 797.8,
+      "rawAsr": "裴相公不必惊慌",
+      "layers": {
+        "zh": {
+          "text": "裴相公不必惊慌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 79,
+      "start": 799.3,
+      "end": 800.499,
+      "rawAsr": "你是何人",
+      "layers": {
+        "zh": {
+          "text": "你是何人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 80,
+      "start": 800.5,
+      "end": 804.1,
+      "rawAsr": "深更半夜到此作甚",
+      "layers": {
+        "zh": {
+          "text": "深更半夜到此作甚",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "start": 804.7,
+      "end": 806.6,
+      "rawAsr": "我有要事相告",
+      "layers": {
+        "zh": {
+          "text": "我有要事相告",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 82,
+      "start": 807.3,
+      "end": 808.5,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 83,
+      "start": 808.7,
+      "end": 811.3,
+      "rawAsr": "我要进来了",
+      "layers": {
+        "zh": {
+          "text": "我要进来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 84,
+      "start": 812.2,
+      "end": 812.9,
+      "rawAsr": "不 不",
+      "layers": {
+        "zh": {
+          "text": "不 不",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 85,
+      "start": 813.2,
+      "end": 814.9,
+      "rawAsr": "男女授受不亲",
+      "layers": {
+        "zh": {
+          "text": "男女授受不亲",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 86,
+      "start": 815.1,
+      "end": 819.2,
+      "rawAsr": "你还是快快走吧",
+      "layers": {
+        "zh": {
+          "text": "你还是快快走吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 87,
+      "start": 824.4,
+      "end": 827.3,
+      "rawAsr": "哪里来的风啊",
+      "layers": {
+        "zh": {
+          "text": "哪里来的风啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "start": 830.3,
+      "end": 833.3,
+      "rawAsr": "你怎么进来了",
+      "layers": {
+        "zh": {
+          "text": "你怎么进来了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "start": 837.0,
+      "end": 839.5,
+      "rawAsr": "裴相公 万福",
+      "layers": {
+        "zh": {
+          "text": "裴相公 万福",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "start": 840.4,
+      "end": 840.7,
+      "rawAsr": "不消",
+      "layers": {
+        "zh": {
+          "text": "不消",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "start": 842.1,
+      "end": 845.3,
+      "rawAsr": "不消就不消",
+      "layers": {
+        "zh": {
+          "text": "不消就不消",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "start": 850.2,
+      "end": 854.3,
+      "rawAsr": "她倒大模大样地坐下了",
+      "layers": {
+        "zh": {
+          "text": "她倒大模大样地坐下了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "start": 854.9,
+      "end": 856.3,
+      "rawAsr": "我明白了",
+      "layers": {
+        "zh": {
+          "text": "我明白了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "start": 856.7,
+      "end": 859.899,
+      "rawAsr": "定是那贾似道使用美人之计",
+      "layers": {
+        "zh": {
+          "text": "定是那贾似道使用美人之计",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "start": 859.9,
+      "end": 864.1,
+      "rawAsr": "命你前来加害于我",
+      "layers": {
+        "zh": {
+          "text": "命你前来加害于我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "start": 870.1,
+      "end": 872.3,
+      "rawAsr": "裴相公说哪里话来",
+      "layers": {
+        "zh": {
+          "text": "裴相公说哪里话来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "start": 872.8,
+      "end": 875.399,
+      "rawAsr": "贾似道要害你易如反掌",
+      "layers": {
+        "zh": {
+          "text": "贾似道要害你易如反掌",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "start": 875.4,
+      "end": 877.8,
+      "rawAsr": "何必我来",
+      "layers": {
+        "zh": {
+          "text": "何必我来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "start": 878.3,
+      "end": 879.4,
+      "rawAsr": "那你",
+      "layers": {
+        "zh": {
+          "text": "那你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "start": 880.3,
+      "end": 882.7,
+      "rawAsr": "我是特来救你的",
+      "layers": {
+        "zh": {
+          "text": "我是特来救你的",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 101,
+      "start": 883.1,
+      "end": 885.5,
+      "rawAsr": "你来救我",
+      "layers": {
+        "zh": {
+          "text": "你来救我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 102,
+      "start": 889.7,
+      "end": 892.899,
+      "rawAsr": "你我陌路无交往",
+      "layers": {
+        "zh": {
+          "text": "你我陌路无交往",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "start": 892.9,
+      "end": 897.3,
+      "rawAsr": "出言相救不敢当",
+      "layers": {
+        "zh": {
+          "text": "出言相救不敢当",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 104,
+      "start": 898.3,
+      "end": 903.7,
+      "rawAsr": "同在天涯四飘荡",
+      "layers": {
+        "zh": {
+          "text": "同在天涯四飘荡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 105,
+      "start": 904.0,
+      "end": 910.099,
+      "rawAsr": "相扶相救理应当",
+      "layers": {
+        "zh": {
+          "text": "相扶相救理应当",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 106,
+      "start": 910.1,
+      "end": 913.4,
+      "rawAsr": "尔虞我诈人世上",
+      "layers": {
+        "zh": {
+          "text": "尔虞我诈人世上",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 107,
+      "start": 913.5,
+      "end": 918.4,
+      "rawAsr": "舍己救人弥天谎",
+      "layers": {
+        "zh": {
+          "text": "舍己救人弥天谎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 108,
+      "start": 920.1,
+      "end": 925.099,
+      "rawAsr": "有人舍身斗奸相",
+      "layers": {
+        "zh": {
+          "text": "有人舍身斗奸相",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 109,
+      "start": 925.1,
+      "end": 928.699,
+      "rawAsr": "就有人相救",
+      "layers": {
+        "zh": {
+          "text": "就有人相救",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 110,
+      "start": 928.7,
+      "end": 936.7,
+      "rawAsr": "美哉少年郎",
+      "layers": {
+        "zh": {
+          "text": "美哉少年郎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "start": 937.3,
+      "end": 939.3,
+      "rawAsr": "你到底是什么人",
+      "layers": {
+        "zh": {
+          "text": "你到底是什么人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 112,
+      "start": 940.2,
+      "end": 941.299,
+      "rawAsr": "裴相么",
+      "layers": {
+        "zh": {
+          "text": "裴相么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 113,
+      "start": 941.3,
+      "end": 943.6,
+      "rawAsr": "你还认识我吗",
+      "layers": {
+        "zh": {
+          "text": "你还认识我吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "start": 944.2,
+      "end": 944.9,
+      "rawAsr": "你是",
+      "layers": {
+        "zh": {
+          "text": "你是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 115,
+      "start": 945.5,
+      "end": 946.799,
+      "rawAsr": "今日游湖",
+      "layers": {
+        "zh": {
+          "text": "今日游湖",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 116,
+      "start": 946.8,
+      "end": 950.099,
+      "rawAsr": "裴相公不畏权势 怒斥奸贼",
+      "layers": {
+        "zh": {
+          "text": "裴相公不畏权势 怒斥奸贼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 117,
+      "start": 950.1,
+      "end": 950.5,
+      "rawAsr": "是我",
+      "layers": {
+        "zh": {
+          "text": "是我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 118,
+      "start": 954.5,
+      "end": 960.7,
+      "rawAsr": "你就是那口出赞言的女子",
+      "layers": {
+        "zh": {
+          "text": "你就是那口出赞言的女子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 119,
+      "start": 962.0,
+      "end": 962.9,
+      "rawAsr": "正是",
+      "layers": {
+        "zh": {
+          "text": "正是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 120,
+      "start": 963.7,
+      "end": 967.1,
+      "rawAsr": "奴家李慧娘",
+      "layers": {
+        "zh": {
+          "text": "奴家李慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 121,
+      "start": 968.0,
+      "end": 969.7,
+      "rawAsr": "李慧娘",
+      "layers": {
+        "zh": {
+          "text": "李慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 122,
+      "start": 970.3,
+      "end": 972.399,
+      "rawAsr": "方才小生多有冒犯",
+      "layers": {
+        "zh": {
+          "text": "方才小生多有冒犯",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 123,
+      "start": 972.4,
+      "end": 975.199,
+      "rawAsr": "还望恕罪",
+      "layers": {
+        "zh": {
+          "text": "还望恕罪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 124,
+      "start": 975.2,
+      "end": 977.5,
+      "rawAsr": "裴相公不必多礼",
+      "layers": {
+        "zh": {
+          "text": "裴相公不必多礼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 125,
+      "start": 980.2,
+      "end": 981.0,
+      "rawAsr": "大姐",
+      "layers": {
+        "zh": {
+          "text": "大姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 126,
+      "start": 994.0,
+      "end": 995.0,
+      "rawAsr": "大如",
+      "layers": {
+        "zh": {
+          "text": "大如",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 127,
+      "start": 995.4,
+      "end": 996.399,
+      "rawAsr": "那贾似道",
+      "layers": {
+        "zh": {
+          "text": "那贾似道",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 128,
+      "start": 996.4,
+      "end": 999.199,
+      "rawAsr": "阴险毒辣殃民成性",
+      "layers": {
+        "zh": {
+          "text": "阴险毒辣殃民成性",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 129,
+      "start": 999.2,
+      "end": 1000.799,
+      "rawAsr": "假意邀我入府",
+      "layers": {
+        "zh": {
+          "text": "假意邀我入府",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 130,
+      "start": 1000.8,
+      "end": 1002.6,
+      "rawAsr": "说是与我促膝长谈",
+      "layers": {
+        "zh": {
+          "text": "说是与我促膝长谈",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 131,
+      "start": 1002.7,
+      "end": 1004.199,
+      "rawAsr": "谁知刚进府门",
+      "layers": {
+        "zh": {
+          "text": "谁知刚进府门",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 132,
+      "start": 1004.2,
+      "end": 1007.199,
+      "rawAsr": "他就将我因禁在这",
+      "layers": {
+        "zh": {
+          "text": "他就将我因禁在这",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 133,
+      "start": 1007.2,
+      "end": 1010.2,
+      "rawAsr": "红梅阁内",
+      "layers": {
+        "zh": {
+          "text": "红梅阁内",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 134,
+      "start": 1010.9,
+      "end": 1013.8,
+      "rawAsr": "好险恶的贾似道",
+      "layers": {
+        "zh": {
+          "text": "好险恶的贾似道",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 135,
+      "start": 1016.0,
+      "end": 1018.2,
+      "rawAsr": "今日因我赞你一言",
+      "layers": {
+        "zh": {
+          "text": "今日因我赞你一言",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 136,
+      "start": 1018.5,
+      "end": 1021.1,
+      "rawAsr": "那老贼他就将我",
+      "layers": {
+        "zh": {
+          "text": "那老贼他就将我",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 137,
+      "start": 1021.9,
+      "end": 1022.8,
+      "rawAsr": "怎样",
+      "layers": {
+        "zh": {
+          "text": "怎样",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 138,
+      "start": 1024.3,
+      "end": 1028.0,
+      "rawAsr": "他将我百般拷打",
+      "layers": {
+        "zh": {
+          "text": "他将我百般拷打",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 139,
+      "start": 1028.4,
+      "end": 1030.2,
+      "rawAsr": "他打你了",
+      "layers": {
+        "zh": {
+          "text": "他打你了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 140,
+      "start": 1030.6,
+      "end": 1035.3,
+      "rawAsr": "打得我遍体鳞伤",
+      "layers": {
+        "zh": {
+          "text": "打得我遍体鳞伤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 141,
+      "start": 1036.5,
+      "end": 1040.9,
+      "rawAsr": "贾似道呀 好贼子",
+      "layers": {
+        "zh": {
+          "text": "贾似道呀 好贼子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 142,
+      "start": 1041.6,
+      "end": 1043.6,
+      "rawAsr": "我定要上书朝廷",
+      "layers": {
+        "zh": {
+          "text": "我定要上书朝廷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 143,
+      "start": 1043.8,
+      "end": 1044.0,
+      "rawAsr": "参倒老贼",
+      "layers": {
+        "zh": {
+          "text": "参倒老贼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 144,
+      "start": 1045.0,
+      "end": 1046.1,
+      "rawAsr": "参倒老贼",
+      "layers": {
+        "zh": {
+          "text": "参倒老贼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 145,
+      "start": 1048.2,
+      "end": 1050.7,
+      "rawAsr": "只恨我身遭囚禁",
+      "layers": {
+        "zh": {
+          "text": "只恨我身遭囚禁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 146,
+      "start": 1050.9,
+      "end": 1055.0,
+      "rawAsr": "无能为力呀",
+      "layers": {
+        "zh": {
+          "text": "无能为力呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 147,
+      "start": 1055.6,
+      "end": 1057.5,
+      "rawAsr": "裴相公不必忧虑",
+      "layers": {
+        "zh": {
+          "text": "裴相公不必忧虑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 148,
+      "start": 1057.6,
+      "end": 1058.999,
+      "rawAsr": "慧娘今晚前来",
+      "layers": {
+        "zh": {
+          "text": "慧娘今晚前来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 149,
+      "start": 1059.0,
+      "end": 1062.1,
+      "rawAsr": "就是为了救你逃出贾府",
+      "layers": {
+        "zh": {
+          "text": "就是为了救你逃出贾府",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 150,
+      "start": 1064.9,
+      "end": 1067.899,
+      "rawAsr": "那老贼已将你打得遍体鳞伤",
+      "layers": {
+        "zh": {
+          "text": "那老贼已将你打得遍体鳞伤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 151,
+      "start": 1067.9,
+      "end": 1069.699,
+      "rawAsr": "若再放我逃走",
+      "layers": {
+        "zh": {
+          "text": "若再放我逃走",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 152,
+      "start": 1069.7,
+      "end": 1074.3,
+      "rawAsr": "他 他岂不要将你杀死",
+      "layers": {
+        "zh": {
+          "text": "他 他岂不要将你杀死",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 153,
+      "start": 1076.3,
+      "end": 1078.3,
+      "rawAsr": "小生若得不死",
+      "layers": {
+        "zh": {
+          "text": "小生若得不死",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 154,
+      "start": 1078.4,
+      "end": 1083.5,
+      "rawAsr": "日 后定当相救于你",
+      "layers": {
+        "zh": {
+          "text": "日 后定当相救于你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 155,
+      "start": 1085.2,
+      "end": 1088.1,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 156,
+      "start": 1108.5,
+      "end": 1109.5,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 157,
+      "start": 1110.1,
+      "end": 1113.9,
+      "rawAsr": "慧娘此生并无他愿",
+      "layers": {
+        "zh": {
+          "text": "慧娘此生并无他愿",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 158,
+      "start": 1114.7,
+      "end": 1117.3,
+      "rawAsr": "只望能救你逃出贾府",
+      "layers": {
+        "zh": {
+          "text": "只望能救你逃出贾府",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 159,
+      "start": 1117.7,
+      "end": 1120.4,
+      "rawAsr": "纵然被老贼杀死",
+      "layers": {
+        "zh": {
+          "text": "纵然被老贼杀死",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 160,
+      "start": 1121.1,
+      "end": 1125.8,
+      "rawAsr": "我也心甘情愿哪",
+      "layers": {
+        "zh": {
+          "text": "我也心甘情愿哪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 161,
+      "start": 1126.2,
+      "end": 1127.1,
+      "rawAsr": "大姐",
+      "layers": {
+        "zh": {
+          "text": "大姐",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 162,
+      "start": 1127.5,
+      "end": 1130.9,
+      "rawAsr": "茫茫人世 人心唯危",
+      "layers": {
+        "zh": {
+          "text": "茫茫人世 人心唯危",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 163,
+      "start": 1131.1,
+      "end": 1138.2,
+      "rawAsr": "像大姐这般在这俗世之中已然少见也",
+      "layers": {
+        "zh": {
+          "text": "像大姐这般在这俗世之中已然少见也",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 164,
+      "start": 1149.4,
+      "end": 1152.1,
+      "rawAsr": "何不你我一同逃出虎口",
+      "layers": {
+        "zh": {
+          "text": "何不你我一同逃出虎口",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 165,
+      "start": 1153.6,
+      "end": 1155.8,
+      "rawAsr": "你要我一同逃走吗",
+      "layers": {
+        "zh": {
+          "text": "你要我一同逃走吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 166,
+      "start": 1156.9,
+      "end": 1158.9,
+      "rawAsr": "正是",
+      "layers": {
+        "zh": {
+          "text": "正是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 167,
+      "start": 1160.8,
+      "end": 1180.5,
+      "rawAsr": "你为我 受尽欺凌遭答杖",
+      "layers": {
+        "zh": {
+          "text": "你为我 受尽欺凌遭答杖",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 168,
+      "start": 1182.9,
+      "end": 1190.7,
+      "rawAsr": "你为我 不顾生死闯囚房",
+      "layers": {
+        "zh": {
+          "text": "你为我 不顾生死闯囚房",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 169,
+      "start": 1191.7,
+      "end": 1198.299,
+      "rawAsr": "你为我 不畏虎狼抗强梁",
+      "layers": {
+        "zh": {
+          "text": "你为我 不畏虎狼抗强梁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 170,
+      "start": 1198.3,
+      "end": 1202.3,
+      "rawAsr": "侠义肝胆",
+      "layers": {
+        "zh": {
+          "text": "侠义肝胆",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 171,
+      "start": 1202.6,
+      "end": 1218.4,
+      "rawAsr": "舍身救我少年郎",
+      "layers": {
+        "zh": {
+          "text": "舍身救我少年郎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 172,
+      "start": 1222.2,
+      "end": 1231.7,
+      "rawAsr": "你似寒梅雪中放",
+      "layers": {
+        "zh": {
+          "text": "你似寒梅雪中放",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 173,
+      "start": 1232.6,
+      "end": 1247.299,
+      "rawAsr": "我愿终生伴寒香",
+      "layers": {
+        "zh": {
+          "text": "我愿终生伴寒香",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 174,
+      "start": 1247.3,
+      "end": 1250.9,
+      "rawAsr": "半寒",
+      "layers": {
+        "zh": {
+          "text": "半寒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 175,
+      "start": 1251.7,
+      "end": 1252.6,
+      "rawAsr": "伴寒香",
+      "layers": {
+        "zh": {
+          "text": "伴寒香",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 176,
+      "start": 1253.6,
+      "end": 1254.0,
+      "rawAsr": "半寒",
+      "layers": {
+        "zh": {
+          "text": "半寒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 177,
+      "start": 1255.0,
+      "end": 1259.0,
+      "rawAsr": "半寒",
+      "layers": {
+        "zh": {
+          "text": "半寒",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 178,
+      "start": 1260.7,
+      "end": 1270.0,
+      "rawAsr": "裴生倾情心扉敞",
+      "layers": {
+        "zh": {
+          "text": "裴生倾情心扉敞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 179,
+      "start": 1270.3,
+      "end": 1281.9,
+      "rawAsr": "犹似甘霖润柔肠",
+      "layers": {
+        "zh": {
+          "text": "犹似甘霖润柔肠",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 180,
+      "start": 1284.3,
+      "end": 1293.6,
+      "rawAsr": "可怜慧娘命不济",
+      "layers": {
+        "zh": {
+          "text": "可怜慧娘命不济",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 181,
+      "start": 1293.9,
+      "end": 1303.0,
+      "rawAsr": "花样年华遭寒伤",
+      "layers": {
+        "zh": {
+          "text": "花样年华遭寒伤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 182,
+      "start": 1303.8,
+      "end": 1307.0,
+      "rawAsr": "凄苦的心啊",
+      "layers": {
+        "zh": {
+          "text": "凄苦的心啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 183,
+      "start": 1308.5,
+      "end": 1312.799,
+      "rawAsr": "凄苦的心啊",
+      "layers": {
+        "zh": {
+          "text": "凄苦的心啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 184,
+      "start": 1312.8,
+      "end": 1320.999,
+      "rawAsr": "盼着雨后彩霞",
+      "layers": {
+        "zh": {
+          "text": "盼着雨后彩霞",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 185,
+      "start": 1321.0,
+      "end": 1335.0,
+      "rawAsr": "盼着救星从天降",
+      "layers": {
+        "zh": {
+          "text": "盼着救星从天降",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 186,
+      "start": 1337.3,
+      "end": 1344.3,
+      "rawAsr": "眼前是赤诚相待少年郎",
+      "layers": {
+        "zh": {
+          "text": "眼前是赤诚相待少年郎",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 187,
+      "start": 1345.3,
+      "end": 1363.3,
+      "rawAsr": "怎不叫慧娘心荡灄",
+      "layers": {
+        "zh": {
+          "text": "怎不叫慧娘心荡灄",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 188,
+      "start": 1369.5,
+      "end": 1378.899,
+      "rawAsr": "只叹身处黄泉路",
+      "layers": {
+        "zh": {
+          "text": "只叹身处黄泉路",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 189,
+      "start": 1378.9,
+      "end": 1387.5,
+      "rawAsr": "阴阳相隔两茫茫",
+      "layers": {
+        "zh": {
+          "text": "阴阳相隔两茫茫",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 190,
+      "start": 1388.2,
+      "end": 1400.5,
+      "rawAsr": "两茫茫 痛断肠",
+      "layers": {
+        "zh": {
+          "text": "两茫茫 痛断肠",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 191,
+      "start": 1407.1,
+      "end": 1422.6,
+      "rawAsr": "强将真情压心房",
+      "layers": {
+        "zh": {
+          "text": "强将真情压心房",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 192,
+      "start": 1432.2,
+      "end": 1433.9,
+      "rawAsr": "李慧娘",
+      "layers": {
+        "zh": {
+          "text": "李慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 193,
+      "start": 1434.2,
+      "end": 1437.7,
+      "rawAsr": "你再不相救老贼就要动手了",
+      "layers": {
+        "zh": {
+          "text": "你再不相救老贼就要动手了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 194,
+      "start": 1438.1,
+      "end": 1439.4,
+      "rawAsr": "啊呀 不好",
+      "layers": {
+        "zh": {
+          "text": "啊呀 不好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 195,
+      "start": 1440.3,
+      "end": 1442.299,
+      "rawAsr": "裴相公 裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公 裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 196,
+      "start": 1442.3,
+      "end": 1443.499,
+      "rawAsr": "今晚三更",
+      "layers": {
+        "zh": {
+          "text": "今晚三更",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 197,
+      "start": 1443.5,
+      "end": 1445.299,
+      "rawAsr": "那贾似道就要派人前来",
+      "layers": {
+        "zh": {
+          "text": "那贾似道就要派人前来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 198,
+      "start": 1445.3,
+      "end": 1447.3,
+      "rawAsr": "刺杀于你",
+      "layers": {
+        "zh": {
+          "text": "刺杀于你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 199,
+      "start": 1447.8,
+      "end": 1451.199,
+      "rawAsr": "贾似道哇 好贼子",
+      "layers": {
+        "zh": {
+          "text": "贾似道哇 好贼子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 200,
+      "start": 1451.2,
+      "end": 1453.699,
+      "rawAsr": "你能杀得了我裴舜卿一人",
+      "layers": {
+        "zh": {
+          "text": "你能杀得了我裴舜卿一人",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 201,
+      "start": 1453.7,
+      "end": 1458.1,
+      "rawAsr": "可杀不尽斩不绝天下的苍生",
+      "layers": {
+        "zh": {
+          "text": "可杀不尽斩不绝天下的苍生",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 202,
+      "start": 1458.6,
+      "end": 1460.099,
+      "rawAsr": "你把诉状带好",
+      "layers": {
+        "zh": {
+          "text": "你把诉状带好",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 203,
+      "start": 1460.1,
+      "end": 1462.7,
+      "rawAsr": "日后托人上书朝廷",
+      "layers": {
+        "zh": {
+          "text": "日后托人上书朝廷",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 204,
+      "start": 1463.6,
+      "end": 1465.199,
+      "rawAsr": "追杀之人就要前来",
+      "layers": {
+        "zh": {
+          "text": "追杀之人就要前来",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 205,
+      "start": 1465.2,
+      "end": 1466.9,
+      "rawAsr": "快随我走吧",
+      "layers": {
+        "zh": {
+          "text": "快随我走吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 206,
+      "start": 1471.6,
+      "end": 1472.899,
+      "rawAsr": "你若伴我同行",
+      "layers": {
+        "zh": {
+          "text": "你若伴我同行",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 207,
+      "start": 1472.9,
+      "end": 1474.099,
+      "rawAsr": "被贼子赶上",
+      "layers": {
+        "zh": {
+          "text": "被贼子赶上",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 208,
+      "start": 1474.1,
+      "end": 1476.7,
+      "rawAsr": "岂不要累你一死",
+      "layers": {
+        "zh": {
+          "text": "岂不要累你一死",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 209,
+      "start": 1477.9,
+      "end": 1482.4,
+      "rawAsr": "累我一死吗",
+      "layers": {
+        "zh": {
+          "text": "累我一死吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 210,
+      "start": 1485.5,
+      "end": 1488.1,
+      "rawAsr": "说什么累我一死",
+      "layers": {
+        "zh": {
+          "text": "说什么累我一死",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 211,
+      "start": 1488.6,
+      "end": 1490.5,
+      "rawAsr": "如今我已是",
+      "layers": {
+        "zh": {
+          "text": "如今我已是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 212,
+      "start": 1491.5,
+      "end": 1493.1,
+      "rawAsr": "己是什么",
+      "layers": {
+        "zh": {
+          "text": "己是什么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 213,
+      "start": 1494.6,
+      "end": 1495.399,
+      "rawAsr": "已是",
+      "layers": {
+        "zh": {
+          "text": "已是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 214,
+      "start": 1495.4,
+      "end": 1497.5,
+      "rawAsr": "已是什么呀",
+      "layers": {
+        "zh": {
+          "text": "已是什么呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 215,
+      "start": 1498.2,
+      "end": 1498.9,
+      "rawAsr": "已是",
+      "layers": {
+        "zh": {
+          "text": "已是",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 216,
+      "start": 1504.9,
+      "end": 1512.7,
+      "rawAsr": "想开口时难开口",
+      "layers": {
+        "zh": {
+          "text": "想开口时难开口",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 217,
+      "start": 1513.5,
+      "end": 1522.3,
+      "rawAsr": "千言万语涌心头",
+      "layers": {
+        "zh": {
+          "text": "千言万语涌心头",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 218,
+      "start": 1523.2,
+      "end": 1524.8,
+      "rawAsr": "慧娘",
+      "layers": {
+        "zh": {
+          "text": "慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 219,
+      "start": 1525.3,
+      "end": 1528.899,
+      "rawAsr": "慧娘丧生已足够",
+      "layers": {
+        "zh": {
+          "text": "慧娘丧生已足够",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 220,
+      "start": 1528.9,
+      "end": 1541.1,
+      "rawAsr": "何必叫他也添忧",
+      "layers": {
+        "zh": {
+          "text": "何必叫他也添忧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 221,
+      "start": 1541.4,
+      "end": 1541.9,
+      "rawAsr": "慧娘",
+      "layers": {
+        "zh": {
+          "text": "慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 222,
+      "start": 1542.1,
+      "end": 1544.7,
+      "rawAsr": "你到底想说些什么呀",
+      "layers": {
+        "zh": {
+          "text": "你到底想说些什么呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 223,
+      "start": 1544.8,
+      "end": 1545.499,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 224,
+      "start": 1545.5,
+      "end": 1546.299,
+      "rawAsr": "事不宜迟",
+      "layers": {
+        "zh": {
+          "text": "事不宜迟",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 225,
+      "start": 1546.3,
+      "end": 1547.5,
+      "rawAsr": "无需多问",
+      "layers": {
+        "zh": {
+          "text": "无需多问",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 226,
+      "start": 1547.7,
+      "end": 1548.7,
+      "rawAsr": "快走吧",
+      "layers": {
+        "zh": {
+          "text": "快走吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 227,
+      "start": 1549.9,
+      "end": 1552.199,
+      "rawAsr": "裴生决不连累于你",
+      "layers": {
+        "zh": {
+          "text": "裴生决不连累于你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 228,
+      "start": 1552.2,
+      "end": 1554.399,
+      "rawAsr": "啊呀 真是个书呆子",
+      "layers": {
+        "zh": {
+          "text": "啊呀 真是个书呆子",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 229,
+      "start": 1554.4,
+      "end": 1555.899,
+      "rawAsr": "快走吧",
+      "layers": {
+        "zh": {
+          "text": "快走吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 230,
+      "start": 1555.9,
+      "end": 1556.2,
+      "rawAsr": "不",
+      "layers": {
+        "zh": {
+          "text": "不",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 231,
+      "start": 1556.6,
+      "end": 1558.7,
+      "rawAsr": "裴生我一人做事一人当",
+      "layers": {
+        "zh": {
+          "text": "裴生我一人做事一人当",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 232,
+      "start": 1559.1,
+      "end": 1559.7,
+      "rawAsr": "慧娘",
+      "layers": {
+        "zh": {
+          "text": "慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 233,
+      "start": 1560.0,
+      "end": 1563.8,
+      "rawAsr": "你还是快快自己逃生去吧",
+      "layers": {
+        "zh": {
+          "text": "你还是快快自己逃生去吧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 234,
+      "start": 1564.1,
+      "end": 1565.1,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 235,
+      "start": 1565.3,
+      "end": 1567.1,
+      "rawAsr": "走听",
+      "layers": {
+        "zh": {
+          "text": "走听",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 236,
+      "start": 1573.7,
+      "end": 1585.3,
+      "rawAsr": "钟鼓声声来势骤",
+      "layers": {
+        "zh": {
+          "text": "钟鼓声声来势骤",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 237,
+      "start": 1586.6,
+      "end": 1594.1,
+      "rawAsr": "当断难断愁愁愁",
+      "layers": {
+        "zh": {
+          "text": "当断难断愁愁愁",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 238,
+      "start": 1596.1,
+      "end": 1599.1,
+      "rawAsr": "燃眉之急怎袖手",
+      "layers": {
+        "zh": {
+          "text": "燃眉之急怎袖手",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 239,
+      "start": 1602.9,
+      "end": 1607.4,
+      "rawAsr": "敞开心扉吐隐忧",
+      "layers": {
+        "zh": {
+          "text": "敞开心扉吐隐忧",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 240,
+      "start": 1609.2,
+      "end": 1610.3,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 241,
+      "start": 1610.6,
+      "end": 1614.4,
+      "rawAsr": "你看我是人还是鬼呀",
+      "layers": {
+        "zh": {
+          "text": "你看我是人还是鬼呀",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 242,
+      "start": 1614.7,
+      "end": 1619.699,
+      "rawAsr": "啊呀 情急之间何出戏言哪",
+      "layers": {
+        "zh": {
+          "text": "啊呀 情急之间何出戏言哪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 243,
+      "start": 1619.7,
+      "end": 1621.299,
+      "rawAsr": "并非戏言",
+      "layers": {
+        "zh": {
+          "text": "并非戏言",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 244,
+      "start": 1621.3,
+      "end": 1622.799,
+      "rawAsr": "实言相告",
+      "layers": {
+        "zh": {
+          "text": "实言相告",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 245,
+      "start": 1622.8,
+      "end": 1632.0,
+      "rawAsr": "我乃是个屈死的冤动",
+      "layers": {
+        "zh": {
+          "text": "我乃是个屈死的冤动",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 246,
+      "start": 1633.5,
+      "end": 1636.499,
+      "rawAsr": "你行路有形言谈有声",
+      "layers": {
+        "zh": {
+          "text": "你行路有形言谈有声",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 247,
+      "start": 1636.5,
+      "end": 1640.699,
+      "rawAsr": "明明是人怎说是鬼啊",
+      "layers": {
+        "zh": {
+          "text": "明明是人怎说是鬼啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 248,
+      "start": 1640.7,
+      "end": 1643.6,
+      "rawAsr": "好不明白的书生",
+      "layers": {
+        "zh": {
+          "text": "好不明白的书生",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 249,
+      "start": 1643.9,
+      "end": 1646.1,
+      "rawAsr": "你想这红梅阁内外",
+      "layers": {
+        "zh": {
+          "text": "你想这红梅阁内外",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 250,
+      "start": 1648.9,
+      "end": 1651.4,
+      "rawAsr": "怎能破门而入",
+      "layers": {
+        "zh": {
+          "text": "怎能破门而入",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 251,
+      "start": 1651.9,
+      "end": 1653.199,
+      "rawAsr": "我若不是鬼",
+      "layers": {
+        "zh": {
+          "text": "我若不是鬼",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 252,
+      "start": 1653.2,
+      "end": 1654.099,
+      "rawAsr": "怎会知道",
+      "layers": {
+        "zh": {
+          "text": "怎会知道",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 253,
+      "start": 1654.1,
+      "end": 1661.5,
+      "rawAsr": "今晚三更那老贼就要派人前来加害于你",
+      "layers": {
+        "zh": {
+          "text": "今晚三更那老贼就要派人前来加害于你",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 254,
+      "start": 1662.9,
+      "end": 1665.5,
+      "rawAsr": "啊呀 裴相公啊",
+      "layers": {
+        "zh": {
+          "text": "啊呀 裴相公啊",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 255,
+      "start": 1665.7,
+      "end": 1668.8,
+      "rawAsr": "今日游湖因我赞你一言",
+      "layers": {
+        "zh": {
+          "text": "今日游湖因我赞你一言",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 256,
+      "start": 1669.1,
+      "end": 1672.3,
+      "rawAsr": "美哉呀 少年",
+      "layers": {
+        "zh": {
+          "text": "美哉呀 少年",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 257,
+      "start": 1672.7,
+      "end": 1676.2,
+      "rawAsr": "那老贼他就一剑",
+      "layers": {
+        "zh": {
+          "text": "那老贼他就一剑",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 258,
+      "start": 1681.4,
+      "end": 1690.7,
+      "rawAsr": "就一剑将我刺死了",
+      "layers": {
+        "zh": {
+          "text": "就一剑将我刺死了",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 259,
+      "start": 1714.7,
+      "end": 1720.5,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 260,
+      "start": 1724.7,
+      "end": 1729.2,
+      "rawAsr": "痛慧娘剑下亡",
+      "layers": {
+        "zh": {
+          "text": "痛慧娘剑下亡",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 261,
+      "start": 1729.9,
+      "end": 1743.6,
+      "rawAsr": "我如雷轰顶",
+      "layers": {
+        "zh": {
+          "text": "我如雷轰顶",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 262,
+      "start": 1744.7,
+      "end": 1745.9,
+      "rawAsr": "裴相么",
+      "layers": {
+        "zh": {
+          "text": "裴相么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 263,
+      "start": 1747.8,
+      "end": 1749.099,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 264,
+      "start": 1749.1,
+      "end": 1751.7,
+      "rawAsr": "你是怕我吗",
+      "layers": {
+        "zh": {
+          "text": "你是怕我吗",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 265,
+      "start": 1752.6,
+      "end": 1754.2,
+      "rawAsr": "慧娘",
+      "layers": {
+        "zh": {
+          "text": "慧娘",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 266,
+      "start": 1755.5,
+      "end": 1756.499,
+      "rawAsr": "裴相么",
+      "layers": {
+        "zh": {
+          "text": "裴相么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 267,
+      "start": 1756.5,
+      "end": 1766.099,
+      "rawAsr": "纵然你 纵然你是鬼魂",
+      "layers": {
+        "zh": {
+          "text": "纵然你 纵然你是鬼魂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 268,
+      "start": 1766.1,
+      "end": 1774.899,
+      "rawAsr": "虽死犹生 虽死犹生哪",
+      "layers": {
+        "zh": {
+          "text": "虽死犹生 虽死犹生哪",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 269,
+      "start": 1774.9,
+      "end": 1777.7,
+      "rawAsr": "裴相么",
+      "layers": {
+        "zh": {
+          "text": "裴相么",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 270,
+      "start": 1781.8,
+      "end": 1790.4,
+      "rawAsr": "阴阳有别情无尽",
+      "layers": {
+        "zh": {
+          "text": "阴阳有别情无尽",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 271,
+      "start": 1791.1,
+      "end": 1801.299,
+      "rawAsr": "何惧慧娘是幽魂",
+      "layers": {
+        "zh": {
+          "text": "何惧慧娘是幽魂",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 272,
+      "start": 1801.3,
+      "end": 1803.3,
+      "rawAsr": "裴相公",
+      "layers": {
+        "zh": {
+          "text": "裴相公",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 273,
+      "start": 1804.0,
+      "end": 1809.3,
+      "rawAsr": "历经人间风和雨",
+      "layers": {
+        "zh": {
+          "text": "历经人间风和雨",
+          "status": "corrected"
+        }
+      }
+    },
+    {
+      "id": 274,
+      "start": 1809.7,
+      "end": 1813.9,
+      "rawAsr": "患难知己情更深 情更深",
+      "layers": {
+        "zh": {
+          "text": "患难知己情更深 情更深",
+          "status": "corrected"
+        }
+      }
+    }
+  ]
+}
