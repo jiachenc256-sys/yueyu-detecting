@@ -76,6 +76,7 @@ const pieceSelect = document.getElementById("speak-piece") as HTMLSelectElement 
 const followTimeEl = document.getElementById("speak-follow-time") as HTMLInputElement | null;
 const followClock = document.getElementById("speak-follow-clock");
 const sceneCardEl = document.getElementById("speak-scene-card");
+const lingWrapEl = document.getElementById("speak-ling-wrap");
 const lingNoteEl = document.getElementById("speak-ling-note");
 const fpNoteEl = document.getElementById("speak-fp-note");
 const prosodyCard = document.getElementById("speak-prosody-card");
@@ -352,10 +353,8 @@ function hidePathPanels(): void {
     archiveOpen.hidden = true;
     archiveOpen.removeAttribute("href");
   }
-  if (lingNoteEl) {
-    lingNoteEl.hidden = true;
-    lingNoteEl.textContent = "";
-  }
+  if (lingWrapEl) lingWrapEl.hidden = true;
+  if (lingNoteEl) lingNoteEl.textContent = "";
   setMeter(archiveMeter, archiveMeterLabel, 0, "—");
   setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
   if (prosodyMetrics) {
@@ -447,10 +446,8 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
     fpNoteEl.textContent = "";
   }
   lastLingNote = null;
-  if (lingNoteEl) {
-    lingNoteEl.hidden = true;
-    lingNoteEl.textContent = "";
-  }
+  if (lingWrapEl) lingWrapEl.hidden = true;
+  if (lingNoteEl) lingNoteEl.textContent = "";
 
   const pieceId = selectedPieceId();
   const timeSec = followTimeSec();
@@ -561,15 +558,13 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
       speakers: cueSpeakers,
     });
     if (lingNoteEl && lastLingNote) {
-      lingNoteEl.hidden = false;
+      if (lingWrapEl) lingWrapEl.hidden = false;
       lingNoteEl.textContent = preferEnUi() ? lastLingNote.en : lastLingNote.zh;
     }
   } else {
     lastLingNote = null;
-    if (lingNoteEl) {
-      lingNoteEl.hidden = true;
-      lingNoteEl.textContent = "";
-    }
+    if (lingWrapEl) lingWrapEl.hidden = true;
+    if (lingNoteEl) lingNoteEl.textContent = "";
   }
 
   if (archiveMatches) {
@@ -1224,11 +1219,11 @@ async function refreshPathLocaleOnly(): Promise<void> {
       sceneCardEl.textContent = line;
     }
   }
-  if (lingNoteEl && lastLingNote && isHit) {
-    lingNoteEl.hidden = false;
+  if (lingWrapEl && lingNoteEl && lastLingNote && isHit) {
+    lingWrapEl.hidden = false;
     lingNoteEl.textContent = en ? lastLingNote.en : lastLingNote.zh;
-  } else if (lingNoteEl && !isHit) {
-    lingNoteEl.hidden = true;
+  } else if (lingWrapEl && !isHit) {
+    lingWrapEl.hidden = true;
   }
   if (lastProsody && prosodyText) {
     let summary = en ? lastProsody.summaryEn : lastProsody.summaryZh;

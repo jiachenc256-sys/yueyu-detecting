@@ -1,8 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824ling1";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824ling1";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824ling1";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824ling1";
-import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824ling1";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260824ling2";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260824ling2";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260824ling2";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260824ling2";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260824ling2";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
@@ -34,6 +34,7 @@ const pieceSelect = document.getElementById("speak-piece");
 const followTimeEl = document.getElementById("speak-follow-time");
 const followClock = document.getElementById("speak-follow-clock");
 const sceneCardEl = document.getElementById("speak-scene-card");
+const lingWrapEl = document.getElementById("speak-ling-wrap");
 const lingNoteEl = document.getElementById("speak-ling-note");
 const fpNoteEl = document.getElementById("speak-fp-note");
 const prosodyCard = document.getElementById("speak-prosody-card");
@@ -319,10 +320,10 @@ function hidePathPanels() {
         archiveOpen.hidden = true;
         archiveOpen.removeAttribute("href");
     }
-    if (lingNoteEl) {
-        lingNoteEl.hidden = true;
+    if (lingWrapEl)
+        lingWrapEl.hidden = true;
+    if (lingNoteEl)
         lingNoteEl.textContent = "";
-    }
     setMeter(archiveMeter, archiveMeterLabel, 0, "—");
     setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
     if (prosodyMetrics) {
@@ -406,10 +407,10 @@ async function runPostAsrPaths(hyp) {
         fpNoteEl.textContent = "";
     }
     lastLingNote = null;
-    if (lingNoteEl) {
-        lingNoteEl.hidden = true;
+    if (lingWrapEl)
+        lingWrapEl.hidden = true;
+    if (lingNoteEl)
         lingNoteEl.textContent = "";
-    }
     const pieceId = selectedPieceId();
     const timeSec = followTimeSec();
     let result = null;
@@ -512,16 +513,17 @@ async function runPostAsrPaths(hyp) {
             speakers: cueSpeakers,
         });
         if (lingNoteEl && lastLingNote) {
-            lingNoteEl.hidden = false;
+            if (lingWrapEl)
+                lingWrapEl.hidden = false;
             lingNoteEl.textContent = preferEnUi() ? lastLingNote.en : lastLingNote.zh;
         }
     }
     else {
         lastLingNote = null;
-        if (lingNoteEl) {
-            lingNoteEl.hidden = true;
+        if (lingWrapEl)
+            lingWrapEl.hidden = true;
+        if (lingNoteEl)
             lingNoteEl.textContent = "";
-        }
     }
     if (archiveMatches) {
         const showWeak = !hit && result && ((result.confidence ?? 0) >= ARCHIVE_NEAR_MIN || fpBest >= 0.72);
@@ -1116,12 +1118,12 @@ async function refreshPathLocaleOnly() {
             sceneCardEl.textContent = line;
         }
     }
-    if (lingNoteEl && lastLingNote && isHit) {
-        lingNoteEl.hidden = false;
+    if (lingWrapEl && lingNoteEl && lastLingNote && isHit) {
+        lingWrapEl.hidden = false;
         lingNoteEl.textContent = en ? lastLingNote.en : lastLingNote.zh;
     }
-    else if (lingNoteEl && !isHit) {
-        lingNoteEl.hidden = true;
+    else if (lingWrapEl && !isHit) {
+        lingWrapEl.hidden = true;
     }
     if (lastProsody && prosodyText) {
         let summary = en ? lastProsody.summaryEn : lastProsody.summaryZh;
