@@ -10,9 +10,9 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const V = process.env.SPEAK_ASSET_V || "20260824try1";
+const V = process.env.SPEAK_ASSET_V || "20260824ling1";
 const files = ["scripts/dist/src/speak.js", "scripts/dist/src/app.js"];
-const targets = ["i18n.js", "speak-gist.js", "speak-prosody.js", "speak-fingerprint.js"];
+const targets = ["i18n.js", "speak-gist.js", "speak-prosody.js", "speak-fingerprint.js", "speak-linguistics.js"];
 
 for (const rel of files) {
   const path = join(root, rel);

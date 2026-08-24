@@ -20,6 +20,12 @@ import {
   matchFingerprint,
   type FpHit,
 } from "./speak-fingerprint.js";
+import {
+  composeLinguisticNote,
+  loadCueSpeakers,
+  loadPieceLinguistics,
+  type LinguisticNote,
+} from "./speak-linguistics.js";
 
 /**
  * Speak → recognize → translate (简体 / 繁體 / English).
@@ -70,6 +76,7 @@ const pieceSelect = document.getElementById("speak-piece") as HTMLSelectElement 
 const followTimeEl = document.getElementById("speak-follow-time") as HTMLInputElement | null;
 const followClock = document.getElementById("speak-follow-clock");
 const sceneCardEl = document.getElementById("speak-scene-card");
+const lingNoteEl = document.getElementById("speak-ling-note");
 const fpNoteEl = document.getElementById("speak-fp-note");
 const prosodyCard = document.getElementById("speak-prosody-card");
 const prosodyText = document.getElementById("speak-prosody-text");
@@ -90,6 +97,7 @@ let modelPrep: Promise<void> | null = null;
 let previewObjectUrl: string | null = null;
 let lastGist: GistResult | null = null;
 let lastProsody: ProsodyResult | null = null;
+let lastLingNote: LinguisticNote | null = null;
 
 let mediaStream: MediaStream | null = null;
 let mediaRecorder: MediaRecorder | null = null;
@@ -336,12 +344,17 @@ function emotionName(id: string): string {
 function hidePathPanels(): void {
   lastGist = null;
   lastProsody = null;
+  lastLingNote = null;
   if (pathRoot) pathRoot.hidden = true;
   if (prosodyCard) prosodyCard.hidden = true;
   if (gistUseBtn) gistUseBtn.hidden = true;
   if (archiveOpen) {
     archiveOpen.hidden = true;
     archiveOpen.removeAttribute("href");
+  }
+  if (lingNoteEl) {
+    lingNoteEl.hidden = true;
+    lingNoteEl.textContent = "";
   }
   setMeter(archiveMeter, archiveMeterLabel, 0, "—");
   setMeter(prosodyMeter, prosodyMeterLabel, 0, "—");
@@ -409,11 +422,13 @@ function archiveHit(result: GistResult, fpBest: number): boolean {
 }
 
 async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
-  const [index, scenes, fpIndex, pinyinMap] = await Promise.all([
+  const [index, scenes, fpIndex, pinyinMap, linguistics, cueSpeakers] = await Promise.all([
     loadLyricIndex(),
     loadSceneCards(),
     loadFingerprintIndex(),
     loadPinyinMap(),
+    loadPieceLinguistics(),
+    loadCueSpeakers(),
     loadPieceRadar(),
   ]);
   if (!hyp.trim()) {
@@ -430,6 +445,11 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
   if (fpNoteEl) {
     fpNoteEl.hidden = true;
     fpNoteEl.textContent = "";
+  }
+  lastLingNote = null;
+  if (lingNoteEl) {
+    lingNoteEl.hidden = true;
+    lingNoteEl.textContent = "";
   }
 
   const pieceId = selectedPieceId();
@@ -528,6 +548,27 @@ async function runPostAsrPaths(hyp: string): Promise<GistResult | null> {
     } else {
       fpNoteEl.hidden = true;
       fpNoteEl.textContent = "";
+    }
+  }
+
+  // Archive-linked linguistic note (① hit only)
+  if (hit && result?.matches[0]) {
+    const top = result.matches[0].entry;
+    lastLingNote = composeLinguisticNote({
+      pieceId: top.pieceId,
+      entryId: top.id,
+      linguistics,
+      speakers: cueSpeakers,
+    });
+    if (lingNoteEl && lastLingNote) {
+      lingNoteEl.hidden = false;
+      lingNoteEl.textContent = preferEnUi() ? lastLingNote.en : lastLingNote.zh;
+    }
+  } else {
+    lastLingNote = null;
+    if (lingNoteEl) {
+      lingNoteEl.hidden = true;
+      lingNoteEl.textContent = "";
     }
   }
 
@@ -1182,6 +1223,12 @@ async function refreshPathLocaleOnly(): Promise<void> {
       sceneCardEl.hidden = false;
       sceneCardEl.textContent = line;
     }
+  }
+  if (lingNoteEl && lastLingNote && isHit) {
+    lingNoteEl.hidden = false;
+    lingNoteEl.textContent = en ? lastLingNote.en : lastLingNote.zh;
+  } else if (lingNoteEl && !isHit) {
+    lingNoteEl.hidden = true;
   }
   if (lastProsody && prosodyText) {
     let summary = en ? lastProsody.summaryEn : lastProsody.summaryZh;

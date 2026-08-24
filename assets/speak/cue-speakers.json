@@ -1,0 +1,545 @@
+{
+  "schema": "yueyu-cue-speakers/v1",
+  "n": 77,
+  "items": [
+    {
+      "id": "liangzhu-shibaxiangsong-1",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 1,
+      "speakerZh": "器乐",
+      "speakerEn": "Instrumental"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-2",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 2,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-3",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 3,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-4",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 4,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-5",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 5,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-6",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 6,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-7",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 7,
+      "speakerZh": "梁山伯",
+      "speakerEn": "Liang Shanbo"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-8",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 8,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-9",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 9,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-10",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 10,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-11",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 11,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-12",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 12,
+      "speakerZh": "旁白",
+      "speakerEn": "Narrator"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-13",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 13,
+      "speakerZh": "旁白",
+      "speakerEn": "Narrator"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-14",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 14,
+      "speakerZh": "梁山伯",
+      "speakerEn": "Liang Shanbo"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-15",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 15,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-16",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 16,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-17",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 17,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-18",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 18,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-19",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 19,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-20",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 20,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-21",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 21,
+      "speakerZh": "梁山伯",
+      "speakerEn": "Liang Shanbo"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-22",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 22,
+      "speakerZh": "梁山伯",
+      "speakerEn": "Liang Shanbo"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-23",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 23,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-24",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 24,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-25",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 25,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-26",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 26,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-27",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 27,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-28",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 28,
+      "speakerZh": "祝英台",
+      "speakerEn": "Zhu Yingtai"
+    },
+    {
+      "id": "liangzhu-shibaxiangsong-29",
+      "pieceId": "liangzhu-shibaxiangsong",
+      "cueId": 29,
+      "speakerZh": "器乐",
+      "speakerEn": "Instrumental"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-1",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 1,
+      "speakerZh": "器乐",
+      "speakerEn": "Instrumental"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-2",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 2,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-3",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 3,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-4",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 4,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-5",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 5,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-6",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 6,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-7",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 7,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-8",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 8,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-9",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 9,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-10",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 10,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-11",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 11,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-12",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 12,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-13",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 13,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-14",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 14,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-15",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 15,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-16",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 16,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-17",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 17,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-18",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 18,
+      "speakerZh": "祥林嫂",
+      "speakerEn": "Xianglin Sao"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-19",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 19,
+      "speakerZh": "器乐",
+      "speakerEn": "Instrumental"
+    },
+    {
+      "id": "xianglin-sao-xinsuanhua-20",
+      "pieceId": "xianglin-sao-xinsuanhua",
+      "cueId": 20,
+      "speakerZh": "器乐",
+      "speakerEn": "Instrumental"
+    },
+    {
+      "id": "hongloumeng-tianxia-1",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 1,
+      "speakerZh": "器乐",
+      "speakerEn": "Instrumental"
+    },
+    {
+      "id": "hongloumeng-tianxia-2",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 2,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-3",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 3,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-4",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 4,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-5",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 5,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-6",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 6,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-7",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 7,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-8",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 8,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-9",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 9,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-10",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 10,
+      "speakerZh": "林黛玉",
+      "speakerEn": "Lin Daiyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-11",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 11,
+      "speakerZh": "林黛玉",
+      "speakerEn": "Lin Daiyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-12",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 12,
+      "speakerZh": "林黛玉",
+      "speakerEn": "Lin Daiyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-13",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 13,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-14",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 14,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-15",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 15,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-16",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 16,
+      "speakerZh": "贾宝玉",
+      "speakerEn": "Jia Baoyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-17",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 17,
+      "speakerZh": "林黛玉",
+      "speakerEn": "Lin Daiyu"
+    },
+    {
+      "id": "hongloumeng-tianxia-18",
+      "pieceId": "hongloumeng-tianxia",
+      "cueId": 18,
+      "speakerZh": "器乐",
+      "speakerEn": "Instrumental"
+    },
+    {
+      "id": "pearl-tower-gift-1",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 1,
+      "speakerZh": "方卿",
+      "speakerEn": "Fang Qing"
+    },
+    {
+      "id": "pearl-tower-gift-2",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 2,
+      "speakerZh": "旁白",
+      "speakerEn": "Narrator"
+    },
+    {
+      "id": "pearl-tower-gift-3",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 3,
+      "speakerZh": "陈翠娥",
+      "speakerEn": "Chen Cui'e"
+    },
+    {
+      "id": "pearl-tower-gift-4",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 4,
+      "speakerZh": "陈翠娥",
+      "speakerEn": "Chen Cui'e"
+    },
+    {
+      "id": "pearl-tower-gift-5",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 5,
+      "speakerZh": "陈翠娥",
+      "speakerEn": "Chen Cui'e"
+    },
+    {
+      "id": "pearl-tower-gift-6",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 6,
+      "speakerZh": "陈翠娥",
+      "speakerEn": "Chen Cui'e"
+    },
+    {
+      "id": "pearl-tower-gift-7",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 7,
+      "speakerZh": "陈翠娥",
+      "speakerEn": "Chen Cui'e"
+    },
+    {
+      "id": "pearl-tower-gift-8",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 8,
+      "speakerZh": "陈翠娥",
+      "speakerEn": "Chen Cui'e"
+    },
+    {
+      "id": "pearl-tower-gift-9",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 9,
+      "speakerZh": "陈翠娥",
+      "speakerEn": "Chen Cui'e"
+    },
+    {
+      "id": "pearl-tower-gift-10",
+      "pieceId": "pearl-tower-gift",
+      "cueId": 10,
+      "speakerZh": "方卿",
+      "speakerEn": "Fang Qing"
+    }
+  ]
+}
