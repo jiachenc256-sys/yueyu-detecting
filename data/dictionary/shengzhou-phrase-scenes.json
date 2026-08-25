@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "order": [
+    "",
+    "astronomy",
+    "time",
+    "plant",
+    "animal",
+    "house",
+    "food",
+    "body",
+    "ritual",
+    "people",
+    "work",
+    "action",
+    "quality",
+    "number",
+    "particle"
+  ],
+  "labels": {
+    "zh-Hans": {
+      "astronomy": "一、天文地理",
+      "time": "二、时间方位",
+      "plant": "三、植物",
+      "animal": "四、动物",
+      "house": "五、房舍器具",
+      "food": "六、服饰饮食",
+      "body": "七、身体医疗",
+      "ritual": "八、婚丧信仰",
+      "people": "九、人品称谓",
+      "work": "十、农工商文",
+      "action": "十一、动作行为",
+      "quality": "十二、性质状态",
+      "number": "十三、数量",
+      "particle": "十四、代副词连词",
+      "": "全部"
+    },
+    "zh-Hant": {
+      "astronomy": "一、天文地理",
+      "time": "二、時間方位",
+      "plant": "三、植物",
+      "animal": "四、動物",
+      "house": "五、房舍器具",
+      "food": "六、服飾飲食",
+      "body": "七、身體醫療",
+      "ritual": "八、婚喪信仰",
+      "people": "九、人品稱謂",
+      "work": "十、農工商文",
+      "action": "十一、動作行為",
+      "quality": "十二、性質狀態",
+      "number": "十三、數量",
+      "particle": "十四、代副詞連詞",
+      "": "全部"
+    },
+    "en": {
+      "astronomy": "1 Astronomy & geography",
+      "time": "2 Time & place",
+      "plant": "3 Plants",
+      "animal": "4 Animals",
+      "house": "5 House & tools",
+      "food": "6 Clothing & food",
+      "body": "7 Body & medicine",
+      "ritual": "8 Marriage, death & belief",
+      "people": "9 People & kinship",
+      "work": "10 Farm, trade & letters",
+      "action": "11 Actions",
+      "quality": "12 Qualities",
+      "number": "13 Numbers",
+      "particle": "14 Pronouns & particles",
+      "": "All"
+    }
+  }
+}

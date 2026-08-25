@@ -1,11 +1,28 @@
-import { onLocaleChange, t, tf } from "./i18n.js";
-const SCENES = ["", "greet", "buy", "ask", "family", "weather", "theatre", "daily"];
+import { onLocaleChange, t, tf, getLocale } from "./i18n.js";
+const BOOK_SCENES = [
+    "",
+    "astronomy",
+    "time",
+    "plant",
+    "animal",
+    "house",
+    "food",
+    "body",
+    "ritual",
+    "people",
+    "work",
+    "action",
+    "quality",
+    "number",
+    "particle",
+];
 let chars = [];
 let phrases = [];
 let archiveByChar = {};
 let tradToHans = {};
 let audioHans = new Set();
 let activeScene = "";
+let sceneLabels = {};
 function audioUrlFor(han) {
     return `assets/learn/ziyin-audio/shengzhou/${encodeURIComponent(han)}.m4a`;
 }
@@ -38,23 +55,28 @@ function queryVariants(q) {
 }
 function matchChar(item, q) {
     if (!q)
-        return item.level !== undefined && item.level <= 4;
+        return true;
     const variants = queryVariants(q);
     const pin = stripPinyin(item.pinyin ?? "");
     return variants.some((v) => item.han.includes(v) ||
+        item.hanDisplay.includes(v) ||
         pin.includes(stripPinyin(v)) ||
-        normalize(item.tag ?? "").includes(normalize(v)) ||
+        normalize(item.rhyme).includes(normalize(v)) ||
+        normalize(item.oldMale).includes(normalize(v)) ||
+        normalize(item.youngMale).includes(normalize(v)) ||
         normalize(item.shangyu ?? "").includes(normalize(v)) ||
         normalize(item.zhuji ?? "").includes(normalize(v)) ||
-        normalize(item.shengzhou ?? "").includes(normalize(v)));
+        normalize(item.sense ?? "").includes(normalize(v)));
 }
 function matchPhrase(item, q) {
     if (!q)
         return true;
     const variants = queryVariants(q);
     return variants.some((v) => item.zh.includes(v) ||
+        normalize(item.reading ?? "").includes(normalize(v)) ||
         normalize(item.en).includes(normalize(v)) ||
         normalize(item.scene ?? "").includes(normalize(v)) ||
+        normalize(item.category ?? "").includes(normalize(v)) ||
         normalize(item.note ?? "").includes(normalize(v)) ||
         (item.chars ?? []).some((c) => c.includes(v) || (tradToHans[v] && c.includes(tradToHans[v]))));
 }
@@ -72,22 +94,32 @@ function escapeHtml(s) {
         .replaceAll('"', "&quot;");
 }
 function sceneLabel(scene) {
+    if (!scene)
+        return t("dict.sceneAll");
+    const loc = getLocale();
+    const fromMap = sceneLabels[loc]?.[scene] ?? sceneLabels["zh-Hans"]?.[scene];
+    if (fromMap)
+        return fromMap;
     const key = `dict.scene.${scene}`;
     const labeled = t(key);
     return labeled === key ? scene : labeled;
+}
+function availableScenes() {
+    const present = new Set(phrases.map((p) => p.scene).filter(Boolean));
+    return BOOK_SCENES.filter((s) => s === "" || present.has(s));
 }
 function renderSceneChips() {
     const root = document.getElementById("dict-scene-filters");
     if (!root)
         return;
     root.innerHTML = "";
-    for (const scene of SCENES) {
+    for (const scene of availableScenes()) {
         const btn = document.createElement("button");
         btn.type = "button";
         btn.className = "dict-scene-chip";
         btn.dataset.dictScene = scene;
         btn.setAttribute("aria-pressed", scene === activeScene ? "true" : "false");
-        btn.textContent = scene ? sceneLabel(scene) : t("dict.sceneAll");
+        btn.textContent = sceneLabel(scene);
         btn.addEventListener("click", () => {
             activeScene = scene;
             renderSceneChips();
@@ -116,7 +148,7 @@ function renderChars(list) {
             ? `<div class="dict-card__related">
           <p class="dict-card__related-label">${t("dict.relatedPhrases")} · ${tf("dict.phraseCount", { n: related.length })}</p>
           <ul>${related
-                .map((p) => `<li><button type="button" class="dict-link" data-dict-fill="${escapeHtml(p.zh)}">${escapeHtml(p.zh)}</button> <span class="dict-card__en-inline">${escapeHtml(p.en)}</span></li>`)
+                .map((p) => `<li><button type="button" class="dict-link" data-dict-fill="${escapeHtml(p.zh)}">${escapeHtml(p.zh)}</button></li>`)
                 .join("")}</ul>
         </div>`
             : "";
@@ -136,15 +168,17 @@ function renderChars(list) {
         const playBtn = hasAudio
             ? `<button type="button" class="speak-btn dict-card__play" data-dict-audio="${audioUrlFor(item.han)}">${t("dict.playShengzhou")}</button>`
             : `<button type="button" class="speak-btn dict-card__play" disabled title="${escapeHtml(t("dict.audioMissing"))}">${t("dict.audioMissing")}</button>`;
+        const metaBits = [item.pinyin, item.rhyme].filter(Boolean).join(" · ");
         card.innerHTML = `
       <div class="dict-card__head">
-        <span class="dict-card__han">${escapeHtml(item.han)}</span>
-        <span class="dict-card__meta">${escapeHtml(item.pinyin ?? "")} · L${item.level ?? "—"}</span>
+        <span class="dict-card__han">${escapeHtml(item.hanDisplay || item.han)}</span>
+        <span class="dict-card__meta">${escapeHtml(metaBits)}</span>
       </div>
       <dl class="dict-card__ipa">
+        <div><dt>${t("dict.oldMale")}</dt><dd>${escapeHtml(item.oldMale || "—")}</dd></div>
+        <div><dt>${t("dict.youngMale")}</dt><dd>${escapeHtml(item.youngMale || "—")}</dd></div>
         <div><dt>${t("dict.placeShangyu")}</dt><dd>${escapeHtml(item.shangyu ?? "—")}</dd></div>
         <div><dt>${t("dict.placeZhuji")}</dt><dd>${escapeHtml(item.zhuji ?? "—")}</dd></div>
-        <div><dt>${t("dict.placeShengzhou")}</dt><dd>${escapeHtml(item.shengzhou ?? "—")}</dd></div>
       </dl>
       ${playBtn}
       ${relatedHtml}
@@ -183,6 +217,10 @@ function renderPhrases(list) {
         const scene = item.scene
             ? `<span class="dict-card__scene">${escapeHtml(sceneLabel(item.scene))}</span>`
             : "";
+        const reading = item.reading
+            ? `<p class="dict-card__reading">${escapeHtml(item.reading)}</p>`
+            : "";
+        const en = item.en ? `<p class="dict-card__en">${escapeHtml(item.en)}</p>` : "";
         const note = item.note ? `<p class="dict-card__note">${escapeHtml(item.note)}</p>` : "";
         const charLinks = (item.chars ?? [])
             .slice(0, 8)
@@ -191,10 +229,10 @@ function renderPhrases(list) {
         card.innerHTML = `
       <div class="dict-card__head">
         <span class="dict-card__han dict-card__han--phrase">${escapeHtml(item.zh)}</span>
-        <span class="dict-card__draft">${t("dict.phraseDraft")}</span>
         ${scene}
       </div>
-      <p class="dict-card__en">${escapeHtml(item.en)}</p>
+      ${reading}
+      ${en}
       ${note}
       ${charLinks ? `<p class="dict-card__chars">${charLinks}</p>` : ""}
     `;
@@ -218,7 +256,7 @@ function applyQuery() {
     const input = document.getElementById("dict-query");
     const q = input?.value ?? "";
     const status = document.getElementById("dict-status");
-    const charHits = chars.filter((c) => (c.level ?? 99) <= 4 && matchChar(c, q));
+    const charHits = chars.filter((c) => matchChar(c, q));
     const phraseHits = phrases.filter((p) => {
         if (activeScene && p.scene !== activeScene)
             return false;
@@ -230,22 +268,49 @@ function applyQuery() {
         status.textContent = tf("dict.status", { chars: charHits.length, phrases: phraseHits.length });
     }
 }
+function mergeBookChars(book, ziyin) {
+    const byHan = new Map();
+    for (const z of ziyin) {
+        if (!byHan.has(z.han))
+            byHan.set(z.han, z);
+    }
+    return book.map((b) => {
+        const z = byHan.get(b.han);
+        const out = { ...b };
+        if (z?.shangyu)
+            out.shangyu = z.shangyu;
+        if (z?.zhuji)
+            out.zhuji = z.zhuji;
+        if (z?.pinyin)
+            out.pinyin = z.pinyin;
+        if (z?.level !== undefined)
+            out.level = z.level;
+        return out;
+    });
+}
 async function boot() {
-    const [ziyinRes, phraseRes, archiveRes, tradRes, audioRes] = await Promise.all([
+    const [bookCharRes, phraseRes, ziyinRes, archiveRes, tradRes, audioRes, sceneRes] = await Promise.all([
+        fetch("data/dictionary/shengzhou-chars.json"),
+        fetch("data/dictionary/shengzhou-phrases.json"),
         fetch("data/learn/ziyin.json"),
-        fetch("data/dictionary/phrases.json"),
         fetch("data/dictionary/char-archive-index.json"),
         fetch("data/dictionary/trad-to-hans.json"),
         fetch("data/dictionary/shengzhou-audio-hans.json"),
+        fetch("data/dictionary/shengzhou-phrase-scenes.json"),
     ]);
-    if (!ziyinRes.ok)
-        throw new Error(`ziyin HTTP ${ziyinRes.status}`);
+    if (!bookCharRes.ok)
+        throw new Error(`shengzhou-chars HTTP ${bookCharRes.status}`);
     if (!phraseRes.ok)
-        throw new Error(`phrases HTTP ${phraseRes.status}`);
-    const ziyin = (await ziyinRes.json());
+        throw new Error(`shengzhou-phrases HTTP ${phraseRes.status}`);
+    const bookDoc = (await bookCharRes.json());
     const phraseDoc = (await phraseRes.json());
-    chars = ziyin.items ?? [];
+    const ziyin = ziyinRes.ok ? (await ziyinRes.json()) : { items: [] };
+    chars = mergeBookChars(bookDoc.items ?? [], ziyin.items ?? []);
     phrases = phraseDoc.items ?? [];
+    if (sceneRes.ok) {
+        const sceneDoc = (await sceneRes.json());
+        sceneLabels = sceneDoc.labels ?? {};
+    }
     if (archiveRes.ok) {
         const archiveDoc = (await archiveRes.json());
         archiveByChar = archiveDoc.chars ?? {};
