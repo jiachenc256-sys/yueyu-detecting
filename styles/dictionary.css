@@ -35,7 +35,16 @@
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-top: 0.35rem;
-  max-width: min(100%, 40rem);
+  max-width: min(100%, 52rem);
+}
+
+.dict-card__reading {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  line-height: 1.45;
+  word-break: break-word;
 }
 
 .dict-scene-chip {

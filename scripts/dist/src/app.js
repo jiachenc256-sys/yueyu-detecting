@@ -1,5 +1,5 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260824q7";
+import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260825d1";
 function initNavigation() {
     const triggers = document.querySelectorAll("[data-panel-target]");
     const navButtons = document.querySelectorAll(".site-nav [data-panel-target]");

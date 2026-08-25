@@ -1,0 +1,8999 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": "shengzhou-1000.csv",
+  "label": "嵊州单字·老男/青男",
+  "n": 999,
+  "items": [
+    {
+      "id": "0001",
+      "han": "多",
+      "hanDisplay": "多",
+      "sense": null,
+      "rhyme": "果开一平歌端",
+      "oldMale": "to534",
+      "youngMale": "to534"
+    },
+    {
+      "id": "0002",
+      "han": "拖",
+      "hanDisplay": "拖",
+      "sense": null,
+      "rhyme": "果开一平歌透",
+      "oldMale": "t'ho534文",
+      "youngMale": "t'ho534文"
+    },
+    {
+      "id": "0003",
+      "han": "大",
+      "hanDisplay": "大",
+      "sense": null,
+      "rhyme": "果开一去歌定",
+      "oldMale": "do24",
+      "youngMale": "do24"
+    },
+    {
+      "id": "0004",
+      "han": "锣",
+      "hanDisplay": "锣",
+      "sense": null,
+      "rhyme": "果开一平歌来",
+      "oldMale": "lo213",
+      "youngMale": "lo213"
+    },
+    {
+      "id": "0005",
+      "han": "左",
+      "hanDisplay": "左",
+      "sense": null,
+      "rhyme": "果开一上歌精",
+      "oldMale": "tso53",
+      "youngMale": "tso53"
+    },
+    {
+      "id": "0006",
+      "han": "歌",
+      "hanDisplay": "歌",
+      "sense": null,
+      "rhyme": "果开一平歌见",
+      "oldMale": "ko534",
+      "youngMale": "ko534"
+    },
+    {
+      "id": "0007",
+      "han": "个",
+      "hanDisplay": "个",
+      "sense": null,
+      "rhyme": "果开一去歌见",
+      "oldMale": "ka334 / ko334",
+      "youngMale": "ko334"
+    },
+    {
+      "id": "0008",
+      "han": "可",
+      "hanDisplay": "可",
+      "sense": null,
+      "rhyme": "果开一上歌溪",
+      "oldMale": "kho53",
+      "youngMale": "kho53"
+    },
+    {
+      "id": "0009",
+      "han": "鹅",
+      "hanDisplay": "鹅",
+      "sense": null,
+      "rhyme": "果开一平歌疑",
+      "oldMale": "no213",
+      "youngMale": "no213"
+    },
+    {
+      "id": "0010",
+      "han": "饿",
+      "hanDisplay": "饿",
+      "sense": null,
+      "rhyme": "果开一去歌疑",
+      "oldMale": "no24",
+      "youngMale": "no24"
+    },
+    {
+      "id": "0011",
+      "han": "河",
+      "hanDisplay": "河",
+      "sense": null,
+      "rhyme": "果开一平歌匣",
+      "oldMale": "o213",
+      "youngMale": "o213"
+    },
+    {
+      "id": "0012",
+      "han": "茄",
+      "hanDisplay": "茄",
+      "sense": null,
+      "rhyme": "果开三平戈群",
+      "oldMale": "dzia213",
+      "youngMale": "dzia213"
+    },
+    {
+      "id": "0013",
+      "han": "破",
+      "hanDisplay": "破",
+      "sense": null,
+      "rhyme": "果合一去戈",
+      "oldMale": "p'ha334白 / p'ho334文",
+      "youngMale": "p'ha334白 / p'ho334文"
+    },
+    {
+      "id": "0014",
+      "han": "婆",
+      "hanDisplay": "婆",
+      "sense": null,
+      "rhyme": "果合一平戈並",
+      "oldMale": "bo213",
+      "youngMale": "bo213"
+    },
+    {
+      "id": "0015",
+      "han": "磨",
+      "hanDisplay": "磨(动)",
+      "sense": "动",
+      "rhyme": "果合一平戈明",
+      "oldMale": "mo213",
+      "youngMale": "mo213"
+    },
+    {
+      "id": "0016",
+      "han": "磨",
+      "hanDisplay": "磨(名)",
+      "sense": "名",
+      "rhyme": "果合一去戈明",
+      "oldMale": "mo24",
+      "youngMale": "mo24"
+    },
+    {
+      "id": "0017",
+      "han": "躲",
+      "hanDisplay": "躲",
+      "sense": null,
+      "rhyme": "果合一上戈端",
+      "oldMale": "to53",
+      "youngMale": "to53"
+    },
+    {
+      "id": "0018",
+      "han": "螺",
+      "hanDisplay": "螺",
+      "sense": null,
+      "rhyme": "果合一平戈来",
+      "oldMale": "lo213",
+      "youngMale": "lo213"
+    },
+    {
+      "id": "0019",
+      "han": "锁",
+      "hanDisplay": "锁",
+      "sense": null,
+      "rhyme": "果合一上戈心",
+      "oldMale": "so53",
+      "youngMale": "so53"
+    },
+    {
+      "id": "0020",
+      "han": "坐",
+      "hanDisplay": "坐",
+      "sense": null,
+      "rhyme": "果合一上戈从",
+      "oldMale": "ko53",
+      "youngMale": "ko53"
+    },
+    {
+      "id": "0021",
+      "han": "果",
+      "hanDisplay": "果",
+      "sense": null,
+      "rhyme": "果合一上戈见",
+      "oldMale": "ko334",
+      "youngMale": "ko334"
+    },
+    {
+      "id": "0022",
+      "han": "过",
+      "hanDisplay": "过",
+      "sense": null,
+      "rhyme": "果合一去戈见",
+      "oldMale": "ko334",
+      "youngMale": "ko334"
+    },
+    {
+      "id": "0023",
+      "han": "课",
+      "hanDisplay": "课",
+      "sense": null,
+      "rhyme": "果合一去戈溪",
+      "oldMale": "kho334",
+      "youngMale": "kho334"
+    },
+    {
+      "id": "0024",
+      "han": "火",
+      "hanDisplay": "火",
+      "sense": null,
+      "rhyme": "果合一上戈晓",
+      "oldMale": "ho53",
+      "youngMale": "ho53"
+    },
+    {
+      "id": "0025",
+      "han": "货",
+      "hanDisplay": "货",
+      "sense": null,
+      "rhyme": "果合一去戈晓",
+      "oldMale": "ho334",
+      "youngMale": "ho334"
+    },
+    {
+      "id": "0026",
+      "han": "祸",
+      "hanDisplay": "祸",
+      "sense": null,
+      "rhyme": "果合一上戈匣",
+      "oldMale": "o24",
+      "youngMale": "o223"
+    },
+    {
+      "id": "0027",
+      "han": "靴",
+      "hanDisplay": "靴",
+      "sense": null,
+      "rhyme": "果合三平戈晓",
+      "oldMale": "ey53",
+      "youngMale": "eyap5"
+    },
+    {
+      "id": "0028",
+      "han": "把",
+      "hanDisplay": "把(量)",
+      "sense": "量",
+      "rhyme": "假开二上麻帮",
+      "oldMale": "po334",
+      "youngMale": "po53"
+    },
+    {
+      "id": "0029",
+      "han": "爬",
+      "hanDisplay": "爬",
+      "sense": null,
+      "rhyme": "假开二平麻並",
+      "oldMale": "bo213",
+      "youngMale": "bo213"
+    },
+    {
+      "id": "0030",
+      "han": "马",
+      "hanDisplay": "马",
+      "sense": null,
+      "rhyme": "假开二上麻明",
+      "oldMale": "mo22",
+      "youngMale": "mo223"
+    },
+    {
+      "id": "0031",
+      "han": "骂",
+      "hanDisplay": "骂",
+      "sense": null,
+      "rhyme": "假开二去麻明",
+      "oldMale": "mo24",
+      "youngMale": "mo24"
+    },
+    {
+      "id": "0032",
+      "han": "茶",
+      "hanDisplay": "茶",
+      "sense": null,
+      "rhyme": "假开二平麻澄",
+      "oldMale": "dzo213",
+      "youngMale": "dzo213"
+    },
+    {
+      "id": "0033",
+      "han": "沙",
+      "hanDisplay": "沙",
+      "sense": null,
+      "rhyme": "假开二平麻生",
+      "oldMale": "so534",
+      "youngMale": "so534"
+    },
+    {
+      "id": "0034",
+      "han": "假",
+      "hanDisplay": "假",
+      "sense": null,
+      "rhyme": "假开二上麻见",
+      "oldMale": "ko53",
+      "youngMale": "ko53"
+    },
+    {
+      "id": "0035",
+      "han": "嫁",
+      "hanDisplay": "嫁",
+      "sense": null,
+      "rhyme": "假开二去麻见",
+      "oldMale": "ko334白 / teia334文",
+      "youngMale": "ko334"
+    },
+    {
+      "id": "0036",
+      "han": "牙",
+      "hanDisplay": "牙",
+      "sense": null,
+      "rhyme": "假开二平麻疑",
+      "oldMale": "no213",
+      "youngMale": "no213"
+    },
+    {
+      "id": "0037",
+      "han": "虾",
+      "hanDisplay": "虾",
+      "sense": null,
+      "rhyme": "假开二平麻晓",
+      "oldMale": "ho534",
+      "youngMale": "ho534"
+    },
+    {
+      "id": "0038",
+      "han": "下",
+      "hanDisplay": "下",
+      "sense": null,
+      "rhyme": "假开二上麻匣",
+      "oldMale": "o24",
+      "youngMale": "o223"
+    },
+    {
+      "id": "0039",
+      "han": "夏",
+      "hanDisplay": "夏",
+      "sense": null,
+      "rhyme": "假开二去麻匣",
+      "oldMale": "o24",
+      "youngMale": "o223"
+    },
+    {
+      "id": "0040",
+      "han": "哑",
+      "hanDisplay": "哑",
+      "sense": null,
+      "rhyme": "假开二上麻影",
+      "oldMale": "o53",
+      "youngMale": "o53"
+    },
+    {
+      "id": "0041",
+      "han": "姐",
+      "hanDisplay": "姐",
+      "sense": null,
+      "rhyme": "假开三上麻精",
+      "oldMale": "(无)",
+      "youngMale": "(无)"
+    },
+    {
+      "id": "0042",
+      "han": "借",
+      "hanDisplay": "借",
+      "sense": null,
+      "rhyme": "假开三去麻精",
+      "oldMale": "teia334",
+      "youngMale": "teia334"
+    },
+    {
+      "id": "0043",
+      "han": "写",
+      "hanDisplay": "写",
+      "sense": null,
+      "rhyme": "假开三上麻心",
+      "oldMale": "cia53",
+      "youngMale": "cia53"
+    },
+    {
+      "id": "0044",
+      "han": "斜",
+      "hanDisplay": "斜",
+      "sense": null,
+      "rhyme": "假开三平麻邪",
+      "oldMale": "zia213",
+      "youngMale": "zia213"
+    },
+    {
+      "id": "0045",
+      "han": "谢",
+      "hanDisplay": "谢",
+      "sense": null,
+      "rhyme": "假开三去麻邪",
+      "oldMale": "zia24",
+      "youngMale": "zia24"
+    },
+    {
+      "id": "0046",
+      "han": "车",
+      "hanDisplay": "车",
+      "sense": null,
+      "rhyme": "假开三平麻昌",
+      "oldMale": "tsho34",
+      "youngMale": "tsho34"
+    },
+    {
+      "id": "0047",
+      "han": "蛇",
+      "hanDisplay": "蛇",
+      "sense": null,
+      "rhyme": "假开三平麻船",
+      "oldMale": "zo213",
+      "youngMale": "zo213"
+    },
+    {
+      "id": "0048",
+      "han": "射",
+      "hanDisplay": "射",
+      "sense": null,
+      "rhyme": "假开三去麻船",
+      "oldMale": "zo24",
+      "youngMale": "zo223"
+    },
+    {
+      "id": "0049",
+      "han": "爷",
+      "hanDisplay": "爷",
+      "sense": null,
+      "rhyme": "假开三平麻以",
+      "oldMale": "ia213",
+      "youngMale": "ia213"
+    },
+    {
+      "id": "0050",
+      "han": "野",
+      "hanDisplay": "野",
+      "sense": null,
+      "rhyme": "假开三上麻以",
+      "oldMale": "ia24",
+      "youngMale": "ia223"
+    },
+    {
+      "id": "0051",
+      "han": "夜",
+      "hanDisplay": "夜",
+      "sense": null,
+      "rhyme": "假开三去麻以",
+      "oldMale": "ia24",
+      "youngMale": "ia24"
+    },
+    {
+      "id": "0052",
+      "han": "瓜",
+      "hanDisplay": "瓜",
+      "sense": null,
+      "rhyme": "假合二平麻见",
+      "oldMale": "kuo534",
+      "youngMale": "kuo534"
+    },
+    {
+      "id": "0053",
+      "han": "瓦",
+      "hanDisplay": "瓦(名)",
+      "sense": "名",
+      "rhyme": "假合二上麻疑",
+      "oldMale": "no24",
+      "youngMale": "no223"
+    },
+    {
+      "id": "0054",
+      "han": "花",
+      "hanDisplay": "花",
+      "sense": null,
+      "rhyme": "假合二平麻晓",
+      "oldMale": "fo534",
+      "youngMale": "fo534"
+    },
+    {
+      "id": "0055",
+      "han": "化",
+      "hanDisplay": "化",
+      "sense": null,
+      "rhyme": "假合二去麻晓",
+      "oldMale": "fo534",
+      "youngMale": "fo334"
+    },
+    {
+      "id": "0056",
+      "han": "华",
+      "hanDisplay": "华",
+      "sense": null,
+      "rhyme": "假合二平麻匣",
+      "oldMale": "uo213",
+      "youngMale": "uo213"
+    },
+    {
+      "id": "0057",
+      "han": "谱",
+      "hanDisplay": "谱",
+      "sense": null,
+      "rhyme": "遇合一上模帮",
+      "oldMale": "pu53",
+      "youngMale": "pu53"
+    },
+    {
+      "id": "0058",
+      "han": "布",
+      "hanDisplay": "布",
+      "sense": null,
+      "rhyme": "遇合一去模帮",
+      "oldMale": "pu334",
+      "youngMale": "pu334"
+    },
+    {
+      "id": "0059",
+      "han": "辅",
+      "hanDisplay": "辅",
+      "sense": null,
+      "rhyme": "遇合一平模滂",
+      "oldMale": "ph534",
+      "youngMale": "ph534"
+    },
+    {
+      "id": "0060",
+      "han": "簿",
+      "hanDisplay": "簿",
+      "sense": null,
+      "rhyme": "遇合一上模並",
+      "oldMale": "bu24",
+      "youngMale": "bu24"
+    },
+    {
+      "id": "0061",
+      "han": "步",
+      "hanDisplay": "步",
+      "sense": null,
+      "rhyme": "遇合一去模並",
+      "oldMale": "bu24",
+      "youngMale": "tu53"
+    },
+    {
+      "id": "0062",
+      "han": "赌",
+      "hanDisplay": "赌",
+      "sense": null,
+      "rhyme": "遇合一上模端",
+      "oldMale": "tu53",
+      "youngMale": "tu53"
+    },
+    {
+      "id": "0063",
+      "han": "土",
+      "hanDisplay": "土",
+      "sense": null,
+      "rhyme": "遇合一上模透",
+      "oldMale": "thu53",
+      "youngMale": "thu53"
+    },
+    {
+      "id": "0064",
+      "han": "图",
+      "hanDisplay": "图",
+      "sense": null,
+      "rhyme": "遇合一平模定",
+      "oldMale": "du213",
+      "youngMale": "du213"
+    },
+    {
+      "id": "0065",
+      "han": "杜",
+      "hanDisplay": "杜",
+      "sense": null,
+      "rhyme": "遇合一上模定",
+      "oldMale": "du24",
+      "youngMale": "du24"
+    },
+    {
+      "id": "0066",
+      "han": "奴",
+      "hanDisplay": "奴",
+      "sense": null,
+      "rhyme": "遇合一平模泥",
+      "oldMale": "nu213",
+      "youngMale": "nu213"
+    },
+    {
+      "id": "0067",
+      "han": "路",
+      "hanDisplay": "路",
+      "sense": null,
+      "rhyme": "遇合一去模来",
+      "oldMale": "lu24",
+      "youngMale": "lu24"
+    },
+    {
+      "id": "0068",
+      "han": "租",
+      "hanDisplay": "租",
+      "sense": null,
+      "rhyme": "遇合一平模精",
+      "oldMale": "tsu534",
+      "youngMale": "tsy534"
+    },
+    {
+      "id": "0069",
+      "han": "做",
+      "hanDisplay": "做",
+      "sense": null,
+      "rhyme": "遇合一去模精",
+      "oldMale": "tso334",
+      "youngMale": "tso334"
+    },
+    {
+      "id": "0070",
+      "han": "错",
+      "hanDisplay": "错",
+      "sense": null,
+      "rhyme": "遇合一去模清",
+      "oldMale": "tsho334",
+      "youngMale": "tsho334"
+    },
+    {
+      "id": "0071",
+      "han": "箍",
+      "hanDisplay": "箍",
+      "sense": null,
+      "rhyme": "遇合一平模见",
+      "oldMale": "khu534",
+      "youngMale": "ku334"
+    },
+    {
+      "id": "0072",
+      "han": "古",
+      "hanDisplay": "古",
+      "sense": null,
+      "rhyme": "遇合一上模见",
+      "oldMale": "ku53",
+      "youngMale": "ku53"
+    },
+    {
+      "id": "0073",
+      "han": "苦",
+      "hanDisplay": "苦",
+      "sense": null,
+      "rhyme": "遇合一上模溪",
+      "oldMale": "khu53",
+      "youngMale": "khu53"
+    },
+    {
+      "id": "0074",
+      "han": "裤",
+      "hanDisplay": "裤",
+      "sense": null,
+      "rhyme": "遇合一去模溪",
+      "oldMale": "khu334",
+      "youngMale": "khu334"
+    },
+    {
+      "id": "0075",
+      "han": "吴",
+      "hanDisplay": "吴",
+      "sense": null,
+      "rhyme": "遇合一平模疑",
+      "oldMale": "u213",
+      "youngMale": "u213"
+    },
+    {
+      "id": "0076",
+      "han": "五",
+      "hanDisplay": "五",
+      "sense": null,
+      "rhyme": "遇合一上模疑",
+      "oldMale": "u22",
+      "youngMale": "u24"
+    },
+    {
+      "id": "0077",
+      "han": "虎",
+      "hanDisplay": "虎",
+      "sense": null,
+      "rhyme": "遇合一上模晓",
+      "oldMale": "fu53",
+      "youngMale": "fu53"
+    },
+    {
+      "id": "0078",
+      "han": "壶",
+      "hanDisplay": "壶",
+      "sense": null,
+      "rhyme": "遇合一平模匣",
+      "oldMale": "u213",
+      "youngMale": "u213"
+    },
+    {
+      "id": "0079",
+      "han": "户",
+      "hanDisplay": "户",
+      "sense": null,
+      "rhyme": "遇合一上模匣",
+      "oldMale": "u24",
+      "youngMale": "u24"
+    },
+    {
+      "id": "0080",
+      "han": "乌",
+      "hanDisplay": "乌",
+      "sense": null,
+      "rhyme": "遇合一平模影",
+      "oldMale": "u534",
+      "youngMale": "u534"
+    },
+    {
+      "id": "0081",
+      "han": "女",
+      "hanDisplay": "女",
+      "sense": null,
+      "rhyme": "遇合三上鱼泥",
+      "oldMale": "ny22",
+      "youngMale": "ny24"
+    },
+    {
+      "id": "0082",
+      "han": "吕",
+      "hanDisplay": "吕",
+      "sense": null,
+      "rhyme": "遇合三上鱼来",
+      "oldMale": "li22",
+      "youngMale": "li213"
+    },
+    {
+      "id": "0083",
+      "han": "徐",
+      "hanDisplay": "徐",
+      "sense": null,
+      "rhyme": "遇合三平鱼邪",
+      "oldMale": "dzi213",
+      "youngMale": "dzi213"
+    },
+    {
+      "id": "0084",
+      "han": "猪",
+      "hanDisplay": "猪",
+      "sense": null,
+      "rhyme": "遇合三平鱼知",
+      "oldMale": "tsy53",
+      "youngMale": "tsy534"
+    },
+    {
+      "id": "0085",
+      "han": "除",
+      "hanDisplay": "除",
+      "sense": null,
+      "rhyme": "遇合三平鱼澄",
+      "oldMale": "dzj213",
+      "youngMale": "dzj213"
+    },
+    {
+      "id": "0086",
+      "han": "初",
+      "hanDisplay": "初",
+      "sense": null,
+      "rhyme": "遇合三平鱼初",
+      "oldMale": "tshu534",
+      "youngMale": "tshu534"
+    },
+    {
+      "id": "0087",
+      "han": "锄",
+      "hanDisplay": "锄",
+      "sense": null,
+      "rhyme": "遇合三平鱼崇",
+      "oldMale": "z1²13名 / dzj213动",
+      "youngMale": "dzj213"
+    },
+    {
+      "id": "0088",
+      "han": "所",
+      "hanDisplay": "所",
+      "sense": null,
+      "rhyme": "遇合三上鱼生",
+      "oldMale": "so53",
+      "youngMale": "so53"
+    },
+    {
+      "id": "0089",
+      "han": "书",
+      "hanDisplay": "书",
+      "sense": null,
+      "rhyme": "遇合三平鱼书",
+      "oldMale": "s1 534",
+      "youngMale": "s1 534"
+    },
+    {
+      "id": "0090",
+      "han": "鼠",
+      "hanDisplay": "鼠",
+      "sense": null,
+      "rhyme": "遇合三上鱼书",
+      "oldMale": "tsh53",
+      "youngMale": "tsh53"
+    },
+    {
+      "id": "0091",
+      "han": "如",
+      "hanDisplay": "如",
+      "sense": null,
+      "rhyme": "遇合三平鱼日",
+      "oldMale": "z213",
+      "youngMale": "lu213"
+    },
+    {
+      "id": "0092",
+      "han": "举",
+      "hanDisplay": "举",
+      "sense": null,
+      "rhyme": "遇合三上鱼见",
+      "oldMale": "tey53",
+      "youngMale": "tey53"
+    },
+    {
+      "id": "0093",
+      "han": "锯",
+      "hanDisplay": "锯(名)",
+      "sense": "名",
+      "rhyme": "遇合三去鱼见",
+      "oldMale": "ka53",
+      "youngMale": "ka53"
+    },
+    {
+      "id": "0094",
+      "han": "去",
+      "hanDisplay": "去",
+      "sense": null,
+      "rhyme": "遇合三去鱼溪",
+      "oldMale": "tehy334文",
+      "youngMale": "tehi334"
+    },
+    {
+      "id": "0095",
+      "han": "渠",
+      "hanDisplay": "渠",
+      "sense": null,
+      "rhyme": "遇合三平鱼群",
+      "oldMale": "dzy213",
+      "youngMale": "dzy213"
+    },
+    {
+      "id": "0096",
+      "han": "鱼",
+      "hanDisplay": "鱼",
+      "sense": null,
+      "rhyme": "遇合三平鱼疑",
+      "oldMale": "q213",
+      "youngMale": "q213"
+    },
+    {
+      "id": "0097",
+      "han": "许",
+      "hanDisplay": "许",
+      "sense": null,
+      "rhyme": "遇合三上鱼晓",
+      "oldMale": "ey53",
+      "youngMale": "ey53"
+    },
+    {
+      "id": "0098",
+      "han": "余",
+      "hanDisplay": "余",
+      "sense": null,
+      "rhyme": "遇合三平鱼以",
+      "oldMale": "y213",
+      "youngMale": "y213"
+    },
+    {
+      "id": "0099",
+      "han": "府",
+      "hanDisplay": "府",
+      "sense": null,
+      "rhyme": "遇合三上虞非",
+      "oldMale": "fu334",
+      "youngMale": "fu53"
+    },
+    {
+      "id": "0100",
+      "han": "付",
+      "hanDisplay": "付",
+      "sense": null,
+      "rhyme": "遇合三去虞非",
+      "oldMale": "fu334",
+      "youngMale": "fu334"
+    },
+    {
+      "id": "0101",
+      "han": "父",
+      "hanDisplay": "父",
+      "sense": null,
+      "rhyme": "遇合三上虞奉",
+      "oldMale": "u24",
+      "youngMale": "fu53"
+    },
+    {
+      "id": "0102",
+      "han": "武",
+      "hanDisplay": "武",
+      "sense": null,
+      "rhyme": "遇合三上虞微",
+      "oldMale": "u24",
+      "youngMale": "u223"
+    },
+    {
+      "id": "0103",
+      "han": "雾",
+      "hanDisplay": "雾",
+      "sense": null,
+      "rhyme": "遇合三去虞微",
+      "oldMale": "u24",
+      "youngMale": "u223"
+    },
+    {
+      "id": "0104",
+      "han": "取",
+      "hanDisplay": "取",
+      "sense": null,
+      "rhyme": "遇合三上虞清",
+      "oldMale": "tsh53",
+      "youngMale": "tchy53"
+    },
+    {
+      "id": "0105",
+      "han": "柱",
+      "hanDisplay": "柱",
+      "sense": null,
+      "rhyme": "遇合三上虞澄",
+      "oldMale": "dz124",
+      "youngMale": "dz124"
+    },
+    {
+      "id": "0106",
+      "han": "住",
+      "hanDisplay": "住",
+      "sense": null,
+      "rhyme": "遇合三去虞澄",
+      "oldMale": "dz124",
+      "youngMale": "dz124"
+    },
+    {
+      "id": "0107",
+      "han": "数",
+      "hanDisplay": "数(动)",
+      "sense": "动",
+      "rhyme": "遇合三上虞生",
+      "oldMale": "su53",
+      "youngMale": "su334"
+    },
+    {
+      "id": "0108",
+      "han": "数",
+      "hanDisplay": "数(名)",
+      "sense": "名",
+      "rhyme": "遇合三去虞生",
+      "oldMale": "su334",
+      "youngMale": "su334"
+    },
+    {
+      "id": "0109",
+      "han": "主",
+      "hanDisplay": "主",
+      "sense": null,
+      "rhyme": "遇合三上虞章",
+      "oldMale": "ts13",
+      "youngMale": "ts153"
+    },
+    {
+      "id": "0110",
+      "han": "输",
+      "hanDisplay": "输",
+      "sense": null,
+      "rhyme": "遇合三平虞书",
+      "oldMale": "s134",
+      "youngMale": "s134"
+    },
+    {
+      "id": "0111",
+      "han": "竖",
+      "hanDisplay": "竖",
+      "sense": null,
+      "rhyme": "遇合三上虞禅",
+      "oldMale": "z122",
+      "youngMale": "z124"
+    },
+    {
+      "id": "0112",
+      "han": "树",
+      "hanDisplay": "树",
+      "sense": null,
+      "rhyme": "遇合三去虞禅",
+      "oldMale": "z124",
+      "youngMale": "z124"
+    },
+    {
+      "id": "0113",
+      "han": "句",
+      "hanDisplay": "句",
+      "sense": null,
+      "rhyme": "遇合三去虞见",
+      "oldMale": "tey334",
+      "youngMale": "tey334"
+    },
+    {
+      "id": "0114",
+      "han": "区",
+      "hanDisplay": "区",
+      "sense": null,
+      "rhyme": "遇合三平虞溪",
+      "oldMale": "tehy534",
+      "youngMale": "tehy534"
+    },
+    {
+      "id": "0115",
+      "han": "遇",
+      "hanDisplay": "遇",
+      "sense": null,
+      "rhyme": "遇合三去虞疑",
+      "oldMale": "y24",
+      "youngMale": "y24"
+    },
+    {
+      "id": "0116",
+      "han": "雨",
+      "hanDisplay": "雨",
+      "sense": null,
+      "rhyme": "遇合三上虞云",
+      "oldMale": "y24",
+      "youngMale": "y24"
+    },
+    {
+      "id": "0117",
+      "han": "芋",
+      "hanDisplay": "芋",
+      "sense": null,
+      "rhyme": "遇合三去虞云",
+      "oldMale": "y24",
+      "youngMale": "y24"
+    },
+    {
+      "id": "0118",
+      "han": "裕",
+      "hanDisplay": "裕",
+      "sense": null,
+      "rhyme": "遇合三去虞以",
+      "oldMale": "y24",
+      "youngMale": "y24"
+    },
+    {
+      "id": "0119",
+      "han": "胎",
+      "hanDisplay": "胎",
+      "sense": null,
+      "rhyme": "蟹开一平哈透",
+      "oldMale": "tE534",
+      "youngMale": "tE534"
+    },
+    {
+      "id": "0120",
+      "han": "台",
+      "hanDisplay": "台",
+      "sense": null,
+      "rhyme": "蟹开一平哈定",
+      "oldMale": "dE213",
+      "youngMale": "dE213"
+    },
+    {
+      "id": "0121",
+      "han": "袋",
+      "hanDisplay": "袋",
+      "sense": null,
+      "rhyme": "蟹开一去哈定",
+      "oldMale": "dE24",
+      "youngMale": "dE24"
+    },
+    {
+      "id": "0122",
+      "han": "来",
+      "hanDisplay": "来",
+      "sense": null,
+      "rhyme": "蟹开一平哈来",
+      "oldMale": "le213",
+      "youngMale": "le213"
+    },
+    {
+      "id": "0123",
+      "han": "菜",
+      "hanDisplay": "菜",
+      "sense": null,
+      "rhyme": "蟹开一去哈清",
+      "oldMale": "tsHE334",
+      "youngMale": "tsHE334"
+    },
+    {
+      "id": "0124",
+      "han": "财",
+      "hanDisplay": "财",
+      "sense": null,
+      "rhyme": "蟹开一平哈从",
+      "oldMale": "dze213",
+      "youngMale": "dze213"
+    },
+    {
+      "id": "0125",
+      "han": "该",
+      "hanDisplay": "该",
+      "sense": null,
+      "rhyme": "蟹开一平哈见",
+      "oldMale": "kE534",
+      "youngMale": "kE534"
+    },
+    {
+      "id": "0126",
+      "han": "改",
+      "hanDisplay": "改",
+      "sense": null,
+      "rhyme": "蟹开一上哈见",
+      "oldMale": "kE53",
+      "youngMale": "kE53"
+    },
+    {
+      "id": "0127",
+      "han": "开",
+      "hanDisplay": "开",
+      "sense": null,
+      "rhyme": "蟹开一平哈溪",
+      "oldMale": "kHE534",
+      "youngMale": "kHE534"
+    },
+    {
+      "id": "0128",
+      "han": "海",
+      "hanDisplay": "海",
+      "sense": null,
+      "rhyme": "蟹开一上哈晓",
+      "oldMale": "he53",
+      "youngMale": "he53"
+    },
+    {
+      "id": "0129",
+      "han": "爱",
+      "hanDisplay": "爱",
+      "sense": null,
+      "rhyme": "蟹开一去哈影",
+      "oldMale": "E334",
+      "youngMale": "E334"
+    },
+    {
+      "id": "0130",
+      "han": "贝",
+      "hanDisplay": "贝",
+      "sense": null,
+      "rhyme": "蟹开一去泰帮",
+      "oldMale": "pE534",
+      "youngMale": "pE334"
+    },
+    {
+      "id": "0131",
+      "han": "带",
+      "hanDisplay": "带(动)",
+      "sense": "动",
+      "rhyme": "蟹开一去泰端",
+      "oldMale": "ta334",
+      "youngMale": "ta334"
+    },
+    {
+      "id": "0132",
+      "han": "盖",
+      "hanDisplay": "盖(动)",
+      "sense": "动",
+      "rhyme": "蟹开一去泰见",
+      "oldMale": "kE334",
+      "youngMale": "kE334"
+    },
+    {
+      "id": "0133",
+      "han": "害",
+      "hanDisplay": "害",
+      "sense": null,
+      "rhyme": "蟹开一去泰匣",
+      "oldMale": "E24",
+      "youngMale": "E24"
+    },
+    {
+      "id": "0134",
+      "han": "拜",
+      "hanDisplay": "拜",
+      "sense": null,
+      "rhyme": "蟹开二去皆帮",
+      "oldMale": "pa334 / po334文 / pa334白",
+      "youngMale": "po334文 / pa334白"
+    },
+    {
+      "id": "0135",
+      "han": "排",
+      "hanDisplay": "排",
+      "sense": null,
+      "rhyme": "蟹开二平皆並",
+      "oldMale": "ba213",
+      "youngMale": "ba213"
+    },
+    {
+      "id": "0136",
+      "han": "埋",
+      "hanDisplay": "埋",
+      "sense": null,
+      "rhyme": "蟹开二平皆明",
+      "oldMale": "ma213",
+      "youngMale": "ma213"
+    },
+    {
+      "id": "0137",
+      "han": "戒",
+      "hanDisplay": "戒",
+      "sense": null,
+      "rhyme": "蟹开二去皆见",
+      "oldMale": "ka334",
+      "youngMale": "ka334"
+    },
+    {
+      "id": "0138",
+      "han": "摆",
+      "hanDisplay": "摆",
+      "sense": null,
+      "rhyme": "蟹开二上佳帮",
+      "oldMale": "pa53",
+      "youngMale": "pa53"
+    },
+    {
+      "id": "0139",
+      "han": "派",
+      "hanDisplay": "派",
+      "sense": null,
+      "rhyme": "蟹开二去佳滂",
+      "oldMale": "pba334",
+      "youngMale": "pba334"
+    },
+    {
+      "id": "0140",
+      "han": "牌",
+      "hanDisplay": "牌",
+      "sense": null,
+      "rhyme": "蟹开二平佳並",
+      "oldMale": "ba213",
+      "youngMale": "ba213"
+    },
+    {
+      "id": "0141",
+      "han": "买",
+      "hanDisplay": "买",
+      "sense": null,
+      "rhyme": "蟹开二上佳明",
+      "oldMale": "ma22",
+      "youngMale": "ma223"
+    },
+    {
+      "id": "0142",
+      "han": "卖",
+      "hanDisplay": "卖",
+      "sense": null,
+      "rhyme": "蟹开二去佳明",
+      "oldMale": "ma24",
+      "youngMale": "ma223"
+    },
+    {
+      "id": "0143",
+      "han": "柴",
+      "hanDisplay": "柴",
+      "sense": null,
+      "rhyme": "蟹开二平佳崇",
+      "oldMale": "za213",
+      "youngMale": "za213"
+    },
+    {
+      "id": "0144",
+      "han": "晒",
+      "hanDisplay": "晒",
+      "sense": null,
+      "rhyme": "蟹开二去佳生",
+      "oldMale": "sa334",
+      "youngMale": "sa334"
+    },
+    {
+      "id": "0145",
+      "han": "街",
+      "hanDisplay": "街",
+      "sense": null,
+      "rhyme": "蟹开二平佳见",
+      "oldMale": "ka534",
+      "youngMale": "ka534"
+    },
+    {
+      "id": "0146",
+      "han": "解",
+      "hanDisplay": "解",
+      "sense": null,
+      "rhyme": "蟹开二上佳见",
+      "oldMale": "ka53",
+      "youngMale": "ka53"
+    },
+    {
+      "id": "0147",
+      "han": "鞋",
+      "hanDisplay": "鞋",
+      "sense": null,
+      "rhyme": "蟹开二平佳匣",
+      "oldMale": "a213",
+      "youngMale": "a213"
+    },
+    {
+      "id": "0148",
+      "han": "蟹",
+      "hanDisplay": "蟹",
+      "sense": null,
+      "rhyme": "蟹开二上佳匣",
+      "oldMale": "ha53",
+      "youngMale": "ha53"
+    },
+    {
+      "id": "0149",
+      "han": "矮",
+      "hanDisplay": "矮",
+      "sense": null,
+      "rhyme": "蟹开二上佳影",
+      "oldMale": "a53",
+      "youngMale": "a53"
+    },
+    {
+      "id": "0150",
+      "han": "败",
+      "hanDisplay": "败",
+      "sense": null,
+      "rhyme": "蟹开二去夫並",
+      "oldMale": "ba24",
+      "youngMale": "ba223"
+    },
+    {
+      "id": "0151",
+      "han": "币",
+      "hanDisplay": "币",
+      "sense": null,
+      "rhyme": "蟹开三去祭並",
+      "oldMale": "bi213",
+      "youngMale": "bi24"
+    },
+    {
+      "id": "0152",
+      "han": "制",
+      "hanDisplay": "制",
+      "sense": null,
+      "rhyme": "蟹开三去祭章",
+      "oldMale": "tsj334",
+      "youngMale": "tsj334"
+    },
+    {
+      "id": "0153",
+      "han": "世",
+      "hanDisplay": "世",
+      "sense": null,
+      "rhyme": "蟹开三去祭书",
+      "oldMale": "s134",
+      "youngMale": "s134"
+    },
+    {
+      "id": "0154",
+      "han": "艺",
+      "hanDisplay": "艺",
+      "sense": null,
+      "rhyme": "蟹开三去祭疑",
+      "oldMale": "mi24",
+      "youngMale": "mi24"
+    },
+    {
+      "id": "0155",
+      "han": "米",
+      "hanDisplay": "米",
+      "sense": null,
+      "rhyme": "蟹开四上齐明",
+      "oldMale": "mi22",
+      "youngMale": "m123"
+    },
+    {
+      "id": "0156",
+      "han": "低",
+      "hanDisplay": "低",
+      "sense": null,
+      "rhyme": "蟹开四平齐端",
+      "oldMale": "t534 / tE534白",
+      "youngMale": "tE534白"
+    },
+    {
+      "id": "0157",
+      "han": "梯",
+      "hanDisplay": "梯",
+      "sense": null,
+      "rhyme": "蟹开四平齐透",
+      "oldMale": "tE534文",
+      "youngMale": "tE534文"
+    },
+    {
+      "id": "0158",
+      "han": "剃",
+      "hanDisplay": "剃",
+      "sense": null,
+      "rhyme": "蟹开四去齐透",
+      "oldMale": "tE334",
+      "youngMale": "tE334"
+    },
+    {
+      "id": "0159",
+      "han": "弟",
+      "hanDisplay": "弟",
+      "sense": null,
+      "rhyme": "蟹开四上齐定",
+      "oldMale": "di24",
+      "youngMale": "di24"
+    },
+    {
+      "id": "0160",
+      "han": "递",
+      "hanDisplay": "递",
+      "sense": null,
+      "rhyme": "蟹开四去齐定",
+      "oldMale": "di24",
+      "youngMale": "di24"
+    },
+    {
+      "id": "0161",
+      "han": "泥",
+      "hanDisplay": "泥",
+      "sense": null,
+      "rhyme": "蟹开四平齐泥",
+      "oldMale": "n213",
+      "youngMale": "n213"
+    },
+    {
+      "id": "0162",
+      "han": "犁",
+      "hanDisplay": "犁",
+      "sense": null,
+      "rhyme": "蟹开四平齐来",
+      "oldMale": "li213",
+      "youngMale": "li213"
+    },
+    {
+      "id": "0163",
+      "han": "西",
+      "hanDisplay": "西",
+      "sense": null,
+      "rhyme": "蟹开四平齐心",
+      "oldMale": "ei534",
+      "youngMale": "ei534"
+    },
+    {
+      "id": "0164",
+      "han": "洗",
+      "hanDisplay": "洗",
+      "sense": null,
+      "rhyme": "蟹开四上齐心",
+      "oldMale": "ei53",
+      "youngMale": "ei53"
+    },
+    {
+      "id": "0165",
+      "han": "鸡",
+      "hanDisplay": "鸡",
+      "sense": null,
+      "rhyme": "蟹开四平齐见",
+      "oldMale": "tei534",
+      "youngMale": "tei534"
+    },
+    {
+      "id": "0166",
+      "han": "溪",
+      "hanDisplay": "溪",
+      "sense": null,
+      "rhyme": "蟹开四平齐溪",
+      "oldMale": "teh1534",
+      "youngMale": "teh534"
+    },
+    {
+      "id": "0167",
+      "han": "契",
+      "hanDisplay": "契",
+      "sense": null,
+      "rhyme": "蟹开四去齐溪",
+      "oldMale": "tehiiep多 / teh1334少",
+      "youngMale": "teh1334少"
+    },
+    {
+      "id": "0168",
+      "han": "系",
+      "hanDisplay": "系",
+      "sense": null,
+      "rhyme": "蟹开四去齐匣",
+      "oldMale": "gei334",
+      "youngMale": "gei334"
+    },
+    {
+      "id": "0169",
+      "han": "杯",
+      "hanDisplay": "杯",
+      "sense": null,
+      "rhyme": "蟹合一平灰帮",
+      "oldMale": "pe534",
+      "youngMale": "pe534"
+    },
+    {
+      "id": "0170",
+      "han": "配",
+      "hanDisplay": "配",
+      "sense": null,
+      "rhyme": "蟹合一去灰滂",
+      "oldMale": "pHE334",
+      "youngMale": "pHE334"
+    },
+    {
+      "id": "0171",
+      "han": "赔",
+      "hanDisplay": "赔",
+      "sense": null,
+      "rhyme": "蟹合一平灰並",
+      "oldMale": "be213",
+      "youngMale": "be213"
+    },
+    {
+      "id": "0172",
+      "han": "背",
+      "hanDisplay": "背",
+      "sense": null,
+      "rhyme": "蟹合一去灰並",
+      "oldMale": "be24",
+      "youngMale": "be24"
+    },
+    {
+      "id": "0173",
+      "han": "煤",
+      "hanDisplay": "煤",
+      "sense": null,
+      "rhyme": "蟹合一平灰明",
+      "oldMale": "me213",
+      "youngMale": "me213"
+    },
+    {
+      "id": "0174",
+      "han": "妹",
+      "hanDisplay": "妹",
+      "sense": null,
+      "rhyme": "蟹合一去灰明",
+      "oldMale": "me22",
+      "youngMale": "me24"
+    },
+    {
+      "id": "0175",
+      "han": "对",
+      "hanDisplay": "对",
+      "sense": null,
+      "rhyme": "蟹合一去灰端",
+      "oldMale": "te334",
+      "youngMale": "te334"
+    },
+    {
+      "id": "0176",
+      "han": "雷",
+      "hanDisplay": "雷",
+      "sense": null,
+      "rhyme": "蟹合一平灰来",
+      "oldMale": "le213",
+      "youngMale": "le213"
+    },
+    {
+      "id": "0177",
+      "han": "罪",
+      "hanDisplay": "罪",
+      "sense": null,
+      "rhyme": "蟹合一上灰从",
+      "oldMale": "dze24文 / zE24白",
+      "youngMale": "dze223文"
+    },
+    {
+      "id": "0178",
+      "han": "碎",
+      "hanDisplay": "碎",
+      "sense": null,
+      "rhyme": "蟹合一去灰心",
+      "oldMale": "SE334",
+      "youngMale": "SE334"
+    },
+    {
+      "id": "0179",
+      "han": "灰",
+      "hanDisplay": "灰",
+      "sense": null,
+      "rhyme": "蟹合一平灰晓",
+      "oldMale": "huE534",
+      "youngMale": "fE534"
+    },
+    {
+      "id": "0180",
+      "han": "回",
+      "hanDisplay": "回",
+      "sense": null,
+      "rhyme": "蟹合一平灰匣",
+      "oldMale": "ue213",
+      "youngMale": "ue213"
+    },
+    {
+      "id": "0181",
+      "han": "外",
+      "hanDisplay": "外",
+      "sense": null,
+      "rhyme": "蟹合一去泰疑",
+      "oldMale": "na24",
+      "youngMale": "na24"
+    },
+    {
+      "id": "0182",
+      "han": "会",
+      "hanDisplay": "会",
+      "sense": null,
+      "rhyme": "蟹合一去泰匣",
+      "oldMale": "ue24",
+      "youngMale": "ue24"
+    },
+    {
+      "id": "0183",
+      "han": "怪",
+      "hanDisplay": "怪",
+      "sense": null,
+      "rhyme": "蟹合二去皆见",
+      "oldMale": "kua334",
+      "youngMale": "kua334"
+    },
+    {
+      "id": "0184",
+      "han": "块",
+      "hanDisplay": "块",
+      "sense": null,
+      "rhyme": "蟹合一去皆溪",
+      "oldMale": "khuE334",
+      "youngMale": "khuE334"
+    },
+    {
+      "id": "0185",
+      "han": "怀",
+      "hanDisplay": "怀",
+      "sense": null,
+      "rhyme": "蟹合二平皆匣",
+      "oldMale": "ua213",
+      "youngMale": "ua213"
+    },
+    {
+      "id": "0186",
+      "han": "坏",
+      "hanDisplay": "坏",
+      "sense": null,
+      "rhyme": "蟹合二去皆匣",
+      "oldMale": "ua24",
+      "youngMale": "ua24"
+    },
+    {
+      "id": "0187",
+      "han": "拐",
+      "hanDisplay": "拐",
+      "sense": null,
+      "rhyme": "蟹合二上佳见",
+      "oldMale": "kua53",
+      "youngMale": "kua53"
+    },
+    {
+      "id": "0188",
+      "han": "挂",
+      "hanDisplay": "挂",
+      "sense": null,
+      "rhyme": "蟹合二去佳见",
+      "oldMale": "kuo334",
+      "youngMale": "kuo334"
+    },
+    {
+      "id": "0189",
+      "han": "歪",
+      "hanDisplay": "歪",
+      "sense": null,
+      "rhyme": "蟹合二平佳晓",
+      "oldMale": "ua534",
+      "youngMale": "ua534"
+    },
+    {
+      "id": "0190",
+      "han": "画",
+      "hanDisplay": "画",
+      "sense": null,
+      "rhyme": "蟹合二去佳匣",
+      "oldMale": "uo24",
+      "youngMale": "uo24"
+    },
+    {
+      "id": "0191",
+      "han": "快",
+      "hanDisplay": "快",
+      "sense": null,
+      "rhyme": "蟹合二去夫溪",
+      "oldMale": "khua334",
+      "youngMale": "khua334"
+    },
+    {
+      "id": "0192",
+      "han": "话",
+      "hanDisplay": "话",
+      "sense": null,
+      "rhyme": "蟹合二去夫匣",
+      "oldMale": "uo24",
+      "youngMale": "uo24"
+    },
+    {
+      "id": "0193",
+      "han": "岁",
+      "hanDisplay": "岁",
+      "sense": null,
+      "rhyme": "蟹合三去祭心",
+      "oldMale": "SE334",
+      "youngMale": "SE334"
+    },
+    {
+      "id": "0194",
+      "han": "卫",
+      "hanDisplay": "卫",
+      "sense": null,
+      "rhyme": "蟹合三去祭云",
+      "oldMale": "ue24",
+      "youngMale": "ue24"
+    },
+    {
+      "id": "0195",
+      "han": "肺",
+      "hanDisplay": "肺",
+      "sense": null,
+      "rhyme": "蟹合三去废敷",
+      "oldMale": "f334",
+      "youngMale": "f334"
+    },
+    {
+      "id": "0196",
+      "han": "桂",
+      "hanDisplay": "桂",
+      "sense": null,
+      "rhyme": "蟹合四去齐见",
+      "oldMale": "kue334",
+      "youngMale": "kue334"
+    },
+    {
+      "id": "0197",
+      "han": "碑",
+      "hanDisplay": "碑",
+      "sense": null,
+      "rhyme": "止开三平支帮",
+      "oldMale": "PE534",
+      "youngMale": "PE534"
+    },
+    {
+      "id": "0198",
+      "han": "皮",
+      "hanDisplay": "皮",
+      "sense": null,
+      "rhyme": "止开三平支並",
+      "oldMale": "bi213",
+      "youngMale": "bi213"
+    },
+    {
+      "id": "0199",
+      "han": "被",
+      "hanDisplay": "被",
+      "sense": null,
+      "rhyme": "止开三上支並",
+      "oldMale": "bi22",
+      "youngMale": "bi24"
+    },
+    {
+      "id": "0200",
+      "han": "紫",
+      "hanDisplay": "紫",
+      "sense": null,
+      "rhyme": "止开三上支精",
+      "oldMale": "tsj53",
+      "youngMale": "tsj53"
+    },
+    {
+      "id": "0201",
+      "han": "刺",
+      "hanDisplay": "刺",
+      "sense": null,
+      "rhyme": "止开三去支清",
+      "oldMale": "tsh334",
+      "youngMale": "tsh334"
+    },
+    {
+      "id": "0202",
+      "han": "知",
+      "hanDisplay": "知",
+      "sense": null,
+      "rhyme": "止开三平支知",
+      "oldMale": "tsj534",
+      "youngMale": "tsj534"
+    },
+    {
+      "id": "0203",
+      "han": "池",
+      "hanDisplay": "池",
+      "sense": null,
+      "rhyme": "止开三平支澄",
+      "oldMale": "dzj213",
+      "youngMale": "dzj213"
+    },
+    {
+      "id": "0204",
+      "han": "纸",
+      "hanDisplay": "纸",
+      "sense": null,
+      "rhyme": "止开三上支章",
+      "oldMale": "tsi53",
+      "youngMale": "tsi53"
+    },
+    {
+      "id": "0205",
+      "han": "儿",
+      "hanDisplay": "儿",
+      "sense": null,
+      "rhyme": "止开三平支日",
+      "oldMale": "n213白 / ol213文",
+      "youngMale": "ol213文 / n213白"
+    },
+    {
+      "id": "0206",
+      "han": "寄",
+      "hanDisplay": "寄",
+      "sense": null,
+      "rhyme": "止开三去支见",
+      "oldMale": "tei334",
+      "youngMale": "tei334"
+    },
+    {
+      "id": "0207",
+      "han": "骑",
+      "hanDisplay": "骑",
+      "sense": null,
+      "rhyme": "止开三平支群",
+      "oldMale": "dzi213",
+      "youngMale": "dzi213"
+    },
+    {
+      "id": "0208",
+      "han": "蚁",
+      "hanDisplay": "蚁",
+      "sense": null,
+      "rhyme": "止开三上支疑",
+      "oldMale": "ni213",
+      "youngMale": "ni223"
+    },
+    {
+      "id": "0209",
+      "han": "义",
+      "hanDisplay": "义",
+      "sense": null,
+      "rhyme": "止开三去支疑",
+      "oldMale": "ni24",
+      "youngMale": "ni24"
+    },
+    {
+      "id": "0210",
+      "han": "戏",
+      "hanDisplay": "戏",
+      "sense": null,
+      "rhyme": "止开三去支晓",
+      "oldMale": "Gj334",
+      "youngMale": "Gj334"
+    },
+    {
+      "id": "0211",
+      "han": "移",
+      "hanDisplay": "移",
+      "sense": null,
+      "rhyme": "止开三平支以",
+      "oldMale": "i213",
+      "youngMale": "i213"
+    },
+    {
+      "id": "0212",
+      "han": "比",
+      "hanDisplay": "比",
+      "sense": null,
+      "rhyme": "止开三上脂帮",
+      "oldMale": "pi53",
+      "youngMale": "pi53"
+    },
+    {
+      "id": "0213",
+      "han": "屁",
+      "hanDisplay": "屁",
+      "sense": null,
+      "rhyme": "止开三去脂",
+      "oldMale": "pbi334",
+      "youngMale": "pbi334"
+    },
+    {
+      "id": "0214",
+      "han": "鼻",
+      "hanDisplay": "鼻",
+      "sense": null,
+      "rhyme": "止开三去脂並",
+      "oldMale": "be2",
+      "youngMale": "bio2"
+    },
+    {
+      "id": "0215",
+      "han": "眉",
+      "hanDisplay": "眉",
+      "sense": null,
+      "rhyme": "止开三平脂明",
+      "oldMale": "mi213白 / mE213文",
+      "youngMale": "mi213白"
+    },
+    {
+      "id": "0216",
+      "han": "地",
+      "hanDisplay": "地",
+      "sense": null,
+      "rhyme": "止开三去脂定",
+      "oldMale": "di24",
+      "youngMale": "di24"
+    },
+    {
+      "id": "0217",
+      "han": "梨",
+      "hanDisplay": "梨",
+      "sense": null,
+      "rhyme": "止开三平脂来",
+      "oldMale": "l213",
+      "youngMale": "l213"
+    },
+    {
+      "id": "0218",
+      "han": "资",
+      "hanDisplay": "资",
+      "sense": null,
+      "rhyme": "止开三平脂精",
+      "oldMale": "tsi534",
+      "youngMale": "tsi534"
+    },
+    {
+      "id": "0219",
+      "han": "死",
+      "hanDisplay": "死",
+      "sense": null,
+      "rhyme": "止开三上脂心",
+      "oldMale": "s153",
+      "youngMale": "s153"
+    },
+    {
+      "id": "0220",
+      "han": "四",
+      "hanDisplay": "四",
+      "sense": null,
+      "rhyme": "止开三去脂心",
+      "oldMale": "s134",
+      "youngMale": "s134"
+    },
+    {
+      "id": "0221",
+      "han": "迟",
+      "hanDisplay": "迟",
+      "sense": null,
+      "rhyme": "止开三平脂澄",
+      "oldMale": "dzj213",
+      "youngMale": "dzj213"
+    },
+    {
+      "id": "0222",
+      "han": "师",
+      "hanDisplay": "师",
+      "sense": null,
+      "rhyme": "止开三平脂生",
+      "oldMale": "s534",
+      "youngMale": "s53"
+    },
+    {
+      "id": "0223",
+      "han": "指",
+      "hanDisplay": "指",
+      "sense": null,
+      "rhyme": "止开三上脂章",
+      "oldMale": "tsi334",
+      "youngMale": "tsi53"
+    },
+    {
+      "id": "0224",
+      "han": "二",
+      "hanDisplay": "二",
+      "sense": null,
+      "rhyme": "止开三去脂日",
+      "oldMale": "n24",
+      "youngMale": "n24"
+    },
+    {
+      "id": "0225",
+      "han": "饥",
+      "hanDisplay": "饥",
+      "sense": null,
+      "rhyme": "止开三平脂见",
+      "oldMale": "teli534",
+      "youngMale": "teli534"
+    },
+    {
+      "id": "0226",
+      "han": "器",
+      "hanDisplay": "器",
+      "sense": null,
+      "rhyme": "止开三去脂溪",
+      "oldMale": "tghi334",
+      "youngMale": "tghi534"
+    },
+    {
+      "id": "0227",
+      "han": "姨",
+      "hanDisplay": "姨",
+      "sense": null,
+      "rhyme": "止开三平脂以",
+      "oldMale": "i213",
+      "youngMale": "i213"
+    },
+    {
+      "id": "0228",
+      "han": "李",
+      "hanDisplay": "李",
+      "sense": null,
+      "rhyme": "止开三上之来",
+      "oldMale": "li24",
+      "youngMale": "li24"
+    },
+    {
+      "id": "0229",
+      "han": "子",
+      "hanDisplay": "子",
+      "sense": null,
+      "rhyme": "止开三上之精",
+      "oldMale": "tsi53",
+      "youngMale": "tsi53"
+    },
+    {
+      "id": "0230",
+      "han": "字",
+      "hanDisplay": "字",
+      "sense": null,
+      "rhyme": "止开三去之从",
+      "oldMale": "z124",
+      "youngMale": "z124"
+    },
+    {
+      "id": "0231",
+      "han": "丝",
+      "hanDisplay": "丝",
+      "sense": null,
+      "rhyme": "止开三平之心",
+      "oldMale": "s1534",
+      "youngMale": "s1534"
+    },
+    {
+      "id": "0232",
+      "han": "祠",
+      "hanDisplay": "祠",
+      "sense": null,
+      "rhyme": "止开三平之邪",
+      "oldMale": "z213",
+      "youngMale": "z213"
+    },
+    {
+      "id": "0233",
+      "han": "寺",
+      "hanDisplay": "寺",
+      "sense": null,
+      "rhyme": "止开三去之邪",
+      "oldMale": "z124",
+      "youngMale": "s1334"
+    },
+    {
+      "id": "0234",
+      "han": "治",
+      "hanDisplay": "治",
+      "sense": null,
+      "rhyme": "止开三去之澄",
+      "oldMale": "dz124",
+      "youngMale": "dz124"
+    },
+    {
+      "id": "0235",
+      "han": "柿",
+      "hanDisplay": "柿",
+      "sense": null,
+      "rhyme": "止开三上之崇",
+      "oldMale": "z124",
+      "youngMale": "z124"
+    },
+    {
+      "id": "0236",
+      "han": "事",
+      "hanDisplay": "事",
+      "sense": null,
+      "rhyme": "止开三去之崇",
+      "oldMale": "z124",
+      "youngMale": "z124"
+    },
+    {
+      "id": "0237",
+      "han": "使",
+      "hanDisplay": "使",
+      "sense": null,
+      "rhyme": "止开三上之生",
+      "oldMale": "s153",
+      "youngMale": "s153"
+    },
+    {
+      "id": "0238",
+      "han": "试",
+      "hanDisplay": "试",
+      "sense": null,
+      "rhyme": "止开三去之书",
+      "oldMale": "s1334",
+      "youngMale": "s1334"
+    },
+    {
+      "id": "0239",
+      "han": "时",
+      "hanDisplay": "时",
+      "sense": null,
+      "rhyme": "止开三平之禅",
+      "oldMale": "z213",
+      "youngMale": "z213"
+    },
+    {
+      "id": "0240",
+      "han": "市",
+      "hanDisplay": "市",
+      "sense": null,
+      "rhyme": "止开三上之禅",
+      "oldMale": "z124",
+      "youngMale": "z124"
+    },
+    {
+      "id": "0241",
+      "han": "耳",
+      "hanDisplay": "耳",
+      "sense": null,
+      "rhyme": "止开三上之日",
+      "oldMale": "n124白 / al24文",
+      "youngMale": "n124白 / al223文"
+    },
+    {
+      "id": "0242",
+      "han": "记",
+      "hanDisplay": "记",
+      "sense": null,
+      "rhyme": "止开三去之见",
+      "oldMale": "tei334",
+      "youngMale": "tei334"
+    },
+    {
+      "id": "0243",
+      "han": "棋",
+      "hanDisplay": "棋",
+      "sense": null,
+      "rhyme": "止开三平之群",
+      "oldMale": "dz213",
+      "youngMale": "dz213"
+    },
+    {
+      "id": "0244",
+      "han": "喜",
+      "hanDisplay": "喜",
+      "sense": null,
+      "rhyme": "止开三上之晓",
+      "oldMale": "e153",
+      "youngMale": "i53"
+    },
+    {
+      "id": "0245",
+      "han": "意",
+      "hanDisplay": "意",
+      "sense": null,
+      "rhyme": "止开三去之影",
+      "oldMale": "i334",
+      "youngMale": "i334"
+    },
+    {
+      "id": "0246",
+      "han": "几",
+      "hanDisplay": "几",
+      "sense": null,
+      "rhyme": "止开三上微见",
+      "oldMale": "tei334",
+      "youngMale": "tei53"
+    },
+    {
+      "id": "0247",
+      "han": "气",
+      "hanDisplay": "气",
+      "sense": null,
+      "rhyme": "止开三去微溪",
+      "oldMale": "tei334 / tgh:334",
+      "youngMale": "tei334 / tgh:334"
+    },
+    {
+      "id": "0248",
+      "han": "希",
+      "hanDisplay": "希",
+      "sense": null,
+      "rhyme": "止开三平微晓",
+      "oldMale": "el534",
+      "youngMale": "el534"
+    },
+    {
+      "id": "0249",
+      "han": "衣",
+      "hanDisplay": "衣",
+      "sense": null,
+      "rhyme": "止开三平微影",
+      "oldMale": "i534",
+      "youngMale": "i534"
+    },
+    {
+      "id": "0250",
+      "han": "嘴",
+      "hanDisplay": "嘴",
+      "sense": null,
+      "rhyme": "止合三上支精",
+      "oldMale": "tsi53",
+      "youngMale": "tsi53"
+    },
+    {
+      "id": "0251",
+      "han": "随",
+      "hanDisplay": "随",
+      "sense": null,
+      "rhyme": "止合三平支邪",
+      "oldMale": "ZE213",
+      "youngMale": "ZE213"
+    },
+    {
+      "id": "0252",
+      "han": "吹",
+      "hanDisplay": "吹",
+      "sense": null,
+      "rhyme": "止合三平支昌",
+      "oldMale": "tsh534",
+      "youngMale": "tsh534"
+    },
+    {
+      "id": "0253",
+      "han": "垂",
+      "hanDisplay": "垂",
+      "sense": null,
+      "rhyme": "止合三平支禅",
+      "oldMale": "dzE213文 / z213白",
+      "youngMale": "dzE213文 / dz213白"
+    },
+    {
+      "id": "0254",
+      "han": "规",
+      "hanDisplay": "规",
+      "sense": null,
+      "rhyme": "止合三平支见",
+      "oldMale": "kue534",
+      "youngMale": "kue534"
+    },
+    {
+      "id": "0255",
+      "han": "亏",
+      "hanDisplay": "亏",
+      "sense": null,
+      "rhyme": "止合三平支溪",
+      "oldMale": "khuE534",
+      "youngMale": "khuE534"
+    },
+    {
+      "id": "0256",
+      "han": "跪",
+      "hanDisplay": "跪",
+      "sense": null,
+      "rhyme": "止合三上支群",
+      "oldMale": "dzy24",
+      "youngMale": "dzy223"
+    },
+    {
+      "id": "0257",
+      "han": "危",
+      "hanDisplay": "危",
+      "sense": null,
+      "rhyme": "止合三平支疑",
+      "oldMale": "uE213",
+      "youngMale": "uE53"
+    },
+    {
+      "id": "0258",
+      "han": "类",
+      "hanDisplay": "类",
+      "sense": null,
+      "rhyme": "止合三去脂来",
+      "oldMale": "le24",
+      "youngMale": "le24"
+    },
+    {
+      "id": "0259",
+      "han": "醉",
+      "hanDisplay": "醉",
+      "sense": null,
+      "rhyme": "止合三去脂精",
+      "oldMale": "tSE334",
+      "youngMale": "tSE334"
+    },
+    {
+      "id": "0260",
+      "han": "追",
+      "hanDisplay": "追",
+      "sense": null,
+      "rhyme": "止合三平脂知",
+      "oldMale": "tSE534",
+      "youngMale": "tSE534"
+    },
+    {
+      "id": "0261",
+      "han": "锤",
+      "hanDisplay": "锤",
+      "sense": null,
+      "rhyme": "止合三平脂澄",
+      "oldMale": "dze213",
+      "youngMale": "dze213"
+    },
+    {
+      "id": "0262",
+      "han": "水",
+      "hanDisplay": "水",
+      "sense": null,
+      "rhyme": "止合三上脂书",
+      "oldMale": "sE53",
+      "youngMale": "s153白"
+    },
+    {
+      "id": "0263",
+      "han": "龟",
+      "hanDisplay": "龟",
+      "sense": null,
+      "rhyme": "止合三平脂见",
+      "oldMale": "kue53文 / tey53白",
+      "youngMale": "tey534"
+    },
+    {
+      "id": "0264",
+      "han": "季",
+      "hanDisplay": "季",
+      "sense": null,
+      "rhyme": "止合三去脂见",
+      "oldMale": "tei334",
+      "youngMale": "tei334"
+    },
+    {
+      "id": "0265",
+      "han": "柜",
+      "hanDisplay": "柜",
+      "sense": null,
+      "rhyme": "止合三去脂群",
+      "oldMale": "guz24文 / dzy24白",
+      "youngMale": "kue334"
+    },
+    {
+      "id": "0266",
+      "han": "位",
+      "hanDisplay": "位",
+      "sense": null,
+      "rhyme": "止合三去脂云",
+      "oldMale": "ue24",
+      "youngMale": "ue223"
+    },
+    {
+      "id": "0267",
+      "han": "飞",
+      "hanDisplay": "飞",
+      "sense": null,
+      "rhyme": "止合三平微非",
+      "oldMale": "f534",
+      "youngMale": "f534"
+    },
+    {
+      "id": "0268",
+      "han": "费",
+      "hanDisplay": "费",
+      "sense": null,
+      "rhyme": "止合三去微敷",
+      "oldMale": "f334",
+      "youngMale": "f334"
+    },
+    {
+      "id": "0269",
+      "han": "肥",
+      "hanDisplay": "肥",
+      "sense": null,
+      "rhyme": "止合三平微奉",
+      "oldMale": "bi213白 / vi213",
+      "youngMale": "vi213"
+    },
+    {
+      "id": "0270",
+      "han": "尾",
+      "hanDisplay": "尾",
+      "sense": null,
+      "rhyme": "止合三上微微",
+      "oldMale": "mi²白 / vi24文",
+      "youngMale": "mi²白 / vi24文"
+    },
+    {
+      "id": "0271",
+      "han": "味",
+      "hanDisplay": "味",
+      "sense": null,
+      "rhyme": "止合三去微微",
+      "oldMale": "bi24 / vi24",
+      "youngMale": "bi²白 / vi24文"
+    },
+    {
+      "id": "0272",
+      "han": "鬼",
+      "hanDisplay": "鬼",
+      "sense": null,
+      "rhyme": "止合三上微见",
+      "oldMale": "tcy53白 / kue53文",
+      "youngMale": "tcy53白 / kue53文"
+    },
+    {
+      "id": "0273",
+      "han": "贵",
+      "hanDisplay": "贵",
+      "sense": null,
+      "rhyme": "止合三去微见",
+      "oldMale": "tcy334白 / kue334文",
+      "youngMale": "tcy334"
+    },
+    {
+      "id": "0274",
+      "han": "围",
+      "hanDisplay": "围",
+      "sense": null,
+      "rhyme": "止合三平微云",
+      "oldMale": "y²13白 / uE213文",
+      "youngMale": "y²13白 / uE213文"
+    },
+    {
+      "id": "0275",
+      "han": "胃",
+      "hanDisplay": "胃",
+      "sense": null,
+      "rhyme": "止合三去微云",
+      "oldMale": "uE24",
+      "youngMale": "uE24"
+    },
+    {
+      "id": "0276",
+      "han": "宝",
+      "hanDisplay": "宝",
+      "sense": null,
+      "rhyme": "效开一上豪帮",
+      "oldMale": "po53",
+      "youngMale": "po53"
+    },
+    {
+      "id": "0277",
+      "han": "抱",
+      "hanDisplay": "抱",
+      "sense": null,
+      "rhyme": "效开一上豪並",
+      "oldMale": "bo22",
+      "youngMale": "bo22"
+    },
+    {
+      "id": "0278",
+      "han": "毛",
+      "hanDisplay": "毛",
+      "sense": null,
+      "rhyme": "效开一平豪明",
+      "oldMale": "mo213",
+      "youngMale": "mo213"
+    },
+    {
+      "id": "0279",
+      "han": "帽",
+      "hanDisplay": "帽",
+      "sense": null,
+      "rhyme": "效开一去豪明",
+      "oldMale": "mo24",
+      "youngMale": "mo24"
+    },
+    {
+      "id": "0280",
+      "han": "刀",
+      "hanDisplay": "刀",
+      "sense": null,
+      "rhyme": "效开一平豪端",
+      "oldMale": "to534",
+      "youngMale": "to534"
+    },
+    {
+      "id": "0281",
+      "han": "讨",
+      "hanDisplay": "讨",
+      "sense": null,
+      "rhyme": "效开一上豪透",
+      "oldMale": "tho53",
+      "youngMale": "tho53"
+    },
+    {
+      "id": "0282",
+      "han": "桃",
+      "hanDisplay": "桃",
+      "sense": null,
+      "rhyme": "效开一平豪定",
+      "oldMale": "do213",
+      "youngMale": "do213"
+    },
+    {
+      "id": "0283",
+      "han": "道",
+      "hanDisplay": "道",
+      "sense": null,
+      "rhyme": "效开一上豪定",
+      "oldMale": "do22",
+      "youngMale": "do22"
+    },
+    {
+      "id": "0284",
+      "han": "脑",
+      "hanDisplay": "脑",
+      "sense": null,
+      "rhyme": "效开一上豪泥",
+      "oldMale": "no22",
+      "youngMale": "no22"
+    },
+    {
+      "id": "0285",
+      "han": "老",
+      "hanDisplay": "老",
+      "sense": null,
+      "rhyme": "效开一上豪来",
+      "oldMale": "lo22",
+      "youngMale": "lo22"
+    },
+    {
+      "id": "0286",
+      "han": "早",
+      "hanDisplay": "早",
+      "sense": null,
+      "rhyme": "效开一上豪精",
+      "oldMale": "tso53",
+      "youngMale": "tso53"
+    },
+    {
+      "id": "0287",
+      "han": "灶",
+      "hanDisplay": "灶",
+      "sense": null,
+      "rhyme": "效开一去豪精",
+      "oldMale": "tso334",
+      "youngMale": "tso334"
+    },
+    {
+      "id": "0288",
+      "han": "草",
+      "hanDisplay": "草",
+      "sense": null,
+      "rhyme": "效开一上豪清",
+      "oldMale": "tsho53",
+      "youngMale": "tsho53"
+    },
+    {
+      "id": "0289",
+      "han": "糙",
+      "hanDisplay": "糙",
+      "sense": null,
+      "rhyme": "效开一去豪清",
+      "oldMale": "tsh334",
+      "youngMale": "tsh534"
+    },
+    {
+      "id": "0290",
+      "han": "造",
+      "hanDisplay": "造",
+      "sense": null,
+      "rhyme": "效开一上豪从",
+      "oldMale": "zo22",
+      "youngMale": "zo22"
+    },
+    {
+      "id": "0291",
+      "han": "嫂",
+      "hanDisplay": "嫂",
+      "sense": null,
+      "rhyme": "效开一上豪心",
+      "oldMale": "so53",
+      "youngMale": "so53"
+    },
+    {
+      "id": "0292",
+      "han": "高",
+      "hanDisplay": "高",
+      "sense": null,
+      "rhyme": "效开一平豪见",
+      "oldMale": "ko534",
+      "youngMale": "ko534"
+    },
+    {
+      "id": "0293",
+      "han": "靠",
+      "hanDisplay": "靠",
+      "sense": null,
+      "rhyme": "效开一去豪溪",
+      "oldMale": "kho334",
+      "youngMale": "kho334"
+    },
+    {
+      "id": "0294",
+      "han": "熬",
+      "hanDisplay": "熬",
+      "sense": null,
+      "rhyme": "效开一平豪疑",
+      "oldMale": "ŋo213",
+      "youngMale": "ŋo213"
+    },
+    {
+      "id": "0295",
+      "han": "好",
+      "hanDisplay": "好",
+      "sense": null,
+      "rhyme": "效开一上豪晓",
+      "oldMale": "ho53",
+      "youngMale": "ho53"
+    },
+    {
+      "id": "0296",
+      "han": "号",
+      "hanDisplay": "号(名)",
+      "sense": "名",
+      "rhyme": "效开一去豪匣",
+      "oldMale": "o24",
+      "youngMale": "o24"
+    },
+    {
+      "id": "0297",
+      "han": "包",
+      "hanDisplay": "包",
+      "sense": null,
+      "rhyme": "效开二平肴帮",
+      "oldMale": "po534",
+      "youngMale": "po534"
+    },
+    {
+      "id": "0298",
+      "han": "饱",
+      "hanDisplay": "饱",
+      "sense": null,
+      "rhyme": "效开二上肴帮",
+      "oldMale": "po53",
+      "youngMale": "po53"
+    },
+    {
+      "id": "0299",
+      "han": "炮",
+      "hanDisplay": "炮",
+      "sense": null,
+      "rhyme": "效开二去肴滂",
+      "oldMale": "pho334",
+      "youngMale": "pho334"
+    },
+    {
+      "id": "0300",
+      "han": "猫",
+      "hanDisplay": "猫",
+      "sense": null,
+      "rhyme": "效开二平肴明",
+      "oldMale": "mo213",
+      "youngMale": "mo213"
+    },
+    {
+      "id": "0301",
+      "han": "闹",
+      "hanDisplay": "闹",
+      "sense": null,
+      "rhyme": "效开二去肴泥",
+      "oldMale": "no24",
+      "youngMale": "no24"
+    },
+    {
+      "id": "0302",
+      "han": "罩",
+      "hanDisplay": "罩",
+      "sense": null,
+      "rhyme": "效开二去肴知",
+      "oldMale": "tso334",
+      "youngMale": "tso334"
+    },
+    {
+      "id": "0303",
+      "han": "抓",
+      "hanDisplay": "抓",
+      "sense": null,
+      "rhyme": "效开二平肴庄",
+      "oldMale": "tsa534",
+      "youngMale": "tsa534"
+    },
+    {
+      "id": "0304",
+      "han": "找",
+      "hanDisplay": "找",
+      "sense": null,
+      "rhyme": "效开二上肴庄",
+      "oldMale": "ts053又",
+      "youngMale": "ts053"
+    },
+    {
+      "id": "0305",
+      "han": "抄",
+      "hanDisplay": "抄",
+      "sense": null,
+      "rhyme": "效开二平肴初",
+      "oldMale": "tsh534",
+      "youngMale": "tsh534"
+    },
+    {
+      "id": "0306",
+      "han": "交",
+      "hanDisplay": "交",
+      "sense": null,
+      "rhyme": "效开二平看见",
+      "oldMale": "tai534文 / ko534白",
+      "youngMale": "teio53文 / ko534白"
+    },
+    {
+      "id": "0307",
+      "han": "敲",
+      "hanDisplay": "敲",
+      "sense": null,
+      "rhyme": "效开二平肴溪",
+      "oldMale": "kho534",
+      "youngMale": "kho534"
+    },
+    {
+      "id": "0308",
+      "han": "孝",
+      "hanDisplay": "孝",
+      "sense": null,
+      "rhyme": "效开二去看晓",
+      "oldMale": "ciao334",
+      "youngMale": "ci034"
+    },
+    {
+      "id": "0309",
+      "han": "校",
+      "hanDisplay": "校(学~)",
+      "sense": "学~",
+      "rhyme": "效开二去看匣",
+      "oldMale": "ɦio24",
+      "youngMale": "ɦio24"
+    },
+    {
+      "id": "0310",
+      "han": "表",
+      "hanDisplay": "表",
+      "sense": null,
+      "rhyme": "效开三上宵帮",
+      "oldMale": "pio53",
+      "youngMale": "pio53"
+    },
+    {
+      "id": "0311",
+      "han": "票",
+      "hanDisplay": "票",
+      "sense": null,
+      "rhyme": "效开三去宵滂",
+      "oldMale": "pho334",
+      "youngMale": "pho334"
+    },
+    {
+      "id": "0312",
+      "han": "庙",
+      "hanDisplay": "庙",
+      "sense": null,
+      "rhyme": "效开三去宵明",
+      "oldMale": "mio24",
+      "youngMale": "mio24"
+    },
+    {
+      "id": "0313",
+      "han": "焦",
+      "hanDisplay": "焦",
+      "sense": null,
+      "rhyme": "效开三平宵精",
+      "oldMale": "tei534",
+      "youngMale": "tei534"
+    },
+    {
+      "id": "0314",
+      "han": "小",
+      "hanDisplay": "小",
+      "sense": null,
+      "rhyme": "效开三上宵心",
+      "oldMale": "eio53",
+      "youngMale": "eio53"
+    },
+    {
+      "id": "0315",
+      "han": "笑",
+      "hanDisplay": "笑",
+      "sense": null,
+      "rhyme": "效开三去宵心",
+      "oldMale": "eio334",
+      "youngMale": "eio334"
+    },
+    {
+      "id": "0316",
+      "han": "朝",
+      "hanDisplay": "朝",
+      "sense": null,
+      "rhyme": "效开三平宵澄",
+      "oldMale": "dzo213",
+      "youngMale": "dz0213"
+    },
+    {
+      "id": "0317",
+      "han": "照",
+      "hanDisplay": "照",
+      "sense": null,
+      "rhyme": "效开三去宵章",
+      "oldMale": "tso334",
+      "youngMale": "tso334"
+    },
+    {
+      "id": "0318",
+      "han": "烧",
+      "hanDisplay": "烧",
+      "sense": null,
+      "rhyme": "效开三平宵书",
+      "oldMale": "so534",
+      "youngMale": "so534"
+    },
+    {
+      "id": "0319",
+      "han": "绕",
+      "hanDisplay": "绕",
+      "sense": null,
+      "rhyme": "效开三去宵日",
+      "oldMale": "nio24",
+      "youngMale": "nio24"
+    },
+    {
+      "id": "0320",
+      "han": "桥",
+      "hanDisplay": "桥",
+      "sense": null,
+      "rhyme": "效开三平宵群",
+      "oldMale": "dzio213",
+      "youngMale": "dzio213"
+    },
+    {
+      "id": "0321",
+      "han": "轿",
+      "hanDisplay": "轿",
+      "sense": null,
+      "rhyme": "效开三去宵群",
+      "oldMale": "dzio24",
+      "youngMale": "dzio24"
+    },
+    {
+      "id": "0322",
+      "han": "腰",
+      "hanDisplay": "腰",
+      "sense": null,
+      "rhyme": "效开三平宵影",
+      "oldMale": "io534",
+      "youngMale": "io534"
+    },
+    {
+      "id": "0323",
+      "han": "要",
+      "hanDisplay": "要(重~)",
+      "sense": "重~",
+      "rhyme": "效开三去宵影",
+      "oldMale": "io334",
+      "youngMale": "io334"
+    },
+    {
+      "id": "0324",
+      "han": "摇",
+      "hanDisplay": "摇",
+      "sense": null,
+      "rhyme": "效开三平宵以",
+      "oldMale": "io213",
+      "youngMale": "i213"
+    },
+    {
+      "id": "0325",
+      "han": "鸟",
+      "hanDisplay": "鸟",
+      "sense": null,
+      "rhyme": "效开四上萧端",
+      "oldMale": "tio53白",
+      "youngMale": "tio53"
+    },
+    {
+      "id": "0326",
+      "han": "钓",
+      "hanDisplay": "钓",
+      "sense": null,
+      "rhyme": "效开四去萧端",
+      "oldMale": "tio334",
+      "youngMale": "tio334"
+    },
+    {
+      "id": "0327",
+      "han": "条",
+      "hanDisplay": "条",
+      "sense": null,
+      "rhyme": "效开四平萧定",
+      "oldMale": "di213",
+      "youngMale": "dia213"
+    },
+    {
+      "id": "0328",
+      "han": "料",
+      "hanDisplay": "料",
+      "sense": null,
+      "rhyme": "效开四去萧来",
+      "oldMale": "lio24",
+      "youngMale": "lio24"
+    },
+    {
+      "id": "0329",
+      "han": "箫",
+      "hanDisplay": "箫",
+      "sense": null,
+      "rhyme": "效开四平萧心",
+      "oldMale": "eio534",
+      "youngMale": "eio534"
+    },
+    {
+      "id": "0330",
+      "han": "叫",
+      "hanDisplay": "叫",
+      "sense": null,
+      "rhyme": "效开四去萧见",
+      "oldMale": "tio334",
+      "youngMale": "tio334"
+    },
+    {
+      "id": "0331",
+      "han": "母",
+      "hanDisplay": "母",
+      "sense": null,
+      "rhyme": "流开一上侯明",
+      "oldMale": "m213",
+      "youngMale": "m223"
+    },
+    {
+      "id": "0332",
+      "han": "抖",
+      "hanDisplay": "抖",
+      "sense": null,
+      "rhyme": "流开一上侯端",
+      "oldMale": "ty53",
+      "youngMale": "ty53"
+    },
+    {
+      "id": "0333",
+      "han": "偷",
+      "hanDisplay": "偷",
+      "sense": null,
+      "rhyme": "流开一平侯透",
+      "oldMale": "thy534",
+      "youngMale": "thy534"
+    },
+    {
+      "id": "0334",
+      "han": "头",
+      "hanDisplay": "头",
+      "sense": null,
+      "rhyme": "流开一平侯定",
+      "oldMale": "dy213",
+      "youngMale": "dy213"
+    },
+    {
+      "id": "0335",
+      "han": "豆",
+      "hanDisplay": "豆",
+      "sense": null,
+      "rhyme": "流开一去侯定",
+      "oldMale": "dy24",
+      "youngMale": "dy24"
+    },
+    {
+      "id": "0336",
+      "han": "楼",
+      "hanDisplay": "楼",
+      "sense": null,
+      "rhyme": "流开一平侯来",
+      "oldMale": "ly213",
+      "youngMale": "ly213"
+    },
+    {
+      "id": "0337",
+      "han": "走",
+      "hanDisplay": "走",
+      "sense": null,
+      "rhyme": "流开一上侯精",
+      "oldMale": "teiy53",
+      "youngMale": "teiy53"
+    },
+    {
+      "id": "0338",
+      "han": "凑",
+      "hanDisplay": "凑",
+      "sense": null,
+      "rhyme": "流开一去侯清",
+      "oldMale": "tehiy334",
+      "youngMale": "tehiy334"
+    },
+    {
+      "id": "0339",
+      "han": "钩",
+      "hanDisplay": "钩",
+      "sense": null,
+      "rhyme": "流开一平侯见",
+      "oldMale": "ky534",
+      "youngMale": "ky534"
+    },
+    {
+      "id": "0340",
+      "han": "狗",
+      "hanDisplay": "狗",
+      "sense": null,
+      "rhyme": "流开一上侯见",
+      "oldMale": "ky53",
+      "youngMale": "ky53"
+    },
+    {
+      "id": "0341",
+      "han": "够",
+      "hanDisplay": "够",
+      "sense": null,
+      "rhyme": "流开一去侯见",
+      "oldMale": "ky334",
+      "youngMale": "ky334"
+    },
+    {
+      "id": "0342",
+      "han": "口",
+      "hanDisplay": "口",
+      "sense": null,
+      "rhyme": "流开一上侯溪",
+      "oldMale": "khy53",
+      "youngMale": "khy53"
+    },
+    {
+      "id": "0343",
+      "han": "藕",
+      "hanDisplay": "藕",
+      "sense": null,
+      "rhyme": "流开一上侯疑",
+      "oldMale": "no24",
+      "youngMale": "no24"
+    },
+    {
+      "id": "0344",
+      "han": "后",
+      "hanDisplay": "后",
+      "sense": null,
+      "rhyme": "流开一上侯匣",
+      "oldMale": "y24",
+      "youngMale": "y24"
+    },
+    {
+      "id": "0345",
+      "han": "厚",
+      "hanDisplay": "厚",
+      "sense": null,
+      "rhyme": "流开一上侯匣",
+      "oldMale": "gy22",
+      "youngMale": "gY24"
+    },
+    {
+      "id": "0346",
+      "han": "富",
+      "hanDisplay": "富",
+      "sense": null,
+      "rhyme": "流开三去尤非",
+      "oldMale": "fu334",
+      "youngMale": "fu334"
+    },
+    {
+      "id": "0347",
+      "han": "副",
+      "hanDisplay": "副",
+      "sense": null,
+      "rhyme": "流开三去尤敷",
+      "oldMale": "fu334",
+      "youngMale": "fu334"
+    },
+    {
+      "id": "0348",
+      "han": "浮",
+      "hanDisplay": "浮",
+      "sense": null,
+      "rhyme": "流开三平尤奉",
+      "oldMale": "u213",
+      "youngMale": "u213"
+    },
+    {
+      "id": "0349",
+      "han": "妇",
+      "hanDisplay": "妇",
+      "sense": null,
+      "rhyme": "流开三上尤奉",
+      "oldMale": "u24",
+      "youngMale": "u223"
+    },
+    {
+      "id": "0350",
+      "han": "流",
+      "hanDisplay": "流",
+      "sense": null,
+      "rhyme": "流开三平尤来",
+      "oldMale": "liy213",
+      "youngMale": "liy213"
+    },
+    {
+      "id": "0351",
+      "han": "酒",
+      "hanDisplay": "酒",
+      "sense": null,
+      "rhyme": "流开三上尤精",
+      "oldMale": "teiy53",
+      "youngMale": "teiy53"
+    },
+    {
+      "id": "0352",
+      "han": "修",
+      "hanDisplay": "修",
+      "sense": null,
+      "rhyme": "流开三平尤心",
+      "oldMale": "eiy534",
+      "youngMale": "eiy534"
+    },
+    {
+      "id": "0353",
+      "han": "袖",
+      "hanDisplay": "袖",
+      "sense": null,
+      "rhyme": "流开三去尤邪",
+      "oldMale": "zizy24",
+      "youngMale": "zizy24"
+    },
+    {
+      "id": "0354",
+      "han": "抽",
+      "hanDisplay": "抽",
+      "sense": null,
+      "rhyme": "流开三平尤彻",
+      "oldMale": "tchiy534",
+      "youngMale": "tchiy534"
+    },
+    {
+      "id": "0355",
+      "han": "绸",
+      "hanDisplay": "绸",
+      "sense": null,
+      "rhyme": "流开三平尤澄",
+      "oldMale": "dziy213",
+      "youngMale": "dziy213"
+    },
+    {
+      "id": "0356",
+      "han": "愁",
+      "hanDisplay": "愁",
+      "sense": null,
+      "rhyme": "流开三平尤崇",
+      "oldMale": "dziy213",
+      "youngMale": "dziy213"
+    },
+    {
+      "id": "0357",
+      "han": "瘦",
+      "hanDisplay": "瘦",
+      "sense": null,
+      "rhyme": "流开三去尤生",
+      "oldMale": "eiy334",
+      "youngMale": "eiy334"
+    },
+    {
+      "id": "0358",
+      "han": "州",
+      "hanDisplay": "州",
+      "sense": null,
+      "rhyme": "流开三平尤章",
+      "oldMale": "teiy534",
+      "youngMale": "teiy534"
+    },
+    {
+      "id": "0359",
+      "han": "臭",
+      "hanDisplay": "臭",
+      "sense": null,
+      "rhyme": "流开三去尤昌",
+      "oldMale": "tchiy334",
+      "youngMale": "tchiy334"
+    },
+    {
+      "id": "0360",
+      "han": "手",
+      "hanDisplay": "手",
+      "sense": null,
+      "rhyme": "流开三上尤书",
+      "oldMale": "eiy53",
+      "youngMale": "eiy53"
+    },
+    {
+      "id": "0361",
+      "han": "寿",
+      "hanDisplay": "寿",
+      "sense": null,
+      "rhyme": "流开三去尤禅",
+      "oldMale": "ziy24",
+      "youngMale": "ziv24"
+    },
+    {
+      "id": "0362",
+      "han": "九",
+      "hanDisplay": "九",
+      "sense": null,
+      "rhyme": "流开三上尤见",
+      "oldMale": "teiy53",
+      "youngMale": "teiy53"
+    },
+    {
+      "id": "0363",
+      "han": "球",
+      "hanDisplay": "球",
+      "sense": null,
+      "rhyme": "流开三平尤群",
+      "oldMale": "dziy213",
+      "youngMale": "dziy213"
+    },
+    {
+      "id": "0364",
+      "han": "舅",
+      "hanDisplay": "舅",
+      "sense": null,
+      "rhyme": "流开三上尤群",
+      "oldMale": "dziy24",
+      "youngMale": "dziy24"
+    },
+    {
+      "id": "0365",
+      "han": "旧",
+      "hanDisplay": "旧",
+      "sense": null,
+      "rhyme": "流开三去尤群",
+      "oldMale": "dziy24",
+      "youngMale": "dziy24"
+    },
+    {
+      "id": "0366",
+      "han": "牛",
+      "hanDisplay": "牛",
+      "sense": null,
+      "rhyme": "流开三平尤疑",
+      "oldMale": "niiy213",
+      "youngMale": "niiy213"
+    },
+    {
+      "id": "0367",
+      "han": "休",
+      "hanDisplay": "休",
+      "sense": null,
+      "rhyme": "流开三平尤晓",
+      "oldMale": "eiy534",
+      "youngMale": "eiy534"
+    },
+    {
+      "id": "0368",
+      "han": "优",
+      "hanDisplay": "优",
+      "sense": null,
+      "rhyme": "流开三平尤影",
+      "oldMale": "iy534",
+      "youngMale": "iy534"
+    },
+    {
+      "id": "0369",
+      "han": "有",
+      "hanDisplay": "有",
+      "sense": null,
+      "rhyme": "流开三上尤云",
+      "oldMale": "iy22",
+      "youngMale": "iy24"
+    },
+    {
+      "id": "0370",
+      "han": "右",
+      "hanDisplay": "右",
+      "sense": null,
+      "rhyme": "流开三去尤云",
+      "oldMale": "iy24",
+      "youngMale": "iy24"
+    },
+    {
+      "id": "0371",
+      "han": "油",
+      "hanDisplay": "油",
+      "sense": null,
+      "rhyme": "流开三平尤以",
+      "oldMale": "iy213",
+      "youngMale": "iy213"
+    },
+    {
+      "id": "0372",
+      "han": "丢",
+      "hanDisplay": "丢",
+      "sense": null,
+      "rhyme": "流开三平幽端",
+      "oldMale": "ty534",
+      "youngMale": "ty534"
+    },
+    {
+      "id": "0373",
+      "han": "幼",
+      "hanDisplay": "幼",
+      "sense": null,
+      "rhyme": "流开三去幽影",
+      "oldMale": "iy334",
+      "youngMale": "iy334"
+    },
+    {
+      "id": "0374",
+      "han": "贪",
+      "hanDisplay": "贪",
+      "sense": null,
+      "rhyme": "咸开一平覃透",
+      "oldMale": "tb~c534",
+      "youngMale": "tdce534"
+    },
+    {
+      "id": "0375",
+      "han": "潭",
+      "hanDisplay": "潭",
+      "sense": null,
+      "rhyme": "咸开一平覃定",
+      "oldMale": "dce213白",
+      "youngMale": "dce213"
+    },
+    {
+      "id": "0376",
+      "han": "南",
+      "hanDisplay": "南",
+      "sense": null,
+      "rhyme": "咸开一平覃泥",
+      "oldMale": "noe213",
+      "youngMale": "noe213"
+    },
+    {
+      "id": "0377",
+      "han": "蚕",
+      "hanDisplay": "蚕",
+      "sense": null,
+      "rhyme": "咸开一平覃从",
+      "oldMale": "zoce213",
+      "youngMale": "zoce213"
+    },
+    {
+      "id": "0378",
+      "han": "感",
+      "hanDisplay": "感",
+      "sense": null,
+      "rhyme": "咸开一上覃见",
+      "oldMale": "koe53",
+      "youngMale": "koe53"
+    },
+    {
+      "id": "0379",
+      "han": "含",
+      "hanDisplay": "含",
+      "sense": null,
+      "rhyme": "咸开一平覃匣",
+      "oldMale": "oe213",
+      "youngMale": "oe213"
+    },
+    {
+      "id": "0380",
+      "han": "暗",
+      "hanDisplay": "暗",
+      "sense": null,
+      "rhyme": "咸开一去覃影",
+      "oldMale": "oe334",
+      "youngMale": "oe334"
+    },
+    {
+      "id": "0381",
+      "han": "搭",
+      "hanDisplay": "搭",
+      "sense": null,
+      "rhyme": "咸开一人合端",
+      "oldMale": "taʔ5",
+      "youngMale": "taʔ5"
+    },
+    {
+      "id": "0382",
+      "han": "踏",
+      "hanDisplay": "踏",
+      "sense": null,
+      "rhyme": "咸开一人合透",
+      "oldMale": "daʔ2",
+      "youngMale": "daʔ2"
+    },
+    {
+      "id": "0383",
+      "han": "拉",
+      "hanDisplay": "拉",
+      "sense": null,
+      "rhyme": "咸开一人合来",
+      "oldMale": "la534",
+      "youngMale": "la534"
+    },
+    {
+      "id": "0384",
+      "han": "杂",
+      "hanDisplay": "杂",
+      "sense": null,
+      "rhyme": "咸开一人合从",
+      "oldMale": "zaʔ2",
+      "youngMale": "zaʔ2"
+    },
+    {
+      "id": "0385",
+      "han": "鸽",
+      "hanDisplay": "鸽",
+      "sense": null,
+      "rhyme": "咸开一人合见",
+      "oldMale": "kaʔ5",
+      "youngMale": "kaʔ5"
+    },
+    {
+      "id": "0386",
+      "han": "盒",
+      "hanDisplay": "盒",
+      "sense": null,
+      "rhyme": "咸开一人合匣",
+      "oldMale": "ɦaʔ2",
+      "youngMale": "ɦaʔ2"
+    },
+    {
+      "id": "0387",
+      "han": "胆",
+      "hanDisplay": "胆",
+      "sense": null,
+      "rhyme": "咸开一上谈端",
+      "oldMale": "ta53",
+      "youngMale": "ta53"
+    },
+    {
+      "id": "0388",
+      "han": "毯",
+      "hanDisplay": "毯",
+      "sense": null,
+      "rhyme": "咸开一上谈透",
+      "oldMale": "tha53",
+      "youngMale": "tha53"
+    },
+    {
+      "id": "0389",
+      "han": "淡",
+      "hanDisplay": "淡",
+      "sense": null,
+      "rhyme": "咸开一上谈定",
+      "oldMale": "da22",
+      "youngMale": "da22"
+    },
+    {
+      "id": "0390",
+      "han": "蓝",
+      "hanDisplay": "蓝",
+      "sense": null,
+      "rhyme": "咸开一平谈来",
+      "oldMale": "la213",
+      "youngMale": "la213"
+    },
+    {
+      "id": "0391",
+      "han": "三",
+      "hanDisplay": "三",
+      "sense": null,
+      "rhyme": "咸开一平谈心",
+      "oldMale": "sa534",
+      "youngMale": "sa534"
+    },
+    {
+      "id": "0392",
+      "han": "甘",
+      "hanDisplay": "甘",
+      "sense": null,
+      "rhyme": "咸开一平谈见",
+      "oldMale": "ka534",
+      "youngMale": "ka534"
+    },
+    {
+      "id": "0393",
+      "han": "敢",
+      "hanDisplay": "敢",
+      "sense": null,
+      "rhyme": "咸开一上谈见",
+      "oldMale": "ka53",
+      "youngMale": "ka53"
+    },
+    {
+      "id": "0394",
+      "han": "喊",
+      "hanDisplay": "喊",
+      "sense": null,
+      "rhyme": "咸开一上谈晓",
+      "oldMale": "he334",
+      "youngMale": "he334"
+    },
+    {
+      "id": "0395",
+      "han": "塔",
+      "hanDisplay": "塔",
+      "sense": null,
+      "rhyme": "咸开一人盖透",
+      "oldMale": "tʔ5",
+      "youngMale": "tʔ5"
+    },
+    {
+      "id": "0396",
+      "han": "蜡",
+      "hanDisplay": "蜡",
+      "sense": null,
+      "rhyme": "咸开一人盖来",
+      "oldMale": "leʔ2",
+      "youngMale": "leʔ2"
+    },
+    {
+      "id": "0397",
+      "han": "赚",
+      "hanDisplay": "赚",
+      "sense": null,
+      "rhyme": "咸开二去咸澄",
+      "oldMale": "dz24",
+      "youngMale": "dz24"
+    },
+    {
+      "id": "0398",
+      "han": "杉",
+      "hanDisplay": "杉",
+      "sense": null,
+      "rhyme": "咸开二平咸生",
+      "oldMale": "sa534",
+      "youngMale": "sa534"
+    },
+    {
+      "id": "0399",
+      "han": "减",
+      "hanDisplay": "减",
+      "sense": null,
+      "rhyme": "咸开二上咸见",
+      "oldMale": "ka53",
+      "youngMale": "ka53"
+    },
+    {
+      "id": "0400",
+      "han": "咸",
+      "hanDisplay": "咸",
+      "sense": null,
+      "rhyme": "咸开二平咸匣",
+      "oldMale": "ɦa213",
+      "youngMale": "ɦa213"
+    },
+    {
+      "id": "0401",
+      "han": "插",
+      "hanDisplay": "插",
+      "sense": null,
+      "rhyme": "咸开二人治初",
+      "oldMale": "tsheʔ5",
+      "youngMale": "tsheʔ5"
+    },
+    {
+      "id": "0402",
+      "han": "闸",
+      "hanDisplay": "闸",
+      "sense": null,
+      "rhyme": "咸开二人治崇",
+      "oldMale": "zaʔ2",
+      "youngMale": "zaʔ2"
+    },
+    {
+      "id": "0403",
+      "han": "夹",
+      "hanDisplay": "夹",
+      "sense": null,
+      "rhyme": "咸开二人治见",
+      "oldMale": "kaʔ5",
+      "youngMale": "kaʔ5"
+    },
+    {
+      "id": "0404",
+      "han": "衫",
+      "hanDisplay": "衫",
+      "sense": null,
+      "rhyme": "咸开二平衔生",
+      "oldMale": "sa534",
+      "youngMale": "sa534"
+    },
+    {
+      "id": "0405",
+      "han": "监",
+      "hanDisplay": "监",
+      "sense": null,
+      "rhyme": "咸开二平衔见",
+      "oldMale": "kE334",
+      "youngMale": "kE534"
+    },
+    {
+      "id": "0406",
+      "han": "岩",
+      "hanDisplay": "岩",
+      "sense": null,
+      "rhyme": "咸开二平衔疑",
+      "oldMale": "ne213",
+      "youngMale": "ne213"
+    },
+    {
+      "id": "0407",
+      "han": "甲",
+      "hanDisplay": "甲",
+      "sense": null,
+      "rhyme": "咸开二人狎见",
+      "oldMale": "kaʔ5",
+      "youngMale": "kaʔ5"
+    },
+    {
+      "id": "0408",
+      "han": "鸭",
+      "hanDisplay": "鸭",
+      "sense": null,
+      "rhyme": "咸开二人押影",
+      "oldMale": "aʔ5",
+      "youngMale": "aʔ5"
+    },
+    {
+      "id": "0409",
+      "han": "黏",
+      "hanDisplay": "黏",
+      "sense": null,
+      "rhyme": "咸开三平盐泥",
+      "oldMale": "nie534",
+      "youngMale": "nie534"
+    },
+    {
+      "id": "0410",
+      "han": "尖",
+      "hanDisplay": "尖",
+      "sense": null,
+      "rhyme": "咸开三平盐精",
+      "oldMale": "taié534",
+      "youngMale": "taié534"
+    },
+    {
+      "id": "0411",
+      "han": "签",
+      "hanDisplay": "签",
+      "sense": null,
+      "rhyme": "咸开三平盐清",
+      "oldMale": "tchie534",
+      "youngMale": "tchie534"
+    },
+    {
+      "id": "0412",
+      "han": "占",
+      "hanDisplay": "占",
+      "sense": null,
+      "rhyme": "咸开三去盐章",
+      "oldMale": "tsαe534",
+      "youngMale": "tsαe334"
+    },
+    {
+      "id": "0413",
+      "han": "染",
+      "hanDisplay": "染",
+      "sense": null,
+      "rhyme": "咸开三上盐日",
+      "oldMale": "zoe22",
+      "youngMale": "zoe223文"
+    },
+    {
+      "id": "0414",
+      "han": "钳",
+      "hanDisplay": "钳",
+      "sense": null,
+      "rhyme": "咸开三平盐群",
+      "oldMale": "dzie213",
+      "youngMale": "dzie213"
+    },
+    {
+      "id": "0415",
+      "han": "验",
+      "hanDisplay": "验",
+      "sense": null,
+      "rhyme": "咸开三去盐疑",
+      "oldMale": "nie24",
+      "youngMale": "nie24"
+    },
+    {
+      "id": "0416",
+      "han": "险",
+      "hanDisplay": "险",
+      "sense": null,
+      "rhyme": "咸开三上盐晓",
+      "oldMale": "Gle53",
+      "youngMale": "Gle53"
+    },
+    {
+      "id": "0417",
+      "han": "厌",
+      "hanDisplay": "厌",
+      "sense": null,
+      "rhyme": "咸开三去盐影",
+      "oldMale": "nie24",
+      "youngMale": "nie24"
+    },
+    {
+      "id": "0418",
+      "han": "炎",
+      "hanDisplay": "炎",
+      "sense": null,
+      "rhyme": "咸开三平盐云",
+      "oldMale": "ie213",
+      "youngMale": "ie213"
+    },
+    {
+      "id": "0419",
+      "han": "盐",
+      "hanDisplay": "盐",
+      "sense": null,
+      "rhyme": "咸开三平盐以",
+      "oldMale": "ie213",
+      "youngMale": "ie213"
+    },
+    {
+      "id": "0420",
+      "han": "接",
+      "hanDisplay": "接",
+      "sense": null,
+      "rhyme": "咸开三人叶精",
+      "oldMale": "taieʔ5",
+      "youngMale": "taieʔ5"
+    },
+    {
+      "id": "0421",
+      "han": "折",
+      "hanDisplay": "折",
+      "sense": null,
+      "rhyme": "山开三人薛章",
+      "oldMale": "tsap5",
+      "youngMale": "tsap5"
+    },
+    {
+      "id": "0422",
+      "han": "叶",
+      "hanDisplay": "叶(树~)",
+      "sense": "树~",
+      "rhyme": "咸开三人叶以",
+      "oldMale": "ie2",
+      "youngMale": "ie2"
+    },
+    {
+      "id": "0423",
+      "han": "剑",
+      "hanDisplay": "剑",
+      "sense": null,
+      "rhyme": "咸开三去严见",
+      "oldMale": "taié334",
+      "youngMale": "taié334"
+    },
+    {
+      "id": "0424",
+      "han": "欠",
+      "hanDisplay": "欠",
+      "sense": null,
+      "rhyme": "咸开三去严溪",
+      "oldMale": "tghie334",
+      "youngMale": "nie213白 / ie213文"
+    },
+    {
+      "id": "0425",
+      "han": "严",
+      "hanDisplay": "严",
+      "sense": null,
+      "rhyme": "咸开三平严疑",
+      "oldMale": "nie213",
+      "youngMale": "nie213"
+    },
+    {
+      "id": "0426",
+      "han": "业",
+      "hanDisplay": "业",
+      "sense": null,
+      "rhyme": "咸开三人业疑",
+      "oldMale": "nieʔ2",
+      "youngMale": "niaʔ2"
+    },
+    {
+      "id": "0427",
+      "han": "点",
+      "hanDisplay": "点",
+      "sense": null,
+      "rhyme": "咸开四上添端",
+      "oldMale": "tie334",
+      "youngMale": "tié53"
+    },
+    {
+      "id": "0428",
+      "han": "店",
+      "hanDisplay": "店",
+      "sense": null,
+      "rhyme": "咸开四去添端",
+      "oldMale": "tie334",
+      "youngMale": "tie334"
+    },
+    {
+      "id": "0429",
+      "han": "添",
+      "hanDisplay": "添",
+      "sense": null,
+      "rhyme": "咸开四平添透",
+      "oldMale": "thie534",
+      "youngMale": "t'ie534"
+    },
+    {
+      "id": "0430",
+      "han": "甜",
+      "hanDisplay": "甜",
+      "sense": null,
+      "rhyme": "咸开四平添定",
+      "oldMale": "die213",
+      "youngMale": "die213"
+    },
+    {
+      "id": "0431",
+      "han": "念",
+      "hanDisplay": "念",
+      "sense": null,
+      "rhyme": "咸开四去添泥",
+      "oldMale": "nie24",
+      "youngMale": "nie24"
+    },
+    {
+      "id": "0432",
+      "han": "嫌",
+      "hanDisplay": "嫌",
+      "sense": null,
+      "rhyme": "咸开四平添匣",
+      "oldMale": "ie334",
+      "youngMale": "ie213"
+    },
+    {
+      "id": "0433",
+      "han": "跌",
+      "hanDisplay": "跌",
+      "sense": null,
+      "rhyme": "咸开四人帖端",
+      "oldMale": "tieʔ",
+      "youngMale": "tiaʔ"
+    },
+    {
+      "id": "0434",
+      "han": "贴",
+      "hanDisplay": "贴",
+      "sense": null,
+      "rhyme": "咸开四人帖透",
+      "oldMale": "t'ieʔ",
+      "youngMale": "t'iaʔ"
+    },
+    {
+      "id": "0435",
+      "han": "碟",
+      "hanDisplay": "碟",
+      "sense": null,
+      "rhyme": "咸开四人帖定",
+      "oldMale": "dieʔ",
+      "youngMale": "diaʔ"
+    },
+    {
+      "id": "0436",
+      "han": "协",
+      "hanDisplay": "协",
+      "sense": null,
+      "rhyme": "咸开四人帖匣",
+      "oldMale": "iaʔ",
+      "youngMale": "iaʔ"
+    },
+    {
+      "id": "0437",
+      "han": "犯",
+      "hanDisplay": "犯",
+      "sense": null,
+      "rhyme": "咸合三上凡奉",
+      "oldMale": "ue22",
+      "youngMale": "vE223"
+    },
+    {
+      "id": "0438",
+      "han": "法",
+      "hanDisplay": "法",
+      "sense": null,
+      "rhyme": "咸合三人乏非",
+      "oldMale": "feʔ",
+      "youngMale": "faʔ"
+    },
+    {
+      "id": "0439",
+      "han": "品",
+      "hanDisplay": "品",
+      "sense": null,
+      "rhyme": "深开三上侵滂",
+      "oldMale": "p'hin53",
+      "youngMale": "p'hin53"
+    },
+    {
+      "id": "0440",
+      "han": "林",
+      "hanDisplay": "林",
+      "sense": null,
+      "rhyme": "深开三平侵来",
+      "oldMale": "lin213",
+      "youngMale": "lin213"
+    },
+    {
+      "id": "0441",
+      "han": "浸",
+      "hanDisplay": "浸",
+      "sense": null,
+      "rhyme": "深开三去侵精",
+      "oldMale": "tein334",
+      "youngMale": "tein334"
+    },
+    {
+      "id": "0442",
+      "han": "心",
+      "hanDisplay": "心",
+      "sense": null,
+      "rhyme": "深开三平侵心",
+      "oldMale": "ein534",
+      "youngMale": "ein534"
+    },
+    {
+      "id": "0443",
+      "han": "寻",
+      "hanDisplay": "寻",
+      "sense": null,
+      "rhyme": "深开三平侵邪",
+      "oldMale": "zin213",
+      "youngMale": "zin213"
+    },
+    {
+      "id": "0444",
+      "han": "沉",
+      "hanDisplay": "沉",
+      "sense": null,
+      "rhyme": "深开三平侵澄",
+      "oldMale": "dzen213",
+      "youngMale": "dzan213"
+    },
+    {
+      "id": "0445",
+      "han": "参",
+      "hanDisplay": "参(人~)",
+      "sense": "人~",
+      "rhyme": "咸开一平侵生",
+      "oldMale": "sen53",
+      "youngMale": "sang34"
+    },
+    {
+      "id": "0446",
+      "han": "针",
+      "hanDisplay": "针",
+      "sense": null,
+      "rhyme": "深开三平侵章",
+      "oldMale": "tseng534",
+      "youngMale": "tsang534"
+    },
+    {
+      "id": "0447",
+      "han": "深",
+      "hanDisplay": "深",
+      "sense": null,
+      "rhyme": "深开三平侵书",
+      "oldMale": "sen534",
+      "youngMale": "sang534"
+    },
+    {
+      "id": "0448",
+      "han": "任",
+      "hanDisplay": "任(贵~)",
+      "sense": "贵~",
+      "rhyme": "深开三去侵日",
+      "oldMale": "zeng24",
+      "youngMale": "zang24"
+    },
+    {
+      "id": "0449",
+      "han": "金",
+      "hanDisplay": "金",
+      "sense": null,
+      "rhyme": "深开三平侵见",
+      "oldMale": "teing534",
+      "youngMale": "teing534"
+    },
+    {
+      "id": "0450",
+      "han": "琴",
+      "hanDisplay": "琴",
+      "sense": null,
+      "rhyme": "深开三平侵群",
+      "oldMale": "dzin213",
+      "youngMale": "dzin213"
+    },
+    {
+      "id": "0451",
+      "han": "音",
+      "hanDisplay": "音",
+      "sense": null,
+      "rhyme": "深开三平侵影",
+      "oldMale": "ing534",
+      "youngMale": "ing534"
+    },
+    {
+      "id": "0452",
+      "han": "立",
+      "hanDisplay": "立",
+      "sense": null,
+      "rhyme": "深开三人缉来",
+      "oldMale": "liep2",
+      "youngMale": "liai2"
+    },
+    {
+      "id": "0453",
+      "han": "集",
+      "hanDisplay": "集",
+      "sense": null,
+      "rhyme": "深开三人缉从",
+      "oldMale": "dziep2",
+      "youngMale": "dziap2"
+    },
+    {
+      "id": "0454",
+      "han": "习",
+      "hanDisplay": "习",
+      "sense": null,
+      "rhyme": "深开三人缉邪",
+      "oldMale": "dziep2",
+      "youngMale": "zior文 / dziaʔ白"
+    },
+    {
+      "id": "0455",
+      "han": "汁",
+      "hanDisplay": "汁",
+      "sense": null,
+      "rhyme": "深开三人缉章",
+      "oldMale": "tsap5",
+      "youngMale": "tsap5"
+    },
+    {
+      "id": "0456",
+      "han": "十",
+      "hanDisplay": "十",
+      "sense": null,
+      "rhyme": "深开三人缉禅",
+      "oldMale": "zap2",
+      "youngMale": "zap2"
+    },
+    {
+      "id": "0457",
+      "han": "入",
+      "hanDisplay": "入",
+      "sense": null,
+      "rhyme": "深开三人缉日",
+      "oldMale": "zap2",
+      "youngMale": "zap2"
+    },
+    {
+      "id": "0458",
+      "han": "急",
+      "hanDisplay": "急",
+      "sense": null,
+      "rhyme": "深开三人缉见",
+      "oldMale": "tciep5",
+      "youngMale": "tciap5"
+    },
+    {
+      "id": "0459",
+      "han": "及",
+      "hanDisplay": "及",
+      "sense": null,
+      "rhyme": "深开三人缉群",
+      "oldMale": "dziep2",
+      "youngMale": "dziap2"
+    },
+    {
+      "id": "0460",
+      "han": "吸",
+      "hanDisplay": "吸",
+      "sense": null,
+      "rhyme": "深开三人缉晓",
+      "oldMale": "eiep5",
+      "youngMale": "ciap5"
+    },
+    {
+      "id": "0461",
+      "han": "单",
+      "hanDisplay": "单(简~)",
+      "sense": "简~",
+      "rhyme": "山开一平寒端",
+      "oldMale": "t~534",
+      "youngMale": "t~534"
+    },
+    {
+      "id": "0462",
+      "han": "炭",
+      "hanDisplay": "炭",
+      "sense": null,
+      "rhyme": "山开一去寒透",
+      "oldMale": "th~334",
+      "youngMale": "t~h~334"
+    },
+    {
+      "id": "0463",
+      "han": "弹",
+      "hanDisplay": "弹(~琴)",
+      "sense": "~琴",
+      "rhyme": "山开一平寒定",
+      "oldMale": "d~213",
+      "youngMale": "d~213"
+    },
+    {
+      "id": "0464",
+      "han": "难",
+      "hanDisplay": "难(~易)",
+      "sense": "~易",
+      "rhyme": "山开一平寒泥",
+      "oldMale": "n~213",
+      "youngMale": "n~213"
+    },
+    {
+      "id": "0465",
+      "han": "兰",
+      "hanDisplay": "兰",
+      "sense": null,
+      "rhyme": "山开一平寒来",
+      "oldMale": "l~213",
+      "youngMale": "l~213"
+    },
+    {
+      "id": "0466",
+      "han": "懒",
+      "hanDisplay": "懒",
+      "sense": null,
+      "rhyme": "山开一上寒来",
+      "oldMale": "l~22",
+      "youngMale": "l~223"
+    },
+    {
+      "id": "0467",
+      "han": "烂",
+      "hanDisplay": "烂",
+      "sense": null,
+      "rhyme": "山开一去寒来",
+      "oldMale": "l~24",
+      "youngMale": "l~24"
+    },
+    {
+      "id": "0468",
+      "han": "伞",
+      "hanDisplay": "伞",
+      "sense": null,
+      "rhyme": "山开一上寒心",
+      "oldMale": "s~53",
+      "youngMale": "s~53"
+    },
+    {
+      "id": "0469",
+      "han": "肝",
+      "hanDisplay": "肝",
+      "sense": null,
+      "rhyme": "山开一平寒见",
+      "oldMale": "k~o~534",
+      "youngMale": "k~o~534"
+    },
+    {
+      "id": "0470",
+      "han": "看",
+      "hanDisplay": "看(看见)",
+      "sense": "看见",
+      "rhyme": "山开一去寒溪",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0471",
+      "han": "岸",
+      "hanDisplay": "岸",
+      "sense": null,
+      "rhyme": "山开一去寒疑",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0472",
+      "han": "汉",
+      "hanDisplay": "汉",
+      "sense": null,
+      "rhyme": "山开一去寒晓",
+      "oldMale": "ho~334",
+      "youngMale": ""
+    },
+    {
+      "id": "0473",
+      "han": "汗",
+      "hanDisplay": "汗",
+      "sense": null,
+      "rhyme": "山开一去寒匣",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0474",
+      "han": "安",
+      "hanDisplay": "安",
+      "sense": null,
+      "rhyme": "山开一平寒影",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0475",
+      "han": "达",
+      "hanDisplay": "达",
+      "sense": null,
+      "rhyme": "山开一人易定",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0476",
+      "han": "辣",
+      "hanDisplay": "辣",
+      "sense": null,
+      "rhyme": "山开一人易来",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0477",
+      "han": "擦",
+      "hanDisplay": "擦",
+      "sense": null,
+      "rhyme": "山开一人易清",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0478",
+      "han": "割",
+      "hanDisplay": "割",
+      "sense": null,
+      "rhyme": "山开一人易见",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0479",
+      "han": "渴",
+      "hanDisplay": "渴",
+      "sense": null,
+      "rhyme": "山开一人易溪",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0480",
+      "han": "扮",
+      "hanDisplay": "扮",
+      "sense": null,
+      "rhyme": "山开二去山帮",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0481",
+      "han": "办",
+      "hanDisplay": "办",
+      "sense": null,
+      "rhyme": "山开二去山並",
+      "oldMale": "bε24",
+      "youngMale": "bε24"
+    },
+    {
+      "id": "0482",
+      "han": "铲",
+      "hanDisplay": "铲",
+      "sense": null,
+      "rhyme": "山开二上山初",
+      "oldMale": "tsh53",
+      "youngMale": "tsh53"
+    },
+    {
+      "id": "0483",
+      "han": "山",
+      "hanDisplay": "山",
+      "sense": null,
+      "rhyme": "山开二平山生",
+      "oldMale": "sE534",
+      "youngMale": "sE534"
+    },
+    {
+      "id": "0484",
+      "han": "产",
+      "hanDisplay": "产(产妇)",
+      "sense": "产妇",
+      "rhyme": "山开二上山生",
+      "oldMale": "tsh53",
+      "youngMale": "tsh53"
+    },
+    {
+      "id": "0485",
+      "han": "间",
+      "hanDisplay": "间(房间)",
+      "sense": "房间",
+      "rhyme": "山开二平山见",
+      "oldMale": "kE534",
+      "youngMale": "kE534"
+    },
+    {
+      "id": "0486",
+      "han": "眼",
+      "hanDisplay": "眼",
+      "sense": null,
+      "rhyme": "山开二上山疑",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0487",
+      "han": "限",
+      "hanDisplay": "限",
+      "sense": null,
+      "rhyme": "山开二上山匣",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0488",
+      "han": "八",
+      "hanDisplay": "八",
+      "sense": null,
+      "rhyme": "山开二人點帮",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0489",
+      "han": "杀",
+      "hanDisplay": "杀",
+      "sense": null,
+      "rhyme": "山开二人點生",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0490",
+      "han": "班",
+      "hanDisplay": "班",
+      "sense": null,
+      "rhyme": "山开二平删帮",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0491",
+      "han": "板",
+      "hanDisplay": "板",
+      "sense": null,
+      "rhyme": "山开二上删帮",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0492",
+      "han": "慢",
+      "hanDisplay": "慢",
+      "sense": null,
+      "rhyme": "山开二去删明",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0493",
+      "han": "奸",
+      "hanDisplay": "奸",
+      "sense": null,
+      "rhyme": "山开二平删见",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0494",
+      "han": "颜",
+      "hanDisplay": "颜",
+      "sense": null,
+      "rhyme": "山开二平删疑",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0495",
+      "han": "瞎",
+      "hanDisplay": "瞎",
+      "sense": null,
+      "rhyme": "山开二人錯晓",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0496",
+      "han": "变",
+      "hanDisplay": "变",
+      "sense": null,
+      "rhyme": "山开三去仙帮",
+      "oldMale": "pié334",
+      "youngMale": "pié334"
+    },
+    {
+      "id": "0497",
+      "han": "骗",
+      "hanDisplay": "骗(欺骗)",
+      "sense": "欺骗",
+      "rhyme": "山开三去仙滂",
+      "oldMale": "phie334",
+      "youngMale": "phie334"
+    },
+    {
+      "id": "0498",
+      "han": "便",
+      "hanDisplay": "便(方便)",
+      "sense": "方便",
+      "rhyme": "山开三去仙並",
+      "oldMale": "bié24",
+      "youngMale": "bié24"
+    },
+    {
+      "id": "0499",
+      "han": "棉",
+      "hanDisplay": "棉",
+      "sense": null,
+      "rhyme": "山开三平仙明",
+      "oldMale": "mie213",
+      "youngMale": "mie213"
+    },
+    {
+      "id": "0500",
+      "han": "面",
+      "hanDisplay": "面(面孔)",
+      "sense": "面孔",
+      "rhyme": "山开三去仙明",
+      "oldMale": "mie24",
+      "youngMale": "mie24"
+    },
+    {
+      "id": "0501",
+      "han": "连",
+      "hanDisplay": "连",
+      "sense": null,
+      "rhyme": "山开三平仙来",
+      "oldMale": "lie213",
+      "youngMale": "lie213"
+    },
+    {
+      "id": "0502",
+      "han": "剪",
+      "hanDisplay": "剪",
+      "sense": null,
+      "rhyme": "山开三上仙精",
+      "oldMale": "taié53",
+      "youngMale": "taié334"
+    },
+    {
+      "id": "0503",
+      "han": "浅",
+      "hanDisplay": "浅",
+      "sense": null,
+      "rhyme": "山开三上仙清",
+      "oldMale": "tehie53",
+      "youngMale": "tehi53"
+    },
+    {
+      "id": "0504",
+      "han": "钱",
+      "hanDisplay": "钱",
+      "sense": null,
+      "rhyme": "山开三平仙从",
+      "oldMale": "dzie213",
+      "youngMale": "dzie213"
+    },
+    {
+      "id": "0505",
+      "han": "鲜",
+      "hanDisplay": "鲜",
+      "sense": null,
+      "rhyme": "山开三平仙心",
+      "oldMale": "gie534",
+      "youngMale": "gie534"
+    },
+    {
+      "id": "0506",
+      "han": "线",
+      "hanDisplay": "线",
+      "sense": null,
+      "rhyme": "山开三去仙心",
+      "oldMale": "gie334",
+      "youngMale": "gie334"
+    },
+    {
+      "id": "0507",
+      "han": "缠",
+      "hanDisplay": "缠",
+      "sense": null,
+      "rhyme": "山开三平仙澄",
+      "oldMale": "dzoe24",
+      "youngMale": "dzoe213"
+    },
+    {
+      "id": "0508",
+      "han": "战",
+      "hanDisplay": "战",
+      "sense": null,
+      "rhyme": "山开三去仙章",
+      "oldMale": "tsoe334",
+      "youngMale": "tsoe334"
+    },
+    {
+      "id": "0509",
+      "han": "扇",
+      "hanDisplay": "扇(名词)",
+      "sense": "名词",
+      "rhyme": "山开三去仙书",
+      "oldMale": "soe334",
+      "youngMale": "soe334"
+    },
+    {
+      "id": "0510",
+      "han": "善",
+      "hanDisplay": "善",
+      "sense": null,
+      "rhyme": "山开三上仙禅",
+      "oldMale": "zoe22",
+      "youngMale": "zoe223"
+    },
+    {
+      "id": "0511",
+      "han": "件",
+      "hanDisplay": "件",
+      "sense": null,
+      "rhyme": "山开三上仙群",
+      "oldMale": "dzie24",
+      "youngMale": "dzie24"
+    },
+    {
+      "id": "0512",
+      "han": "延",
+      "hanDisplay": "延",
+      "sense": null,
+      "rhyme": "山开三平仙以",
+      "oldMale": "ie213",
+      "youngMale": "ie213"
+    },
+    {
+      "id": "0513",
+      "han": "别",
+      "hanDisplay": "别(别人)",
+      "sense": "别人",
+      "rhyme": "山开三人薛帮",
+      "oldMale": "bo²",
+      "youngMale": "ba²"
+    },
+    {
+      "id": "0514",
+      "han": "灭",
+      "hanDisplay": "灭",
+      "sense": null,
+      "rhyme": "山开三人薛明",
+      "oldMale": "mie²",
+      "youngMale": "mia²"
+    },
+    {
+      "id": "0515",
+      "han": "列",
+      "hanDisplay": "列",
+      "sense": null,
+      "rhyme": "山开三人薛来",
+      "oldMale": "lie²",
+      "youngMale": "lia²"
+    },
+    {
+      "id": "0516",
+      "han": "撤",
+      "hanDisplay": "撤",
+      "sense": null,
+      "rhyme": "山开三人薛彻",
+      "oldMale": "tsha²p5",
+      "youngMale": "tsha²p5"
+    },
+    {
+      "id": "0517",
+      "han": "舌",
+      "hanDisplay": "舌",
+      "sense": null,
+      "rhyme": "山开三人薛船",
+      "oldMale": "za²",
+      "youngMale": "za²"
+    },
+    {
+      "id": "0518",
+      "han": "设",
+      "hanDisplay": "设",
+      "sense": null,
+      "rhyme": "山开三人薛书",
+      "oldMale": "sa²",
+      "youngMale": "na²"
+    },
+    {
+      "id": "0519",
+      "han": "热",
+      "hanDisplay": "热",
+      "sense": null,
+      "rhyme": "山开三人薛日",
+      "oldMale": "nie²",
+      "youngMale": ""
+    },
+    {
+      "id": "0520",
+      "han": "杰",
+      "hanDisplay": "杰",
+      "sense": null,
+      "rhyme": "山开三人薛群",
+      "oldMale": "dzieʔ",
+      "youngMale": "nlaip2"
+    },
+    {
+      "id": "0521",
+      "han": "孽",
+      "hanDisplay": "孽",
+      "sense": null,
+      "rhyme": "山开三人薛疑",
+      "oldMale": "niep2",
+      "youngMale": ""
+    },
+    {
+      "id": "0522",
+      "han": "建",
+      "hanDisplay": "建",
+      "sense": null,
+      "rhyme": "山开三去元见",
+      "oldMale": "tai~334",
+      "youngMale": "tci~334"
+    },
+    {
+      "id": "0523",
+      "han": "健",
+      "hanDisplay": "健",
+      "sense": null,
+      "rhyme": "山开三去元群",
+      "oldMale": "dzi~24",
+      "youngMale": "dzi~24"
+    },
+    {
+      "id": "0524",
+      "han": "言",
+      "hanDisplay": "言",
+      "sense": null,
+      "rhyme": "山开三平元疑",
+      "oldMale": "ie213",
+      "youngMale": "ie213"
+    },
+    {
+      "id": "0525",
+      "han": "歇",
+      "hanDisplay": "歇",
+      "sense": null,
+      "rhyme": "山开三人月晓",
+      "oldMale": "ciep5",
+      "youngMale": "ciep5"
+    },
+    {
+      "id": "0526",
+      "han": "扁",
+      "hanDisplay": "扁",
+      "sense": null,
+      "rhyme": "山开四上先帮",
+      "oldMale": "pie53",
+      "youngMale": "pie53"
+    },
+    {
+      "id": "0527",
+      "han": "片",
+      "hanDisplay": "片",
+      "sense": null,
+      "rhyme": "山开四去先滂",
+      "oldMale": "phie34",
+      "youngMale": "phie34"
+    },
+    {
+      "id": "0528",
+      "han": "面",
+      "hanDisplay": "面(面条)",
+      "sense": "面条",
+      "rhyme": "山开四去先明",
+      "oldMale": "mie24",
+      "youngMale": "mi~24"
+    },
+    {
+      "id": "0529",
+      "han": "典",
+      "hanDisplay": "典",
+      "sense": null,
+      "rhyme": "山开四上先端",
+      "oldMale": "tie53",
+      "youngMale": "ti~53"
+    },
+    {
+      "id": "0530",
+      "han": "天",
+      "hanDisplay": "天",
+      "sense": null,
+      "rhyme": "山开四平先透",
+      "oldMale": "thie534",
+      "youngMale": "t~i~534"
+    },
+    {
+      "id": "0531",
+      "han": "田",
+      "hanDisplay": "田",
+      "sense": null,
+      "rhyme": "山开四平先定",
+      "oldMale": "die213",
+      "youngMale": "di~213"
+    },
+    {
+      "id": "0532",
+      "han": "垫",
+      "hanDisplay": "垫",
+      "sense": null,
+      "rhyme": "山开四去先定",
+      "oldMale": "die24",
+      "youngMale": "di~24"
+    },
+    {
+      "id": "0533",
+      "han": "年",
+      "hanDisplay": "年",
+      "sense": null,
+      "rhyme": "山开四平先泥",
+      "oldMale": "nie213",
+      "youngMale": "ni~213"
+    },
+    {
+      "id": "0534",
+      "han": "莲",
+      "hanDisplay": "莲",
+      "sense": null,
+      "rhyme": "山开四平先来",
+      "oldMale": "lie213",
+      "youngMale": "lie~213"
+    },
+    {
+      "id": "0535",
+      "han": "前",
+      "hanDisplay": "前",
+      "sense": null,
+      "rhyme": "山开四平先从",
+      "oldMale": "zie213多 / dzie~213少",
+      "youngMale": "dzie~213"
+    },
+    {
+      "id": "0536",
+      "han": "先",
+      "hanDisplay": "先",
+      "sense": null,
+      "rhyme": "山开四平先心",
+      "oldMale": "cie~534",
+      "youngMale": "cie~534"
+    },
+    {
+      "id": "0537",
+      "han": "肩",
+      "hanDisplay": "肩",
+      "sense": null,
+      "rhyme": "山开四平先见",
+      "oldMale": "tai~534",
+      "youngMale": "tai~534"
+    },
+    {
+      "id": "0538",
+      "han": "见",
+      "hanDisplay": "见",
+      "sense": null,
+      "rhyme": "山开四去先见",
+      "oldMale": "tai~334",
+      "youngMale": "tai~334"
+    },
+    {
+      "id": "0539",
+      "han": "牵",
+      "hanDisplay": "牵",
+      "sense": null,
+      "rhyme": "山开四平先溪",
+      "oldMale": "tchie534",
+      "youngMale": "tchie534"
+    },
+    {
+      "id": "0540",
+      "han": "显",
+      "hanDisplay": "显",
+      "sense": null,
+      "rhyme": "山开四上先晓",
+      "oldMale": "gie53",
+      "youngMale": "gie~53"
+    },
+    {
+      "id": "0541",
+      "han": "现",
+      "hanDisplay": "现",
+      "sense": null,
+      "rhyme": "山开四去先匣",
+      "oldMale": "ie~24",
+      "youngMale": "ie~24"
+    },
+    {
+      "id": "0542",
+      "han": "烟",
+      "hanDisplay": "烟",
+      "sense": null,
+      "rhyme": "山开四平先影",
+      "oldMale": "ie~534",
+      "youngMale": "ie~534"
+    },
+    {
+      "id": "0543",
+      "han": "憋",
+      "hanDisplay": "憋",
+      "sense": null,
+      "rhyme": "山开四人屑滂",
+      "oldMale": "pieʔ5",
+      "youngMale": "piaʔ"
+    },
+    {
+      "id": "0544",
+      "han": "篾",
+      "hanDisplay": "篾",
+      "sense": null,
+      "rhyme": "山开四人屑明",
+      "oldMale": "mieʔ",
+      "youngMale": "miaʔ"
+    },
+    {
+      "id": "0545",
+      "han": "铁",
+      "hanDisplay": "铁",
+      "sense": null,
+      "rhyme": "山开四人屑透",
+      "oldMale": "thieʔ",
+      "youngMale": "t'haʔ"
+    },
+    {
+      "id": "0546",
+      "han": "捏",
+      "hanDisplay": "捏",
+      "sense": null,
+      "rhyme": "山开四人屑泥",
+      "oldMale": "niaʔ",
+      "youngMale": "nlaʔ"
+    },
+    {
+      "id": "0547",
+      "han": "节",
+      "hanDisplay": "节",
+      "sense": null,
+      "rhyme": "山开四人屑精",
+      "oldMale": "tcierʔ",
+      "youngMale": "tciaʔ"
+    },
+    {
+      "id": "0548",
+      "han": "切",
+      "hanDisplay": "切(动)",
+      "sense": "动",
+      "rhyme": "山开四人屑清",
+      "oldMale": "tchierʔ",
+      "youngMale": "tchioʔ"
+    },
+    {
+      "id": "0549",
+      "han": "截",
+      "hanDisplay": "截",
+      "sense": null,
+      "rhyme": "山开四人屑从",
+      "oldMale": "dzieʔ",
+      "youngMale": "dziaʔ"
+    },
+    {
+      "id": "0550",
+      "han": "结",
+      "hanDisplay": "结",
+      "sense": null,
+      "rhyme": "山开四人屑见",
+      "oldMale": "tcierʔ",
+      "youngMale": ""
+    },
+    {
+      "id": "0551",
+      "han": "搬",
+      "hanDisplay": "搬",
+      "sense": null,
+      "rhyme": "山合一平桓帮",
+      "oldMale": "pae534",
+      "youngMale": "pae534"
+    },
+    {
+      "id": "0552",
+      "han": "半",
+      "hanDisplay": "半",
+      "sense": null,
+      "rhyme": "山合一去桓帮",
+      "oldMale": "pae334",
+      "youngMale": "pae334"
+    },
+    {
+      "id": "0553",
+      "han": "判",
+      "hanDisplay": "判",
+      "sense": null,
+      "rhyme": "山合一去桓滂",
+      "oldMale": "phoe334",
+      "youngMale": "phe334"
+    },
+    {
+      "id": "0554",
+      "han": "盘",
+      "hanDisplay": "盘",
+      "sense": null,
+      "rhyme": "山合一平桓並",
+      "oldMale": "bce213",
+      "youngMale": "bce213"
+    },
+    {
+      "id": "0555",
+      "han": "满",
+      "hanDisplay": "满",
+      "sense": null,
+      "rhyme": "山合一上桓明",
+      "oldMale": "moe22",
+      "youngMale": "moe223"
+    },
+    {
+      "id": "0556",
+      "han": "端",
+      "hanDisplay": "端(端午)",
+      "sense": "端午",
+      "rhyme": "山合一平桓端",
+      "oldMale": "ton534",
+      "youngMale": "ton534"
+    },
+    {
+      "id": "0557",
+      "han": "短",
+      "hanDisplay": "短",
+      "sense": null,
+      "rhyme": "山合一上桓端",
+      "oldMale": "toc53",
+      "youngMale": "toc53"
+    },
+    {
+      "id": "0558",
+      "han": "断",
+      "hanDisplay": "断(绳断了)",
+      "sense": "绳断了",
+      "rhyme": "山合一上桓定",
+      "oldMale": "dace22",
+      "youngMale": "dace223"
+    },
+    {
+      "id": "0559",
+      "han": "暖",
+      "hanDisplay": "暖",
+      "sense": null,
+      "rhyme": "山合一上桓泥",
+      "oldMale": "nene24白 / nce24文",
+      "youngMale": "nane24白 / nne24文"
+    },
+    {
+      "id": "0560",
+      "han": "乱",
+      "hanDisplay": "乱",
+      "sense": null,
+      "rhyme": "山合一去桓来",
+      "oldMale": "lce24",
+      "youngMale": "lce24"
+    },
+    {
+      "id": "0561",
+      "han": "酸",
+      "hanDisplay": "酸",
+      "sense": null,
+      "rhyme": "山合一平桓心",
+      "oldMale": "soc534",
+      "youngMale": "soc534"
+    },
+    {
+      "id": "0562",
+      "han": "算",
+      "hanDisplay": "算",
+      "sense": null,
+      "rhyme": "山合一去桓心",
+      "oldMale": "soc334",
+      "youngMale": "soc334"
+    },
+    {
+      "id": "0563",
+      "han": "官",
+      "hanDisplay": "官",
+      "sense": null,
+      "rhyme": "山合一平桓见",
+      "oldMale": "kuoes34",
+      "youngMale": "kue54"
+    },
+    {
+      "id": "0564",
+      "han": "宽",
+      "hanDisplay": "宽",
+      "sense": null,
+      "rhyme": "山合一平桓溪",
+      "oldMale": "khuee534",
+      "youngMale": "kuhue534"
+    },
+    {
+      "id": "0565",
+      "han": "欢",
+      "hanDisplay": "欢",
+      "sense": null,
+      "rhyme": "山合一平桓晓",
+      "oldMale": "huoe534",
+      "youngMale": "fec534"
+    },
+    {
+      "id": "0566",
+      "han": "完",
+      "hanDisplay": "完",
+      "sense": null,
+      "rhyme": "山合一平桓匣",
+      "oldMale": "uoe213",
+      "youngMale": "uoe213"
+    },
+    {
+      "id": "0567",
+      "han": "换",
+      "hanDisplay": "换",
+      "sense": null,
+      "rhyme": "山合一去桓匣",
+      "oldMale": "uoe24",
+      "youngMale": "uoe24"
+    },
+    {
+      "id": "0568",
+      "han": "碗",
+      "hanDisplay": "碗",
+      "sense": null,
+      "rhyme": "山合一上桓影",
+      "oldMale": "uoe53",
+      "youngMale": "uoe53"
+    },
+    {
+      "id": "0569",
+      "han": "拨",
+      "hanDisplay": "拨",
+      "sense": null,
+      "rhyme": "山合一入末帮",
+      "oldMale": "paʔ",
+      "youngMale": "paʔ"
+    },
+    {
+      "id": "0570",
+      "han": "泼",
+      "hanDisplay": "泼",
+      "sense": null,
+      "rhyme": "山合一入末滂",
+      "oldMale": "phaʔ",
+      "youngMale": "phaʔ"
+    },
+    {
+      "id": "0571",
+      "han": "末",
+      "hanDisplay": "末",
+      "sense": null,
+      "rhyme": "山合一入末明",
+      "oldMale": "maʔ",
+      "youngMale": "maʔ"
+    },
+    {
+      "id": "0572",
+      "han": "脱",
+      "hanDisplay": "脱",
+      "sense": null,
+      "rhyme": "山合一入末透",
+      "oldMale": "tʔaʔ",
+      "youngMale": "tʔaʔ"
+    },
+    {
+      "id": "0573",
+      "han": "夺",
+      "hanDisplay": "夺",
+      "sense": null,
+      "rhyme": "山合一入末定",
+      "oldMale": "daʔ",
+      "youngMale": "daʔ"
+    },
+    {
+      "id": "0574",
+      "han": "阔",
+      "hanDisplay": "阔",
+      "sense": null,
+      "rhyme": "山合一入末溪",
+      "oldMale": "khuaʔ",
+      "youngMale": "kʔuaʔ"
+    },
+    {
+      "id": "0575",
+      "han": "活",
+      "hanDisplay": "活",
+      "sense": null,
+      "rhyme": "山合一入末匣",
+      "oldMale": "ueʔ",
+      "youngMale": "uaʔ"
+    },
+    {
+      "id": "0576",
+      "han": "顽",
+      "hanDisplay": "顽(顽皮)",
+      "sense": "顽皮",
+      "rhyme": "山合二平山疑",
+      "oldMale": "ueʔ",
+      "youngMale": "uʔ213"
+    },
+    {
+      "id": "0577",
+      "han": "滑",
+      "hanDisplay": "滑",
+      "sense": null,
+      "rhyme": "山合二人黯匣",
+      "oldMale": "uaʔ",
+      "youngMale": "uaʔ"
+    },
+    {
+      "id": "0578",
+      "han": "挖",
+      "hanDisplay": "挖",
+      "sense": null,
+      "rhyme": "山合二人黯影",
+      "oldMale": "uaʔ",
+      "youngMale": "uaʔ"
+    },
+    {
+      "id": "0579",
+      "han": "闩",
+      "hanDisplay": "闩",
+      "sense": null,
+      "rhyme": "山合二平删生",
+      "oldMale": "sae534",
+      "youngMale": "sae534"
+    },
+    {
+      "id": "0580",
+      "han": "关",
+      "hanDisplay": "关(关门)",
+      "sense": "关门",
+      "rhyme": "山合二平删见",
+      "oldMale": "kue534",
+      "youngMale": "kue534"
+    },
+    {
+      "id": "0581",
+      "han": "惯",
+      "hanDisplay": "惯",
+      "sense": null,
+      "rhyme": "山合二去删见",
+      "oldMale": "kue334",
+      "youngMale": "kue334"
+    },
+    {
+      "id": "0582",
+      "han": "还",
+      "hanDisplay": "还(动词)",
+      "sense": "动词",
+      "rhyme": "山合二平删匣",
+      "oldMale": "ue213",
+      "youngMale": "ue213"
+    },
+    {
+      "id": "0583",
+      "han": "还",
+      "hanDisplay": "还(副词)",
+      "sense": "副词",
+      "rhyme": "山合二平删匣",
+      "oldMale": "ue213",
+      "youngMale": "ue213"
+    },
+    {
+      "id": "0584",
+      "han": "弯",
+      "hanDisplay": "弯",
+      "sense": null,
+      "rhyme": "山合二平删影",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0585",
+      "han": "刷",
+      "hanDisplay": "刷",
+      "sense": null,
+      "rhyme": "山合二人辖生",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0586",
+      "han": "刮",
+      "hanDisplay": "刮",
+      "sense": null,
+      "rhyme": "山合二人辖见",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0587",
+      "han": "全",
+      "hanDisplay": "全",
+      "sense": null,
+      "rhyme": "山合三平仙从",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0588",
+      "han": "选",
+      "hanDisplay": "选",
+      "sense": null,
+      "rhyme": "山合三上仙心",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0589",
+      "han": "转",
+      "hanDisplay": "转(转眼)",
+      "sense": "转眼",
+      "rhyme": "山合三上仙知",
+      "oldMale": "tsae53",
+      "youngMale": "tsae53"
+    },
+    {
+      "id": "0590",
+      "han": "传",
+      "hanDisplay": "传(传下来)",
+      "sense": "传下来",
+      "rhyme": "山合三平仙澄",
+      "oldMale": "dzoe213",
+      "youngMale": "dzoe213"
+    },
+    {
+      "id": "0591",
+      "han": "传",
+      "hanDisplay": "传(传记)",
+      "sense": "传记",
+      "rhyme": "山合三去仙澄",
+      "oldMale": "tsoe334",
+      "youngMale": "tsoe334"
+    },
+    {
+      "id": "0592",
+      "han": "砖",
+      "hanDisplay": "砖",
+      "sense": null,
+      "rhyme": "山合三平仙章",
+      "oldMale": "tsoe534",
+      "youngMale": "tsoe534"
+    },
+    {
+      "id": "0593",
+      "han": "船",
+      "hanDisplay": "船",
+      "sense": null,
+      "rhyme": "山合三平仙船",
+      "oldMale": "zoe213",
+      "youngMale": "zoe213"
+    },
+    {
+      "id": "0594",
+      "han": "软",
+      "hanDisplay": "软",
+      "sense": null,
+      "rhyme": "山合三上仙日",
+      "oldMale": "n0e24白 / nyoe22文",
+      "youngMale": "nye223文"
+    },
+    {
+      "id": "0595",
+      "han": "卷",
+      "hanDisplay": "卷(卷起)",
+      "sense": "卷起",
+      "rhyme": "山合三上仙见",
+      "oldMale": "teye53",
+      "youngMale": "teye53"
+    },
+    {
+      "id": "0596",
+      "han": "圈",
+      "hanDisplay": "圈(圆圈)",
+      "sense": "圆圈",
+      "rhyme": "山合三平仙溪",
+      "oldMale": "tchye534",
+      "youngMale": "tchye534"
+    },
+    {
+      "id": "0597",
+      "han": "权",
+      "hanDisplay": "权",
+      "sense": null,
+      "rhyme": "山合三平仙群",
+      "oldMale": "dzyoe213",
+      "youngMale": "dzye213"
+    },
+    {
+      "id": "0598",
+      "han": "圆",
+      "hanDisplay": "圆",
+      "sense": null,
+      "rhyme": "山合三平仙云",
+      "oldMale": "yoe213",
+      "youngMale": "y213"
+    },
+    {
+      "id": "0599",
+      "han": "院",
+      "hanDisplay": "院",
+      "sense": null,
+      "rhyme": "山合三去仙云",
+      "oldMale": "yoe24",
+      "youngMale": "yoe24"
+    },
+    {
+      "id": "0600",
+      "han": "铅",
+      "hanDisplay": "铅(铅笔)",
+      "sense": "铅笔",
+      "rhyme": "山合三平仙以",
+      "oldMale": "kh53",
+      "youngMale": "khe534"
+    },
+    {
+      "id": "0601",
+      "han": "绝",
+      "hanDisplay": "绝",
+      "sense": null,
+      "rhyme": "山合三人薛从",
+      "oldMale": "dziep2",
+      "youngMale": "dziap2"
+    },
+    {
+      "id": "0602",
+      "han": "雪",
+      "hanDisplay": "雪",
+      "sense": null,
+      "rhyme": "山合三人薛心",
+      "oldMale": "eiep5",
+      "youngMale": "ciao5"
+    },
+    {
+      "id": "0603",
+      "han": "反",
+      "hanDisplay": "反",
+      "sense": null,
+      "rhyme": "山合三上元非",
+      "oldMale": "fes3",
+      "youngMale": "fes3"
+    },
+    {
+      "id": "0604",
+      "han": "翻",
+      "hanDisplay": "翻",
+      "sense": null,
+      "rhyme": "山合三平元敷",
+      "oldMale": "fe534",
+      "youngMale": "fe534"
+    },
+    {
+      "id": "0605",
+      "han": "饭",
+      "hanDisplay": "饭",
+      "sense": null,
+      "rhyme": "山合三去元奉",
+      "oldMale": "ue24",
+      "youngMale": "ue24 / mo24白 / m223白"
+    },
+    {
+      "id": "0606",
+      "han": "晚",
+      "hanDisplay": "晚",
+      "sense": null,
+      "rhyme": "山合三上元微",
+      "oldMale": "ue24文",
+      "youngMale": "ue223文"
+    },
+    {
+      "id": "0607",
+      "han": "万",
+      "hanDisplay": "万(麻将牌)",
+      "sense": "麻将牌",
+      "rhyme": "山合三去元微",
+      "oldMale": "ue24",
+      "youngMale": "ue223"
+    },
+    {
+      "id": "0608",
+      "han": "劝",
+      "hanDisplay": "劝",
+      "sense": null,
+      "rhyme": "山合三去元溪",
+      "oldMale": "tchyoe334",
+      "youngMale": "neye213白"
+    },
+    {
+      "id": "0609",
+      "han": "原",
+      "hanDisplay": "原",
+      "sense": null,
+      "rhyme": "山合三平元疑",
+      "oldMale": "neye213",
+      "youngMale": "yee13文"
+    },
+    {
+      "id": "0610",
+      "han": "冤",
+      "hanDisplay": "冤",
+      "sense": null,
+      "rhyme": "山合三平元影",
+      "oldMale": "yo534",
+      "youngMale": "ye534"
+    },
+    {
+      "id": "0611",
+      "han": "园",
+      "hanDisplay": "园",
+      "sense": null,
+      "rhyme": "山合三平元云",
+      "oldMale": "ye213",
+      "youngMale": "ye213"
+    },
+    {
+      "id": "0612",
+      "han": "远",
+      "hanDisplay": "远",
+      "sense": null,
+      "rhyme": "山合三上元云",
+      "oldMale": "ye22",
+      "youngMale": "ye22"
+    },
+    {
+      "id": "0613",
+      "han": "发",
+      "hanDisplay": "发(头发)",
+      "sense": "头发",
+      "rhyme": "山合三人月非",
+      "oldMale": "feP5",
+      "youngMale": "faP5"
+    },
+    {
+      "id": "0614",
+      "han": "罚",
+      "hanDisplay": "罚",
+      "sense": null,
+      "rhyme": "山合三人月奉",
+      "oldMale": "uep2",
+      "youngMale": "vaP2"
+    },
+    {
+      "id": "0615",
+      "han": "袜",
+      "hanDisplay": "袜",
+      "sense": null,
+      "rhyme": "山合三人月微",
+      "oldMale": "meP2",
+      "youngMale": "maP2"
+    },
+    {
+      "id": "0616",
+      "han": "月",
+      "hanDisplay": "月",
+      "sense": null,
+      "rhyme": "山合三人月疑",
+      "oldMale": "nyoP白 / yoP2文",
+      "youngMale": "nyoP2"
+    },
+    {
+      "id": "0617",
+      "han": "越",
+      "hanDisplay": "越",
+      "sense": null,
+      "rhyme": "山合三人月云",
+      "oldMale": "yoP2",
+      "youngMale": "yoP2"
+    },
+    {
+      "id": "0618",
+      "han": "县",
+      "hanDisplay": "县",
+      "sense": null,
+      "rhyme": "山合四去先匣",
+      "oldMale": "yoe24",
+      "youngMale": "yoe24"
+    },
+    {
+      "id": "0619",
+      "han": "决",
+      "hanDisplay": "决",
+      "sense": null,
+      "rhyme": "山合四人屑见",
+      "oldMale": "teyoP5",
+      "youngMale": "teyoP5"
+    },
+    {
+      "id": "0620",
+      "han": "缺",
+      "hanDisplay": "缺",
+      "sense": null,
+      "rhyme": "山合四人屑溪",
+      "oldMale": "tehyoP5",
+      "youngMale": "tehyoP5"
+    },
+    {
+      "id": "0621",
+      "han": "血",
+      "hanDisplay": "血",
+      "sense": null,
+      "rhyme": "山合四人屑晓",
+      "oldMale": "eyoP5",
+      "youngMale": "eyoP5"
+    },
+    {
+      "id": "0622",
+      "han": "吞",
+      "hanDisplay": "吞",
+      "sense": null,
+      "rhyme": "臻开一平痕透",
+      "oldMale": "teng534",
+      "youngMale": "t'ang534"
+    },
+    {
+      "id": "0623",
+      "han": "根",
+      "hanDisplay": "根",
+      "sense": null,
+      "rhyme": "臻开一平痕见",
+      "oldMale": "ken534",
+      "youngMale": "kan534"
+    },
+    {
+      "id": "0624",
+      "han": "恨",
+      "hanDisplay": "恨",
+      "sense": null,
+      "rhyme": "臻开一去痕匣",
+      "oldMale": "en24",
+      "youngMale": "an24"
+    },
+    {
+      "id": "0625",
+      "han": "恩",
+      "hanDisplay": "恩",
+      "sense": null,
+      "rhyme": "臻开一平痕影",
+      "oldMale": "in534白 / en534文",
+      "youngMale": "an534"
+    },
+    {
+      "id": "0626",
+      "han": "贫",
+      "hanDisplay": "贫",
+      "sense": null,
+      "rhyme": "臻开三平真並",
+      "oldMale": "bin213",
+      "youngMale": "bin213"
+    },
+    {
+      "id": "0627",
+      "han": "民",
+      "hanDisplay": "民",
+      "sense": null,
+      "rhyme": "臻开三平真明",
+      "oldMale": "min213",
+      "youngMale": "ming213"
+    },
+    {
+      "id": "0628",
+      "han": "邻",
+      "hanDisplay": "邻",
+      "sense": null,
+      "rhyme": "臻开三平真来",
+      "oldMale": "lin213",
+      "youngMale": "lin213"
+    },
+    {
+      "id": "0629",
+      "han": "进",
+      "hanDisplay": "进",
+      "sense": null,
+      "rhyme": "臻开三去真精",
+      "oldMale": "teing34",
+      "youngMale": "teing334"
+    },
+    {
+      "id": "0630",
+      "han": "亲",
+      "hanDisplay": "亲(亲人)",
+      "sense": "亲人",
+      "rhyme": "臻开三平真清",
+      "oldMale": "teh ing34",
+      "youngMale": "tehing534"
+    },
+    {
+      "id": "0631",
+      "han": "新",
+      "hanDisplay": "新",
+      "sense": null,
+      "rhyme": "臻开三平真心",
+      "oldMale": "ein34",
+      "youngMale": "ein534"
+    },
+    {
+      "id": "0632",
+      "han": "镇",
+      "hanDisplay": "镇",
+      "sense": null,
+      "rhyme": "臻开三去真知",
+      "oldMale": "tseng334",
+      "youngMale": "tseng334"
+    },
+    {
+      "id": "0633",
+      "han": "陈",
+      "hanDisplay": "陈",
+      "sense": null,
+      "rhyme": "臻开三平真澄",
+      "oldMale": "dzen213",
+      "youngMale": "dzan213"
+    },
+    {
+      "id": "0634",
+      "han": "震",
+      "hanDisplay": "震",
+      "sense": null,
+      "rhyme": "臻开三去真章",
+      "oldMale": "tsen334",
+      "youngMale": "tsan334"
+    },
+    {
+      "id": "0635",
+      "han": "神",
+      "hanDisplay": "神",
+      "sense": null,
+      "rhyme": "臻开三平真船",
+      "oldMale": "zen213",
+      "youngMale": "zang213"
+    },
+    {
+      "id": "0636",
+      "han": "身",
+      "hanDisplay": "身",
+      "sense": null,
+      "rhyme": "臻开三平真书",
+      "oldMale": "sen534",
+      "youngMale": "san534"
+    },
+    {
+      "id": "0637",
+      "han": "辰",
+      "hanDisplay": "辰",
+      "sense": null,
+      "rhyme": "臻开三平真禅",
+      "oldMale": "zen213",
+      "youngMale": "dzan213"
+    },
+    {
+      "id": "0638",
+      "han": "人",
+      "hanDisplay": "人",
+      "sense": null,
+      "rhyme": "臻开三平真日",
+      "oldMale": "nin213白 / zen213文",
+      "youngMale": "nin213白 / zang213文"
+    },
+    {
+      "id": "0639",
+      "han": "认",
+      "hanDisplay": "认",
+      "sense": null,
+      "rhyme": "臻开三去真日",
+      "oldMale": "nin214白 / zen24文",
+      "youngMale": "nin214白 / zang24文"
+    },
+    {
+      "id": "0640",
+      "han": "紧",
+      "hanDisplay": "紧",
+      "sense": null,
+      "rhyme": "臻开三上真见",
+      "oldMale": "tein53",
+      "youngMale": "tin53"
+    },
+    {
+      "id": "0641",
+      "han": "银",
+      "hanDisplay": "银",
+      "sense": null,
+      "rhyme": "臻开三平真疑",
+      "oldMale": "nin213",
+      "youngMale": "nin213白 / in213文"
+    },
+    {
+      "id": "0642",
+      "han": "印",
+      "hanDisplay": "印",
+      "sense": null,
+      "rhyme": "臻开三去真影",
+      "oldMale": "in334",
+      "youngMale": "in334"
+    },
+    {
+      "id": "0643",
+      "han": "引",
+      "hanDisplay": "引",
+      "sense": null,
+      "rhyme": "臻开三上真以",
+      "oldMale": "in24",
+      "youngMale": "in223"
+    },
+    {
+      "id": "0644",
+      "han": "笔",
+      "hanDisplay": "笔",
+      "sense": null,
+      "rhyme": "臻开三人质帮",
+      "oldMale": "piep5",
+      "youngMale": "piaps"
+    },
+    {
+      "id": "0645",
+      "han": "匹",
+      "hanDisplay": "匹",
+      "sense": null,
+      "rhyme": "臻开三人质滂",
+      "oldMale": "phieps",
+      "youngMale": "phias"
+    },
+    {
+      "id": "0646",
+      "han": "密",
+      "hanDisplay": "密",
+      "sense": null,
+      "rhyme": "臻开三人质明",
+      "oldMale": "mieps",
+      "youngMale": "miaps"
+    },
+    {
+      "id": "0647",
+      "han": "栗",
+      "hanDisplay": "栗",
+      "sense": null,
+      "rhyme": "臻开三人质来",
+      "oldMale": "lieps",
+      "youngMale": "l iaps"
+    },
+    {
+      "id": "0648",
+      "han": "七",
+      "hanDisplay": "七",
+      "sense": null,
+      "rhyme": "臻开三人质清",
+      "oldMale": "tcheips",
+      "youngMale": "tchias"
+    },
+    {
+      "id": "0649",
+      "han": "侄",
+      "hanDisplay": "侄",
+      "sense": null,
+      "rhyme": "臻开三人质澄",
+      "oldMale": "dzaps",
+      "youngMale": "dsaas"
+    },
+    {
+      "id": "0650",
+      "han": "虱",
+      "hanDisplay": "虱",
+      "sense": null,
+      "rhyme": "臻开三人质生",
+      "oldMale": "saos",
+      "youngMale": "saoas"
+    },
+    {
+      "id": "0651",
+      "han": "实",
+      "hanDisplay": "实",
+      "sense": null,
+      "rhyme": "臻开三人质船",
+      "oldMale": "zaoas",
+      "youngMale": "zaps"
+    },
+    {
+      "id": "0652",
+      "han": "失",
+      "hanDisplay": "失",
+      "sense": null,
+      "rhyme": "臻开三人质书",
+      "oldMale": "saos",
+      "youngMale": "naos白 / naop白"
+    },
+    {
+      "id": "0653",
+      "han": "日",
+      "hanDisplay": "日",
+      "sense": null,
+      "rhyme": "臻开三人质日",
+      "oldMale": "zao2文",
+      "youngMale": "zao2文"
+    },
+    {
+      "id": "0654",
+      "han": "吉",
+      "hanDisplay": "吉",
+      "sense": null,
+      "rhyme": "臻开三人质见",
+      "oldMale": "tciep5",
+      "youngMale": "tciop5"
+    },
+    {
+      "id": "0655",
+      "han": "一",
+      "hanDisplay": "一",
+      "sense": null,
+      "rhyme": "臻开三人质影",
+      "oldMale": "ieʔ",
+      "youngMale": "iaps"
+    },
+    {
+      "id": "0656",
+      "han": "筋",
+      "hanDisplay": "筋",
+      "sense": null,
+      "rhyme": "臻开三平殷见",
+      "oldMale": "teing534",
+      "youngMale": "teing534"
+    },
+    {
+      "id": "0657",
+      "han": "劲",
+      "hanDisplay": "劲(有~)",
+      "sense": "有~",
+      "rhyme": "臻开三去殷见",
+      "oldMale": "dzin24",
+      "youngMale": "dzin24"
+    },
+    {
+      "id": "0658",
+      "han": "勤",
+      "hanDisplay": "勤",
+      "sense": null,
+      "rhyme": "臻开三平殷群",
+      "oldMale": "dzin213",
+      "youngMale": "dzin213"
+    },
+    {
+      "id": "0659",
+      "han": "近",
+      "hanDisplay": "近",
+      "sense": null,
+      "rhyme": "臻开三上殷群",
+      "oldMale": "dzin22",
+      "youngMale": "dzin24"
+    },
+    {
+      "id": "0660",
+      "han": "隐",
+      "hanDisplay": "隐",
+      "sense": null,
+      "rhyme": "臻开三上殷影",
+      "oldMale": "in53",
+      "youngMale": "in53"
+    },
+    {
+      "id": "0661",
+      "han": "本",
+      "hanDisplay": "本",
+      "sense": null,
+      "rhyme": "臻合一上魂帮",
+      "oldMale": "pen53",
+      "youngMale": "pan53"
+    },
+    {
+      "id": "0662",
+      "han": "盆",
+      "hanDisplay": "盆",
+      "sense": null,
+      "rhyme": "臻合一平魂並",
+      "oldMale": "ben213",
+      "youngMale": "bang213"
+    },
+    {
+      "id": "0663",
+      "han": "门",
+      "hanDisplay": "门",
+      "sense": null,
+      "rhyme": "臻合一平魂明",
+      "oldMale": "men213",
+      "youngMale": "man213"
+    },
+    {
+      "id": "0664",
+      "han": "墩",
+      "hanDisplay": "墩",
+      "sense": null,
+      "rhyme": "臻合一平魂端",
+      "oldMale": "ten534",
+      "youngMale": "tan534"
+    },
+    {
+      "id": "0665",
+      "han": "嫩",
+      "hanDisplay": "嫩",
+      "sense": null,
+      "rhyme": "臻合一去魂泥",
+      "oldMale": "nen24",
+      "youngMale": "nan24"
+    },
+    {
+      "id": "0666",
+      "han": "村",
+      "hanDisplay": "村",
+      "sense": null,
+      "rhyme": "臻合一平魂清",
+      "oldMale": "tshen534",
+      "youngMale": "tshen534"
+    },
+    {
+      "id": "0667",
+      "han": "寸",
+      "hanDisplay": "寸",
+      "sense": null,
+      "rhyme": "臻合一去魂清",
+      "oldMale": "tshen334",
+      "youngMale": "tshen334"
+    },
+    {
+      "id": "0668",
+      "han": "蹲",
+      "hanDisplay": "蹲",
+      "sense": null,
+      "rhyme": "臻合一平魂从",
+      "oldMale": "ten534",
+      "youngMale": "ten534"
+    },
+    {
+      "id": "0669",
+      "han": "孙",
+      "hanDisplay": "孙(孙子)",
+      "sense": "孙子",
+      "rhyme": "臻合一平魂心",
+      "oldMale": "sen34",
+      "youngMale": "seng534"
+    },
+    {
+      "id": "0670",
+      "han": "滚",
+      "hanDisplay": "滚",
+      "sense": null,
+      "rhyme": "臻合一上魂见",
+      "oldMale": "kuang53",
+      "youngMale": "kuang53"
+    },
+    {
+      "id": "0671",
+      "han": "困",
+      "hanDisplay": "困",
+      "sense": null,
+      "rhyme": "臻合一去魂溪",
+      "oldMale": "khuang334",
+      "youngMale": "khuang334"
+    },
+    {
+      "id": "0672",
+      "han": "婚",
+      "hanDisplay": "婚",
+      "sense": null,
+      "rhyme": "臻合一平魂晓",
+      "oldMale": "fen534",
+      "youngMale": "fang534"
+    },
+    {
+      "id": "0673",
+      "han": "魂",
+      "hanDisplay": "魂",
+      "sense": null,
+      "rhyme": "臻合一平魂匣",
+      "oldMale": "uan213",
+      "youngMale": "uan213"
+    },
+    {
+      "id": "0674",
+      "han": "温",
+      "hanDisplay": "温",
+      "sense": null,
+      "rhyme": "臻合一平魂影",
+      "oldMale": "uan534",
+      "youngMale": "uan534"
+    },
+    {
+      "id": "0675",
+      "han": "卒",
+      "hanDisplay": "卒(棋子)",
+      "sense": "棋子",
+      "rhyme": "臻合一人没精",
+      "oldMale": "tsa25",
+      "youngMale": "tsa25"
+    },
+    {
+      "id": "0676",
+      "han": "骨",
+      "hanDisplay": "骨",
+      "sense": null,
+      "rhyme": "臻合一人没见",
+      "oldMale": "kuao25",
+      "youngMale": "kuo25"
+    },
+    {
+      "id": "0677",
+      "han": "轮",
+      "hanDisplay": "轮",
+      "sense": null,
+      "rhyme": "臻合三平谆来",
+      "oldMale": "len213",
+      "youngMale": "lan213"
+    },
+    {
+      "id": "0678",
+      "han": "俊",
+      "hanDisplay": "俊",
+      "sense": null,
+      "rhyme": "臻合三去淳精",
+      "oldMale": "teing",
+      "youngMale": "teyong334"
+    },
+    {
+      "id": "0679",
+      "han": "笋",
+      "hanDisplay": "笋",
+      "sense": null,
+      "rhyme": "臻合三上淳心",
+      "oldMale": "eings",
+      "youngMale": "ein53"
+    },
+    {
+      "id": "0680",
+      "han": "准",
+      "hanDisplay": "准",
+      "sense": null,
+      "rhyme": "臻合三上淳章",
+      "oldMale": "tsengs3",
+      "youngMale": "tsang53"
+    },
+    {
+      "id": "0681",
+      "han": "春",
+      "hanDisplay": "春",
+      "sense": null,
+      "rhyme": "臻合三平淳昌",
+      "oldMale": "tshen534",
+      "youngMale": "tsheng534"
+    },
+    {
+      "id": "0682",
+      "han": "唇",
+      "hanDisplay": "唇",
+      "sense": null,
+      "rhyme": "臻合三平淳船",
+      "oldMale": "zeng213",
+      "youngMale": "dzaeng213"
+    },
+    {
+      "id": "0683",
+      "han": "顺",
+      "hanDisplay": "顺",
+      "sense": null,
+      "rhyme": "臻合三去淳船",
+      "oldMale": "zeng24",
+      "youngMale": "zeng24"
+    },
+    {
+      "id": "0684",
+      "han": "纯",
+      "hanDisplay": "纯",
+      "sense": null,
+      "rhyme": "臻合三平淳禅",
+      "oldMale": "dzeng213",
+      "youngMale": "dzeng213"
+    },
+    {
+      "id": "0685",
+      "han": "闰",
+      "hanDisplay": "闰",
+      "sense": null,
+      "rhyme": "臻合三去淳日",
+      "oldMale": "yong白 / zen24文少",
+      "youngMale": "zang24"
+    },
+    {
+      "id": "0686",
+      "han": "均",
+      "hanDisplay": "均",
+      "sense": null,
+      "rhyme": "臻合三平淳见",
+      "oldMale": "tayong534",
+      "youngMale": "tayong534"
+    },
+    {
+      "id": "0687",
+      "han": "匀",
+      "hanDisplay": "匀",
+      "sense": null,
+      "rhyme": "臻合三平淳以",
+      "oldMale": "yon213",
+      "youngMale": "yon213"
+    },
+    {
+      "id": "0688",
+      "han": "律",
+      "hanDisplay": "律",
+      "sense": null,
+      "rhyme": "臻合三人术来",
+      "oldMale": "liep2",
+      "youngMale": "liai2"
+    },
+    {
+      "id": "0689",
+      "han": "出",
+      "hanDisplay": "出",
+      "sense": null,
+      "rhyme": "臻合三人术昌",
+      "oldMale": "tsha25",
+      "youngMale": "tshap5"
+    },
+    {
+      "id": "0690",
+      "han": "橘",
+      "hanDisplay": "橘",
+      "sense": null,
+      "rhyme": "臻合三人术见",
+      "oldMale": "tayop5",
+      "youngMale": "tayop5"
+    },
+    {
+      "id": "0691",
+      "han": "分",
+      "hanDisplay": "分(动词)",
+      "sense": "动词",
+      "rhyme": "臻合三平文非",
+      "oldMale": "fen534",
+      "youngMale": "fan534"
+    },
+    {
+      "id": "0692",
+      "han": "粉",
+      "hanDisplay": "粉",
+      "sense": null,
+      "rhyme": "臻合三上文非",
+      "oldMale": "fen53",
+      "youngMale": "fan53"
+    },
+    {
+      "id": "0693",
+      "han": "粪",
+      "hanDisplay": "粪",
+      "sense": null,
+      "rhyme": "臻合三去文非",
+      "oldMale": "(无)",
+      "youngMale": "fan334"
+    },
+    {
+      "id": "0694",
+      "han": "坟",
+      "hanDisplay": "坟",
+      "sense": null,
+      "rhyme": "臻合三平文奉",
+      "oldMale": "uan213",
+      "youngMale": "uan213"
+    },
+    {
+      "id": "0695",
+      "han": "蚊",
+      "hanDisplay": "蚊",
+      "sense": null,
+      "rhyme": "臻合三平文微",
+      "oldMale": "men213白 / uan213文",
+      "youngMale": "mang213白 / uan213文"
+    },
+    {
+      "id": "0696",
+      "han": "问",
+      "hanDisplay": "问",
+      "sense": null,
+      "rhyme": "臻合三去文微",
+      "oldMale": "men白 / uan214文",
+      "youngMale": "mang24白 / uan24文"
+    },
+    {
+      "id": "0697",
+      "han": "军",
+      "hanDisplay": "军",
+      "sense": null,
+      "rhyme": "臻合三去文微",
+      "oldMale": "",
+      "youngMale": ""
+    },
+    {
+      "id": "0698",
+      "han": "裙",
+      "hanDisplay": "裙",
+      "sense": null,
+      "rhyme": "臻合三平文群",
+      "oldMale": "tayong534",
+      "youngMale": "dzyong213"
+    },
+    {
+      "id": "0699",
+      "han": "熏",
+      "hanDisplay": "熏",
+      "sense": null,
+      "rhyme": "臻合三平文晓",
+      "oldMale": "eyon534",
+      "youngMale": "eyon"
+    },
+    {
+      "id": "0700",
+      "han": "云",
+      "hanDisplay": "云(云彩)",
+      "sense": "云彩",
+      "rhyme": "臻合三平文云",
+      "oldMale": "yong213",
+      "youngMale": "yong213"
+    },
+    {
+      "id": "0701",
+      "han": "运",
+      "hanDisplay": "运",
+      "sense": null,
+      "rhyme": "臻合三去文云",
+      "oldMale": "yong²",
+      "youngMale": "yong24"
+    },
+    {
+      "id": "0702",
+      "han": "佛",
+      "hanDisplay": "佛(佛像)",
+      "sense": "佛像",
+      "rhyme": "臻合三人物奉",
+      "oldMale": "uaʔ2",
+      "youngMale": "uoʔ"
+    },
+    {
+      "id": "0703",
+      "han": "物",
+      "hanDisplay": "物",
+      "sense": null,
+      "rhyme": "臻合三人物微",
+      "oldMale": "uaʔ",
+      "youngMale": "uapʔ"
+    },
+    {
+      "id": "0704",
+      "han": "帮",
+      "hanDisplay": "帮",
+      "sense": null,
+      "rhyme": "宕开一平唐帮",
+      "oldMale": "pong534",
+      "youngMale": "p53"
+    },
+    {
+      "id": "0705",
+      "han": "忙",
+      "hanDisplay": "忙",
+      "sense": null,
+      "rhyme": "宕开一平唐明",
+      "oldMale": "mang213",
+      "youngMale": "mo213"
+    },
+    {
+      "id": "0706",
+      "han": "党",
+      "hanDisplay": "党",
+      "sense": null,
+      "rhyme": "宕开一上唐端",
+      "oldMale": "tans",
+      "youngMale": "t53"
+    },
+    {
+      "id": "0707",
+      "han": "汤",
+      "hanDisplay": "汤",
+      "sense": null,
+      "rhyme": "宕开一平唐透",
+      "oldMale": "thong534",
+      "youngMale": "th53"
+    },
+    {
+      "id": "0708",
+      "han": "糖",
+      "hanDisplay": "糖",
+      "sense": null,
+      "rhyme": "宕开一平唐定",
+      "oldMale": "dan213",
+      "youngMale": "d213"
+    },
+    {
+      "id": "0709",
+      "han": "浪",
+      "hanDisplay": "浪",
+      "sense": null,
+      "rhyme": "宕开一去唐来",
+      "oldMale": "1ong24",
+      "youngMale": "1s24"
+    },
+    {
+      "id": "0710",
+      "han": "仓",
+      "hanDisplay": "仓",
+      "sense": null,
+      "rhyme": "宕开一平唐清",
+      "oldMale": "tshong534",
+      "youngMale": "tsh53"
+    },
+    {
+      "id": "0711",
+      "han": "钢",
+      "hanDisplay": "钢(名词)",
+      "sense": "名词",
+      "rhyme": "宕开一平唐见",
+      "oldMale": "kong534",
+      "youngMale": "k53"
+    },
+    {
+      "id": "0712",
+      "han": "糠",
+      "hanDisplay": "糠",
+      "sense": null,
+      "rhyme": "宕开一平唐溪",
+      "oldMale": "khong534",
+      "youngMale": "kh53"
+    },
+    {
+      "id": "0713",
+      "han": "薄",
+      "hanDisplay": "薄(形容词)",
+      "sense": "形容词",
+      "rhyme": "宕开一人铎並",
+      "oldMale": "boʔ",
+      "youngMale": "boʔ"
+    },
+    {
+      "id": "0714",
+      "han": "摸",
+      "hanDisplay": "摸",
+      "sense": null,
+      "rhyme": "宕开一人铎明",
+      "oldMale": "moʔ",
+      "youngMale": "moʔ"
+    },
+    {
+      "id": "0715",
+      "han": "托",
+      "hanDisplay": "托",
+      "sense": null,
+      "rhyme": "宕开一人铎透",
+      "oldMale": "t'opʔ",
+      "youngMale": "t'opʔ"
+    },
+    {
+      "id": "0716",
+      "han": "落",
+      "hanDisplay": "落",
+      "sense": null,
+      "rhyme": "宕开一人铎来",
+      "oldMale": "loʔ",
+      "youngMale": "loʔ"
+    },
+    {
+      "id": "0717",
+      "han": "作",
+      "hanDisplay": "作",
+      "sense": null,
+      "rhyme": "宕开一人铎精",
+      "oldMale": "tsopʔ",
+      "youngMale": "tsopʔ"
+    },
+    {
+      "id": "0718",
+      "han": "索",
+      "hanDisplay": "索",
+      "sense": null,
+      "rhyme": "宕开一人铎心",
+      "oldMale": "soʔ",
+      "youngMale": "soʔ"
+    },
+    {
+      "id": "0719",
+      "han": "各",
+      "hanDisplay": "各",
+      "sense": null,
+      "rhyme": "宕开一人铎见",
+      "oldMale": "koʔ",
+      "youngMale": "koʔ"
+    },
+    {
+      "id": "0720",
+      "han": "鹤",
+      "hanDisplay": "鹤",
+      "sense": null,
+      "rhyme": "宕开一人铎匣",
+      "oldMale": "noʔ",
+      "youngMale": "noʔ"
+    },
+    {
+      "id": "0721",
+      "han": "恶",
+      "hanDisplay": "恶(形容词)",
+      "sense": "形容词",
+      "rhyme": "宕开一人铎影",
+      "oldMale": "oʔ",
+      "youngMale": "oʔ"
+    },
+    {
+      "id": "0722",
+      "han": "娘",
+      "hanDisplay": "娘",
+      "sense": null,
+      "rhyme": "宕开三平阳泥",
+      "oldMale": "nian213",
+      "youngMale": "nian213"
+    },
+    {
+      "id": "0723",
+      "han": "两",
+      "hanDisplay": "两(斤~)",
+      "sense": "斤~",
+      "rhyme": "宕开三上阳来",
+      "oldMale": "lian22",
+      "youngMale": "lian223"
+    },
+    {
+      "id": "0724",
+      "han": "亮",
+      "hanDisplay": "亮",
+      "sense": null,
+      "rhyme": "宕开三去阳来",
+      "oldMale": "lian24",
+      "youngMale": "lian24"
+    },
+    {
+      "id": "0725",
+      "han": "浆",
+      "hanDisplay": "浆",
+      "sense": null,
+      "rhyme": "宕开三平阳精",
+      "oldMale": "tcian534",
+      "youngMale": "tcian534"
+    },
+    {
+      "id": "0726",
+      "han": "抢",
+      "hanDisplay": "抢",
+      "sense": null,
+      "rhyme": "宕开三上阳清",
+      "oldMale": "tchian53",
+      "youngMale": "tchian53"
+    },
+    {
+      "id": "0727",
+      "han": "匠",
+      "hanDisplay": "匠",
+      "sense": null,
+      "rhyme": "宕开三去阳从",
+      "oldMale": "zian24",
+      "youngMale": "zian24"
+    },
+    {
+      "id": "0728",
+      "han": "想",
+      "hanDisplay": "想",
+      "sense": null,
+      "rhyme": "宕开三上阳心",
+      "oldMale": "cian53",
+      "youngMale": "cian53"
+    },
+    {
+      "id": "0729",
+      "han": "像",
+      "hanDisplay": "像",
+      "sense": null,
+      "rhyme": "宕开三上阳邪",
+      "oldMale": "dziang2文 / zian22白",
+      "youngMale": "zian24"
+    },
+    {
+      "id": "0730",
+      "han": "张",
+      "hanDisplay": "张(量词)",
+      "sense": "量词",
+      "rhyme": "宕开三平阳知",
+      "oldMale": "tsang534",
+      "youngMale": "tsang534"
+    },
+    {
+      "id": "0731",
+      "han": "长",
+      "hanDisplay": "长(长短)",
+      "sense": "长短",
+      "rhyme": "宕开三平阳澄",
+      "oldMale": "dzang213",
+      "youngMale": "dzang213"
+    },
+    {
+      "id": "0732",
+      "han": "装",
+      "hanDisplay": "装",
+      "sense": null,
+      "rhyme": "宕开三平阳庄",
+      "oldMale": "tsong534",
+      "youngMale": "tsg534"
+    },
+    {
+      "id": "0733",
+      "han": "壮",
+      "hanDisplay": "壮",
+      "sense": null,
+      "rhyme": "宕开三去阳庄",
+      "oldMale": "tshong534",
+      "youngMale": "tsh534"
+    },
+    {
+      "id": "0734",
+      "han": "疮",
+      "hanDisplay": "疮",
+      "sense": null,
+      "rhyme": "宕开三平阳初",
+      "oldMale": "tshong234",
+      "youngMale": "tsh534"
+    },
+    {
+      "id": "0735",
+      "han": "床",
+      "hanDisplay": "床",
+      "sense": null,
+      "rhyme": "宕开三平阳崇",
+      "oldMale": "zong213",
+      "youngMale": "zog213"
+    },
+    {
+      "id": "0736",
+      "han": "霜",
+      "hanDisplay": "霜",
+      "sense": null,
+      "rhyme": "宕开三平阳生",
+      "oldMale": "sang534",
+      "youngMale": "sos34"
+    },
+    {
+      "id": "0737",
+      "han": "章",
+      "hanDisplay": "章",
+      "sense": null,
+      "rhyme": "宕开三平阳章",
+      "oldMale": "tsang534",
+      "youngMale": "tsang534"
+    },
+    {
+      "id": "0738",
+      "han": "厂",
+      "hanDisplay": "厂",
+      "sense": null,
+      "rhyme": "宕开三上阳昌",
+      "oldMale": "tshang53",
+      "youngMale": "tshang53"
+    },
+    {
+      "id": "0739",
+      "han": "唱",
+      "hanDisplay": "唱",
+      "sense": null,
+      "rhyme": "宕开三去阳昌",
+      "oldMale": "tshang334",
+      "youngMale": "sang534"
+    },
+    {
+      "id": "0740",
+      "han": "伤",
+      "hanDisplay": "伤",
+      "sense": null,
+      "rhyme": "宕开三平阳书",
+      "oldMale": "san54",
+      "youngMale": "sang534"
+    },
+    {
+      "id": "0741",
+      "han": "尝",
+      "hanDisplay": "尝",
+      "sense": null,
+      "rhyme": "宕开三平阳禅",
+      "oldMale": "zong213",
+      "youngMale": "dzan213"
+    },
+    {
+      "id": "0742",
+      "han": "上",
+      "hanDisplay": "上(上去)",
+      "sense": "上去",
+      "rhyme": "宕开三上阳禅",
+      "oldMale": "zan4",
+      "youngMale": "zang24"
+    },
+    {
+      "id": "0743",
+      "han": "让",
+      "hanDisplay": "让",
+      "sense": null,
+      "rhyme": "宕开三去阳日",
+      "oldMale": "nlan24白 / zan4文",
+      "youngMale": "nian24"
+    },
+    {
+      "id": "0744",
+      "han": "姜",
+      "hanDisplay": "姜(生姜)",
+      "sense": "生姜",
+      "rhyme": "宕开三平阳见",
+      "oldMale": "teiang534",
+      "youngMale": "teiang534"
+    },
+    {
+      "id": "0745",
+      "han": "响",
+      "hanDisplay": "响",
+      "sense": null,
+      "rhyme": "宕开三上阳晓",
+      "oldMale": "cian53",
+      "youngMale": "cian53"
+    },
+    {
+      "id": "0746",
+      "han": "向",
+      "hanDisplay": "向",
+      "sense": null,
+      "rhyme": "宕开三去阳晓",
+      "oldMale": "cian334",
+      "youngMale": "cian334"
+    },
+    {
+      "id": "0747",
+      "han": "秧",
+      "hanDisplay": "秧",
+      "sense": null,
+      "rhyme": "宕开三平阳影",
+      "oldMale": "ian534",
+      "youngMale": "ian534"
+    },
+    {
+      "id": "0748",
+      "han": "痒",
+      "hanDisplay": "痒",
+      "sense": null,
+      "rhyme": "宕开三上阳以",
+      "oldMale": "ian22",
+      "youngMale": "ian223"
+    },
+    {
+      "id": "0749",
+      "han": "样",
+      "hanDisplay": "样",
+      "sense": null,
+      "rhyme": "宕开三去阳以",
+      "oldMale": "ian24",
+      "youngMale": "ian24"
+    },
+    {
+      "id": "0750",
+      "han": "雀",
+      "hanDisplay": "雀",
+      "sense": null,
+      "rhyme": "宕开三人药精",
+      "oldMale": "tehiaP5",
+      "youngMale": "tchyoP5"
+    },
+    {
+      "id": "0751",
+      "han": "削",
+      "hanDisplay": "削",
+      "sense": null,
+      "rhyme": "宕开三人药心",
+      "oldMale": "ciaP5",
+      "youngMale": "eyoP5"
+    },
+    {
+      "id": "0752",
+      "han": "着",
+      "hanDisplay": "着(着火)",
+      "sense": "着火",
+      "rhyme": "宕开三人药知",
+      "oldMale": "dzaP2",
+      "youngMale": "dzaP2"
+    },
+    {
+      "id": "0753",
+      "han": "勺",
+      "hanDisplay": "勺",
+      "sense": null,
+      "rhyme": "宕开三人药禅",
+      "oldMale": "zop2",
+      "youngMale": "zop2"
+    },
+    {
+      "id": "0754",
+      "han": "弱",
+      "hanDisplay": "弱",
+      "sense": null,
+      "rhyme": "宕开三人药日",
+      "oldMale": "zaP2",
+      "youngMale": "zaP2"
+    },
+    {
+      "id": "0755",
+      "han": "脚",
+      "hanDisplay": "脚",
+      "sense": null,
+      "rhyme": "宕开三人药见",
+      "oldMale": "tciaP5",
+      "youngMale": "tciaP5"
+    },
+    {
+      "id": "0756",
+      "han": "约",
+      "hanDisplay": "约",
+      "sense": null,
+      "rhyme": "宕开三人药影",
+      "oldMale": "iaP5",
+      "youngMale": "yop5"
+    },
+    {
+      "id": "0757",
+      "han": "药",
+      "hanDisplay": "药",
+      "sense": null,
+      "rhyme": "宕开三人药以",
+      "oldMale": "iaP2",
+      "youngMale": "ioP2"
+    },
+    {
+      "id": "0758",
+      "han": "光",
+      "hanDisplay": "光(光线)",
+      "sense": "光线",
+      "rhyme": "宕合一平唐见",
+      "oldMale": "kuon534",
+      "youngMale": "kuo534"
+    },
+    {
+      "id": "0759",
+      "han": "慌",
+      "hanDisplay": "慌",
+      "sense": null,
+      "rhyme": "宕合一平唐晓",
+      "oldMale": "huon534",
+      "youngMale": "f534"
+    },
+    {
+      "id": "0760",
+      "han": "黄",
+      "hanDisplay": "黄",
+      "sense": null,
+      "rhyme": "宕合一平唐匣",
+      "oldMale": "uon213",
+      "youngMale": "u213"
+    },
+    {
+      "id": "0761",
+      "han": "郭",
+      "hanDisplay": "郭",
+      "sense": null,
+      "rhyme": "宕合一人铎见",
+      "oldMale": "kuoP2",
+      "youngMale": "kuoP2"
+    },
+    {
+      "id": "0762",
+      "han": "霍",
+      "hanDisplay": "霍",
+      "sense": null,
+      "rhyme": "宕合一人铎晓",
+      "oldMale": "hoP5",
+      "youngMale": "hoP5"
+    },
+    {
+      "id": "0763",
+      "han": "方",
+      "hanDisplay": "方",
+      "sense": null,
+      "rhyme": "宕合三平阳非",
+      "oldMale": "fon534",
+      "youngMale": "f534"
+    },
+    {
+      "id": "0764",
+      "han": "放",
+      "hanDisplay": "放",
+      "sense": null,
+      "rhyme": "宕合三去阳非",
+      "oldMale": "fon334",
+      "youngMale": "f334"
+    },
+    {
+      "id": "0765",
+      "han": "纺",
+      "hanDisplay": "纺",
+      "sense": null,
+      "rhyme": "宕合三上阳敷",
+      "oldMale": "fon53",
+      "youngMale": "fon53"
+    },
+    {
+      "id": "0766",
+      "han": "房",
+      "hanDisplay": "房",
+      "sense": null,
+      "rhyme": "宕合三平阳奉",
+      "oldMale": "uon213",
+      "youngMale": "u213"
+    },
+    {
+      "id": "0767",
+      "han": "防",
+      "hanDisplay": "防",
+      "sense": null,
+      "rhyme": "宕合三平阳奉",
+      "oldMale": "bon213",
+      "youngMale": "b213白 / u213文"
+    },
+    {
+      "id": "0768",
+      "han": "网",
+      "hanDisplay": "网",
+      "sense": null,
+      "rhyme": "宕合三上阳微",
+      "oldMale": "mang",
+      "youngMale": "u²3文"
+    },
+    {
+      "id": "0769",
+      "han": "筐",
+      "hanDisplay": "筐",
+      "sense": null,
+      "rhyme": "宕合三平阳溪",
+      "oldMale": "khuang",
+      "youngMale": "khu534"
+    },
+    {
+      "id": "0770",
+      "han": "狂",
+      "hanDisplay": "狂",
+      "sense": null,
+      "rhyme": "宕合三平阳群",
+      "oldMale": "guang",
+      "youngMale": "gu213"
+    },
+    {
+      "id": "0771",
+      "han": "王",
+      "hanDisplay": "王",
+      "sense": null,
+      "rhyme": "宕合三平阳云",
+      "oldMale": "uong",
+      "youngMale": "u213"
+    },
+    {
+      "id": "0772",
+      "han": "旺",
+      "hanDisplay": "旺",
+      "sense": null,
+      "rhyme": "宕合三去阳云",
+      "oldMale": "uong",
+      "youngMale": "uong"
+    },
+    {
+      "id": "0773",
+      "han": "缚",
+      "hanDisplay": "缚",
+      "sense": null,
+      "rhyme": "宕合三人药奉",
+      "oldMale": "boʔ",
+      "youngMale": "boʔ"
+    },
+    {
+      "id": "0774",
+      "han": "绑",
+      "hanDisplay": "绑",
+      "sense": null,
+      "rhyme": "江开二上江帮",
+      "oldMale": "pan53",
+      "youngMale": "p53"
+    },
+    {
+      "id": "0775",
+      "han": "胖",
+      "hanDisplay": "胖",
+      "sense": null,
+      "rhyme": "江开二去江滂",
+      "oldMale": "phong334",
+      "youngMale": "p5334"
+    },
+    {
+      "id": "0776",
+      "han": "棒",
+      "hanDisplay": "棒",
+      "sense": null,
+      "rhyme": "江开二上江並",
+      "oldMale": "bang22",
+      "youngMale": "b24"
+    },
+    {
+      "id": "0777",
+      "han": "桩",
+      "hanDisplay": "桩",
+      "sense": null,
+      "rhyme": "江开二平江知",
+      "oldMale": "tsang53",
+      "youngMale": "ts534"
+    },
+    {
+      "id": "0778",
+      "han": "撞",
+      "hanDisplay": "撞",
+      "sense": null,
+      "rhyme": "江开二去江澄",
+      "oldMale": "dzo24",
+      "youngMale": "dz24"
+    },
+    {
+      "id": "0779",
+      "han": "窗",
+      "hanDisplay": "窗",
+      "sense": null,
+      "rhyme": "江开二平江初",
+      "oldMale": "tshang534",
+      "youngMale": "ts534"
+    },
+    {
+      "id": "0780",
+      "han": "双",
+      "hanDisplay": "双",
+      "sense": null,
+      "rhyme": "江开二平江生",
+      "oldMale": "sang534",
+      "youngMale": "s534"
+    },
+    {
+      "id": "0781",
+      "han": "江",
+      "hanDisplay": "江",
+      "sense": null,
+      "rhyme": "江开二平江见",
+      "oldMale": "kong34",
+      "youngMale": "k534"
+    },
+    {
+      "id": "0782",
+      "han": "讲",
+      "hanDisplay": "讲",
+      "sense": null,
+      "rhyme": "江开二上江见",
+      "oldMale": "kong",
+      "youngMale": "k53"
+    },
+    {
+      "id": "0783",
+      "han": "降",
+      "hanDisplay": "降(投降)",
+      "sense": "投降",
+      "rhyme": "江开二平江匣",
+      "oldMale": "ong24",
+      "youngMale": "024"
+    },
+    {
+      "id": "0784",
+      "han": "项",
+      "hanDisplay": "项",
+      "sense": null,
+      "rhyme": "江开二上江匣",
+      "oldMale": "ong213",
+      "youngMale": "ong213"
+    },
+    {
+      "id": "0785",
+      "han": "剥",
+      "hanDisplay": "剥",
+      "sense": null,
+      "rhyme": "江开二人觉帮",
+      "oldMale": "poʔ",
+      "youngMale": "po25"
+    },
+    {
+      "id": "0786",
+      "han": "桌",
+      "hanDisplay": "桌",
+      "sense": null,
+      "rhyme": "江开二人觉知",
+      "oldMale": "tso25",
+      "youngMale": "tso25"
+    },
+    {
+      "id": "0787",
+      "han": "镯",
+      "hanDisplay": "镯",
+      "sense": null,
+      "rhyme": "江开二人觉崇",
+      "oldMale": "dzyo2",
+      "youngMale": "dzyo2"
+    },
+    {
+      "id": "0788",
+      "han": "角",
+      "hanDisplay": "角",
+      "sense": null,
+      "rhyme": "江开二人觉见",
+      "oldMale": "koʔ",
+      "youngMale": "koʔ"
+    },
+    {
+      "id": "0789",
+      "han": "壳",
+      "hanDisplay": "壳",
+      "sense": null,
+      "rhyme": "江开二人觉溪",
+      "oldMale": "khoʔ",
+      "youngMale": "khoʔ"
+    },
+    {
+      "id": "0790",
+      "han": "学",
+      "hanDisplay": "学",
+      "sense": null,
+      "rhyme": "江开二人觉匣",
+      "oldMale": "o²白 / io2文",
+      "youngMale": "o²白 / io2文"
+    },
+    {
+      "id": "0791",
+      "han": "握",
+      "hanDisplay": "握",
+      "sense": null,
+      "rhyme": "江开二人觉影",
+      "oldMale": "o25",
+      "youngMale": "o25"
+    },
+    {
+      "id": "0792",
+      "han": "朋",
+      "hanDisplay": "朋",
+      "sense": null,
+      "rhyme": "曾开一平登並",
+      "oldMale": "ban213",
+      "youngMale": "ban213"
+    },
+    {
+      "id": "0793",
+      "han": "灯",
+      "hanDisplay": "灯",
+      "sense": null,
+      "rhyme": "曾开一平登端",
+      "oldMale": "ten534",
+      "youngMale": "tan534"
+    },
+    {
+      "id": "0794",
+      "han": "等",
+      "hanDisplay": "等",
+      "sense": null,
+      "rhyme": "曾开一上登端",
+      "oldMale": "ten53",
+      "youngMale": "ten53"
+    },
+    {
+      "id": "0795",
+      "han": "凳",
+      "hanDisplay": "凳",
+      "sense": null,
+      "rhyme": "曾开一去登端",
+      "oldMale": "ten334",
+      "youngMale": "ten334"
+    },
+    {
+      "id": "0796",
+      "han": "藤",
+      "hanDisplay": "藤",
+      "sense": null,
+      "rhyme": "曾开一平登定",
+      "oldMale": "den213",
+      "youngMale": "dan213"
+    },
+    {
+      "id": "0797",
+      "han": "能",
+      "hanDisplay": "能",
+      "sense": null,
+      "rhyme": "曾开一平登泥",
+      "oldMale": "nen213",
+      "youngMale": "nan213"
+    },
+    {
+      "id": "0798",
+      "han": "层",
+      "hanDisplay": "层",
+      "sense": null,
+      "rhyme": "曾开一平登从",
+      "oldMale": "dzen24",
+      "youngMale": "dzan213"
+    },
+    {
+      "id": "0799",
+      "han": "僧",
+      "hanDisplay": "僧",
+      "sense": null,
+      "rhyme": "曾开一平登心",
+      "oldMale": "sen534",
+      "youngMale": "sang534"
+    },
+    {
+      "id": "0800",
+      "han": "肯",
+      "hanDisplay": "肯",
+      "sense": null,
+      "rhyme": "曾开一上登溪",
+      "oldMale": "khen53",
+      "youngMale": "k'ang53"
+    },
+    {
+      "id": "0801",
+      "han": "北",
+      "hanDisplay": "北",
+      "sense": null,
+      "rhyme": "曾开一人德帮",
+      "oldMale": "pa25",
+      "youngMale": "pa25"
+    },
+    {
+      "id": "0802",
+      "han": "墨",
+      "hanDisplay": "墨",
+      "sense": null,
+      "rhyme": "曾开一人德明",
+      "oldMale": "mo2",
+      "youngMale": "mo2"
+    },
+    {
+      "id": "0803",
+      "han": "得",
+      "hanDisplay": "得",
+      "sense": null,
+      "rhyme": "曾开一人德端",
+      "oldMale": "ta25",
+      "youngMale": "ta25"
+    },
+    {
+      "id": "0804",
+      "han": "特",
+      "hanDisplay": "特",
+      "sense": null,
+      "rhyme": "曾开一人德定",
+      "oldMale": "da2",
+      "youngMale": "da2"
+    },
+    {
+      "id": "0805",
+      "han": "贼",
+      "hanDisplay": "贼",
+      "sense": null,
+      "rhyme": "曾开一人德从",
+      "oldMale": "za2",
+      "youngMale": "zap2"
+    },
+    {
+      "id": "0806",
+      "han": "塞",
+      "hanDisplay": "塞",
+      "sense": null,
+      "rhyme": "曾开一人德心",
+      "oldMale": "sa25",
+      "youngMale": "sa25"
+    },
+    {
+      "id": "0807",
+      "han": "刻",
+      "hanDisplay": "刻",
+      "sense": null,
+      "rhyme": "曾开一人德溪",
+      "oldMale": "kha25",
+      "youngMale": "kha25"
+    },
+    {
+      "id": "0808",
+      "han": "黑",
+      "hanDisplay": "黑",
+      "sense": null,
+      "rhyme": "曾开一人德晓",
+      "oldMale": "ha25",
+      "youngMale": "ha25"
+    },
+    {
+      "id": "0809",
+      "han": "冰",
+      "hanDisplay": "冰",
+      "sense": null,
+      "rhyme": "曾开三平蒸帮",
+      "oldMale": "pin534",
+      "youngMale": "pin534"
+    },
+    {
+      "id": "0810",
+      "han": "证",
+      "hanDisplay": "证",
+      "sense": null,
+      "rhyme": "曾开三去蒸章",
+      "oldMale": "tsen334",
+      "youngMale": "tseng334"
+    },
+    {
+      "id": "0811",
+      "han": "秤",
+      "hanDisplay": "秤",
+      "sense": null,
+      "rhyme": "曾开三去蒸昌",
+      "oldMale": "tshen934",
+      "youngMale": "tsheng334"
+    },
+    {
+      "id": "0812",
+      "han": "绳",
+      "hanDisplay": "绳",
+      "sense": null,
+      "rhyme": "曾开三平蒸船",
+      "oldMale": "zen213",
+      "youngMale": "zan213"
+    },
+    {
+      "id": "0813",
+      "han": "剩",
+      "hanDisplay": "剩",
+      "sense": null,
+      "rhyme": "曾开三去蒸船",
+      "oldMale": "dzen24",
+      "youngMale": "dzan24"
+    },
+    {
+      "id": "0814",
+      "han": "升",
+      "hanDisplay": "升",
+      "sense": null,
+      "rhyme": "曾开三平蒸书",
+      "oldMale": "sen534",
+      "youngMale": "san534"
+    },
+    {
+      "id": "0815",
+      "han": "兴",
+      "hanDisplay": "兴(高~)",
+      "sense": "高~",
+      "rhyme": "曾开三去蒸晓",
+      "oldMale": "ein334",
+      "youngMale": "ein334"
+    },
+    {
+      "id": "0816",
+      "han": "蝇",
+      "hanDisplay": "蝇",
+      "sense": null,
+      "rhyme": "曾开三平蒸以",
+      "oldMale": "in534",
+      "youngMale": "in334"
+    },
+    {
+      "id": "0817",
+      "han": "逼",
+      "hanDisplay": "逼",
+      "sense": null,
+      "rhyme": "曾开三人职帮",
+      "oldMale": "piep5",
+      "youngMale": "piap5"
+    },
+    {
+      "id": "0818",
+      "han": "力",
+      "hanDisplay": "力",
+      "sense": null,
+      "rhyme": "曾开三人职来",
+      "oldMale": "liep2",
+      "youngMale": "liaip5"
+    },
+    {
+      "id": "0819",
+      "han": "息",
+      "hanDisplay": "息",
+      "sense": null,
+      "rhyme": "曾开三人职心",
+      "oldMale": "eieps",
+      "youngMale": "eiarp5"
+    },
+    {
+      "id": "0820",
+      "han": "直",
+      "hanDisplay": "直",
+      "sense": null,
+      "rhyme": "曾开三人职澄",
+      "oldMale": "dzap2",
+      "youngMale": "dzap2"
+    },
+    {
+      "id": "0821",
+      "han": "侧",
+      "hanDisplay": "侧",
+      "sense": null,
+      "rhyme": "曾开三人职庄",
+      "oldMale": "tsaP白 / tshap5",
+      "youngMale": "tshap5"
+    },
+    {
+      "id": "0822",
+      "han": "测",
+      "hanDisplay": "测",
+      "sense": null,
+      "rhyme": "曾开三人职初",
+      "oldMale": "tshap5",
+      "youngMale": "tshap5"
+    },
+    {
+      "id": "0823",
+      "han": "色",
+      "hanDisplay": "色",
+      "sense": null,
+      "rhyme": "曾开三人职生",
+      "oldMale": "sarp5",
+      "youngMale": "sarp5"
+    },
+    {
+      "id": "0824",
+      "han": "织",
+      "hanDisplay": "织",
+      "sense": null,
+      "rhyme": "曾开三人职章",
+      "oldMale": "tsap5",
+      "youngMale": "tsap5"
+    },
+    {
+      "id": "0825",
+      "han": "食",
+      "hanDisplay": "食",
+      "sense": null,
+      "rhyme": "曾开三人职船",
+      "oldMale": "zap2",
+      "youngMale": "zap2"
+    },
+    {
+      "id": "0826",
+      "han": "式",
+      "hanDisplay": "式",
+      "sense": null,
+      "rhyme": "曾开三人职书",
+      "oldMale": "sarp5",
+      "youngMale": "sarp5"
+    },
+    {
+      "id": "0827",
+      "han": "极",
+      "hanDisplay": "极",
+      "sense": null,
+      "rhyme": "曾开三人职群",
+      "oldMale": "dziep2",
+      "youngMale": "dziap2"
+    },
+    {
+      "id": "0828",
+      "han": "国",
+      "hanDisplay": "国",
+      "sense": null,
+      "rhyme": "曾合一人德见",
+      "oldMale": "kuop5",
+      "youngMale": "kuop5"
+    },
+    {
+      "id": "0829",
+      "han": "或",
+      "hanDisplay": "或",
+      "sense": null,
+      "rhyme": "曾合一人德匣",
+      "oldMale": "oP2",
+      "youngMale": "maq24"
+    },
+    {
+      "id": "0830",
+      "han": "猛",
+      "hanDisplay": "猛",
+      "sense": null,
+      "rhyme": "梗开二上庚明",
+      "oldMale": "tan53",
+      "youngMale": "tan53"
+    },
+    {
+      "id": "0831",
+      "han": "打",
+      "hanDisplay": "打",
+      "sense": null,
+      "rhyme": "梗开二上庚端",
+      "oldMale": "lan24",
+      "youngMale": "lan22"
+    },
+    {
+      "id": "0832",
+      "han": "冷",
+      "hanDisplay": "冷",
+      "sense": null,
+      "rhyme": "梗开二上庚来",
+      "oldMale": "lan23",
+      "youngMale": "san534"
+    },
+    {
+      "id": "0833",
+      "han": "生",
+      "hanDisplay": "生",
+      "sense": null,
+      "rhyme": "梗开二平庚生",
+      "oldMale": "san534",
+      "youngMale": "san54"
+    },
+    {
+      "id": "0834",
+      "han": "省",
+      "hanDisplay": "省(省长)",
+      "sense": "省长",
+      "rhyme": "梗开二上庚生",
+      "oldMale": "san53",
+      "youngMale": "san53"
+    },
+    {
+      "id": "0835",
+      "han": "更",
+      "hanDisplay": "更(三更)",
+      "sense": "三更",
+      "rhyme": "梗开二平庚见",
+      "oldMale": "kan534白 / kan534文",
+      "youngMale": "kan534文 / kuan534白"
+    },
+    {
+      "id": "0836",
+      "han": "梗",
+      "hanDisplay": "梗",
+      "sense": null,
+      "rhyme": "梗开二上庚见",
+      "oldMale": "kan53文",
+      "youngMale": "kan53文"
+    },
+    {
+      "id": "0837",
+      "han": "坑",
+      "hanDisplay": "坑",
+      "sense": null,
+      "rhyme": "梗开二平庚溪",
+      "oldMale": "khan53",
+      "youngMale": "khan534"
+    },
+    {
+      "id": "0838",
+      "han": "硬",
+      "hanDisplay": "硬",
+      "sense": null,
+      "rhyme": "梗开二去庚疑",
+      "oldMale": "nan24",
+      "youngMale": "nan24"
+    },
+    {
+      "id": "0839",
+      "han": "行",
+      "hanDisplay": "行(行为)",
+      "sense": "行为",
+      "rhyme": "梗开二平庚匣",
+      "oldMale": "an213",
+      "youngMale": "in213"
+    },
+    {
+      "id": "0840",
+      "han": "百",
+      "hanDisplay": "百",
+      "sense": null,
+      "rhyme": "梗开二人陌帮",
+      "oldMale": "pa2",
+      "youngMale": "pa2"
+    },
+    {
+      "id": "0841",
+      "han": "拍",
+      "hanDisplay": "拍",
+      "sense": null,
+      "rhyme": "梗开二人陌滂",
+      "oldMale": "pha25",
+      "youngMale": "pha25"
+    },
+    {
+      "id": "0842",
+      "han": "白",
+      "hanDisplay": "白",
+      "sense": null,
+      "rhyme": "梗开二人陌並",
+      "oldMale": "ba2",
+      "youngMale": "ba2"
+    },
+    {
+      "id": "0843",
+      "han": "拆",
+      "hanDisplay": "拆",
+      "sense": null,
+      "rhyme": "梗开二人陌彻",
+      "oldMale": "tshap5",
+      "youngMale": "tshap5"
+    },
+    {
+      "id": "0844",
+      "han": "择",
+      "hanDisplay": "择",
+      "sense": null,
+      "rhyme": "梗开二人陌澄",
+      "oldMale": "dzap2",
+      "youngMale": "dzap2"
+    },
+    {
+      "id": "0845",
+      "han": "窄",
+      "hanDisplay": "窄",
+      "sense": null,
+      "rhyme": "梗开二人陌庄",
+      "oldMale": "(无)",
+      "youngMale": "tsa25"
+    },
+    {
+      "id": "0846",
+      "han": "格",
+      "hanDisplay": "格",
+      "sense": null,
+      "rhyme": "梗开二人陌见",
+      "oldMale": "ke2",
+      "youngMale": "ka25"
+    },
+    {
+      "id": "0847",
+      "han": "客",
+      "hanDisplay": "客",
+      "sense": null,
+      "rhyme": "梗开二人陌溪",
+      "oldMale": "khe25",
+      "youngMale": "kha25"
+    },
+    {
+      "id": "0848",
+      "han": "额",
+      "hanDisplay": "额",
+      "sense": null,
+      "rhyme": "梗开二人陌疑",
+      "oldMale": "ne2",
+      "youngMale": "na2"
+    },
+    {
+      "id": "0849",
+      "han": "棚",
+      "hanDisplay": "棚",
+      "sense": null,
+      "rhyme": "梗开二平耕並",
+      "oldMale": "ban213",
+      "youngMale": "ban213"
+    },
+    {
+      "id": "0850",
+      "han": "争",
+      "hanDisplay": "争",
+      "sense": null,
+      "rhyme": "梗开二平耕庄",
+      "oldMale": "dzan213白 / tsen534文",
+      "youngMale": "tse234文"
+    },
+    {
+      "id": "0851",
+      "han": "耕",
+      "hanDisplay": "耕",
+      "sense": null,
+      "rhyme": "梗开二平耕见",
+      "oldMale": "kan534",
+      "youngMale": "kan534"
+    },
+    {
+      "id": "0852",
+      "han": "麦",
+      "hanDisplay": "麦",
+      "sense": null,
+      "rhyme": "梗开二人麦明",
+      "oldMale": "ma2",
+      "youngMale": "ma2"
+    },
+    {
+      "id": "0853",
+      "han": "摘",
+      "hanDisplay": "摘",
+      "sense": null,
+      "rhyme": "梗开二人麦知",
+      "oldMale": "tsa25",
+      "youngMale": "tsa25"
+    },
+    {
+      "id": "0854",
+      "han": "策",
+      "hanDisplay": "策",
+      "sense": null,
+      "rhyme": "梗开二人麦初",
+      "oldMale": "tsha25",
+      "youngMale": "tsa25"
+    },
+    {
+      "id": "0855",
+      "han": "隔",
+      "hanDisplay": "隔",
+      "sense": null,
+      "rhyme": "梗开二人麦见",
+      "oldMale": "ke25",
+      "youngMale": "ka25"
+    },
+    {
+      "id": "0856",
+      "han": "兵",
+      "hanDisplay": "兵",
+      "sense": null,
+      "rhyme": "梗开三平庚帮",
+      "oldMale": "pin534",
+      "youngMale": "pin534"
+    },
+    {
+      "id": "0857",
+      "han": "柄",
+      "hanDisplay": "柄",
+      "sense": null,
+      "rhyme": "梗开三去庚帮",
+      "oldMale": "pin334",
+      "youngMale": "pin53"
+    },
+    {
+      "id": "0858",
+      "han": "平",
+      "hanDisplay": "平",
+      "sense": null,
+      "rhyme": "梗开三平庚並",
+      "oldMale": "bin213",
+      "youngMale": "bin213"
+    },
+    {
+      "id": "0859",
+      "han": "病",
+      "hanDisplay": "病",
+      "sense": null,
+      "rhyme": "梗开三去庚並",
+      "oldMale": "bin24",
+      "youngMale": "bin24"
+    },
+    {
+      "id": "0860",
+      "han": "明",
+      "hanDisplay": "明",
+      "sense": null,
+      "rhyme": "梗开三平庚明",
+      "oldMale": "min213",
+      "youngMale": "min213"
+    },
+    {
+      "id": "0861",
+      "han": "命",
+      "hanDisplay": "命",
+      "sense": null,
+      "rhyme": "梗开三去庚明",
+      "oldMale": "min24",
+      "youngMale": "min24"
+    },
+    {
+      "id": "0862",
+      "han": "镜",
+      "hanDisplay": "镜",
+      "sense": null,
+      "rhyme": "梗开三去庚见",
+      "oldMale": "tein334",
+      "youngMale": "tein334"
+    },
+    {
+      "id": "0863",
+      "han": "庆",
+      "hanDisplay": "庆",
+      "sense": null,
+      "rhyme": "梗开三去庚溪",
+      "oldMale": "tehins34",
+      "youngMale": "tehins34"
+    },
+    {
+      "id": "0864",
+      "han": "迎",
+      "hanDisplay": "迎",
+      "sense": null,
+      "rhyme": "梗开三平庚疑",
+      "oldMale": "nin213",
+      "youngMale": "nin213"
+    },
+    {
+      "id": "0865",
+      "han": "影",
+      "hanDisplay": "影",
+      "sense": null,
+      "rhyme": "梗开三上庚影",
+      "oldMale": "in53",
+      "youngMale": "in53"
+    },
+    {
+      "id": "0866",
+      "han": "剧",
+      "hanDisplay": "剧(戏剧)",
+      "sense": "戏剧",
+      "rhyme": "梗开三人陌群",
+      "oldMale": "dziaP2白 / dzieP2",
+      "youngMale": "tey334文"
+    },
+    {
+      "id": "0867",
+      "han": "饼",
+      "hanDisplay": "饼",
+      "sense": null,
+      "rhyme": "梗开三上清帮",
+      "oldMale": "pin53",
+      "youngMale": "pin53"
+    },
+    {
+      "id": "0868",
+      "han": "名",
+      "hanDisplay": "名",
+      "sense": null,
+      "rhyme": "梗开三平清明",
+      "oldMale": "min213",
+      "youngMale": "min213"
+    },
+    {
+      "id": "0869",
+      "han": "领",
+      "hanDisplay": "领",
+      "sense": null,
+      "rhyme": "梗开三上清来",
+      "oldMale": "lin22",
+      "youngMale": "lin223"
+    },
+    {
+      "id": "0870",
+      "han": "井",
+      "hanDisplay": "井",
+      "sense": null,
+      "rhyme": "梗开三上清精",
+      "oldMale": "tein53",
+      "youngMale": "tein53"
+    },
+    {
+      "id": "0871",
+      "han": "清",
+      "hanDisplay": "清",
+      "sense": null,
+      "rhyme": "梗开三平清清",
+      "oldMale": "tehins34",
+      "youngMale": "tehins34"
+    },
+    {
+      "id": "0872",
+      "han": "静",
+      "hanDisplay": "静",
+      "sense": null,
+      "rhyme": "梗开三上清从",
+      "oldMale": "dzin22",
+      "youngMale": "dzin24"
+    },
+    {
+      "id": "0873",
+      "han": "姓",
+      "hanDisplay": "姓",
+      "sense": null,
+      "rhyme": "梗开三去清心",
+      "oldMale": "ein34",
+      "youngMale": "ein334"
+    },
+    {
+      "id": "0874",
+      "han": "贞",
+      "hanDisplay": "贞",
+      "sense": null,
+      "rhyme": "梗开三平清知",
+      "oldMale": "tsen334",
+      "youngMale": "tsan534"
+    },
+    {
+      "id": "0875",
+      "han": "程",
+      "hanDisplay": "程",
+      "sense": null,
+      "rhyme": "梗开三平清澄",
+      "oldMale": "dzen24",
+      "youngMale": "dzan213"
+    },
+    {
+      "id": "0876",
+      "han": "整",
+      "hanDisplay": "整",
+      "sense": null,
+      "rhyme": "梗开三上清章",
+      "oldMale": "tsen53",
+      "youngMale": "tsan53"
+    },
+    {
+      "id": "0877",
+      "han": "正",
+      "hanDisplay": "正(正反)",
+      "sense": "正反",
+      "rhyme": "梗开三去清章",
+      "oldMale": "tsen334",
+      "youngMale": "tsan334"
+    },
+    {
+      "id": "0878",
+      "han": "声",
+      "hanDisplay": "声",
+      "sense": null,
+      "rhyme": "梗开三平清书",
+      "oldMale": "sen534",
+      "youngMale": "san534"
+    },
+    {
+      "id": "0879",
+      "han": "城",
+      "hanDisplay": "城",
+      "sense": null,
+      "rhyme": "梗开三平清禅",
+      "oldMale": "dzen213",
+      "youngMale": "dzen213"
+    },
+    {
+      "id": "0880",
+      "han": "轻",
+      "hanDisplay": "轻",
+      "sense": null,
+      "rhyme": "梗开三平清溪",
+      "oldMale": "tch'ing534",
+      "youngMale": "tch'ing534"
+    },
+    {
+      "id": "0881",
+      "han": "赢",
+      "hanDisplay": "赢",
+      "sense": null,
+      "rhyme": "梗开三平清以",
+      "oldMale": "in213",
+      "youngMale": "nin213"
+    },
+    {
+      "id": "0882",
+      "han": "积",
+      "hanDisplay": "积",
+      "sense": null,
+      "rhyme": "梗开三人昔精",
+      "oldMale": "teieP5",
+      "youngMale": "teiaP5"
+    },
+    {
+      "id": "0883",
+      "han": "惜",
+      "hanDisplay": "惜",
+      "sense": null,
+      "rhyme": "梗开三人昔心",
+      "oldMale": "cieP5",
+      "youngMale": "ciap5"
+    },
+    {
+      "id": "0884",
+      "han": "席",
+      "hanDisplay": "席",
+      "sense": null,
+      "rhyme": "梗开三人昔邪",
+      "oldMale": "dzier2",
+      "youngMale": "ziao2"
+    },
+    {
+      "id": "0885",
+      "han": "尺",
+      "hanDisplay": "尺",
+      "sense": null,
+      "rhyme": "梗开三人昔昌",
+      "oldMale": "tsh'ap5",
+      "youngMale": "ts'hap5"
+    },
+    {
+      "id": "0886",
+      "han": "石",
+      "hanDisplay": "石",
+      "sense": null,
+      "rhyme": "梗开三人昔禅",
+      "oldMale": "zeP2",
+      "youngMale": "zop2"
+    },
+    {
+      "id": "0887",
+      "han": "益",
+      "hanDisplay": "益",
+      "sense": null,
+      "rhyme": "梗开三人昔影",
+      "oldMale": "iep5",
+      "youngMale": "iaP5"
+    },
+    {
+      "id": "0888",
+      "han": "瓶",
+      "hanDisplay": "瓶",
+      "sense": null,
+      "rhyme": "梗开四平青並",
+      "oldMale": "bin213",
+      "youngMale": "bing213"
+    },
+    {
+      "id": "0889",
+      "han": "钉",
+      "hanDisplay": "钉(名词)",
+      "sense": "名词",
+      "rhyme": "梗开四平青端",
+      "oldMale": "tin534",
+      "youngMale": "tin534"
+    },
+    {
+      "id": "0890",
+      "han": "顶",
+      "hanDisplay": "顶",
+      "sense": null,
+      "rhyme": "梗开四上青端",
+      "oldMale": "tin53",
+      "youngMale": "tin53"
+    },
+    {
+      "id": "0891",
+      "han": "厅",
+      "hanDisplay": "厅",
+      "sense": null,
+      "rhyme": "梗开四平青透",
+      "oldMale": "thin53",
+      "youngMale": "thin534"
+    },
+    {
+      "id": "0892",
+      "han": "听",
+      "hanDisplay": "听(听见)",
+      "sense": "听见",
+      "rhyme": "梗开四平青透",
+      "oldMale": "thin334",
+      "youngMale": "thin334"
+    },
+    {
+      "id": "0893",
+      "han": "停",
+      "hanDisplay": "停",
+      "sense": null,
+      "rhyme": "梗开四平青定",
+      "oldMale": "din213",
+      "youngMale": "din213"
+    },
+    {
+      "id": "0894",
+      "han": "挺",
+      "hanDisplay": "挺",
+      "sense": null,
+      "rhyme": "梗开四上青定",
+      "oldMale": "thin53",
+      "youngMale": "thin53"
+    },
+    {
+      "id": "0895",
+      "han": "定",
+      "hanDisplay": "定",
+      "sense": null,
+      "rhyme": "梗开四去青定",
+      "oldMale": "din24",
+      "youngMale": "din34"
+    },
+    {
+      "id": "0896",
+      "han": "零",
+      "hanDisplay": "零",
+      "sense": null,
+      "rhyme": "梗开四平青来",
+      "oldMale": "lin213",
+      "youngMale": "lin213"
+    },
+    {
+      "id": "0897",
+      "han": "青",
+      "hanDisplay": "青",
+      "sense": null,
+      "rhyme": "梗开四平青清",
+      "oldMale": "teh'ing534",
+      "youngMale": "teh'ing534"
+    },
+    {
+      "id": "0898",
+      "han": "星",
+      "hanDisplay": "星",
+      "sense": null,
+      "rhyme": "梗开四平青心",
+      "oldMale": "ein534",
+      "youngMale": "ein534"
+    },
+    {
+      "id": "0899",
+      "han": "经",
+      "hanDisplay": "经",
+      "sense": null,
+      "rhyme": "梗开四平青见",
+      "oldMale": "tein534",
+      "youngMale": "tein534"
+    },
+    {
+      "id": "0900",
+      "han": "形",
+      "hanDisplay": "形",
+      "sense": null,
+      "rhyme": "梗开四平青匣",
+      "oldMale": "in213",
+      "youngMale": "in213"
+    },
+    {
+      "id": "0901",
+      "han": "壁",
+      "hanDisplay": "壁",
+      "sense": null,
+      "rhyme": "梗开四人锡帮",
+      "oldMale": "piep5",
+      "youngMale": "piaP5"
+    },
+    {
+      "id": "0902",
+      "han": "劈",
+      "hanDisplay": "劈",
+      "sense": null,
+      "rhyme": "梗开四人锡滂",
+      "oldMale": "phieps",
+      "youngMale": "phiP5"
+    },
+    {
+      "id": "0903",
+      "han": "踢",
+      "hanDisplay": "踢",
+      "sense": null,
+      "rhyme": "梗开四人锡透",
+      "oldMale": "t'ieP5",
+      "youngMale": "t'iaP5"
+    },
+    {
+      "id": "0904",
+      "han": "笛",
+      "hanDisplay": "笛",
+      "sense": null,
+      "rhyme": "梗开四人锡定",
+      "oldMale": "dieP2",
+      "youngMale": "diaP2"
+    },
+    {
+      "id": "0905",
+      "han": "历",
+      "hanDisplay": "历(衣~)",
+      "sense": "衣~",
+      "rhyme": "梗开四人锡来",
+      "oldMale": "lieP2",
+      "youngMale": "liaP2"
+    },
+    {
+      "id": "0906",
+      "han": "锡",
+      "hanDisplay": "锡",
+      "sense": null,
+      "rhyme": "梗开四人锡心",
+      "oldMale": "gieP5",
+      "youngMale": "ciaP5"
+    },
+    {
+      "id": "0907",
+      "han": "击",
+      "hanDisplay": "击",
+      "sense": null,
+      "rhyme": "梗开四人锡见",
+      "oldMale": "tcieP5",
+      "youngMale": "tciaP5"
+    },
+    {
+      "id": "0908",
+      "han": "吃",
+      "hanDisplay": "吃",
+      "sense": null,
+      "rhyme": "梗开四人锡溪",
+      "oldMale": "tg'yoʔ白 / tg'ieP5文",
+      "youngMale": "tg'yoʔ白"
+    },
+    {
+      "id": "0909",
+      "han": "横",
+      "hanDisplay": "横(横竖)",
+      "sense": "横竖",
+      "rhyme": "梗合二平庚匣",
+      "oldMale": "uan213",
+      "youngMale": "uan213"
+    },
+    {
+      "id": "0910",
+      "han": "划",
+      "hanDisplay": "划(计划)",
+      "sense": "计划",
+      "rhyme": "梗合二人麦匣",
+      "oldMale": "uaP2",
+      "youngMale": "uaP2"
+    },
+    {
+      "id": "0911",
+      "han": "兄",
+      "hanDisplay": "兄",
+      "sense": null,
+      "rhyme": "梗合三平庚晓",
+      "oldMale": "eyon534",
+      "youngMale": "eyon534"
+    },
+    {
+      "id": "0912",
+      "han": "荣",
+      "hanDisplay": "荣",
+      "sense": null,
+      "rhyme": "梗合三平庚云",
+      "oldMale": "yong213",
+      "youngMale": "yong213"
+    },
+    {
+      "id": "0913",
+      "han": "永",
+      "hanDisplay": "永",
+      "sense": null,
+      "rhyme": "梗合三上庚云",
+      "oldMale": "yong53",
+      "youngMale": "yong53"
+    },
+    {
+      "id": "0914",
+      "han": "营",
+      "hanDisplay": "营",
+      "sense": null,
+      "rhyme": "梗合三平清以",
+      "oldMale": "in213",
+      "youngMale": "in213"
+    },
+    {
+      "id": "0915",
+      "han": "蓬",
+      "hanDisplay": "蓬(蓬松)",
+      "sense": "蓬松",
+      "rhyme": "通合一平东並",
+      "oldMale": "bon213",
+      "youngMale": "ban213"
+    },
+    {
+      "id": "0916",
+      "han": "东",
+      "hanDisplay": "东",
+      "sense": null,
+      "rhyme": "通合一平东端",
+      "oldMale": "ton534",
+      "youngMale": "ton534"
+    },
+    {
+      "id": "0917",
+      "han": "懂",
+      "hanDisplay": "懂",
+      "sense": null,
+      "rhyme": "通合一上东端",
+      "oldMale": "ton53",
+      "youngMale": "ton53"
+    },
+    {
+      "id": "0918",
+      "han": "冻",
+      "hanDisplay": "冻",
+      "sense": null,
+      "rhyme": "通合一去东端",
+      "oldMale": "ton334",
+      "youngMale": "ton334"
+    },
+    {
+      "id": "0919",
+      "han": "通",
+      "hanDisplay": "通",
+      "sense": null,
+      "rhyme": "通合一平东透",
+      "oldMale": "thon534",
+      "youngMale": "thon534"
+    },
+    {
+      "id": "0920",
+      "han": "桶",
+      "hanDisplay": "桶",
+      "sense": null,
+      "rhyme": "通合一上东透",
+      "oldMale": "don22",
+      "youngMale": "don223"
+    },
+    {
+      "id": "0921",
+      "han": "痛",
+      "hanDisplay": "痛",
+      "sense": null,
+      "rhyme": "通合一去东透",
+      "oldMale": "thon334",
+      "youngMale": "thon334"
+    },
+    {
+      "id": "0922",
+      "han": "铜",
+      "hanDisplay": "铜",
+      "sense": null,
+      "rhyme": "通合一平东定",
+      "oldMale": "don213",
+      "youngMale": "don213"
+    },
+    {
+      "id": "0923",
+      "han": "动",
+      "hanDisplay": "动",
+      "sense": null,
+      "rhyme": "通合一上东定",
+      "oldMale": "don24",
+      "youngMale": "do94"
+    },
+    {
+      "id": "0924",
+      "han": "洞",
+      "hanDisplay": "洞",
+      "sense": null,
+      "rhyme": "通合一去东定",
+      "oldMale": "don24",
+      "youngMale": "log213"
+    },
+    {
+      "id": "0925",
+      "han": "聋",
+      "hanDisplay": "聋",
+      "sense": null,
+      "rhyme": "通合一平东来",
+      "oldMale": "lon213",
+      "youngMale": "lon213"
+    },
+    {
+      "id": "0926",
+      "han": "弄",
+      "hanDisplay": "弄",
+      "sense": null,
+      "rhyme": "通合一去东来",
+      "oldMale": "lon24",
+      "youngMale": "lon24"
+    },
+    {
+      "id": "0927",
+      "han": "棕",
+      "hanDisplay": "棕",
+      "sense": null,
+      "rhyme": "通合一去东精",
+      "oldMale": "tsong",
+      "youngMale": "tsong"
+    },
+    {
+      "id": "0928",
+      "han": "葱",
+      "hanDisplay": "葱",
+      "sense": null,
+      "rhyme": "通合一平东清",
+      "oldMale": "ts'ong",
+      "youngMale": "ts'ong"
+    },
+    {
+      "id": "0929",
+      "han": "送",
+      "hanDisplay": "送",
+      "sense": null,
+      "rhyme": "通合一去东心",
+      "oldMale": "sor",
+      "youngMale": "sor"
+    },
+    {
+      "id": "0930",
+      "han": "公",
+      "hanDisplay": "公",
+      "sense": null,
+      "rhyme": "通合一平东见",
+      "oldMale": "kuong",
+      "youngMale": "kong"
+    },
+    {
+      "id": "0931",
+      "han": "孔",
+      "hanDisplay": "孔",
+      "sense": null,
+      "rhyme": "通合一上东溪",
+      "oldMale": "k'ong",
+      "youngMale": "k'ong"
+    },
+    {
+      "id": "0932",
+      "han": "烘",
+      "hanDisplay": "烘(烘干)",
+      "sense": "烘干",
+      "rhyme": "通合一平东晓",
+      "oldMale": "hong",
+      "youngMale": "hong"
+    },
+    {
+      "id": "0933",
+      "han": "红",
+      "hanDisplay": "红",
+      "sense": null,
+      "rhyme": "通合一平东匣",
+      "oldMale": "ong",
+      "youngMale": "ong"
+    },
+    {
+      "id": "0934",
+      "han": "翁",
+      "hanDisplay": "翁",
+      "sense": null,
+      "rhyme": "通合一平东影",
+      "oldMale": "ong",
+      "youngMale": "ong"
+    },
+    {
+      "id": "0935",
+      "han": "木",
+      "hanDisplay": "木",
+      "sense": null,
+      "rhyme": "通合一人屋明",
+      "oldMale": "mor2",
+      "youngMale": "mor2"
+    },
+    {
+      "id": "0936",
+      "han": "读",
+      "hanDisplay": "读",
+      "sense": null,
+      "rhyme": "通合一人屋定",
+      "oldMale": "doʔ",
+      "youngMale": "doʔ"
+    },
+    {
+      "id": "0937",
+      "han": "鹿",
+      "hanDisplay": "鹿",
+      "sense": null,
+      "rhyme": "通合一人屋来",
+      "oldMale": "loʔ",
+      "youngMale": "loʔ"
+    },
+    {
+      "id": "0938",
+      "han": "族",
+      "hanDisplay": "族",
+      "sense": null,
+      "rhyme": "通合一人屋从",
+      "oldMale": "dzop2",
+      "youngMale": "dzop2"
+    },
+    {
+      "id": "0939",
+      "han": "谷",
+      "hanDisplay": "谷(稻谷)",
+      "sense": "稻谷",
+      "rhyme": "通合一人屋见",
+      "oldMale": "kuop5",
+      "youngMale": "kuop5"
+    },
+    {
+      "id": "0940",
+      "han": "哭",
+      "hanDisplay": "哭",
+      "sense": null,
+      "rhyme": "通合一人屋溪",
+      "oldMale": "k'uoʔ5",
+      "youngMale": "k'uoʔ5"
+    },
+    {
+      "id": "0941",
+      "han": "屋",
+      "hanDisplay": "屋",
+      "sense": null,
+      "rhyme": "通合一人屋影",
+      "oldMale": "uo53白 / oʔ文",
+      "youngMale": "uo53白 / oʔ文"
+    },
+    {
+      "id": "0942",
+      "han": "冬",
+      "hanDisplay": "冬(冬至)",
+      "sense": "冬至",
+      "rhyme": "通合一平冬端",
+      "oldMale": "tong",
+      "youngMale": "tong"
+    },
+    {
+      "id": "0943",
+      "han": "统",
+      "hanDisplay": "统",
+      "sense": null,
+      "rhyme": "通合一去冬透",
+      "oldMale": "t'ong",
+      "youngMale": "t'ong"
+    },
+    {
+      "id": "0944",
+      "han": "脓",
+      "hanDisplay": "脓",
+      "sense": null,
+      "rhyme": "通合一平冬泥",
+      "oldMale": "non",
+      "youngMale": "non"
+    },
+    {
+      "id": "0945",
+      "han": "松",
+      "hanDisplay": "松(松紧)",
+      "sense": "松紧",
+      "rhyme": "通合一平冬心",
+      "oldMale": "song",
+      "youngMale": "song"
+    },
+    {
+      "id": "0946",
+      "han": "宋",
+      "hanDisplay": "宋",
+      "sense": null,
+      "rhyme": "通合一去冬心",
+      "oldMale": "song",
+      "youngMale": "song"
+    },
+    {
+      "id": "0947",
+      "han": "毒",
+      "hanDisplay": "毒",
+      "sense": null,
+      "rhyme": "通合一人沃定",
+      "oldMale": "dop2",
+      "youngMale": "dop2"
+    },
+    {
+      "id": "0948",
+      "han": "风",
+      "hanDisplay": "风",
+      "sense": null,
+      "rhyme": "通合三平东非",
+      "oldMale": "fon",
+      "youngMale": "fon"
+    },
+    {
+      "id": "0949",
+      "han": "丰",
+      "hanDisplay": "丰",
+      "sense": null,
+      "rhyme": "通合三平东敷",
+      "oldMale": "fon534",
+      "youngMale": "fon534"
+    },
+    {
+      "id": "0950",
+      "han": "凤",
+      "hanDisplay": "凤",
+      "sense": null,
+      "rhyme": "通合三去东奉",
+      "oldMale": "uon24",
+      "youngMale": "uon24"
+    },
+    {
+      "id": "0951",
+      "han": "梦",
+      "hanDisplay": "梦",
+      "sense": null,
+      "rhyme": "通合三去东明",
+      "oldMale": "mon24白 / mon24文",
+      "youngMale": "mon24"
+    },
+    {
+      "id": "0952",
+      "han": "中",
+      "hanDisplay": "中(当中)",
+      "sense": "当中",
+      "rhyme": "通合三平东知",
+      "oldMale": "tsong534",
+      "youngMale": "tsong534"
+    },
+    {
+      "id": "0953",
+      "han": "虫",
+      "hanDisplay": "虫",
+      "sense": null,
+      "rhyme": "通合三平东澄",
+      "oldMale": "dzong213",
+      "youngMale": "dzong213"
+    },
+    {
+      "id": "0954",
+      "han": "终",
+      "hanDisplay": "终",
+      "sense": null,
+      "rhyme": "通合三平东章",
+      "oldMale": "tsong534",
+      "youngMale": "tsong534"
+    },
+    {
+      "id": "0955",
+      "han": "充",
+      "hanDisplay": "充",
+      "sense": null,
+      "rhyme": "通合三平东昌",
+      "oldMale": "tshon534",
+      "youngMale": "tshon534"
+    },
+    {
+      "id": "0956",
+      "han": "宫",
+      "hanDisplay": "宫",
+      "sense": null,
+      "rhyme": "通合三平东见",
+      "oldMale": "kuong534",
+      "youngMale": "kong534"
+    },
+    {
+      "id": "0957",
+      "han": "穷",
+      "hanDisplay": "穷",
+      "sense": null,
+      "rhyme": "通合三平东群",
+      "oldMale": "dzyong213",
+      "youngMale": "dzyong213"
+    },
+    {
+      "id": "0958",
+      "han": "熊",
+      "hanDisplay": "熊",
+      "sense": null,
+      "rhyme": "通合三平东云",
+      "oldMale": "yon213",
+      "youngMale": "zyong213"
+    },
+    {
+      "id": "0959",
+      "han": "雄",
+      "hanDisplay": "雄",
+      "sense": null,
+      "rhyme": "通合三平东云",
+      "oldMale": "yon213",
+      "youngMale": "zyong213"
+    },
+    {
+      "id": "0960",
+      "han": "福",
+      "hanDisplay": "福",
+      "sense": null,
+      "rhyme": "通合三人屋非",
+      "oldMale": "fo25",
+      "youngMale": "fo25"
+    },
+    {
+      "id": "0961",
+      "han": "服",
+      "hanDisplay": "服",
+      "sense": null,
+      "rhyme": "通合三人屋奉",
+      "oldMale": "uo22",
+      "youngMale": "uo22"
+    },
+    {
+      "id": "0962",
+      "han": "目",
+      "hanDisplay": "目",
+      "sense": null,
+      "rhyme": "通合三人屋明",
+      "oldMale": "mo22",
+      "youngMale": "mo22"
+    },
+    {
+      "id": "0963",
+      "han": "六",
+      "hanDisplay": "六",
+      "sense": null,
+      "rhyme": "通合三人屋来",
+      "oldMale": "lo22",
+      "youngMale": "lo22"
+    },
+    {
+      "id": "0964",
+      "han": "宿",
+      "hanDisplay": "宿(住宿)",
+      "sense": "住宿",
+      "rhyme": "通合三人屋心",
+      "oldMale": "so25",
+      "youngMale": "so25"
+    },
+    {
+      "id": "0965",
+      "han": "竹",
+      "hanDisplay": "竹",
+      "sense": null,
+      "rhyme": "通合三人屋知",
+      "oldMale": "tsos25",
+      "youngMale": "tsos25"
+    },
+    {
+      "id": "0966",
+      "han": "畜",
+      "hanDisplay": "畜(畜生)",
+      "sense": "畜生",
+      "rhyme": "通合三人屋彻",
+      "oldMale": "tshops",
+      "youngMale": "tshops"
+    },
+    {
+      "id": "0967",
+      "han": "缩",
+      "hanDisplay": "缩",
+      "sense": null,
+      "rhyme": "通合三人屋生",
+      "oldMale": "sop25",
+      "youngMale": "so25"
+    },
+    {
+      "id": "0968",
+      "han": "粥",
+      "hanDisplay": "粥",
+      "sense": null,
+      "rhyme": "通合三人屋章",
+      "oldMale": "tsops",
+      "youngMale": "tsops"
+    },
+    {
+      "id": "0969",
+      "han": "叔",
+      "hanDisplay": "叔",
+      "sense": null,
+      "rhyme": "通合三人屋书",
+      "oldMale": "so25",
+      "youngMale": "so25"
+    },
+    {
+      "id": "0970",
+      "han": "熟",
+      "hanDisplay": "熟",
+      "sense": null,
+      "rhyme": "通合三人屋禅",
+      "oldMale": "zop2",
+      "youngMale": "zop2"
+    },
+    {
+      "id": "0971",
+      "han": "肉",
+      "hanDisplay": "肉",
+      "sense": null,
+      "rhyme": "通合三人屋日",
+      "oldMale": "nyop2",
+      "youngMale": "nyop2"
+    },
+    {
+      "id": "0972",
+      "han": "菊",
+      "hanDisplay": "菊",
+      "sense": null,
+      "rhyme": "通合三人屋见",
+      "oldMale": "teyoʔ",
+      "youngMale": "teyoʔ"
+    },
+    {
+      "id": "0973",
+      "han": "育",
+      "hanDisplay": "育",
+      "sense": null,
+      "rhyme": "通合三人屋以",
+      "oldMale": "yop2",
+      "youngMale": "yop2"
+    },
+    {
+      "id": "0974",
+      "han": "封",
+      "hanDisplay": "封",
+      "sense": null,
+      "rhyme": "通合三平钟非",
+      "oldMale": "fon534",
+      "youngMale": "fon534"
+    },
+    {
+      "id": "0975",
+      "han": "蜂",
+      "hanDisplay": "蜂",
+      "sense": null,
+      "rhyme": "通合三平钟敷",
+      "oldMale": "fon534",
+      "youngMale": "fon534"
+    },
+    {
+      "id": "0976",
+      "han": "缝",
+      "hanDisplay": "缝(一条~)",
+      "sense": "一条~",
+      "rhyme": "通合三去钟奉",
+      "oldMale": "uon24",
+      "youngMale": "uon24"
+    },
+    {
+      "id": "0977",
+      "han": "浓",
+      "hanDisplay": "浓",
+      "sense": null,
+      "rhyme": "通合三平钟泥",
+      "oldMale": "n-yon213白 / non213 / noq213文",
+      "youngMale": "noq213文"
+    },
+    {
+      "id": "0978",
+      "han": "龙",
+      "hanDisplay": "龙",
+      "sense": null,
+      "rhyme": "通合三平钟来",
+      "oldMale": "lon213",
+      "youngMale": "lon213"
+    },
+    {
+      "id": "0979",
+      "han": "松",
+      "hanDisplay": "松(松树)",
+      "sense": "松树",
+      "rhyme": "通合三平钟邪",
+      "oldMale": "zong213",
+      "youngMale": "z5213"
+    },
+    {
+      "id": "0980",
+      "han": "重",
+      "hanDisplay": "重(轻重)",
+      "sense": "轻重",
+      "rhyme": "通合三上钟澄",
+      "oldMale": "dzong24",
+      "youngMale": "dzong24"
+    },
+    {
+      "id": "0981",
+      "han": "肿",
+      "hanDisplay": "肿",
+      "sense": null,
+      "rhyme": "通合三上钟章",
+      "oldMale": "tsong53",
+      "youngMale": "tsong53"
+    },
+    {
+      "id": "0982",
+      "han": "种",
+      "hanDisplay": "种(种树)",
+      "sense": "种树",
+      "rhyme": "通合三去钟章",
+      "oldMale": "tsong34",
+      "youngMale": "tsong34"
+    },
+    {
+      "id": "0983",
+      "han": "冲",
+      "hanDisplay": "冲",
+      "sense": null,
+      "rhyme": "通合三平钟昌",
+      "oldMale": "tshong534",
+      "youngMale": "tshong534"
+    },
+    {
+      "id": "0984",
+      "han": "恭",
+      "hanDisplay": "恭",
+      "sense": null,
+      "rhyme": "通合三平钟见",
+      "oldMale": "kuong534",
+      "youngMale": "kong534"
+    },
+    {
+      "id": "0985",
+      "han": "共",
+      "hanDisplay": "共",
+      "sense": null,
+      "rhyme": "通合三去钟群",
+      "oldMale": "dzyong24白 / guong24文",
+      "youngMale": "gong24文 / dzyong24白"
+    },
+    {
+      "id": "0986",
+      "han": "凶",
+      "hanDisplay": "凶(吉凶)",
+      "sense": "吉凶",
+      "rhyme": "通合三平钟晓",
+      "oldMale": "eyong534",
+      "youngMale": "eyong534"
+    },
+    {
+      "id": "0987",
+      "han": "拥",
+      "hanDisplay": "拥",
+      "sense": null,
+      "rhyme": "通合三上钟影",
+      "oldMale": "yong53",
+      "youngMale": "yong534"
+    },
+    {
+      "id": "0988",
+      "han": "容",
+      "hanDisplay": "容",
+      "sense": null,
+      "rhyme": "通合三平钟以",
+      "oldMale": "yong213",
+      "youngMale": "zong213"
+    },
+    {
+      "id": "0989",
+      "han": "用",
+      "hanDisplay": "用",
+      "sense": null,
+      "rhyme": "通合三去钟以",
+      "oldMale": "yong24",
+      "youngMale": "yong24"
+    },
+    {
+      "id": "0990",
+      "han": "绿",
+      "hanDisplay": "绿",
+      "sense": null,
+      "rhyme": "通合三人烛来",
+      "oldMale": "loʔ2",
+      "youngMale": "loʔ2"
+    },
+    {
+      "id": "0991",
+      "han": "足",
+      "hanDisplay": "足",
+      "sense": null,
+      "rhyme": "通合三人烛精",
+      "oldMale": "tsop5",
+      "youngMale": "tsop5"
+    },
+    {
+      "id": "0992",
+      "han": "烛",
+      "hanDisplay": "烛",
+      "sense": null,
+      "rhyme": "通合三人烛章",
+      "oldMale": "tsop5",
+      "youngMale": "tsop5"
+    },
+    {
+      "id": "0993",
+      "han": "赎",
+      "hanDisplay": "赎",
+      "sense": null,
+      "rhyme": "通合三人烛船",
+      "oldMale": "zoʔ2",
+      "youngMale": "zoʔ2"
+    },
+    {
+      "id": "0994",
+      "han": "属",
+      "hanDisplay": "属",
+      "sense": null,
+      "rhyme": "通合三人烛禅",
+      "oldMale": "zop2",
+      "youngMale": "zop2"
+    },
+    {
+      "id": "0995",
+      "han": "褥",
+      "hanDisplay": "褥",
+      "sense": null,
+      "rhyme": "通合三人烛日",
+      "oldMale": "(无)",
+      "youngMale": "(无)"
+    },
+    {
+      "id": "0996",
+      "han": "曲",
+      "hanDisplay": "曲(曲折)",
+      "sense": "曲折",
+      "rhyme": "通合三人烛溪",
+      "oldMale": "tghyop5",
+      "youngMale": "tghyop5"
+    },
+    {
+      "id": "0997",
+      "han": "局",
+      "hanDisplay": "局",
+      "sense": null,
+      "rhyme": "通合三人烛群",
+      "oldMale": "dzyoʔ",
+      "youngMale": "dzyoʔ"
+    },
+    {
+      "id": "0998",
+      "han": "玉",
+      "hanDisplay": "玉",
+      "sense": null,
+      "rhyme": "通合三人烛疑",
+      "oldMale": "nyoʔ",
+      "youngMale": "nyoʔ"
+    },
+    {
+      "id": "0999",
+      "han": "浴",
+      "hanDisplay": "浴",
+      "sense": null,
+      "rhyme": "通合三人烛以",
+      "oldMale": "",
+      "youngMale": ""
+    }
+  ]
+}
