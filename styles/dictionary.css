@@ -1,3 +1,11 @@
+.dict-primer-link {
+  margin: 0.35rem 0 0;
+}
+
+.dict-primer-link .dict-link {
+  font-size: var(--text-sm);
+}
+
 .dict-layout,
 .faq-list {
   max-width: var(--max-width);

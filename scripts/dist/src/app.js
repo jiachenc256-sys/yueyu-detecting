@@ -1,5 +1,5 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260825d1";
+import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260826ipa2";
 function initNavigation() {
     const triggers = document.querySelectorAll("[data-panel-target]");
     const navButtons = document.querySelectorAll(".site-nav [data-panel-target]");
@@ -315,6 +315,11 @@ function applyHashRoute(applyArchiveFilter) {
     if (planMatch) {
         document.querySelector(`.site-nav [data-panel-target="plan"]`)?.click();
         showPlanSection(planMatch[1]);
+        return;
+    }
+    if (hash === "learn-ipa") {
+        document.querySelector(`.site-nav [data-panel-target="learn"]`)?.click();
+        document.querySelector(`.learn-nav__link[data-learn-target="ipa"]`)?.click();
         return;
     }
     const learnMatch = /^learn-fayin-l(\d+)$/.exec(hash);

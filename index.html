@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260825d1" />
-  <link rel="stylesheet" href="styles/main.css?v=20260825d1" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260825d1" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260825d1" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260825d1" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260825d1" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260825d1" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826ipa2" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826ipa2" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826ipa2" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826ipa2" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826ipa2" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826ipa2" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826ipa2" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -1889,12 +1889,13 @@
       <section class="panel" data-panel="learn" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="learn.title">学习工具</h2>
-          <p data-i18n="learn.lead">先弄清上虞 / 诸暨 / 嵊州音标怎么拆，再按五阶练单字对照。</p>
+          <p data-i18n="learn.lead">先预习词典音标，再弄清三地对照，然后按五阶练单字。</p>
         </header>
 
         <div class="learn-layout">
           <nav class="learn-nav" aria-label="Learn tools" data-i18n-attr="aria-label" data-i18n="learn.navLabel">
             <button type="button" class="learn-nav__link" data-learn-target="guide" aria-current="true" data-i18n="learn.nav.guide">学习指南</button>
+            <button type="button" class="learn-nav__link" data-learn-target="ipa" aria-current="false" data-i18n="learn.nav.ipa">音标预习</button>
             <button type="button" class="learn-nav__link" data-learn-target="pinyin" aria-current="false" data-i18n="learn.nav.pinyin">学习拼音</button>
             <button type="button" class="learn-nav__link" data-learn-target="fayin" aria-current="false" data-i18n="learn.nav.fayin">学习发音</button>
           </nav>
@@ -1910,13 +1911,287 @@
                 <div id="ziyin-syllabus-list" class="ziyin-syllabus__list"></div>
               </section>
               <div class="plan-cta-row">
+                <button type="button" class="home-cta__btn" id="learn-open-ipa" data-i18n="learn.nav.ipa">音标预习</button>
                 <button type="button" class="home-cta__btn" id="learn-open-pinyin" data-i18n="learn.nav.pinyin">学习拼音</button>
                 <button type="button" class="home-cta__btn home-cta__btn--primary" id="learn-start-from-guide" data-i18n="learn.pinyin.cta">开始第 1 阶发音练习</button>
                 <button type="button" class="home-cta__btn" id="learn-open-quest" data-i18n="learn.quest.openFromGuide">去越语村闯关</button>
               </div>
             </div>
 
-            <div class="learn-tool" data-learn-section="pinyin" aria-hidden="true">
+                        <div class="learn-tool" data-learn-section="ipa" aria-hidden="true">
+              <h3 class="learn-primer__title" data-i18n="learn.ipa.title">音标预习</h3>
+              <p class="learn-audience" data-i18n="learn.ipa.lead">打开词典前先花几分钟：五度调值、送气/浊音/入声，再对照本站「数字调」与「上标 IPA」两套记法。</p>
+
+              <div class="learn-primer" data-visible-lang="zh-Hans">
+                <h4>这页先解决什么</h4>
+                <p>词典与词组里的音标记录的是<strong>吴语（绍兴嵊州一带）</strong>：比普通话多<strong>全浊声母</strong>和<strong>入声</strong>（喉塞尾 <code>ʔ</code>）。下面不要求背完整 IPA，只求能把一条注音拆开、对照录音。</p>
+
+                <h4>1 · 先建立三个底层概念</h4>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>拼音 ≠ 音标</dt>
+                    <dd>普通话拼音用声母 + 韵母 + 1–4 声。国际音标把每个音素写细：浊音（声带振动）、入声（短促掐断）、鼻化元音（鼻子出气）都会单独标出。</dd>
+                  </div>
+                  <div>
+                    <dt>上标 / 尾数 = 五度调值</dt>
+                    <dd><code>1</code> 最低，<code>5</code> 最高。一串数字是音高轨迹：如 <code>⁵³</code> 高降，<code>²³¹</code> 低–中–低的小波浪，<code>⁵</code> 短促高入声。<strong>不是</strong>普通话阴平 1 / 阳平 2。</dd>
+                  </div>
+                  <div>
+                    <dt>三个「服装」符号</dt>
+                    <dd><code>˜</code>（或 <code>̃</code>）鼻化：鼻子要出气。　<code>ʰ</code> / <code>'</code> / 塞音后的 <code>h</code>：强送气。　<code>ʔ</code>：入声喉塞，发完立刻收住，勿拖长。</dd>
+                  </div>
+                </dl>
+
+                <h4>2 · 本站两套记法（最重要）</h4>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">位置</th><th scope="col">例子</th><th scope="col">怎么拆</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="learn-primer__table-row--focus">
+                      <td>单字 · 老男 / 青男</td>
+                      <td><code>to534</code> · <code>t'ho534文</code></td>
+                      <td>拉丁声韵 + <strong>末尾连写数字</strong>。两列对照两代人。</td>
+                    </tr>
+                    <tr>
+                      <td>词组 · 方言注音</td>
+                      <td><code>木头 moʔ² dɤ²³¹</code></td>
+                      <td>先本地说法，再 IPA；调值多为<strong>上标</strong>。空格分音节。</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="learn-primer__list">
+                  <li><code>文</code> / <code>白</code>：文读（偏书面）/ 白读（口语）。</li>
+                  <li><code>/</code>：多种读法并存，先读斜杠前。</li>
+                  <li><code>（无）</code>：方言一般不用该字；<code>—</code> 或空：原记录未录。</li>
+                </ul>
+
+                <h4>3 · 辅音：清、送气、浊（吴语难点）</h4>
+                <p>普通话塞音多是「清」；吴语还有<strong>浊音</strong>（声带先振动）。可先记一组：</p>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">音标</th><th scope="col">类型</th><th scope="col">感觉</th><th scope="col">参考</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>p</code> <code>t</code> <code>k</code></td><td>不送气清</td><td>堵住再放，无强气流</td><td>普通话 b / d / g</td></tr>
+                    <tr><td><code>pʰ</code> <code>tʰ</code> <code>kʰ</code>（或 <code>p'</code> <code>th</code>）</td><td>送气清</td><td>有明显气流喷出</td><td>普通话 p / t / k</td></tr>
+                    <tr><td><code>b</code> <code>d</code> <code>g</code> <code>ɦ</code></td><td>全浊</td><td>喉咙先「嗡」再破阻</td><td>英语 boy / dog / go；<code>ɦ</code> 像带声的 h</td></tr>
+                  </tbody>
+                </table>
+                <p>常见还有：<code>ts tsʰ s z</code>、<code>tɕ tɕʰ ɕ ʑ dʑ</code>、<code>m n ŋ l</code>。看见浊的那一列，就想到「声带要先响」。</p>
+
+                <h4>4 · 元音、鼻化与入声</h4>
+                <ul class="learn-primer__list">
+                  <li>单元音大致可对：<code>a ɛ e i o ɔ u y ə</code>；吴语常见 <code>ɿ</code>（接近「资」的韵母）、圆唇前元音 <code>ø</code>。</li>
+                  <li>元音上加 <code>̃</code>：口型不变，气流从鼻腔出来（软糯感多来自这里）。</li>
+                  <li>双元音如 <code>ia uo iɛ</code>：快速滑过去，每个音素都要到。</li>
+                  <li>词末 <code>ʔ</code>：元音一出立刻用嗓子眼掐断——像轻咳收住，绝不能拖。</li>
+                </ul>
+
+                <h4>5 · 用本站词表实战拆三条</h4>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>木头 · <code>moʔ² dɤ²³¹</code></dt>
+                    <dd><code>mo</code> + 入声 <code>ʔ</code> + 短促调 <code>²</code> → 短低的「木」。　<code>d</code> 是浊音；<code>ɤ</code> 偏央；<code>²³¹</code> 低–中–低小波浪 → 「头」要柔、有起伏。</dd>
+                  </div>
+                  <div>
+                    <dt>吃早饭 · <code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></dt>
+                    <dd><code>tɕʰ</code> 送气（近「七」）+ <code>ie</code> + 高入声 <code>ʔ⁵</code> → 极短的「切」。　<code>tsɔ³³</code> 中平「早」。　<code>ʋɛ̃</code> 带鼻化，<code>³¹</code> 中降。</dd>
+                  </div>
+                  <div>
+                    <dt>单字 · 多 <code>to534</code> · 拖 <code>t'ho534文</code></dt>
+                    <dd>同一调值轮廓 <code>534</code>；拖多送气 <code>'</code>/<code>h</code>，并标「文」读。再到词典听嵊州录音核对。</dd>
+                  </div>
+                </dl>
+
+                <h4>6 · 自学三步</h4>
+                <ol class="learn-primer__levels">
+                  <li><strong>拆</strong>：每条先分「辅音 / 元音 / 调值 / 有无 ʔ˜ʰ」。</li>
+                  <li><strong>练难点</strong>：浊音（喉部先嗡）、入声（立刻掐断）、鼻化（鼻子出气）。</li>
+                  <li><strong>对</strong>：打开词典搜熟字，有「听嵊州」的先听再看音标。</li>
+                </ol>
+              </div>
+
+              <div class="learn-primer" data-visible-lang="zh-Hant">
+                <h4>這頁先解決什麼</h4>
+                <p>詞典與詞組裡的音標記錄的是<strong>吳語（紹興嵊州一帶）</strong>：比普通話多<strong>全濁聲母</strong>和<strong>入聲</strong>（喉塞尾 <code>ʔ</code>）。不必背完整 IPA，先學會把一條注音拆開、對照錄音。</p>
+
+                <h4>1 · 先建立三個底層概念</h4>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>拼音 ≠ 音標</dt>
+                    <dd>普通話拼音是聲母 + 韻母 + 1–4 聲。國際音標寫到音素：濁音、入聲、鼻化元音都會標出。</dd>
+                  </div>
+                  <div>
+                    <dt>上標 / 尾數 = 五度調值</dt>
+                    <dd><code>1</code> 最低，<code>5</code> 最高。數字串是音高軌跡（如 <code>⁵³</code>、<code>²³¹</code>）。<strong>不是</strong>普通話陰平 1 / 陽平 2。</dd>
+                  </div>
+                  <div>
+                    <dt>三個「服裝」符號</dt>
+                    <dd><code>̃</code> 鼻化。　<code>ʰ</code> / <code>'</code> / 塞音後 <code>h</code>：送氣。　<code>ʔ</code>：入聲喉塞，一發即收。</dd>
+                  </div>
+                </dl>
+
+                <h4>2 · 本站兩套記法</h4>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">位置</th><th scope="col">例子</th><th scope="col">怎麼拆</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="learn-primer__table-row--focus">
+                      <td>單字 · 老男 / 青男</td>
+                      <td><code>to534</code> · <code>t'ho534文</code></td>
+                      <td>聲韻 + <strong>末尾連寫數字</strong>；兩列對照兩代人。</td>
+                    </tr>
+                    <tr>
+                      <td>詞組 · 方言注音</td>
+                      <td><code>木頭 moʔ² dɤ²³¹</code></td>
+                      <td>本地說法 + IPA；調值多為<strong>上標</strong>；空格分音節。</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="learn-primer__list">
+                  <li><code>文</code> / <code>白</code>：文讀 / 白讀。</li>
+                  <li><code>/</code>：多音並存。</li>
+                  <li><code>（無）</code>：方言一般不用；空或 <code>—</code>：未錄入。</li>
+                </ul>
+
+                <h4>3 · 輔音：清、送氣、濁</h4>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">音標</th><th scope="col">類型</th><th scope="col">感覺</th><th scope="col">參考</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>p t k</code></td><td>不送氣清</td><td>堵住再放，無強氣流</td><td>普通話 b / d / g</td></tr>
+                    <tr><td><code>pʰ tʰ kʰ</code></td><td>送氣清</td><td>明顯氣流</td><td>普通話 p / t / k</td></tr>
+                    <tr><td><code>b d g ɦ</code></td><td>全濁</td><td>喉部先「嗡」</td><td>英語 boy / dog / go</td></tr>
+                  </tbody>
+                </table>
+
+                <h4>4 · 元音、鼻化與入聲</h4>
+                <ul class="learn-primer__list">
+                  <li>常見元音：<code>a ɛ e i o ɔ u y ə ɿ ø</code>。</li>
+                  <li><code>̃</code>：鼻化；雙元音如 <code>ia uo</code> 要滑滿。</li>
+                  <li><code>ʔ</code>：立刻掐斷，勿拖長。</li>
+                </ul>
+
+                <h4>5 · 詞表實戰</h4>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>木頭 · <code>moʔ² dɤ²³¹</code></dt>
+                    <dd>入聲短「木」+ 濁音曲折「頭」。</dd>
+                  </div>
+                  <div>
+                    <dt>吃早飯 · <code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></dt>
+                    <dd>高入聲「吃」+ 中平「早」+ 鼻化「飯」。</dd>
+                  </div>
+                  <div>
+                    <dt>多 <code>to534</code> · 拖 <code>t'ho534文</code></dt>
+                    <dd>同調值；拖多送氣並標文讀。</dd>
+                  </div>
+                </dl>
+
+                <h4>6 · 自學三步</h4>
+                <ol class="learn-primer__levels">
+                  <li>拆：輔音 / 元音 / 調值 / ʔ˜ʰ。</li>
+                  <li>練：濁音、入聲、鼻化。</li>
+                  <li>對：詞典搜熟字，能聽嵊州就先聽。</li>
+                </ol>
+              </div>
+
+              <div class="learn-primer" data-visible-lang="en">
+                <h4>What this page fixes</h4>
+                <p>Dictionary IPA here is <strong>Wu (Shengzhou / Shaoxing area)</strong>: more <strong>voiced initials</strong> and <strong>entering tones</strong> (<code>ʔ</code>) than Mandarin. You do not need full IPA—just learn to parse a line and check audio.</p>
+
+                <h4>1 · Three base ideas</h4>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>Pinyin ≠ IPA</dt>
+                    <dd>Pinyin is initials + finals + tones 1–4. IPA marks each phone: voicing, checked endings, nasalised vowels.</dd>
+                  </div>
+                  <div>
+                    <dt>Digits / superscripts = 5-level pitch</dt>
+                    <dd><code>1</code> lowest, <code>5</code> highest. Strings like <code>⁵³</code> or <code>²³¹</code> are pitch paths—not Mandarin tone numbers.</dd>
+                  </div>
+                  <div>
+                    <dt>Three “costume” marks</dt>
+                    <dd><code>̃</code> nasalisation · <code>ʰ</code>/<code>'</code>/<code>h</code> aspiration · <code>ʔ</code> glottal stop (cut short).</dd>
+                  </div>
+                </dl>
+
+                <h4>2 · Two site notations</h4>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">Where</th><th scope="col">Example</th><th scope="col">Parse</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="learn-primer__table-row--focus">
+                      <td>Characters · elder / younger</td>
+                      <td><code>to534</code></td>
+                      <td>Body + <strong>trailing digits</strong>; two columns = two generations.</td>
+                    </tr>
+                    <tr>
+                      <td>Phrases</td>
+                      <td><code>木头 moʔ² dɤ²³¹</code></td>
+                      <td>Local wording + IPA; tones often <strong>superscript</strong>; spaces = syllables.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="learn-primer__list">
+                  <li><code>文</code>/<code>白</code>: literary / colloquial · <code>/</code>: multiple readings · <code>（无）</code>: unused · blank: unrecorded.</li>
+                </ul>
+
+                <h4>3 · Consonants: plain / aspirated / voiced</h4>
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">IPA</th><th scope="col">Type</th><th scope="col">Feel</th><th scope="col">Hint</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>p t k</code></td><td>unaspirated</td><td>no strong puff</td><td>~ Mandarin b/d/g</td></tr>
+                    <tr><td><code>pʰ tʰ kʰ</code></td><td>aspirated</td><td>clear puff</td><td>~ Mandarin p/t/k</td></tr>
+                    <tr><td><code>b d g ɦ</code></td><td>voiced</td><td>buzz in the throat first</td><td>English boy/dog/go</td></tr>
+                  </tbody>
+                </table>
+
+                <h4>4 · Vowels, nasalisation, entering tone</h4>
+                <ul class="learn-primer__list">
+                  <li>Common vowels: <code>a ɛ e i o ɔ u y ə ɿ ø</code>.</li>
+                  <li><code>̃</code> = nasal airflow; diphthongs like <code>ia uo</code> glide fully.</li>
+                  <li><code>ʔ</code> = cut off at once—never lengthen.</li>
+                </ul>
+
+                <h4>5 · Worked examples from this site</h4>
+                <dl class="learn-primer__examples">
+                  <div>
+                    <dt>木头 · <code>moʔ² dɤ²³¹</code></dt>
+                    <dd>Short checked “wood” + voiced wavy “head”.</dd>
+                  </div>
+                  <div>
+                    <dt>吃早饭 · <code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></dt>
+                    <dd>High checked “eat” + mid-level “morning” + nasalised “meal”.</dd>
+                  </div>
+                  <div>
+                    <dt>多 <code>to534</code> · 拖 <code>t'ho534文</code></dt>
+                    <dd>Same contour; 拖 adds aspiration + literary tag.</dd>
+                  </div>
+                </dl>
+
+                <h4>6 · Three practice steps</h4>
+                <ol class="learn-primer__levels">
+                  <li>Split: consonant / vowel / pitch / ʔ˜ʰ.</li>
+                  <li>Drill: voicing, checked endings, nasalisation.</li>
+                  <li>Check: dictionary search + Shengzhou audio when available.</li>
+                </ol>
+              </div>
+
+              <div class="plan-cta-row">
+                <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="dictionary" data-i18n="home.ctaDictionary">打开词典</button>
+                <button type="button" class="home-cta__btn" id="learn-ipa-to-pinyin" data-i18n="learn.nav.pinyin">学习拼音</button>
+                <button type="button" class="home-cta__btn" id="learn-ipa-to-fayin" data-i18n="learn.pinyin.cta">开始第 1 阶发音练习</button>
+              </div>
+            </div>
+
+<div class="learn-tool" data-learn-section="pinyin" aria-hidden="true">
               <h3 class="learn-primer__title" data-i18n="learn.pinyin.title">学习拼音</h3>
               <p class="learn-audience" data-i18n="learn.pinyin.lead">给已会普通话拼音的人：用真实字例学会读三地音标，再进入第 1 阶发音练习。</p>
 
@@ -2349,6 +2624,9 @@
         <header class="section-header">
           <h2 data-i18n="dict.title">越语词典</h2>
           <p data-i18n="dict.lead">检索嵊州单字（老男 / 青男音 + 音韵地位，并对照上虞 / 诸暨）与十四类方言词组注音；有录音的字可听嵊州。</p>
+          <p class="dict-primer-link">
+            <button type="button" class="dict-link" id="dict-open-ipa-primer" data-i18n="dict.openIpaPrimer">不会读音标？先看学习 · 音标预习</button>
+          </p>
         </header>
         <div class="dict-layout">
           <label class="dict-search">
@@ -2911,24 +3189,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260825d1",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260825d1",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260825d1",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260825d1",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260825d1",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260825d1",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260825d1",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260825d1",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260825d1",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260825d1"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826ipa2",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826ipa2",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826ipa2",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826ipa2",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826ipa2",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826ipa2",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826ipa2",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826ipa2",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826ipa2",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826ipa2"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260825d1"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260825d1"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260825d1"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260825d1"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260825d1"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260825d1"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826ipa2"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826ipa2"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826ipa2"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826ipa2"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826ipa2"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826ipa2"></script>
 </body>
 </html>

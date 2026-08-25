@@ -365,6 +365,12 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
     return;
   }
 
+  if (hash === "learn-ipa") {
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
+    document.querySelector<HTMLButtonElement>(`.learn-nav__link[data-learn-target="ipa"]`)?.click();
+    return;
+  }
+
   const learnMatch = /^learn-fayin-l(\d+)$/.exec(hash);
   if (learnMatch) {
     openLearnFayinLevel(Number(learnMatch[1]));

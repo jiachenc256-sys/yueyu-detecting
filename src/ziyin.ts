@@ -1308,6 +1308,22 @@ async function initZiyin(): Promise<void> {
   document.getElementById("learn-open-pinyin")?.addEventListener("click", () => {
     openLearnSection("pinyin");
   });
+  document.getElementById("learn-open-ipa")?.addEventListener("click", () => {
+    openLearnSection("ipa");
+  });
+  document.getElementById("learn-ipa-to-pinyin")?.addEventListener("click", () => {
+    openLearnSection("pinyin");
+  });
+  document.getElementById("learn-ipa-to-fayin")?.addEventListener("click", () => {
+    openLearnSection("fayin");
+    setLearnMode("classic");
+    setLevel(1, true);
+    stage.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.getElementById("dict-open-ipa-primer")?.addEventListener("click", () => {
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
+    openLearnSection("ipa");
+  });
 
   const observer = new MutationObserver(() => {
     if (levelNameEl) levelNameEl.textContent = levelLabel(level);
