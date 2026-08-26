@@ -1388,6 +1388,10 @@ body {
   margin-bottom: var(--space-5);
 }
 
+.hub-grid--secondary {
+  margin-top: var(--space-2);
+}
+
 .hub-card {
   appearance: none;
   text-align: left;
@@ -1950,8 +1954,37 @@ body {
   line-height: var(--leading-relaxed);
 }
 
-.hub-grid--secondary {
-  margin-top: var(--space-2);
+.hub-section-kicker,
+.hub-more-label {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+.hub-more-label {
+  margin-top: var(--space-6);
+}
+
+.hub-connect--more {
+  margin-top: 0;
+}
+
+.hub-grid--quiet {
+  margin-top: 0;
+}
+
+.hub-card--quiet {
+  background: transparent;
+  box-shadow: none;
+  border-color: var(--color-border);
+  padding: var(--space-4);
+}
+
+.hub-card--quiet:hover {
+  transform: none;
+  border-color: var(--color-accent);
 }
 
 .hub-path--flow {
