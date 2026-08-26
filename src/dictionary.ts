@@ -72,6 +72,9 @@ let tradToHans: Record<string, string> = {};
 let audioHans = new Set<string>();
 let activeScene = "";
 let sceneLabels: Record<string, Record<string, string>> = {};
+let dictReady = false;
+let pendingQuery: string | null = null;
+let highlightQuery = "";
 
 function audioUrlFor(han: string): string {
   return `assets/learn/ziyin-audio/shengzhou/${encodeURIComponent(han)}.m4a`;
@@ -201,7 +204,9 @@ function renderChars(list: DictChar[]): void {
   }
   for (const item of limited) {
     const card = document.createElement("article");
-    card.className = "dict-card";
+    const exact = Boolean(highlightQuery) && (item.han === highlightQuery || item.hanDisplay === highlightQuery);
+    card.className = exact ? "dict-card dict-card--focus" : "dict-card";
+    if (exact) card.dataset.dictFocus = "1";
     const related = relatedPhrases(item.han);
     const hits = archiveHits(item.han);
     const hasAudio = audioHans.has(item.han);
@@ -275,7 +280,9 @@ function renderPhrases(list: PhraseItem[]): void {
   }
   for (const item of limited) {
     const card = document.createElement("article");
-    card.className = "dict-card dict-card--phrase";
+    const exact = Boolean(highlightQuery) && item.zh === highlightQuery;
+    card.className = exact ? "dict-card dict-card--phrase dict-card--focus" : "dict-card dict-card--phrase";
+    if (exact) card.dataset.dictFocus = "1";
     const scene = item.scene
       ? `<span class="dict-card__scene">${escapeHtml(sceneLabel(item.scene))}</span>`
       : "";
@@ -315,20 +322,68 @@ function bindFillLinks(root: HTMLElement): void {
   });
 }
 
-function applyQuery(): void {
+function applyQuery(opts?: { scrollFocus?: boolean }): void {
   const input = document.getElementById("dict-query") as HTMLInputElement | null;
   const q = input?.value ?? "";
+  const prefer = highlightQuery || q.trim();
   const status = document.getElementById("dict-status");
   const charHits = chars.filter((c) => matchChar(c, q));
   const phraseHits = phrases.filter((p) => {
     if (activeScene && p.scene !== activeScene) return false;
     return matchPhrase(p, q);
   });
+  if (prefer) {
+    charHits.sort(
+      (a, b) =>
+        Number(b.han === prefer || b.hanDisplay === prefer) - Number(a.han === prefer || a.hanDisplay === prefer),
+    );
+    phraseHits.sort((a, b) => Number(b.zh === prefer) - Number(a.zh === prefer));
+  }
   renderChars(charHits);
   renderPhrases(phraseHits);
   if (status) {
     status.textContent = tf("dict.status", { chars: charHits.length, phrases: phraseHits.length });
   }
+  if (opts?.scrollFocus) {
+    requestAnimationFrame(() => {
+      document.querySelector<HTMLElement>(".dict-card--focus")?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    });
+  }
+}
+
+/** Open dictionary panel search for a headword / phrase (e.g. from IPA primer links). */
+export function openDictionaryQuery(q: string): void {
+  const query = q.trim();
+  if (!query) return;
+  highlightQuery = query;
+  pendingQuery = query;
+  activeScene = "";
+
+  const input = document.getElementById("dict-query") as HTMLInputElement | null;
+  if (input) input.value = query;
+
+  history.replaceState(null, "", `#dict-q-${encodeURIComponent(query)}`);
+  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="dictionary"]`)?.click();
+
+  if (!dictReady) return;
+  pendingQuery = null;
+  renderSceneChips();
+  applyQuery({ scrollFocus: true });
+}
+
+function bindPrimerDictLinks(): void {
+  document.querySelectorAll<HTMLElement>("[data-dict-open]").forEach((el) => {
+    if (el.dataset.dictOpenBound === "1") return;
+    el.dataset.dictOpenBound = "1";
+    el.addEventListener("click", (event) => {
+      event.preventDefault();
+      const q = el.dataset.dictOpen ?? "";
+      openDictionaryQuery(q);
+    });
+  });
 }
 
 function mergeBookChars(book: BookChar[], ziyin: ZiyinItem[]): DictChar[] {
@@ -383,15 +438,38 @@ async function boot(): Promise<void> {
     audioHans = new Set(audioDoc.hans ?? []);
   }
   renderSceneChips();
-  applyQuery();
+  dictReady = true;
+  if (pendingQuery) {
+    const q = pendingQuery;
+    pendingQuery = null;
+    highlightQuery = q;
+    const input = document.getElementById("dict-query") as HTMLInputElement | null;
+    if (input) input.value = q;
+    applyQuery({ scrollFocus: true });
+  } else {
+    applyQuery();
+  }
 }
 
+declare global {
+  interface Window {
+    __yueyuOpenDictionaryQuery?: (q: string) => void;
+  }
+}
+
+window.__yueyuOpenDictionaryQuery = openDictionaryQuery;
+
 document.addEventListener("DOMContentLoaded", () => {
+  bindPrimerDictLinks();
   const input = document.getElementById("dict-query") as HTMLInputElement | null;
-  input?.addEventListener("input", () => applyQuery());
+  input?.addEventListener("input", () => {
+    highlightQuery = "";
+    applyQuery();
+  });
   onLocaleChange(() => {
     renderSceneChips();
     applyQuery();
+    bindPrimerDictLinks();
   });
   void boot().catch((error) => {
     const status = document.getElementById("dict-status");

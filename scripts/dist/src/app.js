@@ -1,5 +1,5 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260826ipa5";
+import { initI18n, onLocaleChange, t } from "./i18n.js?v=20260826dict1";
 function initNavigation() {
     const triggers = document.querySelectorAll("[data-panel-target]");
     const navButtons = document.querySelectorAll(".site-nav [data-panel-target]");
@@ -20,7 +20,8 @@ function initNavigation() {
         const keepArchiveSubhash = target === "archive" && /^archive-(tanci|yueju|speakers|broadcast|recent)$/.test(currentHash);
         const keepDeepSubhash = (target === "learn" && /^learn-/.test(currentHash)) ||
             (target === "speak" && /^speak-sample-/.test(currentHash)) ||
-            (target === "plan" && /^plan-/.test(currentHash));
+            (target === "plan" && /^plan-/.test(currentHash)) ||
+            (target === "dictionary" && /^dict-q-/.test(currentHash));
         if (!keepArchiveSubhash &&
             !keepDeepSubhash &&
             (trigger instanceof HTMLAnchorElement || window.location.hash !== `#${target}`)) {
@@ -320,6 +321,19 @@ function applyHashRoute(applyArchiveFilter) {
     if (hash === "learn-ipa") {
         document.querySelector(`.site-nav [data-panel-target="learn"]`)?.click();
         document.querySelector(`.learn-nav__link[data-learn-target="ipa"]`)?.click();
+        return;
+    }
+    const dictQueryMatch = /^dict-q-(.+)$/.exec(hash);
+    if (dictQueryMatch) {
+        let q = dictQueryMatch[1] ?? "";
+        try {
+            q = decodeURIComponent(q);
+        }
+        catch {
+            /* keep raw */
+        }
+        document.querySelector(`.site-nav [data-panel-target="dictionary"]`)?.click();
+        window.__yueyuOpenDictionaryQuery?.(q);
         return;
     }
     const learnMatch = /^learn-fayin-l(\d+)$/.exec(hash);

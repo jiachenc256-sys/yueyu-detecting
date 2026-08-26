@@ -1271,6 +1271,7 @@ async function initZiyin() {
         stage.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     document.getElementById("dict-open-ipa-primer")?.addEventListener("click", () => {
+        history.replaceState(null, "", "#learn-ipa");
         document.querySelector(`.site-nav [data-panel-target="learn"]`)?.click();
         openLearnSection("ipa");
     });

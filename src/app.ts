@@ -5,6 +5,7 @@ declare global {
   interface Window {
   __yueyuOpenZiyinLevel?: (lv: number) => void;
   __yueyuOpenQuest?: (gate?: number) => void;
+  __yueyuOpenDictionaryQuery?: (q: string) => void;
 }
 }
 
@@ -31,7 +32,8 @@ function initNavigation(): void {
     const keepDeepSubhash =
       (target === "learn" && /^learn-/.test(currentHash)) ||
       (target === "speak" && /^speak-sample-/.test(currentHash)) ||
-      (target === "plan" && /^plan-/.test(currentHash));
+      (target === "plan" && /^plan-/.test(currentHash)) ||
+      (target === "dictionary" && /^dict-q-/.test(currentHash));
     if (
       !keepArchiveSubhash &&
       !keepDeepSubhash &&
@@ -368,6 +370,19 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
   if (hash === "learn-ipa") {
     document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
     document.querySelector<HTMLButtonElement>(`.learn-nav__link[data-learn-target="ipa"]`)?.click();
+    return;
+  }
+
+  const dictQueryMatch = /^dict-q-(.+)$/.exec(hash);
+  if (dictQueryMatch) {
+    let q = dictQueryMatch[1] ?? "";
+    try {
+      q = decodeURIComponent(q);
+    } catch {
+      /* keep raw */
+    }
+    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="dictionary"]`)?.click();
+    window.__yueyuOpenDictionaryQuery?.(q);
     return;
   }
 
