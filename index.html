@@ -314,7 +314,7 @@
           <div class="home-cta">
             <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="dictionary" data-dict-open="心" data-i18n="hub.lang.openDict">打开越语词典</button>
           </div>
-          <p class="hub-path hub-path--flow" data-i18n="hub.lang.path">路径：词 → 发音 → 档案</p>
+          <p class="hub-path hub-path--flow" data-i18n="hub.lang.path">路径：词 → 发音 → 语境 → 档案</p>
         </div>
 
         <p class="hub-more-label" data-i18n="hub.lang.moreLabel">继续学习</p>
@@ -467,7 +467,7 @@
                 </button>
                 <button type="button" id="speak-clear" class="speak-btn" data-i18n="speak.clear">清除</button>
               </div>
-              <p class="speak-panel__hint" data-i18n="speak.fileHint">支持 MP3 / WAV / M4A · 或点「试试示例」一键跑完整识别（首次加载模型约需 15–30 秒）</p>
+              <p class="speak-panel__hint" data-i18n="speak.fileHint">支持 MP3 / WAV / M4A · 或点「试试示例」。首次使用可能需要一点时间准备识别工具。</p>
             </div>
           </div>
 
@@ -519,11 +519,11 @@
               </div>
             </section>
 
-            <!-- Part 2: vocal expression (experimental acoustic viz) -->
-            <section class="speak-path__card speak-path__card--prosody" id="speak-prosody-card" hidden>
+            <!-- Part 2: vocal expression (experimental — secondary) -->
+            <section class="speak-path__card speak-path__card--prosody speak-path__card--secondary" id="speak-prosody-card" hidden>
               <div class="speak-gist__head">
                 <h3 data-i18n="speak.path.prosodyTitle">② 腔调表现</h3>
-                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">表现路径</span>
+                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">实验性 · 次要</span>
               </div>
               <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">实验性声学可视化：用能量、起伏与音色粗绘表现雷达。标签（悲／急／怒／柔／亢／叹）仅为探索性示意，不是心理诊断或语言学判定。</p>
               <div class="speak-meter" aria-label="Vocal expression confidence">
@@ -1433,8 +1433,8 @@
       <!-- ── Story / process ── -->
       <section class="panel" data-panel="story" aria-hidden="true">
         <header class="section-header">
-          <h2 data-i18n="story.title">故事 · 语料采集与研究流程</h2>
-          <p data-i18n="story.lead">从绍兴方言与越剧出发：留下可听见、可理解、可延续的越语档案。</p>
+          <h2 data-i18n="story.title">故事</h2>
+          <p data-i18n="story.lead">为什么要留下越语？从绍兴方言与越剧出发：留下可听见、可理解、可延续的声音。</p>
         </header>
 
         <div class="story-routine" aria-label="Our routine">
@@ -3313,24 +3313,17 @@
       <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="about.title">关于</h2>
-          <p data-i18n="about.lead">为什么开始、做成了什么、学到了什么、仍未解答的问题——以及联系与隐私。</p>
+          <p data-i18n="about.lead">平台是什么、为何开始、范围与联系——方法细节见「研究」。</p>
         </header>
 
         <div class="plan-layout">
           <nav class="plan-nav" aria-label="About sections">
-            <button class="plan-nav__link" data-about-target="behind" aria-current="true" data-i18n="about.nav.behind">缘起与反思</button>
+            <button class="plan-nav__link" data-about-target="behind" aria-current="true" data-i18n="about.nav.behind">平台与使命</button>
+            <button class="plan-nav__link" data-about-target="developer" aria-current="false" data-i18n="about.nav.developer">开发者</button>
             <button class="plan-nav__link" data-about-target="contact" aria-current="false" data-i18n="about.nav.contact">联系与申请</button>
             <button class="plan-nav__link" data-about-target="feedback" aria-current="false" data-i18n="about.nav.feedback">用户反馈</button>
             <button class="plan-nav__link" data-about-target="privacy" aria-current="false" data-i18n="about.nav.privacy">隐私</button>
             <button class="plan-nav__link" data-about-target="copyright" aria-current="false" data-i18n="about.nav.copyright">版权</button>
-            <button class="plan-nav__link" data-about-target="research" aria-current="false" data-i18n="about.nav.research">研究摘要</button>
-            <button class="plan-nav__link" data-about-target="provide" aria-current="false" data-i18n="about.nav.provide">我们提供什么</button>
-            <button class="plan-nav__link" data-about-target="pipeline" aria-current="false" data-i18n="about.nav.pipeline">技术流程</button>
-            <button class="plan-nav__link" data-about-target="findings" aria-current="false" data-i18n="about.nav.findings">初步观察</button>
-            <button class="plan-nav__link" data-about-target="roadmap" aria-current="false" data-i18n="about.nav.roadmap">路线图</button>
-            <button class="plan-nav__link" data-about-target="contribute" aria-current="false" data-i18n="about.nav.contribute">参与贡献</button>
-            <button class="plan-nav__link" data-about-target="developer" aria-current="false" data-i18n="about.nav.developer">开发者</button>
-            <button class="plan-nav__link" data-about-target="intro" aria-current="false" data-i18n="about.nav.intro">网站介绍</button>
           </nav>
 
           <div class="plan-content">
@@ -3338,31 +3331,28 @@
               <h3 data-i18n="about.nav.behind">平台与使命</h3>
               <div data-visible-lang="zh-Hans">
                 <p><strong>越语侦听</strong>是一个公共数字平台：通过语音、档案、词典与计算工具，探索、倾听并保存越语。</p>
-                <p><strong>使命。</strong>让访客不必先读论文，也能听一段、查一字、跟一条时间轴；同时把方法与局限放在「研究」一层，供想深入的人阅读。</p>
-                <p><strong>来源与贡献。</strong>材料来自精选越剧选段、弹词图文、嵊州词典与学习录音，以及说话人与文化贡献者。站点依赖开源 Whisper 家族与浏览器能力。</p>
-                <p><strong>技术（简述）。</strong>静态网站 + 设备端识别试点；详细语料、评测与失败分析见「研究与方法」。</p>
                 <p><strong>为什么开始。</strong>我希望家乡话与越剧不只停留在“听过热闹”，而能被听懂、查到、留下来——尤其当长辈的声音还在，却越来越少被下一代理解时。</p>
-                <p>想了解「为什么要留下越语」，请打开「故事」。联系、隐私与版权见左侧栏目。</p>
+                <p><strong>范围。</strong>词典注音以<strong>嵊州</strong>读音为主；档案以越剧／弹词与相关舞台方言材料为先。这不声称覆盖全部越语或所有吴语变体。</p>
+                <p><strong>来源与贡献。</strong>材料来自精选越剧选段、弹词图文、嵊州词典与学习录音，以及说话人与文化贡献者。</p>
+                <p>想了解「为什么要留下越语」，请打开「故事」。语料、评测与方法见「研究」。联系、隐私与版权见左侧栏目。</p>
               </div>
               <div data-visible-lang="zh-Hant">
                 <p><strong>越語偵聽</strong>是一個公共數字平台：通過語音、檔案、詞典與計算工具，探索、傾聽並保存越語。</p>
-                <p><strong>使命。</strong>讓訪客不必先讀論文，也能聽一段、查一字、跟一條時間軸；同時把方法與局限放在「研究」一層，供想深入的人閱讀。</p>
-                <p><strong>來源與貢獻。</strong>材料來自精選越劇選段、彈詞圖文、嵊州詞典與學習錄音，以及說話人與文化貢獻者。站點依賴開源 Whisper 家族與瀏覽器能力。</p>
-                <p><strong>技術（簡述）。</strong>靜態網站 + 設備端識別試點；詳細語料、評測與失敗分析見「研究與方法」。</p>
                 <p><strong>為什麼開始。</strong>我希望家鄉話與越劇不只停留在「聽過熱鬧」，而能被聽懂、查到、留下來——尤其當長輩的聲音還在，卻越來越少被下一代理解時。</p>
-                <p>想了解「為什麼要留下越語」，請打開「故事」。聯繫、隱私與版權見左側欄目。</p>
+                <p><strong>範圍。</strong>詞典注音以<strong>嵊州</strong>讀音為主；檔案以越劇／彈詞與相關舞臺方言材料為先。這不聲稱覆蓋全部越語或所有吳語變體。</p>
+                <p><strong>來源與貢獻。</strong>材料來自精選越劇選段、彈詞圖文、嵊州詞典與學習錄音，以及說話人與文化貢獻者。</p>
+                <p>想了解「為什麼要留下越語」，請打開「故事」。語料、評測與方法見「研究」。聯繫、隱私與版權見左側欄目。</p>
               </div>
               <div data-visible-lang="en">
                 <p><strong>Yueyu Detecting</strong> is a public digital platform for exploring, listening to, and preserving Yueyu through speech, archives, dictionaries, and computational tools.</p>
-                <p><strong>Mission.</strong> Visitors can hear a clip, look up a character, and follow a timeline without reading a paper first. Methods and limits live one level deeper under Research.</p>
-                <p><strong>Sources &amp; contributions.</strong> Materials include curated Yueju clips, tanci pages, the Shengzhou dictionary and learn audio, plus speaker and cultural contributors. The site depends on open Whisper-family models and browser APIs.</p>
-                <p><strong>Technology (brief).</strong> Static site + on-device recognition pilot. Corpus, evaluation, and failure analysis: see Research &amp; methods.</p>
                 <p><strong>Why I started.</strong> I want hometown speech and Yue Opera to be more than spectacle—something you can understand, look up, and keep—especially while elders’ voices remain, but fewer young listeners can follow them.</p>
-                <p>For “why keep Yueyu,” open Story. Contact, privacy, and copyright are in the side nav.</p>
+                <p><strong>Scope.</strong> Dictionary readings center on <strong>Shengzhou</strong>; the archive prioritizes Yueju / tanci and related stage-dialect material. This does not claim to cover all Yueyu or every Wu variety.</p>
+                <p><strong>Sources &amp; contributions.</strong> Materials include curated Yueju clips, tanci pages, the Shengzhou dictionary and learn audio, plus speaker and cultural contributors.</p>
+                <p>For “why keep Yueyu,” open Story. Corpus, evaluation, and methods live under Research. Contact, privacy, and copyright are in the side nav.</p>
               </div>
               <p class="plan-cta-row">
                 <button type="button" class="home-cta__btn" data-panel-target="story" data-i18n="nav.story">故事</button>
-                <button type="button" class="home-cta__btn" data-panel-target="research" data-i18n="home.ctaMethods">了解方法 →</button>
+                <button type="button" class="home-cta__btn" data-panel-target="research" data-i18n="home.ctaMethods">研究方法 →</button>
               </p>
             </div>
 
