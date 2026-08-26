@@ -63,6 +63,66 @@ function displayModeForSiteLocale(locale) {
         return "zh-Hant";
     return "zh-Hans";
 }
+/** Related dictionary / cross-feature links for archive piece pages. */
+async function mountRelatedDictionary(pieceId, piece) {
+    const host = document.querySelector(".viewer-player") ?? document.querySelector(".viewer-intro");
+    if (!host || document.getElementById("viewer-related"))
+        return;
+    const box = document.createElement("div");
+    box.id = "viewer-related";
+    box.className = "viewer-related";
+    const chars = new Set();
+    for (const cue of piece.cues.slice(0, 40)) {
+        const text = `${cue.layers.zh?.text ?? ""}${cue.layers.zhHant?.text ?? ""}`;
+        for (const ch of text) {
+            if (/[\u4e00-\u9fff]/.test(ch))
+                chars.add(ch);
+            if (chars.size >= 80)
+                break;
+        }
+        if (chars.size >= 80)
+            break;
+    }
+    let linked = [];
+    try {
+        const res = await fetch("../data/dictionary/char-archive-index.json");
+        if (res.ok) {
+            const doc = (await res.json());
+            const index = doc.chars ?? {};
+            linked = [...chars].filter((c) => index[c]).slice(0, 8);
+        }
+    }
+    catch {
+        /* ignore */
+    }
+    const locale = getLocale();
+    const title = locale === "en"
+        ? "Related on the platform"
+        : locale === "zh-Hant"
+            ? "站內相關"
+            : "站内相关";
+    const dictLabel = locale === "en" ? "Dictionary" : locale === "zh-Hant" ? "詞典" : "词典";
+    const speakLabel = locale === "en" ? "Try Speak" : locale === "zh-Hant" ? "去聽說" : "去听说";
+    const tanciLabel = locale === "en" ? "Tanci OCR" : locale === "zh-Hant" ? "彈詞識別" : "弹词识别";
+    const charLinks = linked.length > 0
+        ? linked
+            .map((c) => `<a class="dict-link" href="../index.html#dict-q-${encodeURIComponent(c)}">${c}</a>`)
+            .join(" · ")
+        : "";
+    box.innerHTML = `
+    <p class="viewer-related__title">${title}</p>
+    <p class="viewer-related__links">
+      ${charLinks ? `${dictLabel}: ${charLinks}<br />` : ""}
+      <a class="dict-link" href="../index.html#speak">${speakLabel}</a>
+      ·
+      <a class="dict-link" href="../index.html#archive">${locale === "en" ? "Archive" : locale === "zh-Hant" ? "檔案" : "档案"}</a>
+      ·
+      <a class="dict-link" href="../index.html#tanci">${tanciLabel}</a>
+      ${pieceId.includes("liangzhu") ? ` · <a class="dict-link" href="../index.html#speak-sample-liangzhu">${locale === "en" ? "Sample" : "示例"}</a>` : ""}
+    </p>
+  `;
+    host.append(box);
+}
 const audio = document.getElementById("audio");
 const listEl = document.getElementById("transcript-list");
 const searchInput = document.getElementById("search-input");
@@ -314,6 +374,7 @@ async function init() {
     renderTranscript();
     setDisplayMode(displayModeForSiteLocale(getLocale()));
     onLocaleChange((locale) => setDisplayMode(displayModeForSiteLocale(locale)));
+    void mountRelatedDictionary(pieceId, transcript);
     const cueHash = location.hash.match(/^#cue-(.+)$/);
     if (cueHash?.[1] && transcript) {
         const raw = decodeURIComponent(cueHash[1]);

@@ -302,7 +302,21 @@ export function openDictionaryQuery(q) {
     if (input)
         input.value = query;
     history.replaceState(null, "", `#dict-q-${encodeURIComponent(query)}`);
-    document.querySelector(`.site-nav [data-panel-target="dictionary"]`)?.click();
+    // Dictionary is no longer in the top nav — use shared panel activator.
+    if (typeof window.__yueyuActivatePanel === "function") {
+        window.__yueyuActivatePanel("dictionary");
+    }
+    else {
+        document.querySelectorAll("[data-panel]").forEach((panel) => {
+            panel.setAttribute("aria-hidden", panel.dataset.panel === "dictionary" ? "false" : "true");
+        });
+        document.querySelectorAll(".site-nav [data-panel-target]").forEach((b) => {
+            if (b.dataset.panelTarget === "language")
+                b.setAttribute("aria-current", "page");
+            else
+                b.removeAttribute("aria-current");
+        });
+    }
     if (!dictReady)
         return;
     pendingQuery = null;

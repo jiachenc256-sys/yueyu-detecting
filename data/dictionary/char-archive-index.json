@@ -1,7 +1,7 @@
 {
   "schema": "yueyu-char-archive/v1",
   "builtFrom": "lyric-index",
-  "n": 198,
+  "n": 199,
   "chars": {
     "还": [
       {
@@ -2059,6 +2059,20 @@
         "cueId": "638",
         "title": "新龙门客寨",
         "snippet": "但当年守卫京师若无杨大人"
+      }
+    ],
+    "心": [
+      {
+        "pieceId": "liangzhu-shibaxiangsong",
+        "cueId": "10",
+        "title": "梁祝 · 十八相送",
+        "snippet": "今日分别心难过"
+      },
+      {
+        "pieceId": "liangzhu-shibaxiangsong",
+        "cueId": "13",
+        "title": "梁祝 · 十八相送",
+        "snippet": "兄弟分别心烦恼"
       }
     ]
   }

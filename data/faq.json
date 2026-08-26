@@ -28,6 +28,19 @@
       }
     },
     {
+      "id": "q-scope",
+      "q": {
+        "zh": "范围与术语：越语、越剧、嵊州、吴语分别指什么？",
+        "en": "Scope & terminology: what do Yueyu, Yueju, Shengzhou, and Wu mean here?",
+        "zhHant": "範圍與術語：越語、越劇、嵊州、吳語分別指什麼？"
+      },
+      "a": {
+        "zh": "「越语」在本站指绍兴一带吴语中可听见的口语与相关语音传统，不是普通话，也不等于「整个吴语」。词典与真人字音录音以嵊州读音为主——嵊州是越语重要地方变体，也是越剧发源地之一，但并不代表全部越语。越剧（Yueju / Yue Opera）是舞台戏曲：韵白、散白与唱腔不同于街上日常说话。吴语是更大的方言群；本站材料集中在绍兴—嵊州一带。详细方法见「研究」。",
+        "en": "Here “Yueyu” means audible spoken traditions in the Shaoxing-area Wu dialects—not Mandarin, and not a claim to cover all of Wu. Dictionary readings and character audio center on Shengzhou, a key local variety and a cradle of Yueju (Yue Opera)—not a stand-in for every Yueyu variety. Yueju is stage theatre: rhyme-speech, prose-speech, and singing differ from everyday street talk. Wu is the larger dialect group; this site focuses on the Shaoxing–Shengzhou area. Methods live under Research.",
+        "zhHant": "「越語」在本站指紹興一帶吳語中可聽見的口語與相關語音傳統，不是普通話，也不等於「整個吳語」。詞典與真人字音錄音以嵊州讀音為主——嵊州是越語重要地方變體，也是越劇發源地之一，但並不代表全部越語。越劇（Yueju / Yue Opera）是舞臺戲曲：韻白、散白與唱腔不同於街上日常說話。吳語是更大的方言群；本站材料集中在紹興—嵊州一帶。詳細方法見「研究」。"
+      }
+    },
+    {
       "id": "q3",
       "q": {
         "zh": "「听说」页如何工作？首次加载 Whisper 要多久？",

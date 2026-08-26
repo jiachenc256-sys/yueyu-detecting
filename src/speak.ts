@@ -105,8 +105,17 @@ let mediaStream: MediaStream | null = null;
 let mediaRecorder: MediaRecorder | null = null;
 let recordedChunks: BlobPart[] = [];
 
-function setStatus(text: string): void {
-  if (statusEl) statusEl.textContent = text;
+function setStatus(text: string, opts?: { busy?: boolean }): void {
+  if (statusEl) {
+    statusEl.textContent = text;
+    if (opts?.busy !== undefined) {
+      statusEl.classList.toggle("speak-status--busy", opts.busy);
+    }
+  }
+}
+
+function setBusy(busy: boolean): void {
+  statusEl?.classList.toggle("speak-status--busy", busy);
 }
 
 /** Absolute URL to assets/asr/<model>/ on this site. */
@@ -902,6 +911,7 @@ async function recognizeBlob(blob: Blob, label: string): Promise<void> {
     return;
   }
   asrBusy = true;
+  setBusy(true);
   setSampleButtonsDisabled(true);
   try {
     if (previewObjectUrl) {
@@ -947,6 +957,7 @@ async function recognizeBlob(blob: Blob, label: string): Promise<void> {
     }
   } finally {
     asrBusy = false;
+    setBusy(false);
     setSampleButtonsDisabled(false);
   }
 }
