@@ -1,6 +1,35 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t, getLocale } from "./i18n.js?v=20260826fixpanel";
+import { initI18n, onLocaleChange, t, getLocale } from "./i18n.js";
+function unnestTrappedPanels() {
+    const main = document.getElementById("main-content") ?? document.querySelector("main");
+    if (!main)
+        return;
+    const trapped = [
+        ...main.querySelectorAll(".panel[data-panel] .panel[data-panel]"),
+    ];
+    if (!trapped.length)
+        return;
+    const topPanelOf = (el) => {
+        let top = null;
+        let cur = el.parentElement;
+        while (cur && cur !== main) {
+            if (cur.matches(".panel[data-panel]"))
+                top = cur;
+            cur = cur.parentElement;
+        }
+        return top;
+    };
+    const host = topPanelOf(trapped[0]);
+    if (!host)
+        return;
+    let ref = host;
+    for (const panel of trapped) {
+        ref.after(panel);
+        ref = panel;
+    }
+}
 function initNavigation() {
+    unnestTrappedPanels();
     const triggers = document.querySelectorAll("[data-panel-target]");
     const navButtons = document.querySelectorAll(".site-nav [data-panel-target]");
     const panels = document.querySelectorAll("[data-panel]");
@@ -526,6 +555,7 @@ function applyHashRoute(applyArchiveFilter) {
         activatePanel(hash);
 }
 document.addEventListener("DOMContentLoaded", () => {
+    unnestTrappedPanels();
     initA11y();
     initI18n();
     initNavigation();

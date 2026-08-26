@@ -10,7 +10,38 @@ declare global {
 }
 }
 
+function unnestTrappedPanels(): void {
+  const main = document.getElementById("main-content") ?? document.querySelector("main");
+  if (!main) return;
+
+  const trapped = [
+    ...main.querySelectorAll<HTMLElement>(".panel[data-panel] .panel[data-panel]"),
+  ];
+  if (!trapped.length) return;
+
+  const topPanelOf = (el: HTMLElement): HTMLElement | null => {
+    let top: HTMLElement | null = null;
+    let cur: HTMLElement | null = el.parentElement;
+    while (cur && cur !== main) {
+      if (cur.matches(".panel[data-panel]")) top = cur;
+      cur = cur.parentElement;
+    }
+    return top;
+  };
+
+  const host = topPanelOf(trapped[0]);
+  if (!host) return;
+
+  let ref: HTMLElement = host;
+  for (const panel of trapped) {
+    ref.after(panel);
+    ref = panel;
+  }
+}
+
 function initNavigation(): void {
+  unnestTrappedPanels();
+
   const triggers = document.querySelectorAll<HTMLElement>("[data-panel-target]");
   const navButtons = document.querySelectorAll<HTMLElement>(".site-nav [data-panel-target]");
   const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
@@ -589,6 +620,7 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  unnestTrappedPanels();
   initA11y();
   initI18n();
   initNavigation();
