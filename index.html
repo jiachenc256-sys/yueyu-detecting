@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826audio1" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826audio1" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826audio1" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826audio1" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826audio1" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826audio1" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826audio1" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826en1" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826en1" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826en1" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826en1" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826en1" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826en1" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826en1" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -2350,18 +2350,24 @@
                 </div>
               </div>
 
-              <div class="learn-primer learn-primer--ipa" data-visible-lang="en">
-                <h4>Preface</h4>
-                <p>Wu (Shengzhou) IPA. <strong>One symbol per table row.</strong></p>
+                            <div class="learn-primer learn-primer--ipa" data-visible-lang="en">
+                <h4>Preface (English-first)</h4>
+                <p>This primer explains <strong>Wu Chinese (Shengzhou / Shaoxing area)</strong> IPA <strong>without assuming Mandarin pinyin</strong>. Use English near-sounds and mouth/air cues, then press the <strong>Play</strong> buttons above for real Shengzhou clips. One symbol per row.</p>
+                <ul class="learn-primer__list">
+                  <li><strong>Voicing</strong>: vocal folds buzz (English <em>b / d / g</em>), unlike many Mandarin stops.</li>
+                  <li><strong>Aspiration</strong>: a strong puff after the consonant (English <em>pie</em> vs Spanish <em>p</em>).</li>
+                  <li><strong>Entering tone</strong>: end with a glottal stop <code>ʔ</code>—cut the vowel short, like a soft cough.</li>
+                </ul>
 
                 <h4>1 · Diacritics</h4>
                 <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead><tr><th scope="col">Mark</th><th scope="col">Name</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
+                  <thead><tr><th scope="col">Mark</th><th scope="col">Name</th><th scope="col">What to do</th><th scope="col">Example</th></tr></thead>
                   <tbody>
-                    <tr><td><code>̃</code></td><td>nasalisation</td><td>air through nose</td><td><code>ɛ̃</code></td></tr>
-                    <tr><td><code>ʰ</code> / <code>'</code> / <code>h</code></td><td>aspiration</td><td>strong puff</td><td><code>pʰ</code>, <code>t'ho</code></td></tr>
-                    <tr><td><code>ʔ</code></td><td>glottal stop</td><td>cut short</td><td><code>ieʔ</code></td></tr>
+                    <tr><td><code>̃</code> / <code>~</code></td><td>nasalisation</td><td>Keep the vowel mouth shape; send air through the nose (French <em>bon</em> feel).</td><td><code>ɛ̃</code>, <code>ʋɛ̃</code></td></tr>
+                    <tr><td><code>ʰ</code></td><td>aspiration (IPA)</td><td>Hold, then release with a clear puff on the palm.</td><td><code>pʰ</code>, <code>tɕʰ</code></td></tr>
+                    <tr><td><code>'</code> or post-stop <code>h</code></td><td>aspiration (this site)</td><td>Same as <code>ʰ</code>; common in character readings.</td><td><code>t'ho534</code></td></tr>
+                    <tr><td><code>ʔ</code></td><td>glottal stop / checked ending</td><td>Vowel starts, then throat closes—never lengthen.</td><td><code>ieʔ</code>, <code>moʔ</code></td></tr>
                   </tbody>
                 </table>
                 </div>
@@ -2369,119 +2375,125 @@
                 <h4>2 · Site marks</h4>
                 <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead><tr><th scope="col">Mark</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
+                  <thead><tr><th scope="col">Mark</th><th scope="col">Where</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
                   <tbody>
-                    <tr><td>trailing digits</td><td>character tone</td><td><code>to534</code></td></tr>
-                    <tr><td>superscript</td><td>phrase tone</td><td><code>moʔ² dɤ²³¹</code></td></tr>
-                    <tr><td><code>文</code> / <code>白</code></td><td>literary / colloquial</td><td><code>t'ho534文</code></td></tr>
-                    <tr><td><code>/</code></td><td>alternate readings</td><td><code>A / B</code></td></tr>
+                    <tr><td>trailing digits</td><td>characters</td><td>5-level pitch contour after the syllable</td><td><code>to534</code></td></tr>
+                    <tr><td>superscripts</td><td>phrases</td><td>same pitch idea, written above the IPA</td><td><code>moʔ² dɤ²³¹</code></td></tr>
+                    <tr><td><code>文</code> / <code>白</code></td><td>readings</td><td>literary vs colloquial form</td><td><code>t'ho534文</code></td></tr>
+                    <tr><td><code>/</code></td><td>readings</td><td>more than one form; try the first first</td><td><code>A / B</code></td></tr>
+                    <tr><td><code>（无）</code> / blank</td><td>cells</td><td>unused locally / not recorded</td><td>—</td></tr>
                   </tbody>
                 </table>
                 </div>
 
-                <h4>3 · Tone values (one per row)</h4>
+                <h4>3 · Pitch digits (not English stress)</h4>
+                <p><code>1</code> = lowest, <code>5</code> = highest. A string is a pitch path. These are <strong>not</strong> Mandarin tone numbers 1–4.</p>
                 <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead><tr><th scope="col">Value</th><th scope="col">Type</th><th scope="col">Path</th></tr></thead>
+                  <thead><tr><th scope="col">Value</th><th scope="col">Type</th><th scope="col">English feel</th></tr></thead>
                   <tbody>
-                    <tr><td><code>55</code>/<code>44</code></td><td>high level</td><td>flat high</td></tr>
-                    <tr><td><code>33</code></td><td>mid level</td><td>flat mid</td></tr>
-                    <tr><td><code>22</code></td><td>low level</td><td>flat low</td></tr>
-                    <tr><td><code>53</code></td><td>high fall</td><td>5→3</td></tr>
-                    <tr><td><code>51</code></td><td>full fall</td><td>5→1</td></tr>
-                    <tr><td><code>31</code></td><td>mid fall</td><td>3→1</td></tr>
-                    <tr><td><code>34</code></td><td>mid rise</td><td>3→4</td></tr>
-                    <tr><td><code>24</code></td><td>low rise</td><td>2→4</td></tr>
-                    <tr><td><code>231</code></td><td>contour</td><td>2→3→1</td></tr>
-                    <tr><td><code>213</code></td><td>contour</td><td>2→1→3</td></tr>
-                    <tr><td><code>223</code></td><td>short low rise</td><td>2→2→3</td></tr>
-                    <tr><td><code>534</code></td><td>site character</td><td>5→3→4</td></tr>
-                    <tr><td><code>5</code></td><td>high checked</td><td>short + <code>ʔ</code></td></tr>
-                    <tr><td><code>2</code></td><td>low checked</td><td>short + <code>ʔ</code></td></tr>
+                    <tr><td><code>55</code> / <code>44</code></td><td>high level</td><td>steady high hum</td></tr>
+                    <tr><td><code>33</code></td><td>mid level</td><td>flat speaking pitch</td></tr>
+                    <tr><td><code>22</code></td><td>low level</td><td>flat low murmur</td></tr>
+                    <tr><td><code>53</code></td><td>high fall</td><td>sharp “No!” drop</td></tr>
+                    <tr><td><code>51</code></td><td>full fall</td><td>steep fall to the bottom</td></tr>
+                    <tr><td><code>31</code></td><td>mid fall</td><td>gentler downward slide</td></tr>
+                    <tr><td><code>34</code> / <code>24</code></td><td>rise</td><td>question-like lift</td></tr>
+                    <tr><td><code>231</code> / <code>213</code></td><td>contour</td><td>small wave (soft “Wu” feel)</td></tr>
+                    <tr><td><code>223</code></td><td>short low rise</td><td>low, then slight lift</td></tr>
+                    <tr><td><code>534</code></td><td>site character contour</td><td>high → dip → slight rise</td></tr>
+                    <tr><td><code>5</code> / <code>2</code></td><td>checked short</td><td>tiny high/low ping + <code>ʔ</code></td></tr>
                   </tbody>
                 </table>
                 </div>
 
-                <h4>4 · Vowels (one per row)</h4>
+                <h4>4 · Vowels (mouth shape + English near-sound)</h4>
                 <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead><tr><th scope="col">IPA</th><th scope="col">Tongue</th><th scope="col">Lips</th><th scope="col">Hint</th></tr></thead>
+                  <thead><tr><th scope="col">IPA</th><th scope="col">Tongue / jaw</th><th scope="col">Lips</th><th scope="col">English near-sound</th></tr></thead>
                   <tbody>
-                    <tr><td><code>a</code></td><td>low central-back</td><td>open</td><td>Mandarin a</td></tr>
-                    <tr><td><code>ɛ</code></td><td>front open-mid</td><td>spread</td><td>bed</td></tr>
-                    <tr><td><code>e</code></td><td>front close-mid</td><td>spread</td><td>诶</td></tr>
-                    <tr><td><code>i</code></td><td>high front</td><td>spread</td><td>衣</td></tr>
-                    <tr><td><code>o</code></td><td>back close-mid</td><td>round</td><td>喔</td></tr>
-                    <tr><td><code>ɔ</code></td><td>back open-mid</td><td>round</td><td>凹</td></tr>
-                    <tr><td><code>u</code></td><td>high back</td><td>round</td><td>乌</td></tr>
-                    <tr><td><code>y</code></td><td>high front</td><td>round</td><td>迂</td></tr>
-                    <tr><td><code>ə</code></td><td>central</td><td>neutral</td><td>schwa</td></tr>
-                    <tr><td><code>ɤ</code></td><td>back unrounded</td><td>unrounded</td><td>木头 dɤ</td></tr>
-                    <tr><td><code>ɿ</code></td><td>apical</td><td>flat</td><td>zi vowel</td></tr>
-                    <tr><td><code>ø</code></td><td>front mid</td><td>round</td><td>诶–欧</td></tr>
-                    <tr><td><code>ã</code> <code>ɛ̃</code> <code>ɔ̃</code></td><td>same + nasal</td><td>—</td><td>nose airflow</td></tr>
-                    <tr><td><code>ia</code></td><td>diphthong</td><td>—</td><td>丫</td></tr>
-                    <tr><td><code>uo</code></td><td>diphthong</td><td>—</td><td>窝</td></tr>
-                    <tr><td><code>iɛ</code> / <code>ie</code> / <code>io</code></td><td>diphthong</td><td>—</td><td>耶 / 吃 / 月</td></tr>
+                    <tr><td><code>a</code></td><td>jaw open, tongue low, a bit back</td><td>neutral open</td><td>father (not cat)</td></tr>
+                    <tr><td><code>ɛ</code></td><td>front, half-open</td><td>slightly spread</td><td>bed, yes</td></tr>
+                    <tr><td><code>e</code></td><td>front, higher than ɛ, tense</td><td>spread</td><td>bait without the glide (or café é)</td></tr>
+                    <tr><td><code>i</code></td><td>high front</td><td>smile</td><td>see, machine</td></tr>
+                    <tr><td><code>o</code></td><td>back, mid-high</td><td>rounded</td><td>go without a strong glide</td></tr>
+                    <tr><td><code>ɔ</code></td><td>back, more open</td><td>strongly rounded</td><td>thought / law (US) or British not</td></tr>
+                    <tr><td><code>u</code></td><td>high back</td><td>small round pout</td><td>food, boot</td></tr>
+                    <tr><td><code>y</code></td><td>same tongue as <code>i</code></td><td>rounded like whistling</td><td>French <em>tu</em> / German <em>über</em></td></tr>
+                    <tr><td><code>ə</code></td><td>central, relaxed</td><td>neutral</td><td>about, sofa (schwa)</td></tr>
+                    <tr><td><code>ɤ</code></td><td>backish, unrounded</td><td>not rounded</td><td>between uh and a dull “uh-oh” vowel; site <code>dɤ</code></td></tr>
+                    <tr><td><code>ɿ</code></td><td>tongue tip near teeth ridge (buzz of “zzz” posture)</td><td>flat</td><td>vowel in English <em>roses</em> / buzz after <em>z</em>—no clear “ee”</td></tr>
+                    <tr><td><code>ø</code></td><td>front mid</td><td>rounded</td><td>French <em>peu</em> / German <em>schön</em></td></tr>
+                    <tr><td><code>ã ɛ̃ ɔ̃</code></td><td>same as oral vowel</td><td>same</td><td>add nose airflow (French nasal vowels)</td></tr>
+                    <tr><td><code>ia</code></td><td>glide i→a</td><td>—</td><td>yacht-ish “ya”</td></tr>
+                    <tr><td><code>uo</code></td><td>glide u→o</td><td>round</td><td>woke without English diphthong stretch</td></tr>
+                    <tr><td><code>iɛ / ie / io</code></td><td>glide from i</td><td>—</td><td>yeah / ye / yo-ish; hear 吃 for <code>ie</code></td></tr>
+                    <tr><td><code>aŋ / oŋ</code></td><td>vowel + velar nasal</td><td>—</td><td>song ending (<code>ŋ</code> as in sing)</td></tr>
                   </tbody>
                 </table>
                 </div>
 
-                <h4>5 · Consonants (one per row)</h4>
+                <h4>5 · Consonants (air + voicing)</h4>
                 <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead><tr><th scope="col">IPA</th><th scope="col">Type</th><th scope="col">Hint</th></tr></thead>
+                  <thead><tr><th scope="col">IPA</th><th scope="col">Type</th><th scope="col">How it feels</th><th scope="col">English anchor</th></tr></thead>
                   <tbody>
-                    <tr><td><code>p</code></td><td>unaspirated</td><td>~ Mandarin b</td></tr>
-                    <tr><td><code>pʰ</code></td><td>aspirated</td><td>~ Mandarin p</td></tr>
-                    <tr><td><code>b</code></td><td>voiced</td><td>boy</td></tr>
-                    <tr><td><code>t</code></td><td>unaspirated</td><td>~ Mandarin d</td></tr>
-                    <tr><td><code>tʰ</code></td><td>aspirated</td><td>~ Mandarin t</td></tr>
-                    <tr><td><code>d</code></td><td>voiced</td><td>dog</td></tr>
-                    <tr><td><code>k</code></td><td>unaspirated</td><td>~ Mandarin g</td></tr>
-                    <tr><td><code>kʰ</code></td><td>aspirated</td><td>~ Mandarin k</td></tr>
-                    <tr><td><code>g</code></td><td>voiced</td><td>go</td></tr>
-                    <tr><td><code>s</code></td><td>fricative</td><td>丝</td></tr>
-                    <tr><td><code>z</code></td><td>voiced fricative</td><td>buzzing s</td></tr>
-                    <tr><td><code>ɕ</code></td><td>fricative</td><td>西</td></tr>
-                    <tr><td><code>ʑ</code></td><td>voiced fricative</td><td>voiced 西</td></tr>
-                    <tr><td><code>ts</code></td><td>affricate</td><td>资</td></tr>
-                    <tr><td><code>tsʰ</code></td><td>aspirated affricate</td><td>雌</td></tr>
-                    <tr><td><code>tɕ</code></td><td>affricate</td><td>鸡</td></tr>
-                    <tr><td><code>tɕʰ</code></td><td>aspirated affricate</td><td>欺</td></tr>
-                    <tr><td><code>dʑ</code></td><td>voiced affricate</td><td>voiced 鸡</td></tr>
-                    <tr><td><code>m</code></td><td>nasal</td><td>m</td></tr>
-                    <tr><td><code>n</code></td><td>nasal</td><td>n</td></tr>
-                    <tr><td><code>ɲ</code></td><td>palatal nasal</td><td>女</td></tr>
-                    <tr><td><code>ŋ</code></td><td>velar nasal</td><td>sing</td></tr>
-                    <tr><td><code>l</code></td><td>lateral</td><td>l</td></tr>
-                    <tr><td><code>ʋ</code></td><td>labiodental</td><td>饭 ʋɛ̃</td></tr>
-                    <tr><td><code>h</code></td><td>voiceless glottal</td><td>喝</td></tr>
-                    <tr><td><code>ɦ</code></td><td>voiced glottal</td><td>河</td></tr>
-                    <tr><td><code>ʔ</code></td><td>glottal stop</td><td>cut off</td></tr>
+                    <tr><td><code>p</code></td><td>unaspirated</td><td>lips pop, little puff</td><td>Spanish/French <em>p</em>; English <em>spy</em></td></tr>
+                    <tr><td><code>pʰ</code></td><td>aspirated</td><td>strong puff</td><td>English <em>pie</em>, <em>pot</em></td></tr>
+                    <tr><td><code>b</code></td><td>voiced</td><td>buzz first, then release</td><td><em>boy</em>, <em>about</em></td></tr>
+                    <tr><td><code>t</code></td><td>unaspirated</td><td>tip tap, little puff</td><td>English <em>stop</em></td></tr>
+                    <tr><td><code>tʰ</code></td><td>aspirated</td><td>strong puff</td><td>English <em>top</em></td></tr>
+                    <tr><td><code>d</code></td><td>voiced</td><td>buzz + tip release</td><td><em>dog</em>; hear 田</td></tr>
+                    <tr><td><code>k</code></td><td>unaspirated</td><td>back release, little puff</td><td>English <em>skate</em></td></tr>
+                    <tr><td><code>kʰ</code></td><td>aspirated</td><td>strong puff</td><td>English <em>cat</em></td></tr>
+                    <tr><td><code>g</code></td><td>voiced</td><td>buzz + back release</td><td><em>go</em>, <em>again</em></td></tr>
+                    <tr><td><code>s</code></td><td>fricative</td><td>hiss</td><td><em>see</em></td></tr>
+                    <tr><td><code>z</code></td><td>voiced fricative</td><td>hiss + buzz</td><td><em>zoo</em></td></tr>
+                    <tr><td><code>ɕ</code></td><td>alveolo-palatal</td><td>blade up, soft hiss</td><td>between <em>she</em> and <em>see</em></td></tr>
+                    <tr><td><code>ʑ</code></td><td>voiced</td><td>same place + buzz</td><td>voiced version of <code>ɕ</code></td></tr>
+                    <tr><td><code>ts</code></td><td>affricate</td><td>stop then <code>s</code></td><td><em>cats</em> ending</td></tr>
+                    <tr><td><code>tsʰ</code></td><td>aspirated affricate</td><td>same + puff</td><td>stronger <em>ts</em> burst</td></tr>
+                    <tr><td><code>tɕ</code></td><td>affricate</td><td>stop then <code>ɕ</code></td><td>soft “ch” / “j”-adjacent</td></tr>
+                    <tr><td><code>tɕʰ</code></td><td>aspirated</td><td>same + puff</td><td>hear 吃</td></tr>
+                    <tr><td><code>dʑ</code></td><td>voiced affricate</td><td>same place + buzz</td><td>softer voiced “j”-like</td></tr>
+                    <tr><td><code>m n</code></td><td>nasals</td><td>nose open</td><td><em>me</em>, <em>no</em></td></tr>
+                    <tr><td><code>ɲ</code></td><td>palatal nasal</td><td>blade to palate</td><td>Spanish <em>ñ</em> / French <em>agneau</em></td></tr>
+                    <tr><td><code>ŋ</code></td><td>velar nasal</td><td>back nasal</td><td><em>sing</em> ending</td></tr>
+                    <tr><td><code>l</code></td><td>lateral</td><td>air beside tongue</td><td><em>light</em></td></tr>
+                    <tr><td><code>ʋ</code></td><td>labiodental approx.</td><td>lip lightly to teeth + voice</td><td>between <em>v</em> and <em>w</em>; hear 饭</td></tr>
+                    <tr><td><code>h</code></td><td>voiceless glottal</td><td>breath only</td><td><em>hat</em></td></tr>
+                    <tr><td><code>ɦ</code></td><td>voiced “h”</td><td>breath + buzz</td><td>breathy onset before a vowel</td></tr>
+                    <tr><td><code>ʔ</code></td><td>glottal stop</td><td>cut off</td><td>uh-oh catch; hear 木 / 落</td></tr>
                   </tbody>
                 </table>
                 </div>
 
                 <h4>6 · Worked examples</h4>
-                <p>On-site rows open the dictionary; teaching rows are for parsing practice only.</p>
+                <p>Blue words open the dictionary. Use <strong>Play</strong> above (or beside Chinese rows) for Shengzhou audio—clips are single characters, not full phrases.</p>
                 <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead><tr><th scope="col">Word</th><th scope="col">IPA</th><th scope="col">Parse</th></tr></thead>
+                  <thead><tr><th scope="col">Word</th><th scope="col">IPA</th><th scope="col">Parse in English</th></tr></thead>
                   <tbody>
-                    <tr><td>太阳</td><td><code>tʰa³³ iaŋ³³</code></td><td>level + level</td></tr>
-                    <tr><td>月亮</td><td><code>ioʔ² liaŋ²³¹</code></td><td>checked + contour</td></tr>
-                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃">吃</button></td><td><code>tɕʰieʔ⁵</code></td><td>high checked</td></tr>
-                    <tr><td>落雨</td><td><code>loʔ² y²²³</code></td><td>checked + rise</td></tr>
-                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="木头">木头</button></td><td><code>moʔ² dɤ²³¹</code></td><td>on-site</td></tr>
-                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃早饭">吃早饭</button></td><td><code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></td><td>on-site</td></tr>
-                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="多">多</button> / <button type="button" class="dict-link learn-primer__dict-link" data-dict-open="拖">拖</button></td><td><code>to534</code> / <code>t'ho534文</code></td><td>on-site</td></tr>
+                    <tr><td>太阳 (teaching)</td><td><code>tʰa³³ iaŋ³³</code></td><td>aspirated t + a, mid-level; then “yahng”-ish mid-level</td></tr>
+                    <tr><td>月亮 (teaching)</td><td><code>ioʔ² liaŋ²³¹</code></td><td>short checked “yo”; then contour “liang”</td></tr>
+                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃">吃</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="吃" data-i18n="learn.ipa.listen">Play</button></td><td><code>tɕʰieʔ⁵</code></td><td>aspirated soft-ch + ye, high checked cut</td></tr>
+                    <tr><td>落雨 (teaching) <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="落" data-i18n="learn.ipa.listen">Play</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="雨" data-i18n="learn.ipa.listen">Play</button></td><td><code>loʔ² y²²³</code></td><td>checked “lo”; rounded <code>y</code> (French <em>tu</em>) with low rise</td></tr>
+                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="木头">木头</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="木" data-i18n="learn.ipa.listen">Play</button></td><td><code>moʔ² dɤ²³¹</code></td><td>checked “mo”; voiced d + <code>ɤ</code> contour (hear 木; 头 clip missing)</td></tr>
+                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃早饭">吃早饭</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="吃" data-i18n="learn.ipa.listen">Play</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="饭" data-i18n="learn.ipa.listen">Play</button></td><td><code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></td><td>checked “eat”; mid “tsɔ”; nasal <code>ʋɛ̃</code> falling</td></tr>
+                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="多">多</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="多" data-i18n="learn.ipa.listen">Play</button> / <button type="button" class="dict-link learn-primer__dict-link" data-dict-open="拖">拖</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="拖" data-i18n="learn.ipa.listen">Play</button></td><td><code>to534</code> / <code>t'ho534文</code></td><td>same contour; 拖 adds aspiration puff</td></tr>
                   </tbody>
                 </table>
                 </div>
+
+                <h4>7 · Practice tip</h4>
+                <ol class="learn-primer__levels">
+                  <li>Split each syllable: consonant → vowel → pitch → <code>ʔ/̃/ʰ</code>.</li>
+                  <li>Drill with Play: 木 (checked), 吃 (aspirated checked), 田 (voiced), 山/饭 (nasal), 多 vs 拖 (aspiration).</li>
+                  <li>Open the dictionary link, then match what you hear to the IPA line.</li>
+                </ol>
               </div>
 
-              <div class="plan-cta-row">
+<div class="plan-cta-row">
                 <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="dictionary" data-i18n="home.ctaDictionary">打开词典</button>
                 <button type="button" class="home-cta__btn" id="learn-ipa-to-pinyin" data-i18n="learn.nav.pinyin">学习拼音</button>
                 <button type="button" class="home-cta__btn" id="learn-ipa-to-fayin" data-i18n="learn.pinyin.cta">开始第 1 阶发音练习</button>
@@ -3486,24 +3498,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826audio1",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826audio1",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826audio1",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826audio1",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826audio1",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826audio1",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826audio1",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826audio1",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826audio1",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826audio1"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826en1",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826en1",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826en1",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826en1",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826en1",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826en1",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826en1",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826en1",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826en1",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826en1"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826audio1"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826audio1"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826audio1"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826audio1"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826audio1"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826audio1"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826en1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826en1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826en1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826en1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826en1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826en1"></script>
 </body>
 </html>
