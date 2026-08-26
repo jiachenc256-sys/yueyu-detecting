@@ -107,7 +107,7 @@ function genericCard(pieceId: string, title?: string | null): PieceLinguistics {
     rolesZh: "行当随本出而定",
     rolesEn: "Role line depends on this piece",
     listenZh: "命中后用候选句与场景卡跟读；字级不稳属唱腔域常态。",
-    listenEn: "After a hit, follow the candidate line and scene card; rough CER is normal in sung domain.",
+    listenEn: "After a hit, follow the candidate line and scene card; imperfect matches are normal in sung domain.",
   };
 }
 

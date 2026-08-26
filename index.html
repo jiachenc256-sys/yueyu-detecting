@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826waveab" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826waveab" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826waveab" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826waveab" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826waveab" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826waveab" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826waveab" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826final" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826final" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826final" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826final" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826final" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826final" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826final" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -38,7 +38,7 @@
         <div>
           <a class="site-title site-title--link" href="#home" data-panel-target="home">
             <span data-i18n="meta.title">越语侦听</span>
-            <span class="site-title__sub" data-i18n="brand.sub">越语语音识别与档案</span>
+            <span class="site-title__sub" data-i18n="brand.sub">探索 · 倾听 · 保存</span>
           </a>
         </div>
         <div class="site-header__tools">
@@ -146,7 +146,6 @@
                 <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="home.trySample">听这段并识别</button>
                 <a class="home-cta__btn" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="home.liveOpenArchive">探索这段录音 →</a>
               </div>
-              <p class="hub-path hub-path--flow" data-i18n="home.tryPath">听 → 识别 → 探索</p>
             </div>
           </section>
 
@@ -159,13 +158,13 @@
                 <p data-i18n="home.pillarVoiceBody">听并转写真实越语——录音、戏腔或你的声音。</p>
               </button>
               <button type="button" class="home-pillar" data-panel-target="language">
-                <span class="home-pillar__kicker" data-i18n="home.pillarLanguageKicker">LEARN</span>
-                <h3 data-i18n="home.pillarLanguageTitle">学习</h3>
+                <span class="home-pillar__kicker" data-i18n="home.pillarLanguageKicker">LANGUAGE</span>
+                <h3 data-i18n="home.pillarLanguageTitle">语言</h3>
                 <p data-i18n="home.pillarLanguageBody">查词与发音，再看它在档案里出现的地方。</p>
               </button>
               <button type="button" class="home-pillar" data-panel-target="memory">
-                <span class="home-pillar__kicker" data-i18n="home.pillarMemoryKicker">PRESERVE</span>
-                <h3 data-i18n="home.pillarMemoryTitle">保存</h3>
+                <span class="home-pillar__kicker" data-i18n="home.pillarMemoryKicker">ARCHIVE</span>
+                <h3 data-i18n="home.pillarMemoryTitle">档案</h3>
                 <p data-i18n="home.pillarMemoryBody">跟随录音、戏腔与历史文本进入档案。</p>
               </button>
             </div>
@@ -229,11 +228,9 @@
           <button type="button" class="dict-link" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="hub.hear.firstTime">第一次来？从梁祝示例开始 →</button>
         </p>
 
-        <p class="hub-path hub-path--journey" data-i18n="hub.hear.journey">听 → 识别 → 探索</p>
-
         <div class="live-panel live-panel--hero" id="hear-demo">
           <h3 data-i18n="hub.hear.demoTitle">听见越语</h3>
-          <p data-i18n="hub.hear.demoLead">先听原声，再识别。下面是梁祝短段——播放后可一键走完整路径。</p>
+          <p data-i18n="hub.hear.demoLead">梁祝短段——先听原声，再点下方识别。</p>
           <audio class="live-audio" controls preload="metadata" src="assets/speak/samples/liangzhu-demo.m4a"></audio>
           <div class="live-demo-grid">
             <div class="live-transcript" data-visible-lang="zh-Hans">
@@ -250,7 +247,7 @@
             </div>
             <div class="live-transcript live-transcript--next">
               <p class="live-transcript__label" data-i18n="hub.hear.afterLabel">识别之后</p>
-              <p data-i18n="hub.hear.afterBody">转写 → 简/繁/EN → 若命中档案，可打开时间轴原句。</p>
+              <p data-i18n="hub.hear.afterBody">听完后可识别，再进入词典或档案继续探索。</p>
             </div>
           </div>
           <p class="live-firstload" data-i18n="speak.firstLoadNote">首次使用可能需要一点时间准备识别工具，之后会更快。</p>
@@ -265,7 +262,6 @@
             <span aria-hidden="true">·</span>
             <button type="button" class="dict-link" data-panel-target="research" data-i18n="hub.hear.toResearch">识别仍在实验中 · 方法与局限 →</button>
           </p>
-          <p class="hub-path hub-path--flow" data-i18n="hub.hear.path">路径：听 → 识别 → 探索</p>
         </div>
 
         <p class="hub-more-label" data-i18n="hub.hear.moreLabel">还想继续</p>
@@ -344,7 +340,7 @@
 
         <div class="live-panel live-panel--paper">
           <figure class="live-paper">
-            <img src="assets/tanci/pearl-tower/folio-b.jpg" alt="Tanci woodblock folio" width="640" height="480" loading="lazy" />
+            <img src="assets/tanci/pearl-tower/folio-b.jpg" alt="《珍珠塔》弹词刻本页" width="640" height="480" loading="lazy" />
             <figcaption data-i18n="hub.mem.artifactCap">弹词刻本 · 《珍珠塔》</figcaption>
           </figure>
           <div class="live-paper__text">
@@ -363,7 +359,7 @@
               <span aria-hidden="true">·</span>
               <button type="button" class="dict-link" data-panel-target="hear" data-i18n="hub.mem.toHear">去听见越语 →</button>
               <span aria-hidden="true">·</span>
-              <button type="button" class="dict-link" data-panel-target="tanci" data-i18n="home.liveTryOcr">纸页 OCR →</button>
+              <button type="button" class="dict-link" data-panel-target="tanci" data-i18n="home.liveTryOcr">纸页识字 →</button>
             </p>
           </div>
         </div>
@@ -385,8 +381,8 @@
 <!-- ── Speak / Translate ── -->
       <section class="panel" data-panel="speak" aria-hidden="true">
         <header class="section-header">
-          <h2 data-i18n="speak.title">VOICE · 听说</h2>
-          <p data-i18n="speak.lead">选一段越语录音（或用麦克风）→ 等待识别 → 对照译文 → 若命中档案，跳到对应时间轴。</p>
+          <h2 data-i18n="speak.title">听说</h2>
+          <p data-i18n="speak.lead">用麦克风或上传试试识别；译文会显示在下方。若命中档案，可打开原句。</p>
         </header>
 
         <div class="speak-layout">
@@ -398,7 +394,7 @@
           </ol>
           <ol class="speak-story" data-visible-lang="zh-Hant">
             <li><strong>選音</strong>：點「試試示例 · 梁祝」，或上傳/錄音。</li>
-            <li><strong>傾聽</strong>：模型載入並識別（首次可能稍慢）。</li>
+            <li><strong>傾聽</strong>：正在聆聽並轉寫（首次可能稍慢）。</li>
             <li><strong>看見</strong>：識別結果 + 簡/繁/EN。</li>
             <li><strong>入檔</strong>：若①檔案命中，點「在檔案中打開」聽原句。</li>
           </ol>
@@ -409,7 +405,7 @@
             <li><strong>Enter the archive</strong>: if there is a hit, open the cue on the timeline.</li>
           </ol>
           <p class="speak-note" data-i18n="speak.note">
-            识别后先看档案是否命中；命中即可打开时间轴原句。评测与局限见「研究」。
+            若有档案命中，可打开时间轴原句继续听。
           </p>
           <p class="speak-demo-path" data-i18n="speak.demoPath">
             推荐路径：梁祝示例 → 看档案命中 → 在档案中打开时间轴。
@@ -781,8 +777,8 @@
               </div>
             </div>
             <p class="piece-card__related">
-              <span data-visible-lang="zh-Hans">相关词典字：心 · 话 · 酸（词典可听可跳档案）· Speak 有祥林示例</span>
-              <span data-visible-lang="zh-Hant">相關詞典字：心 · 話 · 酸（詞典可聽可跳檔案）· Speak 有祥林示例</span>
+              <span data-visible-lang="zh-Hans">相关词典字：心 · 话 · 酸（词典可听可跳档案）· 「听说」有祥林示例</span>
+              <span data-visible-lang="zh-Hant">相關詞典字：心 · 話 · 酸（詞典可聽可跳檔案）· 「听说」有祥林示例</span>
               <span data-visible-lang="en">Related dictionary chars: 心 · 话 · 酸 · Speak has a Xianglin sample</span>
             </p>
           </a>
@@ -1471,10 +1467,10 @@
           <div class="story-doc" data-visible-lang="zh-Hans">
             <header class="story-doc__header">
               <p class="story-doc__eyebrow">完整故事</p>
-              <h3 class="story-doc__title">我们的语料采集与研究流程</h3>
+              <h3 class="story-doc__title">为什么我要留下越语</h3>
             </header>
-            <div class="story-flow-summary" aria-label="研究流程摘要">
-              <p class="story-flow-summary__label">研究闭环（摘要）</p>
+            <div class="story-flow-summary" aria-label="故事摘要">
+              <p class="story-flow-summary__label">从听到留下来</p>
               <ol class="story-flow-summary__steps">
                 <li><strong>采集</strong><span>纸质 · 戏曲 · 口语</span></li>
                 <li><strong>转写</strong><span>时间轴 · 简繁英</span></li>
@@ -1482,13 +1478,6 @@
                 <li><strong>回流</strong><span>档案 · 学习 · 识别</span></li>
               </ol>
             </div>
-            <aside class="research-abstract" aria-label="研究摘要">
-              <p class="research-abstract__eyebrow">研究摘要 · 问题—方法—结果</p>
-              <p><strong>背景。</strong>越语作为濒危吴语方言，语音识别面临语料稀缺与发音／语域变体（散白、韵白、唱词）复杂的双重挑战。</p>
-              <p><strong>方法。</strong>我从本站已校对的时间轴档案构建金标切片，按短域旧戏 + 未见全剧双留出，对 Whisper-small 做 LoRA 微调与权重混合，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。评测协议排除唱词与时间轴不可靠的条目，硬指标用双集合报告。</p>
-              <p><strong>结果（实验室 v13；Speak 线上仍为 blend-v10）。</strong>荆钗短域留出 n=39：tiny 1.54 · plain small 1.48 · 适配 <strong>0.81</strong>。白兔未见抽样 n=80：tiny 3.55 · small 3.35 · 适配 <strong>1.04</strong>。相对同尺寸基线明显下降，但距「好看的 0.5」仍远——听校确认金标正确后，瓶颈主要在唱腔域能力，不靠剔难句刷分。</p>
-              <p><strong>意义与产品。</strong>这验证了可复现的低资源适应路径；字级见顶后，「听说」并行两路：① 档案检索／白话锚定；② 腔调表现（浏览器声学可视化，非情绪诊断）。线上仍加载 blend-v10（试点），v13 留在实验室。</p>
-            </aside>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
               <p>这两件事放在一起，让我觉得不能只是喜欢就完了。如果连我们这些既懂方言又爱戏的人都不去做点什么，等老一辈走了，越语和越剧里那些鲜活的、细微的、只可意会的东西，就真的很难再找回来了。</p>
@@ -1506,7 +1495,7 @@
                 </div>
                 <div class="story-source">
                   <h5>越剧 · 录音与录像</h5>
-                  <p>在上海越剧院和浙江小百花越剧团的支持下，我们进入其内部资料库，转录了大量1970年至2000年间的演出磁带。我们还拜访了多位退休老艺人，将他们私人保存的演出录音和早年电视台录像翻录为数字格式。此外，我们在嵊州和杭州的剧场完成了多场现场演出的实地录制。</p>
+                  <p>在上海越剧院和浙江小百花越剧团的支持下，我们进入其院团档案，转录了大量1970年至2000年间的演出磁带。我们还拜访了多位退休老艺人，将他们私人保存的演出录音和早年电视台录像翻录为数字格式。此外，我们在嵊州和杭州的剧场完成了多场现场演出的实地录制。</p>
                 </div>
                 <div class="story-source">
                   <h5>电台广播 · 口语现场</h5>
@@ -1562,10 +1551,10 @@
           <div class="story-doc" data-visible-lang="zh-Hant">
             <header class="story-doc__header">
               <p class="story-doc__eyebrow">完整故事</p>
-              <h3 class="story-doc__title">我們的語料採集與研究流程</h3>
+              <h3 class="story-doc__title">為什麼我要留下越語</h3>
             </header>
-            <div class="story-flow-summary" aria-label="研究流程摘要">
-              <p class="story-flow-summary__label">研究閉環（摘要）</p>
+            <div class="story-flow-summary" aria-label="故事摘要">
+              <p class="story-flow-summary__label">從聽到留下來</p>
               <ol class="story-flow-summary__steps">
                 <li><strong>採集</strong><span>紙質 · 戲曲 · 口語</span></li>
                 <li><strong>轉寫</strong><span>時間軸 · 簡繁英</span></li>
@@ -1573,13 +1562,6 @@
                 <li><strong>回流</strong><span>檔案 · 學習 · 識別</span></li>
               </ol>
             </div>
-            <aside class="research-abstract" aria-label="研究摘要">
-              <p class="research-abstract__eyebrow">研究摘要 · 問題—方法—結果</p>
-              <p><strong>背景。</strong>越語作為瀕危吳語方言，語音識別面臨語料稀缺與發音／語域變體（散白、韻白、唱詞）複雜的雙重挑戰。</p>
-              <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建金標切片，按短域舊戲 + 未見全劇雙留出，對 Whisper-small 做 LoRA 微調與權重混合，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER。評測協議排除唱詞與時間軸不可靠的條目，硬指標用雙集合報告。</p>
-              <p><strong>結果（實驗室 v13；Speak 線上仍為 blend-v10）。</strong>荊釵短域留出 n=39：tiny 1.54 · plain small 1.48 · 適配 <strong>0.81</strong>。白兔未見抽樣 n=80：tiny 3.55 · small 3.35 · 適配 <strong>1.04</strong>。相對同尺寸基線明顯下降，但距「好看的 0.5」仍遠——聽校確認金標正確後，瓶頸主要在唱腔域能力，不靠剔難句刷分。</p>
-              <p><strong>意義與產品。</strong>這驗證了可復現的低資源適應路徑；字級見頂後，「聽說」並行兩路：① 檔案檢索／白話錨定；② 腔調表現（瀏覽器聲學可視化，非情緒診斷）。線上仍載入 blend-v10（試點），v13 留在實驗室。</p>
-            </aside>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
               <p>這兩件事放在一起，讓我覺得不能只是喜歡就完了。如果連我們這些既懂方言又愛戲的人都不去做點什麼，等老一輩走了，越語和越劇裏那些鮮活的、細微的、只可意會的東西，就真的很難再找回來了。</p>
@@ -1597,7 +1579,7 @@
                 </div>
                 <div class="story-source">
                   <h5>越劇 · 錄音與錄像</h5>
-                  <p>在上海越劇院和浙江小百花越劇團的支持下，我們進入其內部資料庫，轉錄了大量1970年至2000年間的演出磁帶。我們還拜訪了多位退休老藝人，將他們私人保存的演出錄音和早年電視臺錄像翻錄爲數字格式。此外，我們在嵊州和杭州的劇場完成了多場現場演出的實地錄製。</p>
+                  <p>在上海越劇院和浙江小百花越劇團的支持下，我們進入其院團檔案，轉錄了大量1970年至2000年間的演出磁帶。我們還拜訪了多位退休老藝人，將他們私人保存的演出錄音和早年電視臺錄像翻錄爲數字格式。此外，我們在嵊州和杭州的劇場完成了多場現場演出的實地錄製。</p>
                 </div>
                 <div class="story-source">
                   <h5>電臺廣播 · 口語現場</h5>
@@ -1656,7 +1638,7 @@
               <h3 class="story-doc__title">Our Corpus Collection and Research Workflow</h3>
             </header>
             <div class="story-flow-summary" aria-label="Research loop summary">
-              <p class="story-flow-summary__label">Research loop (summary)</p>
+              <p class="story-flow-summary__label">From listening to keeping</p>
               <ol class="story-flow-summary__steps">
                 <li><strong>Collect</strong><span>print · opera · speech</span></li>
                 <li><strong>Transcribe</strong><span>timeline · ZH/EN</span></li>
@@ -1664,13 +1646,6 @@
                 <li><strong>Feed back</strong><span>archive · learn · ASR</span></li>
               </ol>
             </div>
-            <aside class="research-abstract" aria-label="Research abstract">
-              <p class="research-abstract__eyebrow">Research abstract · problem–method–result</p>
-              <p><strong>Background.</strong> Yueyu, a threatened Wu variety, poses a dual ASR challenge: scarce aligned data and complex pronunciation / register variation (sanbai, yunbai, sung lines).</p>
-              <p><strong>Method.</strong> I built gold clips from this site’s corrected timed archive, used a short-domain classic holdout plus an unseen full-play sample, fine-tuned Whisper-small with LoRA and weight blending, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>. The evaluation protocol drops unreliable lyric/timing items and reports two hard sets.</p>
-              <p><strong>Result (lab v13; Speak still live blend-v10).</strong> Jingchai short-domain n=39: tiny 1.54 · plain small 1.48 · adapted <strong>0.81</strong>. Baitu unseen sample n=80: tiny 3.55 · small 3.35 · adapted <strong>1.04</strong>. Clear gains vs size-matched baselines, but far from a vanity 0.5 mean—after listening QA confirmed labels, the ceiling is mainly sung-domain capacity, not scrubbing hard lines.</p>
-              <p><strong>Significance &amp; product.</strong> Supports a reproducible low-resource path. When verbatim CER plateaus, Speak runs two parallel paths: ① archive check / vernacular anchoring; ② vocal expression from browser acoustic features (not a diagnosis). Live Speak still loads blend-v10 (pilot); v13 stays in the lab.</p>
-            </aside>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
               <p>But over the years, I have noticed two things that worry me. First, fewer and fewer people speak authentic Yueyu. The younger generation communicates almost entirely in Mandarin, and the older vocabulary and distinctive pronunciations are quietly fading. Second, the audience for Yue Opera is aging as well. Many precious singing styles, spoken parts, and unique interpretations passed down by veteran performers are at risk of being lost as they grow older.</p>
@@ -3183,7 +3158,7 @@
       <section class="panel" data-panel="dictionary" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="dict.title">越语词典</h2>
-          <p data-i18n="dict.lead">LANGUAGE：检索嵊州单字与词组注音；有录音可听；相关档案例句可跳转。可与音标预习、听说互相跳转。</p>
+          <p data-i18n="dict.lead">查一个词，听它怎么说，再看它在档案里出现的地方。可与音标预习、听说互相跳转。</p>
           <p class="dict-bridge">
             <button type="button" class="dict-link" data-panel-target="speak" data-i18n="home.ctaSpeak">试用越语听说</button>
             ·
@@ -3355,159 +3330,7 @@
                 <button type="button" class="home-cta__btn" data-panel-target="research" data-i18n="home.ctaMethods">研究方法 →</button>
               </p>
             </div>
-
-            <div class="plan-section" data-about-section="provide" aria-hidden="true">
-              <h3 data-i18n="about.provide.title">我们提供什么</h3>
-              <div data-visible-lang="zh-Hans">
-                <p>这一页说明越语侦听在<strong>研究与工程</strong>上提供什么：识别范围、语料来源思路、模型路径与音韵背景。爱好者学习路径请看上方导航的「学习路径」。</p>
-              </div>
-              <div data-visible-lang="zh-Hant">
-                <p>這一頁說明越語偵聽在<strong>研究與工程</strong>上提供什麼：識別範圍、語料來源思路、模型路徑與音韻背景。愛好者學習路徑請看上方導航的「學習路徑」。</p>
-              </div>
-              <div data-visible-lang="en">
-                <p>This page explains what Yueyu Detecting offers on the <strong>research and engineering</strong> side: recognition scope, corpus sources, model path, and phonology notes. For learner pathways, open <strong>Pathways</strong> in the top nav.</p>
-              </div>
-
-              <article class="plan-offer">
-                <h3>Task calibration</h3>
-                <div class="callout">
-                  <p>
-                    Scope is <strong>越语 (Yueyu) linguistic ASR</strong> — broader than 越剧 alone.
-                    Yue opera stage dialect (韵白 / 散白 / 中州韵 hybrid) is the first high-value domain;
-                    everyday Shengzhou / Shaoxing speech can be mixed in later.
-                  </p>
-                </div>
-                <p>Two output layers planned:</p>
-                <ul>
-                  <li><strong>汉字戏词 / 汉字转写</strong> — most practical for school demos and archive reading</li>
-                  <li><strong>wugniu 嵊州拉丁化 + 声调</strong> — high research value for Wu linguistics; smaller audience</li>
-                </ul>
-                <p>Phase 1 targets 汉字. Phase 2 adds 嵊州拼音 layer.</p>
-                <h3 style="margin-top: var(--space-8)">Speech types</h3>
-                <ul>
-                  <li><strong>散白</strong> — closer to everyday Shengzhou speech; relatively easier to recognize</li>
-                  <li><strong>韵白</strong> — hybrid of 中州韵 + Wu tones; where generic ASR fails hardest</li>
-                </ul>
-              </article>
-
-              <article class="plan-offer">
-                <h3>Resource types &amp; pipeline</h3>
-                <table class="dataset-table">
-                  <thead>
-                    <tr>
-                      <th>Source</th>
-                      <th>Examples</th>
-                      <th>Approach</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Official recordings</td>
-                      <td>CCTV, Zhejiang TV, Shaoxing Xiaobaihua DVDs</td>
-                      <td>Extract audio + OCR subtitles → Whisper alignment → human correction</td>
-                    </tr>
-                    <tr>
-                      <td>Scripts / subtitles</td>
-                      <td>戏考网, troupe publications</td>
-                      <td>OCR + aeneas / whisper-timestamped coarse align → manual fix</td>
-                    </tr>
-                    <tr>
-                      <td>Private corpus packs</td>
-                      <td>Local Baidu 越剧-1451首 (~1,200+ tracks)</td>
-                      <td>Inventory locally; publish curated clips + text only</td>
-                    </tr>
-                    <tr>
-                      <td>Live / fan covers</td>
-                      <td>Bilibili uploads</td>
-                      <td>test-live split; contemporary pronunciation distribution</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </article>
-
-              <article class="plan-offer">
-                <h3>Model approach</h3>
-                <p>Don't train from scratch — <strong>Whisper-small (244M) + LoRA r=32</strong> is the fastest open-source path.</p>
-                <ul>
-                  <li>Encoder: frozen or LoRA on q,v (r=8)</li>
-                  <li>Decoder: tokenizer + ~200 吴语特字; LoRA r=32 on q,k,v,o</li>
-                  <li>Output: 汉字 with timestamps</li>
-                  <li>Optional second pass: wugniu-嵊州拼音 via small LM</li>
-                </ul>
-                <p>200–500 hours of aligned data → usable small model. 1000 hours → medium or Data2vec2 + Qwen2 0.5B.</p>
-                <div class="callout">
-                  <p>For broader 越语 coverage beyond Yue opera, mix everyday Shengzhou/Shaoxing speech with stage data.</p>
-                </div>
-              </article>
-
-              <article class="plan-offer">
-                <h3>Phonology &amp; 韵白</h3>
-                <p>Yue opera is based on 嵊州话 (Taihu Wu, Lin-Shao sub-group), but 韵白 is a hybrid — not pure Shengzhou.</p>
-                <ul>
-                  <li>吴语学堂 wugniu has Shengzhou data for 特字 ↔ pinyin mapping</li>
-                  <li>《嵊县志·方言编》 + 钱乃荣《吴语声调实验录》 for tonal acoustics</li>
-                  <li>Stage "Shengzhou" ≠ everyday Shengzhou — document scope clearly in README</li>
-                </ul>
-              </article>
-            </div>
-
-            <div class="plan-section" data-about-section="research" aria-hidden="true">
-              <h3 data-i18n="about.research.title">研究摘要</h3>
-              <div data-visible-lang="zh-Hans,zh-Hant">
-                <p><strong>作者。</strong>Alice Chen（sole author）。</p>
-                <p><strong>问题。</strong>在标注稀缺时，高质量音文对齐语料与适配训练，能否同时稳住短域旧戏留出、并改善未见全剧上的识别？字级 CER 见顶后，产品如何仍「能用」？</p>
-                <p><strong>方法。</strong>从本站校对档案导出金标切片 → 短域旧戏留出（荆钗记前段）+ 未见全剧（白兔记不进训练）→ <code>whisper-small</code> + LoRA 与权重混合 → 与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。硬协议排除唱词／时间轴不可靠条目；主叙事用<strong>双指标</strong>诚实报告，不以剔难句刷到 0.5。</p>
-                <p><strong>结果（实验室 v13；Speak 线上 blend-v10）。</strong>荆钗短域 n=39 原始 CER：tiny 1.54 · plain small 1.48 · 适配 <strong>0.81</strong>。白兔未见抽样 n=80：tiny 3.55 · small 3.35 · 适配 <strong>1.04</strong>。文案听校：最差一批金标保持正确 → 剩余误差主要在唱腔域能力。</p>
-                <div class="cer-chart" role="img" aria-label="荆钗短域 CER：tiny 1.54，small 1.48，v13 0.81；白兔未见约 1.04">
-                  <div class="cer-chart__row">
-                    <span class="cer-chart__label">tiny</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:100"></span></div>
-                    <span class="cer-chart__val">1.54</span>
-                  </div>
-                  <div class="cer-chart__row">
-                    <span class="cer-chart__label">small</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:96"></span></div>
-                    <span class="cer-chart__val">1.48</span>
-                  </div>
-                  <div class="cer-chart__row">
-                    <span class="cer-chart__label">adapt</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:53"></span></div>
-                    <span class="cer-chart__val">0.81</span>
-                  </div>
-                  <p class="cer-chart__caption">荆钗短域原始 CER（越低越好）· n=39 · 实验室 v13；白兔未见 n=80 适配 ≈ 1.04 · Speak 仍为 blend-v10 · 不宣称 mean CER 0.5</p>
-                </div>
-                <p><strong>意义与产品。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。字级见顶后，「听说」识别后并行：① <strong>档案检索</strong>（唱词／声纹是否在库，白话锚定；命中可附语言学注记与说话人——档案链接，非 LLM）；② <strong>腔调表现</strong>（能量／起伏／音色可视化；实验性声学探索，非情绪诊断或大模型）。线上 Whisper 仍为 blend-v10（INT8 ONNX）；v13 为实验室适配器。口语／电台另属后续域扩展。</p>
-                <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。</p>
-              </div>
-              <div data-visible-lang="en">
-                <p><strong>Author.</strong> Alice Chen (sole author).</p>
-                <p><strong>Question.</strong> With scarce labels, can high-quality aligned gold plus adaptation hold a short-domain classic holdout while improving on an unseen full play? And when verbatim CER plateaus, how can Speak stay usable?</p>
-                <p><strong>Method.</strong> Gold clips from corrected archive transcripts → short-domain classic holdout (early Jingchai Ji) + unseen full play (Baitu Ji kept out of training) → <code>whisper-small</code> + LoRA and weight blending → CER vs <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>. The hard protocol drops unreliable lyric/timing items and reports <strong>two metrics</strong> honestly—no scrubbing hard lines to a vanity 0.5.</p>
-                <p><strong>Result (lab v13; Speak live blend-v10).</strong> Jingchai short-domain n=39 raw CER: tiny 1.54 · plain small 1.48 · adapted <strong>0.81</strong>. Baitu unseen sample n=80: tiny 3.55 · small 3.35 · adapted <strong>1.04</strong>. Listening QA kept the worst-label gold as correct → remaining errors are mainly sung-domain capacity.</p>
-                <div class="cer-chart" role="img" aria-label="Jingchai short-domain CER: tiny 1.54, small 1.48, v13 0.81; Baitu unseen ≈ 1.04">
-                  <div class="cer-chart__row">
-                    <span class="cer-chart__label">tiny</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:100"></span></div>
-                    <span class="cer-chart__val">1.54</span>
-                  </div>
-                  <div class="cer-chart__row">
-                    <span class="cer-chart__label">small</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--base" style="--cer:96"></span></div>
-                    <span class="cer-chart__val">1.48</span>
-                  </div>
-                  <div class="cer-chart__row">
-                    <span class="cer-chart__label">adapt</span>
-                    <div class="cer-chart__track"><span class="cer-chart__bar cer-chart__bar--adapt" style="--cer:53"></span></div>
-                    <span class="cer-chart__val">0.81</span>
-                  </div>
-                  <p class="cer-chart__caption">Jingchai short-domain raw CER (lower better) · n=39 · lab v13; Baitu unseen n=80 adapted ≈ 1.04 · Speak still blend-v10 · no claim of mean CER 0.5</p>
-                </div>
-                <p><strong>Significance &amp; product.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). After the verbatim ceiling, Speak runs two parallel paths: ① <strong>archive check</strong> (lyrics / light fingerprints + vernacular anchoring; linguistic notes and speakers are archive-linked, not an LLM); ② <strong>vocal expression</strong> from browser audio features (energy / contour / timbre)—experimental visualization, not a diagnosis or emotion LLM. Live Whisper remains blend-v10 (INT8 ONNX); v13 stays in the lab. Spoken/radio gold is a later domain extension.</p>
-                <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose.</p>
-              </div>
-            </div>
-
-            <div class="plan-section" data-about-section="contact" aria-hidden="true" id="about-contact">
+<div class="plan-section" data-about-section="contact" aria-hidden="true" id="about-contact">
               <h3 data-i18n="about.contact.title">联系与申请</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
                 <p>欢迎就学习使用、材料贡献、授权与下架等事项联系项目负责人 <strong>Alice Chen</strong>。</p>
@@ -3611,117 +3434,7 @@
                 <p id="feedback-status" class="feedback-status" aria-live="polite" hidden></p>
               </form>
             </div>
-
-            <div class="plan-section" data-about-section="pipeline" aria-hidden="true">
-              <h3 data-i18n="about.pipeline.title">技术流程</h3>
-              <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>本站是静态网站：核心演示在浏览器内完成，便于学术求职演示与离线复现。</p>
-                <ol class="about-pipeline">
-                  <li><strong>输入</strong>：麦克风、上传音频，或「试试示例」短选段</li>
-                  <li><strong>识别</strong>：设备端 Whisper（越语适配 blend-v10；首次加载本地权重）</li>
-                  <li><strong>两路径</strong>：① 档案检索／白话锚定；② 腔调表现可视化（有音频时并列显示）</li>
-                  <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
-                  <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
-                </ol>
-                <p>当前「听说」已加载<strong>越语适配</strong> Whisper blend-v10（设备端）。实验室 CER 与诚实上限见「研究摘要」。口语/电台另需金标。如需代码或权重，请走「联系与申请」。</p>
-                <p>建站阶段为集中实现冲刺；词典短语、口语说话人与 FAQ 属于公开迭代中的持续工作。</p>
-              </div>
-              <div data-visible-lang="en">
-                <p>This is a static site: the core demo runs in the browser for academic review and offline reproduction.</p>
-                <ol class="about-pipeline">
-                  <li><strong>Input</strong>: mic, upload, or Try-sample clips</li>
-                  <li><strong>ASR</strong>: on-device Whisper (Yueyu-adapted blend-v10; local weights on first load)</li>
-                  <li><strong>Two paths</strong>: ① archive check / vernacular anchoring; ② vocal expression (shown beside ① when audio is present)</li>
-                  <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
-                  <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
-                </ol>
-                <p>Speak loads Yueyu-adapted Whisper <strong>blend-v10</strong> on-device. Lab CER and the honest ceiling: see <strong>Research brief</strong>. Spoken/radio needs separate gold. For code or weights, use <strong>Contact &amp; apply</strong>.</p>
-                <p>The site was shipped in an intensive implementation sprint; dictionary phrases, speaker read-alouds, and FAQ continue as public iteration.</p>
-              </div>
-              <div class="about-flow" aria-hidden="true">
-                <span>Mic / Sample</span><span aria-hidden="true">→</span>
-                <span>Whisper</span><span aria-hidden="true">→</span>
-                <span>Archive · Prosody</span><span aria-hidden="true">→</span>
-                <span>Translate</span><span aria-hidden="true">→</span>
-                <span>UI</span>
-              </div>
-            </div>
-
-            <div class="plan-section" data-about-section="findings" aria-hidden="true">
-              <h3 data-i18n="about.findings.title">初步观察</h3>
-              <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>学习工具中的三地单字对照，不只是「列表」，而是可观察的音韵差异入口。示例（字「多」）：</p>
-                <ul>
-                  <li>上虞：<code>tɷ35</code></li>
-                  <li>诸暨：<code>tɤu544</code></li>
-                  <li>嵊州：<code>to534</code></li>
-                </ul>
-                <p>同一汉字在邻近县市的韵母与调值并不相同；普通话拼音只能作「锚定义项」的索引，不能替代吴语标音。本站真人录音目前优先嵊州，是为了先建立一条可听、可复现的金标路径，再扩展对照。</p>
-                <p>第二点观察：越剧<strong>散白</strong>更接近口语，通用 ASR 相对可跟；<strong>韵白</strong>混有中州韵与吴语声调，是基线模型最容易失败的区间——这也是档案转写必须人工校对的原因。</p>
-              </div>
-              <div data-visible-lang="en">
-                <p>The three-place character chart is an entry to observable phonology, not only a list. Example (character 多 “many”):</p>
-                <ul>
-                  <li>Shangyu: <code>tɷ35</code></li>
-                  <li>Zhuji: <code>tɤu544</code></li>
-                  <li>Shengzhou: <code>to534</code></li>
-                </ul>
-                <p>Vowels and tones differ across neighboring counties; Mandarin pinyin is only a gloss anchor, not a Wu transcription. Shengzhou audio ships first as a reproducible gold path before widening coverage.</p>
-                <p>Second observation: Yue-opera <strong>sanbai</strong> (spoken-like) is closer to everyday speech and somewhat friendlier to generic ASR; <strong>yunbai</strong> mixes Zhongzhou rhyme with Wu tones—where baseline models fail hardest, so archive transcripts need human correction.</p>
-              </div>
-            </div>
-
-            <div class="plan-section" data-about-section="roadmap" aria-hidden="true">
-              <h3 data-i18n="about.roadmap.title">路线图</h3>
-              <ol class="roadmap">
-                <li class="roadmap__item roadmap__item--done">
-                  <h4 data-visible-lang="zh-Hans,zh-Hant">短期 · 已完成</h4>
-                  <h4 data-visible-lang="en">Short term · done</h4>
-                  <p data-visible-lang="zh-Hans,zh-Hant">公共工具站上线；金标导出；Whisper-small + LoRA 试点；CER 对比；研究摘要可 skim；代码与权重经申请获取。</p>
-                  <p data-visible-lang="en">Public toolkit live; gold export; Whisper-small + LoRA pilot; CER comparison; research brief for skim; code and weights available on request.</p>
-                </li>
-                <li class="roadmap__item">
-                  <h4 data-visible-lang="zh-Hans,zh-Hant">中期 · 规划中</h4>
-                  <h4 data-visible-lang="en">Mid term · planned</h4>
-                  <p data-visible-lang="zh-Hans,zh-Hant">金标扩至约 30–60 分钟再冲 2 小时+；口语/电台说话人短选段；辞书到齐后扩展词典。欢迎经同意的材料——见「参与贡献」。</p>
-                  <p data-visible-lang="en">Grow gold toward ~30–60 min then 2h+; spoken/radio Speakers clips with consent; dictionary growth when books arrive. Consented contributions welcome — see Contribute.</p>
-                </li>
-                <li class="roadmap__item">
-                  <h4 data-visible-lang="zh-Hans,zh-Hant">长期 · 愿景</h4>
-                  <h4 data-visible-lang="en">Long term · vision</h4>
-                  <p data-visible-lang="zh-Hans,zh-Hant">把留出测试切片沉淀为可复用的越语评测基准；服务更广的吴语／方言研究社区；在权利清晰的前提下探索与其他方言保护项目的合作。此为志向，非已宣称完成的成果。</p>
-                  <p data-visible-lang="en">Grow the hold-out slice into a reusable Yueyu evaluation seed; support a wider Wu / dialect research community; explore collaboration with other preservation projects when rights are clear. Aspiration, not a completed claim.</p>
-                </li>
-              </ol>
-              <p data-visible-lang="zh-Hans,zh-Hant">传承与共建细节见左侧「参与贡献」。作者：Alice Chen。</p>
-              <p data-visible-lang="en">Custodianship details: see Contribute in the About nav. Author: Alice Chen.</p>
-            </div>
-
-            <div class="plan-section" data-about-section="contribute" aria-hidden="true">
-              <h3 data-i18n="about.contribute.title">参与贡献</h3>
-              <div data-visible-lang="zh-Hans,zh-Hant">
-                <p>项目强调传承，欢迎有权限、可知情同意的材料：</p>
-                <ul>
-                  <li>本地说话人短朗读 / 日常短对话（建议 30–90 秒）</li>
-                  <li>弹词 / 手抄本清晰照片（用于 OCR 校对）</li>
-                  <li>档案转写校对意见（时间轴、说话人、错字）</li>
-                  <li>词典短语的方言措辞修正</li>
-                </ul>
-                <p>请通过「联系」说明材料来源与授权范围。本站不会公开未获同意的私人录音。</p>
-              </div>
-              <div data-visible-lang="en">
-                <p>Contribution is welcome when rights and consent are clear:</p>
-                <ul>
-                  <li>Short read-alouds / everyday clips from local speakers (30–90s preferred)</li>
-                  <li>Clear photos of tanci / manuscripts for OCR proofreading</li>
-                  <li>Archive transcript corrections (timing, speakers, typos)</li>
-                  <li>Dialect wording fixes for dictionary phrases</li>
-                </ul>
-                <p>Use <strong>Contact</strong> with source and permission notes. Private recordings without consent are not published.</p>
-              </div>
-            </div>
-
-            <div class="plan-section" data-about-section="developer" aria-hidden="true">
+<div class="plan-section" data-about-section="developer" aria-hidden="true">
               <h3 data-i18n="about.dev.title">开发者</h3>
               <div class="callout">
                 <p><strong>Alice Chen (Jiachen Chen)</strong></p>
@@ -3730,7 +3443,7 @@
                 <p>本网站由 <strong>Alice Chen (Jiachen Chen)</strong> 开发，面向越语及相关语音的识别演示、对话档案整理，以及简体 / 繁體 / English 多语对照学习。如需代码或模型，请使用「联系与申请」。</p>
                 <ul>
                   <li>重点：听说翻译 + 精选对话档案</li>
-                  <li>技术：TypeScript 静态站、设备端 Whisper（麦克风与上传）</li>
+                  <li>技术：TypeScript 静态站、浏览器内语音识别（麦克风与上传）</li>
                   <li>目标：让越语舞台对话更容易被学习者与研究者读懂</li>
                 </ul>
               </div>
@@ -3738,61 +3451,12 @@
                 <p><strong>Yueyu Detecting</strong> is developed by <strong>Alice Chen (Jiachen Chen)</strong> as a linguistic and educational project on Yueyu / Wu-related speech, dialogue recognition, and multilingual archive design. For code or model access, use <strong>Contact &amp; apply</strong>.</p>
                 <ul>
                   <li>Focus: speak → recognize → translate, plus a curated dialogue archive</li>
-                  <li>Stack: TypeScript static site, on-device Whisper for mic and uploads</li>
+                  <li>Stack: TypeScript static site; in-browser speech recognition for mic and uploads</li>
                   <li>Goal: make Yueyu stage dialogue readable for learners and researchers</li>
                 </ul>
               </div>
             </div>
-
-            <div class="plan-section" data-about-section="intro" aria-hidden="true">
-              <h3 data-i18n="about.intro.title">网站介绍</h3>
-              <div data-visible-lang="zh-Hans,zh-Hant">
-                <p><strong>越语侦听</strong> 是产品化的演示与档案网站，两大支柱同等重要：</p>
-                <ul>
-                  <li><strong>听说翻译</strong> — 麦克风或上传音频，识别后阅读简体、繁體与英文</li>
-                  <li><strong>档案</strong> — 浏览带剧情简介与时间轴的越语 / 越剧对话选段</li>
-                </ul>
-                <h3 style="margin-top: var(--space-8)">使用方式</h3>
-                <ol>
-                  <li>打开「听说翻译」：允许麦克风（推荐 Chrome / Edge），或选择音频文件</li>
-                  <li>说完稍等几秒，翻译会自动出现；也可编辑识别文本</li>
-                  <li>打开「档案」：选择作品，阅读剧情简介，点击时间戳跳转播放</li>
-                  <li>用右上角 <strong>简体 / 繁體 / EN</strong> 切换整个网站界面语言</li>
-                </ol>
-                <h3 style="margin-top: var(--space-8)">使用条件</h3>
-                <ul>
-                  <li>用于<strong>教育、研究与个人学习</strong></li>
-                  <li>建议桌面版 Chrome / Edge 与稳定网络（首次 Whisper 上传可能下载小模型）</li>
-                  <li>识别为<strong>基线演示</strong>；越语 / 舞台方言准确度会随语料积累提升</li>
-                  <li>大型私有音源包留在开发者本地；网站仅展示精选片段与文本</li>
-                  <li>请勿用本站转售或整包传播你无权分发的录音</li>
-                </ul>
-              </div>
-              <div data-visible-lang="en">
-                <p><strong>Yueyu Detecting</strong> is a product-style archive and demo tool with two equal pillars:</p>
-                <ul>
-                  <li><strong>Speak</strong> — mic or upload audio; then read Simplified Chinese, Traditional Chinese, and English</li>
-                  <li><strong>Archive</strong> — timed Yueyu / Yue opera clips with plot intros and multilingual transcripts</li>
-                </ul>
-                <h3 style="margin-top: var(--space-8)">How to use</h3>
-                <ol>
-                  <li>Open <strong>Speak</strong>: allow the microphone (Chrome/Edge), or choose an audio file</li>
-                  <li>Wait a few seconds after speech — translations appear; you can edit the recognized text</li>
-                  <li>Open <strong>Archive</strong>: pick a piece, read the story intro, click any timestamp to jump and play</li>
-                  <li>Use the top-right <strong>简体 / 繁體 / EN</strong> switcher to change the whole site language</li>
-                </ol>
-                <h3 style="margin-top: var(--space-8)">Conditions of use</h3>
-                <ul>
-                  <li>For <strong>education, research, and personal learning</strong></li>
-                  <li>Best on desktop Chrome or Edge with a stable network</li>
-                  <li>Recognition is a <strong>baseline demo</strong>; dialect accuracy improves as the corpus grows</li>
-                  <li>Large private source packs stay local; the site shows curated clips and text only</li>
-                  <li>Do not redistribute purchased recordings or claim rights you do not hold</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="plan-section" data-about-section="privacy" aria-hidden="true">
+<div class="plan-section" data-about-section="privacy" aria-hidden="true">
               <h3 data-i18n="about.privacy.title">隐私</h3>
               <div data-visible-lang="zh-Hans,zh-Hant">
                 <p>我们希望演示轻量，并尊重用户隐私。</p>
@@ -3802,7 +3466,7 @@
                   <li><strong>翻译：</strong>识别文本可能发送至第三方翻译接口以生成繁體 / English。请勿在识别框粘贴私密个人信息。</li>
                   <li><strong>无账号系统：</strong>无需登录，也不会有意建立用户画像。</li>
                   <li><strong>档案说话人：</strong>公开条目以精选文化材料为主；如有不当公开或希望撤下，请通过「联系」告知。</li>
-                  <li><strong>本地访问：</strong>在自己电脑打开（<code>127.0.0.1</code>）时，除字体、模型/CDN 与你触发的翻译请求外，流量主要留在本机。</li>
+                  <li><strong>本地访问：</strong>在自己电脑打开（<code>127.0.0.1</code>）时，除字体、识别工具／CDN 与你触发的翻译请求外，流量主要留在本机。</li>
                 </ul>
               </div>
               <div data-visible-lang="en">
@@ -3813,7 +3477,7 @@
                   <li><strong>Translation:</strong> recognized text may be sent to a third-party API for Traditional Chinese / English. Avoid pasting private personal data.</li>
                   <li><strong>No accounts:</strong> no login and no intentional user profiling.</li>
                   <li><strong>Archive speakers:</strong> public entries focus on curated cultural materials. For removal requests, use Contact.</li>
-                  <li><strong>Local hosting:</strong> on your machine (<code>127.0.0.1</code>), traffic stays local except fonts, model/CDN assets, and translation requests you trigger.</li>
+                  <li><strong>Local hosting:</strong> on your machine (<code>127.0.0.1</code>), traffic stays local except fonts, recognition tools / CDN assets, and translation requests you trigger.</li>
                 </ul>
               </div>
             </div>
@@ -3827,7 +3491,7 @@
                 <ul>
                   <li><strong>网站与软件：</strong>界面、逻辑、数据结构与多语整理层受保护。可用于学习研究并注明出处；未经许可请勿整站复制、去署名或冒充自有产品。</li>
                   <li><strong>戏曲录音与唱词：</strong>权利归表演者、剧团、出版方或相关权利人。本站短选段用于学习研究演示，<strong>不构成</strong>整包传播授权。</li>
-                  <li><strong>第三方工具：</strong>设备端 Whisper、字体与翻译接口遵循各自许可与条款。</li>
+                  <li><strong>第三方工具：</strong>浏览器内识别库、字体与翻译接口遵循各自许可与条款。</li>
                   <li><strong>名称：</strong>「越语侦听」「Yueyu Detecting」标识本项目，请勿暗示未经同意的官方背书。</li>
                 </ul>
                 <p>授权、引用或下架请求，请通过「联系」邮件 <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a> 联系开发者 <strong>Alice Chen (Jiachen Chen)</strong>。</p>
@@ -3839,7 +3503,7 @@
                 <ul>
                   <li><strong>Site &amp; software:</strong> protected project work — cite for school/research; do not copy wholesale or remove credit without permission.</li>
                   <li><strong>Opera recordings &amp; scripts:</strong> rights remain with performers, troupes, publishers, or rights holders. Short clips are for educational demo only — <strong>not</strong> a license to redistribute full packs.</li>
-                  <li><strong>Third-party tools:</strong> on-device Whisper, fonts, and translation APIs keep their own terms.</li>
+                  <li><strong>Third-party tools:</strong> in-browser recognition libraries, fonts, and translation APIs keep their own terms.</li>
                   <li><strong>Name:</strong> “Yueyu Detecting” identifies this project; do not imply official endorsement without consent.</li>
                 </ul>
                 <p>For permissions or takedown notices, contact <strong>Alice Chen (Jiachen Chen)</strong> via <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a>.</p>
@@ -3870,24 +3534,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826waveab",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826waveab",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826waveab",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826waveab",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826waveab",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826waveab",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826waveab",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826waveab",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826waveab",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826waveab"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826final",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826final",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826final",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826final",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826final",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826final",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826final",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826final",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826final",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826final"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826waveab"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826waveab"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826waveab"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826waveab"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826waveab"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826waveab"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826final"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826final"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826final"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826final"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826final"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826final"></script>
 </body>
 </html>
