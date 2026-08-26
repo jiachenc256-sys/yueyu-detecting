@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826ipa2" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826ipa2" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826ipa2" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826ipa2" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826ipa2" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826ipa2" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826ipa2" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826ipa5" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826ipa5" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826ipa5" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826ipa5" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826ipa5" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826ipa5" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826ipa5" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -1890,6 +1890,7 @@
         <header class="section-header">
           <h2 data-i18n="learn.title">学习工具</h2>
           <p data-i18n="learn.lead">先预习词典音标，再弄清三地对照，然后按五阶练单字。</p>
+          <p class="learn-access-note" data-i18n="learn.accessNote">学习内容目前多用普通话拼音来对照，对会中文、会拼音的朋友会更顺手；对不熟悉拼音的外国学习者可能偏难——我们仍在持续改进，谢谢理解与耐心。</p>
         </header>
 
         <div class="learn-layout">
@@ -1918,270 +1919,509 @@
               </div>
             </div>
 
-                        <div class="learn-tool" data-learn-section="ipa" aria-hidden="true">
+                                                <div class="learn-tool" data-learn-section="ipa" aria-hidden="true">
               <h3 class="learn-primer__title" data-i18n="learn.ipa.title">音标预习</h3>
-              <p class="learn-audience" data-i18n="learn.ipa.lead">打开词典前先花几分钟：五度调值、送气/浊音/入声，再对照本站「数字调」与「上标 IPA」两套记法。</p>
+              <p class="learn-audience" data-i18n="learn.ipa.lead">每个音标符号单独成行对照：附加符号、元音、辅音、声调、本站记号。先查表，再拆词例。</p>
 
-              <div class="learn-primer" data-visible-lang="zh-Hans">
-                <h4>这页先解决什么</h4>
-                <p>词典与词组里的音标记录的是<strong>吴语（绍兴嵊州一带）</strong>：比普通话多<strong>全浊声母</strong>和<strong>入声</strong>（喉塞尾 <code>ʔ</code>）。下面不要求背完整 IPA，只求能把一条注音拆开、对照录音。</p>
+              <div class="learn-primer learn-primer--ipa" data-visible-lang="zh-Hans">
+                <h4>前言</h4>
+                <p>词典音标 = <strong>吴语太湖片（绍兴嵊州）</strong>。比普通话多<strong>全浊声母</strong>与<strong>入声</strong>（<code>ʔ</code>）。下面每张表一行一个符号。</p>
 
-                <h4>1 · 先建立三个底层概念</h4>
-                <dl class="learn-primer__examples">
-                  <div>
-                    <dt>拼音 ≠ 音标</dt>
-                    <dd>普通话拼音用声母 + 韵母 + 1–4 声。国际音标把每个音素写细：浊音（声带振动）、入声（短促掐断）、鼻化元音（鼻子出气）都会单独标出。</dd>
-                  </div>
-                  <div>
-                    <dt>上标 / 尾数 = 五度调值</dt>
-                    <dd><code>1</code> 最低，<code>5</code> 最高。一串数字是音高轨迹：如 <code>⁵³</code> 高降，<code>²³¹</code> 低–中–低的小波浪，<code>⁵</code> 短促高入声。<strong>不是</strong>普通话阴平 1 / 阳平 2。</dd>
-                  </div>
-                  <div>
-                    <dt>三个「服装」符号</dt>
-                    <dd><code>˜</code>（或 <code>̃</code>）鼻化：鼻子要出气。　<code>ʰ</code> / <code>'</code> / 塞音后的 <code>h</code>：强送气。　<code>ʔ</code>：入声喉塞，发完立刻收住，勿拖长。</dd>
-                  </div>
-                </dl>
-
-                <h4>2 · 本站两套记法（最重要）</h4>
+                <h4>1 · 拼音 vs IPA（概念）</h4>
+                <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
                   <thead>
-                    <tr><th scope="col">位置</th><th scope="col">例子</th><th scope="col">怎么拆</th></tr>
+                    <tr><th scope="col">体系</th><th scope="col">写什么</th><th scope="col">特点</th></tr>
                   </thead>
                   <tbody>
-                    <tr class="learn-primer__table-row--focus">
-                      <td>单字 · 老男 / 青男</td>
-                      <td><code>to534</code> · <code>t'ho534文</code></td>
-                      <td>拉丁声韵 + <strong>末尾连写数字</strong>。两列对照两代人。</td>
-                    </tr>
-                    <tr>
-                      <td>词组 · 方言注音</td>
-                      <td><code>木头 moʔ² dɤ²³¹</code></td>
-                      <td>先本地说法，再 IPA；调值多为<strong>上标</strong>。空格分音节。</td>
-                    </tr>
+                    <tr><td>普通话拼音</td><td>声母 + 韵母 + 1–4 声</td><td>教学拼写，不标浊音/入声细节</td></tr>
+                    <tr><td>国际音标 IPA</td><td>每一个音素</td><td>标出浊音、入声、鼻化等</td></tr>
                   </tbody>
                 </table>
-                <ul class="learn-primer__list">
-                  <li><code>文</code> / <code>白</code>：文读（偏书面）/ 白读（口语）。</li>
-                  <li><code>/</code>：多种读法并存，先读斜杠前。</li>
-                  <li><code>（无）</code>：方言一般不用该字；<code>—</code> 或空：原记录未录。</li>
-                </ul>
+                </div>
 
-                <h4>3 · 辅音：清、送气、浊（吴语难点）</h4>
-                <p>普通话塞音多是「清」；吴语还有<strong>浊音</strong>（声带先振动）。可先记一组：</p>
+                <h4>2 · 附加符号（每个单独一行）</h4>
+                <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
                   <thead>
-                    <tr><th scope="col">音标</th><th scope="col">类型</th><th scope="col">感觉</th><th scope="col">参考</th></tr>
+                    <tr><th scope="col">符号</th><th scope="col">名称</th><th scope="col">加在哪</th><th scope="col">发音</th><th scope="col">例子</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td><code>p</code> <code>t</code> <code>k</code></td><td>不送气清</td><td>堵住再放，无强气流</td><td>普通话 b / d / g</td></tr>
-                    <tr><td><code>pʰ</code> <code>tʰ</code> <code>kʰ</code>（或 <code>p'</code> <code>th</code>）</td><td>送气清</td><td>有明显气流喷出</td><td>普通话 p / t / k</td></tr>
-                    <tr><td><code>b</code> <code>d</code> <code>g</code> <code>ɦ</code></td><td>全浊</td><td>喉咙先「嗡」再破阻</td><td>英语 boy / dog / go；<code>ɦ</code> 像带声的 h</td></tr>
+                    <tr><td><code>̃</code> / <code>~</code></td><td>鼻化</td><td>元音上方</td><td>口型不变，鼻子出气</td><td><code>ɛ̃</code>、<code>ʋɛ̃</code></td></tr>
+                    <tr><td><code>ʰ</code></td><td>送气（标准 IPA）</td><td>辅音右上</td><td>气流强烈喷出</td><td><code>pʰ</code>、<code>tɕʰ</code></td></tr>
+                    <tr><td><code>'</code></td><td>送气（本站单字常见）</td><td>辅音后</td><td>同 <code>ʰ</code></td><td><code>t'ho534</code></td></tr>
+                    <tr><td><code>h</code>（塞音后）</td><td>送气（本站写法）</td><td>如 <code>th</code>、<code>kh</code></td><td>同 <code>ʰ</code></td><td><code>t'ho</code> 里的 h</td></tr>
+                    <tr><td><code>ʔ</code></td><td>喉塞 / 入声</td><td>音节末</td><td>喉咙掐断，勿拖长</td><td><code>ieʔ</code>、<code>moʔ</code></td></tr>
                   </tbody>
                 </table>
-                <p>常见还有：<code>ts tsʰ s z</code>、<code>tɕ tɕʰ ɕ ʑ dʑ</code>、<code>m n ŋ l</code>。看见浊的那一列，就想到「声带要先响」。</p>
+                </div>
 
-                <h4>4 · 元音、鼻化与入声</h4>
-                <ul class="learn-primer__list">
-                  <li>单元音大致可对：<code>a ɛ e i o ɔ u y ə</code>；吴语常见 <code>ɿ</code>（接近「资」的韵母）、圆唇前元音 <code>ø</code>。</li>
-                  <li>元音上加 <code>̃</code>：口型不变，气流从鼻腔出来（软糯感多来自这里）。</li>
-                  <li>双元音如 <code>ia uo iɛ</code>：快速滑过去，每个音素都要到。</li>
-                  <li>词末 <code>ʔ</code>：元音一出立刻用嗓子眼掐断——像轻咳收住，绝不能拖。</li>
-                </ul>
+                <h4>3 · 本站记号（每个单独一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">记号</th><th scope="col">出现位置</th><th scope="col">含义</th><th scope="col">例子</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr class="learn-primer__table-row--focus"><td>尾数字 <code>534</code></td><td>单字 · 老男/青男</td><td>五度调值连写在音节后</td><td><code>to534</code></td></tr>
+                    <tr class="learn-primer__table-row--focus"><td>上标 <code>³³</code> <code>²³¹</code></td><td>词组 · 方言注音</td><td>五度调值写在音标右上</td><td><code>moʔ² dɤ²³¹</code></td></tr>
+                    <tr><td><code>文</code></td><td>单字读音旁</td><td>文读（偏书面）</td><td><code>t'ho534文</code></td></tr>
+                    <tr><td><code>白</code></td><td>单字读音旁</td><td>白读（口语）</td><td>吃的白读标注</td></tr>
+                    <tr><td><code>/</code></td><td>读音中间</td><td>多种读法，先读斜杠前</td><td><code>A / B</code></td></tr>
+                    <tr><td><code>（无）</code></td><td>读音格</td><td>方言一般不用该字</td><td>—</td></tr>
+                    <tr><td>空 / <code>—</code></td><td>读音格</td><td>原记录未录入</td><td>—</td></tr>
+                  </tbody>
+                </table>
+                </div>
 
-                <h4>5 · 用本站词表实战拆三条</h4>
-                <dl class="learn-primer__examples">
-                  <div>
-                    <dt>木头 · <code>moʔ² dɤ²³¹</code></dt>
-                    <dd><code>mo</code> + 入声 <code>ʔ</code> + 短促调 <code>²</code> → 短低的「木」。　<code>d</code> 是浊音；<code>ɤ</code> 偏央；<code>²³¹</code> 低–中–低小波浪 → 「头」要柔、有起伏。</dd>
-                  </div>
-                  <div>
-                    <dt>吃早饭 · <code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></dt>
-                    <dd><code>tɕʰ</code> 送气（近「七」）+ <code>ie</code> + 高入声 <code>ʔ⁵</code> → 极短的「切」。　<code>tsɔ³³</code> 中平「早」。　<code>ʋɛ̃</code> 带鼻化，<code>³¹</code> 中降。</dd>
-                  </div>
-                  <div>
-                    <dt>单字 · 多 <code>to534</code> · 拖 <code>t'ho534文</code></dt>
-                    <dd>同一调值轮廓 <code>534</code>；拖多送气 <code>'</code>/<code>h</code>，并标「文」读。再到词典听嵊州录音核对。</dd>
-                  </div>
-                </dl>
+                <h4>4 · 五度调值：每个数字 / 调型一行</h4>
+                <p><code>1</code>=最低，<code>5</code>=最高。数字串 = 音高轨迹。<strong>不是</strong>普通话第几声编号。</p>
+                <h5>单个高度</h5>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">数字</th><th scope="col">高度</th><th scope="col">感觉</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>1</code></td><td>最低</td><td>最低沉</td></tr>
+                    <tr><td><code>2</code></td><td>次低</td><td>偏低</td></tr>
+                    <tr><td><code>3</code></td><td>中</td><td>自然中音</td></tr>
+                    <tr><td><code>4</code></td><td>次高</td><td>偏高</td></tr>
+                    <tr><td><code>5</code></td><td>最高</td><td>最尖锐</td></tr>
+                  </tbody>
+                </table>
+                </div>
+                <h5>常见调型（各一行）</h5>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">调值</th><th scope="col">类型</th><th scope="col">轨迹</th><th scope="col">怎么读</th><th scope="col">示意</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>55</code> / <code>44</code></td><td>高平</td><td>高且平</td><td>清脆、高亢、不滑</td><td>—</td></tr>
+                    <tr><td><code>33</code></td><td>中平</td><td>中且平</td><td>平稳自然</td><td><code>tʰa³³</code>、<code>tsɔ³³</code></td></tr>
+                    <tr><td><code>22</code></td><td>低平</td><td>低且平</td><td>低沉平稳</td><td><code>die²²</code></td></tr>
+                    <tr><td><code>53</code></td><td>高降</td><td>5→3</td><td>像重音「对！」很快滑落</td><td><code>foŋ⁵³</code></td></tr>
+                    <tr><td><code>51</code></td><td>高全降</td><td>5→1</td><td>接近普通话第四声</td><td>—</td></tr>
+                    <tr><td><code>31</code></td><td>中降</td><td>3→1</td><td>从中往下掉</td><td><code>ʋɛ̃³¹</code></td></tr>
+                    <tr><td><code>34</code></td><td>中升</td><td>3→4</td><td>像普通话二声，起点略低</td><td>—</td></tr>
+                    <tr><td><code>24</code></td><td>低升</td><td>2→4</td><td>从低往上爬</td><td>—</td></tr>
+                    <tr><td><code>231</code></td><td>曲折</td><td>2→3→1</td><td>低–微扬–再落（软糯）</td><td><code>liaŋ²³¹</code>、<code>dɤ²³¹</code></td></tr>
+                    <tr><td><code>213</code></td><td>曲折</td><td>2→1→3</td><td>低–更低–再升</td><td>—</td></tr>
+                    <tr><td><code>223</code></td><td>短促低升</td><td>2→2→3</td><td>偏沉，末尾微扬</td><td><code>y²²³</code></td></tr>
+                    <tr><td><code>534</code></td><td>本站单字常见</td><td>5→3→4</td><td>高起、微降、再略升</td><td><code>to534</code></td></tr>
+                    <tr><td><code>5</code></td><td>高入声短调</td><td>极短高</td><td>一发即收，常配 <code>ʔ</code></td><td><code>tɕʰieʔ⁵</code></td></tr>
+                    <tr><td><code>2</code></td><td>低入声短调</td><td>极短低</td><td>一发即收，常配 <code>ʔ</code></td><td><code>moʔ²</code>、<code>ioʔ²</code></td></tr>
+                  </tbody>
+                </table>
+                </div>
 
-                <h4>6 · 自学三步</h4>
+                <h4>5 · 单元音（每个单独一行）</h4>
+                <p>吴语元音按舌位/唇形，不是拼音字母习惯读法。</p>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">音标</th><th scope="col">口腔 / 舌头</th><th scope="col">唇形</th><th scope="col">参考</th><th scope="col">示例</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>a</code></td><td>舌尖放低，舌位居中偏后</td><td>自然张开，不圆唇</td><td>普通话「啊」</td><td><code>a</code> 矮</td></tr>
+                    <tr><td><code>ɛ</code></td><td>舌位略前，舌尖抵下齿背</td><td>嘴角略扁</td><td>英语 bed 的 e</td><td><code>sɛ̃</code> 山</td></tr>
+                    <tr><td><code>e</code></td><td>比 ɛ 稍高，肌肉较紧</td><td>嘴角平展</td><td>普通话「诶」</td><td><code>me</code> 妹</td></tr>
+                    <tr><td><code>i</code></td><td>舌面前部抬向硬腭</td><td>微笑状咧开</td><td>普通话「衣」</td><td><code>di</code> 弟</td></tr>
+                    <tr><td><code>o</code></td><td>舌位后半高，舌头后缩</td><td>双唇收圆</td><td>普通话「喔」</td><td><code>lo</code> 落</td></tr>
+                    <tr><td><code>ɔ</code></td><td>舌位后半低，口腔张大</td><td>双唇强烈拢圆</td><td>普通话「凹」</td><td><code>kɔ</code>、<code>tsɔ</code></td></tr>
+                    <tr><td><code>u</code></td><td>舌位后高，舌头后缩</td><td>双唇前突成小圆洞</td><td>普通话「乌」</td><td><code>fu</code>（示意）</td></tr>
+                    <tr><td><code>y</code></td><td>舌位同 i</td><td>嘴唇用力撅圆（吹口哨）</td><td>普通话「迂」</td><td><code>y</code> 雨、<code>ny</code> 女</td></tr>
+                    <tr><td><code>ə</code></td><td>舌位中央，极放松</td><td>中性唇形</td><td>普通话轻声「的」</td><td><code>zəŋ</code>（示意）</td></tr>
+                    <tr><td><code>ɤ</code></td><td>偏后、不圆唇</td><td>不圆唇</td><td>介于「额」与「欧」</td><td><code>dɤ</code> 木头·头</td></tr>
+                    <tr><td><code>ɿ</code></td><td>舌尖抵上齿背（发「滋」）</td><td>嘴唇平展</td><td>普通话「资」韵母</td><td><code>tsɿ</code>（示意）</td></tr>
+                    <tr><td><code>ø</code></td><td>舌位前偏中</td><td>嘴唇向前撅起</td><td>诶～欧之间的圆唇</td><td><code>tø̃</code>（示意）</td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>6 · 鼻化元音与双元音（每个单独一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">音标</th><th scope="col">类型</th><th scope="col">要领</th><th scope="col">像什么</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>ã</code></td><td>鼻化</td><td>发 a，鼻子出气</td><td>软糯鼻音 a</td></tr>
+                    <tr><td><code>ɛ̃</code></td><td>鼻化</td><td>发 ɛ，鼻子出气</td><td>山 <code>sɛ̃</code>；饭 <code>ʋɛ̃</code></td></tr>
+                    <tr><td><code>ɔ̃</code></td><td>鼻化</td><td>发 ɔ，鼻子出气</td><td>圆唇鼻音</td></tr>
+                    <tr><td><code>ia</code></td><td>双元音</td><td>i→a 快速滑</td><td>像「丫」</td></tr>
+                    <tr><td><code>uo</code></td><td>双元音</td><td>u→o 快速滑</td><td>像「窝」</td></tr>
+                    <tr><td><code>iɛ</code></td><td>双元音</td><td>i→ɛ 快速滑</td><td>像「耶」</td></tr>
+                    <tr><td><code>ie</code></td><td>双元音</td><td>i→e 快速滑</td><td>吃 <code>tɕʰieʔ</code></td></tr>
+                    <tr><td><code>io</code></td><td>双元音</td><td>i→o 快速滑</td><td>月 <code>ioʔ</code>（示意）</td></tr>
+                    <tr><td><code>aŋ</code></td><td>鼻韵尾</td><td>a + 软腭鼻音</td><td>阳 <code>iaŋ</code></td></tr>
+                    <tr><td><code>oŋ</code></td><td>鼻韵尾</td><td>o + 软腭鼻音</td><td>风 <code>foŋ</code></td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>7 · 爆破音（每个单独一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">音标</th><th scope="col">类别</th><th scope="col">动作要领</th><th scope="col">参考</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>p</code></td><td>不送气清</td><td>双唇闭合憋气后打开，无强气流</td><td>普通话 b（玻）</td></tr>
+                    <tr><td><code>pʰ</code></td><td>送气清</td><td>猛烈气流喷出</td><td>普通话 p（坡）</td></tr>
+                    <tr><td><code>b</code></td><td>全浊</td><td>声带先振动（嗡嗡）再打开</td><td>英语 boy</td></tr>
+                    <tr><td><code>t</code></td><td>不送气清</td><td>舌尖抵上齿龈，像盖章</td><td>普通话 d（得）</td></tr>
+                    <tr><td><code>tʰ</code></td><td>送气清</td><td>强烈气流冲出</td><td>普通话 t（特）</td></tr>
+                    <tr><td><code>d</code></td><td>全浊</td><td>同 t 位 + 声带振动，低沉</td><td>英语 dog；木头 <code>dɤ</code></td></tr>
+                    <tr><td><code>k</code></td><td>不送气清</td><td>舌根抵软腭短促爆发</td><td>普通话 g（哥）</td></tr>
+                    <tr><td><code>kʰ</code></td><td>送气清</td><td>强烈气流喷出</td><td>普通话 k（科）</td></tr>
+                    <tr><td><code>g</code></td><td>全浊</td><td>同 k 位 + 声带强烈振动</td><td>英语 go</td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>8 · 摩擦 / 塞擦音（每个单独一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">音标</th><th scope="col">类别</th><th scope="col">动作要领</th><th scope="col">参考</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>s</code></td><td>清擦</td><td>舌尖与上齿龈间摩擦</td><td>普通话「丝」</td></tr>
+                    <tr><td><code>z</code></td><td>浊擦</td><td>同 s，喉部嗡嗡</td><td>蜂鸣的 s</td></tr>
+                    <tr><td><code>ɕ</code></td><td>清擦</td><td>舌面抬起摩擦</td><td>普通话「西」</td></tr>
+                    <tr><td><code>ʑ</code></td><td>浊擦</td><td>同 ɕ，声带振动，软闷</td><td>带声的「西」</td></tr>
+                    <tr><td><code>ts</code></td><td>清塞擦</td><td>先堵住再摩擦</td><td>普通话「资」</td></tr>
+                    <tr><td><code>tsʰ</code></td><td>送气塞擦</td><td>同 ts + 强送气</td><td>普通话「雌」；早 <code>tsɔ</code></td></tr>
+                    <tr><td><code>tɕ</code></td><td>清塞擦</td><td>舌面塞擦</td><td>普通话「鸡」</td></tr>
+                    <tr><td><code>tɕʰ</code></td><td>送气塞擦</td><td>同 tɕ + 强送气</td><td>普通话「欺/七」；吃 <code>tɕʰieʔ</code></td></tr>
+                    <tr><td><code>dʑ</code></td><td>浊塞擦</td><td>同 tɕ + 声带振动，喉咙发沉</td><td>最难的一档浊音之一</td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>9 · 响音 / 喉音 / 其他（每个单独一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">音标</th><th scope="col">类别</th><th scope="col">动作要领</th><th scope="col">参考</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>m</code></td><td>双唇鼻音</td><td>双唇闭，鼻出气</td><td>普通话 m</td></tr>
+                    <tr><td><code>n</code></td><td>齿龈鼻音</td><td>舌尖抵龈，鼻出气</td><td>普通话 n</td></tr>
+                    <tr><td><code>ɲ</code></td><td>硬腭鼻音</td><td>舌面贴硬腭，鼻出气</td><td>女 <code>ɲy</code>（示意）</td></tr>
+                    <tr><td><code>ŋ</code></td><td>软腭鼻音</td><td>舌根抵软腭，鼻出气</td><td>英语 sing 尾</td></tr>
+                    <tr><td><code>l</code></td><td>边音</td><td>舌尖抵龈，气流两边</td><td>普通话 l</td></tr>
+                    <tr><td><code>ʋ</code></td><td>唇齿近音</td><td>下唇轻触上齿，带声</td><td>饭 <code>ʋɛ̃</code></td></tr>
+                    <tr><td><code>h</code></td><td>清喉擦</td><td>喉咙摩擦，声带不振</td><td>普通话「喝」</td></tr>
+                    <tr><td><code>ɦ</code></td><td>浊喉音</td><td>同 h 位 + 声带振动</td><td>和、河、寒一类；药 <code>ɦiaʔ</code></td></tr>
+                    <tr><td><code>ʔ</code></td><td>喉塞（入声）</td><td>元音后立刻掐断</td><td><code>ieʔ</code>、<code>aʔ</code>、<code>oʔ</code></td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>10 · 词例拆读表</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead>
+                    <tr><th scope="col">词</th><th scope="col">音标</th><th scope="col">逐段</th><th scope="col">读感</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>太阳（示意）</td><td><code>tʰa³³ iaŋ³³</code></td><td><code>tʰ</code>+<code>a</code>+<code>³³</code>｜<code>i</code>+<code>aŋ</code>+<code>³³</code></td><td>两拍都平</td></tr>
+                    <tr><td>月亮（示意）</td><td><code>ioʔ² liaŋ²³¹</code></td><td><code>io</code>+<code>ʔ²</code>｜<code>l</code>+<code>iaŋ</code>+<code>²³¹</code></td><td>短促 + 曲折</td></tr>
+                    <tr><td>吃</td><td><code>tɕʰieʔ⁵</code></td><td><code>tɕʰ</code>+<code>ie</code>+<code>ʔ⁵</code></td><td>极短高「切」</td></tr>
+                    <tr><td>落雨（示意）</td><td><code>loʔ² y²²³</code></td><td><code>lo</code>+<code>ʔ²</code>｜<code>y</code>+<code>²²³</code></td><td>短低 + 低低升</td></tr>
+                    <tr class="learn-primer__table-row--focus"><td>木头（本站）</td><td><code>moʔ² dɤ²³¹</code></td><td><code>m</code>+<code>o</code>+<code>ʔ²</code>｜<code>d</code>+<code>ɤ</code>+<code>²³¹</code></td><td>入声 + 浊音曲折</td></tr>
+                    <tr class="learn-primer__table-row--focus"><td>吃早饭（本站）</td><td><code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></td><td><code>tɕʰieʔ⁵</code>｜<code>tsɔ³³</code>｜<code>ʋɛ̃³¹</code></td><td>高入 + 中平 + 鼻化降</td></tr>
+                    <tr class="learn-primer__table-row--focus"><td>多 / 拖（本站）</td><td><code>to534</code> / <code>t'ho534文</code></td><td>同调 <code>534</code>；拖多 <code>'</code>/<code>h</code> 送气</td><td>对照听录音</td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>11 · 自学四步</h4>
                 <ol class="learn-primer__levels">
-                  <li><strong>拆</strong>：每条先分「辅音 / 元音 / 调值 / 有无 ʔ˜ʰ」。</li>
-                  <li><strong>练难点</strong>：浊音（喉部先嗡）、入声（立刻掐断）、鼻化（鼻子出气）。</li>
-                  <li><strong>对</strong>：打开词典搜熟字，有「听嵊州」的先听再看音标。</li>
+                  <li>查上表：先认辅音一行、元音一行、调值一行、有无 <code>ʔ ̃ ʰ</code>。</li>
+                  <li>练浊音：长「嗯——」保持振动再发 <code>b d g</code>。</li>
+                  <li>练入声：轻咳收住 = <code>ʔ</code>，勿拖长。</li>
+                  <li>对词典「听嵊州」：重点比调值轨迹。</li>
                 </ol>
               </div>
 
-              <div class="learn-primer" data-visible-lang="zh-Hant">
-                <h4>這頁先解決什麼</h4>
-                <p>詞典與詞組裡的音標記錄的是<strong>吳語（紹興嵊州一帶）</strong>：比普通話多<strong>全濁聲母</strong>和<strong>入聲</strong>（喉塞尾 <code>ʔ</code>）。不必背完整 IPA，先學會把一條注音拆開、對照錄音。</p>
+              <div class="learn-primer learn-primer--ipa" data-visible-lang="zh-Hant">
+                <h4>前言</h4>
+                <p>詞典音標 = <strong>吳語太湖片（紹興嵊州）</strong>。下面每張表<strong>一行一個符號</strong>。</p>
 
-                <h4>1 · 先建立三個底層概念</h4>
-                <dl class="learn-primer__examples">
-                  <div>
-                    <dt>拼音 ≠ 音標</dt>
-                    <dd>普通話拼音是聲母 + 韻母 + 1–4 聲。國際音標寫到音素：濁音、入聲、鼻化元音都會標出。</dd>
-                  </div>
-                  <div>
-                    <dt>上標 / 尾數 = 五度調值</dt>
-                    <dd><code>1</code> 最低，<code>5</code> 最高。數字串是音高軌跡（如 <code>⁵³</code>、<code>²³¹</code>）。<strong>不是</strong>普通話陰平 1 / 陽平 2。</dd>
-                  </div>
-                  <div>
-                    <dt>三個「服裝」符號</dt>
-                    <dd><code>̃</code> 鼻化。　<code>ʰ</code> / <code>'</code> / 塞音後 <code>h</code>：送氣。　<code>ʔ</code>：入聲喉塞，一發即收。</dd>
-                  </div>
-                </dl>
-
-                <h4>2 · 本站兩套記法</h4>
+                <h4>1 · 附加符號</h4>
+                <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead>
-                    <tr><th scope="col">位置</th><th scope="col">例子</th><th scope="col">怎麼拆</th></tr>
-                  </thead>
+                  <thead><tr><th scope="col">符號</th><th scope="col">名稱</th><th scope="col">發音</th><th scope="col">例子</th></tr></thead>
                   <tbody>
-                    <tr class="learn-primer__table-row--focus">
-                      <td>單字 · 老男 / 青男</td>
-                      <td><code>to534</code> · <code>t'ho534文</code></td>
-                      <td>聲韻 + <strong>末尾連寫數字</strong>；兩列對照兩代人。</td>
-                    </tr>
-                    <tr>
-                      <td>詞組 · 方言注音</td>
-                      <td><code>木頭 moʔ² dɤ²³¹</code></td>
-                      <td>本地說法 + IPA；調值多為<strong>上標</strong>；空格分音節。</td>
-                    </tr>
+                    <tr><td><code>̃</code></td><td>鼻化</td><td>鼻子出氣</td><td><code>ɛ̃</code></td></tr>
+                    <tr><td><code>ʰ</code> / <code>'</code> / <code>h</code></td><td>送氣</td><td>氣流噴出</td><td><code>pʰ</code>、<code>t'ho</code></td></tr>
+                    <tr><td><code>ʔ</code></td><td>入聲喉塞</td><td>立刻掐斷</td><td><code>ieʔ</code></td></tr>
                   </tbody>
                 </table>
-                <ul class="learn-primer__list">
-                  <li><code>文</code> / <code>白</code>：文讀 / 白讀。</li>
-                  <li><code>/</code>：多音並存。</li>
-                  <li><code>（無）</code>：方言一般不用；空或 <code>—</code>：未錄入。</li>
-                </ul>
+                </div>
 
-                <h4>3 · 輔音：清、送氣、濁</h4>
+                <h4>2 · 本站記號</h4>
+                <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead>
-                    <tr><th scope="col">音標</th><th scope="col">類型</th><th scope="col">感覺</th><th scope="col">參考</th></tr>
-                  </thead>
+                  <thead><tr><th scope="col">記號</th><th scope="col">含義</th><th scope="col">例子</th></tr></thead>
                   <tbody>
-                    <tr><td><code>p t k</code></td><td>不送氣清</td><td>堵住再放，無強氣流</td><td>普通話 b / d / g</td></tr>
-                    <tr><td><code>pʰ tʰ kʰ</code></td><td>送氣清</td><td>明顯氣流</td><td>普通話 p / t / k</td></tr>
-                    <tr><td><code>b d g ɦ</code></td><td>全濁</td><td>喉部先「嗡」</td><td>英語 boy / dog / go</td></tr>
+                    <tr><td>尾數字</td><td>單字五度調</td><td><code>to534</code></td></tr>
+                    <tr><td>上標</td><td>詞組五度調</td><td><code>moʔ² dɤ²³¹</code></td></tr>
+                    <tr><td><code>文</code> / <code>白</code></td><td>文讀 / 白讀</td><td><code>t'ho534文</code></td></tr>
+                    <tr><td><code>/</code></td><td>多音</td><td><code>A / B</code></td></tr>
+                    <tr><td><code>（無）</code> / 空</td><td>不用 / 未錄</td><td>—</td></tr>
                   </tbody>
                 </table>
+                </div>
 
-                <h4>4 · 元音、鼻化與入聲</h4>
-                <ul class="learn-primer__list">
-                  <li>常見元音：<code>a ɛ e i o ɔ u y ə ɿ ø</code>。</li>
-                  <li><code>̃</code>：鼻化；雙元音如 <code>ia uo</code> 要滑滿。</li>
-                  <li><code>ʔ</code>：立刻掐斷，勿拖長。</li>
-                </ul>
+                <h4>3 · 調型（各一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">調值</th><th scope="col">類型</th><th scope="col">怎麼讀</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>55</code>/<code>44</code></td><td>高平</td><td>高且平</td></tr>
+                    <tr><td><code>33</code></td><td>中平</td><td>平穩</td></tr>
+                    <tr><td><code>22</code></td><td>低平</td><td>低沉平</td></tr>
+                    <tr><td><code>53</code></td><td>高降</td><td>快滑落</td></tr>
+                    <tr><td><code>51</code></td><td>高全降</td><td>近四聲</td></tr>
+                    <tr><td><code>31</code></td><td>中降</td><td>中→低</td></tr>
+                    <tr><td><code>34</code></td><td>中升</td><td>中→高</td></tr>
+                    <tr><td><code>24</code></td><td>低升</td><td>低→高</td></tr>
+                    <tr><td><code>231</code></td><td>曲折</td><td>低–揚–落</td></tr>
+                    <tr><td><code>213</code></td><td>曲折</td><td>低–更低–升</td></tr>
+                    <tr><td><code>223</code></td><td>短促低升</td><td>沉、末微揚</td></tr>
+                    <tr><td><code>534</code></td><td>單字常見</td><td>高–降–略升</td></tr>
+                    <tr><td><code>5</code></td><td>高入</td><td>極短高 + <code>ʔ</code></td></tr>
+                    <tr><td><code>2</code></td><td>低入</td><td>極短低 + <code>ʔ</code></td></tr>
+                  </tbody>
+                </table>
+                </div>
 
-                <h4>5 · 詞表實戰</h4>
-                <dl class="learn-primer__examples">
-                  <div>
-                    <dt>木頭 · <code>moʔ² dɤ²³¹</code></dt>
-                    <dd>入聲短「木」+ 濁音曲折「頭」。</dd>
-                  </div>
-                  <div>
-                    <dt>吃早飯 · <code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></dt>
-                    <dd>高入聲「吃」+ 中平「早」+ 鼻化「飯」。</dd>
-                  </div>
-                  <div>
-                    <dt>多 <code>to534</code> · 拖 <code>t'ho534文</code></dt>
-                    <dd>同調值；拖多送氣並標文讀。</dd>
-                  </div>
-                </dl>
+                <h4>4 · 單元音（各一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">音標</th><th scope="col">舌位</th><th scope="col">唇形</th><th scope="col">參考</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>a</code></td><td>中偏後、低</td><td>自然</td><td>啊</td></tr>
+                    <tr><td><code>ɛ</code></td><td>前、半開</td><td>略扁</td><td>bed</td></tr>
+                    <tr><td><code>e</code></td><td>前、半閉</td><td>平展</td><td>誒</td></tr>
+                    <tr><td><code>i</code></td><td>前高</td><td>微笑</td><td>衣</td></tr>
+                    <tr><td><code>o</code></td><td>後半高</td><td>收圓</td><td>喔</td></tr>
+                    <tr><td><code>ɔ</code></td><td>後半低</td><td>強圓</td><td>凹</td></tr>
+                    <tr><td><code>u</code></td><td>後高</td><td>小圓洞</td><td>烏</td></tr>
+                    <tr><td><code>y</code></td><td>前高</td><td>用力撅圓</td><td>迂</td></tr>
+                    <tr><td><code>ə</code></td><td>央</td><td>中性</td><td>輕聲的</td></tr>
+                    <tr><td><code>ɤ</code></td><td>偏後</td><td>不圓</td><td>木頭 dɤ</td></tr>
+                    <tr><td><code>ɿ</code></td><td>舌尖</td><td>平展</td><td>資韻</td></tr>
+                    <tr><td><code>ø</code></td><td>前中</td><td>撅圓</td><td>誒～歐</td></tr>
+                  </tbody>
+                </table>
+                </div>
 
-                <h4>6 · 自學三步</h4>
-                <ol class="learn-primer__levels">
-                  <li>拆：輔音 / 元音 / 調值 / ʔ˜ʰ。</li>
-                  <li>練：濁音、入聲、鼻化。</li>
-                  <li>對：詞典搜熟字，能聽嵊州就先聽。</li>
-                </ol>
+                <h4>5 · 鼻化 / 雙元音（各一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">音標</th><th scope="col">類型</th><th scope="col">要領</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>ã</code></td><td>鼻化</td><td>a + 鼻氣</td></tr>
+                    <tr><td><code>ɛ̃</code></td><td>鼻化</td><td>ɛ + 鼻氣</td></tr>
+                    <tr><td><code>ɔ̃</code></td><td>鼻化</td><td>ɔ + 鼻氣</td></tr>
+                    <tr><td><code>ia</code></td><td>雙元音</td><td>像丫</td></tr>
+                    <tr><td><code>uo</code></td><td>雙元音</td><td>像窩</td></tr>
+                    <tr><td><code>iɛ</code></td><td>雙元音</td><td>像耶</td></tr>
+                    <tr><td><code>ie</code></td><td>雙元音</td><td>吃 tɕʰieʔ</td></tr>
+                    <tr><td><code>io</code></td><td>雙元音</td><td>月 ioʔ</td></tr>
+                    <tr><td><code>aŋ</code></td><td>鼻韻尾</td><td>陽</td></tr>
+                    <tr><td><code>oŋ</code></td><td>鼻韻尾</td><td>風</td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>6 · 輔音（各一行）</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">音標</th><th scope="col">類別</th><th scope="col">參考</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>p</code></td><td>不送氣清</td><td>普 b</td></tr>
+                    <tr><td><code>pʰ</code></td><td>送氣清</td><td>普 p</td></tr>
+                    <tr><td><code>b</code></td><td>全濁</td><td>boy</td></tr>
+                    <tr><td><code>t</code></td><td>不送氣清</td><td>普 d</td></tr>
+                    <tr><td><code>tʰ</code></td><td>送氣清</td><td>普 t</td></tr>
+                    <tr><td><code>d</code></td><td>全濁</td><td>dog</td></tr>
+                    <tr><td><code>k</code></td><td>不送氣清</td><td>普 g</td></tr>
+                    <tr><td><code>kʰ</code></td><td>送氣清</td><td>普 k</td></tr>
+                    <tr><td><code>g</code></td><td>全濁</td><td>go</td></tr>
+                    <tr><td><code>s</code></td><td>清擦</td><td>絲</td></tr>
+                    <tr><td><code>z</code></td><td>濁擦</td><td>帶聲 s</td></tr>
+                    <tr><td><code>ɕ</code></td><td>清擦</td><td>西</td></tr>
+                    <tr><td><code>ʑ</code></td><td>濁擦</td><td>帶聲西</td></tr>
+                    <tr><td><code>ts</code></td><td>清塞擦</td><td>資</td></tr>
+                    <tr><td><code>tsʰ</code></td><td>送氣塞擦</td><td>雌</td></tr>
+                    <tr><td><code>tɕ</code></td><td>清塞擦</td><td>雞</td></tr>
+                    <tr><td><code>tɕʰ</code></td><td>送氣塞擦</td><td>欺</td></tr>
+                    <tr><td><code>dʑ</code></td><td>濁塞擦</td><td>帶聲雞</td></tr>
+                    <tr><td><code>m</code></td><td>鼻音</td><td>m</td></tr>
+                    <tr><td><code>n</code></td><td>鼻音</td><td>n</td></tr>
+                    <tr><td><code>ɲ</code></td><td>硬腭鼻</td><td>女</td></tr>
+                    <tr><td><code>ŋ</code></td><td>軟腭鼻</td><td>sing</td></tr>
+                    <tr><td><code>l</code></td><td>邊音</td><td>l</td></tr>
+                    <tr><td><code>ʋ</code></td><td>唇齒近音</td><td>飯 ʋɛ̃</td></tr>
+                    <tr><td><code>h</code></td><td>清喉擦</td><td>喝</td></tr>
+                    <tr><td><code>ɦ</code></td><td>濁喉音</td><td>河</td></tr>
+                    <tr><td><code>ʔ</code></td><td>入聲</td><td>掐斷</td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>7 · 詞例</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">詞</th><th scope="col">音標</th><th scope="col">拆段</th></tr></thead>
+                  <tbody>
+                    <tr><td>太陽</td><td><code>tʰa³³ iaŋ³³</code></td><td>平 + 平</td></tr>
+                    <tr><td>月亮</td><td><code>ioʔ² liaŋ²³¹</code></td><td>入聲 + 曲折</td></tr>
+                    <tr><td>吃</td><td><code>tɕʰieʔ⁵</code></td><td>高入</td></tr>
+                    <tr><td>落雨</td><td><code>loʔ² y²²³</code></td><td>入聲 + 低升</td></tr>
+                    <tr><td>木頭</td><td><code>moʔ² dɤ²³¹</code></td><td>本站</td></tr>
+                    <tr><td>吃早飯</td><td><code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></td><td>本站</td></tr>
+                    <tr><td>多/拖</td><td><code>to534</code> / <code>t'ho534文</code></td><td>本站</td></tr>
+                  </tbody>
+                </table>
+                </div>
               </div>
 
-              <div class="learn-primer" data-visible-lang="en">
-                <h4>What this page fixes</h4>
-                <p>Dictionary IPA here is <strong>Wu (Shengzhou / Shaoxing area)</strong>: more <strong>voiced initials</strong> and <strong>entering tones</strong> (<code>ʔ</code>) than Mandarin. You do not need full IPA—just learn to parse a line and check audio.</p>
+              <div class="learn-primer learn-primer--ipa" data-visible-lang="en">
+                <h4>Preface</h4>
+                <p>Wu (Shengzhou) IPA. <strong>One symbol per table row.</strong></p>
 
-                <h4>1 · Three base ideas</h4>
-                <dl class="learn-primer__examples">
-                  <div>
-                    <dt>Pinyin ≠ IPA</dt>
-                    <dd>Pinyin is initials + finals + tones 1–4. IPA marks each phone: voicing, checked endings, nasalised vowels.</dd>
-                  </div>
-                  <div>
-                    <dt>Digits / superscripts = 5-level pitch</dt>
-                    <dd><code>1</code> lowest, <code>5</code> highest. Strings like <code>⁵³</code> or <code>²³¹</code> are pitch paths—not Mandarin tone numbers.</dd>
-                  </div>
-                  <div>
-                    <dt>Three “costume” marks</dt>
-                    <dd><code>̃</code> nasalisation · <code>ʰ</code>/<code>'</code>/<code>h</code> aspiration · <code>ʔ</code> glottal stop (cut short).</dd>
-                  </div>
-                </dl>
-
-                <h4>2 · Two site notations</h4>
+                <h4>1 · Diacritics</h4>
+                <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead>
-                    <tr><th scope="col">Where</th><th scope="col">Example</th><th scope="col">Parse</th></tr>
-                  </thead>
+                  <thead><tr><th scope="col">Mark</th><th scope="col">Name</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
                   <tbody>
-                    <tr class="learn-primer__table-row--focus">
-                      <td>Characters · elder / younger</td>
-                      <td><code>to534</code></td>
-                      <td>Body + <strong>trailing digits</strong>; two columns = two generations.</td>
-                    </tr>
-                    <tr>
-                      <td>Phrases</td>
-                      <td><code>木头 moʔ² dɤ²³¹</code></td>
-                      <td>Local wording + IPA; tones often <strong>superscript</strong>; spaces = syllables.</td>
-                    </tr>
+                    <tr><td><code>̃</code></td><td>nasalisation</td><td>air through nose</td><td><code>ɛ̃</code></td></tr>
+                    <tr><td><code>ʰ</code> / <code>'</code> / <code>h</code></td><td>aspiration</td><td>strong puff</td><td><code>pʰ</code>, <code>t'ho</code></td></tr>
+                    <tr><td><code>ʔ</code></td><td>glottal stop</td><td>cut short</td><td><code>ieʔ</code></td></tr>
                   </tbody>
                 </table>
-                <ul class="learn-primer__list">
-                  <li><code>文</code>/<code>白</code>: literary / colloquial · <code>/</code>: multiple readings · <code>（无）</code>: unused · blank: unrecorded.</li>
-                </ul>
+                </div>
 
-                <h4>3 · Consonants: plain / aspirated / voiced</h4>
+                <h4>2 · Site marks</h4>
+                <div class="learn-primer__table-wrap">
                 <table class="learn-primer__table">
-                  <thead>
-                    <tr><th scope="col">IPA</th><th scope="col">Type</th><th scope="col">Feel</th><th scope="col">Hint</th></tr>
-                  </thead>
+                  <thead><tr><th scope="col">Mark</th><th scope="col">Meaning</th><th scope="col">Example</th></tr></thead>
                   <tbody>
-                    <tr><td><code>p t k</code></td><td>unaspirated</td><td>no strong puff</td><td>~ Mandarin b/d/g</td></tr>
-                    <tr><td><code>pʰ tʰ kʰ</code></td><td>aspirated</td><td>clear puff</td><td>~ Mandarin p/t/k</td></tr>
-                    <tr><td><code>b d g ɦ</code></td><td>voiced</td><td>buzz in the throat first</td><td>English boy/dog/go</td></tr>
+                    <tr><td>trailing digits</td><td>character tone</td><td><code>to534</code></td></tr>
+                    <tr><td>superscript</td><td>phrase tone</td><td><code>moʔ² dɤ²³¹</code></td></tr>
+                    <tr><td><code>文</code> / <code>白</code></td><td>literary / colloquial</td><td><code>t'ho534文</code></td></tr>
+                    <tr><td><code>/</code></td><td>alternate readings</td><td><code>A / B</code></td></tr>
                   </tbody>
                 </table>
+                </div>
 
-                <h4>4 · Vowels, nasalisation, entering tone</h4>
-                <ul class="learn-primer__list">
-                  <li>Common vowels: <code>a ɛ e i o ɔ u y ə ɿ ø</code>.</li>
-                  <li><code>̃</code> = nasal airflow; diphthongs like <code>ia uo</code> glide fully.</li>
-                  <li><code>ʔ</code> = cut off at once—never lengthen.</li>
-                </ul>
+                <h4>3 · Tone values (one per row)</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">Value</th><th scope="col">Type</th><th scope="col">Path</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>55</code>/<code>44</code></td><td>high level</td><td>flat high</td></tr>
+                    <tr><td><code>33</code></td><td>mid level</td><td>flat mid</td></tr>
+                    <tr><td><code>22</code></td><td>low level</td><td>flat low</td></tr>
+                    <tr><td><code>53</code></td><td>high fall</td><td>5→3</td></tr>
+                    <tr><td><code>51</code></td><td>full fall</td><td>5→1</td></tr>
+                    <tr><td><code>31</code></td><td>mid fall</td><td>3→1</td></tr>
+                    <tr><td><code>34</code></td><td>mid rise</td><td>3→4</td></tr>
+                    <tr><td><code>24</code></td><td>low rise</td><td>2→4</td></tr>
+                    <tr><td><code>231</code></td><td>contour</td><td>2→3→1</td></tr>
+                    <tr><td><code>213</code></td><td>contour</td><td>2→1→3</td></tr>
+                    <tr><td><code>223</code></td><td>short low rise</td><td>2→2→3</td></tr>
+                    <tr><td><code>534</code></td><td>site character</td><td>5→3→4</td></tr>
+                    <tr><td><code>5</code></td><td>high checked</td><td>short + <code>ʔ</code></td></tr>
+                    <tr><td><code>2</code></td><td>low checked</td><td>short + <code>ʔ</code></td></tr>
+                  </tbody>
+                </table>
+                </div>
 
-                <h4>5 · Worked examples from this site</h4>
-                <dl class="learn-primer__examples">
-                  <div>
-                    <dt>木头 · <code>moʔ² dɤ²³¹</code></dt>
-                    <dd>Short checked “wood” + voiced wavy “head”.</dd>
-                  </div>
-                  <div>
-                    <dt>吃早饭 · <code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></dt>
-                    <dd>High checked “eat” + mid-level “morning” + nasalised “meal”.</dd>
-                  </div>
-                  <div>
-                    <dt>多 <code>to534</code> · 拖 <code>t'ho534文</code></dt>
-                    <dd>Same contour; 拖 adds aspiration + literary tag.</dd>
-                  </div>
-                </dl>
+                <h4>4 · Vowels (one per row)</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">IPA</th><th scope="col">Tongue</th><th scope="col">Lips</th><th scope="col">Hint</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>a</code></td><td>low central-back</td><td>open</td><td>Mandarin a</td></tr>
+                    <tr><td><code>ɛ</code></td><td>front open-mid</td><td>spread</td><td>bed</td></tr>
+                    <tr><td><code>e</code></td><td>front close-mid</td><td>spread</td><td>诶</td></tr>
+                    <tr><td><code>i</code></td><td>high front</td><td>spread</td><td>衣</td></tr>
+                    <tr><td><code>o</code></td><td>back close-mid</td><td>round</td><td>喔</td></tr>
+                    <tr><td><code>ɔ</code></td><td>back open-mid</td><td>round</td><td>凹</td></tr>
+                    <tr><td><code>u</code></td><td>high back</td><td>round</td><td>乌</td></tr>
+                    <tr><td><code>y</code></td><td>high front</td><td>round</td><td>迂</td></tr>
+                    <tr><td><code>ə</code></td><td>central</td><td>neutral</td><td>schwa</td></tr>
+                    <tr><td><code>ɤ</code></td><td>back unrounded</td><td>unrounded</td><td>木头 dɤ</td></tr>
+                    <tr><td><code>ɿ</code></td><td>apical</td><td>flat</td><td>zi vowel</td></tr>
+                    <tr><td><code>ø</code></td><td>front mid</td><td>round</td><td>诶–欧</td></tr>
+                    <tr><td><code>ã</code> <code>ɛ̃</code> <code>ɔ̃</code></td><td>same + nasal</td><td>—</td><td>nose airflow</td></tr>
+                    <tr><td><code>ia</code></td><td>diphthong</td><td>—</td><td>丫</td></tr>
+                    <tr><td><code>uo</code></td><td>diphthong</td><td>—</td><td>窝</td></tr>
+                    <tr><td><code>iɛ</code> / <code>ie</code> / <code>io</code></td><td>diphthong</td><td>—</td><td>耶 / 吃 / 月</td></tr>
+                  </tbody>
+                </table>
+                </div>
 
-                <h4>6 · Three practice steps</h4>
-                <ol class="learn-primer__levels">
-                  <li>Split: consonant / vowel / pitch / ʔ˜ʰ.</li>
-                  <li>Drill: voicing, checked endings, nasalisation.</li>
-                  <li>Check: dictionary search + Shengzhou audio when available.</li>
-                </ol>
+                <h4>5 · Consonants (one per row)</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">IPA</th><th scope="col">Type</th><th scope="col">Hint</th></tr></thead>
+                  <tbody>
+                    <tr><td><code>p</code></td><td>unaspirated</td><td>~ Mandarin b</td></tr>
+                    <tr><td><code>pʰ</code></td><td>aspirated</td><td>~ Mandarin p</td></tr>
+                    <tr><td><code>b</code></td><td>voiced</td><td>boy</td></tr>
+                    <tr><td><code>t</code></td><td>unaspirated</td><td>~ Mandarin d</td></tr>
+                    <tr><td><code>tʰ</code></td><td>aspirated</td><td>~ Mandarin t</td></tr>
+                    <tr><td><code>d</code></td><td>voiced</td><td>dog</td></tr>
+                    <tr><td><code>k</code></td><td>unaspirated</td><td>~ Mandarin g</td></tr>
+                    <tr><td><code>kʰ</code></td><td>aspirated</td><td>~ Mandarin k</td></tr>
+                    <tr><td><code>g</code></td><td>voiced</td><td>go</td></tr>
+                    <tr><td><code>s</code></td><td>fricative</td><td>丝</td></tr>
+                    <tr><td><code>z</code></td><td>voiced fricative</td><td>buzzing s</td></tr>
+                    <tr><td><code>ɕ</code></td><td>fricative</td><td>西</td></tr>
+                    <tr><td><code>ʑ</code></td><td>voiced fricative</td><td>voiced 西</td></tr>
+                    <tr><td><code>ts</code></td><td>affricate</td><td>资</td></tr>
+                    <tr><td><code>tsʰ</code></td><td>aspirated affricate</td><td>雌</td></tr>
+                    <tr><td><code>tɕ</code></td><td>affricate</td><td>鸡</td></tr>
+                    <tr><td><code>tɕʰ</code></td><td>aspirated affricate</td><td>欺</td></tr>
+                    <tr><td><code>dʑ</code></td><td>voiced affricate</td><td>voiced 鸡</td></tr>
+                    <tr><td><code>m</code></td><td>nasal</td><td>m</td></tr>
+                    <tr><td><code>n</code></td><td>nasal</td><td>n</td></tr>
+                    <tr><td><code>ɲ</code></td><td>palatal nasal</td><td>女</td></tr>
+                    <tr><td><code>ŋ</code></td><td>velar nasal</td><td>sing</td></tr>
+                    <tr><td><code>l</code></td><td>lateral</td><td>l</td></tr>
+                    <tr><td><code>ʋ</code></td><td>labiodental</td><td>饭 ʋɛ̃</td></tr>
+                    <tr><td><code>h</code></td><td>voiceless glottal</td><td>喝</td></tr>
+                    <tr><td><code>ɦ</code></td><td>voiced glottal</td><td>河</td></tr>
+                    <tr><td><code>ʔ</code></td><td>glottal stop</td><td>cut off</td></tr>
+                  </tbody>
+                </table>
+                </div>
+
+                <h4>6 · Worked examples</h4>
+                <div class="learn-primer__table-wrap">
+                <table class="learn-primer__table">
+                  <thead><tr><th scope="col">Word</th><th scope="col">IPA</th><th scope="col">Parse</th></tr></thead>
+                  <tbody>
+                    <tr><td>太阳</td><td><code>tʰa³³ iaŋ³³</code></td><td>level + level</td></tr>
+                    <tr><td>月亮</td><td><code>ioʔ² liaŋ²³¹</code></td><td>checked + contour</td></tr>
+                    <tr><td>吃</td><td><code>tɕʰieʔ⁵</code></td><td>high checked</td></tr>
+                    <tr><td>落雨</td><td><code>loʔ² y²²³</code></td><td>checked + rise</td></tr>
+                    <tr><td>木头</td><td><code>moʔ² dɤ²³¹</code></td><td>on-site</td></tr>
+                    <tr><td>吃早饭</td><td><code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></td><td>on-site</td></tr>
+                    <tr><td>多/拖</td><td><code>to534</code> / <code>t'ho534文</code></td><td>on-site</td></tr>
+                  </tbody>
+                </table>
+                </div>
               </div>
 
               <div class="plan-cta-row">
@@ -3189,24 +3429,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826ipa2",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826ipa2",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826ipa2",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826ipa2",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826ipa2",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826ipa2",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826ipa2",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826ipa2",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826ipa2",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826ipa2"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826ipa5",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826ipa5",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826ipa5",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826ipa5",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826ipa5",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826ipa5",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826ipa5",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826ipa5",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826ipa5",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826ipa5"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826ipa2"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826ipa2"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826ipa2"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826ipa2"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826ipa2"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826ipa2"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826ipa5"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826ipa5"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826ipa5"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826ipa5"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826ipa5"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826ipa5"></script>
 </body>
 </html>

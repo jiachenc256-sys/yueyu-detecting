@@ -43,6 +43,14 @@
   display: block;
 }
 
+.learn-access-note {
+  margin: var(--space-3) 0 0;
+  max-width: 42rem;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
 .learn-audience {
   margin: 0 0 var(--space-4);
   max-width: 40rem;
@@ -172,6 +180,10 @@
   margin-bottom: var(--space-6);
 }
 
+.learn-primer--ipa {
+  max-width: 52rem;
+}
+
 .learn-primer h4 {
   margin: var(--space-5) 0 var(--space-2);
   font-family: var(--font-serif);
@@ -179,10 +191,38 @@
   font-weight: 600;
 }
 
+.learn-primer h5 {
+  margin: var(--space-4) 0 var(--space-2);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
 .learn-primer p {
   margin: 0;
   color: var(--color-ink-muted);
   line-height: var(--leading-relaxed);
+}
+
+.learn-primer p + p,
+.learn-primer p + .learn-primer__list,
+.learn-primer p + .learn-primer__table,
+.learn-primer p + .learn-primer__table-wrap,
+.learn-primer p + .learn-primer__examples,
+.learn-primer p + .learn-primer__levels {
+  margin-top: var(--space-2);
+}
+
+.learn-primer__table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: var(--space-3) 0 0;
+}
+
+.learn-primer__table-wrap .learn-primer__table {
+  margin-top: 0;
+  min-width: 36rem;
 }
 
 .learn-primer__list {
