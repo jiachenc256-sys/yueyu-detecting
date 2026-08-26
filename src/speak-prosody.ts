@@ -171,7 +171,7 @@ export function featuresToEmotions(
   const summaryZh =
     top.length > 0
       ? `档案未命中。腔调粗估偏「${top.map(label).join(" / ")}」——能量${energy > 0.55 ? "偏强" : "偏弱"}，音色${bright > 0.55 ? "偏亮" : "偏沉"}，声线活动${voiced > 0.45 ? "较密" : "较疏"}${cryHint}。`
-      : "未能从腔调中读出清晰情绪，可换更清晰、更短的片段再试。";
+      : "未能从腔调中读出清晰表现，可换更清晰、更短的片段再试。";
 
   const summaryEn =
     top.length > 0

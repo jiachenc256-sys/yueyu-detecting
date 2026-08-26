@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826gap1" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826gap1" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826gap1" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826gap1" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826gap1" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826gap1" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826gap1" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826phase12" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826phase12" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826phase12" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826phase12" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826phase12" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826phase12" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826phase12" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -106,31 +106,10 @@
             <div class="home-cta home-cta--hero">
               <a class="home-cta__btn home-cta__btn--primary" href="#home-try-yueyu" data-i18n="home.ctaTry">试用越语</a>
               <button type="button" class="home-cta__btn" data-panel-target="memory" data-i18n="home.ctaArchive">浏览档案</button>
-              <button type="button" class="home-cta__btn home-cta__btn--quiet" id="home-surprise" data-i18n="home.ctaSurprise">随机探索</button>
+              <button type="button" class="home-cta__link" id="home-surprise" data-i18n="home.ctaSurprise">随机探索</button>
             </div>
             <div id="home-surprise-reveal" class="surprise-reveal" hidden aria-live="polite"></div>
           </div>
-
-          <section class="home-pillars" aria-labelledby="home-pillars-title">
-            <h3 id="home-pillars-title" class="home-pillars__label" data-i18n="home.pillarsLabel">三条路</h3>
-            <div class="home-pillars__grid">
-              <button type="button" class="home-pillar" data-panel-target="hear">
-                <span class="home-pillar__kicker" data-i18n="home.pillarVoiceKicker">HEAR</span>
-                <h3 data-i18n="home.pillarVoiceTitle">听见</h3>
-                <p data-i18n="home.pillarVoiceBody">听越语并转写——录音、戏腔或你的声音。</p>
-              </button>
-              <button type="button" class="home-pillar" data-panel-target="language">
-                <span class="home-pillar__kicker" data-i18n="home.pillarLanguageKicker">LEARN</span>
-                <h3 data-i18n="home.pillarLanguageTitle">学习</h3>
-                <p data-i18n="home.pillarLanguageBody">查词、听发音，再看它在档案里出现的地方。</p>
-              </button>
-              <button type="button" class="home-pillar" data-panel-target="memory">
-                <span class="home-pillar__kicker" data-i18n="home.pillarMemoryKicker">PRESERVE</span>
-                <h3 data-i18n="home.pillarMemoryTitle">保存</h3>
-                <p data-i18n="home.pillarMemoryBody">探索录音与历史文本——时间轴与弹词刻本。</p>
-              </button>
-            </div>
-          </section>
 
           <section class="home-live" id="home-try-yueyu" aria-labelledby="home-live-voice-title">
             <h3 id="home-live-voice-title" data-i18n="home.liveVoiceTitle">试用越语</h3>
@@ -167,7 +146,28 @@
                 <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="home.trySample">听这段并识别</button>
                 <a class="home-cta__btn" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="home.liveOpenArchive">探索这段录音 →</a>
               </div>
-              <p class="hub-path hub-path--flow" data-i18n="home.tryPath">听 → 对照 → 档案</p>
+              <p class="hub-path hub-path--flow" data-i18n="home.tryPath">听 → 识别 → 探索</p>
+            </div>
+          </section>
+
+          <section class="home-pillars" aria-labelledby="home-pillars-title">
+            <h3 id="home-pillars-title" class="home-pillars__label" data-i18n="home.pillarsLabel">三条路</h3>
+            <div class="home-pillars__grid">
+              <button type="button" class="home-pillar" data-panel-target="hear">
+                <span class="home-pillar__kicker" data-i18n="home.pillarVoiceKicker">HEAR</span>
+                <h3 data-i18n="home.pillarVoiceTitle">听见</h3>
+                <p data-i18n="home.pillarVoiceBody">听并转写真实越语——录音、戏腔或你的声音。</p>
+              </button>
+              <button type="button" class="home-pillar" data-panel-target="language">
+                <span class="home-pillar__kicker" data-i18n="home.pillarLanguageKicker">LEARN</span>
+                <h3 data-i18n="home.pillarLanguageTitle">学习</h3>
+                <p data-i18n="home.pillarLanguageBody">查词与发音，再看它在档案里出现的地方。</p>
+              </button>
+              <button type="button" class="home-pillar" data-panel-target="memory">
+                <span class="home-pillar__kicker" data-i18n="home.pillarMemoryKicker">PRESERVE</span>
+                <h3 data-i18n="home.pillarMemoryTitle">保存</h3>
+                <p data-i18n="home.pillarMemoryBody">跟随录音、戏腔与历史文本进入档案。</p>
+              </button>
             </div>
           </section>
 
@@ -210,7 +210,28 @@
           <p data-i18n="hub.hear.lead">选一段声音，先听原声；再决定是否做识别，或打开越剧（Yueju / Yue Opera）档案跟读。</p>
         </header>
 
-        <div class="live-panel live-panel--hero">
+        <ol class="how-steps" aria-label="How it works">
+          <li class="how-steps__item">
+            <span class="how-steps__num" data-i18n="hub.hear.step1Num">01 · 先听</span>
+            <p data-i18n="hub.hear.step1Body">听一遍真实的越语录音。</p>
+          </li>
+          <li class="how-steps__item">
+            <span class="how-steps__num" data-i18n="hub.hear.step2Num">02 · 再识别</span>
+            <p data-i18n="hub.hear.step2Body">点击「听这段并识别」，等待转写。</p>
+          </li>
+          <li class="how-steps__item">
+            <span class="how-steps__num" data-i18n="hub.hear.step3Num">03 · 继续探索</span>
+            <p data-i18n="hub.hear.step3Body">查看越语、中文与 English；若命中档案，可进入原句时间轴。</p>
+          </li>
+        </ol>
+
+        <p class="hear-starter">
+          <button type="button" class="dict-link" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="hub.hear.firstTime">第一次来？从梁祝示例开始 →</button>
+        </p>
+
+        <p class="hub-path hub-path--journey" data-i18n="hub.hear.journey">听 → 识别 → 探索</p>
+
+        <div class="live-panel live-panel--hero" id="hear-demo">
           <h3 data-i18n="hub.hear.demoTitle">听见越语</h3>
           <p data-i18n="hub.hear.demoLead">先听原声，再识别。下面是梁祝短段——播放后可一键走完整路径。</p>
           <audio class="live-audio" controls preload="metadata" src="assets/speak/samples/liangzhu-demo.m4a"></audio>
@@ -236,9 +257,16 @@
           <div class="home-cta">
             <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="hub.hear.tryNow">听这段并识别</button>
             <button type="button" class="home-cta__btn" data-panel-target="speak" data-i18n="hub.hear.openSpeak">打开听说（麦克风/上传）</button>
-            <a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="home.liveOpenArchive">先打开档案 →</a>
+            <a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="home.liveOpenArchive">打开档案原句 →</a>
           </div>
-          <p class="hub-path hub-path--flow" data-i18n="hub.hear.path">路径：声音 → 转写 → 档案原句。</p>
+          <p class="hub-connect">
+            <button type="button" class="dict-link" data-panel-target="language" data-i18n="hub.hear.toWord">查这个字 · 心 →</button>
+            <span aria-hidden="true">·</span>
+            <a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="hub.hear.toArchive">打开档案原句 →</a>
+            <span aria-hidden="true">·</span>
+            <button type="button" class="dict-link" data-panel-target="research" data-i18n="hub.hear.toResearch">识别仍在实验中 · 方法与局限 →</button>
+          </p>
+          <p class="hub-path hub-path--flow" data-i18n="hub.hear.path">路径：听 → 识别 → 探索</p>
         </div>
 
         <div class="hub-grid hub-grid--secondary">
@@ -288,7 +316,7 @@
             <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="dictionary" data-dict-open="心" data-i18n="hub.lang.openDict">打开越语词典</button>
             <button type="button" class="home-cta__btn" data-panel-target="learn" data-i18n="hub.lang.openLearn">学习工具</button>
           </div>
-          <p class="hub-path hub-path--flow" data-i18n="hub.lang.path">路径：词 → 发音 → 档案例句 → 戏腔。</p>
+          <p class="hub-path hub-path--flow" data-i18n="hub.lang.path">路径：词 → 发音 → 档案</p>
         </div>
 
         <div class="hub-grid hub-grid--secondary">
@@ -303,7 +331,7 @@
             <p data-i18n="hub.lang.planBody">按阶段了解如何入门、进阶与参与保存。</p>
           </button>
         </div>
-        <p class="hub-faq-link">
+        <p class="hub-faq-link hub-faq-link--quiet">
           <button type="button" class="dict-link" data-panel-target="faq" data-i18n="hub.lang.faqLink">常见问题（FAQ）→</button>
         </p>
       </section>
@@ -492,7 +520,7 @@
                 <h3 data-i18n="speak.path.prosodyTitle">② 腔调表现</h3>
                 <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">表现路径</span>
               </div>
-              <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">实验性声学可视化：用能量、起伏与音色粗绘表现雷达（悲急怒柔亢叹）。不是心理诊断，也不是语言学判定。</p>
+              <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">实验性声学可视化：用能量、起伏与音色粗绘表现雷达。标签（悲／急／怒／柔／亢／叹）仅为探索性示意，不是心理诊断或语言学判定。</p>
               <div class="speak-meter" aria-label="Vocal expression confidence">
                 <div class="speak-meter__track"><span id="speak-prosody-meter" class="speak-meter__fill speak-meter__fill--warm" style="width:0%"></span></div>
                 <span id="speak-prosody-meter-label" class="speak-meter__label">—</span>
@@ -3847,24 +3875,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826gap1",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826gap1",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826gap1",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826gap1",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826gap1",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826gap1",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826gap1",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826gap1",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826gap1",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826gap1"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826phase12",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826phase12",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826phase12",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826phase12",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826phase12",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826phase12",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826phase12",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826phase12",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826phase12",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826phase12"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826gap1"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826gap1"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826gap1"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826gap1"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826gap1"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826gap1"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826phase12"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826phase12"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826phase12"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826phase12"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826phase12"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826phase12"></script>
 </body>
 </html>
