@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826brand3" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826brand3" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826brand3" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826brand3" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826brand3" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826brand3" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826brand3" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826final1" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826final1" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826final1" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826final1" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826final1" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826final1" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826final1" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -162,11 +162,12 @@
                   <p>Parting on the road—scenery that hides a heart.</p>
                 </div>
               </div>
-              <p class="live-firstload" data-i18n="speak.firstLoadNote">首次识别需在本机加载模型（约 250MB，约 15–30 秒）；之后可复用缓存。</p>
+              <p class="live-firstload" data-i18n="speak.firstLoadNote">首次使用可能需要一点时间准备识别工具，之后会更快。</p>
               <div class="home-cta">
                 <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="home.trySample">听这段并识别</button>
                 <a class="home-cta__btn" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="home.liveOpenArchive">探索这段录音 →</a>
               </div>
+              <p class="hub-path hub-path--flow" data-i18n="home.tryPath">听 → 对照 → 档案</p>
             </div>
           </section>
 
@@ -231,7 +232,7 @@
               <p data-i18n="hub.hear.afterBody">转写 → 简/繁/EN → 若命中档案，可打开时间轴原句。</p>
             </div>
           </div>
-          <p class="live-firstload" data-i18n="speak.firstLoadNote">首次识别需在本机加载模型（约 250MB，约 15–30 秒）；之后可复用缓存。</p>
+          <p class="live-firstload" data-i18n="speak.firstLoadNote">首次使用可能需要一点时间准备识别工具，之后会更快。</p>
           <div class="home-cta">
             <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="hub.hear.tryNow">听这段并识别</button>
             <button type="button" class="home-cta__btn" data-panel-target="speak" data-i18n="hub.hear.openSpeak">打开听说（麦克风/上传）</button>
@@ -380,7 +381,7 @@
           <p class="speak-demo-path" data-i18n="speak.demoPath">
             推荐路径：梁祝示例 → 看档案命中 → 在档案中打开时间轴。
           </p>
-          <p class="live-firstload" data-i18n="speak.firstLoadNote">首次识别需在本机加载模型（约 250MB，约 15–30 秒）；之后可复用缓存。</p>
+          <p class="live-firstload" data-i18n="speak.firstLoadNote">首次使用可能需要一点时间准备识别工具，之后会更快。</p>
           <p class="speak-limits" data-i18n="speak.limits">
             识别仍在试点阶段。方法与局限见「研究」——此处先听懂、接到档案。
           </p>
@@ -1453,7 +1454,7 @@
               <p><strong>背景。</strong>越语作为濒危吴语方言，语音识别面临语料稀缺与发音／语域变体（散白、韵白、唱词）复杂的双重挑战。</p>
               <p><strong>方法。</strong>我从本站已校对的时间轴档案构建金标切片，按短域旧戏 + 未见全剧双留出，对 Whisper-small 做 LoRA 微调与权重混合，并与 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比较 CER。评测协议排除唱词与时间轴不可靠的条目，硬指标用双集合报告。</p>
               <p><strong>结果（实验室 v13；Speak 线上仍为 blend-v10）。</strong>荆钗短域留出 n=39：tiny 1.54 · plain small 1.48 · 适配 <strong>0.81</strong>。白兔未见抽样 n=80：tiny 3.55 · small 3.35 · 适配 <strong>1.04</strong>。相对同尺寸基线明显下降，但距「好看的 0.5」仍远——听校确认金标正确后，瓶颈主要在唱腔域能力，不靠剔难句刷分。</p>
-              <p><strong>意义与产品。</strong>这验证了可复现的低资源适应路径；字级见顶后，「听说」并行两路：① 档案检索／白话锚定；② 腔调·语调粗估情绪（浏览器音频特征）。线上仍加载 blend-v10（试点），v13 留在实验室。</p>
+              <p><strong>意义与产品。</strong>这验证了可复现的低资源适应路径；字级见顶后，「听说」并行两路：① 档案检索／白话锚定；② 腔调表现（浏览器声学可视化，非情绪诊断）。线上仍加载 blend-v10（试点），v13 留在实验室。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是绍兴人，越语是我从小听到大的方言。同时我也是个越剧爱好者，小时候跟着长辈听戏，长大了自己追着看，从嵊州的小剧场到上海的大舞台，越剧一直在我生活里。但这些年我越来越明显地感觉到两件事：一是会说地道越语的人越来越少了，年轻一代基本用普通话交流，方言里的老词和特殊发音正在悄悄消失；二是越剧的受众也在老去，很多珍贵的唱腔、念白、老艺人的独家版本，随着他们年事渐高，面临着失传的风险。</p>
@@ -1544,7 +1545,7 @@
               <p><strong>背景。</strong>越語作為瀕危吳語方言，語音識別面臨語料稀缺與發音／語域變體（散白、韻白、唱詞）複雜的雙重挑戰。</p>
               <p><strong>方法。</strong>我從本站已校對的時間軸檔案構建金標切片，按短域舊戲 + 未見全劇雙留出，對 Whisper-small 做 LoRA 微調與權重混合，並與 <code>whisper-tiny</code> 及同尺寸裸 <code>whisper-small</code> 比較 CER。評測協議排除唱詞與時間軸不可靠的條目，硬指標用雙集合報告。</p>
               <p><strong>結果（實驗室 v13；Speak 線上仍為 blend-v10）。</strong>荊釵短域留出 n=39：tiny 1.54 · plain small 1.48 · 適配 <strong>0.81</strong>。白兔未見抽樣 n=80：tiny 3.55 · small 3.35 · 適配 <strong>1.04</strong>。相對同尺寸基線明顯下降，但距「好看的 0.5」仍遠——聽校確認金標正確後，瓶頸主要在唱腔域能力，不靠剔難句刷分。</p>
-              <p><strong>意義與產品。</strong>這驗證了可復現的低資源適應路徑；字級見頂後，「聽說」並行兩路：① 檔案檢索／白話錨定；② 腔調·語調粗估情緒（瀏覽器音訊特徵）。線上仍載入 blend-v10（試點），v13 留在實驗室。</p>
+              <p><strong>意義與產品。</strong>這驗證了可復現的低資源適應路徑；字級見頂後，「聽說」並行兩路：① 檔案檢索／白話錨定；② 腔調表現（瀏覽器聲學可視化，非情緒診斷）。線上仍載入 blend-v10（試點），v13 留在實驗室。</p>
             </aside>
             <div class="story-doc__prose">
               <p>我是紹興人，越語是我從小聽到大的方言。同時我也是個越劇愛好者，小時候跟着長輩聽戲，長大了自己追着看，從嵊州的小劇場到上海的大舞臺，越劇一直在我生活裏。但這些年我越來越明顯地感覺到兩件事：一是會說地道越語的人越來越少了，年輕一代基本用普通話交流，方言裡的老詞和特殊發音正在悄悄消失；二是越劇的受衆也在老去，很多珍貴的唱腔、念白、老藝人的獨家版本，隨着他們年事漸高，面臨着失傳的風險。</p>
@@ -1635,7 +1636,7 @@
               <p><strong>Background.</strong> Yueyu, a threatened Wu variety, poses a dual ASR challenge: scarce aligned data and complex pronunciation / register variation (sanbai, yunbai, sung lines).</p>
               <p><strong>Method.</strong> I built gold clips from this site’s corrected timed archive, used a short-domain classic holdout plus an unseen full-play sample, fine-tuned Whisper-small with LoRA and weight blending, and compared CER to <code>whisper-tiny</code> and size-matched plain <code>whisper-small</code>. The evaluation protocol drops unreliable lyric/timing items and reports two hard sets.</p>
               <p><strong>Result (lab v13; Speak still live blend-v10).</strong> Jingchai short-domain n=39: tiny 1.54 · plain small 1.48 · adapted <strong>0.81</strong>. Baitu unseen sample n=80: tiny 3.55 · small 3.35 · adapted <strong>1.04</strong>. Clear gains vs size-matched baselines, but far from a vanity 0.5 mean—after listening QA confirmed labels, the ceiling is mainly sung-domain capacity, not scrubbing hard lines.</p>
-              <p><strong>Significance &amp; product.</strong> Supports a reproducible low-resource path. When verbatim CER plateaus, Speak runs two parallel paths: ① archive check / vernacular anchoring; ② delivery emotion from browser audio features. Live Speak still loads blend-v10 (pilot); v13 stays in the lab.</p>
+              <p><strong>Significance &amp; product.</strong> Supports a reproducible low-resource path. When verbatim CER plateaus, Speak runs two parallel paths: ① archive check / vernacular anchoring; ② vocal expression from browser acoustic features (not a diagnosis). Live Speak still loads blend-v10 (pilot); v13 stays in the lab.</p>
             </aside>
             <div class="story-doc__prose">
               <p>I was born and raised in Shaoxing. Yueyu is the dialect I grew up speaking. I am also a lifelong Yue Opera enthusiast. As a child, I followed my elders to local performances. As I grew older, I kept going, from the small theatres of Shengzhou to the grand stages of Shanghai. Yue Opera has always been part of my life.</p>
@@ -3305,25 +3306,25 @@
               <div data-visible-lang="zh-Hans">
                 <p><strong>越语侦听</strong>是一个公共数字平台：通过语音、档案、词典与计算工具，探索、倾听并保存越语。</p>
                 <p><strong>使命。</strong>让访客不必先读论文，也能听一段、查一字、跟一条时间轴；同时把方法与局限放在「研究」一层，供想深入的人阅读。</p>
-                <p><strong>为什么开始。</strong>我希望家乡话与越剧不只停留在“听过热闹”，而能被听懂、查到、留下来——尤其当长辈的声音还在，却越来越少被下一代理解时。</p>
                 <p><strong>来源与贡献。</strong>材料来自精选越剧选段、弹词图文、嵊州词典与学习录音，以及说话人与文化贡献者。站点依赖开源 Whisper 家族与浏览器能力。</p>
                 <p><strong>技术（简述）。</strong>静态网站 + 设备端识别试点；详细语料、评测与失败分析见「研究与方法」。</p>
+                <p><strong>为什么开始。</strong>我希望家乡话与越剧不只停留在“听过热闹”，而能被听懂、查到、留下来——尤其当长辈的声音还在，却越来越少被下一代理解时。</p>
                 <p>想了解「为什么要留下越语」，请打开「故事」。联系、隐私与版权见左侧栏目。</p>
               </div>
               <div data-visible-lang="zh-Hant">
                 <p><strong>越語偵聽</strong>是一個公共數字平台：通過語音、檔案、詞典與計算工具，探索、傾聽並保存越語。</p>
                 <p><strong>使命。</strong>讓訪客不必先讀論文，也能聽一段、查一字、跟一條時間軸；同時把方法與局限放在「研究」一層，供想深入的人閱讀。</p>
-                <p><strong>為什麼開始。</strong>我希望家鄉話與越劇不只停留在「聽過熱鬧」，而能被聽懂、查到、留下來——尤其當長輩的聲音還在，卻越來越少被下一代理解時。</p>
                 <p><strong>來源與貢獻。</strong>材料來自精選越劇選段、彈詞圖文、嵊州詞典與學習錄音，以及說話人與文化貢獻者。站點依賴開源 Whisper 家族與瀏覽器能力。</p>
                 <p><strong>技術（簡述）。</strong>靜態網站 + 設備端識別試點；詳細語料、評測與失敗分析見「研究與方法」。</p>
+                <p><strong>為什麼開始。</strong>我希望家鄉話與越劇不只停留在「聽過熱鬧」，而能被聽懂、查到、留下來——尤其當長輩的聲音還在，卻越來越少被下一代理解時。</p>
                 <p>想了解「為什麼要留下越語」，請打開「故事」。聯繫、隱私與版權見左側欄目。</p>
               </div>
               <div data-visible-lang="en">
                 <p><strong>Yueyu Detecting</strong> is a public digital platform for exploring, listening to, and preserving Yueyu through speech, archives, dictionaries, and computational tools.</p>
                 <p><strong>Mission.</strong> Visitors can hear a clip, look up a character, and follow a timeline without reading a paper first. Methods and limits live one level deeper under Research.</p>
-                <p><strong>Why I started.</strong> I want hometown speech and Yue Opera to be more than spectacle—something you can understand, look up, and keep—especially while elders’ voices remain, but fewer young listeners can follow them.</p>
                 <p><strong>Sources &amp; contributions.</strong> Materials include curated Yueju clips, tanci pages, the Shengzhou dictionary and learn audio, plus speaker and cultural contributors. The site depends on open Whisper-family models and browser APIs.</p>
                 <p><strong>Technology (brief).</strong> Static site + on-device recognition pilot. Corpus, evaluation, and failure analysis: see Research &amp; methods.</p>
+                <p><strong>Why I started.</strong> I want hometown speech and Yue Opera to be more than spectacle—something you can understand, look up, and keep—especially while elders’ voices remain, but fewer young listeners can follow them.</p>
                 <p>For “why keep Yueyu,” open Story. Contact, privacy, and copyright are in the side nav.</p>
               </div>
               <p class="plan-cta-row">
@@ -3452,7 +3453,7 @@
                   </div>
                   <p class="cer-chart__caption">荆钗短域原始 CER（越低越好）· n=39 · 实验室 v13；白兔未见 n=80 适配 ≈ 1.04 · Speak 仍为 blend-v10 · 不宣称 mean CER 0.5</p>
                 </div>
-                <p><strong>意义与产品。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。字级见顶后，「听说」识别后并行：① <strong>档案检索</strong>（唱词／声纹是否在库，白话锚定；命中可附语言学注记与说话人——档案链接，非 LLM）；② <strong>腔调·语调</strong>（能量／起伏／音色粗估悲急怒柔亢叹，浏览器音频特征，非情绪大模型）。线上 Whisper 仍为 blend-v10（INT8 ONNX）；v13 为实验室适配器。口语／电台另属后续域扩展。</p>
+                <p><strong>意义与产品。</strong>验证了一条可复现的低资源路径（金标已扩至数百分钟量级）。字级见顶后，「听说」识别后并行：① <strong>档案检索</strong>（唱词／声纹是否在库，白话锚定；命中可附语言学注记与说话人——档案链接，非 LLM）；② <strong>腔调表现</strong>（能量／起伏／音色可视化；实验性声学探索，非情绪诊断或大模型）。线上 Whisper 仍为 blend-v10（INT8 ONNX）；v13 为实验室适配器。口语／电台另属后续域扩展。</p>
                 <p class="about-apply-note">如需完整代码、实验脚本或模型权重，请通过「联系与申请」说明用途与身份，确认后提供访问指引。</p>
               </div>
               <div data-visible-lang="en">
@@ -3478,7 +3479,7 @@
                   </div>
                   <p class="cer-chart__caption">Jingchai short-domain raw CER (lower better) · n=39 · lab v13; Baitu unseen n=80 adapted ≈ 1.04 · Speak still blend-v10 · no claim of mean CER 0.5</p>
                 </div>
-                <p><strong>Significance &amp; product.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). After the verbatim ceiling, Speak runs two parallel paths: ① <strong>archive check</strong> (lyrics / light fingerprints + vernacular anchoring; linguistic notes and speakers are archive-linked, not an LLM); ② <strong>delivery emotion</strong> from browser audio features (energy / contour / timbre → grief–urgency–anger–tender–heroic–sigh)—not an emotion LLM. Live Whisper remains blend-v10 (INT8 ONNX); v13 stays in the lab. Spoken/radio gold is a later domain extension.</p>
+                <p><strong>Significance &amp; product.</strong> Shows a reproducible low-resource path (gold now hundreds of minutes). After the verbatim ceiling, Speak runs two parallel paths: ① <strong>archive check</strong> (lyrics / light fingerprints + vernacular anchoring; linguistic notes and speakers are archive-linked, not an LLM); ② <strong>vocal expression</strong> from browser audio features (energy / contour / timbre)—experimental visualization, not a diagnosis or emotion LLM. Live Whisper remains blend-v10 (INT8 ONNX); v13 stays in the lab. Spoken/radio gold is a later domain extension.</p>
                 <p class="about-apply-note">For full code, experiment scripts, or model weights, use <strong>Contact &amp; apply</strong> with your role and purpose.</p>
               </div>
             </div>
@@ -3595,7 +3596,7 @@
                 <ol class="about-pipeline">
                   <li><strong>输入</strong>：麦克风、上传音频，或「试试示例」短选段</li>
                   <li><strong>识别</strong>：设备端 Whisper（越语适配 blend-v10；首次加载本地权重）</li>
-                  <li><strong>两路径</strong>：① 档案检索／白话锚定；② 腔调·语调情绪粗估（有音频时并列显示）</li>
+                  <li><strong>两路径</strong>：① 档案检索／白话锚定；② 腔调表现可视化（有音频时并列显示）</li>
                   <li><strong>翻译层</strong>：简体文本 → 繁體 / English（第三方翻译接口）</li>
                   <li><strong>展示</strong>：三语结果 + 档案时间轴对齐阅读</li>
                 </ol>
@@ -3607,7 +3608,7 @@
                 <ol class="about-pipeline">
                   <li><strong>Input</strong>: mic, upload, or Try-sample clips</li>
                   <li><strong>ASR</strong>: on-device Whisper (Yueyu-adapted blend-v10; local weights on first load)</li>
-                  <li><strong>Two paths</strong>: ① archive check / vernacular anchoring; ② delivery emotion (shown beside ① when audio is present)</li>
+                  <li><strong>Two paths</strong>: ① archive check / vernacular anchoring; ② vocal expression (shown beside ① when audio is present)</li>
                   <li><strong>Translation</strong>: Simplified text → Traditional / English via a third-party API</li>
                   <li><strong>Display</strong>: trilingual results + timed Archive reading</li>
                 </ol>
@@ -3847,24 +3848,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826brand3",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826brand3",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826brand3",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826brand3",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826brand3",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826brand3",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826brand3",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826brand3",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826brand3",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826brand3"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826final1",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826final1",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826final1",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826final1",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826final1",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826final1",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826final1",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826final1",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826final1",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826final1"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826brand3"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826brand3"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826brand3"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826brand3"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826brand3"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826brand3"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826final1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826final1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826final1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826final1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826final1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826final1"></script>
 </body>
 </html>
