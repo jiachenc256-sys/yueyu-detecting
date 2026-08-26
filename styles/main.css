@@ -1971,6 +1971,35 @@ body {
   margin-top: 0;
 }
 
+.hub-next {
+  margin-top: var(--space-5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.5rem;
+  font-size: var(--text-sm);
+  color: var(--color-ink-faint);
+  line-height: var(--leading-relaxed);
+}
+
+.hub-next__label {
+  letter-spacing: 0.02em;
+}
+
+.hub-next__arrow {
+  opacity: 0.55;
+}
+
+.hub-next .dict-link {
+  font-size: inherit;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+}
+
+.hub-next .dict-link:hover {
+  color: var(--color-accent);
+}
+
 .hub-grid--quiet {
   margin-top: 0;
 }
