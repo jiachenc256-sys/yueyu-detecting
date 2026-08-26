@@ -1,8 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js";
-import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260826panelsok";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260826panelsok";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260826panelsok";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260826panelsok";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260826panelsok";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */

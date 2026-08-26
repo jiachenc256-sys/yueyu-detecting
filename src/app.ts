@@ -14,9 +14,9 @@ function unnestTrappedPanels(): void {
   const main = document.getElementById("main-content") ?? document.querySelector("main");
   if (!main) return;
 
-  const trapped = [
-    ...main.querySelectorAll<HTMLElement>(".panel[data-panel] .panel[data-panel]"),
-  ];
+  const trapped = Array.from(
+    main.querySelectorAll<HTMLElement>(".panel[data-panel] .panel[data-panel]"),
+  );
   if (!trapped.length) return;
 
   const topPanelOf = (el: HTMLElement): HTMLElement | null => {
@@ -29,7 +29,7 @@ function unnestTrappedPanels(): void {
     return top;
   };
 
-  const host = topPanelOf(trapped[0]);
+  const host = topPanelOf(trapped[0]!);
   if (!host) return;
 
   let ref: HTMLElement = host;
