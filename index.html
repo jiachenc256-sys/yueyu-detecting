@@ -44,13 +44,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826last" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826last" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826last" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826last" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826last" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826last" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826last" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826freeze" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826freeze" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826freeze" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826freeze" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826freeze" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826freeze" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826freeze" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -177,17 +177,20 @@
               <button type="button" class="home-pillar" data-panel-target="hear">
                 <span class="home-pillar__kicker" data-i18n="home.pillarVoiceKicker">HEAR</span>
                 <h3 data-i18n="home.pillarVoiceTitle">听见</h3>
-                <p data-i18n="home.pillarVoiceBody">听并转写真实越语——录音、戏腔或你的声音。</p>
+                <p class="home-pillar__action" data-i18n="home.pillarVoiceAction">开始听 →</p>
+                <p data-i18n="home.pillarVoiceBody">听真实越语——录音、戏腔或你的声音。</p>
               </button>
               <button type="button" class="home-pillar" data-panel-target="language">
                 <span class="home-pillar__kicker" data-i18n="home.pillarLanguageKicker">LANGUAGE</span>
                 <h3 data-i18n="home.pillarLanguageTitle">语言</h3>
-                <p data-i18n="home.pillarLanguageBody">查词与发音，再看它在档案里出现的地方。</p>
+                <p class="home-pillar__action" data-i18n="home.pillarLanguageAction">查一个词 →</p>
+                <p data-i18n="home.pillarLanguageBody">发音、释义，再看它在档案里出现的地方。</p>
               </button>
               <button type="button" class="home-pillar" data-panel-target="memory">
                 <span class="home-pillar__kicker" data-i18n="home.pillarMemoryKicker">ARCHIVE</span>
                 <h3 data-i18n="home.pillarMemoryTitle">档案</h3>
-                <p data-i18n="home.pillarMemoryBody">跟随录音、戏腔与历史文本进入档案。</p>
+                <p class="home-pillar__action" data-i18n="home.pillarMemoryAction">浏览档案 →</p>
+                <p data-i18n="home.pillarMemoryBody">录音、戏腔与历史文本的入口。</p>
               </button>
             </div>
           </section>
@@ -245,14 +248,9 @@
             <p data-i18n="hub.hear.step3Body">查看越语、中文与 English；若命中档案，可进入原句时间轴。</p>
           </li>
         </ol>
-
-        <p class="hear-starter">
-          <button type="button" class="dict-link" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="hub.hear.firstTime">第一次来？从梁祝示例开始 →</button>
-        </p>
-
-        <div class="live-panel live-panel--hero" id="hear-demo">
+<div class="live-panel live-panel--hero" id="hear-demo">
           <h3 data-i18n="hub.hear.demoTitle">听见越语</h3>
-          <p data-i18n="hub.hear.demoLead">先听这段，再点「听这段并识别」。</p>
+          <p data-i18n="hub.hear.demoLead">示例选段 · 梁祝</p>
           <audio class="live-audio" controls preload="metadata" src="assets/speak/samples/liangzhu-demo.m4a"></audio>
           <div class="live-demo-grid">
             <div class="live-transcript" data-visible-lang="zh-Hans">
@@ -271,7 +269,7 @@
           <p class="live-firstload" data-i18n="hub.hear.firstLoadNote">首次使用可能需要一点时间准备识别工具，之后会更快。</p>
           <div class="home-cta">
             <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="hub.hear.tryNow">听这段并识别</button>
-            <a class="home-cta__btn" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="hub.hear.toArchive">打开档案原句 →</a>
+            <a class="home-cta__btn" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="hub.hear.toArchive">看真实语境 →</a>
           </div>
           <p class="hub-connect hub-connect--secondary">
             <button type="button" class="dict-link" data-panel-target="speak" data-i18n="hub.hear.openSpeak">用麦克风或上传 →</button>
@@ -286,8 +284,6 @@
           <button type="button" class="dict-link" data-panel-target="speak" data-i18n="hub.hear.speakTitle">听说</button>
           <span aria-hidden="true">·</span>
           <button type="button" class="dict-link" data-archive-open="yueju" data-i18n="hub.hear.operaTitle">越剧选段</button>
-          <span aria-hidden="true">·</span>
-          <button type="button" class="dict-link" data-panel-target="research" data-i18n="hub.hear.toResearch">方法与局限</button>
         </p>
       </section>
 
@@ -356,7 +352,7 @@
             </div>
           </div>
 
-          <p id="speak-status" class="speak-status" aria-live="polite" data-i18n="speak.ready">已就绪。可用麦克风、上传音频，或点「试试示例」——识别后会很快出现翻译。</p>
+          <p id="speak-status" class="speak-status" aria-live="polite" data-i18n="speak.ready">已就绪。可用麦克风、上传，或点示例（试点）。</p>
           <audio id="speak-audio-preview" class="speak-audio" controls hidden></audio>
 
           <div class="speak-panel">
@@ -480,9 +476,9 @@
                 <li><a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html#cue-13">梁祝 · 十八相送</a> <span data-visible-lang="zh-Hans">「兄弟分别心烦恼」</span><span data-visible-lang="zh-Hant">「兄弟分別心煩惱」</span><span data-visible-lang="en">“Brothers part with troubled hearts”</span></li>
               </ul>
               <p class="hub-connect">
-                <button type="button" class="dict-link" data-panel-target="hear" data-i18n="hub.lang.toHear">去听见这段 →</button>
+                <button type="button" class="dict-link" data-panel-target="hear" data-i18n="hub.lang.toHear">听原始声音 →</button>
                 <span aria-hidden="true">·</span>
-                <a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="hub.lang.toArchive">打开档案原句 →</a>
+                <a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="hub.lang.toArchive">看真实语境 →</a>
               </p>
             </div>
           </div>
@@ -492,7 +488,7 @@
           <p class="hub-path hub-path--flow" data-i18n="hub.lang.path">路径：词 → 发音 → 语境 → 档案</p>
         </div>
 
-        <p class="hub-more-label" data-i18n="hub.lang.moreLabel">继续学习</p>
+        <p class="hub-more-label" data-i18n="hub.lang.moreLabel">次要 · 学习资源</p>
         <div class="hub-grid hub-grid--secondary hub-grid--quiet">
           <button type="button" class="hub-card hub-card--quiet" data-panel-target="learn">
             <span class="hub-card__kicker" data-i18n="hub.lang.learnKicker">学习</span>
@@ -534,9 +530,9 @@
               <a class="home-cta__btn" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="hub.mem.openClip">听一段越剧</a>
             </div>
             <p class="hub-connect">
-              <button type="button" class="dict-link" data-panel-target="language" data-i18n="hub.mem.toWord">查相关词 →</button>
+              <button type="button" class="dict-link" data-panel-target="language" data-i18n="hub.mem.toWord">查这个词 →</button>
               <span aria-hidden="true">·</span>
-              <button type="button" class="dict-link" data-panel-target="hear" data-i18n="hub.mem.toHear">去听见越语 →</button>
+              <button type="button" class="dict-link" data-panel-target="hear" data-i18n="hub.mem.toHear">听原始声音 →</button>
               <span aria-hidden="true">·</span>
               <button type="button" class="dict-link" data-panel-target="tanci" data-i18n="home.liveTryOcr">识别纸页文字 →</button>
             </p>
@@ -667,7 +663,8 @@
           <span class="visually-hidden" data-i18n="archive.searchLabel">搜索剧目</span>
           <input id="archive-search" type="search" autocomplete="off" data-i18n-placeholder="archive.searchPlaceholder" placeholder="搜索剧目名称…" />
         </label>
-        <p class="archive-filter-note" data-i18n="archive.filterNote">点「弹词」看刻本图文；点「越剧」看听录音选段。「口语」栏目仍在筹备，暂无公开短段。弹词还可上传图片做 OCR。</p>
+        <p class="archive-filter-note archive-filter-note--quiet" data-i18n="archive.provenanceNote">公开条目为精选文化材料；转写经整理，权利归表演者/出版方等。详情见关于·版权。</p>
+        <p class="archive-filter-note" data-i18n="archive.filterNote">点「弹词」看刻本图文；点「越剧」听选段。口语朗读栏目即将开放。弹词可识别纸页文字。</p>
 
         <div class="archive-grid">
           <a class="piece-card piece-card--link" href="pieces/liangzhu-shibaxiangsong.html" data-archive-category="yueju">
@@ -1411,11 +1408,11 @@
           </button>
 
           <article class="piece-card" data-archive-category="speakers">
-            <span class="badge" data-i18n="archive.badgeSpeakersSoon">筹备中</span>
+            <span class="badge" data-i18n="archive.badgeSpeakersSoon">即将开放</span>
             <h3 class="piece-card__title" data-i18n="archive.speakersTitle">口语 · 说话人朗读</h3>
-            <p class="piece-card__meta" data-i18n="archive.speakersMeta">筹备中 · 本地说话人短选段</p>
+            <p class="piece-card__meta" data-i18n="archive.speakersMeta">即将开放 · 本地说话人短选段</p>
             <p class="piece-card__note" data-i18n="archive.speakersNote">
-              筹备中：将邀请本地说话人朗读短文并录音；整理好人转写后放在这里收听（目前不是坏链）。
+              即将开放：本地说话人短选段将在转写核对后上架。
             </p>
           </article>
 
@@ -1827,7 +1824,7 @@
                 <ul class="plan-try">
                   <li>打开档案，挑一段越剧精选，先听一遍，再打开字幕/文本对照着听。</li>
                   <li>试着跟读一两句念白，感受越语与普通话不一样的地方。</li>
-                  <li>听到有趣的词就记下来；完整词汇表仍在建设中，可先在档案文本与剧情简介里对照理解。</li>
+                  <li>听到有趣的词就记下来；完整词汇表即将开放，可先在档案文本与剧情简介里对照理解。</li>
                 </ul>
                 <h4 data-i18n="plan.quickStartTitle">快速开始</h4>
                 <a class="plan-quickstart" href="pieces/liangzhu-shibaxiangsong.html">
@@ -1854,7 +1851,7 @@
                 <ul class="plan-try">
                   <li>打開檔案，挑一段越劇精選，先聽一遍，再打開字幕/文本對照着聽。</li>
                   <li>試着跟讀一兩句念白，感受越語與普通話不一樣的地方。</li>
-                  <li>聽到有趣的詞就記下來；完整詞彙表仍在建設中，可先在檔案文本與劇情簡介裏對照理解。</li>
+                  <li>聽到有趣的詞就記下來；完整詞彙表即將開放，可先在檔案文本與劇情簡介裏對照理解。</li>
                 </ul>
                 <h4 data-i18n="plan.quickStartTitle">快速開始</h4>
                 <a class="plan-quickstart" href="pieces/liangzhu-shibaxiangsong.html">
@@ -1881,7 +1878,7 @@
                 <ul class="plan-try">
                   <li>Open Archive, pick a Yue Opera clip, listen once, then follow along with the text.</li>
                   <li>Try reading one or two spoken lines aloud and notice how Yueyu differs from Mandarin.</li>
-                  <li>Jot down interesting words; a full vocabulary list is still being built—use plot intros and transcripts for now.</li>
+                  <li>Jot down interesting words; a full vocabulary list is coming soon—use plot intros and transcripts for now.</li>
                 </ul>
                 <h4 data-i18n="plan.quickStartTitle">Quick start</h4>
                 <a class="plan-quickstart" href="pieces/liangzhu-shibaxiangsong.html">
@@ -1905,7 +1902,7 @@
                 <p>你已经听过一些越剧或弹词了，至少知道几个常见的剧目名字和大致的故事。你开始注意到越语里面有些词和普通话完全不一样，你想搞清楚它们到底怎么读、什么意思。你可能还说不来方言，但耳朵已经开始变得敏感了，能分辨出哪些是普通话的调子、哪些是越语的调子。</p>
                 <h4>你可以从这里继续</h4>
                 <p>档案中的中等长度选段带有多语对照；弹词刻本可按页识别文字，方便一边看图一边读字。</p>
-                <p>方言词汇卡片与更系统的注音表仍在建设中。现阶段请善用档案文本、剧情简介，以及弹词页上的识别结果做对照。</p>
+                <p>方言词汇卡片与更系统的注音表即将开放。现阶段请善用档案文本、剧情简介，以及弹词页上的识别结果做对照。</p>
                 <h4>你可以试着做这些</h4>
                 <ul class="plan-try">
                   <li>找一段熟悉的唱段，先不看文字只靠耳朵听，再对照档案转写检查听对了什么、听漏了什么。</li>
@@ -1925,7 +1922,7 @@
                 <p>你已經聽過一些越劇或彈詞了，至少知道幾個常見的劇目名字和大致的故事。你開始注意到越語裡面有些詞和普通話完全不一樣，你想搞清楚它們到底怎麼讀、什麼意思。你可能還說不來方言，但耳朵已經開始變得敏感了，能分辨出哪些是普通話的調子、哪些是越語的調子。</p>
                 <h4>你可以從這裡繼續</h4>
                 <p>檔案中的中等長度選段帶有多語對照；彈詞刻本可按頁識別文字，方便一邊看圖一邊讀字。</p>
-                <p>方言詞彙卡片與更系統的注音表仍在建設中。現階段請善用檔案文本、劇情簡介，以及彈詞頁上的識別結果做對照。</p>
+                <p>方言詞彙卡片與更系統的注音表即將開放。現階段請善用檔案文本、劇情簡介，以及彈詞頁上的識別結果做對照。</p>
                 <h4>你可以試着做這些</h4>
                 <ul class="plan-try">
                   <li>找一段熟悉的唱段，先不看文字只靠耳朵聽，再對照檔案轉寫檢查聽對了什麼、聽漏了什麼。</li>
@@ -2006,7 +2003,7 @@
                 <h4>If this sounds like you</h4>
                 <p>You can understand most common Yueyu conversations and lyrics. You know the major Yue Opera schools and representative works. You can hear pronunciation differences between performers, and maybe identify a school’s flavour. You might sing a few lines yourself.</p>
                 <h4>You can go deeper here</h4>
-                <p>Full-book tanci flip readers, curated Yue Opera archives, and the Story page’s research workflow are already open. Full unsimplified multi-school comparison tools are still being built.</p>
+                <p>Full-book tanci flip readers, curated Yue Opera archives, and the Story page’s research workflow are already open. Full unsimplified multi-school comparison tools are coming soon.</p>
                 <p>Treat Archive and Tanci as entries into carefully prepared text—read, compare, and note differences.</p>
                 <h4>Things you can try</h4>
                 <ul class="plan-try">
@@ -2028,7 +2025,7 @@
                 <h4>如果你是这样的人</h4>
                 <p>你可能是个资深票友、退休艺人、方言研究者，或者只是一个对越语和越剧有深厚感情、愿意花时间做长期工作的普通人。你对发音的细微差别很敏感，对唱腔的传统讲究有自己的判断，你手里可能还存着一些外面找不到的老资料、老唱本。更重要的是，你愿意把你知道的东西拿出来，让更多人看到。</p>
                 <h4>你可以从这里贡献</h4>
-                <p>完整的语料后台与开放标注权限仍在建设中。现在你已经可以通过故事页了解采集—转写—母语者验证—回流的闭环，并在关于页查看我们提供的研究与工程路径。</p>
+                <p>完整的语料后台与开放标注权限即将开放。现在你已经可以通过故事页了解采集—转写—母语者验证—回流的闭环，并在关于页查看我们提供的研究与工程路径。</p>
                 <p>若你愿意合作校对、提供手抄本或老录音线索，欢迎通过「联系」邮件联系开发者 Alice Chen。</p>
                 <h4>你可以试着做这些</h4>
                 <ul class="plan-try">
@@ -2048,7 +2045,7 @@
                 <h4>如果你是這樣的人</h4>
                 <p>你可能是個資深票友、退休藝人、方言研究者，或者只是一個對越語和越劇有深厚感情、願意花時間做長期工作的普通人。你對發音的細微差別很敏感，對唱腔的傳統講究有自己的判斷，你手裡可能還存着一些外面找不到的老資料、老唱本。更重要的是，你願意把你知道的東西拿出來，讓更多人看到。</p>
                 <h4>你可以從這裡貢獻</h4>
-                <p>完整的語料後臺與開放標註權限仍在建設中。現在你已經可以通過故事頁了解採集—轉寫—母語者驗證—回流的閉環，並在關於頁查看我們提供的研究與工程路徑。</p>
+                <p>完整的語料後臺與開放標註權限即將開放。現在你已經可以通過故事頁了解採集—轉寫—母語者驗證—回流的閉環，並在關於頁查看我們提供的研究與工程路徑。</p>
                 <p>若你願意合作校對、提供手抄本或老錄音線索，歡迎通過項目倉庫維護渠道聯繫開發者 Alice Chen。</p>
                 <h4>你可以試着做這些</h4>
                 <ul class="plan-try">
@@ -2068,7 +2065,7 @@
                 <h4>If this sounds like you</h4>
                 <p>You might be a seasoned fan, a retired performer, a dialect researcher, or someone with deep attachment who will invest long-term care. You hear fine differences, hold judgment on tradition, and may keep rare scripts or recordings. Most importantly, you are willing to share what you know.</p>
                 <h4>You can contribute here</h4>
-                <p>A full public annotation backend is still in progress. Today you can study the collect → transcribe → validate → feed-back loop on Story, and see the engineering path under About → What we provide.</p>
+                <p>A full public annotation backend is coming soon. Today you can study the collect → transcribe → validate → feed-back loop on Story, and see the engineering path under About → What we provide.</p>
                 <p>To collaborate on proofreading or rare materials, contact developer Alice Chen via About → Contact.</p>
                 <h4>Things you can try</h4>
                 <ul class="plan-try">
@@ -3285,7 +3282,7 @@
       <section class="panel" data-panel="about" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="about.title">关于</h2>
-          <p data-i18n="about.lead">平台是什么、为何开始、范围与联系——方法细节见「研究」。</p>
+          <p data-i18n="about.lead">平台是什么、范围、来源与联系——方法细节见「研究」；动机见「故事」。</p>
         </header>
 
         <div class="plan-layout">
@@ -3303,21 +3300,21 @@
               <h3 data-i18n="about.nav.behind">平台与使命</h3>
               <div data-visible-lang="zh-Hans">
                 <p><strong>越语侦听</strong>是一个公共数字平台：通过语音、档案、词典与计算工具，探索、倾听并保存越语。</p>
-                <p><strong>为什么开始。</strong>我希望家乡话与越剧不只停留在“听过热闹”，而能被听懂、查到、留下来——尤其当长辈的声音还在，却越来越少被下一代理解时。</p>
+                <p><strong>定位。</strong>公共平台，而非个人博客：让越语可听、可查、可保存。个人动机与「为什么留下」见「故事」。</p>
                 <p><strong>范围。</strong>词典注音以<strong>嵊州</strong>读音为主；档案以越剧／弹词与相关舞台方言材料为先。这不声称覆盖全部越语或所有吴语变体。</p>
                 <p><strong>来源与贡献。</strong>材料来自精选越剧选段、弹词图文、嵊州词典与学习录音，以及说话人与文化贡献者。</p>
                 <p>想了解「为什么要留下越语」，请打开「故事」。语料、评测与方法见「研究」。联系、隐私与版权见左侧栏目。</p>
               </div>
               <div data-visible-lang="zh-Hant">
                 <p><strong>越語偵聽</strong>是一個公共數字平台：通過語音、檔案、詞典與計算工具，探索、傾聽並保存越語。</p>
-                <p><strong>為什麼開始。</strong>我希望家鄉話與越劇不只停留在「聽過熱鬧」，而能被聽懂、查到、留下來——尤其當長輩的聲音還在，卻越來越少被下一代理解時。</p>
+                <p><strong>定位。</strong>公共平台，而非個人部落格：讓越語可聽、可查、可保存。個人動機與「為什麼留下」見「故事」。</p>
                 <p><strong>範圍。</strong>詞典注音以<strong>嵊州</strong>讀音為主；檔案以越劇／彈詞與相關舞臺方言材料為先。這不聲稱覆蓋全部越語或所有吳語變體。</p>
                 <p><strong>來源與貢獻。</strong>材料來自精選越劇選段、彈詞圖文、嵊州詞典與學習錄音，以及說話人與文化貢獻者。</p>
                 <p>想了解「為什麼要留下越語」，請打開「故事」。語料、評測與方法見「研究」。聯繫、隱私與版權見左側欄目。</p>
               </div>
               <div data-visible-lang="en">
                 <p><strong>Yueyu Detecting</strong> is a public digital platform for exploring, listening to, and preserving Yueyu through speech, archives, dictionaries, and computational tools.</p>
-                <p><strong>Why I started.</strong> I want hometown speech and Yue Opera to be more than spectacle—something you can understand, look up, and keep—especially while elders’ voices remain, but fewer young listeners can follow them.</p>
+                <p><strong>Position.</strong> A public platform—not a personal blog—so Yueyu can be heard, looked up, and kept. Personal motivation and “why preserve” live under Story.</p>
                 <p><strong>Scope.</strong> Dictionary readings center on <strong>Shengzhou</strong>; the archive prioritizes Yueju / tanci and related stage-dialect material. This does not claim to cover all Yueyu or every Wu variety.</p>
                 <p><strong>Sources &amp; contributions.</strong> Materials include curated Yueju clips, tanci pages, the Shengzhou dictionary and learn audio, plus speaker and cultural contributors.</p>
                 <p>For “why keep Yueyu,” open Story. Corpus, evaluation, and methods live under Research. Contact, privacy, and copyright are in the side nav.</p>
@@ -3531,24 +3528,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826last",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826last",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826last",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826last",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826last",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826last",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826last",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826last",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826last",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826last"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826freeze",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826freeze",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826freeze",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826freeze",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826freeze",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826freeze",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826freeze",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826freeze",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826freeze",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826freeze"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826last"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826last"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826last"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826last"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826last"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826last"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826freeze"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826freeze"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826freeze"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826freeze"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826freeze"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826freeze"></script>
 </body>
 </html>

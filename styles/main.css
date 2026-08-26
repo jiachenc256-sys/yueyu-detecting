@@ -1665,6 +1665,13 @@ body {
   color: var(--color-accent);
 }
 
+.home-pillar__action {
+  margin: 0.15rem 0 0.35rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
 .home-pillar h3 {
   margin: 0;
   font-family: var(--font-serif);
@@ -1842,6 +1849,7 @@ body {
 .live-audio {
   width: 100%;
   max-width: 36rem;
+  max-width: 100%;
 }
 
 .live-transcript {
@@ -2703,4 +2711,27 @@ body {
   font-size: var(--text-sm);
   color: var(--color-accent);
   letter-spacing: 0.02em;
+}
+
+
+.archive-filter-note--quiet {
+  font-size: var(--text-xs);
+  color: var(--color-ink-faint);
+  opacity: 0.9;
+}
+
+
+@media (max-width: 700px) {
+  .home-cta {
+    gap: var(--space-2);
+  }
+  .home-cta__btn {
+    min-height: 2.75rem;
+  }
+  .speak-controls {
+    gap: var(--space-2);
+  }
+  .cer-chart {
+    overflow-x: auto;
+  }
 }
