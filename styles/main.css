@@ -1759,6 +1759,27 @@ body {
   transform: none;
 }
 
+.home-cta__link {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0.35rem 0.15rem;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-ink-faint);
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+  cursor: pointer;
+}
+
+.home-cta__link:hover,
+.home-cta__link:focus-visible {
+  color: var(--color-accent);
+  outline: none;
+}
+
 .home-live {
   position: relative;
   z-index: 1;
@@ -1787,6 +1808,14 @@ body {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--color-paper-raised);
+}
+
+.live-panel > h3 {
+  margin: 0;
+}
+
+.live-panel > h3 + p {
+  margin: calc(var(--space-2) - var(--space-4)) 0 0;
 }
 
 .live-panel--hero {
@@ -1960,6 +1989,77 @@ body {
 .hub-faq-link {
   margin: var(--space-4) 0 0;
   font-size: var(--text-sm);
+}
+
+.hub-faq-link--quiet {
+  margin-top: var(--space-6);
+  font-size: var(--text-xs);
+  color: var(--color-ink-faint);
+}
+
+.hub-faq-link--quiet .dict-link {
+  color: var(--color-ink-faint);
+}
+
+.how-steps {
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.how-steps__item {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border-left: 3px solid color-mix(in srgb, var(--color-accent) 55%, var(--color-border));
+  background: color-mix(in srgb, var(--color-paper) 88%, var(--color-accent) 6%);
+}
+
+.how-steps__num {
+  display: block;
+  margin: 0 0 var(--space-1);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.how-steps__item p {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+}
+
+.hear-starter {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.hub-path--journey {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-sm);
+  letter-spacing: 0.06em;
+  color: var(--color-ink-muted);
+}
+
+.hub-connect {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-faint);
+}
+
+@media (max-width: 700px) {
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
 }
 
 .live-tri {
