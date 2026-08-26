@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826brand2" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826brand2" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826brand2" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826brand2" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826brand2" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826brand2" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826brand2" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826brand3" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826brand3" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826brand3" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826brand3" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826brand3" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826brand3" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826brand3" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -101,10 +101,10 @@
               <span data-i18n="brand.sub">探索 · 倾听 · 保存</span>
             </p>
             <h2 class="home-hero__headline" data-i18n="home.headline">听见一种语言，留下它的声音。</h2>
-            <p class="home-hero__mission" data-i18n="home.mission">通过语音、词典、录音、越剧与历史文本，探索、倾听并保存越语。</p>
+            <p class="home-hero__mission" data-i18n="home.mission">通过语音、越剧、词典与历史档案，探索越语。</p>
 
             <div class="home-cta home-cta--hero">
-              <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="hear" data-i18n="home.ctaExplore">开始探索</button>
+              <a class="home-cta__btn home-cta__btn--primary" href="#home-try-yueyu" data-i18n="home.ctaTry">试用越语</a>
               <button type="button" class="home-cta__btn" data-panel-target="memory" data-i18n="home.ctaArchive">浏览档案</button>
               <button type="button" class="home-cta__btn home-cta__btn--quiet" id="home-surprise" data-i18n="home.ctaSurprise">随机探索</button>
             </div>
@@ -112,29 +112,29 @@
           </div>
 
           <section class="home-pillars" aria-labelledby="home-pillars-title">
-            <h3 id="home-pillars-title" class="home-pillars__label" data-i18n="home.pillarsLabel">三个世界</h3>
+            <h3 id="home-pillars-title" class="home-pillars__label" data-i18n="home.pillarsLabel">三条路</h3>
             <div class="home-pillars__grid">
               <button type="button" class="home-pillar" data-panel-target="hear">
-                <span class="home-pillar__kicker" data-i18n="home.pillarVoiceKicker">VOICE · 听见</span>
-                <h3 data-i18n="home.pillarVoiceTitle">听见越语</h3>
-                <p data-i18n="home.pillarVoiceBody">语音识别、越剧选段与可听录音——选一段声音，看它如何被转写。</p>
+                <span class="home-pillar__kicker" data-i18n="home.pillarVoiceKicker">HEAR</span>
+                <h3 data-i18n="home.pillarVoiceTitle">听见</h3>
+                <p data-i18n="home.pillarVoiceBody">听越语并转写——录音、戏腔或你的声音。</p>
               </button>
               <button type="button" class="home-pillar" data-panel-target="language">
-                <span class="home-pillar__kicker" data-i18n="home.pillarLanguageKicker">LANGUAGE · 语言</span>
-                <h3 data-i18n="home.pillarLanguageTitle">认识越语</h3>
-                <p data-i18n="home.pillarLanguageBody">词典、学习与词汇——查一个词，听它怎么说，再看它在哪儿出现。</p>
+                <span class="home-pillar__kicker" data-i18n="home.pillarLanguageKicker">LEARN</span>
+                <h3 data-i18n="home.pillarLanguageTitle">学习</h3>
+                <p data-i18n="home.pillarLanguageBody">查词、听发音，再看它在档案里出现的地方。</p>
               </button>
               <button type="button" class="home-pillar" data-panel-target="memory">
-                <span class="home-pillar__kicker" data-i18n="home.pillarMemoryKicker">MEMORY · 档案</span>
-                <h3 data-i18n="home.pillarMemoryTitle">保存越语</h3>
-                <p data-i18n="home.pillarMemoryBody">录音档案与弹词刻本——跟随时间轴听见原声，或把纸页变成可检索文字。</p>
+                <span class="home-pillar__kicker" data-i18n="home.pillarMemoryKicker">PRESERVE</span>
+                <h3 data-i18n="home.pillarMemoryTitle">保存</h3>
+                <p data-i18n="home.pillarMemoryBody">探索录音与历史文本——时间轴与弹词刻本。</p>
               </button>
             </div>
           </section>
 
-          <section class="home-live" aria-labelledby="home-live-voice-title">
-            <h3 id="home-live-voice-title" data-i18n="home.liveVoiceTitle">听一段真实的声音</h3>
-            <p data-i18n="home.liveVoiceLead">梁祝 · 十八相送（精选短段）。先听原声，再一键识别并跳到档案原句。</p>
+          <section class="home-live" id="home-try-yueyu" aria-labelledby="home-live-voice-title">
+            <h3 id="home-live-voice-title" data-i18n="home.liveVoiceTitle">试用越语</h3>
+            <p data-i18n="home.liveVoiceLead">听一段真实录音，对照文字，再决定是否识别或进入档案。</p>
             <div class="live-panel live-panel--hero">
               <div class="live-panel__meta">
                 <span class="live-panel__kicker" data-i18n="home.showListen">听</span>
@@ -144,36 +144,35 @@
                 <span data-visible-lang="en">Parting on the road</span>
               </div>
               <audio class="live-audio" controls preload="metadata" src="assets/speak/samples/liangzhu-demo.m4a"></audio>
-              <div class="live-transcript" data-visible-lang="zh-Hans">
-                <p class="live-transcript__label">台词摘录</p>
-                <p>梁山伯与祝英台十八相送——一路景物，暗藏心意。</p>
-              </div>
-              <div class="live-transcript" data-visible-lang="zh-Hant">
-                <p class="live-transcript__label">臺詞摘錄</p>
-                <p>梁山伯與祝英臺十八相送——一路景物，暗藏心意。</p>
-              </div>
-              <div class="live-transcript" data-visible-lang="en">
-                <p class="live-transcript__label">Line excerpt</p>
-                <p>Liang Shanbo and Zhu Yingtai’s farewell walk—scenery that hides a heart.</p>
+              <div class="live-tri">
+                <div class="live-transcript">
+                  <p class="live-transcript__label" data-i18n="home.tryLineYueyu">越语 / 戏词</p>
+                  <p data-visible-lang="zh-Hans">梁山伯与祝英台十八相送——一路景物，暗藏心意。</p>
+                  <p data-visible-lang="zh-Hant">梁山伯與祝英臺十八相送——一路景物，暗藏心意。</p>
+                  <p data-visible-lang="en">Liang Shanbo and Zhu Yingtai’s farewell walk—scenery that hides a heart.</p>
+                </div>
+                <div class="live-transcript">
+                  <p class="live-transcript__label">中文</p>
+                  <p data-visible-lang="zh-Hans">同窗惜别，暗藏心意。</p>
+                  <p data-visible-lang="zh-Hant">同窗惜別，暗藏心意。</p>
+                  <p data-visible-lang="en">Classmates part; meaning hides in the farewell.</p>
+                </div>
+                <div class="live-transcript">
+                  <p class="live-transcript__label">English</p>
+                  <p>Parting on the road—scenery that hides a heart.</p>
+                </div>
               </div>
               <p class="live-firstload" data-i18n="speak.firstLoadNote">首次识别需在本机加载模型（约 250MB，约 15–30 秒）；之后可复用缓存。</p>
-              <p class="hub-path hub-path--flow" data-i18n="hub.hear.path">路径：声音 → 转写 → 档案原句。</p>
               <div class="home-cta">
-                <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="home.trySample">听这段并识别 · 梁祝</button>
-                <a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="home.liveOpenArchive">先听档案原声 →</a>
+                <button type="button" class="home-cta__btn home-cta__btn--primary" data-panel-target="speak" data-speak-open-sample="liangzhu" data-i18n="home.trySample">听这段并识别</button>
+                <a class="home-cta__btn" href="pieces/liangzhu-shibaxiangsong.html" data-i18n="home.liveOpenArchive">探索这段录音 →</a>
               </div>
             </div>
           </section>
 
-          <section class="home-why" aria-labelledby="home-why-title">
-            <h3 id="home-why-title" data-i18n="home.whyTitle">为什么是越语？</h3>
-            <p data-i18n="home.whyBody">越语是活着的语言传统，活在日常说话、表演与历史文本里。许多材料仍难以检索、接触与数字化保存。</p>
-            <button type="button" class="dict-link" data-panel-target="story" data-i18n="home.whyLink">了解越语 →</button>
-          </section>
-
           <section class="home-showcase" aria-labelledby="home-show-title">
-            <h3 id="home-show-title" data-i18n="home.showTitle">探索更多档案</h3>
-            <p data-i18n="home.showBody">精选可听选段——点进去读剧情、跟时间轴。</p>
+            <h3 id="home-show-title" data-i18n="home.showTitle">精选录音</h3>
+            <p data-i18n="home.showBody">先听这几段——点进去读剧情、跟时间轴。</p>
             <div class="home-showcase__grid">
               <a class="home-show-card" href="pieces/hongloumeng-tianxia.html">
                 <span class="home-show-card__kicker" data-i18n="home.showListen">听</span>
@@ -195,11 +194,11 @@
             </p>
           </section>
 
-          <section class="home-research-teaser" aria-labelledby="home-behind-title">
-            <h3 id="home-behind-title" data-i18n="home.behindTitle">平台背后</h3>
-            <p data-i18n="home.behindBody">越语侦听结合语言学、语音技术与数字档案，为低资源语言提供新的探索方式。</p>
-            <button type="button" class="home-cta__btn" data-panel-target="research" data-i18n="home.ctaMethods">了解方法 →</button>
-          </section>
+          <p class="home-quiet-links">
+            <button type="button" class="dict-link" data-panel-target="story" data-i18n="home.whyLink">为什么是越语？</button>
+            <span aria-hidden="true">·</span>
+            <button type="button" class="dict-link" data-panel-target="research" data-i18n="home.ctaMethods">研究方法 →</button>
+          </p>
         </div>
       </section>
 
@@ -277,7 +276,7 @@
             <p data-visible-lang="zh-Hant">範圍說明：詞典注音以<strong>嵊州</strong>讀音為主，是越語（吳語紹興一帶）的重要地方變體，並不等同於「全部越語」。</p>
             <p data-visible-lang="en">Scope: dictionary readings center on <strong>Shengzhou</strong>, a key local variety within Yueyu (Wu around Shaoxing)—not a claim to cover all Yueyu.</p>
             <div class="live-found-in">
-              <p class="live-transcript__label" data-i18n="dict.archiveExamples">见于档案</p>
+              <p class="live-transcript__label" data-i18n="hub.lang.contextLabel">在语境中听这个字</p>
               <ul>
                 <li><a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html#cue-10">梁祝 · 十八相送</a> <span data-visible-lang="zh-Hans">「今日分别心难过」</span><span data-visible-lang="zh-Hant">「今日分別心難過」</span><span data-visible-lang="en">“Parting weighs on the heart”</span></li>
                 <li><a class="dict-link" href="pieces/liangzhu-shibaxiangsong.html#cue-13">梁祝 · 十八相送</a> <span data-visible-lang="zh-Hans">「兄弟分别心烦恼」</span><span data-visible-lang="zh-Hant">「兄弟分別心煩惱」</span><span data-visible-lang="en">“Brothers part with troubled hearts”</span></li>
@@ -383,7 +382,7 @@
           </p>
           <p class="live-firstload" data-i18n="speak.firstLoadNote">首次识别需在本机加载模型（约 250MB，约 15–30 秒）；之后可复用缓存。</p>
           <p class="speak-limits" data-i18n="speak.limits">
-            线上识别为 blend-v10 试点。评价与失败分析见「研究」——此处先把声音听懂、接到档案。
+            识别仍在试点阶段。方法与局限见「研究」——此处先听懂、接到档案。
           </p>
 
           <label class="speak-piece">
@@ -486,14 +485,14 @@
               </div>
             </section>
 
-            <!-- Part 2: prosody / emotion when NOT in archive -->
+            <!-- Part 2: vocal expression (experimental acoustic viz) -->
             <section class="speak-path__card speak-path__card--prosody" id="speak-prosody-card" hidden>
               <div class="speak-gist__head">
-                <h3 data-i18n="speak.path.prosodyTitle">② 腔调 · 语调情绪</h3>
-                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">腔调路径</span>
+                <h3 data-i18n="speak.path.prosodyTitle">② 腔调表现</h3>
+                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">表现路径</span>
               </div>
-              <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">用能量、起伏与音色粗估情绪雷达（悲急怒柔亢叹），并列出声学粗指标。与①并列；有录音/上传时计算——不是字级语言学分析。</p>
-              <div class="speak-meter" aria-label="Emotion confidence">
+              <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">实验性声学可视化：用能量、起伏与音色粗绘表现雷达（悲急怒柔亢叹）。不是心理诊断，也不是语言学判定。</p>
+              <div class="speak-meter" aria-label="Vocal expression confidence">
                 <div class="speak-meter__track"><span id="speak-prosody-meter" class="speak-meter__fill speak-meter__fill--warm" style="width:0%"></span></div>
                 <span id="speak-prosody-meter-label" class="speak-meter__label">—</span>
               </div>
@@ -501,7 +500,7 @@
                 <div class="speak-gist__radar-wrap">
                   <svg id="speak-prosody-radar" class="speak-gist__radar" viewBox="0 0 180 180" width="180" height="180" role="img" aria-labelledby="speak-prosody-radar-caption" focusable="false"></svg>
                   <p id="speak-prosody-radar-caption" class="speak-gist__radar-caption"></p>
-                  <p class="speak-prosody-example" data-i18n="speak.path.prosodyExample">例：若显示「急 · 亢」，可能对应剧中争执或激昂的段落。</p>
+                  <p class="speak-prosody-example" data-i18n="speak.path.prosodyExample">例：若显示「急 · 亢」，可能对应剧中争执或激昂的段落——仅供探索，不作定论。</p>
                 </div>
                 <div class="speak-gist__body">
                   <p id="speak-prosody-text" class="speak-gist__text"></p>
@@ -3193,7 +3192,7 @@
       <section class="panel" data-panel="research" aria-hidden="true">
         <header class="section-header">
           <h2 data-i18n="research.title">研究</h2>
-          <p data-i18n="research.lead">公共平台背后的问题、语料、方法与诚实的失败。</p>
+          <p data-i18n="research.lead">公共工具保持简单；方法、语料、CER 与局限在这里。</p>
         </header>
         <div class="research-layout">
           <article class="research-block">
@@ -3848,24 +3847,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826brand2",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826brand2",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826brand2",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826brand2",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826brand2",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826brand2",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826brand2",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826brand2",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826brand2",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826brand2"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826brand3",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826brand3",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826brand3",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826brand3",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826brand3",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826brand3",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826brand3",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826brand3",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826brand3",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826brand3"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826brand2"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826brand2"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826brand2"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826brand2"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826brand2"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826brand2"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826brand3"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826brand3"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826brand3"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826brand3"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826brand3"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826brand3"></script>
 </body>
 </html>
