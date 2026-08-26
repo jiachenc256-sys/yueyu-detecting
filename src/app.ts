@@ -1,11 +1,12 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t } from "./i18n.js";
+import { initI18n, onLocaleChange, t, getLocale } from "./i18n.js";
 
 declare global {
   interface Window {
   __yueyuOpenZiyinLevel?: (lv: number) => void;
   __yueyuOpenQuest?: (gate?: number) => void;
   __yueyuOpenDictionaryQuery?: (q: string) => void;
+  __yueyuActivatePanel?: (target: string) => void;
 }
 }
 
@@ -14,11 +15,30 @@ function initNavigation(): void {
   const navButtons = document.querySelectorAll<HTMLElement>(".site-nav [data-panel-target]");
   const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
 
+  /** Map tool panels to top-nav hubs for aria-current. */
+  const navForPanel: Record<string, string> = {
+    hear: "hear",
+    speak: "hear",
+    language: "language",
+    dictionary: "language",
+    learn: "language",
+    plan: "language",
+    faq: "language",
+    memory: "memory",
+    archive: "memory",
+    tanci: "memory",
+    home: "home",
+    story: "story",
+    research: "research",
+    about: "about",
+  };
+
   function showPanel(target: string | undefined, trigger?: HTMLElement): void {
     if (!target) return;
 
+    const navKey = navForPanel[target] ?? target;
     navButtons.forEach((b) => {
-      if (b.dataset.panelTarget === target) b.setAttribute("aria-current", "page");
+      if (b.dataset.panelTarget === navKey) b.setAttribute("aria-current", "page");
       else b.removeAttribute("aria-current");
     });
 
@@ -43,6 +63,14 @@ function initNavigation(): void {
     }
 
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    const sample = trigger?.dataset.speakOpenSample;
+    if (target === "speak" && sample) {
+      requestAnimationFrame(() => {
+        const btn = document.getElementById(`speak-sample-${sample}`) as HTMLButtonElement | null;
+        btn?.click();
+      });
+    }
   }
 
   triggers.forEach((el) => {
@@ -217,9 +245,17 @@ function showAboutSection(target: string): void {
 }
 
 function openAboutSection(target: string): void {
+  const merged =
+    target === "why" ||
+    target === "solved" ||
+    target === "built" ||
+    target === "learned" ||
+    target === "open"
+      ? "behind"
+      : target;
   document.querySelector<HTMLElement>(`.site-nav [data-panel-target="about"]`)?.click();
-  showAboutSection(target);
-  history.replaceState(null, "", `#about-${target}`);
+  showAboutSection(merged);
+  history.replaceState(null, "", `#about-${merged}`);
 }
 
 function showPlanSection(target: string): void {
@@ -230,7 +266,7 @@ function showPlanSection(target: string): void {
 }
 
 function openLearnFayinLevel(level: number): void {
-  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
+  activatePanel("learn");
   history.replaceState(null, "", `#learn-fayin-l${level}`);
   const tryOpen = (attempt: number): void => {
     if (typeof window.__yueyuOpenZiyinLevel === "function") {
@@ -245,7 +281,7 @@ function openLearnFayinLevel(level: number): void {
 }
 
 function openLearnQuest(gate?: number): void {
-  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
+  activatePanel("learn");
   history.replaceState(null, "", gate != null ? `#learn-quest-l${gate}` : "#learn-quest");
   const tryOpen = (attempt: number): void => {
     if (typeof window.__yueyuOpenQuest === "function") {
@@ -260,12 +296,151 @@ function openLearnQuest(gate?: number): void {
 }
 
 function openSpeakSample(sampleId: string): void {
-  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="speak"]`)?.click();
+  activatePanel("speak");
   history.replaceState(null, "", `#speak-sample-${sampleId}`);
   requestAnimationFrame(() => {
     const btn = document.getElementById(`speak-sample-${sampleId}`) as HTMLButtonElement | null;
     btn?.click();
     btn?.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+}
+
+function activatePanel(target: string): void {
+  const navButtons = document.querySelectorAll<HTMLElement>(".site-nav [data-panel-target]");
+  const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
+  const navForPanel: Record<string, string> = {
+    hear: "hear",
+    speak: "hear",
+    language: "language",
+    dictionary: "language",
+    learn: "language",
+    plan: "language",
+    faq: "language",
+    memory: "memory",
+    archive: "memory",
+    tanci: "memory",
+    home: "home",
+    story: "story",
+    research: "research",
+    about: "about",
+  };
+  const navKey = navForPanel[target] ?? target;
+  navButtons.forEach((b) => {
+    if (b.dataset.panelTarget === navKey) b.setAttribute("aria-current", "page");
+    else b.removeAttribute("aria-current");
+  });
+  panels.forEach((panel) => {
+    panel.setAttribute("aria-hidden", panel.dataset.panel === target ? "false" : "true");
+  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+window.__yueyuActivatePanel = activatePanel;
+
+function openArchiveCategory(category: string, applyArchiveFilter?: (c: string, opts?: { scroll?: boolean }) => void): void {
+  activatePanel("archive");
+  const nextHash = category === "all" ? "archive" : `archive-${category}`;
+  history.replaceState(null, "", `#${nextHash}`);
+  applyArchiveFilter?.(category, { scroll: true });
+}
+
+function initSurpriseMe(): void {
+  const btn = document.getElementById("home-surprise");
+  if (!btn) return;
+
+  const reveal = document.getElementById("home-surprise-reveal");
+
+  const pieceLinks = () =>
+    Array.from(document.querySelectorAll<HTMLAnchorElement>(".archive-grid a.piece-card[href]"));
+
+  const sampleMeta: Record<string, { zh: string; en: string; zhHant: string }> = {
+    liangzhu: { zh: "梁祝 · 十八相送（听说示例）", zhHant: "梁祝 · 十八相送（聽說示例）", en: "Butterfly Lovers · Speak sample" },
+    xianglin: { zh: "祥林嫂 · 心酸话（听说示例）", zhHant: "祥林嫂 · 心酸話（聽說示例）", en: "Xianglin Sao · Speak sample" },
+    jingchai: { zh: "荆钗记（听说示例）", zhHant: "荊釵記（聽說示例）", en: "Jingchai · Speak sample" },
+  };
+
+  const showReveal = (label: string, then: () => void): void => {
+    if (!reveal) {
+      then();
+      return;
+    }
+    reveal.hidden = false;
+    reveal.innerHTML = `<p class="surprise-reveal__kicker">${t("surprise.youFound")}</p><p class="surprise-reveal__title">${label}</p>`;
+    window.setTimeout(() => {
+      reveal.hidden = true;
+      reveal.innerHTML = "";
+      then();
+    }, 1100);
+  };
+
+  const localeLabel = (meta: { zh: string; en: string; zhHant: string }): string => {
+    const loc = getLocale();
+    if (loc === "en") return meta.en;
+    if (loc === "zh-Hant") return meta.zhHant;
+    return meta.zh;
+  };
+
+  btn.addEventListener("click", () => {
+    const roll = Math.floor(Math.random() * 4);
+    if (roll === 0) {
+      const samples = ["liangzhu", "xianglin", "jingchai"] as const;
+      const id = samples[Math.floor(Math.random() * samples.length)]!;
+      const meta = sampleMeta[id]!;
+      showReveal(localeLabel(meta), () => openSpeakSample(id));
+      return;
+    }
+    if (roll === 1) {
+      const links = pieceLinks();
+      if (links.length) {
+        const pick = links[Math.floor(Math.random() * links.length)]!;
+        const title =
+          pick.querySelector("h3, strong, .piece-card__title")?.textContent?.trim() ||
+          pick.getAttribute("aria-label") ||
+          pick.href.split("/").pop() ||
+          "Archive";
+        showReveal(title, () => {
+          window.location.href = pick.href;
+        });
+        return;
+      }
+    }
+    if (roll === 2) {
+      const loc = getLocale();
+      const label =
+        loc === "en" ? "Pearl Tower · tanci page" : loc === "zh-Hant" ? "珍珠塔 · 彈詞頁" : "珍珠塔 · 弹词页";
+      showReveal(label, () => {
+        window.location.href = "pieces/pearl-tower-gift.html";
+      });
+      return;
+    }
+    // Dictionary: prefer chars that have archive examples.
+    const seeds = ["心", "话", "还", "看", "步", "河"];
+    const q = seeds[Math.floor(Math.random() * seeds.length)]!;
+    const loc = getLocale();
+    const dictLabel = loc === "en" ? `Dictionary · ${q}` : loc === "zh-Hant" ? `詞典 · ${q}` : `词典 · ${q}`;
+    showReveal(dictLabel, () => {
+      history.replaceState(null, "", `#dict-q-${encodeURIComponent(q)}`);
+      activatePanel("dictionary");
+      const tryOpen = (attempt: number): void => {
+        if (typeof window.__yueyuOpenDictionaryQuery === "function") {
+          window.__yueyuOpenDictionaryQuery(q);
+          return;
+        }
+        if (attempt < 40) window.setTimeout(() => tryOpen(attempt + 1), 50);
+      };
+      requestAnimationFrame(() => tryOpen(0));
+    });
+  });
+}
+
+function initArchiveDeepLinks(applyArchiveFilter: (c: string, opts?: { scroll?: boolean }) => void): void {
+  document.querySelectorAll<HTMLElement>("[data-archive-open]").forEach((el) => {
+    el.addEventListener("click", (event) => {
+      const category = el.dataset.archiveOpen;
+      if (!category) return;
+      event.preventDefault();
+      openArchiveCategory(category, applyArchiveFilter);
+    });
   });
 }
 
@@ -355,20 +530,20 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
         `#archive-${filterCat === "speakers" ? "speakers" : catMatch[1]}`,
       );
     }
-    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="archive"]`)?.click();
+    activatePanel("archive");
     applyArchiveFilter(filterCat, { scroll: true });
     return;
   }
 
   const planMatch = /^plan-([a-z]+)$/.exec(hash);
   if (planMatch) {
-    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="plan"]`)?.click();
+    activatePanel("plan");
     showPlanSection(planMatch[1]!);
     return;
   }
 
   if (hash === "learn-ipa") {
-    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="learn"]`)?.click();
+    activatePanel("learn");
     document.querySelector<HTMLButtonElement>(`.learn-nav__link[data-learn-target="ipa"]`)?.click();
     return;
   }
@@ -381,7 +556,7 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
     } catch {
       /* keep raw */
     }
-    document.querySelector<HTMLElement>(`.site-nav [data-panel-target="dictionary"]`)?.click();
+    activatePanel("dictionary");
     window.__yueyuOpenDictionaryQuery?.(q);
     return;
   }
@@ -408,7 +583,9 @@ function applyHashRoute(applyArchiveFilter: (category: string, opts?: { scroll?:
     return;
   }
 
-  document.querySelector<HTMLElement>(`.site-nav [data-panel-target="${hash}"]`)?.click();
+  const navBtn = document.querySelector<HTMLElement>(`.site-nav [data-panel-target="${hash}"]`);
+  if (navBtn) navBtn.click();
+  else activatePanel(hash);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -422,6 +599,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initAboutDeepLinks();
   initFeedbackForm();
   const applyArchiveFilter = initArchiveFilters();
+  initSurpriseMe();
+  initArchiveDeepLinks(applyArchiveFilter);
 
   applyHashRoute(applyArchiveFilter);
   window.addEventListener("hashchange", () => applyHashRoute(applyArchiveFilter));

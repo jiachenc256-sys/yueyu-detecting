@@ -180,6 +180,27 @@ body[data-text-only="true"] .viewer-player__text-only {
   border-radius: var(--radius-md);
 }
 
+.viewer-related {
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.viewer-related__title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+.viewer-related__links {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-ink-muted);
+}
+
 body[data-audio-missing="true"] .viewer-player audio {
   opacity: 0.45;
 }

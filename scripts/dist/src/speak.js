@@ -1,8 +1,8 @@
-import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260826en2";
-import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260826en2";
-import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260826en2";
-import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260826en2";
-import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260826en2";
+import { getLocale, onLocaleChange, t, tf } from "./i18n.js?v=20260826alive2";
+import { analyzeGist, getPieceRadarAxes, loadLyricIndex, loadPinyinMap, loadPieceRadar, loadSceneCards, localizeThemeAxes, } from "./speak-gist.js?v=20260826alive2";
+import { analyzeProsodyFromUrl, EMOTION_AXES, } from "./speak-prosody.js?v=20260826alive2";
+import { fingerprintFromAudioUrl, loadFingerprintIndex, matchFingerprint, } from "./speak-fingerprint.js?v=20260826alive2";
+import { composeLinguisticNote, loadCueSpeakers, loadPieceLinguistics, } from "./speak-linguistics.js?v=20260826alive2";
 const TRANSFORMERS_CDN = "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 const LOCAL_MODEL_ID = "yueyu-whisper-small-onnx";
 /** Bigram Jaccard vs archive — above this ⇒ treat as archive hit. */
@@ -60,9 +60,16 @@ let lastLingNote = null;
 let mediaStream = null;
 let mediaRecorder = null;
 let recordedChunks = [];
-function setStatus(text) {
-    if (statusEl)
+function setStatus(text, opts) {
+    if (statusEl) {
         statusEl.textContent = text;
+        if (opts?.busy !== undefined) {
+            statusEl.classList.toggle("speak-status--busy", opts.busy);
+        }
+    }
+}
+function setBusy(busy) {
+    statusEl?.classList.toggle("speak-status--busy", busy);
 }
 /** Absolute URL to assets/asr/<model>/ on this site. */
 function modelBaseHref() {
@@ -798,6 +805,7 @@ async function recognizeBlob(blob, label) {
         return;
     }
     asrBusy = true;
+    setBusy(true);
     setSampleButtonsDisabled(true);
     try {
         if (previewObjectUrl) {
@@ -844,6 +852,7 @@ async function recognizeBlob(blob, label) {
     }
     finally {
         asrBusy = false;
+        setBusy(false);
         setSampleButtonsDisabled(false);
     }
 }
