@@ -283,6 +283,15 @@ html[data-theme="light"] #speak-recognized {
   max-width: 48rem;
 }
 
+.speak-now {
+  margin: 0;
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-ink);
+  line-height: var(--leading-relaxed);
+  max-width: 48rem;
+}
+
 .speak-demo-path {
   margin: 0.35rem 0 0;
   padding: 0.65rem 0.85rem;
