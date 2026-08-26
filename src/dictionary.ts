@@ -386,6 +386,56 @@ function bindPrimerDictLinks(): void {
   });
 }
 
+let ipaAudio: HTMLAudioElement | null = null;
+
+function playIpaChar(han: string, btn?: HTMLButtonElement): void {
+  const ch = han.trim();
+  if (!ch) return;
+  if (!audioHans.has(ch)) {
+    const status = document.getElementById("dict-status");
+    // Prefer a brief flash on the button title; status only if on dictionary.
+    if (btn) btn.title = t("learn.ipa.listenFail");
+    return;
+  }
+  if (ipaAudio) {
+    ipaAudio.pause();
+    ipaAudio = null;
+  }
+  const audio = new Audio(audioUrlFor(ch));
+  ipaAudio = audio;
+  void audio.play().catch(() => {
+    if (btn) btn.title = t("learn.ipa.listenFail");
+  });
+}
+
+function bindIpaAudioButtons(): void {
+  document.querySelectorAll<HTMLButtonElement>("[data-ipa-audio]").forEach((btn) => {
+    if (btn.dataset.ipaAudioBound === "1") return;
+    btn.dataset.ipaAudioBound = "1";
+    // Disable if we already know the index and clip is missing (after boot).
+    const han = btn.dataset.ipaAudio ?? "";
+    if (dictReady && han && !audioHans.has(han)) {
+      btn.disabled = true;
+      btn.title = t("learn.ipa.listenFail");
+    }
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      playIpaChar(btn.dataset.ipaAudio ?? "", btn);
+    });
+  });
+}
+
+function refreshIpaAudioAvailability(): void {
+  document.querySelectorAll<HTMLButtonElement>("[data-ipa-audio]").forEach((btn) => {
+    const han = btn.dataset.ipaAudio ?? "";
+    if (!han) return;
+    const ok = audioHans.has(han);
+    btn.disabled = !ok;
+    btn.title = ok ? `${t("learn.ipa.listen")}「${han}」` : t("learn.ipa.listenFail");
+  });
+}
+
 function mergeBookChars(book: BookChar[], ziyin: ZiyinItem[]): DictChar[] {
   const byHan = new Map<string, ZiyinItem>();
   for (const z of ziyin) {
@@ -439,6 +489,7 @@ async function boot(): Promise<void> {
   }
   renderSceneChips();
   dictReady = true;
+  refreshIpaAudioAvailability();
   if (pendingQuery) {
     const q = pendingQuery;
     pendingQuery = null;
@@ -451,16 +502,11 @@ async function boot(): Promise<void> {
   }
 }
 
-declare global {
-  interface Window {
-    __yueyuOpenDictionaryQuery?: (q: string) => void;
-  }
-}
-
 window.__yueyuOpenDictionaryQuery = openDictionaryQuery;
 
 document.addEventListener("DOMContentLoaded", () => {
   bindPrimerDictLinks();
+  bindIpaAudioButtons();
   const input = document.getElementById("dict-query") as HTMLInputElement | null;
   input?.addEventListener("input", () => {
     highlightQuery = "";
@@ -470,6 +516,8 @@ document.addEventListener("DOMContentLoaded", () => {
     renderSceneChips();
     applyQuery();
     bindPrimerDictLinks();
+    bindIpaAudioButtons();
+    refreshIpaAudioAvailability();
   });
   void boot().catch((error) => {
     const status = document.getElementById("dict-status");

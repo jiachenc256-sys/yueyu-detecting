@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826dict2" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826dict2" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826dict2" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826dict2" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826dict2" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826dict2" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826dict2" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826audio1" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826audio1" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826audio1" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826audio1" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826audio1" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826audio1" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826audio1" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -1930,6 +1930,45 @@
                 <button type="button" class="dict-link learn-primer__dict-link" data-dict-open="多">多</button>
                 <button type="button" class="dict-link learn-primer__dict-link" data-dict-open="拖">拖</button>
               </p>
+              <div class="learn-primer__listen-strip" aria-label="Shengzhou audio demos">
+                <span class="learn-primer__listen-label" data-i18n="learn.ipa.listenStrip">先听嵊州单字（现成录音）：</span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="木" data-i18n="learn.ipa.listen">听</button>
+                  <span>木 · 入声</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="吃" data-i18n="learn.ipa.listen">听</button>
+                  <span>吃 · 送气入声</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="多" data-i18n="learn.ipa.listen">听</button>
+                  <span>多</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="拖" data-i18n="learn.ipa.listen">听</button>
+                  <span>拖 · 送气</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="田" data-i18n="learn.ipa.listen">听</button>
+                  <span>田 · 浊音</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="山" data-i18n="learn.ipa.listen">听</button>
+                  <span>山 · 鼻化</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="饭" data-i18n="learn.ipa.listen">听</button>
+                  <span>饭 · 鼻化</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="落" data-i18n="learn.ipa.listen">听</button>
+                  <span>落 · 入声</span>
+                </span>
+                <span class="learn-primer__listen-item">
+                  <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="雨" data-i18n="learn.ipa.listen">听</button>
+                  <span>雨</span>
+                </span>
+              </div>
 
               <div class="learn-primer learn-primer--ipa" data-visible-lang="zh-Hans">
                 <h4>前言</h4>
@@ -2139,11 +2178,11 @@
                   <tbody>
                     <tr><td>太阳（示意）</td><td><code>tʰa³³ iaŋ³³</code></td><td><code>tʰ</code>+<code>a</code>+<code>³³</code>｜<code>i</code>+<code>aŋ</code>+<code>³³</code></td><td>两拍都平</td></tr>
                     <tr><td>月亮（示意）</td><td><code>ioʔ² liaŋ²³¹</code></td><td><code>io</code>+<code>ʔ²</code>｜<code>l</code>+<code>iaŋ</code>+<code>²³¹</code></td><td>短促 + 曲折</td></tr>
-                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃">吃</button></td><td><code>tɕʰieʔ⁵</code></td><td><code>tɕʰ</code>+<code>ie</code>+<code>ʔ⁵</code></td><td>极短高「切」</td></tr>
-                    <tr><td>落雨（示意）</td><td><code>loʔ² y²²³</code></td><td><code>lo</code>+<code>ʔ²</code>｜<code>y</code>+<code>²²³</code></td><td>短低 + 低低升</td></tr>
-                    <tr class="learn-primer__table-row--focus"><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="木头">木头</button>（本站）</td><td><code>moʔ² dɤ²³¹</code></td><td><code>m</code>+<code>o</code>+<code>ʔ²</code>｜<code>d</code>+<code>ɤ</code>+<code>²³¹</code></td><td>入声 + 浊音曲折</td></tr>
-                    <tr class="learn-primer__table-row--focus"><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃早饭">吃早饭</button>（本站）</td><td><code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></td><td><code>tɕʰieʔ⁵</code>｜<code>tsɔ³³</code>｜<code>ʋɛ̃³¹</code></td><td>高入 + 中平 + 鼻化降</td></tr>
-                    <tr class="learn-primer__table-row--focus"><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="多">多</button> / <button type="button" class="dict-link learn-primer__dict-link" data-dict-open="拖">拖</button>（本站）</td><td><code>to534</code> / <code>t'ho534文</code></td><td>同调 <code>534</code>；拖多 <code>'</code>/<code>h</code> 送气</td><td>对照听录音</td></tr>
+                    <tr><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃">吃</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="吃" data-i18n="learn.ipa.listen">听</button></td><td><code>tɕʰieʔ⁵</code></td><td><code>tɕʰ</code>+<code>ie</code>+<code>ʔ⁵</code></td><td>极短高「切」</td></tr>
+                    <tr><td>落雨（示意） <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="落" data-i18n="learn.ipa.listen">听</button>落 <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="雨" data-i18n="learn.ipa.listen">听</button>雨</td><td><code>loʔ² y²²³</code></td><td><code>lo</code>+<code>ʔ²</code>｜<code>y</code>+<code>²²³</code></td><td>短低 + 低低升</td></tr>
+                    <tr class="learn-primer__table-row--focus"><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="木头">木头</button>（本站） <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="木" data-i18n="learn.ipa.listen">听</button>木</td><td><code>moʔ² dɤ²³¹</code></td><td><code>m</code>+<code>o</code>+<code>ʔ²</code>｜<code>d</code>+<code>ɤ</code>+<code>²³¹</code></td><td>入声 + 浊音曲折</td></tr>
+                    <tr class="learn-primer__table-row--focus"><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="吃早饭">吃早饭</button>（本站） <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="吃" data-i18n="learn.ipa.listen">听</button>吃 <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="饭" data-i18n="learn.ipa.listen">听</button>饭</td><td><code>tɕʰieʔ⁵ tsɔ³³ ʋɛ̃³¹</code></td><td><code>tɕʰieʔ⁵</code>｜<code>tsɔ³³</code>｜<code>ʋɛ̃³¹</code></td><td>高入 + 中平 + 鼻化降</td></tr>
+                    <tr class="learn-primer__table-row--focus"><td><button type="button" class="dict-link learn-primer__dict-link" data-dict-open="多">多</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="多" data-i18n="learn.ipa.listen">听</button> / <button type="button" class="dict-link learn-primer__dict-link" data-dict-open="拖">拖</button> <button type="button" class="speak-btn learn-primer__listen-btn" data-ipa-audio="拖" data-i18n="learn.ipa.listen">听</button>（本站）</td><td><code>to534</code> / <code>t'ho534文</code></td><td>同调 <code>534</code>；拖多 <code>'</code>/<code>h</code> 送气</td><td>对照听录音</td></tr>
                   </tbody>
                 </table>
                 </div>
@@ -3447,24 +3486,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826dict2",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826dict2",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826dict2",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826dict2",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826dict2",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826dict2",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826dict2",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826dict2",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826dict2",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826dict2"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826audio1",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826audio1",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826audio1",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826audio1",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826audio1",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826audio1",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826audio1",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826audio1",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826audio1",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826audio1"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826dict2"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826dict2"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826dict2"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826dict2"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826dict2"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826dict2"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826audio1"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826audio1"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826audio1"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826audio1"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826audio1"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826audio1"></script>
 </body>
 </html>
