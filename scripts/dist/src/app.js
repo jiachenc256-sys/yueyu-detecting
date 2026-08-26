@@ -1,5 +1,5 @@
 import { initA11y } from "./a11y.js";
-import { initI18n, onLocaleChange, t, getLocale } from "./i18n.js?v=20260826panelsok";
+import { initI18n, onLocaleChange, t, getLocale } from "./i18n.js?v=20260826last";
 function unnestTrappedPanels() {
     const main = document.getElementById("main-content") ?? document.querySelector("main");
     if (!main)

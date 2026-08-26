@@ -2118,6 +2118,16 @@ body {
   color: var(--color-ink-faint);
 }
 
+.hub-connect--secondary {
+  margin-top: var(--space-2);
+  opacity: 0.78;
+  font-size: var(--text-xs);
+}
+
+.panel[data-panel="hear"] .hub-next {
+  opacity: 0.72;
+}
+
 @media (max-width: 700px) {
   .how-steps {
     grid-template-columns: 1fr;
