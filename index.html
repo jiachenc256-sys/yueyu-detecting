@@ -20,6 +20,27 @@
       } catch (e) {}
     })();
   </script>
+  <script>
+    /* Un-nest hub panels if an earlier build left them inside a hidden Speak section. */
+    document.addEventListener("DOMContentLoaded", function () {
+      var main = document.getElementById("main-content") || document.querySelector("main");
+      if (!main) return;
+      var trapped = main.querySelectorAll(".panel[data-panel] .panel[data-panel]");
+      if (!trapped.length) return;
+      var host = null;
+      var cur = trapped[0].parentElement;
+      while (cur && cur !== main) {
+        if (cur.classList && cur.classList.contains("panel") && cur.getAttribute("data-panel")) host = cur;
+        cur = cur.parentElement;
+      }
+      if (!host) return;
+      var ref = host;
+      for (var i = 0; i < trapped.length; i++) {
+        ref.after(trapped[i]);
+        ref = trapped[i];
+      }
+    });
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
