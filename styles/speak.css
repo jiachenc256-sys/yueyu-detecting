@@ -617,9 +617,25 @@ a.speak-btn {
   background: color-mix(in srgb, var(--color-paper-raised) 88%, #f3e6dc);
 }
 
+.speak-path__card--secondary {
+  box-shadow: none;
+  opacity: 0.92;
+  border-style: dashed;
+  background: color-mix(in srgb, var(--color-paper) 70%, var(--color-paper-raised));
+}
+
+.speak-path__card--secondary .speak-gist__head h3 {
+  font-size: var(--text-base);
+  color: var(--color-ink-muted);
+}
+
 html[data-theme="dark"] .speak-path__card--prosody {
   background: color-mix(in srgb, var(--color-paper-raised) 92%, #5a4030);
   border-color: color-mix(in srgb, #e0c4b4 40%, var(--color-border));
+}
+
+html[data-theme="dark"] .speak-path__card--secondary {
+  background: color-mix(in srgb, var(--color-paper-raised) 96%, #3a322c);
 }
 
 /* Archive gist + theme radar */

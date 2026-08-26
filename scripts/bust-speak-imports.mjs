@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const V = process.env.SPEAK_ASSET_V || "20260826waveab";
+const V = process.env.SPEAK_ASSET_V || "20260826wavecd";
 const files = ["scripts/dist/src/speak.js", "scripts/dist/src/app.js"];
 const targets = ["i18n.js", "speak-gist.js", "speak-prosody.js", "speak-fingerprint.js", "speak-linguistics.js"];
 
