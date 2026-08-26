@@ -1142,7 +1142,7 @@ const en = {
     "learn.nav.fayin": "Pronunciation",
     "learn.nav.ziyin": "Pronunciation",
     "learn.ipa.title": "Notation primer",
-    "learn.ipa.lead": "One symbol per chart row: diacritics, vowels, consonants, tones, site marks—then worked examples.",
+    "learn.ipa.lead": "English-first charts: mouth shape + English near-sounds (little Mandarin needed), then Play clips and worked examples.",
     "learn.ipa.dictJump": "Open these on-site examples in the dictionary:",
     "learn.ipa.listenStrip": "Hear Shengzhou characters (existing clips):",
     "learn.ipa.listen": "Play",
