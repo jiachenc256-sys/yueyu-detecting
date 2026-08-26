@@ -22,13 +22,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/tokens.css?v=20260826micro" />
-  <link rel="stylesheet" href="styles/main.css?v=20260826micro" />
-  <link rel="stylesheet" href="styles/a11y.css?v=20260826micro" />
-  <link rel="stylesheet" href="styles/speak.css?v=20260826micro" />
-  <link rel="stylesheet" href="styles/tanci.css?v=20260826micro" />
-  <link rel="stylesheet" href="styles/learn.css?v=20260826micro" />
-  <link rel="stylesheet" href="styles/dictionary.css?v=20260826micro" />
+  <link rel="stylesheet" href="styles/tokens.css?v=20260826micro2" />
+  <link rel="stylesheet" href="styles/main.css?v=20260826micro2" />
+  <link rel="stylesheet" href="styles/a11y.css?v=20260826micro2" />
+  <link rel="stylesheet" href="styles/speak.css?v=20260826micro2" />
+  <link rel="stylesheet" href="styles/tanci.css?v=20260826micro2" />
+  <link rel="stylesheet" href="styles/learn.css?v=20260826micro2" />
+  <link rel="stylesheet" href="styles/dictionary.css?v=20260826micro2" />
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳到主要内容</a>
@@ -259,11 +259,12 @@
           </p>
         </div>
 
-        <p class="hub-more-label" data-i18n="hub.hear.moreLabel">还想继续</p>
-        <p class="hub-connect hub-connect--more">
-          <button type="button" class="dict-link" data-panel-target="speak" data-i18n="hub.hear.speakTitle">听说（麦克风／上传）→</button>
+        <p class="hub-next">
+          <span class="hub-next__label" data-i18n="hub.hear.moreLabel">继续探索</span>
+          <span class="hub-next__arrow" aria-hidden="true">→</span>
+          <button type="button" class="dict-link" data-panel-target="speak" data-i18n="hub.hear.speakTitle">听说</button>
           <span aria-hidden="true">·</span>
-          <button type="button" class="dict-link" data-archive-open="yueju" data-i18n="hub.hear.operaTitle">越剧选段 →</button>
+          <button type="button" class="dict-link" data-archive-open="yueju" data-i18n="hub.hear.operaTitle">越剧选段</button>
         </p>
       </section>
 
@@ -577,8 +578,8 @@
             <!-- Part 2: vocal expression (experimental — secondary) -->
             <section class="speak-path__card speak-path__card--prosody speak-path__card--secondary" id="speak-prosody-card" hidden>
               <div class="speak-gist__head">
-                <h3 data-i18n="speak.path.prosodyTitle">② 腔调表现</h3>
-                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--gist" data-i18n="speak.path.prosodyBadge">实验性 · 次要</span>
+                <h3 data-i18n="speak.path.prosodyTitle">腔调表现</h3>
+                <span id="speak-prosody-badge" class="speak-gist__badge speak-gist__badge--quiet" data-i18n="speak.path.prosodyBadge">实验性 · 次要</span>
               </div>
               <p class="speak-panel__hint" data-i18n="speak.path.prosodyHint">实验性声学可视化：用能量、起伏与音色粗绘表现雷达。标签（悲／急／怒／柔／亢／叹）仅为探索性示意，不是心理诊断或语言学判定。</p>
               <div class="speak-meter" aria-label="Vocal expression confidence">
@@ -3510,24 +3511,24 @@
   <script type="importmap">
   {
     "imports": {
-      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826micro",
-      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826micro",
-      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826micro",
-      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826micro",
-      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826micro",
-      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826micro",
-      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826micro",
-      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826micro",
-      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826micro",
-      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826micro"
+      "./scripts/dist/src/i18n.js": "./scripts/dist/src/i18n.js?v=20260826micro2",
+      "./scripts/dist/src/speak-gist.js": "./scripts/dist/src/speak-gist.js?v=20260826micro2",
+      "./scripts/dist/src/speak-prosody.js": "./scripts/dist/src/speak-prosody.js?v=20260826micro2",
+      "./scripts/dist/src/speak-fingerprint.js": "./scripts/dist/src/speak-fingerprint.js?v=20260826micro2",
+      "/scripts/dist/src/i18n.js": "/scripts/dist/src/i18n.js?v=20260826micro2",
+      "/scripts/dist/src/speak-gist.js": "/scripts/dist/src/speak-gist.js?v=20260826micro2",
+      "/scripts/dist/src/speak-prosody.js": "/scripts/dist/src/speak-prosody.js?v=20260826micro2",
+      "/scripts/dist/src/speak-fingerprint.js": "/scripts/dist/src/speak-fingerprint.js?v=20260826micro2",
+      "./scripts/dist/src/speak-linguistics.js": "./scripts/dist/src/speak-linguistics.js?v=20260826micro2",
+      "/scripts/dist/src/speak-linguistics.js": "/scripts/dist/src/speak-linguistics.js?v=20260826micro2"
     }
   }
   </script>
-  <script type="module" src="scripts/dist/src/app.js?v=20260826micro"></script>
-  <script type="module" src="scripts/dist/src/speak.js?v=20260826micro"></script>
-  <script type="module" src="scripts/dist/src/tanci.js?v=20260826micro"></script>
-  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826micro"></script>
-  <script type="module" src="scripts/dist/src/faq.js?v=20260826micro"></script>
-  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826micro"></script>
+  <script type="module" src="scripts/dist/src/app.js?v=20260826micro2"></script>
+  <script type="module" src="scripts/dist/src/speak.js?v=20260826micro2"></script>
+  <script type="module" src="scripts/dist/src/tanci.js?v=20260826micro2"></script>
+  <script type="module" src="scripts/dist/src/ziyin.js?v=20260826micro2"></script>
+  <script type="module" src="scripts/dist/src/faq.js?v=20260826micro2"></script>
+  <script type="module" src="scripts/dist/src/dictionary.js?v=20260826micro2"></script>
 </body>
 </html>
