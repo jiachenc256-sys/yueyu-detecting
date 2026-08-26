@@ -1945,9 +1945,19 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-2) var(--space-3);
-  margin: var(--space-8) 0 0;
-  font-size: var(--text-sm);
+  margin: var(--space-10) 0 0;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
   color: var(--color-ink-faint);
+}
+
+.home-quiet-links .dict-link {
+  color: var(--color-ink-faint);
+  font-weight: 500;
+}
+
+.home-quiet-links .dict-link:hover {
+  color: var(--color-accent);
 }
 
 .hub-faq-link {
