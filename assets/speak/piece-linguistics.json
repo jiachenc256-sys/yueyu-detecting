@@ -9,8 +9,8 @@
       "registerEn": "Exile, survival, recognition: wide narrative span, grief beside reunion.",
       "rolesZh": "刘知远一线 · 李三娘一线",
       "rolesEn": "Liu Zhiyuan line · Li Sanniang line",
-      "listenZh": "先定场景（寒夜 / 奔波 / 团聚），再对唱词；未见全剧时 CER 会偏高属预期。",
-      "listenEn": "Anchor scene (cold night / road / reunion) first; higher CER on unseen stretches is expected."
+      "listenZh": "先定场景（寒夜 / 奔波 / 团聚），再对唱词；未见全剧时 字级不准属预期。",
+      "listenEn": "Anchor scene (cold night / road / reunion) first; imperfect matches on unseen stretches are expected."
     },
     "biyu-zan-xinfang": {
       "genreZh": "越剧 · 碧玉簪 · 新房",
@@ -29,8 +29,8 @@
       "registerEn": "Palace entry: status unsettled; probing more than saying; careful address.",
       "rolesZh": "穿越女主 · 皇子线初遇",
       "rolesEn": "Time-cross heroine · early prince line",
-      "listenZh": "抓初见称呼与试探句；场景未稳时 CER 偏高正常。",
-      "listenEn": "Track first-meeting address and probing lines; high CER before scene lock is normal."
+      "listenZh": "抓初见称呼与试探句；场景未稳时 字级不准正常。",
+      "listenEn": "Track first-meeting address and probing lines; imperfect matches before scene lock are normal."
     },
     "bubuxinjing-2": {
       "genreZh": "清宫传奇 · 步步惊心 · 第二场",

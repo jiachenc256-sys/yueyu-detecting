@@ -43,14 +43,14 @@
     {
       "id": "q3",
       "q": {
-        "zh": "「听说」页如何工作？首次加载 Whisper 要多久？",
-        "en": "How does Speak work, and what about the first Whisper download?",
-        "zhHant": "「聽說」頁如何工作？首次載入 Whisper 要多久？"
+        "zh": "「听说」页如何工作？首次使用要等多久？",
+        "en": "How does Speak work, and what about the first visit?",
+        "zhHant": "「聽說」頁如何工作？首次使用要等多久？"
       },
       "a": {
-        "zh": "麦克风与上传统一走设备端 Whisper（越语适配 blend-v10；首次需加载约 250MB 本地权重，之后可复用缓存）。识别完成后，译文经 MyMemory 接口生成（无需本站 API 密钥）。当前对越语 / 舞台方言仍是基线演示，准确度会随档案语料积累而提升；请用清晰、较短的片段或「试试示例」。",
-        "en": "Mic and uploads both use on-device Whisper (Yueyu-adapted blend-v10; first visit loads ~250MB local weights, then the cache can be reused). After recognition, translations come from MyMemory (no API key on this site). Yueyu / stage-dialect accuracy is still a baseline demo and should improve as the archive corpus grows; prefer clear, short clips or Try sample.",
-        "zhHant": "麥克風與上傳統一走設備端 Whisper（越語適配 blend-v10；首次需載入約 250MB 本地權重，之後可復用快取）。識別完成後，譯文經 MyMemory 接口生成（無需本站 API 密鑰）。當前對越語 / 舞臺方言仍是基線演示，準確度會隨檔案語料積累而提升；請用清晰、較短的片段或「試試示例」。"
+        "zh": "麦克风与上传都在浏览器内完成识别（首次会下载并缓存识别工具，之后更快）。识别后会生成简/繁/英对照。当前仍是试点：越语／舞台方言准确度会随档案积累提升；请用清晰短片段或「试试示例」。详细方法见「研究」。",
+        "en": "Mic and uploads both run recognition in the browser (first visit downloads and caches the recognition tools; later visits are faster). Translations then appear in Simplified / Traditional / English. Accuracy for Yueyu / stage dialect is still a pilot and should improve as the archive grows—prefer clear short clips or Try sample. Methods live under Research.",
+        "zhHant": "麥克風與上傳都在瀏覽器內完成識別（首次會下載並快取識別工具，之後更快）。識別後會生成簡/繁/英對照。當前仍是試點：越語／舞臺方言準確度會隨檔案積累提升；請用清晰短片段或「試試示例」。詳細方法見「研究」。"
       }
     },
     {
@@ -113,9 +113,9 @@
         "zhHant": "技術棧是什麼？"
       },
       "a": {
-        "zh": "前端为静态 HTML/CSS 与 TypeScript（ES modules），经 Node 工具校验后可部署到 GitHub Pages 一类静态托管。上传识别使用设备端 Whisper；译文使用 MyMemory（无本站密钥）。另有 Ajv 模式校验、opencc-js 简繁转换，以及可选的 OCR 服务地址（见配置，密钥不进前端）。识别与翻译均为基线能力，不是专用越语商用引擎。",
-        "en": "The frontend is static HTML/CSS and TypeScript (ES modules), validated with Node tooling and deployable to hosts such as GitHub Pages. Upload ASR uses on-device Whisper; translation uses MyMemory (no site-held API key). The stack also uses Ajv schema checks, opencc-js for script conversion, and an optional OCR service URL in config (secrets stay off the frontend). ASR and translation are baseline capabilities, not a dedicated commercial Yueyu engine.",
-        "zhHant": "前端爲靜態 HTML/CSS 與 TypeScript（ES modules），經 Node 工具校驗後可部署到 GitHub Pages 一類靜態託管。上傳識別使用設備端 Whisper；譯文使用 MyMemory（無本站密鑰）。另有 Ajv 模式校驗、opencc-js 簡繁轉換，以及可選的 OCR 服務地址（見配置，密鑰不進前端）。識別與翻譯均爲基線能力，不是專用越語商用引擎。"
+        "zh": "前端为静态 HTML/CSS 与 TypeScript，可部署到静态托管。识别在浏览器内完成；译文经第三方翻译接口生成（本站不存密钥）。另有简繁转换与可选纸页识字服务。识别与翻译均为试点能力，不是专用越语商用引擎。方法细节见「研究」。",
+        "en": "The frontend is static HTML/CSS and TypeScript, deployable to static hosts. Recognition runs in the browser; translations use a third-party API (no site-held keys). Script conversion and optional page-text reading are available. Recognition and translation are pilot tools, not a commercial Yueyu engine. Methods live under Research.",
+        "zhHant": "前端爲靜態 HTML/CSS 與 TypeScript，可部署到靜態託管。識別在瀏覽器內完成；譯文經第三方翻譯接口生成（本站不存密鑰）。另有簡繁轉換與可選紙頁識字服務。識別與翻譯均爲試點能力，不是專用越語商用引擎。方法細節見「研究」。"
       }
     },
     {
