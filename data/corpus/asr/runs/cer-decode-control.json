@@ -1,0 +1,574 @@
+{
+  "schema": "cer-decode-control",
+  "backend": "openai-whisper",
+  "model": "small",
+  "device": "cpu",
+  "nTest": 27,
+  "manifest": "data/corpus/asr/gold-clips-v8-eval-oldholdout.jsonl",
+  "clipsDir": "data/corpus/asr/clips",
+  "note": "greedy_loop: temperature=0, no compression/logprob fallback. default_hygiene: whisper.transcribe() defaults (temperature fallback). CER after OpenCC t2s. exactMatch ~0 is expected on Yueju.",
+  "greedy_loop": {
+    "arm": "greedy_loop",
+    "n": 27,
+    "meanCerRaw": 3.3915343915343916,
+    "medianCerRaw": 1.125,
+    "maxCerRaw": 31.857142857142858,
+    "runawayLoops_ge200chars": 1,
+    "lengthConform_pm20pct": 0.3333333333333333,
+    "exactMatchRate": 0.0,
+    "items": [
+      {
+        "id": "he-wenxiu-suanming-10",
+        "ref": "待我掐指细推算",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-11",
+        "ref": "其中奥妙不一般",
+        "hyp": "字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君的字幕君",
+        "cerRaw": 31.857142857142858,
+        "hypChars": 223,
+        "runaway_ge200chars": true,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-2",
+        "ref": "尊一声大娘听端详",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-3",
+        "ref": "小人算命走四方",
+        "hyp": "謝謝三 弄手一起啊請走 請走謝謝三",
+        "cerRaw": 2.2857142857142856,
+        "hypChars": 17,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-4",
+        "ref": "不知大娘有何疑难事",
+        "hyp": "請幫忙,請幫忙叮叮叮請幫忙對請幫忙,請幫忙請幫忙",
+        "cerRaw": 2.6666666666666665,
+        "hypChars": 24,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-5",
+        "ref": "说来与我细商量",
+        "hyp": "字幕君君",
+        "cerRaw": 1.0,
+        "hypChars": 4,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-6",
+        "ref": "尊一声先生听我言",
+        "hyp": "我一不回家而不哄我再走",
+        "cerRaw": 1.125,
+        "hypChars": 11,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-7",
+        "ref": "家中有事费疑难",
+        "hyp": "我明明在說媽媽聽到現在你要這樣這樣是老的這個社群",
+        "cerRaw": 3.4285714285714284,
+        "hypChars": 24,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-8",
+        "ref": "我把生辰八字报",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-9",
+        "ref": "望求先生仔细看",
+        "hyp": "字幕君歌",
+        "cerRaw": 1.0,
+        "hypChars": 4,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-10",
+        "ref": "满腹苦水向谁诉",
+        "hyp": "在你恆星載的兩目的馬上見",
+        "cerRaw": 1.7142857142857142,
+        "hypChars": 12,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-11",
+        "ref": "泪湿衣襟心如麻",
+        "hyp": "小姐姐,我愛你",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-12",
+        "ref": "阿毛啊，我的阿毛",
+        "hyp": "我係白天 又係冇冇我過意你嘅快",
+        "cerRaw": 1.75,
+        "hypChars": 15,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-13",
+        "ref": "狼衔了你去再不见",
+        "hyp": "見老羅的最後再見他又是腦海又是婚",
+        "cerRaw": 1.875,
+        "hypChars": 16,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-14",
+        "ref": "四叔四婶冷眼看",
+        "hyp": "字幕君唱",
+        "cerRaw": 1.0,
+        "hypChars": 4,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-15",
+        "ref": "捐门槛也洗不清",
+        "hyp": "阿輝有家庫要拿阿輝拿要賠",
+        "cerRaw": 1.7142857142857142,
+        "hypChars": 12,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-16",
+        "ref": "人间何处容我身",
+        "hyp": "与我天辈 非证实 此夜买恋女",
+        "cerRaw": 2.0,
+        "hypChars": 14,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-17",
+        "ref": "苦命人儿泪成河",
+        "hyp": "這就是我的",
+        "cerRaw": 1.0,
+        "hypChars": 5,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-18",
+        "ref": "诉不尽这心酸话",
+        "hyp": "音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培 音培",
+        "cerRaw": 23.857142857142858,
+        "hypChars": 167,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-2",
+        "ref": "听他一番心酸话",
+        "hyp": "聽他",
+        "cerRaw": 0.7142857142857143,
+        "hypChars": 2,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-3",
+        "ref": "不由我珠泪往下洒",
+        "hyp": "那一番 心酸 我的江",
+        "cerRaw": 1.25,
+        "hypChars": 10,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-4",
+        "ref": "想我祥林嫂命苦",
+        "hyp": "我愈可愈乱的",
+        "cerRaw": 0.8571428571428571,
+        "hypChars": 6,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-5",
+        "ref": "丧夫失子受尽欺压",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-6",
+        "ref": "苍天啊",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 2.3333333333333335,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-7",
+        "ref": "为何这般不公平",
+        "hyp": "平滩思那重災不解其",
+        "cerRaw": 1.1428571428571428,
+        "hypChars": 9,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-8",
+        "ref": "世道冷漠人心假",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-9",
+        "ref": "何处才是安身家",
+        "hyp": "容易不殺血之王",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      }
+    ]
+  },
+  "default_hygiene": {
+    "arm": "default_hygiene",
+    "n": 27,
+    "meanCerRaw": 1.9131393298059964,
+    "medianCerRaw": 1.25,
+    "maxCerRaw": 6.571428571428571,
+    "runawayLoops_ge200chars": 0,
+    "lengthConform_pm20pct": 0.3333333333333333,
+    "exactMatchRate": 0.0,
+    "items": [
+      {
+        "id": "he-wenxiu-suanming-10",
+        "ref": "待我掐指细推算",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-11",
+        "ref": "其中奥妙不一般",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-2",
+        "ref": "尊一声大娘听端详",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-3",
+        "ref": "小人算命走四方",
+        "hyp": "Make desang don't feel so weak咳 slflowDen Host",
+        "cerRaw": 6.571428571428571,
+        "hypChars": 46,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-4",
+        "ref": "不知大娘有何疑难事",
+        "hyp": "这个胸胎有很大的反应皇上第三集舒服对那边这边那个 Clarín我的权利朝鱼",
+        "cerRaw": 4.0,
+        "hypChars": 37,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-5",
+        "ref": "说来与我细商量",
+        "hyp": "不用更多輕節こと",
+        "cerRaw": 1.1428571428571428,
+        "hypChars": 8,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-6",
+        "ref": "尊一声先生听我言",
+        "hyp": "我們胡說 中國閩城二說中國閩城閩城我們Every idea of the kids不寬鬆",
+        "cerRaw": 5.375,
+        "hypChars": 44,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-7",
+        "ref": "家中有事费疑难",
+        "hyp": "我明明在說媽媽聽到現在你要這樣這樣是老的這個社群",
+        "cerRaw": 3.4285714285714284,
+        "hypChars": 24,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-8",
+        "ref": "我把生辰八字报",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "he-wenxiu-suanming-9",
+        "ref": "望求先生仔细看",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-10",
+        "ref": "满腹苦水向谁诉",
+        "hyp": "2020年 yokunv",
+        "cerRaw": 1.7142857142857142,
+        "hypChars": 12,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-11",
+        "ref": "泪湿衣襟心如麻",
+        "hyp": "��天下<|br|>亲身",
+        "cerRaw": 1.7142857142857142,
+        "hypChars": 12,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-12",
+        "ref": "阿毛啊，我的阿毛",
+        "hyp": "我只是想 慌慌我為了你",
+        "cerRaw": 1.25,
+        "hypChars": 11,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-13",
+        "ref": "狼衔了你去再不见",
+        "hyp": "見老羅的最後再見他又是腦海又是婚",
+        "cerRaw": 1.875,
+        "hypChars": 16,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-14",
+        "ref": "四叔四婶冷眼看",
+        "hyp": "不想善助他就不善以八反舍不人事不Young",
+        "cerRaw": 3.0,
+        "hypChars": 21,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-15",
+        "ref": "捐门槛也洗不清",
+        "hyp": "……",
+        "cerRaw": 1.0,
+        "hypChars": 2,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-16",
+        "ref": "人间何处容我身",
+        "hyp": "与我天辈 非证实 此夜买恋女",
+        "cerRaw": 2.0,
+        "hypChars": 14,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-17",
+        "ref": "苦命人儿泪成河",
+        "hyp": "所以他們…",
+        "cerRaw": 1.0,
+        "hypChars": 5,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-18",
+        "ref": "诉不尽这心酸话",
+        "hyp": "能湞出鼓現 melody氣精彩",
+        "cerRaw": 2.142857142857143,
+        "hypChars": 15,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-2",
+        "ref": "听他一番心酸话",
+        "hyp": "…",
+        "cerRaw": 1.0,
+        "hypChars": 1,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-3",
+        "ref": "不由我珠泪往下洒",
+        "hyp": "那一番 心酸 我的江",
+        "cerRaw": 1.25,
+        "hypChars": 10,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-4",
+        "ref": "想我祥林嫂命苦",
+        "hyp": "這個地軸以往,如果沒有成功",
+        "cerRaw": 1.8571428571428572,
+        "hypChars": 13,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-5",
+        "ref": "丧夫失子受尽欺压",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-6",
+        "ref": "苍天啊",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 2.3333333333333335,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-7",
+        "ref": "为何这般不公平",
+        "hyp": "adano",
+        "cerRaw": 1.0,
+        "hypChars": 5,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-8",
+        "ref": "世道冷漠人心假",
+        "hyp": "字幕by索兰娅",
+        "cerRaw": 1.0,
+        "hypChars": 7,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": true,
+        "exactMatch": false
+      },
+      {
+        "id": "xianglin-sao-xinsuanhua-9",
+        "ref": "何处才是安身家",
+        "hyp": "如花雪使我",
+        "cerRaw": 1.0,
+        "hypChars": 5,
+        "runaway_ge200chars": false,
+        "lengthConform_pm20pct": false,
+        "exactMatch": false
+      }
+    ]
+  }
+}
