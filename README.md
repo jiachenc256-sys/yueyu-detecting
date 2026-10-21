@@ -10,7 +10,7 @@ A public linguistic toolkit and archive for Yueyu (Shaoxing / Shengzhou-area Wu 
 
 Authorship
 
-Alice Chen is the only author and only contributor. Concept, collection workflow, information architecture, copy, TypeScript app code, data schemas, Learn content, ASR gold-clip pipeline, fine-tune / checkpoint-blending experiments, evaluation, ONNX export, and deployment are independent work.
+Alice Chen is the only author and contributor during building process, and the leader during raw resources collection process. Concept, collection workflow, information architecture, copy, TypeScript app code, data schemas, Learn content, ASR gold-clip pipeline, fine-tune / checkpoint-blending experiments, evaluation, ONNX export, and deployment are independent work.
 
 Ordinary dependencies (not co-authors): TypeScript, Node.js/npm, ONNX Runtime Web (WASM), the open Whisper model and PEFT/LoRA + Optimum tooling, Hugging Face for hosting adapter weights, GitHub Pages, Ajv, opencc-js, ffmpeg, jiwer, etc. Media rights remain with their holders.
 
