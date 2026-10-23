@@ -22,8 +22,6 @@ Ordinary dependencies (not co-authors): TypeScript, Node.js/npm, ONNX Runtime We
 1. **Collection year** — gather Yue-opera / radio / tanci materials; select clips; keep raw packs local; inventory rights and metadata.  
 2. **Public site + research iteration** — ship the static archive and learning tools; expand Learn / dictionary / FAQ; build a gold corpus and run a size-matched, whole-play-held-out Whisper adaptation study (v1–v13 + checkpoint blends), then deploy the chosen blend on-device.
 
-Software commits document the site-building and research-tooling phases. Application text lives in `SLIDEROOM_DESCRIPTION.md` and `DEVELOPMENT_STAGES.md`.
-
 ---
 
 ## What the site does
