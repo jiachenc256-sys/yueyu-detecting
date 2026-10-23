@@ -202,6 +202,22 @@ File-by-file map (if present): [`FILE_PURPOSES.md`](./FILE_PURPOSES.md).
 
 ---
 
+## Use of AI tools
+
+Generative-AI tools were used only as assistants for **repetitive, mechanical work**
+— for example, reformatting and organizing collected materials, bulk data cleanup,
+boilerplate scaffolding, and English wording polish. They were not used to design the
+project, make research or curation decisions, generate the gold labels, choose the
+methodology, or interpret the results.
+
+Every dataset, transcript correction, dictionary entry, experiment, and number in this
+repository was produced, checked, and is owned by the author. All model outputs and
+AI-suggested edits were treated as untrusted drafts and verified against the source
+materials before being kept. The open models and libraries listed above (Whisper,
+PEFT/LoRA, ONNX Runtime, etc.) are third-party tools, not AI co-authors.
+
+---
+
 ## License / citation
 
 See [`CITATION.cff`](CITATION.cff). Prefer citing the live site and this repository for academic use. Media rights remain with their holders.
