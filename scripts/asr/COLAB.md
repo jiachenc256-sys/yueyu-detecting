@@ -122,7 +122,7 @@ PY
 - `data/corpus/asr/runs/whisper-small-lora-v1/`（模型）
 - `data/corpus/asr/runs/cer-v2.json`（三列 CER；优先）
 
-把 `cer-v2.json` 发回聊天，我可以写进技术报告 / About。
+三列 CER 结果保存在 `data/corpus/asr/runs/cer-v2.json`，可与 `runs/` 目录中的其他实验对照。
 
 ## 预期（要诚实）
 
