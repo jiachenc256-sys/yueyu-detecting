@@ -23,7 +23,7 @@
     "titleEn": { "type": "string", "minLength": 1 },
     "sourceLocalPath": {
       "type": "string",
-      "description": "Relative path under ~/Desktop/linguilistic project/baidu-yueju/"
+      "description": "Relative path under the local corpus drop folder (default: data/corpus/incoming/baidu-yueju/)"
     },
     "mediaType": {
       "type": "string",
