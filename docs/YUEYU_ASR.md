@@ -2,6 +2,8 @@
 
 **作者：** Alice Chen（Chen Jiachen）独立完成。
 
+> **阅读提示（2026-10 更新）：** 本文是 2026-08-14 → 08-23 的**逐日开发实验日志**，按时间保留了当时的阶段性判断（正文多处“线上继续 v2”即当时的决定，并非现状）。**当前权威结果与上线权重**（blend-v10，INT8 ONNX）以 [`TECHNICAL_REPORT.md`](TECHNICAL_REPORT.md) 和仓库根 README 为准；2026-08-23 整剧留出研究见 `runs/cer-protocol-20260823-*.json`。本日志用于展示完整迭代与取舍过程，请勿单独摘取其中的中间数字作为最终结论。
+
 目标：把「听说」接到**在越语/越剧语料上微调过的模型**（设备端）。  
 不做用户反馈邮箱；主线是金标语料 → 微调 → CER → 上线。
 
@@ -65,7 +67,7 @@
 | LoRA v2（线上） | **1.10** | 2.08 |
 | LoRA v5（新协议） | 1.52 | **0.99** |
 
-**解读：** v5 在「没见过的全剧」上大幅好于 v2（2.08→0.99），但旧窄留出退步（1.10→1.52）。线上暂仍 v2；若产品更在意生戏泛化，可改挂 v5。数字：[`cer-v5.json`](../data/corpus/asr/runs/cer-v5.json)。
+**解读：** v5 在「没见过的全剧」上大幅好于 v2（2.08→0.99），但旧窄留出退步（1.10→1.52）。线上暂仍 v2；若产品更在意生戏泛化，可改挂 v5。数字：`cer-v5.json`（v5 实验结果，本地保留）。
 
 ### v6 双指标冲刺（2026-08-16）
 
@@ -117,7 +119,7 @@
 | 0.50 | 1.34 | **1.01** | 否（生戏过、旧戏未过） |
 | 1（纯 v8） | 1.41 | **0.98** | 否 |
 
-**结论：** 线性混合能在两端之间折中，但**没有 α 同时 ≤1.2 且 ≤1.1**。下一步更靠谱的是 **v2 热启动 + v8 语料续训（v8b）**，而不是再扫混合比。数字：[`cer-v2v8-blend.json`](../data/corpus/asr/runs/cer-v2v8-blend.json)。
+**结论：** 线性混合能在两端之间折中，但**没有 α 同时 ≤1.2 且 ≤1.1**。下一步更靠谱的是 **v2 热启动 + v8 语料续训（v8b）**，而不是再扫混合比。数字：[`cer-v2v8b-blend-065.json`](../data/corpus/asr/runs/cer-v2v8b-blend-065.json)。
 
 ### v8b：v2 热启动 + v8 语料（2026-08-16）
 
@@ -142,7 +144,7 @@
 检查点：`data/corpus/asr/runs/whisper-small-merged-v2-v8b-w0.65`（已 merge 的完整 Whisper-small，非 LoRA）。  
 数字：[`cer-keep-both-fine.json`](../data/corpus/asr/runs/cer-keep-both-fine.json)。上线前需再导出 INT8 ONNX 并做一次复核。
 
-错误分析（同检查点）：[`worst-clips-v2v8b-blend.md`](../data/corpus/asr/runs/worst-clips-v2v8b-blend.md) — 主因是**听错成别的句子**（非循环解码）；94 句里 exact match = 0，CER≥1 有 74 句。
+错误分析（同检查点）：`worst-clips-v2v8b-blend.md`（错误分析笔记，本地保留） — 主因是**听错成别的句子**（非循环解码）；94 句里 exact match = 0，CER≥1 有 74 句。
 
 ### v9 清洗续训尝试（2026-08-16）
 
@@ -197,7 +199,7 @@
 ## 四步流程
 
 ```text
-1. 导出候选句  →  2. 你人工确认  →  3. 切片 + 微调  →  4. CER 后换网站模型
+1. 导出候选句  →  2. 人工确认金标  →  3. 切片 + 微调  →  4. CER 评测后换网站模型
    npm run asr:export-gold      改 register / goldOk     Colab/本地 GPU      HF + speak.ts
 ```
 
@@ -216,17 +218,15 @@ make asr-export
 
 默认：**整部作品**留作测试（避免同一出戏泄漏），其余进训练。
 
-### 2. 你每天要做的（不可替代）
+### 2. 人工金标准注（无法自动替代）
 
-打开 `gold-clips.jsonl`，对每条（或每天抽 10–20 条）：
+打开 `gold-clips.jsonl`，对每条候选（可分批抽样）：
 
 1. 听对应时间段音频（档案页点时间戳，或切片后听 wav）
-2. 确认 `text` 是否真是「你愿意当正确答案」的字
+2. 确认 `text` 是否为可作为正确答案的听写字
 3. 填 `register`：`sanbai` | `yunbai` | `changci` | `spoken` | `other`
 4. 设 `goldOk`: `true`（通过）或 `false`（丢掉）
 5. 需要改字就改 `text`，并设 `zhStatus` 为 `reviewed`
-
-**四周目标：** 先把现有 ~19 分钟全部 `goldOk=true`；同时继续往档案加选段，冲 **30–60 分钟**。
 
 ### 3. 切片 + 微调
 
@@ -237,9 +237,9 @@ make asr-pack-colab     # 生成 data/corpus/asr/yueyu-asr-colab.zip
 
 然后打开 [`scripts/asr/COLAB.md`](../scripts/asr/COLAB.md) 上 Colab。
 
-### 4. 评测（必须有数字再宣传）
+### 4. 评测（先有数字，再下结论）
 
-同尺寸消融（tiny / plain small / small+LoRA）已跑通，见 `cer-v2b.json`。扩金标后请重跑：
+同尺寸消融（tiny / plain small / small+LoRA）见 `cer-v2b.json`。扩充金标后重跑：
 
 ```bash
 make asr-eval-v2
@@ -253,7 +253,7 @@ make asr-eval-v2
   --out data/corpus/asr/runs/cer-v2.json
 ```
 
-把 `cer-v2.json` 写进技术报告 / About——**没有跑通评测就不要写「准确率提升」**。重点引用 `deltaCerAdaptedMinusSmall`（同尺寸下的适配增益）。
+结果保存在 `data/corpus/asr/runs/`；技术结论只引用已跑通的同管线评测，同尺寸适配增益对应字段 `deltaCerAdaptedMinusSmall`。
 
 ### 5. 上线（已完成试点）
 
@@ -275,15 +275,15 @@ make asr-eval-v2
 | `pieceId` / `audio` / `start` / `end` | 从哪切 |
 | `text` | 金标汉字 |
 | `split` | `train` \| `test` |
-| `register` | 你填的语域 |
-| `goldOk` | 你确认后为 `true` |
+| `register` | 语域标注：`sanbai` / `yunbai` / `changci` / `spoken` / `other` |
+| `goldOk` | 人工听校确认后为 `true` |
 | `rights` | 默认 `archive-starter`；私人长音频勿进公开仓库 |
 
-## 诚实边界（文书可用）
+## 范围与局限
 
 - 试点阶段语料仍以**越剧选段**为主，不等于全覆盖「日常嵊州口语」。
 - 唱段/伴奏多的句子会难；优先把 **散白** 做稳再扩韵白。
-- 第一次微调可能 CER 只小幅下降——**方法与可复现实验**本身就是学术证据。
+- 小语料阶段 CER 改善可能有限；可复现流程（整剧留出、同尺寸消融、解码对照）与结果同样关键，结论以同管线对照为准。
 
 ## 相关文件
 
