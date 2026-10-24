@@ -18,9 +18,9 @@
   --color-status-ready: #6fbf8e;
   --color-status-ready-bg: rgba(111, 191, 142, 0.12);
 
-  --font-serif: "Noto Serif SC", "Songti SC", "STSong", serif;
-  --font-sans: "Sora", "PingFang SC", "Helvetica Neue", sans-serif;
-  --font-mono: "IBM Plex Mono", "SF Mono", monospace;
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --font-sans: "Sora", "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
