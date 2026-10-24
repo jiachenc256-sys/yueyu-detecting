@@ -16,7 +16,7 @@ Prefer people who:
 - Can record in a quiet room for 20–40 minutes
 - Will sign a short consent (name or “anonymous local speaker”, year, place)
 
-Avoid promising money unless you already have a budget; offer clear credit on the site if they agree.
+Payment is optional; if no budget is available, offer clear on-site credit when the speaker agrees.
 
 ---
 

@@ -1,6 +1,6 @@
 # Corpus intake (Baidu / local packs)
 
-Use this workflow for large Yueju packs you acquire privately (e.g. 百度网盘 orders).  
+Use this workflow for large Yueju packs acquired from third-party sources (e.g. 百度网盘 purchases).  
 **Do not commit raw video/audio packs to git.** Keep them local; publish only curated text + short rights-cleared clips later.
 
 ## Drop folder
@@ -20,7 +20,7 @@ Then run:
 make corpus-inventory
 ```
 
-This writes `data/corpus/inventory.json` (paths + sizes only; safe to commit if you want a catalog without media).
+This writes `data/corpus/inventory.json` (paths + sizes only; safe to commit as a media-less catalog).
 
 ## Academic use rules
 
@@ -43,7 +43,7 @@ Required fields:
 - `sourceLocalPath` — path under the Desktop drop folder  
 - `speechTypes` — any of `sanbai` (散白), `yunbai` (韵白), `changci` (唱词)  
 - `school` — 流派 if known (e.g. 尹派)  
-- `rights` — `private-research` until you clear redistribution  
+- `rights` — `private-research` until redistribution rights are cleared  
 
 ## Starter set (recommended)
 
@@ -53,11 +53,11 @@ After download, pick **5–10** pieces that include:
 2. At least some 韵白  
 3. Different plays / singers if possible  
 
-Then we will:
+The intake pipeline then:
 
-1. Extract audio  
-2. Build timed transcripts  
-3. Merge into the multilingual viewer like 新龙门客寨  
+1. Extracts audio  
+2. Builds timed transcripts  
+3. Merges them into the multilingual viewer (e.g. 新龙门客栈)  
 
 ## Commands
 
