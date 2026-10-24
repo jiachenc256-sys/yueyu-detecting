@@ -25,7 +25,7 @@ help:
 	@echo "  make setup-remote URL=<new-repo-url>   Add origin (NEW repo only)"
 	@echo "  make publish-new    Create+push NEW GitHub repo yueju-linguistic-archive"
 	@echo "  make push           Push current branch to origin"
-	@echo "  make branch NAME=cursor/my-feature   Create and switch branch"
+	@echo "  make branch NAME=feature/my-feature   Create and switch branch"
 
 serve:
 	@echo "Serving at http://localhost:$(PORT)"
@@ -137,5 +137,5 @@ publish-new:
 	@./scripts/publish-new-repo.sh
 
 branch:
-	@test -n "$(NAME)" || (echo "Usage: make branch NAME=cursor/my-feature" && exit 1)
+	@test -n "$(NAME)" || (echo "Usage: make branch NAME=feature/my-feature" && exit 1)
 	@git checkout -b "$(NAME)"
