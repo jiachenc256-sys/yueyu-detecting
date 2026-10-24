@@ -2,7 +2,10 @@
 # Create local drop folders for Baidu / private Yueju packs.
 set -euo pipefail
 
-DROP="${HOME}/Desktop/linguilistic project/baidu-yueju"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+# Default: repo-local, git-ignored. Override for your own download location:
+#   CORPUS_DROP_DIR="/path/to/baidu-yueju" ./scripts/corpus-setup.sh
+DROP="${CORPUS_DROP_DIR:-$ROOT/data/corpus/incoming/baidu-yueju}"
 
 mkdir -p \
   "$DROP/videos" \
@@ -38,11 +41,11 @@ Private researcher notes for Baidu packs. This file is gitignored.
 
 ## Pack A — 越剧视频
 - pan.baidu.com share (order note): keep extract code offline
-- Drop into: ~/Desktop/linguilistic project/baidu-yueju/videos/
+- Drop into the videos/ subfolder of the corpus drop folder.
 
 ## Pack B — 越剧-1451首
 - pan.baidu.com share (order note): keep extract code offline
-- Drop into: ~/Desktop/linguilistic project/baidu-yueju/audio-or-tracks/
+- Drop into the audio-or-tracks/ subfolder of the corpus drop folder.
 
 ## Rights
 Acquired for private academic / school research.

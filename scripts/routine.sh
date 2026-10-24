@@ -3,7 +3,9 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-SOURCE_DIR="$HOME/Desktop/linguilistic project"
+# Local source materials live outside git. Override for your own machine:
+#   SOURCE_DIR="$HOME/Desktop/my-yueju-materials" ./scripts/routine.sh sync-audio
+SOURCE_DIR="${SOURCE_DIR:-$ROOT/data/corpus/incoming}"
 PORT="${PORT:-8080}"
 
 usage() {
@@ -14,13 +16,13 @@ Usage: ./scripts/routine.sh <command>
 
 Commands:
   dev           Start local server (port 8080)
-  transcript    Rebuild base JSON from Desktop SRT (npm)
+  transcript    Rebuild base JSON from local source SRT (npm)
   data          Seed MT + merge + validate
-  sync-audio    Copy m4a from Desktop into assets/audio/
+  sync-audio    Copy m4a from the local source folder into assets/audio/
   status        Git branch + remote status
   setup-remote  Add GitHub remote (needs REPO_URL env var; NEW repo only)
   push          Push current branch to origin
-  sync-check    Verify source materials still exist on Desktop
+  sync-check    Verify source materials still exist in the local source folder
 
 Examples:
   ./scripts/routine.sh dev

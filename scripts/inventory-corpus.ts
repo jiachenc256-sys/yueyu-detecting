@@ -8,10 +8,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const defaultDrop = path.join(
-  process.env.HOME ?? "",
-  "Desktop/linguilistic project/baidu-yueju",
-);
+const defaultDrop = path.join(root, "data/corpus/incoming/baidu-yueju");
 
 const MEDIA_EXT = new Set([
   ".mp4",
@@ -83,14 +80,17 @@ function formatBytes(n: number): string {
 }
 
 async function main(): Promise<void> {
-  const drop = path.resolve(process.argv[2] ?? defaultDrop);
+  const dropArg = process.argv[2] ?? process.env.CORPUS_DROP_DIR;
+  const drop = path.resolve(dropArg ?? defaultDrop);
   const items: InventoryItem[] = [];
   await walk(drop, drop, items);
   items.sort((a, b) => a.relativePath.localeCompare(b.relativePath, "en"));
 
   const summary = {
     generatedAt: new Date().toISOString(),
-    dropFolder: drop,
+    dropFolder: drop.startsWith(root + path.sep)
+      ? path.relative(root, drop).split(path.sep).join("/")
+      : "(external local folder)",
     totalFiles: items.length,
     totalBytes: items.reduce((sum, item) => sum + item.bytes, 0),
     videoCount: items.filter((i) => i.kind === "video").length,

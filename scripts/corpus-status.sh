@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-CORPUS_DIR="${HOME}/Desktop/linguilistic project/baidu-yueju"
+CORPUS_DIR="${CORPUS_DROP_DIR:-$ROOT/data/corpus/incoming/baidu-yueju}"
 
 echo "Drop folder: $CORPUS_DIR"
 if [[ -d "$CORPUS_DIR" ]]; then

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Parse Desktop SRT (or a provided path), apply ASR corrections,
+ * Parse a local source SRT (or a provided path), apply ASR corrections,
  * and write a legacy-compatible base transcript JSON for merge-layers.
  */
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -10,10 +10,7 @@ import { applyCorrections, parseSrt } from "../src/srt.js";
 import type { LegacyPiece } from "../src/types.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const defaultSource = path.join(
-  process.env.HOME ?? "",
-  "Desktop/linguilistic project/新龙门客寨.srt",
-);
+const defaultSource = path.join(root, "data/corpus/incoming/新龙门客寨.srt");
 const defaultOutput = path.join(root, "data/transcripts/longmen-kezhai.base.json");
 
 async function main(): Promise<void> {
