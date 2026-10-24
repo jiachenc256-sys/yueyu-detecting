@@ -8,11 +8,13 @@ Use this workflow for large Yueju packs acquired from third-party sources (e.g. 
 Put downloaded packs here:
 
 ```text
-~/Desktop/linguilistic project/baidu-yueju/
+data/corpus/incoming/baidu-yueju/     # git-ignored local drop folder
   videos/          ← 越剧视频 pack
   audio-or-tracks/ ← 越剧-1451首 pack (or nested folders as downloaded)
   _inventory/      ← generated listings (optional)
 ```
+
+The default location is repo-local and git-ignored. To keep downloads elsewhere, point the tooling at your own folder, e.g. `CORPUS_DROP_DIR=/path/to/baidu-yueju make corpus-inventory`.
 
 Then run:
 
@@ -40,7 +42,7 @@ Required fields:
 
 - `id` — kebab-case id  
 - `title` / `titleEn`  
-- `sourceLocalPath` — path under the Desktop drop folder  
+- `sourceLocalPath` — path under the local corpus drop folder  
 - `speechTypes` — any of `sanbai` (散白), `yunbai` (韵白), `changci` (唱词)  
 - `school` — 流派 if known (e.g. 尹派)  
 - `rights` — `private-research` until redistribution rights are cleared  
@@ -62,7 +64,7 @@ The intake pipeline then:
 ## Commands
 
 ```bash
-make corpus-setup      # create Desktop drop folders
+make corpus-setup      # create the local (git-ignored) drop folders
 make corpus-inventory  # scan downloads → data/corpus/inventory.json
 make corpus-status     # show counts / readiness
 ```

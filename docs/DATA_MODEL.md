@@ -11,7 +11,7 @@ Path: `data/transcripts/<piece-id>.json`
 | `id` | Stable kebab-case identifier |
 | `title` / `titleEn` | Chinese and English titles |
 | `audio` | Relative path to local audio |
-| `sourceSrt` | Provenance filename from the Desktop source bundle |
+| `sourceSrt` | Provenance filename from the local (git-ignored) source bundle |
 | `category` | Optional archive taxonomy: `yueju` / `tanci` / `broadcast` / `other` |
 | `schemaVersion` | Currently `1.0.0` |
 | `cueCount` | Number of cues |
