@@ -66,7 +66,7 @@
 | 7 | Weak-match：无高置信命中 + 参考候选 | ✅ |
 | 8 | Gold coverage 笔记 + 待提交 transcripts | ✅ 见 `docs/SPEAK_GOLD_COVERAGE_20260824.md` |
 | 9 | 保持 v10 上线（决策笔记） | ✅ |
-| 10 | `.gitignore`：`.cursor/`、`_incoming_audio/`、zip/bak | ✅ |
+| 10 | `.gitignore`：本地 IDE 临时目录、`_incoming_audio/`、zip/bak | ✅ |
 | 11 | Mobile Speak：触控、全宽筛选、sticky status | ✅ |
 
 ## 2026-08-24 · 语言学 / 场景对齐
