@@ -83,7 +83,7 @@ The gold corpus is sliced from corrected timed transcripts to 16 kHz mono and sc
 | 荆钗记 Jingchai (seen play) | 39 | 2.16 | 1.51 | **0.85** | 0.81 |
 | 白兔记 Baitu (unseen whole play) | 80 | 3.55 | 3.35 | **1.18** | 1.04 |
 
-**Decoding-only control (fixed model, n = 27, reference openai-whisper backend, CPU fp32).** The pilot generic row was produced through the Hugging Face pipeline, so a fixed-model control decodes the **same unadapted Whisper-small checkpoint** twice on the identical cues, changing only the decoder — `greedy_loop` (`temperature=0`, no fallback, `condition_on_previous_text=False`, compression check off) vs `default_hygiene` (temperature fallback tuple, `compression_ratio_threshold=2.4`, `condition_on_previous_text=True`). Same cues, same references as `cer-v2b.json`; snapshot `data/corpus/asr/gold-clips-v8-eval-oldholdout.jsonl` (the current `gold-clips.jsonl` marks these 27 `goldOk:false` after the 2026-08-23 protocol).
+**Decoding-only control (fixed model, n = 27, reference openai-whisper backend, CPU fp32).** The pilot generic row was produced through the Hugging Face pipeline, so a fixed-model control decodes the **same unadapted Whisper-small checkpoint** twice on the identical cues, changing only the decoder — `greedy_loop` (`temperature=0`, no fallback, `condition_on_previous_text=False`, compression check off) vs `default_hygiene` (temperature fallback tuple, `compression_ratio_threshold=2.4`, `condition_on_previous_text=True`). Same cues, same references as `cer-v2b.json`; the 27-cue evaluation snapshot is kept locally and not published under the current corpus-rights set (the current `gold-clips.jsonl` marks these 27 `goldOk:false` after the 2026-08-23 protocol).
 
 | Same whisper-small, only decoding changes | mean CER | median | worst CER | runaways (≥200 ch) | length ±20% | exact |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -168,7 +168,6 @@ docs/                      Data model, ASR, dictionary, recording, academic note
 tests/                     Unit tests
 ```
 
-File-by-file map (if present): [`FILE_PURPOSES.md`](./FILE_PURPOSES.md).
 
 ---
 
