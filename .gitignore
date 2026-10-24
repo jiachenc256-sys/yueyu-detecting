@@ -45,6 +45,7 @@ data/transcripts/*~
 .venv-asr/
 data/corpus/SOURCES.local.md
 data/corpus/raw/
+data/corpus/incoming/
 data/corpus/asr/clips/
 data/corpus/asr/runs/*
 !data/corpus/asr/runs/cer-*.json
