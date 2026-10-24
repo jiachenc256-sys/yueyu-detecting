@@ -1,8 +1,10 @@
 .PHONY: help serve open status push setup-remote publish-new branch transcript sync-audio data check corpus-setup corpus-inventory corpus-status asr-export asr-status asr-slice asr-pack-colab
 
 PORT ?= 8080
-SOURCE_DIR := $(HOME)/Desktop/linguilistic project
-CORPUS_DIR := $(SOURCE_DIR)/baidu-yueju
+SOURCE_DIR ?= data/corpus/incoming
+CORPUS_DIR ?= $(SOURCE_DIR)/baidu-yueju
+# Use your own local material folder without editing this file, e.g.:
+#   make sync-audio SOURCE_DIR="$HOME/Desktop/my-yueju-materials"
 export PATH := $(HOME)/.local/node/bin:$(PATH)
 
 help:
@@ -12,9 +14,9 @@ help:
 	@echo "  make open           Open archive in default browser"
 	@echo "  make data           Seed MT + merge layers + validate"
 	@echo "  make check          build + test + validate"
-	@echo "  make transcript     Rebuild base JSON from Desktop SRT (npm)"
-	@echo "  make sync-audio     Copy m4a from Desktop into assets/audio/"
-	@echo "  make corpus-setup   Create Desktop drop folders for Baidu packs"
+	@echo "  make transcript     Rebuild base JSON from local source SRT (npm)"
+	@echo "  make sync-audio     Copy m4a from the local source folder into assets/audio/"
+	@echo "  make corpus-setup   Create local (git-ignored) drop folders for Baidu packs"
 	@echo "  make corpus-inventory  Scan downloads -> data/corpus/inventory.json"
 	@echo "  make corpus-status  Show corpus readiness"
 	@echo "  make asr-export     Export ASR gold-clip candidates from transcripts"
