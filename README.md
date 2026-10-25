@@ -106,6 +106,22 @@ Full write-up: [`docs/TECHNICAL_REPORT.md`](docs/TECHNICAL_REPORT.md) · full v1
 
 ---
 
+## User validation (August 2026)
+
+Beyond the CER study, the public-facing design was validated in **13 face-to-face, task-based sessions** with three audiences: **4 students** (ages 15–25), **5 older users** (ages 50–70, both Yueyu speakers and non-speakers), and **4 professionals** (two teachers, one archivist, one digital-humanities researcher). Each participant completed guided tasks across Archive, Dictionary / Learn, Hear, Speak, and the Tanci OCR, with 1–5 ratings plus open feedback; older users' forms were filled in by the author during the interview.
+
+What the feedback changed:
+
+- **Persistent text-size / contrast control** — two older users asked for the font-size enlargement to remain visible on every page; it is now the global "Aa Access" panel (saved on the device).
+- **Context before content** — older users and a professional reviewer asked for a short introduction before each opera / tanci piece; Archive pieces and Tanci books now carry plot / background intros.
+- **OCR export** — the archivist asked for an export of recognition results, which informed the OCR result/export workflow.
+- **Pinyin on-ramp** — two students asked for an introduction to Yueyu pinyin, addressed by the Learn pinyin guide.
+- **Professional take-up** — all four professionals said they would consider using the platform for teaching or research and were willing to contribute corrections, recordings, or contacts.
+
+The full task sheets, session dates, and per-participant responses are kept in the author's process notebook (not published in this repository, as it contains participant records).
+
+---
+
 ## Tech stack
 
 - **Frontend:** static `index.html` + TypeScript (ES modules) → `scripts/dist/src/`  
