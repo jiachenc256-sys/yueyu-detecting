@@ -547,10 +547,19 @@ function applyHashRoute(applyArchiveFilter) {
         return;
     }
     const navBtn = document.querySelector(`.site-nav [data-panel-target="${hash}"]`);
-    if (navBtn)
+    if (navBtn) {
         navBtn.click();
-    else
-        activatePanel(hash);
+        return;
+    }
+    // Not a panel name: it may be an in-page anchor living inside a panel.
+    const anchorEl = document.getElementById(hash);
+    const ownerPanel = anchorEl === null || anchorEl === void 0 ? void 0 : anchorEl.closest("[data-panel]");
+    if (anchorEl && ownerPanel) {
+        activatePanel(ownerPanel.dataset.panel);
+        requestAnimationFrame(() => anchorEl.scrollIntoView({ behavior: "smooth", block: "start" }));
+        return;
+    }
+    activatePanel(hash);
 }
 document.addEventListener("DOMContentLoaded", () => {
     unnestTrappedPanels();
