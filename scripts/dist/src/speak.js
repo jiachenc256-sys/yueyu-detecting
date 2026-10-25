@@ -833,6 +833,13 @@ async function recognizeBlob(blob, label) {
                 chunk_length_s: 30,
                 stride_length_s: 5,
                 ...(language ? { language, task: "transcribe" } : {}),
+                // Decoding hygiene: browser transformers.js uses plain greedy
+                // decoding by default, which can fall into a repetition loop
+                // (e.g. "我这我这…"). These only cap the catastrophic tail;
+                // they do not change recognition on well-behaved clips.
+                max_new_tokens: 224,
+                no_repeat_ngram_size: 3,
+                repetition_penalty: 1.1,
             });
             const text = Array.isArray(result)
                 ? result.map((r) => r.text ?? "").join(" ").trim()
