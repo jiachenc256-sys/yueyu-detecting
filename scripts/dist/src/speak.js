@@ -77,20 +77,130 @@ function modelBaseHref() {
     const dir = path.endsWith("/") ? path : path.replace(/[^/]+$/, "");
     return new URL(`assets/asr/${LOCAL_MODEL_ID}/`, `${window.location.origin}${dir}`).href;
 }
-async function translateWithMyMemory(text, from, to) {
+// Optional contact email for the free MyMemory translation API.
+// Adding your email here (no signup/verification needed) raises the free daily
+// limit from 5,000 to 50,000 characters/day. Leave "" for anonymous use.
+const MYMEMORY_CONTACT_EMAIL = "jiachenc256@gmail.com";
+const MYMEMORY_MAX_Q_BYTES = 460;
+
+function utf8ByteLength(s) {
+    return new TextEncoder().encode(s).length;
+}
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+// Split text into chunks whose UTF-8 size fits MyMemory's ~500-byte query limit,
+// preferring to break at sentence/clause boundaries.
+function splitForTranslation(text) {
+    const src = text.trim();
+    const chunks = [];
+    let cur = "";
+    const flush = () => {
+        if (cur.trim())
+            chunks.push(cur.trim());
+        cur = "";
+    };
+    for (const piece of src.split(/(\n+)/)) {
+        if (/^\n+$/.test(piece)) {
+            cur += piece;
+            continue;
+        }
+        let seg = piece;
+        while (utf8ByteLength(cur + seg) > MYMEMORY_MAX_Q_BYTES) {
+            if (utf8ByteLength(cur) >= 180) {
+                const m = seg.match(/^[\s\S]{0,120}?[。．.！？!?；;，,、：:\s]/);
+                if (m && utf8ByteLength(cur + m[0]) <= MYMEMORY_MAX_Q_BYTES) {
+                    cur += m[0];
+                    seg = seg.slice(m[0].length);
+                    flush();
+                    continue;
+                }
+            }
+            let take = 0;
+            let usedBytes = utf8ByteLength(cur);
+            for (const ch of seg) {
+                const chBytes = utf8ByteLength(ch);
+                if (usedBytes + chBytes > MYMEMORY_MAX_Q_BYTES)
+                    break;
+                usedBytes += chBytes;
+                take += ch.length;
+            }
+            if (take === 0) {
+                cur += seg[0];
+                seg = seg.slice(1);
+            }
+            else {
+                cur += seg.slice(0, take);
+                seg = seg.slice(take);
+            }
+            flush();
+        }
+        cur += seg;
+    }
+    flush();
+    return chunks;
+}
+async function translateChunkOnce(text, from, to) {
     const url = new URL("https://api.mymemory.translated.net/get");
-    url.searchParams.set("q", text.slice(0, 450));
+    url.searchParams.set("q", text);
     url.searchParams.set("langpair", `${from}|${to}`);
+    if (MYMEMORY_CONTACT_EMAIL)
+        url.searchParams.set("de", MYMEMORY_CONTACT_EMAIL);
     const res = await fetch(url.toString());
+    if (res.status === 429 || res.status >= 500) {
+        const ra = Number(res.headers.get("Retry-After"));
+        const err = new Error(res.status === 429 ? "RATE_LIMIT" : `HTTP ${res.status}`);
+        err.status = res.status;
+        err.retryAfter = Number.isFinite(ra) && ra > 0 ? ra * 1000 : null;
+        throw err;
+    }
     if (!res.ok)
         throw new Error(`Translation HTTP ${res.status}`);
     const data = (await res.json());
     const out = data.responseData?.translatedText?.trim();
     if (!out)
         throw new Error("Empty translation");
-    if (/MYMEMORY WARNING/i.test(out))
-        throw new Error("Translation quota exceeded — try again later");
+    if (/MYMEMORY WARNING/i.test(out)) {
+        const err = new Error("RATE_LIMIT");
+        err.status = 429;
+        throw err;
+    }
     return out;
+}
+async function translateWithMyMemory(text, from, to) {
+    const chunks = splitForTranslation(text.slice(0, 6000));
+    if (chunks.length === 0)
+        return "";
+    const parts = [];
+    for (let i = 0; i < chunks.length; i += 1) {
+        let part = null;
+        let lastError = null;
+        let backoff = 700;
+        for (let attempt = 0; attempt < 3; attempt += 1) {
+            try {
+                part = await translateChunkOnce(chunks[i], from, to);
+                break;
+            }
+            catch (error) {
+                lastError = error;
+                const retryable = error instanceof Error
+                    && (error.message === "RATE_LIMIT" || /^HTTP 5\d\d$/.test(error.message));
+                if (!retryable || attempt === 2)
+                    break;
+                await sleep(error.retryAfter ?? backoff);
+                backoff *= 2;
+            }
+        }
+        if (part === null) {
+            if (lastError && (lastError.status === 429 || lastError.message === "RATE_LIMIT"))
+                throw new Error("Translation service is rate-limited right now \u2014 please try again in a few minutes.");
+            throw lastError ?? new Error("Translation failed");
+        }
+        parts.push(part);
+        if (i < chunks.length - 1)
+            await sleep(220);
+    }
+    return parts.join("\n").trim();
 }
 function looksLatin(text) {
     const letters = text.replace(/\s/g, "");
