@@ -120,6 +120,7 @@ What the feedback changed:
 
 The full task sheets, session dates, and per-participant responses are kept in the author's process notebook (not published in this repository, as it contains participant records).
 
+The 13 sessions ran on the working build before public release; the public repository and GitHub Pages deployment went live on 2026-08-09.
 ---
 
 ## Tech stack
