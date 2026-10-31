@@ -76,12 +76,14 @@ The gold corpus is sliced from corrected timed transcripts to 16 kHz mono and sc
 | plain Whisper-small (HF pipeline, safeguards off) | 10.70 | 1.71 | 63.43 | 2 | 10/27 | 0 |
 | **LoRA-adapted (v2)** | **1.10** | **1.00** | **2.14** | **0** | **25/27** | **0** |
 
-**Clean whole-play study (2026-08-23), mean raw CER, same size-matched baselines.**
+**Clean whole-play study (2026-08-23), mean raw CER, size-matched baselines (see the gold note below).**
 
 | Held-out set | n | tiny | plain small | **deployed blend-v10** | lab adapter v13 (not deployed) |
 | :--- | ---: | ---: | ---: | ---: | ---: |
 | 荆钗记 Jingchai (seen play) | 39 | 2.16 | 1.51 | **0.85** | 0.81 |
 | 白兔记 Baitu (unseen whole play) | 80 | 3.55 | 3.35 | **1.18** | 1.04 |
+
+**Note on the Jingchai gold.** The Jingchai gold timeline was revised on 2026-08-23 during timing QA. Whisper-tiny / small score 2.16 / 1.51 on the original gold and 1.54 / 1.48 on the revised gold. The lab adapter v13 (0.81) was measured on the revised gold; the deployed blend-v10 (0.85) on the original. The two adapted numbers therefore do not share a single common baseline. Baitu (n = 80) is unaffected, and `docs/ASR_CEILING_DECISION_20260823.md` reports the post-QA triple (1.54 / 1.48 / 0.81) on the revised gold.
 
 **Decoding-only control (fixed model, n = 27, reference openai-whisper backend, CPU fp32).** The pilot generic row was produced through the Hugging Face pipeline, so a fixed-model control decodes the **same unadapted Whisper-small checkpoint** twice on the identical cues, changing only the decoder — `greedy_loop` (`temperature=0`, no fallback, `condition_on_previous_text=False`, compression check off) vs `default_hygiene` (temperature fallback tuple, `compression_ratio_threshold=2.4`, `condition_on_previous_text=True`). Same cues, same references as `cer-v2b.json`; the 27-cue evaluation snapshot is kept locally and not published under the current corpus-rights set (the current `gold-clips.jsonl` marks these 27 `goldOk:false` after the 2026-08-23 protocol).
 
@@ -197,7 +199,7 @@ tests/                     Unit tests
 | [`docs/ASR_CEILING_DECISION_20260823.md`](docs/ASR_CEILING_DECISION_20260823.md) | The "acknowledge the ceiling, don't chase 0.5" decision |
 | [`docs/DATA_MODEL.md`](docs/DATA_MODEL.md) | Transcript / cue layers and statuses |
 | [`docs/DICTIONARY.md`](docs/DICTIONARY.md) | Dictionary design notes |
-| [`docs/CORPUS_INTAKE.md`](docs/CORPUS_INTAKE.md) | Private pack intake (Baidu / local) |
+| [`docs/CORPUS_INTAKE.md`](docs/CORPUS_INTAKE.md) | Private pack intake (Baidu Drive / local) |
 | [`docs/SPEAKER_RECORDING.md`](docs/SPEAKER_RECORDING.md) | Shengzhou speaker recording checklist |
 | [`docs/SPEAK_GOLD_COVERAGE_20260824.md`](docs/SPEAK_GOLD_COVERAGE_20260824.md) | Which archive pieces have committed timed transcripts |
 | [`docs/ACADEMIC_NOTES.md`](docs/ACADEMIC_NOTES.md) | Academic framing notes |
