@@ -207,10 +207,10 @@ tests/                     Unit tests
 
 ## Privacy & rights (short)
 
-- **Recognition is on-device:** mic and uploads are processed locally in WASM and are not transmitted; the only network traffic is the one-time, cacheable download of public weights/site assets.
+- **Audio stays on-device:** mic input and uploaded audio are recognized locally in WASM and are never transmitted. Outbound requests are limited to (i) the one-time, cacheable download of public weights and site assets, (ii) the tanci OCR service, which receives only the page image you choose to submit, and (iii) the translation API, which receives only text — the recognized transcript, or the tanci page text — when you ask for Traditional Chinese or English. Fonts and static assets come from public CDNs.
 - Do not upload material you do not have the right to process. Large private media packs stay **off** public git; only curated clips and texts ship.  
 - Website code, UI, curated transcripts, plot intros, and editorial arrangement are Alice Chen's project work unless noted.  
-- Third-party engines and assets (Whisper, ONNX Runtime, fonts, OCR/translation services) keep their own terms.  
+- Third-party engines and assets (Whisper, ONNX Runtime, fonts, the Talcne OCR backend and the Baidu OCR engine it calls, the MyMemory translation API) keep their own terms.
 - Details: live **About → Privacy / Copyright**.
 
 ---
