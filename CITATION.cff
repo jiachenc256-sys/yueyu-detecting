@@ -5,6 +5,8 @@ authors:
   - family-names: Chen
     given-names: Alice
 type: software
+repository-code: "https://github.com/jiachenc256-sys/yueyu-detecting"
+url: "https://yueyudetecting.com"
 abstract: >-
   An academic web archive for Yue opera (越剧) linguistic materials with
   timed transcripts and layered Chinese/English dialogue. Curated English
