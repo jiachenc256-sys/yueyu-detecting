@@ -237,3 +237,4 @@ PEFT/LoRA, ONNX Runtime, etc.) are third-party tools, not AI co-authors.
 ## License / citation
 
 See [`CITATION.cff`](CITATION.cff). Prefer citing the live site and this repository for academic use. Media rights remain with their holders.
+The CC-BY-4.0 license covers the author's own code, interface text, curated transcripts, and the editorial arrangement of this archive. Third-party media (opera recordings, tanci page scans, and audio sourced from institutional archives) are not covered and remain with their respective rights holders.
