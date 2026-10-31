@@ -3465,22 +3465,24 @@
                 <p>我们希望演示轻量，并尊重用户隐私。</p>
                 <ul>
                   <li><strong>麦克风：</strong>仅在你点击开始听写时于浏览器内使用；本站不自建服务器保存你的实时录音。</li>
-                  <li><strong>上传文件：</strong>尽可能在浏览器内做设备端识别。请勿上传无权处理或含敏感信息的录音。</li>
+                  <li><strong>上传文件：</strong>用于识别的音频尽可能在浏览器内做设备端识别。请勿上传无权处理或含敏感信息的录音。</li>
+                  <li><strong>弹词识别：</strong>你提交的刻本页面图片会发送到独立的 OCR 后端（该后端调用第三方 OCR 引擎），识别结果返回浏览器。只发送你主动选择的页面；请勿上传无权处理或含隐私信息的页面。</li>
                   <li><strong>翻译：</strong>识别文本可能发送至第三方翻译接口以生成繁體 / English。请勿在识别框粘贴私密个人信息。</li>
                   <li><strong>无账号系统：</strong>无需登录，也不会有意建立用户画像。</li>
                   <li><strong>档案说话人：</strong>公开条目以精选文化材料为主；如有不当公开或希望撤下，请通过「联系」告知。</li>
-                  <li><strong>本地访问：</strong>在自己电脑打开（<code>127.0.0.1</code>）时，除字体、识别工具／CDN 与你触发的翻译请求外，流量主要留在本机。</li>
+                  <li><strong>本地访问：</strong>在自己电脑打开（<code>127.0.0.1</code>）时，除字体、识别工具／CDN、你触发的翻译请求，以及你主动提交用于识别的弹词页面图片外，流量主要留在本机。</li>
                 </ul>
               </div>
               <div data-visible-lang="en">
                 <p>We aim to keep the demo lightweight and respectful of privacy.</p>
                 <ul>
                   <li><strong>Microphone:</strong> used in your browser only when you start listening. We do not run a custom server that stores live mic audio.</li>
-                  <li><strong>Uploads:</strong> processed in-browser for on-device recognition when possible. Do not upload recordings you are not allowed to process.</li>
+                  <li><strong>Uploads:</strong> audio you upload for recognition is processed in-browser for on-device recognition when possible. Do not upload recordings you are not allowed to process.</li>
+                  <li><strong>OCR (tanci pages):</strong> a woodblock page image you submit is sent to a separate OCR backend, which calls a third-party OCR engine, and the text comes back to your browser. Only the page you choose is sent. Do not submit pages you are not allowed to process or that contain private information.</li>
                   <li><strong>Translation:</strong> recognized text may be sent to a third-party API for Traditional Chinese / English. Avoid pasting private personal data.</li>
                   <li><strong>No accounts:</strong> no login and no intentional user profiling.</li>
                   <li><strong>Archive speakers:</strong> public entries focus on curated cultural materials. For removal requests, use Contact.</li>
-                  <li><strong>Local hosting:</strong> on your machine (<code>127.0.0.1</code>), traffic stays local except fonts, recognition tools / CDN assets, and translation requests you trigger.</li>
+                  <li><strong>Local hosting:</strong> on your machine (<code>127.0.0.1</code>), traffic stays local except fonts, recognition tools / CDN assets, translation requests you trigger, and tanci page images you submit for OCR.</li>
                 </ul>
               </div>
             </div>
@@ -3494,7 +3496,7 @@
                 <ul>
                   <li><strong>网站与软件：</strong>界面、逻辑、数据结构与多语整理层受保护。可用于学习研究并注明出处；未经许可请勿整站复制、去署名或冒充自有产品。</li>
                   <li><strong>戏曲录音与唱词：</strong>权利归表演者、剧团、出版方或相关权利人。本站短选段用于学习研究演示，<strong>不构成</strong>整包传播授权。</li>
-                  <li><strong>第三方工具：</strong>浏览器内识别库、字体与翻译接口遵循各自许可与条款。</li>
+                  <li><strong>第三方工具：</strong>浏览器内识别库、字体、翻译接口，以及弹词页面识别所用的 OCR 引擎，遵循各自许可与条款。</li>
                   <li><strong>名称：</strong>「越语侦听」「Yueyu Detecting」标识本项目，请勿暗示未经同意的官方背书。</li>
                 </ul>
                 <p>授权、引用或下架请求，请通过「联系」邮件 <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a> 联系开发者 <strong>Alice Chen (Jiachen Chen)</strong>。</p>
@@ -3506,7 +3508,7 @@
                 <ul>
                   <li><strong>Site &amp; software:</strong> protected project work — cite for school/research; do not copy wholesale or remove credit without permission.</li>
                   <li><strong>Opera recordings &amp; scripts:</strong> rights remain with performers, troupes, publishers, or rights holders. Short clips are for educational demo only — <strong>not</strong> a license to redistribute full packs.</li>
-                  <li><strong>Third-party tools:</strong> in-browser recognition libraries, fonts, and translation APIs keep their own terms.</li>
+                  <li><strong>Third-party tools:</strong> in-browser recognition libraries, fonts, translation APIs, and the OCR engine behind tanci page recognition keep their own terms.</li>
                   <li><strong>Name:</strong> “Yueyu Detecting” identifies this project; do not imply official endorsement without consent.</li>
                 </ul>
                 <p>For permissions or takedown notices, contact <strong>Alice Chen (Jiachen Chen)</strong> via <a href="mailto:yueyudetecting@proton.me">yueyudetecting@proton.me</a>.</p>
